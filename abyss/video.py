@@ -30,10 +30,16 @@ def extract(url, directory, interval=60, maximum=12):
     # Uniformly cover the pan; interval sets an upper bound on sampling density.
     count = min(maximum, max(1, int(duration // interval)))
     positions = [duration * (i + .5) / count for i in range(count)]
+    return extract_positions(url, directory, positions, duration=duration, codec=codec)
+
+
+def extract_positions(url, directory, positions, *, duration, codec, prefix='candidate'):
+    if not positions or len(positions) > 48 or any(not 0 <= p < duration for p in positions):
+        raise ValueError('Invalid frame positions')
     frames = []
     errors = []
     for index, seconds in enumerate(positions):
-        path = Path(directory) / f'candidate-{index:02}.png'
+        path = Path(directory) / f'{prefix}-{index:02}.png'
         try:
             command(['ffmpeg', '-v', 'error', '-nostdin', '-threads', '2', '-rw_timeout', '25000000',
                      '-ss', str(seconds), '-format_whitelist', 'mov', '-i', url, '-map', '0:v:0', '-frames:v', '1',
@@ -47,5 +53,5 @@ def extract(url, directory, interval=60, maximum=12):
             errors.append(str(exc))
     if not frames:
         raise RuntimeError('No candidate frames extracted: ' + '; '.join(errors)[:1500])
-    return frames, {'duration_seconds': duration, 'codec': codec, 'candidates_requested': count,
+    return frames, {'duration_seconds': duration, 'codec': codec, 'candidates_requested': len(positions),
                     'candidates_extracted': len(frames), 'extraction_errors': errors}

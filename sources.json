@@ -51,6 +51,13 @@
       "scoring": {
         "min_score": 0.3,
         "novelty_weight": 0.12
+      },
+      "completion_delay_minutes": 60,
+      "cadence_observations": {
+        "workflow": "observe-ooi.yml",
+        "branch": "source-observations",
+        "path": "observations/ooi-axial/latest-cadence.json",
+        "status": "collection_pending"
       }
     },
     {

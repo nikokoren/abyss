@@ -74,10 +74,21 @@ python -m abyss.cli recipe --base-url https://OWNER.github.io/abyss
 A real run requires a public HTTPS base URL. The registry defaults to no eligible
 sources and intentionally fails a processing run until validation is complete.
 
+## Recent-recording search and cadence
+
+Production selection compares the three newest unseen recordings: four coarse
+samples each, then up to four extra samples around the strongest moments, under
+one shared 64 MiB video budget. The independent hourly metadata observer measures
+filename intervals and first appearances without repeatedly downloading video.
+See [search and cadence](docs/search-and-cadence.md) for exact limits, reporting,
+and how publication-delay observations differ from a baseline archive listing.
+
 ## Project map
 
 - `abyss/network.py`: allowlisted HTTPS, capped byte ranges, FFmpeg loopback bridge.
 - `abyss/adapters.py`: OOI UTC directory discovery and configurable direct-file adapter.
+- `abyss/search.py`: bounded multi-recording coarse/fine selection.
+- `abyss/cadence.py`, `abyss/study.py`: hourly archive observations and runner benchmark.
 - `abyss/imaging.py`: quality/novelty scoring and e-paper rendering.
 - `abyss/pipeline.py`: processing history, backoff, timestamps, last-good retention.
 - `abyss/publication.py`: atomic metadata and content-addressed image publication.

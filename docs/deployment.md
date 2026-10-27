@@ -47,6 +47,16 @@ Scheduled jobs may run late or be dropped; a manual run is the recovery path.
 Monitor default-branch schedule activation and public-repository inactivity
 rules; do not treat scheduled output as a live camera.
 
+## Cadence observations and adaptive search
+
+The separate `observe-ooi.yml` workflow collects hourly directory metadata and
+runs a three-recording coarse/fine benchmark on relevant code pushes or manual
+request. Its `source-observations` branch is separate from image delivery and
+rights approval. See [search-and-cadence.md](search-and-cadence.md). The observer
+does not generate new public images every hour. Disable/reduce its frequency
+when enough recording/publication observations are available; include its runner
+startup costs if using a private repository.
+
 ## Last-good and restart behavior
 
 `ocean-output` contains only generated `public/` and `state/` directories. Each

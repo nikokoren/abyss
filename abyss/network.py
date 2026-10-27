@@ -8,6 +8,7 @@ import re
 import socket
 import threading
 import urllib.request
+import urllib.error
 from collections import OrderedDict
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from urllib.parse import urlsplit
@@ -15,6 +16,21 @@ from urllib.parse import urlsplit
 
 class RetrievalError(RuntimeError):
     pass
+
+
+
+def classify_failure(exc):
+    if getattr(exc, 'failure_category', None):
+        return exc.failure_category
+    if isinstance(exc, urllib.error.HTTPError):
+        return 'upstream_http_error'
+    if isinstance(exc, urllib.error.URLError):
+        if 'tunnel connection failed' in str(exc.reason).lower():
+            return 'infrastructure_proxy_tunnel'
+        return 'network_path_error'
+    if isinstance(exc, RetrievalError):
+        return 'retrieval_constraint'
+    return 'processing_error'
 
 
 def check_url(url, hosts):
@@ -46,12 +62,28 @@ def read_small(url, hosts, limit=2_000_000):
         return data
 
 
+class TransferBudget:
+    """One payload allowance shared by all recordings in a search."""
+    def __init__(self, limit):
+        if limit < 1:
+            raise ValueError('Byte budget must be positive')
+        self.limit = limit
+        self.used = 0
+        self.requests = 0
+        self.lock = threading.Lock()
+
+    @property
+    def remaining(self):
+        return self.limit - self.used
+
+
 class RangeVideo:
     block_size = 256 * 1024
 
-    def __init__(self, url, hosts, max_bytes=64 * 1024 * 1024):
+    def __init__(self, url, hosts, max_bytes=64 * 1024 * 1024, budget=None):
         check_url(url, hosts)
         self.url, self.hosts, self.max_bytes = url, hosts, max_bytes
+        self.budget = budget or TransferBudget(max_bytes)
         self.bytes_read = self.requests = 0
         self.total = None
         self.etag = None
@@ -61,7 +93,12 @@ class RangeVideo:
         self._fetch(0, 0)
 
     def _fetch(self, start, end):
-        if self.bytes_read + end - start + 1 > self.max_bytes:
+        with self.budget.lock:
+            return self._fetch_locked(start, end)
+
+    def _fetch_locked(self, start, end):
+        remaining = min(self.max_bytes - self.bytes_read, self.budget.remaining)
+        if end - start + 1 > remaining:
             raise RetrievalError('Video byte budget exhausted')
         headers = {'Range': f'bytes={start}-{end}', 'Accept-Encoding': 'identity', 'User-Agent': 'AbyssOcean/0.1'}
         if self.etag:
@@ -69,6 +106,7 @@ class RangeVideo:
         req = urllib.request.Request(self.url, headers=headers)
         with opener(self.hosts).open(req, timeout=25) as response:
             self.requests += 1
+            self.budget.requests += 1
             match = re.fullmatch(r'bytes (\d+)-(\d+)/(\d+)', response.headers.get('Content-Range', ''))
             if response.status != 206 or not match:
                 raise RetrievalError('Source must honor byte ranges; full download refused')
@@ -81,8 +119,9 @@ class RangeVideo:
             if self.etag and etag != self.etag:
                 raise RetrievalError('Recording ETag changed')
             self.etag, self.total = etag, total
-            data = response.read(min(hi - lo + 2, self.max_bytes - self.bytes_read))
+            data = response.read(min(hi - lo + 2, remaining))
             self.bytes_read += len(data)
+            self.budget.used += len(data)
             if len(data) != hi - lo + 1:
                 raise RetrievalError('Incomplete or oversized range response')
             return data

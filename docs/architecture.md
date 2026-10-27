@@ -16,8 +16,8 @@ eligible source. Missing recipe selection falls back to a retained default image
 
 Adapters normalize recording URL and optional start timestamp. The OOI adapter
 searches up to 14 UTC days, parses only exact CAMHDA filenames on the expected
-date, ignores incomplete recent recordings for an hour, and picks the newest
-candidate. Missing directory entries are tolerated. The direct adapter supports
+date, ignores incomplete recent recordings for an hour, and returns up to three newest
+candidates for production search. Missing directory entries are tolerated. The direct adapter supports
 approved HTTPS MP4 archives without a new extractor. Live HLS, snapshots, APIs
 requiring credentials, and other containers need new small adapters; **not** all
 registry candidates are implemented adapters.
@@ -25,7 +25,7 @@ registry candidates are implemented adapters.
 Remote data goes through inherited proxies and TLS trust. FFmpeg connects only
 to a local bridge. Each upstream byte range is verified as 206 with consistent
 Content-Range/length/ETag, limited to 256 KiB, cached (32 MiB max), and charged
-against a default 64 MiB/recording budget. HTTP redirects remain within the
+against a default 64 MiB/source-search budget shared across recordings. HTTP redirects remain within the
 source's HTTPS hostname allowlist. A server ignoring ranges is refused before
 reading its body. A budget failure preserves the last good still, not a full-file
 fallback. OS/TLS buffering and HTTP headers are not included in measured payload
@@ -33,11 +33,15 @@ bytes; monitor runner-level transfer too. Multiple concurrent range requests are
 serialized upstream. The bridge serves complete requested ranges so FFmpeg does
 not confuse a cache block with end-of-file.
 
-FFmpeg seeks before decoding, samples uniformly across the whole pan, and limits
-threads and candidate count. Defaults: eight candidates, minimum 60-second
-sampling interval, 60-second subprocess timeout, at most 24-hour recordings.
-Maximum eight probes/seeks is not a claim that a particular source's GOP/codec
-will fit the budget. Ingest measures what actually happened.
+FFmpeg seeks before decoding and limits threads/candidate count. Production
+search now compares three recent unseen recordings with four coarse samples each,
+then four total fine samples around the strongest moments. Each recording has an
+eight-frame cap, coarse density defaults to a 60-second minimum interval, each
+subprocess times out after 60 seconds, and recordings are limited to 24 hours.
+The 64 MiB source-search cap applies to all coarse/fine retrieval together.
+The configuration does not promise that every GOP/codec fits the budget; partial
+coverage is reported and valid candidates survive other recording failures.
+See [search-and-cadence.md](search-and-cadence.md) for the hourly metadata observer.
 
 Quality combines sharpness, contrast, exposure, clipping, regional detail and
 composition. A recent 256-bit difference hash penalizes near duplicates, while
@@ -90,7 +94,7 @@ policies and billing budget; use spending controls appropriate to the account.
 
 For N sources at two runs/day over 30 days:
 
-- Max attempted video payload: N × 60 × 64 MiB = **3.75 GiB/month/source**,
+- Max attempted video payload per twice-daily production source search: N × 60 × 64 MiB = **3.75 GiB/month/source**,
   plus bounded discovery pages and protocol overhead. Identical/rejected known
   recordings are skipped before video transfer. Startup races or failed runs
   may still transfer data again.

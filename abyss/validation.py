@@ -15,23 +15,11 @@ from pathlib import Path
 from PIL import Image
 
 from .imaging import quality, render
-from .network import RangeVideo, RetrievalError, check_url, opener
+from .network import RangeVideo, RetrievalError, check_url, opener, classify_failure
 from .pipeline import utcnow
 from .publication import atomic_json
 from .registry import load
 from .video import extract
-
-
-def classify_failure(exc):
-    if isinstance(exc, urllib.error.HTTPError):
-        return 'upstream_http_error'
-    if isinstance(exc, urllib.error.URLError):
-        if 'tunnel connection failed' in str(exc.reason).lower():
-            return 'infrastructure_proxy_tunnel'
-        return 'network_path_error'
-    if isinstance(exc, RetrievalError):
-        return 'retrieval_constraint'
-    return 'processing_error'
 
 
 def validate(source, recording_url, *, max_bytes=64 * 1024 * 1024,

@@ -4,7 +4,6 @@ import os
 import tempfile
 from datetime import datetime
 from pathlib import Path
-from PIL import Image
 from .registry import eligible
 
 
@@ -27,6 +26,7 @@ def read_json(path, default):
 
 
 def publish(root, source, image, metadata, base_url):
+    from PIL import Image
     directory = Path(root) / 'public' / 'sources' / source['id']
     directory.mkdir(parents=True, exist_ok=True)
     # Immutable content-addressed image first; JSON is the commit point.

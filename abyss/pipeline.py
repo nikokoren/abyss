@@ -5,12 +5,13 @@ import time
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from PIL import Image
-from .adapters import discover
-from .imaging import quality, render
+from .adapters import discover_many
+from .imaging import render
 from .network import RangeVideo
 from .publication import atomic_json, catalog, publish, read_json
 from .registry import eligible
 from .video import extract
+from .search import search
 
 log = logging.getLogger(__name__)
 
@@ -48,28 +49,28 @@ def run_source(source, args):
         return 'cooldown'
     state['last_checked_at'] = now
     try:
-        recording = ({'url': 'local-fixture', 'recorded_at': args.recorded_at} if args.local_video else discover(source))
-        if recording['url'] in state.get('processed', []) and not args.force:
+        recordings = ([{'url': 'local-fixture', 'recorded_at': args.recorded_at}] if args.local_video
+                      else discover_many(source, limit=getattr(args, 'recordings', 3)))
+        known = set(state.get('processed', []))
+        pending = [r for r in recordings if args.force or r['url'] not in known]
+        if not pending:
             state.update(failures=0, last_result='unchanged')
             state.pop('retry_after', None)
             atomic_json(path, state)
             return 'unchanged'
         with tempfile.TemporaryDirectory(prefix='abyss-') as temporary:
-            frames, diagnostics = candidates(source, recording, temporary, args)
-            profile = source.get('scoring', {})
-            scored = []
-            for seconds, frame in frames:
-                with Image.open(frame) as image:
-                    metrics = quality(image, state.get('history', []), profile.get('novelty_weight', .12))
-                scored.append((metrics['score'], seconds, frame, metrics))
-            score, seconds, frame, metrics = max(scored, key=lambda x: x[0])
-            state['last_successful_retrieval'] = utcnow()
+            best, diagnostics, completed = search(source, pending, temporary, args, state.get('history', []))
             state['diagnostics'] = diagnostics
+            if best is None:
+                raise RuntimeError('No candidate frames extracted from recent recordings: ' +
+                                   '; '.join(e for r in diagnostics['recordings'] for e in r['errors'])[:1200])
+            recording, seconds, frame, metrics = best['recording'], best['seconds'], best['path'], best['quality']
+            score = metrics['score']
+            state['last_successful_retrieval'] = utcnow()
             state['failures'] = 0
             state.pop('retry_after', None)
-            # Remember rejected recordings too: no repeated large fetches for bad footage.
-            processed_recordings = (state.get('processed', []) + [recording['url']])[-256:]
-            if score < profile.get('min_score', .30):
+            processed_recordings = list(dict.fromkeys(state.get('processed', []) + completed))[-256:]
+            if score < source.get('scoring', {}).get('min_score', .30):
                 state['processed'] = processed_recordings
                 state['last_result'] = 'no acceptable candidates; retained last good image'
                 atomic_json(path, state)
@@ -90,7 +91,7 @@ def run_source(source, args):
                         'attribution': source['attribution'], 'attribution_url': source['attribution_url'],
                         'license': source['license'], 'license_url': source['license_url'],
                         'width': args.width, 'height': args.height, 'method': args.method, 'quality': metrics,
-                        'selection_reason': 'Best usable exposure, detail and regional composition with recent-frame similarity penalty',
+                        'selection_reason': 'Best coarse/fine candidate across recent recordings with quality and recent-image similarity scoring',
                         'diagnostics': diagnostics, 'fixture': bool(args.local_video)}
             publish(args.output, source, processed, metadata, args.base_url)
             state['processed'] = processed_recordings

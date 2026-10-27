@@ -1,0 +1,123 @@
+name: Observe OOI cadence and frame search
+on:
+  schedule:
+    - cron: '17 * * * *'
+  workflow_dispatch:
+    inputs:
+      benchmark:
+        description: Also run the bounded three-recording coarse-to-fine search
+        type: boolean
+        default: true
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/observe-ooi.yml
+      - abyss/adapters.py
+      - abyss/cadence.py
+      - abyss/search.py
+      - abyss/study.py
+permissions:
+  contents: write
+concurrency:
+  group: ooi-observations
+  cancel-in-progress: false
+jobs:
+  observe:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install video tools only for requested benchmark
+        if: github.event_name == 'push' || inputs.benchmark == true
+        run: |
+          sudo apt-get update && sudo apt-get install -y ffmpeg
+          python -m pip install -e .
+      - name: Restore observation history
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/ooi-study
+          set +e
+          git ls-remote --exit-code origin refs/heads/source-observations > /tmp/observation-ref
+          status=$?
+          set -e
+          if [ "$status" -eq 0 ]; then
+            git fetch --depth=1 origin refs/heads/source-observations:refs/remotes/origin/source-observations
+            git show origin/source-observations:observations/ooi-axial/state.json > /tmp/ooi-study/state.json
+          elif [ "$status" -ne 2 ]; then
+            exit "$status"
+          fi
+      - name: Observe archive and optionally benchmark search
+        id: study
+        continue-on-error: true
+        env:
+          RUN_BENCHMARK: ${{ github.event_name == 'push' || inputs.benchmark == true }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          arguments=()
+          if [ "$RUN_BENCHMARK" = true ]; then arguments+=(--benchmark); fi
+          python -m abyss.study --state /tmp/ooi-study/state.json \
+            --output /tmp/ooi-study "${arguments[@]}"
+      - name: Summarize measured observations
+        if: always()
+        run: |
+          python - <<'PYCODE'
+          import json, os
+          from pathlib import Path
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as summary:
+              summary.write('## OOI cadence and search\n\n')
+              for name in ('cadence', 'search'):
+                  path = Path('/tmp/ooi-study') / (name + '.json')
+                  if path.exists():
+                      report = json.loads(path.read_text())
+                      summary.write('### ' + name + '\n\n')
+                      for key in ('status', 'recordings_listed', 'recording_intervals_seconds', 'publication_delay_observations', 'failure'):
+                          if key in report: summary.write(f'- {key}: `{json.dumps(report[key])}`\n')
+                      if name == 'search':
+                          d = report.get('diagnostics', {})
+                          for key in ('recordings_considered', 'coarse_extracted', 'fine_extracted', 'bytes_downloaded', 'search_complete', 'elapsed_seconds'):
+                              summary.write(f'- {key}: `{d.get(key)}`\n')
+              summary.write('\nNo imagery published. Publication delay needs repeated observations; filename timezone is not yet independently confirmed.\n')
+          PYCODE
+      - name: Save metadata-only reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ooi-observations-${{ github.run_id }}-${{ github.run_attempt }}
+          path: /tmp/ooi-study/*.json
+          retention-days: 7
+          if-no-files-found: error
+      - name: Persist observation history and reports
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f /tmp/ooi-study/cadence.json
+          if git show-ref --verify --quiet refs/remotes/origin/source-observations; then
+            git checkout --detach refs/remotes/origin/source-observations
+          else
+            git checkout --orphan source-observations
+            git rm -rf --ignore-unmatch .
+          fi
+          mkdir -p observations/ooi-axial
+          if [ -f /tmp/ooi-study/state.json ]; then
+            cp /tmp/ooi-study/state.json observations/ooi-axial/state.json
+          else
+            echo '{}' > observations/ooi-axial/state.json
+          fi
+          cp /tmp/ooi-study/cadence.json observations/ooi-axial/latest-cadence.json
+          cp /tmp/ooi-study/cadence.json "observations/ooi-axial/${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}-cadence.json"
+          if [ -f /tmp/ooi-study/search.json ]; then
+            cp /tmp/ooi-study/search.json observations/ooi-axial/latest-search.json
+            cp /tmp/ooi-study/search.json "observations/ooi-axial/${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}-search.json"
+          fi
+          git add observations
+          git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Record OOI cadence and search observations'
+          git push origin HEAD:refs/heads/source-observations
+      - name: Report failed study
+        if: always() && steps.study.outcome != 'success'
+        run: exit 1
