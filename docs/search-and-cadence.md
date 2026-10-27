@@ -102,3 +102,31 @@ public standard-runner policy does not establish unlimited hosting/storage.
 Artifacts expire after seven days. Metadata-only Git history grows over time;
 monitor repository size and retire/reduce observation frequency once enough
 cadence and delay data has been collected.
+
+## First observed runner result — 28 October 2026 (Berlin)
+
+[GitHub run 40600427507](https://github.com/nikokoren/abyss/actions/runs/40600427507)
+completed successfully on tested commit `c094b56a98e341094290fe734113220c67b8f076`.
+Immutable metadata evidence was saved in commit
+`30c6908481b749a667d1ac71c7e351f54fec7171` on `source-observations`.
+
+The archive observation listed 24 recordings over 25–27 October (UTC filename
+dates); all 23 consecutive filename gaps were exactly 10,800 seconds, or three
+hours. There were zero publication-delay samples because this was the baseline.
+First appearance is not a guarantee that a file is complete/decodable; the
+production one-hour age filter and stable range/ETag checks remain in place.
+
+The adaptive search processed the 21:15, 18:15 and 15:15 UTC recordings from
+27 October. It extracted all 12 coarse frames and all four fine frames, with
+complete coverage and no seek errors or budget exhaustion. Transfer was
+44,501,800 bytes over 175 upstream range requests in 55.044 seconds, under the
+67,108,864-byte shared cap. The three full recordings total 2,847,869,733 bytes;
+the search retrieved about 1.56% of that payload.
+
+The winner was the 18:15 recording at offset 781.689 seconds, quality .938558.
+It was a coarse candidate; the fine samples did not outperform it. This run
+demonstrates choosing an older recording over the newest, without claiming
+refinement must always improve the score. No imagery was published.
+
+[Cadence report](evidence/ooi-20261028-cadence.json) ·
+[Adaptive-search report](evidence/ooi-20261028-search.json)

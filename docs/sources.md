@@ -27,7 +27,7 @@ are saved in [requirements.md](requirements.md).
 
 | Candidate | Location / subject | Access strategy to investigate | Cadence / latency | Reuse / attribution | Decision |
 |---|---|---|---|---|---|
-| OOI CAMHDA301, Regional Cabled Array | Axial Seamount, Ashes hydrothermal field; vents and seafloor | UTC directories, timestamped MP4, bounded HTTP range extraction | Unmeasured; timestamps in filenames need confirmation as UTC recording start | Institutional terms and required credit not yet verified | **Runner verified**; four seeks in 20.1 s / 10.26 MB; public release pending rights review |
+| OOI CAMHDA301, Regional Cabled Array | Axial Seamount, Ashes hydrothermal field; vents and seafloor | UTC directories, timestamped MP4, bounded HTTP range extraction | Observed three-hour filename gaps (23/23 across 24 files); publication delay and timezone interpretation remain separate checks | Institutional terms and required credit not yet verified | **Runner verified**; four seeks in 20.1 s / 10.26 MB; public release pending rights review |
 | Other OOI cameras | Observatory/instrument-dependent | First identify camera instrument IDs and comparable archives | Unknown | Must verify per dataset/instrument | No second camera ID invented; discovery pending |
 | Ocean Networks Canada | NE Pacific observatories; deep-seafloor habitat | Oceans 3.0 archive/API, direct media/snapshots if available | Unknown; do not imply live | Authentication, API terms and imagery reuse unverified | Research only; exclude until endpoint and terms confirmed |
 | NOAA Ocean Exploration | Expedition-dependent; ROV marine life and geology | Expedition archives, direct recordings/streams | Expedition-dependent, no continuous-feed promise | Check individual clip authorship; NOAA affiliation does not establish rights to every clip | Research only; unsuitable as a continuous default until validated |
@@ -100,3 +100,12 @@ and .938558. No semantic subject claim is inferred from those quality scores.
 No imagery was uploaded or published. Rights/attribution, filename timezone,
 recurring directory discovery and cadence remain separate checks. Codex's
 continued CONNECT denial does not override this deployment-environment success.
+
+## Cadence and multi-recording follow-up
+
+The [28 October runner study](search-and-cadence.md#first-observed-runner-result--28-october-2026-berlin)
+observed 24 files across three UTC dates with uniformly three-hour filename
+spacing. The shared adaptive search successfully compared three recent clips
+and refined promising moments within 44.5 MB / 55 seconds. Publication delay
+remains unmeasured from this baseline; hourly first-appearance collection is
+independent of rights approval and of public image refresh frequency.

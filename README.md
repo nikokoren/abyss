@@ -78,7 +78,9 @@ sources and intentionally fails a processing run until validation is complete.
 
 Production selection compares the three newest unseen recordings: four coarse
 samples each, then up to four extra samples around the strongest moments, under
-one shared 64 MiB video budget. The independent hourly metadata observer measures
+one shared 64 MiB video budget. The live runner benchmark extracted 16 frames
+across three recordings using 44.5 MB in 55 seconds and selected an older clip
+over the newest. The independent hourly metadata observer measures
 filename intervals and first appearances without repeatedly downloading video.
 See [search and cadence](docs/search-and-cadence.md) for exact limits, reporting,
 and how publication-delay observations differ from a baseline archive listing.

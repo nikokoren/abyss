@@ -15,8 +15,8 @@
         "rawdata.oceanobservatories.org"
       ],
       "discovery": "UTC date directories; timestamped CAMHDA301-YYYYMMDDTHHMMSS.mp4 files",
-      "cadence": "Not yet measured; do not assume a fixed schedule",
-      "expected_delay": "Unknown until measured",
+      "cadence": "Observed three-hour filename spacing: all 23 gaps across 24 recordings on 2026-10-25 through 2026-10-27. Sustained cadence is still monitored.",
+      "expected_delay": "Publication appearance delay is not yet measured; hourly observations are collecting. Listing appearance does not establish media completion.",
       "attribution": "Ocean Observatories Initiative, Regional Cabled Array / University of Washington",
       "attribution_url": "https://oceanobservatories.org/",
       "license": "Reuse and derived-still attribution requirements pending review",
@@ -41,12 +41,23 @@
         "deployment_tested_commit": "3de9e4b44bda650ac0cde9e94313a0fdb66475c1",
         "deployment_run_url": "https://github.com/nikokoren/abyss/actions/runs/40597267233",
         "deployment_evidence_commit": "3f989f17256ce8a4c33ac0450b57beae2b1c8902",
-        "local_environment_status": "infrastructure_proxy_tunnel"
+        "local_environment_status": "infrastructure_proxy_tunnel",
+        "multi_recording_search": {
+          "tested_commit": "c094b56a98e341094290fe734113220c67b8f076",
+          "run_url": "https://github.com/nikokoren/abyss/actions/runs/40600427507",
+          "evidence_commit": "30c6908481b749a667d1ac71c7e351f54fec7171",
+          "recordings": 3,
+          "coarse_frames": 12,
+          "fine_frames": 4,
+          "bytes_downloaded": 44501800,
+          "elapsed_seconds": 55.044,
+          "search_complete": true
+        }
       },
       "last_successful_retrieval": "2026-10-27T22:46:24.574855+00:00",
       "limitations": [
-        "Recording cadence, filename timezone and reuse terms require separate review",
-        "Runner benchmark covers one recording and four seeks; sustained scheduling reliability not yet measured"
+        "Publication delay, filename timezone and reuse terms require separate review",
+        "Adaptive benchmark covers three recordings; sustained operation is monitored separately"
       ],
       "scoring": {
         "min_score": 0.3,
@@ -57,7 +68,14 @@
         "workflow": "observe-ooi.yml",
         "branch": "source-observations",
         "path": "observations/ooi-axial/latest-cadence.json",
-        "status": "collection_pending"
+        "status": "baseline_observed",
+        "checked_at": "2026-10-27T23:12:26.486554+00:00",
+        "recordings_listed": 24,
+        "interval_samples": 23,
+        "median_interval_seconds": 10800,
+        "evidence_commit": "30c6908481b749a667d1ac71c7e351f54fec7171",
+        "run_url": "https://github.com/nikokoren/abyss/actions/runs/40600427507",
+        "publication_delay_observations": 0
       }
     },
     {

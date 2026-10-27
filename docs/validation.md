@@ -82,3 +82,22 @@ infrastructure-versus-origin error classification, technical/rights separation,
 and metadata-only validation with actual FFmpeg decoding. The first pushed
 commit's 21-test CI run also passed on GitHub-hosted runners. Public Pages
 deployment and TRMNL cloud/device rendering have not been executed.
+
+## Adaptive search and cadence follow-up — 28 October 2026 (Berlin)
+
+The expanded suite passed **35/35 tests** (10.257 seconds). New coverage includes
+shared transfer limits across recordings, cross-midnight discovery, fine-stage
+improvement, older-recording selection, partial recording failures, processed
+URL skips, and baseline versus repeated publication observations. Two successive
+observer restore/save/summary jobs were also simulated against a temporary Git
+remote; history and prior benchmark reports survived metadata-only runs.
+The metadata-only CLI imports with Python `-S`, verifying that hourly observations
+need no Pillow/NumPy installation.
+
+The [real GitHub study](https://github.com/nikokoren/abyss/actions/runs/40600427507)
+passed: 24 archive recordings, 23/23 filename gaps of three hours; 12 coarse + 4
+fine frames across three recordings, 44,501,800 bytes in 55.044 seconds, complete
+search under a shared 64 MiB budget. It selected the older 18:15 clip instead of
+the newest 21:15 clip. Baseline publication-delay samples remain zero; hourly
+metadata observation is configured to collect subsequent first appearances.
+See [search-and-cadence.md](search-and-cadence.md) and its linked evidence.
