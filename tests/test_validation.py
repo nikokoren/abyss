@@ -48,7 +48,9 @@ class ValidationTests(unittest.TestCase):
 
     def test_mac_evidence_is_accepted_and_rights_are_separate(self):
         ooi = load('sources.json')[0]
-        self.assertEqual(ooi['validation']['technical_status'], 'user_verified')
+        self.assertEqual(ooi['validation']['technical_status'], 'runner_verified')
+        self.assertEqual(ooi['validation']['user_verification']['verified_by'], 'user_on_mac')
+        self.assertEqual(ooi['validation']['deployment_environment_status'], 'passed')
         self.assertEqual(ooi['status'], 'pending_rights_review')
         self.assertFalse(eligible(ooi))
         ooi['validation']['terms_reviewed_at'] = '2026-10-27'

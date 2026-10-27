@@ -65,3 +65,20 @@ registry. It does not by itself establish runner bandwidth or grant reuse rights
 The `Validate OOI on GitHub runner` workflow tests the deployment network and
 extractor directly. Consult its exact run/report for the latest result; Codex's
 proxy restriction is not a source availability or release-rights determination.
+
+### Observed GitHub runner pass
+
+The exact-recording validation workflow passed on GitHub-hosted Ubuntu: HTTP
+200 headers, HTTP 206 / 1,024-byte range probe, four of four FFmpeg seeks and
+800×448 one-bit renders. It fetched 10,255,684 bytes out of 949,254,467
+(1.0804%), over 42 requests in 20.072 seconds.
+[Full evidence](evidence/ooi-20261027-github-actions.json) includes the run URL
+and tested code commit. The Mac proof and runner proof are recorded separately
+in the registry; technical status is now `runner_verified`. Public release
+remains gated by rights review, not Codex connectivity.
+
+The follow-up local suite passed **25/25 tests** (10.968 seconds), including
+infrastructure-versus-origin error classification, technical/rights separation,
+and metadata-only validation with actual FFmpeg decoding. The first pushed
+commit's 21-test CI run also passed on GitHub-hosted runners. Public Pages
+deployment and TRMNL cloud/device rendering have not been executed.

@@ -5,8 +5,9 @@ research recordings, ranks frames, produces monochrome e-paper stills, and serve
 attributed metadata for a source-selectable TRMNL recipe.
 
 **Status: implemented; OOI access, range support and visible vent footage were
-verified by the user on a Mac.** The separate GitHub-runner validation workflow
-checks the actual deployment network and records measured extraction results.
+verified by the user on a Mac.** GitHub-hosted validation also passed: four frame seeks, 10.26 MB of video
+payload (1.08% of the 949 MB recording), in 20.1 seconds. See the
+[runner report](docs/evidence/ooi-20261027-github-actions.json).
 Codex's proxy restriction is an infrastructure limitation, not an upstream OOI
 failure. Public recipe release still needs licensing/attribution review and
 recurring discovery/freshness checks. See [runner validation](docs/runner-validation.md),

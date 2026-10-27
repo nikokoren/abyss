@@ -80,7 +80,9 @@ On 2026-10-27, current files in `github/docs` were retrieved over HTTPS:
 
 Prototype: standard `ubuntu-24.04` runners, two runs/day (03:23 and 15:23 UTC),
 20-minute job ceiling, GitHub Pages custom deployment. No paid API/model/storage
-is required. No actual GitHub run or billing dashboard measurement has happened.
+is required. A subsequent technical validation ran on GitHub-hosted Ubuntu and extracted
+four real OOI frames within the byte budget; see the saved runner evidence.
+No billing dashboard measurement or recurring Pages deployment has happened.
 Before enabling recurring runs, confirm the repo's visibility/plan, organization
 policies and billing budget; use spending controls appropriate to the account.
 

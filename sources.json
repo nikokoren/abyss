@@ -23,21 +23,30 @@
       "license_url": "https://oceanobservatories.org/data/",
       "status": "pending_rights_review",
       "validation": {
-        "retrieval_at": "2026-10-27",
+        "retrieval_at": "2026-10-27T22:46:24.574855+00:00",
         "terms_reviewed_at": null,
-        "evidence": "User-reported Mac verification: HTTP 200 video/mp4, 949254467 bytes, Accept-Ranges bytes; GET bytes=0-1023 returned 206 with exactly 1024 bytes; FFmpeg decoded a viewed hydrothermal-vent frame.",
-        "technical_status": "user_verified",
+        "evidence": "https://github.com/nikokoren/abyss/blob/3f989f17256ce8a4c33ac0450b57beae2b1c8902/validation/ooi-axial/latest.json",
+        "technical_status": "runner_verified",
         "recording_url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/10/27/CAMHDA301-20261027T181500.mp4",
-        "verified_by": "user_on_mac",
-        "deployment_environment_status": "pending_runner_check",
+        "verified_by": "github_actions",
+        "deployment_environment_status": "passed",
         "deployment_evidence_branch": "source-validation",
-        "deployment_evidence_path": "validation/ooi-axial/latest.json"
+        "deployment_evidence_path": "validation/ooi-axial/latest.json",
+        "user_verification": {
+          "verified_at": "2026-10-27",
+          "verified_by": "user_on_mac",
+          "evidence": "User-reported Mac verification: HTTP 200 video/mp4, 949254467 bytes, Accept-Ranges bytes; GET bytes=0-1023 returned 206 with exactly 1024 bytes; FFmpeg decoded a viewed hydrothermal-vent frame.",
+          "recording_url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/10/27/CAMHDA301-20261027T181500.mp4"
+        },
+        "deployment_tested_commit": "3de9e4b44bda650ac0cde9e94313a0fdb66475c1",
+        "deployment_run_url": "https://github.com/nikokoren/abyss/actions/runs/40597267233",
+        "deployment_evidence_commit": "3f989f17256ce8a4c33ac0450b57beae2b1c8902",
+        "local_environment_status": "infrastructure_proxy_tunnel"
       },
-      "last_successful_retrieval": null,
+      "last_successful_retrieval": "2026-10-27T22:46:24.574855+00:00",
       "limitations": [
-        "Codex proxy denies CONNECT before origin access; this is not an OOI outage",
-        "Access, byte ranges and visible vent frame verified by user on Mac; runner extraction benchmark pending",
-        "Recording cadence, filename timezone and reuse terms require separate review"
+        "Recording cadence, filename timezone and reuse terms require separate review",
+        "Runner benchmark covers one recording and four seeks; sustained scheduling reliability not yet measured"
       ],
       "scoring": {
         "min_score": 0.3,

@@ -1,7 +1,8 @@
 # Source discovery audit
 
 Audit date: 2026-10-27. **Update:** OOI access, byte ranges and a visible
-vent frame are user-verified on a Mac; the remaining release review is separate
+vent frame are user-verified on a Mac. GitHub-hosted retrieval and four FFmpeg
+seeks also passed; the remaining release review is separate
 from Codex network reachability. See [runner validation](runner-validation.md).
 
 The initial audit below records what was observable in Codex before that evidence
@@ -26,7 +27,7 @@ are saved in [requirements.md](requirements.md).
 
 | Candidate | Location / subject | Access strategy to investigate | Cadence / latency | Reuse / attribution | Decision |
 |---|---|---|---|---|---|
-| OOI CAMHDA301, Regional Cabled Array | Axial Seamount, Ashes hydrothermal field; vents and seafloor | UTC directories, timestamped MP4, bounded HTTP range extraction | Unmeasured; timestamps in filenames need confirmation as UTC recording start | Institutional terms and required credit not yet verified | **First technical candidate**; implemented adapter, blocked before origin retrieval; excluded from dropdown |
+| OOI CAMHDA301, Regional Cabled Array | Axial Seamount, Ashes hydrothermal field; vents and seafloor | UTC directories, timestamped MP4, bounded HTTP range extraction | Unmeasured; timestamps in filenames need confirmation as UTC recording start | Institutional terms and required credit not yet verified | **Runner verified**; four seeks in 20.1 s / 10.26 MB; public release pending rights review |
 | Other OOI cameras | Observatory/instrument-dependent | First identify camera instrument IDs and comparable archives | Unknown | Must verify per dataset/instrument | No second camera ID invented; discovery pending |
 | Ocean Networks Canada | NE Pacific observatories; deep-seafloor habitat | Oceans 3.0 archive/API, direct media/snapshots if available | Unknown; do not imply live | Authentication, API terms and imagery reuse unverified | Research only; exclude until endpoint and terms confirmed |
 | NOAA Ocean Exploration | Expedition-dependent; ROV marine life and geology | Expedition archives, direct recordings/streams | Expedition-dependent, no continuous-feed promise | Check individual clip authorship; NOAA affiliation does not establish rights to every clip | Research only; unsuitable as a continuous default until validated |
@@ -71,11 +72,31 @@ For `CAMHDA301-20261027T181500.mp4`, the user reported HTTP 200,
 A GET for bytes 0–1023 returned HTTP 206 and exactly 1,024 bytes. FFmpeg
 successfully decoded a frame that the user viewed and identified as a
 hydrothermal vent. This is evidence of source usability, recorded as
-`technical_status: user_verified` with Mac provenance in the registry. It is
-not represented as an agent-observed or GitHub-runner-observed measurement.
+`technical_status: user_verified` with Mac provenance preserved in the registry. This evidence remains
+distinct from the subsequent agent-observed GitHub runner report.
 
 A later Codex retry still returned proxy CONNECT 403 before origin access.
 GitHub-hosted validation runs independently of that restriction. Its metadata
 report on the `source-validation` branch is authoritative for that runner/run,
-not an inference from either the Mac or Codex. OOI's release status is now
+not an inference from either the Mac or Codex. OOI's release status is
 `pending_rights_review`, rather than blocked solely by Codex infrastructure.
+
+## GitHub-hosted result (observed)
+
+[Run 40597267233](https://github.com/nikokoren/abyss/actions/runs/40597267233)
+produced a technical **pass** for the supplied recording, on tested commit
+`3de9e4b44bda650ac0cde9e94313a0fdb66475c1`. The immutable evidence commit
+is `3f989f17256ce8a4c33ac0450b57beae2b1c8902` on `source-validation`.
+A copy is retained at [evidence/ooi-20261027-github-actions.json](evidence/ooi-20261027-github-actions.json).
+
+HEAD: 200, video/mp4, 949,254,467 bytes, Accept-Ranges bytes. The exact
+0–1023 probe returned 206 / 1,024 bytes. H.264 duration was 893.359 seconds.
+All four frame seeks decoded at 960×540 and rendered at 800×448 one-bit.
+Payload transfer was 10,255,684 bytes in 42 requests (1.0804% of the recording);
+measured validation time was 20.072 seconds, excluding runner setup.
+The first low-detail frame scored zero; the others scored .887889, .897527
+and .938558. No semantic subject claim is inferred from those quality scores.
+
+No imagery was uploaded or published. Rights/attribution, filename timezone,
+recurring directory discovery and cadence remain separate checks. Codex's
+continued CONNECT denial does not override this deployment-environment success.
