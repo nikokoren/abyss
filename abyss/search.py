@@ -4,6 +4,7 @@ import time
 from pathlib import Path
 from PIL import Image
 from .imaging import quality
+from .preferences import ImageEncoder, load_model, rank
 from .network import RangeVideo, TransferBudget
 from .video import extract_positions, probe
 
@@ -21,14 +22,38 @@ def search(source, recordings, directory, args, history=()):
     budget = TransferBudget(args.max_bytes)
     sessions, candidates = [], []
     profile = source.get('scoring', {})
+    model = load_model(getattr(args, 'preference_model', None))
+    encoder = getattr(args, 'preference_encoder', None)
+    sink = getattr(args, 'review_sink', None)
+    preference_error = None
+    if model and encoder is None:
+        try:
+            encoder = ImageEncoder()
+        except Exception as exc:
+            preference_error = str(exc)[:500]
+            model = None
 
     def score_frames(frames, session, stage):
+        nonlocal model, encoder, preference_error
         for seconds, path in frames:
             with Image.open(path) as image:
                 metrics = quality(image, history, profile.get('novelty_weight', .12))
-            candidates.append({'recording': session['recording'], 'seconds': seconds,
-                               'path': path, 'quality': metrics, 'stage': stage,
-                               'session': session})
+                try:
+                    features = encoder.encode(image, metrics) if encoder else None
+                except Exception as exc:
+                    if sink:
+                        raise
+                    preference_error = str(exc)[:500]
+                    model, encoder, features = None, None, None
+                    for previous in candidates:
+                        previous.update(rank(previous['quality'], None, None))
+                preference = rank(metrics, features, model)
+                candidate = {'recording': session['recording'], 'seconds': seconds,
+                             'path': path, 'quality': metrics, 'stage': stage,
+                             'session': session, **preference}
+                candidates.append(candidate)
+                if sink:
+                    sink(candidate, image, features)
             session['positions'].add(round(seconds, 3))
 
     with contextlib.ExitStack() as stack:
@@ -61,7 +86,7 @@ def search(source, recordings, directory, args, history=()):
 
         # Only refine promising, technically usable moments. Deduplicate offsets
         # within a recording and honor both total and per-recording candidate caps.
-        promising = sorted(candidates, key=lambda c: c['quality']['score'], reverse=True)
+        promising = sorted(candidates, key=lambda c: c['selection_score'], reverse=True)
         chosen, used = [], 0
         for candidate in promising:
             session = candidate['session']
@@ -113,8 +138,11 @@ def search(source, recordings, directory, args, history=()):
                         'bytes_downloaded': video.bytes_read if video else 0,
                         'upstream_requests': video.requests if video else 0, 'errors': errors,
                         'recording_bytes': video.total if video else None})
-    best = max(candidates, key=lambda c: (c['quality']['score'], c['recording'].get('recorded_at') or ''), default=None)
-    diagnostics = {'strategy': 'coarse_to_fine', 'recordings_considered': len(recordings),
+    usable = [c for c in candidates if c['quality']['score'] >= profile.get('min_score', .30)]
+    best = max(usable or candidates, key=lambda c: (c['selection_score'] if usable else c['quality']['score'], c['recording'].get('recorded_at') or ''), default=None)
+    diagnostics = {'strategy': 'coarse_to_fine',
+                   'preference': {'model_id': model['model_id'] if model else None,
+                                  'status': 'active' if model else 'quality_fallback', 'error': preference_error}, 'recordings_considered': len(recordings),
                    'candidates_extracted': len(candidates), 'coarse_extracted': sum(s['coarse_extracted'] for s in sessions),
                    'fine_extracted': sum(s['fine_extracted'] for s in sessions),
                    'bytes_downloaded': budget.used, 'byte_budget': budget.limit,
@@ -123,5 +151,6 @@ def search(source, recordings, directory, args, history=()):
                    'budget_exhausted': any('budget' in e.lower() for r in reports for e in r['errors']),
                    'elapsed_seconds': round(time.monotonic() - started, 3), 'recordings': reports,
                    'candidate_scores': [{'recording_url': c['recording']['url'], 'frame_seconds': c['seconds'],
-                                         'stage': c['stage'], **c['quality']} for c in candidates]}
+                                         'stage': c['stage'], 'selection_score': c['selection_score'],
+                                         'preference_score': c['preference_score'], **c['quality']} for c in candidates]}
     return best, diagnostics, completed

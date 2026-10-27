@@ -1,0 +1,64 @@
+name: Learn image preferences
+on:
+  issues:
+    types: [opened, edited]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  learn:
+    if: >-
+      github.actor == (vars.PREFERENCE_REVIEWER || github.repository_owner) &&
+      (github.event_name == 'workflow_dispatch' ||
+      (github.event.issue.user.login == (vars.PREFERENCE_REVIEWER || github.repository_owner) &&
+      startsWith(github.event.issue.title, 'Abyss preferences')))
+    concurrency:
+      group: preference-state
+      cancel-in-progress: false
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    env:
+      PREFERENCE_REVIEWER: ${{ vars.PREFERENCE_REVIEWER || github.repository_owner }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -e .
+      - name: Restore trusted manifests and prior feedback
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/preference-state
+          git fetch --depth=1 origin refs/heads/preference-data:refs/remotes/origin/preference-data
+          git archive origin/preference-data | tar -x -C /tmp/preference-state
+      - name: Validate feedback and train ranking model
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          arguments=()
+          if [ "$EVENT_NAME" = issues ]; then arguments+=(--event "$GITHUB_EVENT_PATH"); fi
+          python scripts/preference_feedback.py --state /tmp/preference-state \
+            --reviewer "$PREFERENCE_REVIEWER" "${arguments[@]}"
+          python - <<'PYCODE'
+          import json, os
+          from pathlib import Path
+          report = json.loads(Path('/tmp/preference-state/training-report.json').read_text())
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as summary:
+              summary.write('## Personal preference learning\n\n')
+              for key in ('status', 'reviewer', 'comparisons', 'pairwise_comparisons', 'neither_comparisons', 'evaluation', 'model_id'):
+                  summary.write(f'- {key}: `{json.dumps(report[key])}`\n')
+              summary.write('\nThe production pipeline and next gallery load this model; technical readability checks remain in force.\n')
+          PYCODE
+      - name: Persist feedback and model (never force push)
+        run: |
+          set -euo pipefail
+          git checkout --detach refs/remotes/origin/preference-data
+          cp -a /tmp/preference-state/. .
+          git add model.json training-report.json
+          if [ -d feedback ]; then git add feedback; fi
+          if ! git diff --cached --quiet; then
+            git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Learn configured reviewer image preferences'
+            git push origin HEAD:refs/heads/preference-data
+          fi

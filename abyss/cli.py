@@ -25,6 +25,7 @@ def main():
         p.add_argument('--max-bytes', type=int, default=64 * 1024 * 1024)
         p.add_argument('--candidates', type=int, default=8, help='Maximum frames per recording including refinement')
         p.add_argument('--recordings', type=int, default=3)
+        p.add_argument('--preference-model', default='preferences/model.json')
         p.add_argument('--coarse-candidates', type=int, default=4)
         p.add_argument('--refine-candidates', type=int, default=4, help='Total extra frame seeks across the search')
         p.add_argument('--refine-windows', type=int, default=2)

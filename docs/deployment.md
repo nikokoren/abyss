@@ -57,6 +57,14 @@ does not generate new public images every hour. Disable/reduce its frequency
 when enough recording/publication observations are available; include its runner
 startup costs if using a private repository.
 
+## Personal preference learning
+
+`review-gallery.yml` generates daily/manual review downloads and trusted feature
+manifests. `train-preferences.yml` learns from owner-authored GitHub feedback
+issues. Both persist to `preference-data`; the production workflow restores its
+ready model and CPU encoder when needed. This does not publish the gallery on
+Pages or bypass scientific source-rights approval. See [preferences.md](preferences.md).
+
 ## Last-good and restart behavior
 
 `ocean-output` contains only generated `public/` and `state/` directories. Each

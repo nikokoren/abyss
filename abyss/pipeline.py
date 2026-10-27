@@ -12,6 +12,7 @@ from .publication import atomic_json, catalog, publish, read_json
 from .registry import eligible
 from .video import extract
 from .search import search
+from .preferences import load_model
 
 log = logging.getLogger(__name__)
 
@@ -51,7 +52,9 @@ def run_source(source, args):
     try:
         recordings = ([{'url': 'local-fixture', 'recorded_at': args.recorded_at}] if args.local_video
                       else discover_many(source, limit=getattr(args, 'recordings', 3)))
-        known = set(state.get('processed', []))
+        preference = load_model(getattr(args, 'preference_model', None))
+        requested_model_id = preference['model_id'] if preference else None
+        known = set(state.get('processed', [])) if state.get('preference_model_id') == requested_model_id else set()
         pending = [r for r in recordings if args.force or r['url'] not in known]
         if not pending:
             state.update(failures=0, last_result='unchanged')
@@ -72,6 +75,7 @@ def run_source(source, args):
             processed_recordings = list(dict.fromkeys(state.get('processed', []) + completed))[-256:]
             if score < source.get('scoring', {}).get('min_score', .30):
                 state['processed'] = processed_recordings
+                state['preference_model_id'] = diagnostics.get('preference', {}).get('model_id')
                 state['last_result'] = 'no acceptable candidates; retained last good image'
                 atomic_json(path, state)
                 return 'rejected'
@@ -90,11 +94,13 @@ def run_source(source, args):
                         'processed_at': utcnow(), 'published_at': utcnow(), 'original_url': recording['url'],
                         'attribution': source['attribution'], 'attribution_url': source['attribution_url'],
                         'license': source['license'], 'license_url': source['license_url'],
+                        'preference': diagnostics.get('preference'), 'selection_score': best.get('selection_score', score),
                         'width': args.width, 'height': args.height, 'method': args.method, 'quality': metrics,
-                        'selection_reason': 'Best coarse/fine candidate across recent recordings with quality and recent-image similarity scoring',
+                        'selection_reason': 'Best readable coarse/fine candidate using quality, novelty and any active personal preference model',
                         'diagnostics': diagnostics, 'fixture': bool(args.local_video)}
             publish(args.output, source, processed, metadata, args.base_url)
             state['processed'] = processed_recordings
+            state['preference_model_id'] = diagnostics.get('preference', {}).get('model_id')
             state['history'] = (state.get('history', []) + [metrics['fingerprint']])[-24:]
             state['last_published_at'] = metadata['published_at']
             state['last_result'] = 'published'

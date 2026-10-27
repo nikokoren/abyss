@@ -85,10 +85,21 @@ filename intervals and first appearances without repeatedly downloading video.
 See [search and cadence](docs/search-and-cadence.md) for exact limits, reporting,
 and how publication-delay observations differ from a baseline archive listing.
 
+## Train your preferences
+
+A self-contained A/B review gallery supports neither/repetitive choices, browser
+saving, backups and GitHub feedback submission. A CPU image encoder and small
+ranking model learn from your choices and guide both refinement and selection.
+Download the latest **Build preference review gallery** Actions artifact to start;
+there are no invented preference labels in the initial model.
+See [the preference guide](docs/preferences.md) for the complete workflow.
+
 ## Project map
 
 - `abyss/network.py`: allowlisted HTTPS, capped byte ranges, FFmpeg loopback bridge.
 - `abyss/adapters.py`: OOI UTC directory discovery and configurable direct-file adapter.
+- `abyss/preferences.py`, `abyss/feedback.py`: pretrained appearance features and owner-authored preference learning.
+- `abyss/review.py`, `web/review/`: downloadable review gallery and backup/submission flow.
 - `abyss/search.py`: bounded multi-recording coarse/fine selection.
 - `abyss/cadence.py`, `abyss/study.py`: hourly archive observations and runner benchmark.
 - `abyss/imaging.py`: quality/novelty scoring and e-paper rendering.

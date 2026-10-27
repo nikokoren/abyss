@@ -1,0 +1,118 @@
+"""Build a self-contained A/B gallery and an immutable feature manifest."""
+import argparse
+import base64
+import io
+import json
+import os
+import re
+import tempfile
+import time
+from datetime import datetime, timezone
+from pathlib import Path
+from PIL import Image
+from .adapters import discover_many
+from .feedback import batch_id
+from .imaging import render
+from .preferences import FEATURE_SPACE, ImageEncoder, digest, load_model
+from .publication import atomic_json, read_json
+from .registry import load
+from .search import search
+
+
+def data_url(image):
+    out = io.BytesIO(); image.save(out, format='PNG')
+    return 'data:image/png;base64,' + base64.b64encode(out.getvalue()).decode()
+
+
+class Gallery:
+    def __init__(self, source, reviewer, repo, model=None):
+        self.source, self.reviewer, self.repo, self.model = source, reviewer, repo, model
+        self.candidates, self.images = {}, {}
+
+    def add(self, candidate, image, features):
+        if features is None:
+            raise ValueError('Gallery needs pretrained image features')
+        import hashlib
+        pixels = hashlib.sha256(image.convert('RGB').tobytes()).hexdigest()
+        identity = digest([self.source['id'], candidate['recording']['url'], round(candidate['seconds'], 3), pixels, FEATURE_SPACE])[:32]
+        metrics = candidate['quality']
+        self.candidates[identity] = {'id': identity, 'source_id': self.source['id'],
+            'source_name': self.source['name'], 'recording_url': candidate['recording']['url'],
+            'recorded_at': candidate['recording'].get('recorded_at'), 'frame_seconds': round(candidate['seconds'], 3),
+            'stage': candidate['stage'], 'features': features, 'fingerprint': metrics['fingerprint'],
+            'quality_score': metrics['score'], 'selection_score': candidate['selection_score'],
+            'preference_score': candidate.get('preference_score'), 'fixture': bool(self.source.get('fixture'))}
+        raw = image.convert('RGB'); raw.thumbnail((640, 400), Image.Resampling.LANCZOS)
+        paper = render(image)
+        self.images[identity] = {'original': data_url(raw), 'paper': data_url(paper)}
+
+    def save(self, output, encoder, diagnostics):
+        if len(self.candidates) < 2:
+            raise ValueError('At least two decoded frames are needed for review')
+        manifest = {'schema_version': 1, 'feature_space': FEATURE_SPACE,
+                    'reviewer': self.reviewer, 'repository': self.repo,
+                    'created_at': datetime.now(timezone.utc).isoformat(),
+                    'encoder': encoder.provenance, 'candidates': self.candidates,
+                    'source_attribution': self.source.get('attribution'),
+                    'source_license': self.source.get('license'),
+                    'source_url': self.source.get('attribution_url')}
+        manifest['batch_id'] = batch_id(manifest)
+        public_candidates = [{k: v for k, v in c.items() if k not in ('features', 'fingerprint')}
+                             | self.images[key] for key, c in self.candidates.items()]
+        data = {'batch_id': manifest['batch_id'], 'reviewer': self.reviewer, 'repository': self.repo,
+                'candidates': public_candidates, 'attribution': manifest['source_attribution'],
+                'license': manifest['source_license'], 'source_url': manifest['source_url'],
+                'model': ({k: self.model.get(k) for k in ('status', 'comparisons', 'trained_at', 'evaluation')}
+                          if self.model else {'status': 'needs_more_feedback', 'comparisons': 0})}
+        resources = Path(__file__).resolve().parent.parent / 'web' / 'review'
+        template = (resources / 'index.html').read_text()
+        safe_json = json.dumps(data, separators=(',', ':'), allow_nan=False).replace('<', '\\u003c').replace('&', '\\u0026')
+        html = template.replace('__ABYSS_DATA__', safe_json).replace('__REVIEW_CORE__', (resources / 'core.js').read_text()).replace('__REVIEW_APP__', (resources / 'app.js').read_text())
+        output = Path(output); output.mkdir(parents=True, exist_ok=True)
+        (output / 'index.html').write_text(html)
+        atomic_json(output / 'manifest.json', manifest)
+        atomic_json(output / 'gallery-report.json', {'schema_version': 1, 'batch_id': manifest['batch_id'],
+                    'candidate_count': len(self.candidates), 'encoder': encoder.provenance,
+                    'reviewer': self.reviewer, 'diagnostics': diagnostics,
+                    'run_url': (f'https://github.com/{self.repo}/actions/runs/{os.environ["GITHUB_RUN_ID"]}'
+                                if os.environ.get('GITHUB_RUN_ID') else None),
+                    'artifact_name': 'abyss-review-gallery', 'public_pages_publication': False, 'distribution': 'GitHub Actions review artifact; access follows repository artifact permissions'})
+        return manifest
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--registry', default='sources.json')
+    parser.add_argument('--source', default='ooi-axial')
+    parser.add_argument('--output', default='output/review')
+    parser.add_argument('--reviewer', default=os.environ.get('PREFERENCE_REVIEWER', 'nikokoren'))
+    parser.add_argument('--repository', default=os.environ.get('GITHUB_REPOSITORY', 'nikokoren/abyss'))
+    parser.add_argument('--preference-model', default='preferences/model.json')
+    parser.add_argument('--max-bytes', type=int, default=64 * 1024 * 1024)
+    parser.add_argument('--local-video')
+    args = parser.parse_args()
+    if not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9-]{0,38}', args.reviewer) or not re.fullmatch(r'[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+', args.repository):
+        parser.error('Invalid GitHub reviewer or repository')
+    source = next((s for s in load(args.registry) if s['id'] == args.source), None)
+    if not source:
+        parser.error('Unknown source')
+    if args.local_video and not source.get('fixture'):
+        parser.error('Local review video requires a fixture-only source')
+    model = load_model(args.preference_model)
+    started = time.monotonic(); encoder = ImageEncoder()
+    metadata = read_json(args.preference_model, {})
+    if not model and (metadata.get('status') != 'needs_more_feedback' or metadata.get('feature_space') != FEATURE_SPACE or metadata.get('reviewer') != args.reviewer):
+        metadata = None
+    gallery = Gallery(source, args.reviewer, args.repository, model or metadata)
+    records = ([{'url': 'local-fixture', 'recorded_at': None}] if args.local_video else discover_many(source, limit=3))
+    search_args = argparse.Namespace(local_video=args.local_video, max_bytes=args.max_bytes, candidates=8,
+                    coarse_candidates=4, refine_candidates=4, refine_windows=2, interval=1 if args.local_video else 60,
+                    preference_model=args.preference_model, preference_encoder=encoder, review_sink=gallery.add)
+    with tempfile.TemporaryDirectory(prefix='abyss-review-') as tmp:
+        _, diagnostics, _ = search(source, records, tmp, search_args)
+        diagnostics['gallery_elapsed_seconds'] = round(time.monotonic() - started, 3)
+        manifest = gallery.save(args.output, encoder, diagnostics)
+    print(json.dumps({'batch_id': manifest['batch_id'], 'candidates': len(manifest['candidates']), 'output': args.output}))
+
+
+if __name__ == '__main__': main()
