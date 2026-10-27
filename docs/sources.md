@@ -1,6 +1,11 @@
 # Source discovery audit
 
-Audit date: 2026-10-27. This is an evidence ledger, not a claim that all candidate
+Audit date: 2026-10-27. **Update:** OOI access, byte ranges and a visible
+vent frame are user-verified on a Mac; the remaining release review is separate
+from Codex network reachability. See [runner validation](runner-validation.md).
+
+The initial audit below records what was observable in Codex before that evidence
+was supplied. This is an evidence ledger, not a claim that all candidate
 institutions have been investigated successfully. Original product requirements
 are saved in [requirements.md](requirements.md).
 
@@ -9,7 +14,8 @@ are saved in [requirements.md](requirements.md).
 - The supplied OOI MP4 and archive directory were requested via the managed HTTPS
   proxy. Both returned `CONNECT tunnel failed, response 403` before origin access.
   This establishes an **environment policy restriction**, not an OOI outage,
-  missing footage, range incompatibility, or a licensing conclusion.
+  missing footage, range incompatibility, or a licensing conclusion. This remains
+  true even after accepting the user's successful Mac checks.
 - A draft network allowlist was saved for OOI, NOAA, MBARI, ONC, GitHub docs, and
   TRMNL docs. Saving the draft did not grant current runtime access.
 - Public GitHub access worked. The public TRMNL plugin repository and a community
@@ -31,9 +37,9 @@ Links: [OOI archive](https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B
 [ONC](https://www.oceannetworks.ca/), [MBARI](https://www.mbari.org/).
 These are discovery leads, not citations asserting verified technical properties.
 
-All four registry candidates are excluded from release. None is permanently
+All four registry candidates are excluded from public recipe release pending rights/retrieval requirements specific to each source. None is permanently
 rejected as a scientific source. They are rejected from the **initial dropdown**
-because there is no completed retrieval/rights validation. No suitable second or
+because rights review remains incomplete for OOI, and the other candidates lack both technical and rights validation. No suitable second or
 third source has yet been established; the two-source behavior is fixture-tested.
 
 ## Required real-source measurements
@@ -57,3 +63,19 @@ If rights remain ambiguous, obtain permission or keep the source disabled.
 Compare ordered, Floyd, threshold and grayscale on actual scenes and a physical
 device before treating the rendering defaults as tuned. Actual ocean image
 quality, bandwidth and pan coverage remain unknown.
+
+## User-provided verification (accepted, separate provenance)
+
+For `CAMHDA301-20261027T181500.mp4`, the user reported HTTP 200,
+`Content-Type: video/mp4`, `Content-Length: 949254467`, and `Accept-Ranges: bytes`.
+A GET for bytes 0–1023 returned HTTP 206 and exactly 1,024 bytes. FFmpeg
+successfully decoded a frame that the user viewed and identified as a
+hydrothermal vent. This is evidence of source usability, recorded as
+`technical_status: user_verified` with Mac provenance in the registry. It is
+not represented as an agent-observed or GitHub-runner-observed measurement.
+
+A later Codex retry still returned proxy CONNECT 403 before origin access.
+GitHub-hosted validation runs independently of that restriction. Its metadata
+report on the `source-validation` branch is authoritative for that runner/run,
+not an inference from either the Mac or Codex. OOI's release status is now
+`pending_rights_review`, rather than blocked solely by Codex infrastructure.

@@ -4,11 +4,13 @@ A cloud-run underwater camera discovery and image-selection pipeline. It samples
 research recordings, ranks frames, produces monochrome e-paper stills, and serves
 attributed metadata for a source-selectable TRMNL recipe.
 
-**Status: implemented and fixture-tested; not yet a validated ocean feed.**
-OOI access was denied by this build environment's outbound policy. No scientific
-source has been promoted to the dropdown, no imagery rights have been assumed,
-and no scientific feed has been deployed. See [source audit](docs/sources.md) and
-[acceptance status](docs/validation.md).
+**Status: implemented; OOI access, range support and visible vent footage were
+verified by the user on a Mac.** The separate GitHub-runner validation workflow
+checks the actual deployment network and records measured extraction results.
+Codex's proxy restriction is an infrastructure limitation, not an upstream OOI
+failure. Public recipe release still needs licensing/attribution review and
+recurring discovery/freshness checks. See [runner validation](docs/runner-validation.md),
+[source audit](docs/sources.md), and [acceptance status](docs/validation.md).
 
 ## Develop
 

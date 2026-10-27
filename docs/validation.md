@@ -49,9 +49,19 @@ NumPy 2.2.6. Dependencies installed in `.venv`; no API keys used.
 | Quotas and free tiers | Current public GitHub docs checked; cost model/caps | Account plan and real recurring run measurements |
 | Source rights | Release eligibility requires real reviewed evidence | All scientific candidates still pending |
 
-No hosted run, working ocean dropdown, source licensing clearance, physical
-e-paper quality, or zero-cost production operation is claimed. Source discovery
+The initial build did not verify a hosted run, working ocean dropdown, source licensing clearance, physical
+e-paper quality, or zero-cost production operation. Source discovery
 beyond initial candidates is incomplete due environment access restrictions.
 Subject recognition and automatic subject-following crops are optional future
 extensions. GitHub publication and TRMNL import require account-level actions;
 local development and fixture tests are ready for continued implementation.
+
+## Follow-up: accepted external proof and deployment checks
+
+The user has independently verified the exact OOI recording on a Mac: full
+HTTP response headers, successful 1,024-byte range response, and a decoded and
+viewed hydrothermal vent frame. That technical evidence is accepted in the
+registry. It does not by itself establish runner bandwidth or grant reuse rights.
+The `Validate OOI on GitHub runner` workflow tests the deployment network and
+extractor directly. Consult its exact run/report for the latest result; Codex's
+proxy restriction is not a source availability or release-rights determination.

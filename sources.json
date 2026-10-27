@@ -11,7 +11,9 @@
       "type": "periodic_recording",
       "adapter": "ooi_directory",
       "base_url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/",
-      "allowed_hosts": ["rawdata.oceanobservatories.org"],
+      "allowed_hosts": [
+        "rawdata.oceanobservatories.org"
+      ],
       "discovery": "UTC date directories; timestamped CAMHDA301-YYYYMMDDTHHMMSS.mp4 files",
       "cadence": "Not yet measured; do not assume a fixed schedule",
       "expected_delay": "Unknown until measured",
@@ -19,11 +21,28 @@
       "attribution_url": "https://oceanobservatories.org/",
       "license": "Reuse and derived-still attribution requirements pending review",
       "license_url": "https://oceanobservatories.org/data/",
-      "status": "pending_validation",
-      "validation": {"retrieval_at": null, "terms_reviewed_at": null, "evidence": null},
+      "status": "pending_rights_review",
+      "validation": {
+        "retrieval_at": "2026-10-27",
+        "terms_reviewed_at": null,
+        "evidence": "User-reported Mac verification: HTTP 200 video/mp4, 949254467 bytes, Accept-Ranges bytes; GET bytes=0-1023 returned 206 with exactly 1024 bytes; FFmpeg decoded a viewed hydrothermal-vent frame.",
+        "technical_status": "user_verified",
+        "recording_url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/10/27/CAMHDA301-20261027T181500.mp4",
+        "verified_by": "user_on_mac",
+        "deployment_environment_status": "pending_runner_check",
+        "deployment_evidence_branch": "source-validation",
+        "deployment_evidence_path": "validation/ooi-axial/latest.json"
+      },
       "last_successful_retrieval": null,
-      "limitations": ["Network access blocked during initial build", "Recording cadence and reuse terms unverified", "Partial retrieval requires MP4 seeking and range support"],
-      "scoring": {"min_score": 0.30, "novelty_weight": 0.12}
+      "limitations": [
+        "Codex proxy denies CONNECT before origin access; this is not an OOI outage",
+        "Access, byte ranges and visible vent frame verified by user on Mac; runner extraction benchmark pending",
+        "Recording cadence, filename timezone and reuse terms require separate review"
+      ],
+      "scoring": {
+        "min_score": 0.3,
+        "novelty_weight": 0.12
+      }
     },
     {
       "id": "onc-observatories",
@@ -38,7 +57,10 @@
       "attribution_url": "https://www.oceannetworks.ca/",
       "status": "research_only",
       "validation": {},
-      "limitations": ["API authentication and reuse terms not verified", "Not offered in recipe"]
+      "limitations": [
+        "API authentication and reuse terms not verified",
+        "Not offered in recipe"
+      ]
     },
     {
       "id": "noaa-expeditions",
@@ -53,7 +75,10 @@
       "attribution_url": "https://oceanexplorer.noaa.gov/",
       "status": "research_only",
       "validation": {},
-      "limitations": ["Direct media endpoint and clip-specific rights unverified", "Not offered in recipe"]
+      "limitations": [
+        "Direct media endpoint and clip-specific rights unverified",
+        "Not offered in recipe"
+      ]
     },
     {
       "id": "mbari-research",
@@ -68,7 +93,10 @@
       "attribution_url": "https://www.mbari.org/",
       "status": "research_only",
       "validation": {},
-      "limitations": ["Reuse permission and direct retrieval unverified", "Not offered in recipe"]
+      "limitations": [
+        "Reuse permission and direct retrieval unverified",
+        "Not offered in recipe"
+      ]
     }
   ]
 }

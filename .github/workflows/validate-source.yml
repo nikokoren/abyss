@@ -1,0 +1,94 @@
+name: Validate OOI on GitHub runner
+on:
+  workflow_dispatch:
+    inputs:
+      recording_url:
+        description: OOI recording to validate (no imagery will be published)
+        type: string
+        default: https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/10/27/CAMHDA301-20261027T181500.mp4
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/validate-source.yml
+      - abyss/validation.py
+      - abyss/network.py
+      - abyss/video.py
+permissions:
+  contents: write
+concurrency:
+  group: source-validation
+  cancel-in-progress: false
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: sudo apt-get update && sudo apt-get install -y ffmpeg
+      - run: python -m pip install -e .
+      - name: Test actual origin ranges and FFmpeg seeking
+        id: validation
+        continue-on-error: true
+        env:
+          RECORDING_URL: ${{ inputs.recording_url || 'https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/10/27/CAMHDA301-20261027T181500.mp4' }}
+        run: |
+          python -m abyss.validation --source ooi-axial \
+            --recording-url "$RECORDING_URL" \
+            --candidates 4 --max-bytes 67108864 \
+            --output /tmp/source-validation.json
+      - name: Record technical result separately from rights review
+        if: always()
+        run: |
+          python - <<'PYCODE'
+          import json, os
+          from pathlib import Path
+          path = Path('/tmp/source-validation.json')
+          if not path.exists():
+              raise SystemExit('Validation did not create a report; inspect setup logs')
+          report = json.loads(path.read_text())
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as summary:
+              summary.write('## OOI technical validation\n\n')
+              for key in ('technical_status', 'environment', 'elapsed_seconds', 'transfer', 'failure'):
+                  if key in report:
+                      summary.write(f'- {key}: `{json.dumps(report[key])}`\n')
+              summary.write('\nNo imagery published. Licensing and attribution review remain separate.\n')
+          PYCODE
+      - name: Save metadata-only evidence artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ooi-technical-validation-${{ github.run_id }}-${{ github.run_attempt }}
+          path: /tmp/source-validation.json
+          if-no-files-found: error
+          retention-days: 30
+      - name: Persist metadata-only evidence on source-validation branch
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f /tmp/source-validation.json
+          set +e
+          git ls-remote --exit-code origin refs/heads/source-validation > /tmp/validation-ref
+          status=$?
+          set -e
+          if [ "$status" -eq 0 ]; then
+            git fetch --depth=1 origin refs/heads/source-validation:refs/remotes/origin/source-validation
+            git checkout --detach refs/remotes/origin/source-validation
+          elif [ "$status" -eq 2 ]; then
+            git checkout --orphan source-validation
+            git rm -rf --ignore-unmatch .
+          else
+            exit "$status"
+          fi
+          mkdir -p validation/ooi-axial
+          cp /tmp/source-validation.json "validation/ooi-axial/${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}.json"
+          cp /tmp/source-validation.json validation/ooi-axial/latest.json
+          git add validation
+          git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Record OOI runner technical validation'
+          git push origin HEAD:refs/heads/source-validation
+      - name: Fail job when technical validation failed
+        if: always() && steps.validation.outcome != 'success'
+        run: exit 1
