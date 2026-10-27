@@ -1,0 +1,96 @@
+# Deploy and operate
+
+## Release gates
+
+Do not enable a scientific feed with the fixture registry or by simply flipping
+OOI's status. First complete source access, timestamp, actual-frame, partial
+retrieval, and rights checks in [sources.md](sources.md). Cloud publication and TRMNL installation require the account-level steps below.
+Local tests do not establish hosted deployment readiness.
+
+The network additions are saved in the environment draft. Review and save them
+in environment settings to apply them, then retry `inspect`. Publish the cloud
+environment when satisfied with setup; publication is separate from code hosting
+and GitHub Pages deployment. Never paste keys into chat or source files.
+
+## GitHub deployment
+
+1. Review the generated code and commit/push it to this repository's default
+   branch (the requested target was `main`; the original checkout has an unborn
+   local `work` branch). This guide does not create or push a commit implicitly.
+2. Use a public repository for GitHub Free Pages. For a private repository,
+   verify an eligible Pages plan and remaining Actions allowance. Confirm
+   organization policy permits Actions, Pages and bot writes. Check billing
+   controls before scheduling; no account-specific cost guarantee has been made.
+3. In repository **Settings → Pages**, select **GitHub Actions** as the source.
+   Set repository Actions variable `PUBLIC_BASE_URL` to the actual public HTTPS
+   site root, e.g. `https://OWNER.github.io/abyss` (or the configured custom
+   domain). This is a non-secret variable. Public URLs must not require login.
+4. Validate and enable one real source in the registry. Use workflow_dispatch to
+   run **Process and publish ocean stills**. The pipeline retains source state
+   and last-good images on the dedicated `ocean-output` branch. Do not apply
+   protections preventing this branch's updates unless using a compatible bot
+   permission policy. GitHub's automatic `GITHUB_TOKEN` is used; no personal token
+   or camera API key is required for the implemented adapters.
+5. Confirm Pages deployment succeeds and fetch `catalog.json`, the referenced
+   immutable PNG, `sources/ID/latest.json`, and `health.json` over HTTPS. Check
+   image dimensions, source credit, recording age and `fixture: false`.
+   Measure workflow duration and `diagnostics.bytes_downloaded`. Compare current
+   billing/Pages usage to [architecture.md](architecture.md).
+6. Download `settings.yml` from the public site and import it with the Liquid
+   files in `trmnl/`. Preview and test the actual device, including source
+   changes, absent selections, outages and stale capture timestamps. No
+   credentials or user-supplied arbitrary media URLs belong in recipe settings.
+
+Schedule: 03:23 and 15:23 UTC, away from the top of the hour. In Europe/Berlin on
+2026-10-27 this is 04:23 and 16:23 CET; daylight-saving changes affect local time.
+Scheduled jobs may run late or be dropped; a manual run is the recovery path.
+Monitor default-branch schedule activation and public-repository inactivity
+rules; do not treat scheduled output as a live camera.
+
+## Last-good and restart behavior
+
+`ocean-output` contains only generated `public/` and `state/` directories. Each
+job restores them before processing, and commits them back without force pushes.
+The Pages artifact includes only `public/`, never source registry or internal
+state. An unsuccessful processing step still publishes retained imagery and
+updated health, then reports the workflow as failed. If persistence fails,
+deployment is blocked so the current site remains unchanged.
+
+This workflow intentionally makes no media downloads for an empty eligible
+registry. It generates an empty catalog/health report and reports failure so
+missing validation cannot be mistaken for successful ocean processing.
+Regenerating settings removes unhealthy options from new exports. Existing
+TRMNL installations must re-import the options; they still receive last-good or
+fallback metadata. Keep all retained images while cached metadata may reference
+them. `published_at` is the time the pipeline committed the image to its local
+public bundle; actual Pages/CDN deployment occurs later and is visible in the
+Actions deployment log.
+
+The output branch is durable state. Do not delete it casually: doing so loses
+processing history and retained images, and may cause old recordings to be
+processed again. Private local runs may use another `--output` directory.
+The cloud environment snapshot preserves files and dependencies, not running
+processes; no persistent server is needed by the CLI processing workflow.
+
+## Troubleshooting
+
+| Symptom | Check / action |
+|---|---|
+| Proxy CONNECT 403 | Inspect effective environment network policy. Review/save required domain settings; retry after application. Do not disable proxy/TLS or classify source as down. |
+| Socket Operation not permitted | Permit loopback for the range bridge and test suite through the execution permission mechanism. No external server is needed. |
+| Zero eligible sources / no settings export | Technical retrieval and rights evidence are missing, or no good frame has been published. Run `sources`, inspect source evidence and health. |
+| Range ignored / inconsistent size or ETag | Keep source disabled or await a completed immutable recording. Full downloads are intentionally refused. |
+| Byte budget exhausted | Compare size/GOP/seek metrics; reduce candidates or choose source-specific offsets only after measurements. Do not just remove the cap. |
+| Extraction timeout / no PNG / unsupported codec | Inspect codec, duration and extraction errors. MP4 is the only currently permitted demuxer. The workflow does not implement HLS. |
+| No acceptable frame | Review variants and score diagnostics. Last good frame is retained and the rejected recording is remembered. Tune source profile with real evidence. |
+| Source cooling down | Inspect `retry_after`; backoff grows to 48 hours. `--force` bypasses it for explicit diagnosis and also reprocesses known recordings. |
+| Metadata old despite successful run | Compare recording/capture versus publish/check timestamps. No new footage is an honest unchanged result. |
+| Persisting outputs fails | Check contents:write, branch policy and concurrent edits. Do not force-push; preserve state and retry after resolving the conflict. |
+| Pages deployment fails / 404 / login | Check Pages source, plan, environment approval, PUBLIC_BASE_URL and Actions deployment logs. Source extraction success does not prove public delivery. |
+| No schedule runs | Workflow must be on default branch. Check disabled workflows, Actions policy and inactivity. Trigger a manual run. |
+| Dropdown not updated | Regenerate settings from a healthy catalog and re-import. Static TRMNL fields do not update just because JSON changed. |
+| Corrupt local state JSON | Preserve the damaged file for diagnosis and restore a known-good state from output branch history. Do not silently reset duplicate history. |
+
+Never expose full source recordings or credentials. No user-tracking or camera
+account management is part of the public site. If commercial/SaaS distribution
+is intended, reassess hosting terms and scale before relying on Pages.

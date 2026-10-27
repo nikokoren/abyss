@@ -1,0 +1,98 @@
+name: Process and publish ocean stills
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '23 3,15 * * *'
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: ocean-publication
+  cancel-in-progress: false
+jobs:
+  process:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    environment:
+      name: github-pages
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: sudo apt-get update && sudo apt-get install -y ffmpeg
+      - run: python -m pip install -e .
+      - name: Check deployment configuration
+        env:
+          PUBLIC_BASE_URL: ${{ vars.PUBLIC_BASE_URL }}
+        run: |
+          python - <<'PYCODE'
+          import os
+          from urllib.parse import urlsplit
+          value = os.environ.get('PUBLIC_BASE_URL', '')
+          parsed = urlsplit(value)
+          if parsed.scheme != 'https' or not parsed.netloc or parsed.username or parsed.password or parsed.query or parsed.fragment:
+              raise SystemExit('Set PUBLIC_BASE_URL to the actual public Pages HTTPS URL')
+          PYCODE
+      - name: Restore durable last-good output and processing history
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p output
+          # Exit 2 is an absent first-run branch; auth/network errors must fail.
+          set +e
+          git ls-remote --exit-code origin refs/heads/ocean-output > /tmp/ocean-ref
+          status=$?
+          set -e
+          if [ "$status" -eq 0 ]; then
+            git fetch --depth=1 origin refs/heads/ocean-output:refs/remotes/origin/ocean-output
+            git archive FETCH_HEAD | tar -x -C output
+          elif [ "$status" -ne 2 ]; then
+            exit "$status"
+          fi
+      - name: Process validated sources
+        id: pipeline
+        continue-on-error: true
+        env:
+          PUBLIC_BASE_URL: ${{ vars.PUBLIC_BASE_URL }}
+        run: |
+          test -n "$PUBLIC_BASE_URL" || { echo 'Set PUBLIC_BASE_URL to the actual Pages HTTPS URL'; exit 1; }
+          python -m abyss.cli run --base-url "$PUBLIC_BASE_URL"
+      - name: Generate recipe and site
+        env:
+          PUBLIC_BASE_URL: ${{ vars.PUBLIC_BASE_URL }}
+        run: |
+          python scripts/build_site.py
+          if python -m abyss.cli recipe --base-url "$PUBLIC_BASE_URL"; then
+            cp output/recipe/settings.yml output/public/settings.yml
+          else
+            rm -f output/public/settings.yml
+            echo 'No eligible recipe export; inspect health.json and source validation.'
+          fi
+      - name: Persist output before deployment (never force push)
+        shell: bash
+        run: |
+          set -euo pipefail
+          cp -a output /tmp/ocean-persist
+          if git show-ref --verify --quiet refs/remotes/origin/ocean-output; then
+            git checkout --detach refs/remotes/origin/ocean-output
+          else
+            git checkout --orphan ocean-output
+            git rm -rf --ignore-unmatch .
+          fi
+          git rm -rf --ignore-unmatch .
+          cp -a /tmp/ocean-persist/. .
+          git add public state
+          git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' diff --cached --quiet || git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Update ocean stills and health'
+          git push origin HEAD:refs/heads/ocean-output
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+      - uses: actions/deploy-pages@v4
+      - name: Report processing failure after retaining last-good delivery
+        if: steps.pipeline.outcome == 'failure'
+        run: |
+          echo 'Processing did not complete; last-good images and health diagnostics were published.'
+          exit 1

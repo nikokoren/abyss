@@ -1,0 +1,19 @@
+{% assign selected_id = trmnl.plugin_settings.custom_fields_values.source_id %}
+{% assign camera = sources[selected_id] %}
+{% if camera == nil %}{% assign camera = default_image %}{% endif %}
+<div class="layout layout--col" style="padding:0; gap:0;">
+  {% if camera and camera.image_url %}
+    <img src="{{ camera.image_url | escape }}" alt="{{ camera.source_name | escape }}" style="width:100%; height:calc(100% - 32px); object-fit:contain;" />
+    <div class="title_bar" style="height:32px; padding:0 12px;">
+      <span class="title" style="font-size:14px;">{{ camera.source_name | escape }}</span>
+      <span class="instance" style="font-size:12px;">
+        {% if camera.captured_at %}Recorded {{ camera.captured_at | date: "%d %b %Y %H:%M UTC" }}{% else %}Recording time unknown{% endif %}
+        · {{ camera.source_type | replace: '_', ' ' | escape }}
+        {% unless camera.available %} · unavailable, last good image{% endunless %}
+        {% if camera.stale %} · stale recording{% endif %}
+      </span>
+    </div>
+  {% else %}
+    <div class="content"><span class="title">Ambient Ocean</span><span class="description">No validated image available. Please check source health.</span></div>
+  {% endif %}
+</div>
