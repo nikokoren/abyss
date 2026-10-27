@@ -2,10 +2,10 @@
   "schema_version": 1,
   "source_id": "ooi-axial",
   "recording_url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/10/27/CAMHDA301-20261027T181500.mp4",
-  "checked_at": "2026-10-27T22:46:24.574855+00:00",
+  "checked_at": "2026-10-27T23:13:32.499667+00:00",
   "environment": "github_actions",
-  "commit": "3de9e4b44bda650ac0cde9e94313a0fdb66475c1",
-  "run_url": "https://github.com/nikokoren/abyss/actions/runs/40597267233",
+  "commit": "c094b56a98e341094290fe734113220c67b8f076",
+  "run_url": "https://github.com/nikokoren/abyss/actions/runs/40600427369",
   "technical_status": "passed",
   "byte_budget": 67108864,
   "rights_status": "not_assessed",
@@ -126,5 +126,5 @@
     "recording_bytes": 949254467,
     "payload_fraction": 0.010803935463597876
   },
-  "elapsed_seconds": 20.072
+  "elapsed_seconds": 10.052
 }
