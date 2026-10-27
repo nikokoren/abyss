@@ -165,3 +165,20 @@ imports, editing, safe GitHub draft URLs, responsive layout and offline
 interactions. `--check-file` also tests opening the local HTML where browser
 policy permits file URLs. Tests use clearly labeled synthetic images; they do
 not create personal feedback or post issues.
+
+## First real review batch (observed)
+
+[Run 40603578617](https://github.com/nikokoren/abyss/actions/runs/40603578617)
+successfully generated **16 real OOI candidates** (12 coarse, four fine) for
+reviewer `nikokoren`. Batch ID: `938d7ba235186da5fa7d331fa713f20a`.
+The CPU encoder's full weight checksum matches the official ResNet18 artifact.
+The search fetched 45,026,088 video bytes in 59.087 seconds; gallery generation
+including encoder preparation took 62.533 seconds, excluding dependency setup.
+The [metadata report](evidence/ooi-20261028-preference-gallery.json) records the
+run URL, candidate counts and exact encoder provenance.
+
+The trusted manifest and empty model were persisted in preference-data commit
+`ec4849628fde3340291039694da38027f4b693be`. The model has zero comparisons and
+status `needs_more_feedback`; no synthetic labels were substituted for your
+choices. The persisted branch contains no PNG/JPEG/HTML/model-binary files.
+The actual imagery is in the downloadable Actions gallery artifact.

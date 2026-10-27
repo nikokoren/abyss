@@ -101,3 +101,32 @@ search under a shared 64 MiB budget. It selected the older 18:15 clip instead of
 the newest 21:15 clip. Baseline publication-delay samples remain zero; hourly
 metadata observation is configured to collect subsequent first appearances.
 See [search-and-cadence.md](search-and-cadence.md) and its linked evidence.
+
+## Personal preference gallery and ranker — 28 October 2026
+
+- **50/50 Python tests passed** (10.714 seconds), plus the JavaScript review-core
+  tests. Tests exercise preference-driven refinement and final ranking, hard
+  image-quality gates, owner/event authorization, trusted-manifest validation,
+  duplicate/reversed-pair handling, issue edits, neither/repetitive labels,
+  model checksums/fallbacks, changed-model reprocessing, and recording-group
+  hold-out evaluation without shared-recording leakage.
+- The real CPU encoder produced 518-value features using checksum-verified
+  ImageNet-pretrained ResNet18 weights. CPU dependency installation and the
+  complete reusable setup were executed successfully.
+- Chromium checks passed: A/B/neither/repetition, undo, persistent reload,
+  backup export/import, editing, chunked GitHub draft links, responsive layout
+  and interaction after networking was disabled. Local-file navigation was
+  denied by managed-browser policy; file-URL opening is explicitly unverified
+  here. Standalone HTML has all images/scripts embedded and no API-key calls.
+- A local temporary-Git simulation exercised gallery persistence → owner issue
+  ingestion → ready-model persistence. Its synthetic test choices stayed in
+  that temporary repository; they were never written into the user's model.
+- [GitHub gallery run 40603578617](https://github.com/nikokoren/abyss/actions/runs/40603578617)
+  completed successfully with 16 real OOI candidates, 45,026,088 video bytes,
+  59.087-second extraction/encoding search and 62.533-second gallery generation.
+  The persisted cloud model correctly has **zero human comparisons**.
+
+[Full preference guide and live evidence](preferences.md). Actual preference
+generalization awaits real owner choices and enough independent recordings;
+model readiness alone is not a measured quality improvement. Public scientific
+recipe distribution remains a separate source-rights/deployment step.

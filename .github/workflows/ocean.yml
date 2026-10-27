@@ -78,7 +78,9 @@ jobs:
           raise SystemExit(0 if load_model('/tmp/ocean-preference-model.json') else 1)
           PYCODE
               then
-                bash scripts/install_vision.sh
+                if ! bash scripts/install_vision.sh; then
+                  echo 'Vision installation failed; processing will attempt the quality fallback.' >&2
+                fi
               fi
             fi
           elif [ "$status" -ne 2 ]; then
