@@ -2,17 +2,17 @@
   "schema_version": 1,
   "feature_space": "resnet18-imagenet1k-v1+quality-v1",
   "reviewer": "nikokoren",
-  "trained_at": "2026-10-27T23:40:27.479197+00:00",
-  "status": "needs_more_feedback",
-  "comparisons": 0,
-  "pairwise_comparisons": 0,
-  "neither_comparisons": 0,
-  "dataset_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "trained_at": "2026-10-27T23:51:52.082279+00:00",
+  "status": "ready",
+  "comparisons": 40,
+  "pairwise_comparisons": 33,
+  "neither_comparisons": 7,
+  "dataset_hash": "c721954e1cfd594f1537d9fd70491352cac769f2c229b11e82d8dfa554e177a9",
   "repetitive_hashes": [],
   "evaluation": {
     "status": "unavailable",
     "reason": "Need at least three independent recording groups and held-out choices"
   },
   "note": "Appearance preference ranker, not a semantic subject detector; unmeasured evaluation is provisional.",
-  "model_id": "7142dacf246db1854c05204a838ac05e51fa768267c43b957ab7544d440ecc88"
+  "model_id": "582ac6e133ee5bef715976d0340bceef1b02e70e78afbcf97a27f61355ccc93e"
 }
