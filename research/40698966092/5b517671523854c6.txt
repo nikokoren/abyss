@@ -1,0 +1,36 @@
+Data
+Alerts
+Oceans 3.0 Data Portal
+en
+Home
+/Data
+Data
+Data collected by ONC’s ocean observing networks are freely available through our Oceans 3.0 data portal.
+Scroll for more info
+Data
+Find Data
+Data Dashboards
+Data Quality
+How to Cite ONC
+Data Policy
+Ocean Networks Canada (ONC) ocean observing networks generate ‘big data’ in the form of high-resolution sensor measurements, video, and underwater sound recordings from the Pacific, Atlantic, and Arctic Oceans. These FAIR (findable, accessible, interoperable, reusable) open data are used by over 70,000 researchers, communities and decision-makers around the world.
+Find Data
+Our dashboards and tools help users find the data they need.
+Data Dashboards
+Visually track, analyse and display oceanographic data, earthquake data and more.
+Data Quality
+We provide high quality, tested & vetted data that is ready to be integrated into research, classrooms & decision making.
+How to Cite ONC
+We provide specific guidelines on how to cite ONC data.
+Data Policy
+Our data are machine-readable, freely shared, used and built on without restrictions.
+Stay up to date with ONC
+Subscribe
+About ONCObservatoriesDataScienceServicesLearningNews & StoriesMultimedia
+Get InvolvedExpeditionsHelpAlerts & System StatusNotice for MarinersCable HotlineContact Us
+Ocean-Climate Building University of Victoria
+#100, 2474 Arbutus Road, Victoria, BC, Canada, V8N 1V8info@oceannetworks.ca+1 (250) 472-5400
+Marine Technology Centre University of Victoria
+#106, 9865 West Saanich Road, North Saanich, BC, Canada, V8L 5Y8info@oceannetworks.ca+1 (250) 472-5400
+Legal Notices Privacy PolicyTerms of Use
+@ 2026 Ocean Networks Canada. All rights reserved.

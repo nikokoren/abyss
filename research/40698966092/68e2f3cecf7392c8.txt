@@ -1,0 +1,181 @@
+Digital Still Camera – OOI Regional Cabled Array
+Skip to content
+Interactive Map
+Search
+Home
+About
+Regional Cabled Array
+Ocean Observatories Initiative
+People
+Acknowledgements
+Contact
+Research Sites
+Axial Base
+Axial Caldera
+ASHES
+International District
+Central Caldera
+Eastern Caldera
+Oregon Offshore
+Oregon Shelf
+Oregon Slope Base
+Southern Hydrate Ridge
+Mid-Plate
+Technology
+Cabled Network
+Cables & Connectors
+CTD Rosette
+Primary Nodes
+Junction Boxes
+Benthic Experiment Package (BEP)
+Deep Profiler Moorings
+Shallow Profiler Moorings
+ROVs
+Ships
+Terrestrial Network
+Instruments
+Expeditions
+VISIONS 26
+VISIONS 25
+VISIONS 24
+VISIONS 23
+VISIONS 22
+VISIONS 21
+VISIONS 20
+VISIONS 19
+VISIONS 18
+VISIONS 17
+VISIONS 16
+VISIONS 15
+VISIONS 14
+VISIONS 13
+VISIONS 11
+Education
+Cabled Array in the Classroom
+Engagement Products
+K12 Lessons
+Data Portal
+Resources
+Galleries
+Biology Catalog
+Featured Posts
+Glossary
+Home
+About
+Regional Cabled Array
+Ocean Observatories Initiative
+People
+Acknowledgements
+Contact
+Research Sites
+Axial Base
+Axial Caldera
+ASHES
+International District
+Central Caldera
+Eastern Caldera
+Oregon Offshore
+Oregon Shelf
+Oregon Slope Base
+Southern Hydrate Ridge
+Mid-Plate
+Technology
+Cabled Network
+Cables & Connectors
+CTD Rosette
+Primary Nodes
+Junction Boxes
+Benthic Experiment Package (BEP)
+Deep Profiler Moorings
+Shallow Profiler Moorings
+ROVs
+Ships
+Terrestrial Network
+Instruments
+Expeditions
+VISIONS 26
+VISIONS 25
+VISIONS 24
+VISIONS 23
+VISIONS 22
+VISIONS 21
+VISIONS 20
+VISIONS 19
+VISIONS 18
+VISIONS 17
+VISIONS 16
+VISIONS 15
+VISIONS 14
+VISIONS 13
+VISIONS 11
+Education
+Cabled Array in the Classroom
+Engagement Products
+K12 Lessons
+Data Portal
+Resources
+Galleries
+Biology Catalog
+Featured Posts
+Glossary
+Digital Still Camera
+Long-term (~1-year) imagery records of methane seep and hydrothermal vent sites are very rare, as are images of the upper water column in the NE Pacific. Yet the information that digital images can provide is crucial to understanding life in deep water and coastal environments. There is little information about how bacterial and clam communities at methane seeps change over time, or how animal communities at vent sites change at temporal scales of minutes, hours, and days.
+Imagery for OOI-RCA is collected to support a wide range of science questions, from geology to biology. Subjects of interest include changes in megafauna population density and activity, details of microbial mat, vent and seep flow rates and shape changes over time, and sedimentation processes. The cameras need the ability to image the sediment surface in sufficient detail to identify organisms (e.g., sea pens, fish, crustaceans, etc.), determine the presence/absence and changes in physical bedforms like ripples in the sediment, and identify biogenic features such as tracks and trails made by mobile fauna. Color images are required to assist with organism identification and to image phytodetritus flux to the seafloor.
+Cameras that are attached to the electro-optical cable infrastructure (Seafloor sites include Endurance Oregon sites at 80 and 600 m depth, summit of Axial Seamount, and at Southern Hydrate Ridge, and in the water column on Shallow Profiler platforms at 200 m depth at Slope and Axial Base sites ) have the potential to increase the image capture rate during seismic activity, anoxic incidents, plankton blooms, or storm events to observe short-term changes in seafloor populations and features.
+A cabled camera is also installed at a the Tiny Towers diffuse flow site in the International District hydrothermal field within Axial Seamounts caldera (Junction Box MJ03C), along with a vent fluid and DNA sampler and temperature probes in a”vent cap” to trap diffuse flow fluids. This allows time-series measurements of fluid temperature, chemistry and microbial DNA information correlated to video imagery of changing animal and environmental conditions. Cabled seismometers allow investigation of environmental conditions due to seismic events. The camera can take a high-definition still image every 1 second! Another camera is installed at the active methane seep site called ‘Einstein’s Grotto” at Southern Hydrate Ridge.
+Reference Information
+The RCA-OOI cameras are currently a mix of models:
+All of the cabled units (instrument code CAMDS-B and CAMDS-C) are now SubC Rayfins with Aquorea LED lamps and ROS PT-25 pan & tilt units. 2019 was the first deployment of Rayfins on the mooring platforms (200 meters depth at Oregon Slope Base and Axial Base sites). 2020 was the first deployment of Rayfins at the seafloor sites (Oregon Shelf, Oregon Offshore, Hydrate Ridge, and International District Vent Field on Axial Seamount).
+Each camera and computer controller are contained within a watertight pressure housing constructed of titanium, which minimizes corrosion.
+All still cameras require additional lighting to reliably capture color images. The lights are attached to a crossbar that angles them at ~45 degrees from the camera lens (with respect to the field of view), and the dimmable LED lamps have a 68° beam and luminous output of 1,480 lumens with a color temperature of 3,100k and typical CRI of 80.
+Cameras on the cabled infrastructure have pan & tilt capability, which allow the camera to be aimed at a specific object or to correct the field of view in case the camera mounting is bumped or shifts during deployment.
+A Laser Reference Unit is mounted externally, directly above the camera, and projects parallel beams of red (635nm) light, allowing for accurate size classification of objects in the field of view.
+Share this page
+3D Thermistor Array
+Acoustic Doppler Current Profiler
+Benthic Fluid Flow Meters
+Bio-Acoustic Sonar
+Bottom Pressure and Tilt Meter
+Broadband Hydrophone
+Broadband Ocean Bottom Seismometer
+Carbon Dioxide
+CTD: Conductivity, Temperature, Depth
+Current Meter – 3D Single Point Velocity
+Digital Still Camera
+Dissolved Oxygen
+Fluid and DNA Sampler
+Fluorometer
+High Definition Video Camera
+HPIES Instruments
+Hydrogen Sulfide pH and Temperature
+Low Frequency Hydrophone
+Mass Spectrometer
+Nitrate Sensor
+Optical Attenuation and Absorption
+Optical Backscatter Sensor
+Osmotic Fluid Sampler
+pH Sensors
+Photosynthetically Active Radiation
+Pressure at the Seafloor
+Resistivity Temperature Probe
+Short Period Seismometer
+Spectral Irradiance Sensor
+Lorem ipsum dolor sit amet consectetur ni adipiscing elit.
+Interactive Map
+Contact
+Ocean Observatories Initiative
+NSF Disclaimer
+Privacy & Terms
+Interactive Map
+Contact
+Ocean Observatories Initiative
+NSF Disclaimer
+Privacy & Terms
+Instagram
+Twitter
+Close Panel
+Regional Cabled Array
+Ocean Observatories Initiative
+People
+Acknowledgements
+Contact

@@ -1,0 +1,38 @@
+Data Policy
+Alerts
+Oceans 3.0 Data Portal
+en
+Home
+/Data
+/Data Policy
+DATA
+Data Policy
+Our data are machine-readable, freely shared, used and built on without restrictions.
+Data
+Find Data
+Data Dashboards
+Data Quality
+How to Cite ONC
+Data Policy
+Ocean Networks Canada (ONC) follows the Government of Canada policies on open data for all data owned by ONC. ONC also follows the United Nations Declaration on the Rights of Indigenous Peoples (UNDRIP) to help guide policies on open and restricted data hosted at ONC.
+The Canadian government policy defines open data as structured data that are “machine-readable, freely shared, used and built on without restrictions.” All data solely-owned by ONC are available free of charge through web services, internet downloads, special requests, and through other internet and user-based access tools. These data are provided under a Creative Commons CC-BY 4.0 License, open and free for anyone to use with attribution.
+Data owned or co-owned by a data partner may be subject to alternative licensing such as a Creative Commons CC-BY-NC license, or a more restrictive license, depending on the established partner agreement with ONC. In
+some cases, data partners may place restrictions on data they consider sensitive to the public, for which the data are assumed to have “All Rights” Reserved. In such cases where one obtains restricted data, one must abide by the specific agreement made between data owner and user when the conditions to obtain data were met. Distribution conditions and limitations may vary. The limited amount of restricted access data that is not readily accessible may be accessible by request. Approval by data owner(s) is required, usually under an agreement, which may include an administrative fee, with timeline and approval processes at the discretion of the data owner(s). For additional information about data restrictions and process, see the ONC Data Restrictions page.
+Data solely owned by ONC can be re-used and redistributed without restriction, requiring only attribution, including intermixing with other datasets. Mixed re-use of data hosted at ONC with varying open data licenses will inherit the most restrictive data license applied to the component datasets.
+ONC-owned data hold no discrimination from access or use against any specific fields of endeavour or against persons or groups. ONC captures and delivers data owned by others. ONC encourages these owners to follow this ONC policy. Should other data owners wish to follow other policies, for example, restricted use, ONC will review the impacts of following other owners’ policies. Approvals of alternative data sharing approaches in ONC’s data management system will be made on a case by case basis. Approvals are made by the ONC Executive and documented in a partner agreement.
+This policy is implemented within ONC following principles and best practices as described in detail in the remainder of this document.
+This document is to be reviewed and updated regularly to ensure data management at ONC continues to follow best principles and practices as they evolve.
+Our institution is committed to the development of new modes of collaboration, engagement, and partnership with Indigenous peoples for the care and stewardship of past and future heritage collections.
+ONC multimedia products such as maps, graphics, art, books, images, video, audio, etc., not hosted on ONC data portals (Oceans 3.0 and ERDDAP) are not subject this data policy and instead fall under ONC’s multimedia policy found on the multimedia page.
+ONC's Data Policy
+Download PDF
+Stay up to date with ONC
+Subscribe
+About ONCObservatoriesDataScienceServicesLearningNews & StoriesMultimedia
+Get InvolvedExpeditionsHelpAlerts & System StatusNotice for MarinersCable HotlineContact Us
+Ocean-Climate Building University of Victoria
+#100, 2474 Arbutus Road, Victoria, BC, Canada, V8N 1V8info@oceannetworks.ca+1 (250) 472-5400
+Marine Technology Centre University of Victoria
+#106, 9865 West Saanich Road, North Saanich, BC, Canada, V8L 5Y8info@oceannetworks.ca+1 (250) 472-5400
+Legal Notices Privacy PolicyTerms of Use
+@ 2026 Ocean Networks Canada. All rights reserved.

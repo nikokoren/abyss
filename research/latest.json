@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-28T12:38:17.915209+00:00",
+  "checked_at": "2026-10-28T13:43:23.394558+00:00",
   "purpose": "Camera discovery and rights evidence; no publication approval inferred",
-  "run_url": "https://github.com/nikokoren/abyss/actions/runs/40689383752",
+  "run_url": "https://github.com/nikokoren/abyss/actions/runs/40698966092",
   "targets": {
     "schema_version": 1,
     "cameras": [
@@ -191,12 +191,12 @@
   "pages": [
     {
       "url": "https://interactiveoceans.washington.edu/instruments/digital-still-camera/",
-      "checked_at": "2026-10-28T12:38:12.860702+00:00",
+      "checked_at": "2026-10-28T13:43:15.283041+00:00",
       "status": 200,
       "final_url": "https://interactiveoceans.washington.edu/instruments/digital-still-camera/",
       "content_type": "text/html",
       "bytes_received": 140756,
-      "sha256": "dbf9249a85156ed422b9ae628a9783beaa720c95f7ae91cfa6b8f53143b26361",
+      "sha256": "485bbd55954785325aac38df0bcd4c92a6585eaf21fc861c1abe8c4be943a0f4",
       "links": [
         [
           "https://interactiveoceans.washington.edu/instruments/digital-still-camera/",
@@ -630,7 +630,7 @@
     },
     {
       "url": "https://www.oceannetworks.ca/data/",
-      "checked_at": "2026-10-28T12:38:12.861017+00:00",
+      "checked_at": "2026-10-28T13:43:15.283538+00:00",
       "status": 200,
       "final_url": "https://www.oceannetworks.ca/data/",
       "content_type": "text/html",
@@ -793,7 +793,7 @@
     },
     {
       "url": "https://www.oceannetworks.ca/data/data-policy/",
-      "checked_at": "2026-10-28T12:38:12.861393+00:00",
+      "checked_at": "2026-10-28T13:43:15.284149+00:00",
       "status": 200,
       "final_url": "https://www.oceannetworks.ca/data/data-policy/",
       "content_type": "text/html",
@@ -976,7 +976,7 @@
     },
     {
       "url": "https://data.oceannetworks.ca/api/devices?method=get&deviceCategoryCode=CAMERA",
-      "checked_at": "2026-10-28T12:38:12.861647+00:00",
+      "checked_at": "2026-10-28T13:43:15.284733+00:00",
       "failure": {
         "category": "upstream_http_error",
         "message": "HTTP Error 401: ",
@@ -985,7 +985,7 @@
     },
     {
       "url": "https://oceanexplorer.noaa.gov/okeanos/media/exstream/exstream.html",
-      "checked_at": "2026-10-28T12:38:13.181340+00:00",
+      "checked_at": "2026-10-28T13:43:15.753817+00:00",
       "failure": {
         "category": "upstream_http_error",
         "message": "HTTP Error 404: Not Found",
@@ -994,7 +994,7 @@
     },
     {
       "url": "https://oceanexploration.noaa.gov/",
-      "checked_at": "2026-10-28T12:38:13.205642+00:00",
+      "checked_at": "2026-10-28T13:43:15.763418+00:00",
       "failure": {
         "category": "network_path_error",
         "message": "<urlopen error [Errno -2] Name or service not known>"
@@ -1002,7 +1002,7 @@
     },
     {
       "url": "https://www.mbari.org/at-sea/observatories/mars/",
-      "checked_at": "2026-10-28T12:38:13.270671+00:00",
+      "checked_at": "2026-10-28T13:43:15.794899+00:00",
       "failure": {
         "category": "upstream_http_error",
         "message": "HTTP Error 404: Not Found",
@@ -1011,7 +1011,7 @@
     },
     {
       "url": "https://www.mbari.org/",
-      "checked_at": "2026-10-28T12:38:13.325995+00:00",
+      "checked_at": "2026-10-28T13:43:15.887042+00:00",
       "status": 200,
       "final_url": "https://www.mbari.org/",
       "content_type": "text/html",
@@ -1352,7 +1352,7 @@
     },
     {
       "url": "https://oceanexplorer.noaa.gov/",
-      "checked_at": "2026-10-28T12:38:13.531612+00:00",
+      "checked_at": "2026-10-28T13:43:16.308582+00:00",
       "status": 200,
       "final_url": "https://oceanexplorer.noaa.gov/",
       "content_type": "text/html",
@@ -1677,12 +1677,12 @@
     },
     {
       "url": "https://www.mbari.org/our-work/technologies/observatories/",
-      "checked_at": "2026-10-28T12:38:13.607248+00:00",
+      "checked_at": "2026-10-28T13:43:16.356550+00:00",
       "status": 200,
       "final_url": "https://www.mbari.org/our-work/technologies/observatories/",
       "content_type": "text/html",
-      "bytes_received": 150430,
-      "sha256": "1cc2b5707bf3522dc90acd5ce19dcc65376f8a9435663fef5e86a0f6b6699cc8",
+      "bytes_received": 150403,
+      "sha256": "94631af2b250cbc194faf6ca050f9287033ff40ccfad5e9f1e18f909deeb093c",
       "links": [
         [
           "https://www.mbari.org/our-work/technologies/observatories/",
@@ -1912,12 +1912,12 @@
     },
     {
       "url": "https://www.mbari.org/our-work/monterey-bay-today/",
-      "checked_at": "2026-10-28T12:38:13.711965+00:00",
+      "checked_at": "2026-10-28T13:43:16.429314+00:00",
       "status": 200,
       "final_url": "https://www.mbari.org/our-work/monterey-bay-today/",
       "content_type": "text/html",
-      "bytes_received": 165006,
-      "sha256": "6d49668fd55a015e55b590e4260bc604636d1c85ce291f8b9837bfe452708c99",
+      "bytes_received": 164979,
+      "sha256": "299d472700ef2f390a6e21fb8616959aefa540c2ac724426476574fa49d93aba",
       "links": [
         [
           "https://www.mbari.org/our-work/monterey-bay-today/",
@@ -2163,7 +2163,7 @@
     },
     {
       "url": "https://www.mbari.org/about/for-media/",
-      "checked_at": "2026-10-28T12:38:13.719477+00:00",
+      "checked_at": "2026-10-28T13:43:16.450906+00:00",
       "status": 200,
       "final_url": "https://www.mbari.org/about/for-media/",
       "content_type": "text/html",
@@ -2458,12 +2458,12 @@
     },
     {
       "url": "https://www.mbari.org/legal/",
-      "checked_at": "2026-10-28T12:38:13.834513+00:00",
+      "checked_at": "2026-10-28T13:43:16.917442+00:00",
       "status": 200,
       "final_url": "https://www.mbari.org/legal/",
       "content_type": "text/html",
       "bytes_received": 149939,
-      "sha256": "c12b7bb4d92c87541022cdddac5df1ad9569ddfa03a6cb38c7963bca8e0a8924",
+      "sha256": "3373863bd1269a119b2701ece5fa3a6ffdefd1649a007e22c2fcc61bdaddf8b0",
       "links": [
         [
           "https://www.mbari.org/legal/",
@@ -2680,12 +2680,12 @@
     },
     {
       "url": "https://oceanexplorer.noaa.gov/multimedia/",
-      "checked_at": "2026-10-28T12:38:14.076563+00:00",
+      "checked_at": "2026-10-28T13:43:17.224593+00:00",
       "status": 200,
       "final_url": "https://oceanexplorer.noaa.gov/multimedia/",
       "content_type": "text/html",
       "bytes_received": 86103,
-      "sha256": "b1799e0ea6c03518e62e44430d2417ea07773e6af73acde202dd71ad81c16025",
+      "sha256": "5b782a1fbb2904cca42c200bbe346362830259f5206713dc9c3b000222802c1e",
       "links": [
         [
           "https://oceanexplorer.noaa.gov/",
@@ -3019,7 +3019,7 @@
     },
     {
       "url": "https://oceanexplorer.noaa.gov/disclaimer/",
-      "checked_at": "2026-10-28T12:38:14.084737+00:00",
+      "checked_at": "2026-10-28T13:43:17.311897+00:00",
       "status": 200,
       "final_url": "https://oceanexplorer.noaa.gov/disclaimer/",
       "content_type": "text/html",
@@ -3266,7 +3266,7 @@
     },
     {
       "url": "https://oceanexplorer.noaa.gov/data/access/",
-      "checked_at": "2026-10-28T12:38:14.105440+00:00",
+      "checked_at": "2026-10-28T13:43:17.353164+00:00",
       "status": 200,
       "final_url": "https://oceanexplorer.noaa.gov/data/access/",
       "content_type": "text/html",
@@ -3565,7 +3565,7 @@
     },
     {
       "url": "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/",
-      "checked_at": "2026-10-28T12:38:14.160618+00:00",
+      "checked_at": "2026-10-28T13:43:17.394256+00:00",
       "status": 200,
       "final_url": "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/",
       "content_type": "text/html",
@@ -3712,12 +3712,12 @@
     },
     {
       "url": "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/2026/10/28/",
-      "checked_at": "2026-10-28T12:38:14.182521+00:00",
+      "checked_at": "2026-10-28T13:43:17.782751+00:00",
       "status": 200,
       "final_url": "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/2026/10/28/",
       "content_type": "text/html",
-      "bytes_received": 13088,
-      "sha256": "7aa523cdd8e2294894ba31908fa73e275d6d71cf763b628f4346c881ae050cbd",
+      "bytes_received": 14114,
+      "sha256": "0705e582fb7cfa73cd396b12796384f5d24e9405499bc875e61880c3b41fea56",
       "links": [
         [
           "javascript:help();",
@@ -4018,6 +4018,30 @@
         [
           "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/2026/10/28/CAMDSB107_10.33.13.8_20261028T114618_UTC.jpg",
           "CAMDSB107_10.33.13.8_20261028T114618_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/2026/10/28/CAMDSB107_10.33.13.8_20261028T121610_UTC.jpg",
+          "CAMDSB107_10.33.13.8_20261028T121610_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/2026/10/28/CAMDSB107_10.33.13.8_20261028T121613_UTC.jpg",
+          "CAMDSB107_10.33.13.8_20261028T121613_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/2026/10/28/CAMDSB107_10.33.13.8_20261028T121618_UTC.jpg",
+          "CAMDSB107_10.33.13.8_20261028T121618_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/2026/10/28/CAMDSB107_10.33.13.8_20261028T124610_UTC.jpg",
+          "CAMDSB107_10.33.13.8_20261028T124610_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/2026/10/28/CAMDSB107_10.33.13.8_20261028T124613_UTC.jpg",
+          "CAMDSB107_10.33.13.8_20261028T124613_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/2026/10/28/CAMDSB107_10.33.13.8_20261028T124618_UTC.jpg",
+          "CAMDSB107_10.33.13.8_20261028T124618_UTC.jpg"
         ]
       ],
       "image_links": [
@@ -4308,6 +4332,30 @@
         {
           "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
           "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
         }
       ],
       "embedded_media": [],
@@ -4315,7 +4363,7 @@
     },
     {
       "url": "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/2026/10/27/",
-      "checked_at": "2026-10-28T12:38:14.205256+00:00",
+      "checked_at": "2026-10-28T13:43:17.804831+00:00",
       "status": 200,
       "final_url": "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/2026/10/27/",
       "content_type": "text/html",
@@ -5518,7 +5566,7 @@
     },
     {
       "url": "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/",
-      "checked_at": "2026-10-28T12:38:14.616340+00:00",
+      "checked_at": "2026-10-28T13:43:17.950136+00:00",
       "status": 200,
       "final_url": "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/",
       "content_type": "text/html",
@@ -5665,12 +5713,12 @@
     },
     {
       "url": "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/28/",
-      "checked_at": "2026-10-28T12:38:14.623602+00:00",
+      "checked_at": "2026-10-28T13:43:18.245438+00:00",
       "status": 200,
       "final_url": "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/28/",
       "content_type": "text/html",
-      "bytes_received": 12441,
-      "sha256": "1d3d8ee2fe8714ace8c3c713a45edbf210f6db0799e0c0f8a4a3529507b067ad",
+      "bytes_received": 13455,
+      "sha256": "186f28e75b5d4192bde406019fd4fc17d6d3fde64a8ba5d5a3ce602dca3a8e80",
       "links": [
         [
           "javascript:help();",
@@ -5959,6 +6007,30 @@
         [
           "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/28/CAMDSB106_10.33.9.6_20261028T111617_UTC.jpg",
           "CAMDSB106_10.33.9.6_20261028T111617_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/28/CAMDSB106_10.33.9.6_20261028T114610_UTC.jpg",
+          "CAMDSB106_10.33.9.6_20261028T114610_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/28/CAMDSB106_10.33.9.6_20261028T114611_UTC.jpg",
+          "CAMDSB106_10.33.9.6_20261028T114611_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/28/CAMDSB106_10.33.9.6_20261028T114616_UTC.jpg",
+          "CAMDSB106_10.33.9.6_20261028T114616_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/28/CAMDSB106_10.33.9.6_20261028T121610_UTC.jpg",
+          "CAMDSB106_10.33.9.6_20261028T121610_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/28/CAMDSB106_10.33.9.6_20261028T121611_UTC.jpg",
+          "CAMDSB106_10.33.9.6_20261028T121611_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/28/CAMDSB106_10.33.9.6_20261028T121616_UTC.jpg",
+          "CAMDSB106_10.33.9.6_20261028T121616_UTC.jpg"
         ]
       ],
       "image_links": [
@@ -6237,6 +6309,30 @@
         {
           "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
           "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
         }
       ],
       "embedded_media": [],
@@ -6244,7 +6340,7 @@
     },
     {
       "url": "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/27/",
-      "checked_at": "2026-10-28T12:38:14.635118+00:00",
+      "checked_at": "2026-10-28T13:43:18.247107+00:00",
       "status": 200,
       "final_url": "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/27/",
       "content_type": "text/html",
@@ -7447,7 +7543,7 @@
     },
     {
       "url": "https://rawdata.oceanobservatories.org/files/RS01SBPS/PC01A/CAMDSC102/",
-      "checked_at": "2026-10-28T12:38:14.679412+00:00",
+      "checked_at": "2026-10-28T13:43:18.320775+00:00",
       "status": 200,
       "final_url": "https://rawdata.oceanobservatories.org/files/RS01SBPS/PC01A/CAMDSC102/",
       "content_type": "text/html",
@@ -7594,12 +7690,12 @@
     },
     {
       "url": "https://rawdata.oceanobservatories.org/files/RS01SBPS/PC01A/CAMDSC102/2026/10/28/",
-      "checked_at": "2026-10-28T12:38:15.018979+00:00",
+      "checked_at": "2026-10-28T13:43:18.436434+00:00",
       "status": 200,
       "final_url": "https://rawdata.oceanobservatories.org/files/RS01SBPS/PC01A/CAMDSC102/2026/10/28/",
       "content_type": "text/html",
-      "bytes_received": 12709,
-      "sha256": "9a9cb43adc9f526d514e735687a53d0307f8e757c7e7b428e465477a7294f36e",
+      "bytes_received": 14785,
+      "sha256": "390c451b7c58a632927479d38376eb4df074d77304c04ba41590ba077b083004",
       "links": [
         [
           "javascript:help();",
@@ -7888,6 +7984,54 @@
         [
           "https://rawdata.oceanobservatories.org/files/RS01SBPS/PC01A/CAMDSC102/2026/10/28/CAMDSC102_10.33.3.146_20261028T111603_UTC.jpg",
           "CAMDSC102_10.33.3.146_20261028T111603_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS01SBPS/PC01A/CAMDSC102/2026/10/28/CAMDSC102_10.33.3.146_20261028T114550_UTC.jpg",
+          "CAMDSC102_10.33.3.146_20261028T114550_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS01SBPS/PC01A/CAMDSC102/2026/10/28/CAMDSC102_10.33.3.146_20261028T114558_UTC.jpg",
+          "CAMDSC102_10.33.3.146_20261028T114558_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS01SBPS/PC01A/CAMDSC102/2026/10/28/CAMDSC102_10.33.3.146_20261028T114603_UTC.jpg",
+          "CAMDSC102_10.33.3.146_20261028T114603_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS01SBPS/PC01A/CAMDSC102/2026/10/28/CAMDSC102_10.33.3.146_20261028T121550_UTC.jpg",
+          "CAMDSC102_10.33.3.146_20261028T121550_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS01SBPS/PC01A/CAMDSC102/2026/10/28/CAMDSC102_10.33.3.146_20261028T121558_UTC.jpg",
+          "CAMDSC102_10.33.3.146_20261028T121558_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS01SBPS/PC01A/CAMDSC102/2026/10/28/CAMDSC102_10.33.3.146_20261028T121603_UTC.jpg",
+          "CAMDSC102_10.33.3.146_20261028T121603_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS01SBPS/PC01A/CAMDSC102/2026/10/28/CAMDSC102_10.33.3.146_20261028T124550_UTC.jpg",
+          "CAMDSC102_10.33.3.146_20261028T124550_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS01SBPS/PC01A/CAMDSC102/2026/10/28/CAMDSC102_10.33.3.146_20261028T124558_UTC.jpg",
+          "CAMDSC102_10.33.3.146_20261028T124558_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS01SBPS/PC01A/CAMDSC102/2026/10/28/CAMDSC102_10.33.3.146_20261028T124603_UTC.jpg",
+          "CAMDSC102_10.33.3.146_20261028T124603_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS01SBPS/PC01A/CAMDSC102/2026/10/28/CAMDSC102_10.33.3.146_20261028T131550_UTC.jpg",
+          "CAMDSC102_10.33.3.146_20261028T131550_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS01SBPS/PC01A/CAMDSC102/2026/10/28/CAMDSC102_10.33.3.146_20261028T131558_UTC.jpg",
+          "CAMDSC102_10.33.3.146_20261028T131558_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS01SBPS/PC01A/CAMDSC102/2026/10/28/CAMDSC102_10.33.3.146_20261028T131603_UTC.jpg",
+          "CAMDSC102_10.33.3.146_20261028T131603_UTC.jpg"
         ]
       ],
       "image_links": [
@@ -8166,6 +8310,54 @@
         {
           "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
           "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
         }
       ],
       "embedded_media": [],
@@ -8173,7 +8365,7 @@
     },
     {
       "url": "https://rawdata.oceanobservatories.org/files/RS01SBPS/PC01A/CAMDSC102/2026/10/27/",
-      "checked_at": "2026-10-28T12:38:15.031778+00:00",
+      "checked_at": "2026-10-28T13:43:18.692418+00:00",
       "status": 200,
       "final_url": "https://rawdata.oceanobservatories.org/files/RS01SBPS/PC01A/CAMDSC102/2026/10/27/",
       "content_type": "text/html",
@@ -9376,7 +9568,7 @@
     },
     {
       "url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/",
-      "checked_at": "2026-10-28T12:38:15.036469+00:00",
+      "checked_at": "2026-10-28T13:43:18.700822+00:00",
       "status": 200,
       "final_url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/",
       "content_type": "text/html",
@@ -9515,12 +9707,12 @@
     },
     {
       "url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/28/",
-      "checked_at": "2026-10-28T12:38:15.079624+00:00",
+      "checked_at": "2026-10-28T13:43:18.706258+00:00",
       "status": 200,
       "final_url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/28/",
       "content_type": "text/html",
-      "bytes_received": 12948,
-      "sha256": "238697a075a666d24a2ee1782e04023f8877794a2ba8389f4bbc60966e6048f4",
+      "bytes_received": 13962,
+      "sha256": "970de9878a4316be8299594812725a7067ccc83de60cbab0bd8add5e01255bd1",
       "links": [
         [
           "javascript:help();",
@@ -9821,6 +10013,30 @@
         [
           "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/28/CAMDSB103_10.33.7.5_20261028T114621_UTC.jpg",
           "CAMDSB103_10.33.7.5_20261028T114621_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/28/CAMDSB103_10.33.7.5_20261028T121615_UTC.jpg",
+          "CAMDSB103_10.33.7.5_20261028T121615_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/28/CAMDSB103_10.33.7.5_20261028T121617_UTC.jpg",
+          "CAMDSB103_10.33.7.5_20261028T121617_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/28/CAMDSB103_10.33.7.5_20261028T121621_UTC.jpg",
+          "CAMDSB103_10.33.7.5_20261028T121621_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/28/CAMDSB103_10.33.7.5_20261028T124615_UTC.jpg",
+          "CAMDSB103_10.33.7.5_20261028T124615_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/28/CAMDSB103_10.33.7.5_20261028T124616_UTC.jpg",
+          "CAMDSB103_10.33.7.5_20261028T124616_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/28/CAMDSB103_10.33.7.5_20261028T124621_UTC.jpg",
+          "CAMDSB103_10.33.7.5_20261028T124621_UTC.jpg"
         ]
       ],
       "image_links": [
@@ -10111,6 +10327,30 @@
         {
           "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
           "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
         }
       ],
       "embedded_media": [],
@@ -10118,7 +10358,7 @@
     },
     {
       "url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/27/",
-      "checked_at": "2026-10-28T12:38:15.475806+00:00",
+      "checked_at": "2026-10-28T13:43:18.770427+00:00",
       "status": 200,
       "final_url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/27/",
       "content_type": "text/html",
@@ -11321,7 +11561,7 @@
     },
     {
       "url": "https://rawdata.oceanobservatories.org/files/RS03AXPS/PC03A/CAMDSC302/",
-      "checked_at": "2026-10-28T12:38:15.480291+00:00",
+      "checked_at": "2026-10-28T13:43:18.999380+00:00",
       "status": 200,
       "final_url": "https://rawdata.oceanobservatories.org/files/RS03AXPS/PC03A/CAMDSC302/",
       "content_type": "text/html",
@@ -11476,12 +11716,12 @@
     },
     {
       "url": "https://rawdata.oceanobservatories.org/files/RS03AXPS/PC03A/CAMDSC302/2026/10/28/",
-      "checked_at": "2026-10-28T12:38:15.480786+00:00",
+      "checked_at": "2026-10-28T13:43:19.000064+00:00",
       "status": 200,
       "final_url": "https://rawdata.oceanobservatories.org/files/RS03AXPS/PC03A/CAMDSC302/2026/10/28/",
       "content_type": "text/html",
-      "bytes_received": 12709,
-      "sha256": "bd12cfc0bb72757e31ceb442af4814de0c6d70e284184d817b11279eaa990c68",
+      "bytes_received": 13747,
+      "sha256": "1506fef63d1d9b8644e5d78e4133054cd520cc1d35fecffe386e76f6caf04e33",
       "links": [
         [
           "javascript:help();",
@@ -11770,6 +12010,30 @@
         [
           "https://rawdata.oceanobservatories.org/files/RS03AXPS/PC03A/CAMDSC302/2026/10/28/CAMDSC302_10.31.3.146_20261028T111603_UTC.jpg",
           "CAMDSC302_10.31.3.146_20261028T111603_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS03AXPS/PC03A/CAMDSC302/2026/10/28/CAMDSC302_10.31.3.146_20261028T114550_UTC.jpg",
+          "CAMDSC302_10.31.3.146_20261028T114550_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS03AXPS/PC03A/CAMDSC302/2026/10/28/CAMDSC302_10.31.3.146_20261028T114558_UTC.jpg",
+          "CAMDSC302_10.31.3.146_20261028T114558_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS03AXPS/PC03A/CAMDSC302/2026/10/28/CAMDSC302_10.31.3.146_20261028T114603_UTC.jpg",
+          "CAMDSC302_10.31.3.146_20261028T114603_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS03AXPS/PC03A/CAMDSC302/2026/10/28/CAMDSC302_10.31.3.146_20261028T121550_UTC.jpg",
+          "CAMDSC302_10.31.3.146_20261028T121550_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS03AXPS/PC03A/CAMDSC302/2026/10/28/CAMDSC302_10.31.3.146_20261028T121558_UTC.jpg",
+          "CAMDSC302_10.31.3.146_20261028T121558_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS03AXPS/PC03A/CAMDSC302/2026/10/28/CAMDSC302_10.31.3.146_20261028T121603_UTC.jpg",
+          "CAMDSC302_10.31.3.146_20261028T121603_UTC.jpg"
         ]
       ],
       "image_links": [
@@ -12048,6 +12312,30 @@
         {
           "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
           "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
         }
       ],
       "embedded_media": [],
@@ -12055,7 +12343,7 @@
     },
     {
       "url": "https://rawdata.oceanobservatories.org/files/RS03AXPS/PC03A/CAMDSC302/2026/10/27/",
-      "checked_at": "2026-10-28T12:38:15.539063+00:00",
+      "checked_at": "2026-10-28T13:43:19.061409+00:00",
       "status": 200,
       "final_url": "https://rawdata.oceanobservatories.org/files/RS03AXPS/PC03A/CAMDSC302/2026/10/27/",
       "content_type": "text/html",
@@ -13258,7 +13546,7 @@
     },
     {
       "url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/",
-      "checked_at": "2026-10-28T12:38:15.788768+00:00",
+      "checked_at": "2026-10-28T13:43:19.103151+00:00",
       "status": 200,
       "final_url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/",
       "content_type": "text/html",
@@ -13413,12 +13701,12 @@
     },
     {
       "url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/28/",
-      "checked_at": "2026-10-28T12:38:15.800543+00:00",
+      "checked_at": "2026-10-28T13:43:19.293271+00:00",
       "status": 200,
       "final_url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/28/",
       "content_type": "text/html",
-      "bytes_received": 12948,
-      "sha256": "a762ebf100b4ee330aed98dcb7cc29c456ecaa9f6f20b592e461b54ef6cfcb37",
+      "bytes_received": 13962,
+      "sha256": "d9ed673002116e3b15b0f87b85a32f26e2b09c44986aa387b1dc00bf95bb6bed",
       "links": [
         [
           "javascript:help();",
@@ -13719,6 +14007,30 @@
         [
           "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/28/CAMDSB303_10.31.8.5_20261028T114618_UTC.jpg",
           "CAMDSB303_10.31.8.5_20261028T114618_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/28/CAMDSB303_10.31.8.5_20261028T121610_UTC.jpg",
+          "CAMDSB303_10.31.8.5_20261028T121610_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/28/CAMDSB303_10.31.8.5_20261028T121613_UTC.jpg",
+          "CAMDSB303_10.31.8.5_20261028T121613_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/28/CAMDSB303_10.31.8.5_20261028T121618_UTC.jpg",
+          "CAMDSB303_10.31.8.5_20261028T121618_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/28/CAMDSB303_10.31.8.5_20261028T124610_UTC.jpg",
+          "CAMDSB303_10.31.8.5_20261028T124610_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/28/CAMDSB303_10.31.8.5_20261028T124613_UTC.jpg",
+          "CAMDSB303_10.31.8.5_20261028T124613_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/28/CAMDSB303_10.31.8.5_20261028T124618_UTC.jpg",
+          "CAMDSB303_10.31.8.5_20261028T124618_UTC.jpg"
         ]
       ],
       "image_links": [
@@ -14009,6 +14321,30 @@
         {
           "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
           "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
         }
       ],
       "embedded_media": [],
@@ -14016,7 +14352,7 @@
     },
     {
       "url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/27/",
-      "checked_at": "2026-10-28T12:38:15.837995+00:00",
+      "checked_at": "2026-10-28T13:43:19.295637+00:00",
       "status": 200,
       "final_url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/27/",
       "content_type": "text/html",
@@ -15219,12 +15555,12 @@
     },
     {
       "url": "https://interactiveoceans.washington.edu/about/ocean-observatories-initiative/",
-      "checked_at": "2026-10-28T12:38:16.347640+00:00",
+      "checked_at": "2026-10-28T13:43:19.637950+00:00",
       "status": 200,
       "final_url": "https://interactiveoceans.washington.edu/about/ocean-observatories-initiative/",
       "content_type": "text/html",
       "bytes_received": 125498,
-      "sha256": "d8f9da180d13f21dd1c0a0716354479b386b85c7f492ddf11aef507a42c8e973",
+      "sha256": "94defda9c5c5d9dbe197cd58ff989daaad340bd81f490194c3ddcdc1c58d55c5",
       "links": [
         [
           "https://interactiveoceans.washington.edu/about/ocean-observatories-initiative/",
@@ -15530,12 +15866,12 @@
     },
     {
       "url": "https://interactiveoceans.washington.edu/collaborators/",
-      "checked_at": "2026-10-28T12:38:16.347861+00:00",
+      "checked_at": "2026-10-28T13:43:19.638282+00:00",
       "status": 200,
       "final_url": "https://interactiveoceans.washington.edu/collaborators/",
       "content_type": "text/html",
       "bytes_received": 140150,
-      "sha256": "6d07d80eb81030ac4d3a1d007b5e3b8eab043e5feda4ade3a679e874e90c61e3",
+      "sha256": "0c475957ff61310097a936eb458e2ffc373171ab45bf1732e4c9397c6c91546c",
       "links": [
         [
           "https://interactiveoceans.washington.edu/collaborators/",
@@ -15857,12 +16193,12 @@
     },
     {
       "url": "https://interactiveoceans.washington.edu/instruments/high-definition-video-camera/",
-      "checked_at": "2026-10-28T12:38:16.348071+00:00",
+      "checked_at": "2026-10-28T13:43:19.638564+00:00",
       "status": 200,
       "final_url": "https://interactiveoceans.washington.edu/instruments/high-definition-video-camera/",
       "content_type": "text/html",
       "bytes_received": 144822,
-      "sha256": "3a25f499393e2dba4259243f5af54c167d65ccbe086fc8815a39fa987007b768",
+      "sha256": "ec90fffcf516bb762b56fbad255be51e8c12d7f07b44b2fd771a068b0d9c62cf",
       "links": [
         [
           "https://interactiveoceans.washington.edu/instruments/high-definition-video-camera/",
@@ -16301,7 +16637,7 @@
     },
     {
       "url": "https://www.oceannetworks.ca/observatories/",
-      "checked_at": "2026-10-28T12:38:16.348264+00:00",
+      "checked_at": "2026-10-28T13:43:19.638965+00:00",
       "status": 200,
       "final_url": "https://www.oceannetworks.ca/observatories/",
       "content_type": "text/html",
@@ -16456,7 +16792,7 @@
     },
     {
       "url": "https://www.oceannetworks.ca/legal-notices/",
-      "checked_at": "2026-10-28T12:38:16.488705+00:00",
+      "checked_at": "2026-10-28T13:43:19.874809+00:00",
       "status": 200,
       "final_url": "https://www.oceannetworks.ca/legal-notices/",
       "content_type": "text/html",
@@ -16603,7 +16939,7 @@
     },
     {
       "url": "https://www.oceannetworks.ca/terms-of-use/",
-      "checked_at": "2026-10-28T12:38:16.625396+00:00",
+      "checked_at": "2026-10-28T13:43:20.101568+00:00",
       "status": 200,
       "final_url": "https://www.oceannetworks.ca/terms-of-use/",
       "content_type": "text/html",
@@ -16750,12 +17086,12 @@
     },
     {
       "url": "https://www.mbari.org/technology/monterey-accelerated-research-system-mars/",
-      "checked_at": "2026-10-28T12:38:16.760778+00:00",
+      "checked_at": "2026-10-28T13:43:20.340492+00:00",
       "status": 200,
       "final_url": "https://www.mbari.org/technology/monterey-accelerated-research-system-mars/",
       "content_type": "text/html",
-      "bytes_received": 189031,
-      "sha256": "1fa38ebd3d84e5b320763fec0493b4b7857d4b976282352a5ea3f3f21104497f",
+      "bytes_received": 189004,
+      "sha256": "24ad5b1ca4f29c5eccede0b442c49bae35a661bf14aedd9f8e88fb4364a9384d",
       "links": [
         [
           "https://www.mbari.org/technology/monterey-accelerated-research-system-mars/",
@@ -17029,7 +17365,7 @@
     },
     {
       "url": "https://www.mbari.org/technology/moorings/",
-      "checked_at": "2026-10-28T12:38:16.762266+00:00",
+      "checked_at": "2026-10-28T13:43:20.952037+00:00",
       "status": 200,
       "final_url": "https://www.mbari.org/technology/moorings/",
       "content_type": "text/html",
@@ -17288,12 +17624,12 @@
     },
     {
       "url": "https://www.mbari.org/technology/station-m/",
-      "checked_at": "2026-10-28T12:38:16.769968+00:00",
+      "checked_at": "2026-10-28T13:43:21.116869+00:00",
       "status": 200,
       "final_url": "https://www.mbari.org/technology/station-m/",
       "content_type": "text/html",
-      "bytes_received": 180089,
-      "sha256": "b90efb3de91123688b5d6548042f0a2133e12d9c866e9e3bdec9f30fa4bc6cd5",
+      "bytes_received": 180062,
+      "sha256": "8cb296fb63f15508bea2a98eaf5b81be1c736da5200400c5f7cf4af550c2d6c2",
       "links": [
         [
           "https://www.mbari.org/technology/station-m/",
@@ -17602,7 +17938,7 @@
     },
     {
       "url": "https://www.mbari.org/about/for-media/media-kit/",
-      "checked_at": "2026-10-28T12:38:16.797109+00:00",
+      "checked_at": "2026-10-28T13:43:21.191009+00:00",
       "status": 200,
       "final_url": "https://www.mbari.org/about/for-media/media-kit/",
       "content_type": "text/html",
@@ -17861,7 +18197,7 @@
     },
     {
       "url": "https://www.mbari.org/about/for-media/media-request/",
-      "checked_at": "2026-10-28T12:38:17.006125+00:00",
+      "checked_at": "2026-10-28T13:43:21.346826+00:00",
       "status": 200,
       "final_url": "https://www.mbari.org/about/for-media/media-request/",
       "content_type": "text/html",
@@ -18083,7 +18419,7 @@
     },
     {
       "url": "https://www.mbari.org/about/for-media/location-shoots/",
-      "checked_at": "2026-10-28T12:38:17.024423+00:00",
+      "checked_at": "2026-10-28T13:43:21.566831+00:00",
       "status": 200,
       "final_url": "https://www.mbari.org/about/for-media/location-shoots/",
       "content_type": "text/html",
@@ -18309,7 +18645,7 @@
     },
     {
       "url": "https://oceanexplorer.noaa.gov/multimedia/okeanos-explorations-ex1907-dailyupdates-coral-garden-coral-garden/",
-      "checked_at": "2026-10-28T12:38:17.043624+00:00",
+      "checked_at": "2026-10-28T13:43:21.817376+00:00",
       "status": 200,
       "final_url": "https://oceanexplorer.noaa.gov/multimedia/okeanos-explorations-ex1907-dailyupdates-coral-garden-coral-garden/",
       "content_type": "text/html",
@@ -18571,7 +18907,7 @@
     },
     {
       "url": "https://oceanexplorer.noaa.gov/multimedia/okeanos-explorations-seascape-alaska-ex2306-gallery-media-dive08-changingcolors/",
-      "checked_at": "2026-10-28T12:38:17.045482+00:00",
+      "checked_at": "2026-10-28T13:43:21.866712+00:00",
       "status": 200,
       "final_url": "https://oceanexplorer.noaa.gov/multimedia/okeanos-explorations-seascape-alaska-ex2306-gallery-media-dive08-changingcolors/",
       "content_type": "text/html",
@@ -18837,7 +19173,7 @@
     },
     {
       "url": "https://oceanexplorer.noaa.gov/data/access-tools/",
-      "checked_at": "2026-10-28T12:38:17.233873+00:00",
+      "checked_at": "2026-10-28T13:43:21.915078+00:00",
       "status": 200,
       "final_url": "https://oceanexplorer.noaa.gov/data/access-tools/",
       "content_type": "text/html",

@@ -1,0 +1,176 @@
+High Definition Video Camera – OOI Regional Cabled Array
+Skip to content
+Interactive Map
+Search
+Home
+About
+Regional Cabled Array
+Ocean Observatories Initiative
+People
+Acknowledgements
+Contact
+Research Sites
+Axial Base
+Axial Caldera
+ASHES
+International District
+Central Caldera
+Eastern Caldera
+Oregon Offshore
+Oregon Shelf
+Oregon Slope Base
+Southern Hydrate Ridge
+Mid-Plate
+Technology
+Cabled Network
+Cables & Connectors
+CTD Rosette
+Primary Nodes
+Junction Boxes
+Benthic Experiment Package (BEP)
+Deep Profiler Moorings
+Shallow Profiler Moorings
+ROVs
+Ships
+Terrestrial Network
+Instruments
+Expeditions
+VISIONS 26
+VISIONS 25
+VISIONS 24
+VISIONS 23
+VISIONS 22
+VISIONS 21
+VISIONS 20
+VISIONS 19
+VISIONS 18
+VISIONS 17
+VISIONS 16
+VISIONS 15
+VISIONS 14
+VISIONS 13
+VISIONS 11
+Education
+Cabled Array in the Classroom
+Engagement Products
+K12 Lessons
+Data Portal
+Resources
+Galleries
+Biology Catalog
+Featured Posts
+Glossary
+Home
+About
+Regional Cabled Array
+Ocean Observatories Initiative
+People
+Acknowledgements
+Contact
+Research Sites
+Axial Base
+Axial Caldera
+ASHES
+International District
+Central Caldera
+Eastern Caldera
+Oregon Offshore
+Oregon Shelf
+Oregon Slope Base
+Southern Hydrate Ridge
+Mid-Plate
+Technology
+Cabled Network
+Cables & Connectors
+CTD Rosette
+Primary Nodes
+Junction Boxes
+Benthic Experiment Package (BEP)
+Deep Profiler Moorings
+Shallow Profiler Moorings
+ROVs
+Ships
+Terrestrial Network
+Instruments
+Expeditions
+VISIONS 26
+VISIONS 25
+VISIONS 24
+VISIONS 23
+VISIONS 22
+VISIONS 21
+VISIONS 20
+VISIONS 19
+VISIONS 18
+VISIONS 17
+VISIONS 16
+VISIONS 15
+VISIONS 14
+VISIONS 13
+VISIONS 11
+Education
+Cabled Array in the Classroom
+Engagement Products
+K12 Lessons
+Data Portal
+Resources
+Galleries
+Biology Catalog
+Featured Posts
+Glossary
+High Definition Video Camera
+Every 3-hours from 250 miles off the Oregon coast, and 1 mile underwater, HD video streams live over the Internet through the OOI’s Cabled Array in situ camera system. Live video streams of an actively venting hydrothermal chimney occur during the hours of 2:00, 5:00, 8:00, and 11:00 EDT & PDT day and night, for a duration of 14 minutes. In addition, as of November 2016, the camera now records for 24 hours non-stop on the 10th and 20th of every month, and 72 hours non-stop from the 1st to 3rd of every month, to examine animal behavior, diurnal/tidal cycles, and longer-duration changes in hydrothermal flow. All videos are available for viewing/download via the Raw Data Archive or through the OOI DataExplorer portal.
+The HD video focuses on the 14-foot tall actively venting hot spring deposit called ‘Mushroom’ located within the ASHES vent field on Axial Seamount. The vent rests on an old lava flow. Radiating cracks in the flow are filled with white bacterial mats and small tube worms, marking sites of diffusely flowing fluids that issue from the fractures in the basalt. Axial is the largest and most active volcano on the mid-ocean ridge spreading center that forms the western boundary of the Juan de Fuca tectonic plate. Through the course of the 14-minute video the HD camera pans, tilts, and zooms to highlight different aspects of the south side of this metal-rich chimney that vents hot spring fluids at 260°C (500°F!). During this operation, the camera images the entire face of this animal-covered chimney. It focuses in on key areas of interest that include a small, high-temperature spigot near the base of the main chimney, the boundary between the base of the chimney and the lava-covered seafloor with snails and sea spiders, and areas hosting extremely dense assemblages of tube worms, palm worms, and limpets. Current and previous pan & tilt routines can be found in a public BitBucket repository.
+The camera is a SubC 1Cam high-definition video camera adapted for use on the OOI cabled network by Cabled Array engineers at the University of Washington’s Applied Physics Laboratory. The camera is designed to transmit an uncompressed video stream in real time to shore at a resolution of 1920×1080 pixels, 60 frames per second, interlaced. The shorthand notation for this mode is 1080i60. This HD video camera was installed in 2013 and connected to the primary infrastructure in 2014. The video streams back to shore and can be watched live every 3 hours.
+The camera is associated with fluid samplers for follow-on chemical analyses of diffusely flowing fluids and with a novel thermistor array that provides 3D measurements of temperatures in diffusely flowing fluids. Fluids in the vent have been measured at over 260°C, while the surrounding seawater is ~2°C. In concert, these instruments allow characterization of how fluid chemistry and temperature impact biological communities of tube worms, palm worms, limpets, and microbes, and how these communities evolve over time in response to volcanic and seismic events.
+Loading the player…
+Right Click/Save As to Download Video
+Share this page
+3D Thermistor Array
+Acoustic Doppler Current Profiler
+Benthic Fluid Flow Meters
+Bio-Acoustic Sonar
+Bottom Pressure and Tilt Meter
+Broadband Hydrophone
+Broadband Ocean Bottom Seismometer
+Carbon Dioxide
+CTD: Conductivity, Temperature, Depth
+Current Meter – 3D Single Point Velocity
+Digital Still Camera
+Dissolved Oxygen
+Fluid and DNA Sampler
+Fluorometer
+High Definition Video Camera
+HPIES Instruments
+Hydrogen Sulfide pH and Temperature
+Low Frequency Hydrophone
+Mass Spectrometer
+Nitrate Sensor
+Optical Attenuation and Absorption
+Optical Backscatter Sensor
+Osmotic Fluid Sampler
+pH Sensors
+Photosynthetically Active Radiation
+Pressure at the Seafloor
+Resistivity Temperature Probe
+Short Period Seismometer
+Spectral Irradiance Sensor
+Lorem ipsum dolor sit amet consectetur ni adipiscing elit.
+Interactive Map
+Contact
+Ocean Observatories Initiative
+NSF Disclaimer
+Privacy & Terms
+Interactive Map
+Contact
+Ocean Observatories Initiative
+NSF Disclaimer
+Privacy & Terms
+Instagram
+Twitter
+Close Panel
+Regional Cabled Array
+Ocean Observatories Initiative
+People
+Acknowledgements
+Contact
