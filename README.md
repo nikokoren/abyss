@@ -11,8 +11,9 @@ payload (1.08% of the 949 MB recording), in 20.1 seconds. See the
 Codex's proxy restriction is an infrastructure limitation, not an upstream OOI
 failure. **OOI derived-still reuse is now reviewed and enabled**, with required
 NSF/WHOI/UW credit embedded in exported images; see the
-[rights review](docs/ooi-rights-review.md). Public Pages delivery and TRMNL
-device rendering remain unverified. See [runner validation](docs/runner-validation.md),
+[rights review](docs/ooi-rights-review.md). Physical TRMNL
+device rendering remains unverified. GitHub Pages deployment has succeeded;
+see [current deployment evidence](docs/evidence/native-delivery-20261028.json), [runner validation](docs/runner-validation.md),
 [source audit](docs/sources.md), and [acceptance status](docs/validation.md).
 
 ## Develop

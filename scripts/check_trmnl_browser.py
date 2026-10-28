@@ -108,9 +108,11 @@ def main():
     data = copy.deepcopy(data)
     for camera in data['sources'].values():
         camera['image_url'] = '/ocean.png'
+        camera['display_image_url'] = '/ocean.png'
         camera['qr_code_url'] = '/qr.png'
     if data.get('default_image'):
         data['default_image']['image_url'] = '/ocean.png'
+        data['default_image']['display_image_url'] = '/ocean.png'
     args.output.mkdir(parents=True, exist_ok=True)
     cases = []
     for device in ('og', 'v2', 'amazon_kindle_2024'):

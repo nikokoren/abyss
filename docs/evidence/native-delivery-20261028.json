@@ -1,0 +1,127 @@
+{
+  "implementation_commit": "cf341f3",
+  "output_commit": "e952ea55ad063ce967e04b8cbdce5dd671f046a5",
+  "github_ci": "https://github.com/nikokoren/abyss/actions/runs/40698966070",
+  "github_publication": "https://github.com/nikokoren/abyss/actions/runs/40698966090",
+  "ci_status": "success",
+  "pages_deployment_status": "success",
+  "codex_pages_http_access": "Infrastructure proxy CONNECT 403; not a Pages origin response. Generated deployment assets inspected through GitHub.",
+  "sources": {
+    "ooi-axial": {
+      "source_width": 1920,
+      "source_height": 1080,
+      "width": 1920,
+      "height": 1132,
+      "image_bytes": 2572373,
+      "display_image_bytes": 2560873,
+      "method": "native",
+      "color_mode": "RGB",
+      "display_credit": "Data: OOI / WHOI OOI Program Office / UW | Supported by U.S. NSF 2244833",
+      "image_url": "https://nikokoren.github.io/abyss/sources/ooi-axial/4661d058dfd2af9ce244.png",
+      "display_image_url": "https://nikokoren.github.io/abyss/sources/ooi-axial/efb3c45260eba0a560dc.png",
+      "view_url": "https://nikokoren.github.io/abyss/i/e40920fba1494fb1000e.html",
+      "qr_code_url": "https://nikokoren.github.io/abyss/i/e40920fba1494fb1000e.png",
+      "published_at": "2026-10-28T13:45:11.141484+00:00",
+      "preference": {
+        "model_id": "582ac6e133ee5bef715976d0340bceef1b02e70e78afbcf97a27f61355ccc93e",
+        "status": "active",
+        "error": null
+      },
+      "candidates_extracted": 16,
+      "recordings": [
+        {
+          "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/10/28/CAMHDA301-20261028T121500.mp4",
+          "coarse_extracted": 4,
+          "fine_extracted": 2
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/10/28/CAMHDA301-20261028T091500.mp4",
+          "coarse_extracted": 4,
+          "fine_extracted": 0
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/10/28/CAMHDA301-20261028T061500.mp4",
+          "coarse_extracted": 4,
+          "fine_extracted": 2
+        }
+      ]
+    },
+    "ooi-hydrate-ridge": {
+      "source_width": 5344,
+      "source_height": 4008,
+      "width": 5344,
+      "height": 4155,
+      "image_bytes": 44637442,
+      "display_image_bytes": 44599071,
+      "method": "native",
+      "color_mode": "RGB",
+      "display_credit": "Data: OOI / WHOI OOI Program Office / UW | Supported by U.S. NSF 2244833",
+      "image_url": "https://nikokoren.github.io/abyss/sources/ooi-hydrate-ridge/ef5e47c1cad480408212.png",
+      "display_image_url": "https://nikokoren.github.io/abyss/sources/ooi-hydrate-ridge/cc15c1d4cf41aa4657d7.png",
+      "view_url": "https://nikokoren.github.io/abyss/i/4d8cdcd23a18dc1c6799.html",
+      "qr_code_url": "https://nikokoren.github.io/abyss/i/4d8cdcd23a18dc1c6799.png",
+      "published_at": "2026-10-28T13:45:26.915374+00:00",
+      "preference": {
+        "model_id": "582ac6e133ee5bef715976d0340bceef1b02e70e78afbcf97a27f61355ccc93e",
+        "status": "active",
+        "error": null
+      },
+      "candidates_extracted": 2,
+      "recordings": [
+        {
+          "url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/28/CAMDSB103_10.33.7.5_20261028T124621_UTC.jpg",
+          "coarse_extracted": 1,
+          "fine_extracted": 0
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/28/CAMDSB103_10.33.7.5_20261028T124616_UTC.jpg",
+          "coarse_extracted": 1,
+          "fine_extracted": 0
+        }
+      ]
+    },
+    "ooi-international-district": {
+      "source_width": 5344,
+      "source_height": 4008,
+      "width": 5344,
+      "height": 4155,
+      "image_bytes": 47763107,
+      "display_image_bytes": 47725441,
+      "method": "native",
+      "color_mode": "RGB",
+      "display_credit": "Data: OOI / WHOI OOI Program Office / UW | Supported by U.S. NSF 2244833",
+      "image_url": "https://nikokoren.github.io/abyss/sources/ooi-international-district/f369f2500ad35d97839b.png",
+      "display_image_url": "https://nikokoren.github.io/abyss/sources/ooi-international-district/d7be8cfc7889dede34d1.png",
+      "view_url": "https://nikokoren.github.io/abyss/i/e2e0ece10a71abf6caa0.html",
+      "qr_code_url": "https://nikokoren.github.io/abyss/i/e2e0ece10a71abf6caa0.png",
+      "published_at": "2026-10-28T13:45:50.377683+00:00",
+      "preference": {
+        "model_id": "582ac6e133ee5bef715976d0340bceef1b02e70e78afbcf97a27f61355ccc93e",
+        "status": "active",
+        "error": null
+      },
+      "candidates_extracted": 2,
+      "recordings": [
+        {
+          "url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/28/CAMDSB303_10.31.8.5_20261028T124618_UTC.jpg",
+          "coarse_extracted": 1,
+          "fine_extracted": 0
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/28/CAMDSB303_10.31.8.5_20261028T124613_UTC.jpg",
+          "coarse_extracted": 1,
+          "fine_extracted": 0
+        }
+      ]
+    }
+  },
+  "verification": [
+    "Actual generated recipe ZIP includes native transform and settings; no bytecode.",
+    "QR overlay markup exists only in full.liquid.",
+    "Three native full-resolution RGB photos decoded and dimensions checked.",
+    "Every clean-display photo pixel equals the photo region of the attributed download.",
+    "All three camera metadata entries report the trained personal model active."
+  ],
+  "total_published_bytes": 190174725,
+  "retention": "Immutable image history is currently unbounded. Full-resolution assets need bounded retention before expanding publication."
+}

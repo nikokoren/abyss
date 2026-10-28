@@ -2,6 +2,27 @@
 
 ## Native rotation, optional QR and source-resolution delivery — 28 October 2026
 
+[GitHub CI](https://github.com/nikokoren/abyss/actions/runs/40698966070) and the
+[production Pages deployment](https://github.com/nikokoren/abyss/actions/runs/40698966090)
+succeeded for `cf341f3`. The published bundle contains the transform, empty
+multi-select and optional full-screen-only QR setting. Actual production photos
+are **1920 × 1080** (Axial) and **5344 × 4008** (both still cameras), with clean
+RGB display assets and separate credited downloads. Every clean photo pixel
+was compared with the corresponding region of its attributed download.
+All three feeds report the owner-trained preference model active. Actual search
+coverage was 16 video frames across three recordings, and two snapshots only
+five seconds apart for each still camera. This is not a full session sweep.
+See [deployment evidence and actual asset sizes](evidence/native-delivery-20261028.json).
+All 88 layout cases were also repeated successfully with the actual published
+5344 × 4008 Hydrate Ridge RGB photo and production catalog; see the
+[production-photo browser report](evidence/trmnl-production-native-20261028.json).
+
+The public bundle is now about 190 MB; full-resolution display PNGs alone are
+44.6 and 47.7 MB for the still cameras. Retention must be bounded before expanding
+publication, given Pages' 1 GB site limit. Codex's direct Pages request was blocked
+by its proxy during CONNECT, not by the Pages origin; generated assets were
+verified through GitHub. A user's account/device rendering remains unverified.
+
 **80/80 Python tests passed**, plus the review JavaScript tests.
 The native Python transform is exercised with empty/single/multiple/all
 selections, persisted per-device cursors, repeated and missed refresh slots,
