@@ -2,22 +2,39 @@
   "schema_version": 1,
   "feature_space": "resnet18-imagenet1k-v1+quality-v1",
   "reviewer": "nikokoren",
-  "trained_at": "2026-10-28T18:13:13.469742+00:00",
+  "trained_at": "2026-10-28T19:53:48.265133+00:00",
   "status": "ready",
-  "comparisons": 120,
-  "pairwise_comparisons": 100,
+  "comparisons": 125,
+  "pairwise_comparisons": 105,
   "neither_comparisons": 20,
-  "dataset_hash": "4d22f80a3c941aa457d9198190aaebab7623fa32cf71d4cc6430f11cfa128e00",
+  "dataset_hash": "2f4c47723b035f9006691b91fd8ca7ed90a16dd011d8bf14830092ffaac57199",
   "repetitive_hashes": [],
   "evaluation": {
-    "status": "unavailable",
-    "reason": "Need at least three independent recording groups and held-out choices"
+    "status": "measured",
+    "split": "held_out_connected_recording_groups",
+    "test_comparisons": 67,
+    "accuracy": 0.8507462686567164,
+    "quality_baseline_accuracy": 0.8805970149253731
   },
   "note": "Appearance preference ranker, not a semantic subject detector; unmeasured evaluation is provisional.",
-  "model_id": "987e41ff06843c4b2311ea51955adb6c9f9f3e967a7b8a2420b1eaa0827cde8e",
+  "model_id": "a4282efcb1b87b855dafc45a9e1453dea259106b55dc98ed864fadbf520f5aa3",
   "prospective_evaluation": {
-    "status": "awaiting_feedback",
-    "comparisons": 0,
-    "note": "Review a fresh, non-overlapping gallery to compare frozen model predictions with quality-only selection."
+    "status": "collecting",
+    "comparisons": 5,
+    "learned_accuracy": 0.6,
+    "quality_baseline_accuracy": 0.6,
+    "difference": 0.0,
+    "unseen_recording_count": 1,
+    "batches": [
+      {
+        "batch_id": "cd7b84d7949695331076c29c64144c57",
+        "model_id": "987e41ff06843c4b2311ea51955adb6c9f9f3e967a7b8a2420b1eaa0827cde8e",
+        "comparisons": 5,
+        "recording_count": 1,
+        "learned_accuracy": 0.6,
+        "quality_baseline_accuracy": 0.6
+      }
+    ],
+    "note": "Predictions were frozen before feedback. Pairs from the same camera can be correlated within and across recordings; small samples are provisional."
   }
 }
