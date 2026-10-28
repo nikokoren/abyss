@@ -17,8 +17,16 @@ full-resolution colour, required credits, existing quality gates and one-bit
 illumination limitations retained. Shared About includes its approximate
 580 m depth, official research-site link and continental-margin maps. Historical
 hold decisions below are superseded for Offshore only. Local validation passed all 113 Python tests, the JavaScript review-core tests,
-and the documented fixture processing and recipe export. Production deployment
-verification is recorded separately after the release run.
+and the documented fixture processing and recipe export. All 100 native
+Framework 3.4.4 browser cases, the review browser flow, and shared About checks
+at mobile and desktop widths also passed.
+
+[Production deployment](https://github.com/nikokoren/abyss/actions/runs/40786030908)
+and [live GitHub-hosted verification](https://github.com/nikokoren/abyss/actions/runs/40786802914)
+both succeeded. All four cameras report the new shared model active; Offshore
+retrieved and decoded two recent OOI originals and published a 5344 × 4008 RGB
+image. The live check also verified rotation, attribution, About, recipe options
+and Framework 3.4.4. See [immutable production evidence](evidence/offshore-production-20261029.json).
 
 ## Unranked Offshore wildlife sample — 28 October 2026
 

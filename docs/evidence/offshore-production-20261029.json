@@ -1,0 +1,94 @@
+{
+  "verified_at": "2026-10-28T23:23:01.754089+00:00",
+  "release_commit": "68def1974ee726c2b94698358b0b3fd64d99325d",
+  "verification_commit": "7bbe3d35f7f8ea1161a14e69be5a04af328afc65",
+  "output_commit": "2db27017700727bddad0561f3bf32d21d24d5d79",
+  "deployment_run_url": "https://github.com/nikokoren/abyss/actions/runs/40786030908",
+  "deployment_conclusion": "success",
+  "live_verification_run_url": "https://github.com/nikokoren/abyss/actions/runs/40786802914",
+  "live_verification_conclusion": "success",
+  "live_verification_artifact_sha256": "4b331748310beb9668622793e63f7b5f585ceb7ecbb1d53a5504a72dccf10e8a",
+  "evidence_method": "Public Actions run conclusions and successful verification steps; immutable output-commit catalog read separately. The live verification ran on GitHub because Codex blocks the Pages domain. Artifact contents were not downloaded by Codex.",
+  "base_url": "https://nikokoren.github.io/abyss",
+  "camera_ids": [
+    "ooi-axial",
+    "ooi-oregon-offshore",
+    "ooi-hydrate-ridge",
+    "ooi-international-district"
+  ],
+  "rotation_order": [
+    "ooi-axial",
+    "ooi-oregon-offshore",
+    "ooi-hydrate-ridge",
+    "ooi-international-district"
+  ],
+  "preference_by_camera": {
+    "ooi-axial": {
+      "model_id": "2f1fb5248d738a9c3e0833015230faa9cab3f31848d6541a5ceb9d1b1aef7caa",
+      "status": "active",
+      "error": null
+    },
+    "ooi-oregon-offshore": {
+      "model_id": "2f1fb5248d738a9c3e0833015230faa9cab3f31848d6541a5ceb9d1b1aef7caa",
+      "status": "active",
+      "error": null
+    },
+    "ooi-hydrate-ridge": {
+      "model_id": "2f1fb5248d738a9c3e0833015230faa9cab3f31848d6541a5ceb9d1b1aef7caa",
+      "status": "active",
+      "error": null
+    },
+    "ooi-international-district": {
+      "model_id": "2f1fb5248d738a9c3e0833015230faa9cab3f31848d6541a5ceb9d1b1aef7caa",
+      "status": "active",
+      "error": null
+    }
+  },
+  "offshore": {
+    "source_id": "ooi-oregon-offshore",
+    "original_url": "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/28/CAMDSB106_10.33.9.6_20261028T211616_UTC.jpg",
+    "image_url": "https://nikokoren.github.io/abyss/sources/ooi-oregon-offshore/80258046a2af3d63985e.png",
+    "display_image_url": "https://nikokoren.github.io/abyss/sources/ooi-oregon-offshore/51401a005011f2ea84ca.png",
+    "source_width": 5344,
+    "source_height": 4008,
+    "width": 5344,
+    "height": 4155,
+    "color_mode": "RGB",
+    "method": "native",
+    "attribution_embedded": true,
+    "preference": {
+      "model_id": "2f1fb5248d738a9c3e0833015230faa9cab3f31848d6541a5ceb9d1b1aef7caa",
+      "status": "active",
+      "error": null
+    }
+  },
+  "offshore_retrieval": {
+    "recordings_considered": 2,
+    "images_extracted": 2,
+    "bytes_downloaded": 18070716,
+    "search_complete": true,
+    "elapsed_seconds": 11.13
+  },
+  "live_checks_passed": [
+    "Production registry equals live catalog, rotation order and feed options",
+    "Offshore active model equals current trusted shared preference model",
+    "Display PNG decodes at 5344 x 4008 in RGB; credited PNG retains full width and appended credit",
+    "Shared About includes four cameras, approximate depth and official Offshore site",
+    "Recipe includes Offshore, all-four description, Framework 3.4.4 and 15-minute refresh"
+  ],
+  "local_validation": {
+    "python_tests": 113,
+    "javascript_review_core": "passed",
+    "native_framework_browser_cases": 100,
+    "review_browser": "passed",
+    "shared_about_mobile_and_desktop": "passed",
+    "documented_fixture_pipeline_and_recipe": "passed",
+    "verifier_full_resolution_fixture_and_wrong_model_rejection": "passed"
+  },
+  "limitations": [
+    "Physical TRMNL device rendering remains unverified",
+    "One-bit Offshore illumination and contrast limitations remain documented",
+    "Preference accuracy remains provisional; assistant wildlife annotations were not labels"
+  ],
+  "verifier_correction": "A pre-deployment check ran before new content was live. The first post-deployment check had an overly small 32 MiB asset cap; the measured credited PNG is 46,994,600 bytes. The corrected bounded 64 MiB verifier passed."
+}

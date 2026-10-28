@@ -55,5 +55,6 @@
     ],
     "note": "Predictions were frozen before feedback. Pairs from the same camera can be correlated within and across recordings; small samples are provisional."
   },
-  "production_deployment_verified": false
+  "production_deployment_verified": true,
+  "production_evidence": "offshore-production-20261029.json"
 }
