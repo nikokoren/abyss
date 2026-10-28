@@ -1,0 +1,56 @@
+name: Sample Offshore wildlife across a week
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - scripts/sample_offshore_wildlife.py
+      - .github/workflows/offshore-wildlife.yml
+permissions:
+  contents: write
+concurrency:
+  group: offshore-wildlife-sample
+  cancel-in-progress: false
+jobs:
+  sample:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -e .
+      - name: Retrieve fixed time slots without quality filtering
+        run: python scripts/sample_offshore_wildlife.py --output /tmp/offshore-wildlife
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: offshore-week-wildlife-gallery
+          path: /tmp/offshore-wildlife/
+          retention-days: 30
+      - name: Preserve attributed review gallery and sampling manifest
+        if: always() && !cancelled()
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f /tmp/offshore-wildlife/report.json
+          set +e
+          git ls-remote --exit-code origin refs/heads/offshore-wildlife > /tmp/offshore-wildlife-ref
+          status=$?
+          set -e
+          if [ "$status" -eq 0 ]; then
+            git fetch --depth=1 origin refs/heads/offshore-wildlife:refs/remotes/origin/offshore-wildlife
+            git checkout --detach refs/remotes/origin/offshore-wildlife
+          elif [ "$status" -eq 2 ]; then
+            git checkout --orphan offshore-wildlife
+            git rm -rf --ignore-unmatch .
+          else
+            exit "$status"
+          fi
+          mkdir -p "reviews/${GITHUB_RUN_ID}"
+          cp -a /tmp/offshore-wildlife/. "reviews/${GITHUB_RUN_ID}/"
+          cp /tmp/offshore-wildlife/report.json reviews/latest.json
+          git add reviews
+          git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Record unranked Offshore weekly wildlife sample'
+          git push origin HEAD:refs/heads/offshore-wildlife
