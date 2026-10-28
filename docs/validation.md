@@ -1,5 +1,45 @@
 # Validation evidence and remaining acceptance gates
 
+## Native rotation, optional QR and source-resolution delivery — 28 October 2026
+
+**80/80 Python tests passed**, plus the review JavaScript tests.
+The native Python transform is exercised with empty/single/multiple/all
+selections, persisted per-device cursors, repeated and missed refresh slots,
+selection changes, legacy settings, latest-image updates and offline retention.
+All four Liquid views display the rotated camera's location and depth. Bundle
+checks verify the actual ZIP includes `transform.py` and current settings, with
+no stale files or Python bytecode. Generated YAML was parsed to confirm an empty
+optional multi-select, three feed options, QR off and native Python/3.4.4 settings.
+
+Full-resolution color tests compare every source pixel with the published
+display photo, verify a separate attributed download, preserve a 5344 × 4008 JPEG
+without decoder scaling, and confirm real FFmpeg frames retain stream size.
+Changing delivery mode reprocesses known footage once. Native delivery writes
+lossless RGB PNGs without resizing, sharpening, grayscale conversion or Abyss
+dithering. The clean device photo uses native attribution text that follows
+light/dark mode; the downloadable image retains embedded credit. Metadata includes source/output dimensions
+and actual file bytes; full-resolution storage growth must be monitored.
+
+**88/88 Chromium cases passed** against unmodified Framework 3.4.4 assets:
+all four views on OG, v2 and Kindle 2024 in landscape and portrait, with QR on
+and off, plus dark-mode and retained/empty/long-name/no-padding cases. All 12 QR
+overlays decoded successfully from their actual rendered sizes. The code appears
+only in full-screen view, with native absolute bottom/right positioning on the
+photo. The 24 dark-mode cases check native white credit text on a black canvas.
+Screenshots of the
+full and smallest portrait views were visually reviewed. See the
+[metadata-only report](evidence/trmnl-native-rotation-qr-20261028.json).
+Observation-page tests verify immutable frame-specific links, video timestamps,
+snapshot links, HTML escaping, invalid-URL exclusion and QR identity after newer
+publication. Codes are generated locally without an external QR provider.
+
+Native contract references and import steps are in the
+[recipe guide](../trmnl/README.md). Import the whole recipe, including its serverless
+transform and settings. These checks do not establish that a user's TRMNL account
+has imported it or that the hosted device renderer has applied `image-dither`.
+The local framework preview deliberately leaves color photos in color; dithering
+is documented as a hosted-platform behavior, not CSS or browser JavaScript.
+
 ## Additional still cameras — 28 October 2026
 
 **63/63 Python tests passed** (18.922 seconds). Seven still-image tests cover

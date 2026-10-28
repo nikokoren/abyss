@@ -41,8 +41,9 @@ and GitHub Pages deployment. Never paste keys into chat or source files.
    Measure workflow duration and `diagnostics.bytes_downloaded`. Compare current
    billing/Pages usage to [architecture.md](architecture.md).
 6. Download `/abyss-trmnl.zip` from the public site, which contains
-   settings and all four native Framework 3.4 layouts plus Shared. For an existing
-   plugin, replace the five markup tabs using [the update guide](../trmnl/README.md).
+   settings, the Python serverless transform and all four native Framework 3.4
+   layouts plus Shared. Import the whole recipe; updating just the five markup
+   tabs does not install rotation. See [the update guide](../trmnl/README.md).
    Preview and test the actual device, including source
    changes, absent selections, outages and stale capture timestamps. No
    credentials or user-supplied arbitrary media URLs belong in recipe settings.
@@ -84,12 +85,25 @@ deployment is blocked so the current site remains unchanged.
 This workflow intentionally makes no media downloads for an empty eligible
 registry. It generates an empty catalog/health report and reports failure so
 missing validation cannot be mistaken for successful ocean processing.
-Regenerating settings removes unhealthy options from new exports. Existing
-TRMNL installations must re-import the options; they still receive last-good or
-fallback metadata. Keep all retained images while cached metadata may reference
+Regenerating settings retains offline feeds that have a published image, along
+with their rotation slots and last-good metadata. Existing TRMNL installations
+must re-import settings to receive new dropdown options. Keep all retained images while cached metadata may reference
 them. `published_at` is the time the pipeline committed the image to its local
 public bundle; actual Pages/CDN deployment occurs later and is visible in the
 Actions deployment log.
+
+The recipe defaults to an empty multi-select (cycle through all feeds) and a
+15-minute native plugin refresh. One selection pins a camera; several cycle
+through that subset. Device wakes faster than the plugin cadence may repeat
+cached renders. The optional QR code is off by default and opens an immutable
+observation page for the displayed image/recording. The QR is a bottom-right
+photo overlay in full-screen view only. Attribution below the photo uses native
+text that follows light/dark mode; the downloadable PNG retains an embedded
+credit. Native `image-dither` lets
+TRMNL render full-resolution RGB photographs for its device; Abyss no longer
+pre-dithers or downsizes production exports. Inspect the actual `image_bytes`
+and `display_image_bytes` and total site size because full-resolution lossless PNGs are much larger than
+the old 800 × 448 bitonal output. Existing image history has no automatic pruning.
 
 The output branch is durable state. Do not delete it casually: doing so loses
 processing history and retained images, and may cause old recordings to be
@@ -113,7 +127,8 @@ processes; no persistent server is needed by the CLI processing workflow.
 | Persisting outputs fails | Check contents:write, branch policy and concurrent edits. Do not force-push; preserve state and retry after resolving the conflict. |
 | Pages deployment fails / 404 / login | Check Pages source, plan, environment approval, PUBLIC_BASE_URL and Actions deployment logs. Source extraction success does not prove public delivery. |
 | No schedule runs | Workflow must be on default branch. Check disabled workflows, Actions policy and inactivity. Trigger a manual run. |
-| Dropdown not updated | Regenerate settings from a healthy catalog and re-import. Static TRMNL fields do not update just because JSON changed. |
+| Dropdown not updated | Regenerate settings from a published catalog and re-import. Static TRMNL fields do not update just because JSON changed. |
+| Setup incomplete / rotation missing | Import the whole ZIP including transform.py and multi-select settings. Match native plugin refresh to device cadence. |
 | Corrupt local state JSON | Preserve the damaged file for diagnosis and restore a known-good state from output branch history. Do not silently reset duplicate history. |
 
 Never expose full source recordings or credentials. No user-tracking or camera

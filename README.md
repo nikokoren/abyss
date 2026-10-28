@@ -1,7 +1,7 @@
 # Abyss — Ambient Ocean for TRMNL
 
 A cloud-run underwater camera discovery and image-selection pipeline. It samples
-research recordings, ranks frames, produces monochrome e-paper stills, and serves
+research recordings, ranks frames, preserves full-resolution color stills, and serves
 attributed metadata for a source-selectable TRMNL recipe.
 
 **Status: implemented; OOI access, range support and visible vent footage were
@@ -83,10 +83,21 @@ OOI cameras remain on image-quality hold. See [camera access and evidence](docs/
 The device UI uses **TRMNL Framework 3.4**, tested against the official 3.4.4
 release. Full, half horizontal, half vertical and quadrant layouts use native
 components, containment and typography, with no custom CSS or fixed view sizes.
-See [the markup update guide](trmnl/README.md) to replace the corresponding tabs
-in an existing plugin without changing its polling configuration. Each site
-build publishes the templates under `/trmnl/` and bundles them with current
-settings in `/abyss-trmnl.zip`.
+See [the recipe update guide](trmnl/README.md). Import the whole `/abyss-trmnl.zip`,
+including settings and the native Python transform, to install rotation. No
+feeds are selected by default: the device cycles through all published cameras.
+One selection pins a camera; several rotate through that subset. Offline feeds
+keep their slot and last good image. The default plugin refresh is 15 minutes,
+independently of the twice-daily image-processing schedule.
+
+**Show QR code** is optional and off by default. Scanning opens the exact image
+or its original video at the selected timestamp, even after newer footage is
+published. Full-resolution RGB PNGs preserve the source pixels (including
+5344 × 4008 camera snapshots); TRMNL's native `image-dither` handles the device's
+palette and scaling. Source credit uses native theme-aware text below the
+photo; the downloadable version retains embedded credit. The QR overlays the
+photo's bottom-right corner in full-screen view only.
+See the guide for image sizes, native caching and storage considerations.
 
 ## Recent-recording search and cadence
 

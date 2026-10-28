@@ -101,6 +101,20 @@ class ImageTests(unittest.TestCase):
     def test_dimensions_guarded(self):
         with self.assertRaises(ValueError): render(self.scene,0,448)
 
+    def test_native_delivery_preserves_every_color_pixel_and_appends_credit(self):
+        pixels = np.random.default_rng(43).integers(0, 256, (1120, 1920, 3), dtype='uint8')
+        original = Image.fromarray(pixels)
+        camera = load('sources.json')[0]
+        image = render_for_source(original, camera, method='native', width=64, height=64,
+                                  contrast=3, brightness=0.1)
+        self.assertEqual(image.mode, 'RGB')
+        self.assertEqual(image.width, original.width)
+        self.assertGreater(image.height, original.height)
+        np.testing.assert_array_equal(np.asarray(image)[:original.height], pixels)
+        self.assertLess(np.asarray(image)[original.height:].min(), 255)
+        camera.pop('image_credit_lines')
+        np.testing.assert_array_equal(np.asarray(render_for_source(original, camera, method='native')), pixels)
+
     def test_attributed_render_preserves_edge_notices_and_separates_credit(self):
         # A wide frame with source notices at both edges would lose them to a crop.
         original = Image.new('L', (1600, 400), 160)
@@ -187,6 +201,8 @@ class IntegrationTests(unittest.TestCase):
                 frames,diagnostics=extract(url,tmp,interval=2,maximum=3)
             self.assertEqual(len(frames),3)
             self.assertEqual(diagnostics['codec'],'h264')
+            with Image.open(frames[0][1]) as frame:
+                self.assertEqual(frame.size, (640, 360))  # exact source pixels, no fixed extraction scale
             self.assertIsNone(video.error)
             self.assertLessEqual(video.bytes_read,self.video.stat().st_size+1)
             self.assertTrue(all(end-start+1<=video.block_size for start,end in fake.requests))
@@ -240,7 +256,11 @@ class IntegrationTests(unittest.TestCase):
             self.assertEqual(run([s],a)[s['id']],'unchanged')
             generate(root,a.base_url,root/'settings.yml')
             self.assertIn('Test camera (archive)',(root/'settings.yml').read_text())
-            self.assertIn('source_id',(root/'settings.yml').read_text())
+            settings = (root/'settings.yml').read_text()
+            for line in ('  - keyname: source_ids', '    multiple: true', '    optional: true',
+                         '    default: []', 'refresh_interval: 15', 'serverless_language: python',
+                         'framework_version: "3.4.4"'):
+                self.assertIn(line + '\n', settings)
             self.assertIn('name: Abyss', (root/'settings.yml').read_text())
             self.assertIn(s['acknowledgment'], (root/'settings.yml').read_text())
             a.force=True; a.local_video=str(root/'missing.mp4')
@@ -248,8 +268,11 @@ class IntegrationTests(unittest.TestCase):
             self.assertEqual(latest.read_bytes(),original)
             data=read_json(root/'public/catalog.json',{})
             self.assertFalse(data['sources'][s['id']]['available'])
-            self.assertEqual(data['options'],[])
+            self.assertEqual([o['value'] for o in data['options']],[s['id']])
             self.assertIsNotNone(data['default_image'])
+            self.assertEqual(data['rotation_order'],[s['id']])
+            generate(root,a.base_url,root/'settings-offline.yml')
+            self.assertIn('Test camera (archive)',(root/'settings-offline.yml').read_text())
             a.force=False
             self.assertEqual(run([s],a)[s['id']],'cooldown')
             a.force=True; a.local_video=str(self.video)

@@ -1,5 +1,6 @@
 """Render the real Liquid views, including data and retained-image edge cases."""
 import copy
+import importlib.util
 import unittest
 from html.parser import HTMLParser
 from pathlib import Path
@@ -7,6 +8,9 @@ from pathlib import Path
 from liquid import Environment
 
 LAYOUTS = ('full', 'half_horizontal', 'half_vertical', 'quadrant')
+spec = importlib.util.spec_from_file_location('abyss_native_transform', 'trmnl/transform.py')
+native = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(native)
 
 
 def catalog():
@@ -20,14 +24,20 @@ def catalog():
                         'University of Washington; supported by the U.S. National Science Foundation, '
                         'Cooperative Agreement 2244833'),
         'available': True, 'stale': False, 'fixture': False,
+        'display_credit': 'Data: OOI / WHOI OOI Program Office / UW | Supported by U.S. NSF 2244833',
     }
     return {'default_source': 'ooi-axial', 'default_image': camera, 'sources': {'ooi-axial': camera}}
 
 
-def render(layout, data, selection=None):
+def render(layout, data, selection=None, show_qr=False):
     context = copy.deepcopy(data)
     context['trmnl'] = {'plugin_settings': {'custom_fields_values': {
-        'source_id': selection if selection is not None else data.get('default_source')}}}
+        'source_ids': selection if selection is not None else [], 'show_qr': show_qr},
+        'refresh_interval_minutes': 15, 'data_fetched_utc': 1793167200},
+        'device': {'friendly_id': 'TEST', 'refresh_interval_seconds': 900}, 'state': {}}
+    transformed = native.run(context)
+    transformed.pop('trmnl_state')
+    context.update(transformed)
     return Environment().from_string(Path('trmnl', layout + '.liquid').read_text()).render(**context)
 
 
@@ -58,12 +68,14 @@ class TrmnlTests(unittest.TestCase):
                 images = [attrs for tag, attrs in markup.elements if tag == 'img']
                 self.assertEqual(len(images), 1)
                 self.assertIn('image--contain', images[0]['class'].split())
+                self.assertIn('image-dither', images[0]['class'].split())
                 text = render(layout, catalog())
                 self.assertIn('<span class="title">Abyss</span>', text)
                 self.assertIn('Axial Seamount', text)
                 self.assertIn('~1,540 m', text)
                 self.assertNotIn('Recorded ', text)
-                self.assertNotIn('Data:', text)
+                self.assertIn('Data: OOI', text)
+                self.assertIn('label label--small w--full shrink-0', text)
                 self.assertNotIn('Periodic recording', text)
 
     def test_missing_selection_keeps_default_and_retained_image(self):
@@ -71,7 +83,7 @@ class TrmnlTests(unittest.TestCase):
         data['default_image']['available'] = False
         data['default_image']['stale'] = True
         for layout in LAYOUTS:
-            text = render(layout, data, 'removed-source')
+            text = render(layout, data, 'ooi-axial')
             self.assertIn('https://example.invalid/ocean.png', text)
             self.assertIn('Last good image · update delayed', text)
             self.assertIn('~1,540 m', text)
@@ -79,7 +91,7 @@ class TrmnlTests(unittest.TestCase):
     def test_empty_catalog_has_native_empty_state_without_an_image(self):
         for layout in LAYOUTS:
             text = render(layout, {'sources': {}, 'default_image': None})
-            self.assertIn('No ocean image is available yet', text)
+            self.assertIn('No image is available for the selected feeds yet', text)
             self.assertNotIn('<img', text)
             self.assertNotIn('Periodic recording', text)
 

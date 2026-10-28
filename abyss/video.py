@@ -43,7 +43,7 @@ def extract_positions(url, directory, positions, *, duration, codec, prefix='can
         try:
             command(['ffmpeg', '-v', 'error', '-nostdin', '-threads', '2', '-rw_timeout', '25000000',
                      '-ss', str(seconds), '-format_whitelist', 'mov', '-i', url, '-map', '0:v:0', '-frames:v', '1',
-                     '-vf', 'scale=960:600:force_original_aspect_ratio=decrease', '-threads', '2', '-y', str(path)])
+                     '-threads', '2', '-y', str(path)])
             with Image.open(path) as image:
                 image.load()
                 if min(image.size) < 64:

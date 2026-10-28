@@ -66,6 +66,7 @@ def run_source(source, args):
         preference = load_model(getattr(args, 'preference_model', None))
         requested_model_id = preference['model_id'] if preference else None
         render_profile = hashlib.sha256(json.dumps({
+            'delivery_revision': 3,
             'width': args.width, 'height': args.height, 'method': args.method,
             'contrast': args.contrast, 'brightness': args.brightness,
             'preserve_frame': source.get('preserve_frame', False),
@@ -101,6 +102,8 @@ def run_source(source, args):
                 return 'rejected'
             extracted = datetime.fromtimestamp(frame.stat().st_mtime, timezone.utc).isoformat()
             with Image.open(frame) as image:
+                original_size = image.size
+                display_image = image.convert('RGB') if args.method == 'native' else None
                 processed = render_for_source(image, source, args.width, args.height, args.method,
                                               args.contrast, args.brightness)
             capture = None
@@ -121,12 +124,15 @@ def run_source(source, args):
                         'data_doi': source.get('data_doi'),
                         'rights_review_url': source.get('rights_review_url'),
                         'timestamp_basis': source.get('timestamp_basis'),
-                        'processing_note': 'Derived still: resized, contrast adjusted and rendered for e-paper',
+                        'processing_note': ('Full-resolution color photo for TRMNL, with native theme-aware credit. Downloadable still has a separate credit band. TRMNL resizes and dithers for the device.'
+                                            if args.method == 'native' else 'Derived still: resized, contrast adjusted and rendered for e-paper'),
                         'preference': diagnostics.get('preference'), 'selection_score': best.get('selection_score', score),
-                        'width': args.width, 'height': args.height, 'method': args.method, 'quality': metrics,
+                        'width': processed.width, 'height': processed.height, 'source_width': original_size[0],
+                        'source_height': original_size[1], 'color_mode': processed.mode,
+                        'method': args.method, 'quality': metrics,
                         'selection_reason': 'Best readable recent snapshot or video frame using quality, novelty and any active personal preference model',
                         'diagnostics': diagnostics, 'fixture': bool(args.local_video)}
-            publish(args.output, source, processed, metadata, args.base_url)
+            publish(args.output, source, processed, metadata, args.base_url, display_image=display_image)
             state['processed'] = processed_recordings
             state['preference_model_id'] = diagnostics.get('preference', {}).get('model_id')
             state['render_profile'] = render_profile

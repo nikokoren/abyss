@@ -64,6 +64,25 @@ def render_for_source(image, source, width=800, height=448, method='ordered',
                       contrast=1.25, brightness=1.03):
     """Keep source notices in-frame and put required credits outside the footage."""
     lines = source.get('image_credit_lines', [])
+    if method == 'native':
+        # Do not resize, crop, tone-map, sharpen, grayscale or dither the photo.
+        # The required source notice goes in a separate band below the frame.
+        footage = image.convert('RGB')
+        if not lines:
+            return footage
+        width, height = footage.size
+        font = ImageFont.load_default(size=max(10, round(width * 12 / 800)))
+        spacing = max(14, round(width * 16 / 800))
+        footer = spacing * len(lines) + max(6, round(width * 6 / 800))
+        if any(font.getlength(line) > width - 16 for line in lines):
+            raise ValueError('Source dimensions cannot fit required source attribution')
+        result = Image.new('RGB', (width, height + footer), 'white')
+        result.paste(footage, (0, 0))
+        draw = ImageDraw.Draw(result)
+        for i, line in enumerate(lines):
+            draw.text((max(8, round(width * 8 / 800)), height + max(3, round(width * 3 / 800)) + spacing * i),
+                      line, font=font, fill='black')
+        return result
     if not lines:
         return render(image, width, height, method, contrast, brightness,
                       preserve_frame=source.get('preserve_frame', False))

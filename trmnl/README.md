@@ -1,14 +1,20 @@
 # Native TRMNL Framework 3.4
 
-Abyss uses the native `layout`, `flex`, `image`, `label`, `description`, and
-`title_bar` components. The markup contains no custom CSS, inline styles,
-fixed view dimensions, browser scripts, or framework imports. The same flexible
-markup is supplied for every layout; the platform's view controls sizing.
+Abyss uses native layout, image containment, typography and title-bar components
+in all four views. There is no custom device CSS, browser JavaScript, fixed view
+size or extra framework import. Settings select Framework **3.4.4**, the exact
+release used by the browser checks and recorded in [framework.json](framework.json).
 
-## Update an existing plugin
+## Install or update
 
-Keep the existing polling URL, source selection and playlist configuration.
-In the plugin's markup editor, replace the contents of each matching layout tab:
+Download `/abyss-trmnl.zip` from the published site and import the **whole recipe**.
+The archive includes `settings.yml`, `transform.py`, four layouts, Shared and this
+guide. Updating only the Liquid markup is insufficient for rotation.
+
+For a manual update, keep the polling URL (`/catalog.json`, GET) and playlist;
+apply the generated settings, including the optional **multiple** select
+`source_ids`, enable the native **Python serverless transform**, and install
+[transform.py](transform.py). Replace each matching markup tab:
 
 | Editor layout | File |
 | --- | --- |
@@ -18,81 +24,117 @@ In the plugin's markup editor, replace the contents of each matching layout tab:
 | Quadrant | [quadrant.liquid](quadrant.liquid) |
 | Shared | [shared.liquid](shared.liquid) |
 
-Remove the previous Shared CSS as well. Each view is self-contained; Shared now
-contains only documentation. The TRMNL platform supplies `screen`, `view`, mashup
-containers, CSS and the framework runtime. Do not add a second set of wrappers or
-load framework assets inside the plugin markup.
+Remove the old Shared CSS. Shared now contains documentation only. The host
+supplies the screen/view wrappers and Framework assets. Preview all layouts and
+verify the physical device after importing; repository tests cannot update your
+TRMNL account. Re-import settings when adding cameras: static dropdown options
+do not automatically change when the catalog changes.
 
-Use a TRMNL renderer running Framework **3.4**. Browser validation uses the exact
-published **3.4.4** release, recorded in [framework.json](framework.json), without
-changing its CSS or fonts. The manifest documents compatibility; it does not
-change the framework version selected by the host.
+## Camera selection and refresh
 
-After the next successful site deployment, all files are available under
-`/trmnl/` and together in `/abyss-trmnl.zip`. The archive also includes
-the generated `settings.yml` when a healthy catalog is available.
+| Selected feeds | Display behavior |
+| --- | --- |
+| None (default) | Cycle through every published feed. |
+| One | Keep that camera on screen. |
+| Several | Cycle through that subset in catalog order. |
+| All | Same rotation as selecting none. |
 
-Preview each layout, then add it to a device or mashup. The framework sizes the
-layout and title bar for the active view and applies device typography and scale.
-The image uses native containment, preserving source notices and aspect ratio.
-The normal screen contains the image and native title bar only: **Abyss** at
-bottom left, camera location and depth at bottom right. The location uses the
-framework's native clamp when space is tight; the depth does not shrink away.
-A brief status label appears only when an update is delayed or a test fixture
-is displayed. Recording times, freshness details, full attribution and reuse
-terms are available in settings and on the product page. One compact source
-credit remains in the PNG, without a duplicate markup credit block.
+Each turn uses the camera's latest published best image. An offline camera keeps
+its slot and its last good image; it is not removed after repeated failures.
+A camera with no published image cannot be shown yet. Withheld sources remain
+excluded. A selection containing only deleted/unknown IDs shows an empty state
+rather than an unrelated feed. Legacy single `source_id` settings are supported
+only while the new `source_ids` field is absent; explicitly clearing the new
+field always means all feeds.
 
-Current OOI depth is displayed as **~1,540 m**, rounded from the operator's
-preliminary 1,543 m deployment record. See the
-[depth evidence](../docs/evidence/ooi-camera-depth-20261028.json).
+The native plugin refresh defaults to **15 minutes**, independently of the
+cloud processing schedule (03:23 and 15:23 UTC). The transform stores a small
+per-device cursor in TRMNL's native `trmnl_state` / `trmnl.state`. It advances once
+when a new refresh slot is observed, and keeps the same camera across layouts
+within that slot. Slots use the native data-fetch timestamp and the slower of
+the plugin and device refresh intervals. Skipped slots advance once on return,
+so missed refreshes do not systematically skip particular cameras. Changing the
+selected subset applies immediately. Cursors are bounded to the 16 most recently
+seen devices and remain below the native 8 KiB state limit.
 
-The 800×448 upstream image is still a raster; a larger device does not create
-additional photographic detail.
+A device wake can show a cached render if it occurs faster than plugin refresh.
+Match the native plugin refresh to the intended device cadence; rotation cannot
+force TRMNL to regenerate a cached screen. Polling/transform failures leave the
+previous good native output in place. There are no transform network requests,
+extra dependencies, external rotation service or per-device video jobs.
 
-## New installation and polling
+The normal view shows the picture and the native title bar: **Abyss** at bottom
+left, current camera location and known depth at bottom right. The location can
+clamp in small views; depth does not shrink away. A short delayed-update status
+appears for retained/stale images. Recording times, source health, full
+acknowledgment and reuse terms live on the product/settings pages. The required
+compact source credit is a native `label label--small` below the photo, so it
+follows the framework's light/dark text colors. No credit is rasterized into the
+device photograph. A separate downloadable version retains embedded attribution.
 
-Generate settings from a healthy published catalog:
+**Show QR code** is optional and off by default, and applies **only to full-screen
+view**. It overlays the bottom-right corner of the photo area using native
+`relative`, `absolute bottom--0 right--0` and sizing utilities. It takes no space
+away from the photo or title bar and never appears in halves or quadrant.
+It opens an immutable first-party observation page, rather
+than a changing camera homepage. That page includes the exact displayed still
+and either the original snapshot or the original MP4 positioned at the selected
+frame's timestamp. The phone browser controls video playback; the source must
+still serve the recording. QR pixels are not dithered and no external QR service
+receives the link. Outages retain the image's existing QR destination too.
+
+## Image resolution
+
+Production now preserves the **highest resolution supplied by each selected
+source**. The OOI still cameras provide **5344 × 4008** JPEGs, decoded without
+draft scaling; video frames keep their stream dimensions without the previous
+960 × 600 extraction scale. The device photograph is a lossless RGB PNG with
+every original photo pixel preserved, accompanied by native theme-aware credit.
+The separate downloadable image appends a credit band below the complete frame.
+Metadata records
+both source and published dimensions plus the actual PNG byte size. Native
+`image-dither` delegates resizing, palette conversion and dithering to TRMNL's
+renderer for its active device. The QR image has no such flag.
+
+There is no Abyss grayscale conversion, contrast adjustment, sharpening or
+dithering in the default `native` delivery mode. Low-resolution scoring/encoder
+work does not change the published pixels. Explicit CLI preview methods still
+support the old 800 × 448 comparison variants; production no longer uses them.
+Full-resolution lossless photographs consume more delivery bandwidth and retained
+storage. Monitor `image_bytes` and the Pages 1 GB site limit; immutable imagery
+and QR destinations are currently retained without automatic history pruning.
+The display image uses `display_image_url`; `image_url` remains the attributed
+download. `display_image_bytes` and `image_bytes` expose both asset sizes.
+
+## Generate settings and verify
 
 ```sh
 python -m abyss.cli recipe --base-url https://OWNER.github.io/abyss
-```
-
-Use those settings and the five markup files to configure a private polling
-plugin. The recipe polls `/catalog.json` with GET. Its native source select
-persists as `trmnl.plugin_settings.custom_fields_values.source_id`; the views
-select `sources[source_id]` and fall back to `default_image` when necessary.
-Images are preprocessed by the scheduled cloud job, so switching source does
-not trigger a new video job or expose credentials.
-
-Re-import generated settings when adding sources or changing the available
-options. Existing settings retain their old choices, but removed selections
-still fall back to retained imagery. No healthy source means no settings export.
-
-## Verification
-
-```sh
 python -m pip install -r requirements-dev.txt
-python -m unittest discover -s tests -p test_trmnl.py -v
+python -m unittest discover -s tests -v
 python -m playwright install chromium
 python scripts/check_trmnl_browser.py --framework-root /path/to/trmnl-framework
 ```
 
-The framework checkout must include the released `public/css/3.4.4`,
-`public/js/3.4.4` and `public/fonts` assets. CI checks out the exact official
-release commit. Use `--chromium /usr/bin/chromium` with an installed browser.
-Optional `--catalog` and `--image` use a real published catalog and still;
-otherwise the browser test uses a clearly labeled synthetic image.
+Settings require at least one reviewed source with a published image, including
+retained offline images. The framework checkout must contain the released
+`public/css/3.4.4`, `public/js/3.4.4` and `public/fonts` assets. CI pins the official
+release commit. Use `--chromium /usr/bin/chromium` for an installed browser.
+Optional `--catalog` and `--image` test a real published still; otherwise the test
+uses a clearly labeled synthetic image.
 
-The browser matrix covers full, both halves and quadrant on OG, v2 and Kindle
-2024 profiles in portrait and landscape, plus retained/stale, unknown-time,
-empty and long-name cases. It checks view bounds, title-bar separation, text
-and image containment, neighboring mashup cells and browser errors. Screenshots
-and a JSON report are saved under `output/validation/trmnl/` and uploaded by CI
-as `native-trmnl-3.4-previews`. These checks do not substitute for a physical
-screen test or access to your TRMNL account's preview renderer.
+The 88-case browser matrix covers four views on OG, v2 and Kindle 2024 profiles
+in both orientations, retained/empty/long-name states, and no-padding mashups.
+It checks bounds, image/text containment, title-bar separation, neighboring
+cells and browser errors, verifies full-screen-only bottom-right QR overlays,
+decodes each QR from its actual rendered size, and checks white native credit
+on a black canvas in dark mode.
+CI uploads `native-trmnl-3.4-previews`; local reports
+live under `output/validation/trmnl/`. Rotation tests exercise the actual native
+transform, persisted state and Liquid templates, including all selection modes,
+missed cycles, separate devices, outages and updated image URLs.
 
-Framework reference: [official source](https://github.com/usetrmnl/trmnl-framework/tree/f366a9303bbce97adca73d5747da8e2212379bbc),
-[3.4 structure](https://trmnl.com/framework/docs/3.4/structure),
-[image containment](https://trmnl.com/framework/docs/3.4/image),
-[title bar](https://trmnl.com/framework/docs/3.4/title_bar).
+Contract references: [official transform guide](https://github.com/usetrmnl/trmnlp/blob/30e770ba7da3f2a195aa70cd1571a35c6013947f/README.md#serverless-transforms),
+[native state](https://github.com/usetrmnl/trmnlp/blob/30e770ba7da3f2a195aa70cd1571a35c6013947f/lib/trmnlp/transform_state.rb),
+[native input context](https://github.com/usetrmnl/trmnlp/blob/30e770ba7da3f2a195aa70cd1571a35c6013947f/lib/trmnlp/user_data_assembler.rb),
+[Framework 3.4.4 source](https://github.com/usetrmnl/trmnl-framework/tree/f366a9303bbce97adca73d5747da8e2212379bbc).

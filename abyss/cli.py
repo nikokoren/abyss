@@ -32,7 +32,8 @@ def main():
         p.add_argument('--interval', type=float, default=60)
         p.add_argument('--width', type=int, default=800)
         p.add_argument('--height', type=int, default=448)
-        p.add_argument('--method', choices=['ordered', 'floyd', 'threshold', 'grayscale'], default='ordered')
+        p.add_argument('--method', choices=['native', 'ordered', 'floyd', 'threshold', 'grayscale'], default='native',
+                       help='native preserves source resolution and color; TRMNL performs device rendering')
         p.add_argument('--contrast', type=float, default=1.25)
         p.add_argument('--brightness', type=float, default=1.03)
         p.add_argument('--force', action='store_true')

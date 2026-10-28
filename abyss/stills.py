@@ -54,9 +54,7 @@ def download_image(recording, source, directory, budget, index):
         image.verify()
     with Image.open(io.BytesIO(received)) as image:
         original_size = list(image.size)
-        # Native JPEG decoder scaling keeps the full frame and avoids allocating
-        # a full-resolution RGB buffer for a 21 MP camera image destined for 800px.
-        image.draft('RGB', (1200, 900))
+        # Keep every source pixel; device resizing and quantization belong to TRMNL.
         image.load()
         path = Path(directory) / f'r{index}-snapshot.png'
         ImageOps.exif_transpose(image).convert('RGB').save(path)

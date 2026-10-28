@@ -6,12 +6,18 @@ on:
     paths:
       - trmnl/**
       - abyss/recipe.py
+      - abyss/cli.py
+      - abyss/publication.py
       - scripts/build_site.py
       - sources.json
       - abyss/adapters.py
       - abyss/stills.py
       - abyss/search.py
       - abyss/pipeline.py
+      - abyss/imaging.py
+      - abyss/video.py
+      - abyss/media_page.py
+      - pyproject.toml
   schedule:
     - cron: '23 3,15 * * *'
 permissions:

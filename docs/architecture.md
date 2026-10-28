@@ -2,8 +2,9 @@
 
 ```
 source registry → adapter discovery → HTTPS range bridge → FFprobe / FFmpeg
-  → candidate scoring + recent-image similarity → monochrome still
-  → immutable PNG + atomic metadata → public catalog → TRMNL selection
+  → candidate scoring + recent-image similarity → full-resolution RGB still
+  → immutable PNG + QR observation page + atomic metadata → public catalog
+  → native TRMNL transform / per-device selection → native palette rendering
                   ↘ durable state / backoff / measured resource use
 ```
 
@@ -12,14 +13,18 @@ settings select the delivered source rather than starting a per-device video job
 This deliberately trades a small fixed amount of preprocessing for zero user
 credentials and simple static delivery. Add only a small shortlist until measured
 costs justify expansion. An invalid CLI source selection falls back to the first
-eligible source. Missing recipe selection falls back to a retained default image.
+eligible source. An empty recipe selection cycles through all published feeds;
+one selection pins a camera, and multiple selections rotate through that subset.
+Native persisted state keeps one camera across layouts per refresh slot. Rotation
+uses the slower native plugin/device interval (default 15 minutes); a cached
+device wake does not trigger a new render. Offline cameras retain their slot.
 
 Adapters normalize recording URL and optional start timestamp. The OOI adapter
 searches up to 14 UTC days, parses only exact CAMHDA filenames on the expected
 date, ignores incomplete recent recordings for an hour, and returns up to three newest
 candidates for production search. Missing directory entries are tolerated. The direct adapter supports
-approved HTTPS MP4 archives without a new extractor. Live HLS, snapshots, APIs
-requiring credentials, and other containers need new small adapters; **not** all
+approved HTTPS MP4 archives without a new extractor. The OOI snapshot adapter
+retrieves bounded, immutable JPEGs. Live HLS, APIs requiring credentials, and other containers need new small adapters; **not** all
 registry candidates are implemented adapters.
 
 Remote data goes through inherited proxies and TLS trust. FFmpeg connects only
@@ -48,17 +53,22 @@ composition. A recent 256-bit difference hash penalizes near duplicates, while
 base-quality rejection avoids variety at the expense of unusable frames. Dark,
 white and flat frames are rejected. Semantic vent/animal detection is not
 implemented. Profiles can override acceptance and novelty weights by source.
-Ordered 4×4 dithering is a provisional default; threshold, Floyd and grayscale
-are configurable. Center-cropping cannot guarantee preservation of off-center
-subjects; subject-aware crops remain future work.
+Scoring and the image encoder use reduced working tensors, while publication
+keeps the full source frame in RGB. The device receives `display_image_url` with
+native attribution text beneath it; `image_url` retains the separate attributed
+download with a credit band. Video
+extraction has no fixed scaling filter and JPEG decoding has no draft reduction.
+TRMNL's native `image-dither` flag delegates device resizing and quantization to
+the host. Ordered, threshold, Floyd and grayscale remain explicit CLI inspection
+options, not production defaults. QR codes stay binary and do not use that flag.
 
-Publication is content-addressed PNG first, atomic `latest.json` second, catalog
+Publication is content-addressed PNG and immutable QR observation page first, atomic `latest.json` second, catalog
 last. Failed extraction/quality checks do not replace the last-good image.
 Recording time, frame offset, capture time, extraction/processing/publication
 times remain distinct. A successful job does not imply fresh footage. Non-archive
 captures over 48 hours old are marked stale by default. Unknown capture timestamps
-remain unknown. Catalog health hides sources from new dropdown exports after
-three failures, retaining old images and actual timestamps; exponential retries
+remain unknown. After three failures catalog health marks a camera unavailable,
+retaining its dropdown option, rotation slot, image and actual timestamp. Exponential retries
 (2–48 hours) automatically probe recovery. Successful discovery of an already
 processed recording clears transient failure status. Rejected recordings are
 remembered too. State retains 256 recording URLs and 24 recent hashes per source.
@@ -105,6 +115,9 @@ For N sources at two runs/day over 30 days:
   of site files; Git history also grows. Immutable images are retained to keep
   cached metadata valid. No automatic pruning or repository-history compaction
   is supplied; monitor growth before the 1 GB Pages limit.
+- That 100 KiB illustration describes the former 800 × 448 output. Full-resolution
+  RGB delivery can be tens of MiB per PNG; use published `image_bytes` and actual
+  update counts for storage/bandwidth estimates. No automatic pruning is enabled.
 - Delivery bandwidth: devices × polls/day × average response bytes. For example,
   1,000 devices × 6 polls/day × 100 KiB × 30 ≈ **17.2 GiB/month** before catalog
   overhead. Caches may reduce this, but do not rely on undocumented cache TTLs.

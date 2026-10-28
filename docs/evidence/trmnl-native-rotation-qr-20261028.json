@@ -1,0 +1,2133 @@
+{
+  "checked_at": "2026-10-28T13:40:21.896507+00:00",
+  "framework": {
+    "framework": "TRMNL",
+    "track": "3.4",
+    "tested_release": "3.4.4",
+    "upstream": "https://github.com/usetrmnl/trmnl-framework",
+    "upstream_commit": "f366a9303bbce97adca73d5747da8e2212379bbc",
+    "assets_provided_by": "TRMNL host platform",
+    "layouts": [
+      "full",
+      "half_horizontal",
+      "half_vertical",
+      "quadrant"
+    ]
+  },
+  "image": "synthetic test image",
+  "framework_css_sha256": "af12fdc34f6186fa0a208fe1c1dc37a14e98c8bfa09139e1be02e0600669be18",
+  "framework_js_sha256": "26c630c5ea8f679befa4f161abe92062aa6a82214698a41a93dac7a0a97f1f59",
+  "cases": [
+    {
+      "errors": [],
+      "view": {
+        "x": 10,
+        "y": 10,
+        "w": 780,
+        "h": 460,
+        "right": 790,
+        "bottom": 470
+      },
+      "image": {
+        "x": 10,
+        "y": 10,
+        "w": 780,
+        "h": 389,
+        "right": 790,
+        "bottom": 399
+      },
+      "credit_color": "rgb(0, 0, 0)",
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "12px",
+      "name": "og-landscape-full-available",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 10,
+        "y": 10,
+        "w": 780,
+        "h": 460,
+        "right": 790,
+        "bottom": 470
+      },
+      "image": {
+        "x": 10,
+        "y": 10,
+        "w": 780,
+        "h": 389,
+        "right": 790,
+        "bottom": 399
+      },
+      "credit_color": "rgb(0, 0, 0)",
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "12px",
+      "qr_decoded": "https://nikokoren.github.io/abyss/i/0123456789abcdef0123.html",
+      "name": "og-landscape-full-qr",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 10,
+        "y": 10,
+        "w": 780,
+        "h": 460,
+        "right": 790,
+        "bottom": 470
+      },
+      "image": {
+        "x": 10,
+        "y": 10,
+        "w": 780,
+        "h": 389,
+        "right": 790,
+        "bottom": 399
+      },
+      "credit_color": "rgb(255, 255, 255)",
+      "canvas_color": "rgb(0, 0, 0)",
+      "label_font": "12px",
+      "qr_decoded": "https://nikokoren.github.io/abyss/i/0123456789abcdef0123.html",
+      "name": "og-landscape-full-dark",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 10,
+        "y": 10,
+        "w": 780,
+        "h": 225,
+        "right": 790,
+        "bottom": 235
+      },
+      "image": {
+        "x": 20,
+        "y": 20,
+        "w": 760,
+        "h": 152,
+        "right": 780,
+        "bottom": 172
+      },
+      "credit_color": "rgb(0, 0, 0)",
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "12px",
+      "name": "og-landscape-half_horizontal-available",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 10,
+        "y": 10,
+        "w": 780,
+        "h": 225,
+        "right": 790,
+        "bottom": 235
+      },
+      "image": {
+        "x": 20,
+        "y": 20,
+        "w": 760,
+        "h": 152,
+        "right": 780,
+        "bottom": 172
+      },
+      "credit_color": "rgb(0, 0, 0)",
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "12px",
+      "name": "og-landscape-half_horizontal-qr",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 10,
+        "y": 10,
+        "w": 780,
+        "h": 225,
+        "right": 790,
+        "bottom": 235
+      },
+      "image": {
+        "x": 20,
+        "y": 20,
+        "w": 760,
+        "h": 152,
+        "right": 780,
+        "bottom": 172
+      },
+      "credit_color": "rgb(255, 255, 255)",
+      "canvas_color": "rgb(0, 0, 0)",
+      "label_font": "12px",
+      "name": "og-landscape-half_horizontal-dark",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 10,
+        "y": 10,
+        "w": 385,
+        "h": 460,
+        "right": 395,
+        "bottom": 470
+      },
+      "image": {
+        "x": 20,
+        "y": 20,
+        "w": 365,
+        "h": 375,
+        "right": 385,
+        "bottom": 395
+      },
+      "credit_color": "rgb(0, 0, 0)",
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "12px",
+      "name": "og-landscape-half_vertical-available",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 10,
+        "y": 10,
+        "w": 385,
+        "h": 460,
+        "right": 395,
+        "bottom": 470
+      },
+      "image": {
+        "x": 20,
+        "y": 20,
+        "w": 365,
+        "h": 375,
+        "right": 385,
+        "bottom": 395
+      },
+      "credit_color": "rgb(0, 0, 0)",
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "12px",
+      "name": "og-landscape-half_vertical-qr",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 10,
+        "y": 10,
+        "w": 385,
+        "h": 460,
+        "right": 395,
+        "bottom": 470
+      },
+      "image": {
+        "x": 20,
+        "y": 20,
+        "w": 365,
+        "h": 375,
+        "right": 385,
+        "bottom": 395
+      },
+      "credit_color": "rgb(255, 255, 255)",
+      "canvas_color": "rgb(0, 0, 0)",
+      "label_font": "12px",
+      "name": "og-landscape-half_vertical-dark",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 10,
+        "y": 10,
+        "w": 385,
+        "h": 225,
+        "right": 395,
+        "bottom": 235
+      },
+      "image": {
+        "x": 20,
+        "y": 20,
+        "w": 365,
+        "h": 140,
+        "right": 385,
+        "bottom": 160
+      },
+      "credit_color": "rgb(0, 0, 0)",
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "12px",
+      "name": "og-landscape-quadrant-available",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 10,
+        "y": 10,
+        "w": 385,
+        "h": 225,
+        "right": 395,
+        "bottom": 235
+      },
+      "image": {
+        "x": 20,
+        "y": 20,
+        "w": 365,
+        "h": 140,
+        "right": 385,
+        "bottom": 160
+      },
+      "credit_color": "rgb(0, 0, 0)",
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "12px",
+      "name": "og-landscape-quadrant-qr",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 10,
+        "y": 10,
+        "w": 385,
+        "h": 225,
+        "right": 395,
+        "bottom": 235
+      },
+      "image": {
+        "x": 20,
+        "y": 20,
+        "w": 365,
+        "h": 140,
+        "right": 385,
+        "bottom": 160
+      },
+      "credit_color": "rgb(255, 255, 255)",
+      "canvas_color": "rgb(0, 0, 0)",
+      "label_font": "12px",
+      "name": "og-landscape-quadrant-dark",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 10,
+        "y": 10,
+        "w": 460,
+        "h": 780,
+        "right": 470,
+        "bottom": 790
+      },
+      "image": {
+        "x": 10,
+        "y": 10,
+        "w": 460,
+        "h": 709,
+        "right": 470,
+        "bottom": 719
+      },
+      "credit_color": "rgb(0, 0, 0)",
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "12px",
+      "name": "og-portrait-full-available",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 10,
+        "y": 10,
+        "w": 460,
+        "h": 780,
+        "right": 470,
+        "bottom": 790
+      },
+      "image": {
+        "x": 10,
+        "y": 10,
+        "w": 460,
+        "h": 709,
+        "right": 470,
+        "bottom": 719
+      },
+      "credit_color": "rgb(0, 0, 0)",
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "12px",
+      "qr_decoded": "https://nikokoren.github.io/abyss/i/0123456789abcdef0123.html",
+      "name": "og-portrait-full-qr",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 10,
+        "y": 10,
+        "w": 460,
+        "h": 780,
+        "right": 470,
+        "bottom": 790
+      },
+      "image": {
+        "x": 10,
+        "y": 10,
+        "w": 460,
+        "h": 709,
+        "right": 470,
+        "bottom": 719
+      },
+      "credit_color": "rgb(255, 255, 255)",
+      "canvas_color": "rgb(0, 0, 0)",
+      "label_font": "12px",
+      "qr_decoded": "https://nikokoren.github.io/abyss/i/0123456789abcdef0123.html",
+      "name": "og-portrait-full-dark",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 10,
+        "y": 10,
+        "w": 460,
+        "h": 385,
+        "right": 470,
+        "bottom": 395
+      },
+      "image": {
+        "x": 20,
+        "y": 20,
+        "w": 440,
+        "h": 300,
+        "right": 460,
+        "bottom": 320
+      },
+      "credit_color": "rgb(0, 0, 0)",
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "12px",
+      "name": "og-portrait-half_horizontal-available",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 10,
+        "y": 10,
+        "w": 460,
+        "h": 385,
+        "right": 470,
+        "bottom": 395
+      },
+      "image": {
+        "x": 20,
+        "y": 20,
+        "w": 440,
+        "h": 300,
+        "right": 460,
+        "bottom": 320
+      },
+      "credit_color": "rgb(0, 0, 0)",
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "12px",
+      "name": "og-portrait-half_horizontal-qr",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 10,
+        "y": 10,
+        "w": 460,
+        "h": 385,
+        "right": 470,
+        "bottom": 395
+      },
+      "image": {
+        "x": 20,
+        "y": 20,
+        "w": 440,
+        "h": 300,
+        "right": 460,
+        "bottom": 320
+      },
+      "credit_color": "rgb(255, 255, 255)",
+      "canvas_color": "rgb(0, 0, 0)",
+      "label_font": "12px",
+      "name": "og-portrait-half_horizontal-dark",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 10,
+        "y": 10,
+        "w": 225,
+        "h": 780,
+        "right": 235,
+        "bottom": 790
+      },
+      "image": {
+        "x": 20,
+        "y": 20,
+        "w": 205,
+        "h": 683,
+        "right": 225,
+        "bottom": 703
+      },
+      "credit_color": "rgb(0, 0, 0)",
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "12px",
+      "name": "og-portrait-half_vertical-available",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 10,
+        "y": 10,
+        "w": 225,
+        "h": 780,
+        "right": 235,
+        "bottom": 790
+      },
+      "image": {
+        "x": 20,
+        "y": 20,
+        "w": 205,
+        "h": 683,
+        "right": 225,
+        "bottom": 703
+      },
+      "credit_color": "rgb(0, 0, 0)",
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "12px",
+      "name": "og-portrait-half_vertical-qr",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 10,
+        "y": 10,
+        "w": 225,
+        "h": 780,
+        "right": 235,
+        "bottom": 790
+      },
+      "image": {
+        "x": 20,
+        "y": 20,
+        "w": 205,
+        "h": 683,
+        "right": 225,
+        "bottom": 703
+      },
+      "credit_color": "rgb(255, 255, 255)",
+      "canvas_color": "rgb(0, 0, 0)",
+      "label_font": "12px",
+      "name": "og-portrait-half_vertical-dark",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 10,
+        "y": 10,
+        "w": 225,
+        "h": 385,
+        "right": 235,
+        "bottom": 395
+      },
+      "image": {
+        "x": 20,
+        "y": 20,
+        "w": 205,
+        "h": 288,
+        "right": 225,
+        "bottom": 308
+      },
+      "credit_color": "rgb(0, 0, 0)",
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "12px",
+      "name": "og-portrait-quadrant-available",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 10,
+        "y": 10,
+        "w": 225,
+        "h": 385,
+        "right": 235,
+        "bottom": 395
+      },
+      "image": {
+        "x": 20,
+        "y": 20,
+        "w": 205,
+        "h": 288,
+        "right": 225,
+        "bottom": 308
+      },
+      "credit_color": "rgb(0, 0, 0)",
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "12px",
+      "name": "og-portrait-quadrant-qr",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 10,
+        "y": 10,
+        "w": 225,
+        "h": 385,
+        "right": 235,
+        "bottom": 395
+      },
+      "image": {
+        "x": 20,
+        "y": 20,
+        "w": 205,
+        "h": 288,
+        "right": 225,
+        "bottom": 308
+      },
+      "credit_color": "rgb(255, 255, 255)",
+      "canvas_color": "rgb(0, 0, 0)",
+      "label_font": "12px",
+      "name": "og-portrait-quadrant-dark",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 18,
+        "y": 18,
+        "w": 1836,
+        "h": 1368,
+        "right": 1854,
+        "bottom": 1386
+      },
+      "image": {
+        "x": 18,
+        "y": 18,
+        "w": 1836,
+        "h": 1238.4000244140625,
+        "right": 1854,
+        "bottom": 1256.4000244140625
+      },
+      "credit_color": "rgb(0, 0, 0)",
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "13px",
+      "name": "v2-landscape-full-available",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 18,
+        "y": 18,
+        "w": 1836,
+        "h": 1368,
+        "right": 1854,
+        "bottom": 1386
+      },
+      "image": {
+        "x": 18,
+        "y": 18,
+        "w": 1836,
+        "h": 1238.4000244140625,
+        "right": 1854,
+        "bottom": 1256.4000244140625
+      },
+      "credit_color": "rgb(0, 0, 0)",
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "13px",
+      "qr_decoded": "https://nikokoren.github.io/abyss/i/0123456789abcdef0123.html",
+      "name": "v2-landscape-full-qr",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 18,
+        "y": 18,
+        "w": 1836,
+        "h": 1368,
+        "right": 1854,
+        "bottom": 1386
+      },
+      "image": {
+        "x": 18,
+        "y": 18,
+        "w": 1836,
+        "h": 1238.4000244140625,
+        "right": 1854,
+        "bottom": 1256.4000244140625
+      },
+      "credit_color": "rgb(255, 255, 255)",
+      "canvas_color": "rgb(0, 0, 0)",
+      "label_font": "13px",
+      "qr_decoded": "https://nikokoren.github.io/abyss/i/0123456789abcdef0123.html",
+      "name": "v2-landscape-full-dark",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 18,
+        "y": 18,
+        "w": 1836,
+        "h": 675,
+        "right": 1854,
+        "bottom": 693
+      },
+      "image": {
+        "x": 36,
+        "y": 36,
+        "w": 1800,
+        "h": 541.7999877929688,
+        "right": 1836,
+        "bottom": 577.7999877929688
+      },
+      "credit_color": "rgb(0, 0, 0)",
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "13px",
+      "name": "v2-landscape-half_horizontal-available",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 18,
+        "y": 18,
+        "w": 1836,
+        "h": 675,
+        "right": 1854,
+        "bottom": 693
+      },
+      "image": {
+        "x": 36,
+        "y": 36,
+        "w": 1800,
+        "h": 541.7999877929688,
+        "right": 1836,
+        "bottom": 577.7999877929688
+      },
+      "credit_color": "rgb(0, 0, 0)",
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "13px",
+      "name": "v2-landscape-half_horizontal-qr",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 18,
+        "y": 18,
+        "w": 1836,
+        "h": 675,
+        "right": 1854,
+        "bottom": 693
+      },
+      "image": {
+        "x": 36,
+        "y": 36,
+        "w": 1800,
+        "h": 541.7999877929688,
+        "right": 1836,
+        "bottom": 577.7999877929688
+      },
+      "credit_color": "rgb(255, 255, 255)",
+      "canvas_color": "rgb(0, 0, 0)",
+      "label_font": "13px",
+      "name": "v2-landscape-half_horizontal-dark",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 18,
+        "y": 18,
+        "w": 909,
+        "h": 1368,
+        "right": 927,
+        "bottom": 1386
+      },
+      "image": {
+        "x": 36,
+        "y": 36,
+        "w": 873,
+        "h": 1234.7999267578125,
+        "right": 909,
+        "bottom": 1270.7999267578125
+      },
+      "credit_color": "rgb(0, 0, 0)",
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "13px",
+      "name": "v2-landscape-half_vertical-available",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 18,
+        "y": 18,
+        "w": 909,
+        "h": 1368,
+        "right": 927,
+        "bottom": 1386
+      },
+      "image": {
+        "x": 36,
+        "y": 36,
+        "w": 873,
+        "h": 1234.7999267578125,
+        "right": 909,
+        "bottom": 1270.7999267578125
+      },
+      "credit_color": "rgb(0, 0, 0)",
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "13px",
+      "name": "v2-landscape-half_vertical-qr",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 18,
+        "y": 18,
+        "w": 909,
+        "h": 1368,
+        "right": 927,
+        "bottom": 1386
+      },
+      "image": {
+        "x": 36,
+        "y": 36,
+        "w": 873,
+        "h": 1234.7999267578125,
+        "right": 909,
+        "bottom": 1270.7999267578125
+      },
+      "credit_color": "rgb(255, 255, 255)",
+      "canvas_color": "rgb(0, 0, 0)",
+      "label_font": "13px",
+      "name": "v2-landscape-half_vertical-dark",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 18,
+        "y": 18,
+        "w": 909,
+        "h": 675,
+        "right": 927,
+        "bottom": 693
+      },
+      "image": {
+        "x": 36,
+        "y": 36,
+        "w": 873,
+        "h": 541.7999877929688,
+        "right": 909,
+        "bottom": 577.7999877929688
+      },
+      "credit_color": "rgb(0, 0, 0)",
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "13px",
+      "name": "v2-landscape-quadrant-available",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 18,
+        "y": 18,
+        "w": 909,
+        "h": 675,
+        "right": 927,
+        "bottom": 693
+      },
+      "image": {
+        "x": 36,
+        "y": 36,
+        "w": 873,
+        "h": 541.7999877929688,
+        "right": 909,
+        "bottom": 577.7999877929688
+      },
+      "credit_color": "rgb(0, 0, 0)",
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "13px",
+      "name": "v2-landscape-quadrant-qr",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 18,
+        "y": 18,
+        "w": 909,
+        "h": 675,
+        "right": 927,
+        "bottom": 693
+      },
+      "image": {
+        "x": 36,
+        "y": 36,
+        "w": 873,
+        "h": 541.7999877929688,
+        "right": 909,
+        "bottom": 577.7999877929688
+      },
+      "credit_color": "rgb(255, 255, 255)",
+      "canvas_color": "rgb(0, 0, 0)",
+      "label_font": "13px",
+      "name": "v2-landscape-quadrant-dark",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 18,
+        "y": 18,
+        "w": 1368,
+        "h": 1836,
+        "right": 1386,
+        "bottom": 1854
+      },
+      "image": {
+        "x": 18,
+        "y": 18,
+        "w": 1368,
+        "h": 1706.39990234375,
+        "right": 1386,
+        "bottom": 1724.39990234375
+      },
+      "credit_color": "rgb(0, 0, 0)",
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "13px",
+      "name": "v2-portrait-full-available",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 18,
+        "y": 18,
+        "w": 1368,
+        "h": 1836,
+        "right": 1386,
+        "bottom": 1854
+      },
+      "image": {
+        "x": 18,
+        "y": 18,
+        "w": 1368,
+        "h": 1706.39990234375,
+        "right": 1386,
+        "bottom": 1724.39990234375
+      },
+      "credit_color": "rgb(0, 0, 0)",
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "13px",
+      "qr_decoded": "https://nikokoren.github.io/abyss/i/0123456789abcdef0123.html",
+      "name": "v2-portrait-full-qr",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 18,
+        "y": 18,
+        "w": 1368,
+        "h": 1836,
+        "right": 1386,
+        "bottom": 1854
+      },
+      "image": {
+        "x": 18,
+        "y": 18,
+        "w": 1368,
+        "h": 1706.39990234375,
+        "right": 1386,
+        "bottom": 1724.39990234375
+      },
+      "credit_color": "rgb(255, 255, 255)",
+      "canvas_color": "rgb(0, 0, 0)",
+      "label_font": "13px",
+      "qr_decoded": "https://nikokoren.github.io/abyss/i/0123456789abcdef0123.html",
+      "name": "v2-portrait-full-dark",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 18,
+        "y": 18,
+        "w": 1368,
+        "h": 909,
+        "right": 1386,
+        "bottom": 927
+      },
+      "image": {
+        "x": 36,
+        "y": 36,
+        "w": 1332,
+        "h": 775.7999877929688,
+        "right": 1368,
+        "bottom": 811.7999877929688
+      },
+      "credit_color": "rgb(0, 0, 0)",
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "13px",
+      "name": "v2-portrait-half_horizontal-available",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 18,
+        "y": 18,
+        "w": 1368,
+        "h": 909,
+        "right": 1386,
+        "bottom": 927
+      },
+      "image": {
+        "x": 36,
+        "y": 36,
+        "w": 1332,
+        "h": 775.7999877929688,
+        "right": 1368,
+        "bottom": 811.7999877929688
+      },
+      "credit_color": "rgb(0, 0, 0)",
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "13px",
+      "name": "v2-portrait-half_horizontal-qr",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 18,
+        "y": 18,
+        "w": 1368,
+        "h": 909,
+        "right": 1386,
+        "bottom": 927
+      },
+      "image": {
+        "x": 36,
+        "y": 36,
+        "w": 1332,
+        "h": 775.7999877929688,
+        "right": 1368,
+        "bottom": 811.7999877929688
+      },
+      "credit_color": "rgb(255, 255, 255)",
+      "canvas_color": "rgb(0, 0, 0)",
+      "label_font": "13px",
+      "name": "v2-portrait-half_horizontal-dark",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 18,
+        "y": 18,
+        "w": 675,
+        "h": 1836,
+        "right": 693,
+        "bottom": 1854
+      },
+      "image": {
+        "x": 36,
+        "y": 36,
+        "w": 639,
+        "h": 1679.39990234375,
+        "right": 675,
+        "bottom": 1715.39990234375
+      },
+      "credit_color": "rgb(0, 0, 0)",
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "13px",
+      "name": "v2-portrait-half_vertical-available",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 18,
+        "y": 18,
+        "w": 675,
+        "h": 1836,
+        "right": 693,
+        "bottom": 1854
+      },
+      "image": {
+        "x": 36,
+        "y": 36,
+        "w": 639,
+        "h": 1679.39990234375,
+        "right": 675,
+        "bottom": 1715.39990234375
+      },
+      "credit_color": "rgb(0, 0, 0)",
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "13px",
+      "name": "v2-portrait-half_vertical-qr",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 18,
+        "y": 18,
+        "w": 675,
+        "h": 1836,
+        "right": 693,
+        "bottom": 1854
+      },
+      "image": {
+        "x": 36,
+        "y": 36,
+        "w": 639,
+        "h": 1679.39990234375,
+        "right": 675,
+        "bottom": 1715.39990234375
+      },
+      "credit_color": "rgb(255, 255, 255)",
+      "canvas_color": "rgb(0, 0, 0)",
+      "label_font": "13px",
+      "name": "v2-portrait-half_vertical-dark",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 18,
+        "y": 18,
+        "w": 675,
+        "h": 909,
+        "right": 693,
+        "bottom": 927
+      },
+      "image": {
+        "x": 36,
+        "y": 36,
+        "w": 639,
+        "h": 752.3999633789062,
+        "right": 675,
+        "bottom": 788.3999633789062
+      },
+      "credit_color": "rgb(0, 0, 0)",
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "13px",
+      "name": "v2-portrait-quadrant-available",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 18,
+        "y": 18,
+        "w": 675,
+        "h": 909,
+        "right": 693,
+        "bottom": 927
+      },
+      "image": {
+        "x": 36,
+        "y": 36,
+        "w": 639,
+        "h": 752.3999633789062,
+        "right": 675,
+        "bottom": 788.3999633789062
+      },
+      "credit_color": "rgb(0, 0, 0)",
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "13px",
+      "name": "v2-portrait-quadrant-qr",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 18,
+        "y": 18,
+        "w": 675,
+        "h": 909,
+        "right": 693,
+        "bottom": 927
+      },
+      "image": {
+        "x": 36,
+        "y": 36,
+        "w": 639,
+        "h": 752.3999633789062,
+        "right": 675,
+        "bottom": 788.3999633789062
+      },
+      "credit_color": "rgb(255, 255, 255)",
+      "canvas_color": "rgb(0, 0, 0)",
+      "label_font": "13px",
+      "name": "v2-portrait-quadrant-dark",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 17.5,
+        "y": 17.5,
+        "w": 1365,
+        "h": 805,
+        "right": 1382.5,
+        "bottom": 822.5
+      },
+      "image": {
+        "x": 17.5,
+        "y": 17.5,
+        "w": 1365,
+        "h": 698.25,
+        "right": 1382.5,
+        "bottom": 715.75
+      },
+      "credit_color": "rgb(0, 0, 0)",
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "10.4px",
+      "name": "amazon_kindle_2024-landscape-full-available",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 17.5,
+        "y": 17.5,
+        "w": 1365,
+        "h": 805,
+        "right": 1382.5,
+        "bottom": 822.5
+      },
+      "image": {
+        "x": 17.5,
+        "y": 17.5,
+        "w": 1365,
+        "h": 698.25,
+        "right": 1382.5,
+        "bottom": 715.75
+      },
+      "credit_color": "rgb(0, 0, 0)",
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "10.4px",
+      "qr_decoded": "https://nikokoren.github.io/abyss/i/0123456789abcdef0123.html",
+      "name": "amazon_kindle_2024-landscape-full-qr",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 17.5,
+        "y": 17.5,
+        "w": 1365,
+        "h": 805,
+        "right": 1382.5,
+        "bottom": 822.5
+      },
+      "image": {
+        "x": 17.5,
+        "y": 17.5,
+        "w": 1365,
+        "h": 698.25,
+        "right": 1382.5,
+        "bottom": 715.75
+      },
+      "credit_color": "rgb(255, 255, 255)",
+      "canvas_color": "rgb(0, 0, 0)",
+      "label_font": "10.4px",
+      "qr_decoded": "https://nikokoren.github.io/abyss/i/0123456789abcdef0123.html",
+      "name": "amazon_kindle_2024-landscape-full-dark",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 17.5,
+        "y": 17.5,
+        "w": 1365,
+        "h": 393.75,
+        "right": 1382.5,
+        "bottom": 411.25
+      },
+      "image": {
+        "x": 35,
+        "y": 35,
+        "w": 1330,
+        "h": 280.68359375,
+        "right": 1365,
+        "bottom": 315.68359375
+      },
+      "credit_color": "rgb(0, 0, 0)",
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "10.4px",
+      "name": "amazon_kindle_2024-landscape-half_horizontal-available",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 17.5,
+        "y": 17.5,
+        "w": 1365,
+        "h": 393.75,
+        "right": 1382.5,
+        "bottom": 411.25
+      },
+      "image": {
+        "x": 35,
+        "y": 35,
+        "w": 1330,
+        "h": 280.68359375,
+        "right": 1365,
+        "bottom": 315.68359375
+      },
+      "credit_color": "rgb(0, 0, 0)",
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "10.4px",
+      "name": "amazon_kindle_2024-landscape-half_horizontal-qr",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 17.5,
+        "y": 17.5,
+        "w": 1365,
+        "h": 393.75,
+        "right": 1382.5,
+        "bottom": 411.25
+      },
+      "image": {
+        "x": 35,
+        "y": 35,
+        "w": 1330,
+        "h": 280.68359375,
+        "right": 1365,
+        "bottom": 315.68359375
+      },
+      "credit_color": "rgb(255, 255, 255)",
+      "canvas_color": "rgb(0, 0, 0)",
+      "label_font": "10.4px",
+      "name": "amazon_kindle_2024-landscape-half_horizontal-dark",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 17.5,
+        "y": 17.5,
+        "w": 673.75,
+        "h": 805,
+        "right": 691.25,
+        "bottom": 822.5
+      },
+      "image": {
+        "x": 35,
+        "y": 35,
+        "w": 638.75,
+        "h": 673.72265625,
+        "right": 673.75,
+        "bottom": 708.72265625
+      },
+      "credit_color": "rgb(0, 0, 0)",
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "10.4px",
+      "name": "amazon_kindle_2024-landscape-half_vertical-available",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 17.5,
+        "y": 17.5,
+        "w": 673.75,
+        "h": 805,
+        "right": 691.25,
+        "bottom": 822.5
+      },
+      "image": {
+        "x": 35,
+        "y": 35,
+        "w": 638.75,
+        "h": 673.72265625,
+        "right": 673.75,
+        "bottom": 708.72265625
+      },
+      "credit_color": "rgb(0, 0, 0)",
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "10.4px",
+      "name": "amazon_kindle_2024-landscape-half_vertical-qr",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 17.5,
+        "y": 17.5,
+        "w": 673.75,
+        "h": 805,
+        "right": 691.25,
+        "bottom": 822.5
+      },
+      "image": {
+        "x": 35,
+        "y": 35,
+        "w": 638.75,
+        "h": 673.72265625,
+        "right": 673.75,
+        "bottom": 708.72265625
+      },
+      "credit_color": "rgb(255, 255, 255)",
+      "canvas_color": "rgb(0, 0, 0)",
+      "label_font": "10.4px",
+      "name": "amazon_kindle_2024-landscape-half_vertical-dark",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 17.5,
+        "y": 17.5,
+        "w": 673.75,
+        "h": 393.75,
+        "right": 691.25,
+        "bottom": 411.25
+      },
+      "image": {
+        "x": 35,
+        "y": 35,
+        "w": 638.75,
+        "h": 262.47265625,
+        "right": 673.75,
+        "bottom": 297.47265625
+      },
+      "credit_color": "rgb(0, 0, 0)",
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "10.4px",
+      "name": "amazon_kindle_2024-landscape-quadrant-available",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 17.5,
+        "y": 17.5,
+        "w": 673.75,
+        "h": 393.75,
+        "right": 691.25,
+        "bottom": 411.25
+      },
+      "image": {
+        "x": 35,
+        "y": 35,
+        "w": 638.75,
+        "h": 262.47265625,
+        "right": 673.75,
+        "bottom": 297.47265625
+      },
+      "credit_color": "rgb(0, 0, 0)",
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "10.4px",
+      "name": "amazon_kindle_2024-landscape-quadrant-qr",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 17.5,
+        "y": 17.5,
+        "w": 673.75,
+        "h": 393.75,
+        "right": 691.25,
+        "bottom": 411.25
+      },
+      "image": {
+        "x": 35,
+        "y": 35,
+        "w": 638.75,
+        "h": 262.47265625,
+        "right": 673.75,
+        "bottom": 297.47265625
+      },
+      "credit_color": "rgb(255, 255, 255)",
+      "canvas_color": "rgb(0, 0, 0)",
+      "label_font": "10.4px",
+      "name": "amazon_kindle_2024-landscape-quadrant-dark",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 17.5,
+        "y": 17.5,
+        "w": 805,
+        "h": 1365,
+        "right": 822.5,
+        "bottom": 1382.5
+      },
+      "image": {
+        "x": 17.5,
+        "y": 17.5,
+        "w": 805,
+        "h": 1258.25,
+        "right": 822.5,
+        "bottom": 1275.75
+      },
+      "credit_color": "rgb(0, 0, 0)",
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "10.4px",
+      "name": "amazon_kindle_2024-portrait-full-available",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 17.5,
+        "y": 17.5,
+        "w": 805,
+        "h": 1365,
+        "right": 822.5,
+        "bottom": 1382.5
+      },
+      "image": {
+        "x": 17.5,
+        "y": 17.5,
+        "w": 805,
+        "h": 1258.25,
+        "right": 822.5,
+        "bottom": 1275.75
+      },
+      "credit_color": "rgb(0, 0, 0)",
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "10.4px",
+      "qr_decoded": "https://nikokoren.github.io/abyss/i/0123456789abcdef0123.html",
+      "name": "amazon_kindle_2024-portrait-full-qr",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 17.5,
+        "y": 17.5,
+        "w": 805,
+        "h": 1365,
+        "right": 822.5,
+        "bottom": 1382.5
+      },
+      "image": {
+        "x": 17.5,
+        "y": 17.5,
+        "w": 805,
+        "h": 1258.25,
+        "right": 822.5,
+        "bottom": 1275.75
+      },
+      "credit_color": "rgb(255, 255, 255)",
+      "canvas_color": "rgb(0, 0, 0)",
+      "label_font": "10.4px",
+      "qr_decoded": "https://nikokoren.github.io/abyss/i/0123456789abcdef0123.html",
+      "name": "amazon_kindle_2024-portrait-full-dark",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 17.5,
+        "y": 17.5,
+        "w": 805,
+        "h": 673.75,
+        "right": 822.5,
+        "bottom": 691.25
+      },
+      "image": {
+        "x": 35,
+        "y": 35,
+        "w": 770,
+        "h": 560.68359375,
+        "right": 805,
+        "bottom": 595.68359375
+      },
+      "credit_color": "rgb(0, 0, 0)",
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "10.4px",
+      "name": "amazon_kindle_2024-portrait-half_horizontal-available",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 17.5,
+        "y": 17.5,
+        "w": 805,
+        "h": 673.75,
+        "right": 822.5,
+        "bottom": 691.25
+      },
+      "image": {
+        "x": 35,
+        "y": 35,
+        "w": 770,
+        "h": 560.68359375,
+        "right": 805,
+        "bottom": 595.68359375
+      },
+      "credit_color": "rgb(0, 0, 0)",
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "10.4px",
+      "name": "amazon_kindle_2024-portrait-half_horizontal-qr",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 17.5,
+        "y": 17.5,
+        "w": 805,
+        "h": 673.75,
+        "right": 822.5,
+        "bottom": 691.25
+      },
+      "image": {
+        "x": 35,
+        "y": 35,
+        "w": 770,
+        "h": 560.68359375,
+        "right": 805,
+        "bottom": 595.68359375
+      },
+      "credit_color": "rgb(255, 255, 255)",
+      "canvas_color": "rgb(0, 0, 0)",
+      "label_font": "10.4px",
+      "name": "amazon_kindle_2024-portrait-half_horizontal-dark",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 17.5,
+        "y": 17.5,
+        "w": 393.75,
+        "h": 1365,
+        "right": 411.25,
+        "bottom": 1382.5
+      },
+      "image": {
+        "x": 35,
+        "y": 35,
+        "w": 358.75,
+        "h": 1233.72265625,
+        "right": 393.75,
+        "bottom": 1268.72265625
+      },
+      "credit_color": "rgb(0, 0, 0)",
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "10.4px",
+      "name": "amazon_kindle_2024-portrait-half_vertical-available",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 17.5,
+        "y": 17.5,
+        "w": 393.75,
+        "h": 1365,
+        "right": 411.25,
+        "bottom": 1382.5
+      },
+      "image": {
+        "x": 35,
+        "y": 35,
+        "w": 358.75,
+        "h": 1233.72265625,
+        "right": 393.75,
+        "bottom": 1268.72265625
+      },
+      "credit_color": "rgb(0, 0, 0)",
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "10.4px",
+      "name": "amazon_kindle_2024-portrait-half_vertical-qr",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 17.5,
+        "y": 17.5,
+        "w": 393.75,
+        "h": 1365,
+        "right": 411.25,
+        "bottom": 1382.5
+      },
+      "image": {
+        "x": 35,
+        "y": 35,
+        "w": 358.75,
+        "h": 1233.72265625,
+        "right": 393.75,
+        "bottom": 1268.72265625
+      },
+      "credit_color": "rgb(255, 255, 255)",
+      "canvas_color": "rgb(0, 0, 0)",
+      "label_font": "10.4px",
+      "name": "amazon_kindle_2024-portrait-half_vertical-dark",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 17.5,
+        "y": 17.5,
+        "w": 393.75,
+        "h": 673.75,
+        "right": 411.25,
+        "bottom": 691.25
+      },
+      "image": {
+        "x": 35,
+        "y": 35,
+        "w": 358.75,
+        "h": 542.47265625,
+        "right": 393.75,
+        "bottom": 577.47265625
+      },
+      "credit_color": "rgb(0, 0, 0)",
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "10.4px",
+      "name": "amazon_kindle_2024-portrait-quadrant-available",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 17.5,
+        "y": 17.5,
+        "w": 393.75,
+        "h": 673.75,
+        "right": 411.25,
+        "bottom": 691.25
+      },
+      "image": {
+        "x": 35,
+        "y": 35,
+        "w": 358.75,
+        "h": 542.47265625,
+        "right": 393.75,
+        "bottom": 577.47265625
+      },
+      "credit_color": "rgb(0, 0, 0)",
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "10.4px",
+      "name": "amazon_kindle_2024-portrait-quadrant-qr",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 17.5,
+        "y": 17.5,
+        "w": 393.75,
+        "h": 673.75,
+        "right": 411.25,
+        "bottom": 691.25
+      },
+      "image": {
+        "x": 35,
+        "y": 35,
+        "w": 358.75,
+        "h": 542.47265625,
+        "right": 393.75,
+        "bottom": 577.47265625
+      },
+      "credit_color": "rgb(255, 255, 255)",
+      "canvas_color": "rgb(0, 0, 0)",
+      "label_font": "10.4px",
+      "name": "amazon_kindle_2024-portrait-quadrant-dark",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 10,
+        "y": 10,
+        "w": 385,
+        "h": 225,
+        "right": 395,
+        "bottom": 235
+      },
+      "image": {
+        "x": 20,
+        "y": 20,
+        "w": 365,
+        "h": 118,
+        "right": 385,
+        "bottom": 138
+      },
+      "credit_color": "rgb(0, 0, 0)",
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "12px",
+      "name": "og-landscape-quadrant-retained",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 10,
+        "y": 10,
+        "w": 225,
+        "h": 385,
+        "right": 235,
+        "bottom": 395
+      },
+      "image": {
+        "x": 20,
+        "y": 20,
+        "w": 205,
+        "h": 266,
+        "right": 225,
+        "bottom": 286
+      },
+      "credit_color": "rgb(0, 0, 0)",
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "12px",
+      "name": "og-portrait-quadrant-retained",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 10,
+        "y": 10,
+        "w": 385,
+        "h": 225,
+        "right": 395,
+        "bottom": 235
+      },
+      "image": {
+        "x": 20,
+        "y": 20,
+        "w": 365,
+        "h": 118,
+        "right": 385,
+        "bottom": 138
+      },
+      "credit_color": "rgb(0, 0, 0)",
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "12px",
+      "name": "og-landscape-quadrant-unknown_time",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 10,
+        "y": 10,
+        "w": 225,
+        "h": 385,
+        "right": 235,
+        "bottom": 395
+      },
+      "image": {
+        "x": 20,
+        "y": 20,
+        "w": 205,
+        "h": 266,
+        "right": 225,
+        "bottom": 286
+      },
+      "credit_color": "rgb(0, 0, 0)",
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "12px",
+      "name": "og-portrait-quadrant-unknown_time",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 10,
+        "y": 10,
+        "w": 385,
+        "h": 225,
+        "right": 395,
+        "bottom": 235
+      },
+      "image": null,
+      "credit_color": null,
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "12px",
+      "name": "og-landscape-quadrant-empty",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 10,
+        "y": 10,
+        "w": 225,
+        "h": 385,
+        "right": 235,
+        "bottom": 395
+      },
+      "image": null,
+      "credit_color": null,
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "12px",
+      "name": "og-portrait-quadrant-empty",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 10,
+        "y": 10,
+        "w": 385,
+        "h": 225,
+        "right": 395,
+        "bottom": 235
+      },
+      "image": {
+        "x": 20,
+        "y": 20,
+        "w": 365,
+        "h": 140,
+        "right": 385,
+        "bottom": 160
+      },
+      "credit_color": "rgb(0, 0, 0)",
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "12px",
+      "name": "og-landscape-quadrant-long_name",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 10,
+        "y": 10,
+        "w": 225,
+        "h": 385,
+        "right": 235,
+        "bottom": 395
+      },
+      "image": {
+        "x": 20,
+        "y": 20,
+        "w": 205,
+        "h": 288,
+        "right": 225,
+        "bottom": 308
+      },
+      "credit_color": "rgb(0, 0, 0)",
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "12px",
+      "name": "og-portrait-quadrant-long_name",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 0,
+        "y": 0,
+        "w": 800,
+        "h": 480,
+        "right": 800,
+        "bottom": 480
+      },
+      "image": {
+        "x": 0,
+        "y": 0,
+        "w": 800,
+        "h": 409,
+        "right": 800,
+        "bottom": 409
+      },
+      "credit_color": "rgb(0, 0, 0)",
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "12px",
+      "name": "og-landscape-full-no_bleed",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 0,
+        "y": 0,
+        "w": 780,
+        "h": 225,
+        "right": 780,
+        "bottom": 225
+      },
+      "image": {
+        "x": 10,
+        "y": 10,
+        "w": 760,
+        "h": 152,
+        "right": 770,
+        "bottom": 162
+      },
+      "credit_color": "rgb(0, 0, 0)",
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "12px",
+      "name": "og-landscape-half_horizontal-no_bleed",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 0,
+        "y": 0,
+        "w": 385,
+        "h": 460,
+        "right": 385,
+        "bottom": 460
+      },
+      "image": {
+        "x": 10,
+        "y": 10,
+        "w": 365,
+        "h": 375,
+        "right": 375,
+        "bottom": 385
+      },
+      "credit_color": "rgb(0, 0, 0)",
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "12px",
+      "name": "og-landscape-half_vertical-no_bleed",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 0,
+        "y": 0,
+        "w": 385,
+        "h": 225,
+        "right": 385,
+        "bottom": 225
+      },
+      "image": {
+        "x": 10,
+        "y": 10,
+        "w": 365,
+        "h": 140,
+        "right": 375,
+        "bottom": 150
+      },
+      "credit_color": "rgb(0, 0, 0)",
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "12px",
+      "name": "og-landscape-quadrant-no_bleed",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 0,
+        "y": 0,
+        "w": 480,
+        "h": 800,
+        "right": 480,
+        "bottom": 800
+      },
+      "image": {
+        "x": 0,
+        "y": 0,
+        "w": 480,
+        "h": 729,
+        "right": 480,
+        "bottom": 729
+      },
+      "credit_color": "rgb(0, 0, 0)",
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "12px",
+      "name": "og-portrait-full-no_bleed",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 0,
+        "y": 0,
+        "w": 460,
+        "h": 385,
+        "right": 460,
+        "bottom": 385
+      },
+      "image": {
+        "x": 10,
+        "y": 10,
+        "w": 440,
+        "h": 300,
+        "right": 450,
+        "bottom": 310
+      },
+      "credit_color": "rgb(0, 0, 0)",
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "12px",
+      "name": "og-portrait-half_horizontal-no_bleed",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 0,
+        "y": 0,
+        "w": 225,
+        "h": 780,
+        "right": 225,
+        "bottom": 780
+      },
+      "image": {
+        "x": 10,
+        "y": 10,
+        "w": 205,
+        "h": 683,
+        "right": 215,
+        "bottom": 693
+      },
+      "credit_color": "rgb(0, 0, 0)",
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "12px",
+      "name": "og-portrait-half_vertical-no_bleed",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 0,
+        "y": 0,
+        "w": 225,
+        "h": 385,
+        "right": 225,
+        "bottom": 385
+      },
+      "image": {
+        "x": 10,
+        "y": 10,
+        "w": 205,
+        "h": 288,
+        "right": 215,
+        "bottom": 298
+      },
+      "credit_color": "rgb(0, 0, 0)",
+      "canvas_color": "rgb(255, 255, 255)",
+      "label_font": "12px",
+      "name": "og-portrait-quadrant-no_bleed",
+      "browser_errors": []
+    }
+  ],
+  "scope": "Synthetic full-color photo; actual native Liquid and transform; official Framework 3.4.4 assets. Full-screen-only absolute bottom-right QR overlays decoded at actual rendered size. Native credit checked white on black in dark mode. Hosted-platform dithering requires the native renderer."
+}

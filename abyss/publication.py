@@ -25,7 +25,7 @@ def read_json(path, default):
     return json.loads(path.read_text()) if path.exists() else default
 
 
-def publish(root, source, image, metadata, base_url):
+def publish(root, source, image, metadata, base_url, *, display_image=None):
     from PIL import Image
     directory = Path(root) / 'public' / 'sources' / source['id']
     directory.mkdir(parents=True, exist_ok=True)
@@ -41,6 +41,25 @@ def publish(root, source, image, metadata, base_url):
         os.replace(temporary, directory / filename)
         metadata['image_url'] = f'{base_url.rstrip("/")}/sources/{source["id"]}/{filename}'
         metadata['image_sha256'] = hashlib.sha256((directory / filename).read_bytes()).hexdigest()
+        metadata['image_bytes'] = (directory / filename).stat().st_size
+        if display_image is not None:
+            # The device uses a clean photo with native theme-aware attribution.
+            # Keep the credited downloadable artifact separate from that image.
+            raw_temporary = Path(temporary)
+            try:
+                display_image.convert('RGB').save(raw_temporary, format='PNG')
+                raw_hash = hashlib.sha256(raw_temporary.read_bytes()).hexdigest()
+                raw_name = raw_hash[:20] + '.png'
+                raw_bytes = raw_temporary.stat().st_size
+                os.replace(raw_temporary, directory / raw_name)
+            finally:
+                raw_temporary.unlink(missing_ok=True)
+            metadata.update(display_image_url=f'{base_url.rstrip("/")}/sources/{source["id"]}/{raw_name}',
+                            display_image_sha256=raw_hash, display_image_bytes=raw_bytes,
+                            display_attribution_embedded=False,
+                            display_credit=' | '.join(source.get('image_credit_lines', [])))
+        from .media_page import publish_media_page
+        publish_media_page(Path(root) / 'public', metadata, base_url)
         atomic_json(directory / 'latest.json', metadata)
     finally:
         Path(temporary).unlink(missing_ok=True)
@@ -71,13 +90,13 @@ def catalog(root, sources, now, base_url):
             latest['stale'] = age > source.get('stale_after_hours', 48) * 3600
         latest['health'] = ('stale recording; showing last good frame' if latest['stale'] else 'available') if latest['available'] else 'unavailable; showing last good frame'
         entries[source['id']] = latest
-        if latest['available']:
-            options.append({'label': f'{source["name"]} ({source["type"].replace("_", " ")})', 'value': source['id'],
-                            'description': source.get('description', '')})
+        options.append({'label': f'{source["name"]} ({source["type"].replace("_", " ")})', 'value': source['id'],
+                        'description': source.get('description', '')})
     default = options[0]['value'] if options else None
     # Stable default object keeps a retained good image visible during total outage.
     fallback = entries.get(default) or next(iter(entries.values()), None)
     atomic_json(public / 'catalog.json', {'schema_version': 1, 'updated_at': now, 'default_source': default,
+                                        'rotation_order': list(entries),
                                         'default_image': fallback, 'options': options, 'sources': entries})
     atomic_json(public / 'health.json', {'checked_at': now, 'sources': {
         s['id']: {'registry_status': s['status'], **{k: v for k, v in read_json(Path(root) / 'state' / f'{s["id"]}.json', {}).items() if k in {'failures', 'last_result', 'last_error', 'last_checked_at', 'retry_after', 'last_published_at', 'last_successful_retrieval', 'diagnostics'}}} for s in sources}})

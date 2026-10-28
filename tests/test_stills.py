@@ -114,7 +114,7 @@ class StillTests(unittest.TestCase):
             self.assertEqual(report['bytes_downloaded'], len(body))
             self.assertEqual(budget.used, len(body))
 
-    def test_full_camera_resolution_is_guarded_then_decoder_scaled(self):
+    def test_full_camera_resolution_is_guarded_then_preserved(self):
         stream = io.BytesIO(); Image.new('RGB', (5344, 4008), 'gray').save(stream, format='JPEG')
         url = 'https://camera.example/photo.jpg'; value = camera()
         with tempfile.TemporaryDirectory() as tmp, patch('abyss.stills.opener', return_value=ImageOpener({url: stream.getvalue()})):
@@ -123,9 +123,9 @@ class StillTests(unittest.TestCase):
             value['max_image_pixels'] = 24_000_000
             path, report = download_image({'url': url}, value, tmp, TransferBudget(48 * 1024 * 1024), 1)
             self.assertEqual(report['original_size'], [5344, 4008])
-            self.assertEqual(report['decoded_size'], [1336, 1002])
+            self.assertEqual(report['decoded_size'], [5344, 4008])
             with Image.open(path) as image:
-                self.assertEqual(image.size, (1336, 1002))
+                self.assertEqual(image.size, (5344, 4008))
 
     def test_images_are_ranked_without_video_and_partial_failures_keep_good_frames(self):
         urls = ['https://camera.example/' + x + '.jpg' for x in ('dark', 'clear', 'broken')]

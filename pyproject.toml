@@ -7,7 +7,7 @@ name = "abyss-ocean"
 version = "0.1.0"
 description = "Source-aware underwater video stills for TRMNL e-paper displays"
 requires-python = ">=3.11"
-dependencies = ["Pillow==11.3.0", "numpy==2.2.6"]
+dependencies = ["Pillow==11.3.0", "numpy==2.2.6", "qrcode==8.2"]
 
 [project.scripts]
 abyss = "abyss.cli:main"

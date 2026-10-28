@@ -5,7 +5,8 @@ import shutil
 public = Path('output/public')
 public.mkdir(parents=True, exist_ok=True)
 shutil.copyfile('docs/viewer.html', public/'index.html')
-shutil.copytree('trmnl', public/'trmnl', dirs_exist_ok=True)
+shutil.rmtree(public/'trmnl', ignore_errors=True)
+shutil.copytree('trmnl', public/'trmnl', ignore=shutil.ignore_patterns('__pycache__', '*.pyc'))
 settings = public / 'trmnl' / 'settings.yml'
 if (public / 'settings.yml').exists():
     shutil.copyfile(public / 'settings.yml', settings)

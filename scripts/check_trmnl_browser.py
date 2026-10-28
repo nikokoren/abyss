@@ -8,18 +8,21 @@ import shutil
 import sys
 import tempfile
 import threading
+import io
 from datetime import datetime, timezone
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
 from PIL import Image, ImageDraw
+import qrcode
+import zxingcpp
 from playwright.sync_api import sync_playwright
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'tests'))
 from test_trmnl import LAYOUTS, catalog, render
 
 
-def document(markup, device, orientation, layout, *, no_bleed=False):
+def document(markup, device, orientation, layout, *, no_bleed=False, dark=False):
     view = f'<div class="view view--{layout}">{markup}</div>'
     if layout != 'full':
         mashup = {'half_vertical': '1Lx1R', 'half_horizontal': '1Tx1B', 'quadrant': '2x2'}[layout]
@@ -30,11 +33,12 @@ def document(markup, device, orientation, layout, *, no_bleed=False):
     size = {'og': 'md', 'v2': 'lg', 'amazon_kindle_2024': 'sm'}[device]
     portrait = 'screen--portrait' if orientation == 'portrait' else ''
     padding = 'screen--no-bleed' if no_bleed else ''
+    scheme = 'screen--dark-mode' if dark else ''
     return f'''<!doctype html><html lang="en"><meta charset="utf-8">
 <title>Abyss native TRMNL preview</title>
 <link rel="stylesheet" href="/css/3.4.4/plugins.css">
 <script src="/js/3.4.4/plugins.js" defer></script>
-<body class="trmnl"><div class="screen screen--{device} screen--{size} screen--{mode} {portrait} {padding}">
+<body class="trmnl"><div class="screen screen--{device} screen--{size} screen--{mode} {portrait} {padding} {scheme}">
 {view}</div></body></html>'''
 
 
@@ -73,7 +77,16 @@ CHECK = '''() => {
     if(Math.min(a.right,b.right)-Math.max(a.x,b.x)>1 && Math.min(a.bottom,b.bottom)-Math.max(a.y,b.y)>1) errors.push('Mashup cells overlap');
   }
   const view=views[0], image=view.querySelector('img');
+  const qr=view.querySelector('img[alt^="Scan"]');
+  if(qr) {
+    const q=rect(qr), box=rect(qr.parentElement);
+    if(getComputedStyle(qr).position!=='absolute') errors.push('QR is not an overlay');
+    if(Math.abs(q.right-box.right)>1 || Math.abs(q.bottom-box.bottom)>1) errors.push('QR is not at bottom right');
+  }
+  const credit=view.querySelector('.label.w--full');
   return {errors,view:rect(view),image:image?rect(image):null,
+    credit_color:credit?getComputedStyle(credit).color:null,
+    canvas_color:getComputedStyle(document.querySelector('.screen')).backgroundColor,
     label_font:getComputedStyle(view.querySelector('.label')||view.querySelector('.description')||view.querySelector('.title_bar .title')).fontSize};
 }'''
 
@@ -95,6 +108,7 @@ def main():
     data = copy.deepcopy(data)
     for camera in data['sources'].values():
         camera['image_url'] = '/ocean.png'
+        camera['qr_code_url'] = '/qr.png'
     if data.get('default_image'):
         data['default_image']['image_url'] = '/ocean.png'
     args.output.mkdir(parents=True, exist_ok=True)
@@ -103,6 +117,8 @@ def main():
         for orientation in ('landscape', 'portrait'):
             for layout in LAYOUTS:
                 cases.append((device, orientation, layout, 'available', data, None))
+                cases.append((device, orientation, layout, 'qr', data, None))
+                cases.append((device, orientation, layout, 'dark', data, None))
     for state in ('retained', 'unknown_time', 'empty', 'long_name'):
         changed = copy.deepcopy(data)
         if state == 'retained':
@@ -120,13 +136,15 @@ def main():
                 camera['location_label'] = 'International District with a much longer hydrothermal camera location'
         for orientation in ('landscape', 'portrait'):
             cases.append(('og', orientation, 'quadrant', state, changed,
-                          'removed-source' if state == 'retained' else None))
+                          changed.get('default_source') if state == 'retained' else None))
     # settings.yml requests no_screen_padding; exercise the corresponding host modifier.
     for orientation in ('landscape', 'portrait'):
         for layout in LAYOUTS:
             cases.append(('og', orientation, layout, 'no_bleed', data, None))
     with tempfile.TemporaryDirectory() as temporary:
         root = Path(temporary)
+        qr_target = 'https://nikokoren.github.io/abyss/i/0123456789abcdef0123.html'
+        qrcode.make(qr_target, error_correction=qrcode.constants.ERROR_CORRECT_M, border=4).save(root / 'qr.png')
         for name in ('css', 'js', 'fonts', 'images'):
             # Served locally for exact release testing, never copied into app source.
             if (assets / name).is_dir():
@@ -134,13 +152,13 @@ def main():
         if args.image:
             shutil.copyfile(args.image, root / 'ocean.png')
         else:
-            image = Image.new('L', (800, 448), 170)
+            image = Image.new('RGB', (1920, 1080), (45, 140, 170))
             ImageDraw.Draw(image).text((20, 20), 'SYNTHETIC LAYOUT TEST', fill=0)
             image.save(root / 'ocean.png')
         for device, orientation, layout, state, context, selection in cases:
             name = f'{device}-{orientation}-{layout}-{state}'
-            (root / (name + '.html')).write_text(document(render(layout, context, selection), device,
-                                                       orientation, layout, no_bleed=state == 'no_bleed'))
+            (root / (name + '.html')).write_text(document(render(layout, context, selection, show_qr=state in ('qr', 'dark')), device,
+                                                       orientation, layout, no_bleed=state == 'no_bleed', dark=state == 'dark'))
 
         class Handler(SimpleHTTPRequestHandler):
             def log_message(self, *args):
@@ -165,6 +183,19 @@ def main():
                     page.goto(f'http://127.0.0.1:{server.server_port}/{name}.html', wait_until='networkidle')
                     page.evaluate('document.fonts.ready')
                     result = page.evaluate(CHECK)
+                    qr_count = page.locator('img[alt^="Scan"]').count()
+                    if qr_count and layout != 'full':
+                        result['errors'].append('QR shown outside full-screen view')
+                    if state in ('qr', 'dark') and layout == 'full':
+                        crop = page.locator('img[alt^="Scan"]').first.screenshot()
+                        decoded = zxingcpp.read_barcode(Image.open(io.BytesIO(crop)))
+                        result['qr_decoded'] = decoded.text if decoded else None
+                        if result['qr_decoded'] != qr_target:
+                            result['errors'].append('QR code cannot be decoded at native display size')
+                    if state == 'dark' and result['credit_color'] != 'rgb(255, 255, 255)':
+                        result['errors'].append('Native credit text did not switch to white in dark mode')
+                    if state == 'dark' and result['canvas_color'] != 'rgb(0, 0, 0)':
+                        result['errors'].append('Native canvas did not switch to black in dark mode')
                     result.update(name=name, browser_errors=list(browser_errors))
                     reports.append(result)
                     page.locator('.screen').screenshot(path=str(args.output / (name + '.png')))

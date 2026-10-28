@@ -30,7 +30,9 @@ domain status is asserted.
 
 ## Attribution and rendering
 
-Every production OOI PNG contains one compact credit outside the footage:
+Every production OOI device view displays this compact native credit beneath
+the photograph. The separately downloadable PNG embeds the same credit outside
+the complete footage:
 
 > Data: OOI / WHOI OOI Program Office / UW | Supported by U.S. NSF 2244833
 
@@ -39,11 +41,16 @@ condensed on 28 October 2026. The screen retains source, Program Office,
 university and funding credit; the recipe settings and product page carry the
 expanded organization names, full acknowledgment, source link and terms.
 
-The complete frame is resized to fit rather than cropped, retaining any source
-notices at its edges. Credit is added after monochrome conversion so it remains
-readable, without overwriting the original footage. The resulting image remains
-800 × 448 pixels by default. Inspection variants and future review-gallery
-paper previews use the same rendering.
+Production now preserves the complete full-resolution RGB frame, retaining all
+source notices and original photo pixels. The device receives a clean photo and
+native attribution text, allowing white text on a black canvas in dark mode.
+The attributed downloadable artifact appends a separate credit band without
+overwriting footage. Both assets are published before latest metadata updates.
+The native TRMNL renderer handles resizing and
+dithering for the device. Explicit 800 × 448 inspection variants and review
+gallery paper previews remain available for comparison; they are not production
+image delivery. Immutable QR observation pages carry the expanded credit and
+link to the source snapshot or video and the exact published still.
 
 Public metadata, generated recipe settings and the viewer carry the expanded institution names. The viewer also carries the terms
 link, original recording URL, platform DOI, processing description and the
