@@ -1,21 +1,15 @@
 # Additional camera access and reuse investigation
 
-**Offshore wildlife follow-up:** a [seven-day, unranked sample](offshore-wildlife.md)
-found clear fish in 12/42 frames, another nine uncertain fish-like forms, and
-small seabed animals in all 42. This is stronger evidence for Offshore's visual
-interest than its earlier quality-only selected frame. It remains technically
-accessible and rights-reviewed; the observational study does not enable it.
+**Oregon Offshore is enabled as the fourth camera** after the owner reviewed the
+[seven-day, unranked sample](offshore-wildlife.md) and submitted 39 unique
+preferences. Both feedback runs succeeded; issues #5 and #6 contain identical
+choices and were deduplicated. The shared model was reproduced from the saved
+feedback without changing ratings. See [verification evidence](evidence/offshore-preference-verification-20261029.json).
 
-**Fresh native-preview recheck:** six hourly snapshots each from Oregon Shelf
-and Offshore still do not support adding them to the general rotation. Both
-remain accessible and rights-reviewed. See the [new review and previews](oregon-native-review.md);
-the earlier ordered-dither results below are historical evidence.
-
-Updated 28 October 2026. **Southern Hydrate Ridge and International District
-are enabled**, joining the existing Axial HD camera. All six new archives are
-reachable and decode successfully on GitHub runners. Four cameras remain on
-image-quality hold: the two water-column cameras failed the raw-image quality
-gate, while both shelf-camera monochrome previews are dominated by glare.
+The earlier six-image native-preview hold below is historical: one-bit glare
+remains a limitation, while broader sampling found fish and seabed animals.
+Southern Hydrate Ridge, International District and Axial HD remain enabled.
+Oregon Shelf and both water-column cameras remain on quality hold.
 
 ## OOI still cameras: rights review
 
@@ -80,7 +74,7 @@ passed the automated score were visually reviewed.
 | Southern Hydrate Ridge | .851 | 17,251,842 bytes | **Enabled**; readable rocky methane-seep habitat |
 | International District | .842 | 39,736,917 bytes | **Enabled**; readable vent habitat |
 | Oregon Shelf | .582 | 39,053,260 bytes | Hold: 1-bit preview dominated by glare despite passing the automated score |
-| Oregon Offshore | .612 | 18,941,747 bytes | Hold: 1-bit preview dominated by glare despite passing the automated score |
+| Oregon Offshore | .612 | 18,941,747 bytes | **Enabled after seven-day sampling and owner preference review**; one-bit glare remains a limitation |
 | Oregon Slope Base water column | .085 | 45,283,165 bytes | Hold: below .30 gate; noise/backscatter |
 | Axial Base water column | .055 | 40,722,570 bytes | Hold: below .30 gate; noise/backscatter |
 

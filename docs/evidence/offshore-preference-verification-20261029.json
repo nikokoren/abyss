@@ -1,0 +1,59 @@
+{
+  "verified_at": "2026-10-28T23:12:55.807471+00:00",
+  "source_id": "ooi-oregon-offshore",
+  "batch_id": "91b95c3fb82ac4ea0d6fa521c7a059ab",
+  "preference_data_commit": "d2dcfbcfe14df20670ceeb7e9e370f16612256e2",
+  "feedback_issues": [
+    5,
+    6
+  ],
+  "identical_submissions": true,
+  "unique_offshore_comparisons": 39,
+  "offshore_pairwise_comparisons": 9,
+  "offshore_neither_comparisons": 30,
+  "trusted_manifest_candidates": 42,
+  "all_feedback_matches_trusted_manifests": true,
+  "shared_model_reproduced": true,
+  "model_id": "2f1fb5248d738a9c3e0833015230faa9cab3f31848d6541a5ceb9d1b1aef7caa",
+  "dataset_hash": "6f3fe4ba6c5c7f2ea1e3eb2282e7d631ceef5d9a1af32577e8514029de9ed73b",
+  "shared_comparisons": 164,
+  "shared_pairwise_comparisons": 114,
+  "shared_neither_comparisons": 50,
+  "training_runs": [
+    {
+      "url": "https://github.com/nikokoren/abyss/actions/runs/40782891077",
+      "conclusion": "success"
+    },
+    {
+      "url": "https://github.com/nikokoren/abyss/actions/runs/40784349757",
+      "conclusion": "success"
+    }
+  ],
+  "training_run_evidence": "Public GitHub workflow page embedded workflowRunsRoute state; all six listed training runs succeeded.",
+  "ratings_changed": false,
+  "assistant_annotations_used_as_labels": false,
+  "evaluation": {
+    "status": "unavailable",
+    "reason": "Need at least three independent recording groups and held-out choices"
+  },
+  "prospective_evaluation": {
+    "status": "collecting",
+    "comparisons": 5,
+    "learned_accuracy": 0.6,
+    "quality_baseline_accuracy": 0.6,
+    "difference": 0.0,
+    "unseen_recording_count": 1,
+    "batches": [
+      {
+        "batch_id": "cd7b84d7949695331076c29c64144c57",
+        "model_id": "987e41ff06843c4b2311ea51955adb6c9f9f3e967a7b8a2420b1eaa0827cde8e",
+        "comparisons": 5,
+        "recording_count": 1,
+        "learned_accuracy": 0.6,
+        "quality_baseline_accuracy": 0.6
+      }
+    ],
+    "note": "Predictions were frozen before feedback. Pairs from the same camera can be correlated within and across recordings; small samples are provisional."
+  },
+  "production_deployment_verified": false
+}

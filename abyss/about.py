@@ -9,7 +9,7 @@ OVERVIEW = (
     'Turn your TRMNL into your personal window into the deep ocean. Abyss lets you '
     'peek into a fascinating corner of our planet: the deep Pacific. '
     'Look into hydrothermal vent habitats on Axial Seamount, an active underwater volcano, '
-    'and a methane seep at Southern Hydrate Ridge off Oregon. These are real research '
+    'a methane seep at Southern Hydrate Ridge, and the Oregon Offshore seafloor. These are real research '
     'camera images from places most of us will never visit.\n\n'
     'This window is made possible by public investment in science. The U.S. National '
     'Science Foundation funds the Ocean Observatories Initiative, whose Regional '
@@ -18,7 +18,7 @@ OVERVIEW = (
     'Scientists, engineers and research crews keep this observatory running, '
     'and open data lets the rest of us look in, right from your TRMNL.\n\n'
     'Abyss selects stills from these cameras\' periodic recordings and snapshots. '
-    'Cycle through all three cameras, choose a few favourites, or settle into one. '
+    'Cycle through all four cameras, choose a few favourites, or settle into one. '
     'The default 15-minute refresh rotates your selected views. Images are processed '
     'every three hours, and a camera\'s last good image stays on display when it cannot '
     'update.'
@@ -60,6 +60,17 @@ CAMERAS = (
         'array_graphic_url': 'https://oceanobservatories.org/wp-content/uploads/2020/10/CEV-OOI-CabledArray-ContinentalMargint-scaled.jpg',
         'site_map_url': 'https://s3.us-west-2.amazonaws.com/media.ooica.net/wp-content/uploads/2021/01/28232704/Southern-Hydrate-Map.png',
     },
+    {
+        'id': 'ooi-oregon-offshore', 'name': 'Oregon Offshore: seafloor',
+        'depth': 'about 580 m',
+        'description': ('On the continental slope off Oregon, the CAMDSB106 camera looks '
+                        'across the seabed from the Oregon Offshore benthic platform. '
+                        'Fish and small seabed animals appear in its periodic snapshots.'),
+        'site_url': 'https://interactiveoceans.washington.edu/research-sites/oregon-offshore/',
+        'map_url': 'https://oceanobservatories.org/array/cabled-continental-margin-array/',
+        'map_label': 'OOI continental-margin maps and diagrams',
+        'array_graphic_url': 'https://oceanobservatories.org/wp-content/uploads/2020/10/CEV-OOI-CabledArray-ContinentalMargint-scaled.jpg',
+    },
 )
 REGIONAL_MAP = 'https://app.interactiveoceans.washington.edu/map'
 REGIONAL_GRAPHIC = 'https://oceanobservatories.org/wp-content/uploads/2023/09/OOI_Map_Cabled_Array-OPTIMIZED.png'
@@ -78,17 +89,19 @@ def about_html(credits=OOI_CREDIT, acknowledgments=OOI_ACKNOWLEDGMENT):
     paragraphs = OVERVIEW.split('\n\n')
     parts = ['<h2>A window into the abyss.</h2>', *(f'<p>{escape(p)}</p>' for p in paragraphs),
              '<h2>Where are the cameras?</h2>',
-             '<p>Three camera views, two research sites in the northeast Pacific. '
+             '<p>Four camera views, three research sites in the northeast Pacific. '
              'Both vent cameras are on Axial Seamount; the methane-seep camera is at '
-             'Southern Hydrate Ridge. Depths are approximate.</p>',
+             'Southern Hydrate Ridge, and the seafloor camera is at Oregon Offshore. Depths are approximate.</p>',
              f'<p><a href="{REGIONAL_GRAPHIC}">Open the regional cable-network map</a> '
              '(Center for Environmental Visualization, University of Washington).</p>']
     for camera in CAMERAS:
+        detailed_map = (f'<a href="{camera["site_map_url"]}">Open the detailed site map</a> &middot; '
+                        if camera.get('site_map_url') else '')
         parts.extend([
             f'<h3 id="about-{camera["id"]}">{escape(camera["name"])}</h3>',
             f'<p><strong>{escape(camera["depth"])} below the surface.</strong> {escape(camera["description"])}</p>',
             f'<p><a href="{camera["site_url"]}">Explore this research site</a> &middot; '
-            f'<a href="{camera["site_map_url"]}">Open the detailed site map</a> &middot; '
+            f'{detailed_map}'
             f'<a href="{camera["array_graphic_url"]}">See the array illustration</a> &middot; '
             f'<a href="{camera["map_url"]}">{camera["map_label"]}</a></p>',
         ])

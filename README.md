@@ -1,7 +1,8 @@
 # Abyss — Ambient Ocean for TRMNL
 
 A window into the deep Pacific, quietly on your TRMNL. Explore hydrothermal
-vents on Axial Seamount and a methane seep at Southern Hydrate Ridge off Oregon.
+vents on Axial Seamount, a methane seep at Southern Hydrate Ridge, and the
+Oregon Offshore seafloor.
 U.S. public investment in NSF's Ocean Observatories Initiative makes these
 extraordinary observations possible; open science lets the rest of us look in.
 
@@ -81,8 +82,8 @@ python -m abyss.cli run --base-url https://OWNER.github.io/abyss
 python -m abyss.cli recipe --base-url https://OWNER.github.io/abyss
 ```
 
-A real run requires a public HTTPS base URL. Three real cameras are eligible: the original Axial HD camera plus Southern
-Hydrate Ridge and International District still cameras. Four other reachable
+A real run requires a public HTTPS base URL. Four real cameras are eligible: the original Axial HD camera plus Southern
+Hydrate Ridge, International District and Oregon Offshore still cameras. Three other reachable
 OOI cameras remain on image-quality hold. See [camera access and evidence](docs/additional-cameras.md).
 
 ## Native TRMNL views
@@ -120,7 +121,7 @@ winners stay at source resolution; older QR pages retain compact previews and
 original-footage links. The generated output branch is an exact-lease snapshot,
 so retired PNG history does not remain reachable through branch ancestry.
 
-The two still-camera feeds compare two recent JPEGs per camera under a 48 MiB
+The three still-camera feeds compare two recent JPEGs per camera under a 48 MiB
 search cap, preserving the full frame and required credit. Their upstream
 archives show half-hour bursts; Abyss's publication schedule runs every three hours.
 

@@ -86,8 +86,11 @@ prefilled GitHub issue. The existing owner-only feedback workflow validates the
 saved feature manifest and retrains the shared ranking model automatically.
 Browser-saved choices alone do not reach cloud training; post the issue drafts.
 
-This is a training cohort, not a new frozen video evaluation. The source remains
-on its existing production hold until separately enabled. There is no recurring
+This is a training cohort, not a new frozen video evaluation. The owner subsequently submitted issues #5 and #6: identical sets of 39 choices
+(9 pairwise, 30 neither), deduplicated by the shared trainer. Both runs succeeded,
+and the saved model was reproduced locally. Offshore is now enabled as the
+fourth production camera; one-bit glare remains a documented limitation. See
+[verification evidence](evidence/offshore-preference-verification-20261029.json). There is no recurring
 weekly image download: this review workflow is manual or triggered by its own
 implementation changes.
 

@@ -1,5 +1,25 @@
 # Validation evidence and remaining acceptance gates
 
+## Offshore preference verification and release — 29 October 2026
+
+Current `preference-data` is `d2dcfbcfe14df20670ceeb7e9e370f16612256e2`.
+Offshore issues #5 and #6 both trained successfully and contain identical sets of
+39 choices (9 A/B, 30 neither). Deduplication retains 39, rather than 78, Offshore
+comparisons. All feedback was checked against its trusted manifest, and local
+retraining reproduced shared model `2f1fb5248d738a9c3e0833015230faa9cab3f31848d6541a5ceb9d1b1aef7caa`
+with 164 total comparisons. No ratings or assistant wildlife labels were added.
+[Verification evidence](evidence/offshore-preference-verification-20261029.json)
+records the successful runs and checks. Accuracy remains provisional; the
+Offshore training cohort is not a frozen held-out evaluation.
+
+Oregon Offshore is enabled as the fourth camera at the owner's request, with
+full-resolution colour, required credits, existing quality gates and one-bit
+illumination limitations retained. Shared About includes its approximate
+580 m depth, official research-site link and continental-margin maps. Historical
+hold decisions below are superseded for Offshore only. Local validation passed all 113 Python tests, the JavaScript review-core tests,
+and the documented fixture processing and recipe export. Production deployment
+verification is recorded separately after the release run.
+
 ## Unranked Offshore wildlife sample — 28 October 2026
 
 [Hosted run](https://github.com/nikokoren/abyss/actions/runs/40769530980) decoded

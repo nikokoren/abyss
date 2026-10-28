@@ -289,7 +289,7 @@
       "adapter": "ooi_image_directory",
       "camera_code": "CAMDSB106",
       "base_url": "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/",
-      "status": "quality_hold",
+      "status": "validated",
       "timestamp_basis": "explicit_utc_filename",
       "completion_delay_minutes": 5,
       "images_per_search": 2,
@@ -321,11 +321,11 @@
           4008
         ],
         "recording_url": "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/28/CAMDSB106_10.33.9.6_20261028T111617_UTC.jpg",
-        "preview_reviewed_at": "2026-10-28",
-        "preview_review_method": "agent_visual_review",
-        "preview_review": "Six hourly RGB snapshots show the seabed and small seabed animals in 4-bit previews. Strong central illumination and low contrast still dominate 1-bit previews. Keep quality_hold for the general recipe across supported devices.",
-        "image_quality_status": "render_review_hold",
-        "preview_status": "held",
+        "preview_reviewed_at": "2026-10-29",
+        "preview_review_method": "seven_day_visual_sample_and_owner_preference_review",
+        "preview_review": "Seven-day, unfiltered 42-frame sample shows fish and seabed animals. Owner Offshore feedback accepted and shared model reproduced; enabled at owner request. Earlier one-bit glare limitations remain.",
+        "image_quality_status": "approved_with_rendering_limitations",
+        "preview_status": "approved",
         "native_preview_recheck": {
           "reviewed_at": "2026-10-28",
           "run_url": "https://github.com/nikokoren/abyss/actions/runs/40765670080",
@@ -337,12 +337,26 @@
           "rendering": "Official TRMNL 3.4.4 assets plus TRMNLP ImageQuantizer steps. Preview only; not an account or physical-device render.",
           "visual_decision": "quality_hold",
           "visual_review": "Six hourly RGB snapshots show the seabed and small seabed animals in 4-bit previews. Strong central illumination and low contrast still dominate 1-bit previews. Keep quality_hold for the general recipe across supported devices."
+        },
+        "preference_review": {
+          "batch_id": "91b95c3fb82ac4ea0d6fa521c7a059ab",
+          "review_run_url": "https://github.com/nikokoren/abyss/actions/runs/40774960669",
+          "feedback_issues": [
+            5,
+            6
+          ],
+          "unique_comparisons": 39,
+          "pairwise_comparisons": 9,
+          "neither_comparisons": 30,
+          "preference_data_commit": "d2dcfbcfe14df20670ceeb7e9e370f16612256e2",
+          "model_id": "2f1fb5248d738a9c3e0833015230faa9cab3f31848d6541a5ceb9d1b1aef7caa",
+          "evidence": "docs/evidence/offshore-preference-verification-20261029.json"
         }
       },
       "limitations": [
         "Deployment depth is preliminary",
         "Publication delay not measured; delivered as periodic stills",
-        "Six hourly RGB snapshots show the seabed and small seabed animals in 4-bit previews. Strong central illumination and low contrast still dominate 1-bit previews. Keep quality_hold for the general recipe across supported devices."
+        "Strong central illumination and low contrast can reduce one-bit readability; seven-day sampling found fish and seabed animals. Physical-device rendering remains unverified."
       ],
       "data_doi": "https://doi.org/10.58046/OOI-CE04OSBP",
       "max_image_bytes": 25165824,
