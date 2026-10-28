@@ -81,7 +81,7 @@ normal hourly checks do not. The benchmark exercises actual OOI discovery and
 coarse/fine extraction without bypassing the independent public-release rights
 gate. All candidate images are temporary and only reports are retained.
 
-The twice-daily publication schedule is unchanged. Measuring an hourly archive
+Production now processes images every three hours. Measuring an hourly archive
 listing does not mean generating an hourly TRMNL image. Set an eventual publication
 schedule from observed cadence, source quality and account quotas rather than
 assuming every check can supply fresh footage.

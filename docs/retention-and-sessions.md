@@ -1,8 +1,9 @@
 # Bounded image history, session winners and fresh evaluation
 
 Production keeps full source resolution and native TRMNL rendering. The normal
-processing schedule remains 03:23 and 15:23 UTC (04:23 and 16:23 CET in Berlin
-on 28 October); the recipe's 15-minute polling
+processing schedule is every three hours, at 00:23, 03:23, 06:23, 09:23,
+12:23, 15:23, 18:23 and 21:23 UTC (one hour later in Berlin on 28 October).
+The recipe's 15-minute polling
 and camera rotation are independent.
 
 ## What stays online

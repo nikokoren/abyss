@@ -20,7 +20,7 @@ OVERVIEW = (
     'Abyss selects stills from these cameras\' periodic recordings and snapshots. '
     'Cycle through all three cameras, choose a few favourites, or settle into one. '
     'The default 15-minute refresh rotates your selected views. Images are processed '
-    'twice daily, and a camera\'s last good image stays on display when it cannot '
+    'every three hours, and a camera\'s last good image stays on display when it cannot '
     'update.'
 )
 CAMERAS = (

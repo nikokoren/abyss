@@ -95,7 +95,7 @@ including settings and the native Python transform, to install rotation. No
 feeds are selected by default: the device cycles through all published cameras.
 One selection pins a camera; several rotate through that subset. Offline feeds
 keep their slot and last good image. The default plugin refresh is 15 minutes,
-independently of the twice-daily image-processing schedule.
+independently of the three-hour image-processing schedule.
 
 **Show QR code** is optional and off by default. Scanning opens the exact image
 or its original video at the selected timestamp, even after newer footage is
@@ -122,7 +122,7 @@ so retired PNG history does not remain reachable through branch ancestry.
 
 The two still-camera feeds compare two recent JPEGs per camera under a 48 MiB
 search cap, preserving the full frame and required credit. Their upstream
-archives show half-hour bursts; Abyss's publication schedule remains twice daily.
+archives show half-hour bursts; Abyss's publication schedule runs every three hours.
 
 ## Train your preferences
 
@@ -145,7 +145,7 @@ See [the preference guide](docs/preferences.md) for the complete workflow.
 - `abyss/pipeline.py`: processing history, backoff, timestamps, last-good retention.
 - `abyss/publication.py`: atomic metadata and content-addressed image publication.
 - `abyss/recipe.py`, `trmnl/`: TRMNL dropdown export and Liquid rendering.
-- `.github/workflows/`: tests and twice-daily cloud processing/Pages delivery.
+- `.github/workflows/`: tests and three-hourly cloud processing/Pages delivery.
 - `docs/viewer.html`: static source selector, still viewer, age and attribution.
 
 [Architecture and budgets](docs/architecture.md) · [Deployment and troubleshooting](docs/deployment.md)

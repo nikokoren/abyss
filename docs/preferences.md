@@ -40,8 +40,8 @@ and attribution requirements still govern wider recipe publication.
 The gallery artifact lasts 30 days. Feedback, feature manifests and learned
 weights persist in Git. No raw recordings or model binaries are committed.
 A fresh gallery is scheduled daily at **05:43 Berlin time currently** (04:43 UTC;
-local time changes with daylight saving). The publication schedule remains twice
-per day; personal preference learning does not alter it.
+local time changes with daylight saving). Production processes images every
+three hours; personal preference learning does not alter that schedule.
 
 Browser policies can prohibit opening local HTML. This environment's managed
 Chromium blocks file URLs; browser behavior was verified over loopback HTTP and

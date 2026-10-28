@@ -95,7 +95,7 @@ remain in the reader even if a source profile requests more.
 
 The two enabled cameras used 56,988,759 payload bytes together in the validation
 run. Range-header probes and directory/policy metadata are separate from that
-figure. Current production remains twice daily, so an upstream half-hour camera
+figure. Current production runs every three hours, so an upstream half-hour camera
 cadence does not mean the TRMNL image updates every half hour. The existing
 personal ranking model is used by production when available, but this technical
 trial used quality ranking alone and does not prove preference generalization.

@@ -20,7 +20,8 @@ was no quality, model, wildlife or aesthetic filtering. The previously praised
 
 All **42/42** slots decoded successfully at **5344 × 4008**. JPEG payload was
 388,265,087 bytes (about 370 MiB), below the separate 512 MiB study budget.
-Production limits and the twice-daily schedule were unchanged. This study is
+The study did not change production limits or its then twice-daily schedule.
+Production was subsequently moved to every three hours. This study is
 manual/explicit only and is not scheduled to download a week of images daily.
 
 The assistant visually inspected all seven daily contact sheets and checked
@@ -68,6 +69,27 @@ confident fish observed, scores .617; the striking fish/plume frame 34 scores
 .612. A broader, time-spread selection pool and owner preference feedback are
 worth exploring. These visual observations were **not** submitted as owner
 preference labels, used to train the model, or used to enable the camera.
+
+## Teach the preference model
+
+The **Review Offshore wildlife preferences** workflow builds an A/B gallery from
+these exact 42 original snapshots. It downloads the originals within a separate
+512 MiB cap, extracts the same ResNet18 features used in production, and includes
+larger attributed colour previews. All 42 remain available: the static-background
+duplicate filter is bypassed for this explicitly requested, time-spread review.
+No assistant animal annotations are included as labels or shown to guide choices.
+
+Download **abyss-offshore-preference-gallery**, unzip and open `index.html`.
+Choose A, B or neither; skip pairs that look the same. Aim for 30–50 comparisons,
+without completing every possible pair. Use **Submit choices** and post each
+prefilled GitHub issue. The existing owner-only feedback workflow validates the
+saved feature manifest and retrains the shared ranking model automatically.
+Browser-saved choices alone do not reach cloud training; post the issue drafts.
+
+This is a training cohort, not a new frozen video evaluation. The source remains
+on its existing production hold until separately enabled. There is no recurring
+weekly image download: this review workflow is manual or triggered by its own
+implementation changes.
 
 Data: OOI / WHOI OOI Program Office / University of Washington; supported by the
 U.S. National Science Foundation under Cooperative Agreement 2244833. Images and

@@ -48,8 +48,10 @@ and GitHub Pages deployment. Never paste keys into chat or source files.
    changes, absent selections, outages and stale capture timestamps. No
    credentials or user-supplied arbitrary media URLs belong in recipe settings.
 
-Schedule: 03:23 and 15:23 UTC, away from the top of the hour. In Europe/Berlin on
-2026-10-27 this is 04:23 and 16:23 CET; daylight-saving changes affect local time.
+Schedule: every three hours at 00:23, 03:23, 06:23, 09:23, 12:23, 15:23,
+18:23 and 21:23 UTC, away from the top of the hour. In Europe/Berlin on
+2026-10-28 this is 01:23, 04:23, 07:23, 10:23, 13:23, 16:23, 19:23 and
+22:23 CET; daylight-saving changes affect local time.
 Native template, recipe and site-builder pushes also trigger deployment.
 Scheduled jobs may run late or be dropped; a manual run is the recovery path.
 Monitor default-branch schedule activation and public-repository inactivity

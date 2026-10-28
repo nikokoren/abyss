@@ -24,7 +24,7 @@ on:
       - .github/workflows/ocean.yml
       - pyproject.toml
   schedule:
-    - cron: '23 3,15 * * *'
+    - cron: '23 */3 * * *'
 permissions:
   contents: write
   pages: write

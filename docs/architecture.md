@@ -92,26 +92,26 @@ On 2026-10-27, current files in `github/docs` were retrieved over HTTPS:
   only default-branch schedules run, they can be delayed/dropped, and inactivity
   can disable schedules in public repos after 60 days.
 
-Prototype: standard `ubuntu-24.04` runners, two runs/day (03:23 and 15:23 UTC),
+Production: standard `ubuntu-24.04` runners, eight runs/day (every three hours
+at minute 23 UTC),
 20-minute job ceiling, GitHub Pages custom deployment. No paid API/model/storage
 is required. A subsequent technical validation ran on GitHub-hosted Ubuntu and extracted
 four real OOI frames within the byte budget; see the saved runner evidence.
-No billing dashboard measurement or recurring Pages deployment has happened.
-Before enabling recurring runs, confirm the repo's visibility/plan, organization
-policies and billing budget; use spending controls appropriate to the account.
+Recurring Pages deployments have succeeded. Billing dashboard usage has not
+been measured; monitor runner usage, transfer and retained output as cadence increases.
 
 ## Estimates — not measured live-source usage
 
-For N sources at two runs/day over 30 days:
+For N video sources at eight runs/day over 30 days:
 
-- Max attempted video payload per twice-daily production source search: N × 60 × 96 MiB = **5.625 GiB/month/video source**,
+- Max attempted video payload at the production search cap: N × 240 × 96 MiB = **22.5 × N GiB/month**,
   plus bounded discovery pages and protocol overhead. Identical/rejected known
   recordings are skipped before video transfer. Startup races or failed runs
   may still transfer data again.
-- If a measured run takes 8 minutes: 480 runner-minutes/month. The 20-minute
-  job ceiling is 1,200 minutes/month for the shared scheduled job, plus CI/manual
+- If a measured run takes 8 minutes: 1,920 runner-minutes/month. The 20-minute
+  job ceiling is 4,800 minutes/month for the shared scheduled job, plus CI/manual
   jobs. This is not a private-plan free-tier entitlement.
-- A 100 KiB output PNG at 60 new frames/month adds roughly 5.9 MiB/source/month
+- A 100 KiB output PNG at 240 new frames/month adds roughly 23.4 MiB/source/month
   of site files before retention. The public snapshot is bounded to 640 MiB,
   with protected current/session images and observation-specific QR fallbacks.
   Output branch ancestry is compacted using an exact lease; main and preferences

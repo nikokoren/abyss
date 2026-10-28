@@ -54,7 +54,8 @@ only while the new `source_ids` field is absent; explicitly clearing the new
 field always means all feeds.
 
 The native plugin refresh defaults to **15 minutes**, independently of the
-cloud processing schedule (03:23 and 15:23 UTC). The transform stores a small
+cloud processing schedule (every three hours, at 00:23, 03:23, 06:23, 09:23,
+12:23, 15:23, 18:23 and 21:23 UTC). The transform stores a small
 per-device cursor in TRMNL's native `trmnl_state` / `trmnl.state`. It advances once
 when a new refresh slot is observed, and keeps the same camera across layouts
 within that slot. Slots use the native data-fetch timestamp and the slower of
