@@ -19,7 +19,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'tests'))
 from test_trmnl import LAYOUTS, catalog, render
 
 
-def document(markup, device, orientation, layout):
+def document(markup, device, orientation, layout, *, no_bleed=False):
     view = f'<div class="view view--{layout}">{markup}</div>'
     if layout != 'full':
         mashup = {'half_vertical': '1Lx1R', 'half_horizontal': '1Tx1B', 'quadrant': '2x2'}[layout]
@@ -29,11 +29,12 @@ def document(markup, device, orientation, layout):
     mode = '1bit' if device == 'og' else '4bit'
     size = {'og': 'md', 'v2': 'lg', 'amazon_kindle_2024': 'sm'}[device]
     portrait = 'screen--portrait' if orientation == 'portrait' else ''
+    padding = 'screen--no-bleed' if no_bleed else ''
     return f'''<!doctype html><html lang="en"><meta charset="utf-8">
 <title>Abyss native TRMNL preview</title>
 <link rel="stylesheet" href="/css/3.4.4/plugins.css">
 <script src="/js/3.4.4/plugins.js" defer></script>
-<body class="trmnl"><div class="screen screen--{device} screen--{size} screen--{mode} {portrait}">
+<body class="trmnl"><div class="screen screen--{device} screen--{size} screen--{mode} {portrait} {padding}">
 {view}</div></body></html>'''
 
 
@@ -73,7 +74,7 @@ CHECK = '''() => {
   }
   const view=views[0], image=view.querySelector('img');
   return {errors,view:rect(view),image:image?rect(image):null,
-    label_font:getComputedStyle(view.querySelector('.label')||view.querySelector('.description')).fontSize};
+    label_font:getComputedStyle(view.querySelector('.label')||view.querySelector('.description')||view.querySelector('.title_bar .title')).fontSize};
 }'''
 
 
@@ -86,7 +87,7 @@ def main():
     parser.add_argument('--output', type=Path, default=Path('output/validation/trmnl'))
     args = parser.parse_args()
     config = json.loads(Path('trmnl/framework.json').read_text())
-    assets = args.framework_root / 'public'
+    assets = args.framework_root.resolve() / 'public'
     css = assets / 'css' / config['tested_release'] / 'plugins.css'
     if not css.is_file():
         parser.error('Framework checkout must contain the published 3.4.4 assets')
@@ -119,6 +120,10 @@ def main():
         for orientation in ('landscape', 'portrait'):
             cases.append(('og', orientation, 'quadrant', state, changed,
                           'removed-source' if state == 'retained' else None))
+    # settings.yml requests no_screen_padding; exercise the corresponding host modifier.
+    for orientation in ('landscape', 'portrait'):
+        for layout in LAYOUTS:
+            cases.append(('og', orientation, layout, 'no_bleed', data, None))
     with tempfile.TemporaryDirectory() as temporary:
         root = Path(temporary)
         for name in ('css', 'js', 'fonts', 'images'):
@@ -133,7 +138,8 @@ def main():
             image.save(root / 'ocean.png')
         for device, orientation, layout, state, context, selection in cases:
             name = f'{device}-{orientation}-{layout}-{state}'
-            (root / (name + '.html')).write_text(document(render(layout, context, selection), device, orientation, layout))
+            (root / (name + '.html')).write_text(document(render(layout, context, selection), device,
+                                                       orientation, layout, no_bleed=state == 'no_bleed'))
 
         class Handler(SimpleHTTPRequestHandler):
             def log_message(self, *args):

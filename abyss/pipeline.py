@@ -1,4 +1,6 @@
 import contextlib
+import hashlib
+import json
 import logging
 import tempfile
 import time
@@ -54,7 +56,15 @@ def run_source(source, args):
                       else discover_many(source, limit=getattr(args, 'recordings', 3)))
         preference = load_model(getattr(args, 'preference_model', None))
         requested_model_id = preference['model_id'] if preference else None
-        known = set(state.get('processed', [])) if state.get('preference_model_id') == requested_model_id else set()
+        render_profile = hashlib.sha256(json.dumps({
+            'width': args.width, 'height': args.height, 'method': args.method,
+            'contrast': args.contrast, 'brightness': args.brightness,
+            'preserve_frame': source.get('preserve_frame', False),
+            'image_credit_lines': source.get('image_credit_lines', []),
+        }, sort_keys=True).encode()).hexdigest()
+        same_profile = (state.get('preference_model_id') == requested_model_id
+                        and state.get('render_profile') == render_profile)
+        known = set(state.get('processed', [])) if same_profile else set()
         pending = [r for r in recordings if args.force or r['url'] not in known]
         if not pending:
             state.update(failures=0, last_result='unchanged')
@@ -76,6 +86,7 @@ def run_source(source, args):
             if score < source.get('scoring', {}).get('min_score', .30):
                 state['processed'] = processed_recordings
                 state['preference_model_id'] = diagnostics.get('preference', {}).get('model_id')
+                state['render_profile'] = render_profile
                 state['last_result'] = 'no acceptable candidates; retained last good image'
                 atomic_json(path, state)
                 return 'rejected'
@@ -91,6 +102,7 @@ def run_source(source, args):
                 capture = (stamp + timedelta(seconds=seconds)).isoformat()
             metadata = {'source_id': source['id'], 'source_name': source['name'], 'source_type': source['type'],
                         'description': source.get('description'), 'recorded_at': recording.get('recorded_at'),
+                        **{key: source.get(key) for key in ('location', 'location_label', 'depth_m', 'depth_label', 'depth_status', 'depth_evidence')},
                         'frame_seconds': round(seconds, 3), 'captured_at': capture, 'extracted_at': extracted,
                         'processed_at': utcnow(), 'published_at': utcnow(), 'original_url': recording['url'],
                         'attribution': source['attribution'], 'attribution_url': source['attribution_url'],
@@ -108,6 +120,7 @@ def run_source(source, args):
             publish(args.output, source, processed, metadata, args.base_url)
             state['processed'] = processed_recordings
             state['preference_model_id'] = diagnostics.get('preference', {}).get('model_id')
+            state['render_profile'] = render_profile
             state['history'] = (state.get('history', []) + [metrics['fingerprint']])[-24:]
             state['last_published_at'] = metadata['published_at']
             state['last_result'] = 'published'

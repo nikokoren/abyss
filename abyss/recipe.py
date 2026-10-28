@@ -14,11 +14,18 @@ def generate(output, base_url, destination):
     if not options:
         raise ValueError('No validated, healthy published sources; recipe dropdown cannot be generated yet')
     quote = lambda value: json.dumps(value, ensure_ascii=False)
-    text = ['---', 'name: Ambient Ocean', 'strategy: polling', 'polling_verb: get',
+    entries = [catalog.get('sources', {}).get(o['value'], {}) for o in options]
+    credits = ' '.join(dict.fromkeys(e.get('attribution', '') for e in entries if e.get('attribution')))
+    acknowledgments = ' '.join(dict.fromkeys(e.get('acknowledgment', '') for e in entries if e.get('acknowledgment')))
+    details = ('Periodic recordings and archives, not a continuous live feed. ' +
+               ' '.join(o['description'] for o in options) +
+               f' Recording times, current source health, attribution and reuse terms: {base_url.rstrip("/")}/. ' +
+               credits + ' ' + acknowledgments)
+    text = ['---', 'name: Abyss', 'strategy: polling', 'polling_verb: get',
             'polling_url: ' + quote(base_url.rstrip('/') + '/catalog.json'),
             "no_screen_padding: 'yes'", "dark_mode: 'no'", 'refresh_interval: 240',
             'custom_fields:', '  - keyname: source_id', '    name: Underwater camera',
-            '    field_type: select', '    description: ' + quote('Periodic footage and archives, never implied live. ' + ' '.join(o['description'] for o in options)),
+            '    field_type: select', '    description: ' + quote(details.strip()),
             '    default: ' + quote(catalog['default_source']), '    options:']
     text.extend('      - ' + quote(o['label']) + ': ' + quote(o['value']) for o in options)
     Path(destination).parent.mkdir(parents=True, exist_ok=True)

@@ -1,0 +1,30 @@
+{
+  "checked_at": "2026-10-28T09:00:29.590993+00:00",
+  "source_url": "https://github.com/ooi-integration/asset-management/blob/c294b195630a9df5f1b90dac9e8ab1ef6f8effb1/deployment/RS03ASHS_Deploy.csv",
+  "repository_commit": "c294b195630a9df5f1b90dac9e8ab1ef6f8effb1",
+  "csv_sha256": "b09171bd7772fccea57bb225d7786d634ca72cf2db4fc23faf2c67c029d31346",
+  "deployment": {
+    "CUID_Deploy": "RR2607",
+    "deployedBy": "",
+    "CUID_Recover": "",
+    "recoveredBy": "",
+    "Reference Designator": "RS03ASHS-PN03B-06-CAMHDA301",
+    "deploymentNumber": "12",
+    "versionNumber": "",
+    "startDateTime": "2026-08-14T02:30:00",
+    "stopDateTime": "",
+    "mooring.uid": "RS03AXSM-PN03B-0000",
+    "node.uid": "ATSOO-70232-01H3B",
+    "sensor.uid": "ATAPL-70248-00002",
+    "lat": "45.933643",
+    "lon": "-130.013636",
+    "orbit": "",
+    "deployment_depth": "1543",
+    "water_depth": "1543",
+    "notes": "The following parameters are preliminary and will be verified and updated after deployment: mooringID; lat; lon; deployment_depth; water_depth.",
+    "electrical.uid": "",
+    "assembly_template_revision": ""
+  },
+  "display_depth": "~1,540 m",
+  "interpretation": "Current deployment lists 1543 m; operator marks deployment_depth and water_depth preliminary. Display rounded to 10 m with approximation marker."
+}

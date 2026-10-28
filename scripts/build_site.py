@@ -11,5 +11,6 @@ if (public / 'settings.yml').exists():
     shutil.copyfile(public / 'settings.yml', settings)
 else:
     settings.unlink(missing_ok=True)
-shutil.make_archive(str(public / 'ambient-ocean-trmnl'), 'zip', root_dir=public / 'trmnl')
+archive = shutil.make_archive(str(public / 'abyss-trmnl'), 'zip', root_dir=public / 'trmnl')
+shutil.copyfile(archive, public / 'ambient-ocean-trmnl.zip')
 (public/'.nojekyll').touch()

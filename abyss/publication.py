@@ -59,6 +59,8 @@ def catalog(root, sources, now, base_url):
         if latest is None:
             continue
         latest = dict(latest)
+        # Curated camera details can be corrected without fetching the video again.
+        latest.update({key: source[key] for key in ('location', 'location_label', 'depth_m', 'depth_label', 'depth_status', 'depth_evidence') if key in source})
         latest.pop('fingerprint', None)
         latest['available'] = state.get('failures', 0) < 3
         latest['last_checked_at'] = state.get('last_checked_at')

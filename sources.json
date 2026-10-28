@@ -27,8 +27,7 @@
       "timestamp_basis": "filename_assumed_utc",
       "preserve_frame": true,
       "image_credit_lines": [
-        "Data: Ocean Observatories Initiative / WHOI OOI Program Office / University of Washington",
-        "Supported by the U.S. National Science Foundation - Cooperative Agreement 2244833"
+        "Data: OOI / WHOI OOI Program Office / UW | Supported by U.S. NSF 2244833"
       ],
       "status": "validated",
       "validation": {
@@ -89,7 +88,12 @@
         "evidence_commit": "30c6908481b749a667d1ac71c7e351f54fec7171",
         "run_url": "https://github.com/nikokoren/abyss/actions/runs/40600427507",
         "publication_delay_observations": 0
-      }
+      },
+      "location_label": "Axial Seamount",
+      "depth_m": 1543,
+      "depth_label": "~1,540 m",
+      "depth_status": "preliminary",
+      "depth_evidence": "https://github.com/ooi-integration/asset-management/blob/c294b195630a9df5f1b90dac9e8ab1ef6f8effb1/deployment/RS03ASHS_Deploy.csv"
     },
     {
       "id": "onc-observatories",

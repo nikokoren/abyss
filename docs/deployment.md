@@ -40,7 +40,7 @@ and GitHub Pages deployment. Never paste keys into chat or source files.
    image dimensions, source credit, recording age and `fixture: false`.
    Measure workflow duration and `diagnostics.bytes_downloaded`. Compare current
    billing/Pages usage to [architecture.md](architecture.md).
-6. Download `/ambient-ocean-trmnl.zip` from the public site, which contains
+6. Download `/abyss-trmnl.zip` from the public site, which contains
    settings and all four native Framework 3.4 layouts plus Shared. For an existing
    plugin, replace the five markup tabs using [the update guide](../trmnl/README.md).
    Preview and test the actual device, including source

@@ -30,11 +30,14 @@ domain status is asserted.
 
 ## Attribution and rendering
 
-Every production OOI PNG contains two visible credit lines outside the footage:
+Every production OOI PNG contains one compact credit outside the footage:
 
-> Data: Ocean Observatories Initiative / WHOI OOI Program Office / University of Washington
->
-> Supported by the U.S. National Science Foundation - Cooperative Agreement 2244833
+> Data: OOI / WHOI OOI Program Office / UW | Supported by U.S. NSF 2244833
+
+The previous two-line image credit and duplicate device metadata block were
+condensed on 28 October 2026. The screen retains source, Program Office,
+university and funding credit; the recipe settings and product page carry the
+expanded organization names, full acknowledgment, source link and terms.
 
 The complete frame is resized to fit rather than cropped, retaining any source
 notices at its edges. Credit is added after monochrome conversion so it remains
@@ -42,7 +45,7 @@ readable, without overwriting the original footage. The resulting image remains
 800 × 448 pixels by default. Inspection variants and future review-gallery
 paper previews use the same rendering.
 
-Public metadata and the viewer carry the expanded institution names, terms
+Public metadata, generated recipe settings and the viewer carry the expanded institution names. The viewer also carries the terms
 link, original recording URL, platform DOI, processing description and the
 official acknowledgment:
 

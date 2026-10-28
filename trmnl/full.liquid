@@ -1,28 +1,15 @@
 {% comment %}Native TRMNL Framework 3.4. The platform supplies screen, view and assets.{% endcomment %}
 {% assign selected_id = trmnl.plugin_settings.custom_fields_values.source_id %}
 {% assign camera = sources[selected_id] | default: default_image %}
-{% assign source_type = camera.source_type | default: 'periodic_recording' | replace: '_', ' ' %}
-{% assign credit = camera.attribution | replace: 'Ocean Observatories Initiative', 'OOI' | replace: 'Woods Hole Oceanographic Institution', 'WHOI' | replace: 'University of Washington', 'UW' | replace: 'U.S. National Science Foundation', 'U.S. NSF' | replace: 'Cooperative Agreement', 'Award' %}
+{% assign camera_location = camera.location_label | default: camera.location | default: camera.source_name %}
 
 <div class="layout layout--col gap--small">
   {% if camera and camera.image_url %}
     <div class="flex flex--center stretch w--full">
       <img class="image image--contain w--full h--full" src="{{ camera.image_url | escape }}" alt="{{ camera.source_name | escape }}" />
     </div>
-    <div class="flex flex--col flex--left gap--none w--full shrink-0">
-      <span class="label w--full" data-clamp="1">{{ camera.source_name | escape }}</span>
-      <span class="label label--small w--full">
-        {% if camera.captured_at %}
-          Recorded {{ camera.captured_at | date: "%d %b %Y %H:%M" }} {% if camera.timestamp_basis == 'filename_assumed_utc' %}UTC assumed{% else %}UTC{% endif %}
-        {% else %}
-          Recording time unknown
-        {% endif %}
-      </span>
-      {% if camera.fixture %}<span class="label label--small label--outline">Synthetic fixture</span>{% endif %}
-      {% unless camera.available %}<span class="label label--small label--outline">Unavailable · last good image</span>{% endunless %}
-      {% if camera.stale %}<span class="label label--small label--outline">Stale recording · last good image</span>{% endif %}
-      {% if credit != blank %}<span class="label label--small w--full">Data: {{ credit | escape }}</span>{% endif %}
-    </div>
+    {% if camera.fixture %}<span class="label label--small label--outline shrink-0">Synthetic fixture</span>{% endif %}
+    {% if camera.available == false or camera.stale %}<span class="label label--small label--outline shrink-0">Last good image · update delayed</span>{% endif %}
   {% else %}
     <div class="flex flex--col flex--center gap--small">
       <span class="title">A window below.</span>
@@ -32,5 +19,12 @@
 </div>
 <div class="title_bar">
   <span class="title">Abyss</span>
-  <span class="instance">{% if camera and camera.image_url %}{{ source_type | capitalize | escape }}{% else %}Awaiting an image{% endif %}</span>
+  <span class="instance flex flex--row flex--right gap--xsmall">
+    {% if camera and camera.image_url %}
+      <span class="stretch" data-clamp="1">{{ camera_location | escape }}</span>
+      <span class="shrink-0">· {{ camera.depth_label | default: 'Depth unknown' | escape }}</span>
+    {% else %}
+      <span>Awaiting an image</span>
+    {% endif %}
+  </span>
 </div>

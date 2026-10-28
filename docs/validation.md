@@ -5,17 +5,24 @@
 Full, half horizontal, half vertical and quadrant now use native Framework 3.4
 components, with no custom CSS, fixed dimensions or device scripts. The title
 bar is a sibling of the layout, allowing the host framework to size both.
-Native image containment keeps the complete picture; source credit, time and
-retained-image status use framework typography outside the bitmap.
+Native image containment keeps the complete picture. The normal view shows
+only the image and a native title bar: Abyss on the left, location and depth
+on the right. A compact credit remains in the image; full acknowledgment,
+recording time and freshness details are on the product/settings pages.
+A delayed-update label appears only when the retained image needs that context.
 
-**55/55 Python tests passed** (14.791 seconds), including actual Liquid rendering
+**56/56 Python tests passed**, including actual Liquid rendering
 for each view, source selection, removed-source fallback, missing capture time,
 empty catalogs and HTML escaping. Review JavaScript tests also passed.
 
-The real published OOI image and catalog passed **32 Chromium cases** using the
+A local layout preview derived from the published OOI still (old generated
+credit band removed and the new compact band rendered) and published catalog
+with the verified location/depth fields passed **40 Chromium cases** using the
 unmodified official 3.4.4 CSS, fonts and runtime: OG, v2 and Kindle 2024 profiles,
 landscape/portrait, all four views, and extra quadrant cases for retained/stale,
-unknown-time, empty and long-name states. Checks include view bounds, title-bar
+unknown-time, empty and long-name states, plus all OG views without screen
+padding. Production re-extracts source footage for the new credit; it does not
+reuse this local preview image. Checks include view bounds, title-bar
 separation, text/image containment, neighboring mashup cells and JavaScript
 errors. Selected screenshots were visually inspected. See the
 [metadata-only report](evidence/trmnl-3.4.4-layouts-20261028.json), which includes
@@ -25,7 +32,9 @@ the exact upstream release commit and asset hashes. Screenshots remain under
 Site packaging was exercised with and without settings: the ZIP includes all
 four layouts, Shared, the guide and version manifest; current settings are
 included when available and stale settings are removed otherwise. Retained
-imagery remains unchanged. Device template changes now trigger site deployment.
+imagery remains unchanged. Device template changes now trigger site deployment. Render-profile changes
+refresh known footage once so an updated image credit does not wait for a new
+recording; subsequent unchanged runs still skip the processed recording.
 
 Use [the markup update guide](../trmnl/README.md) for the existing plugin.
 Browser checks do not establish that a user's TRMNL account has imported the

@@ -29,15 +29,24 @@ changing its CSS or fonts. The manifest documents compatibility; it does not
 change the framework version selected by the host.
 
 After the next successful site deployment, all files are available under
-`/trmnl/` and together in `/ambient-ocean-trmnl.zip`. The archive also includes
+`/trmnl/` and together in `/abyss-trmnl.zip`. The archive also includes
 the generated `settings.yml` when a healthy catalog is available.
 
 Preview each layout, then add it to a device or mashup. The framework sizes the
 layout and title bar for the active view and applies device typography and scale.
 The image uses native containment, preserving source notices and aspect ratio.
-Text remains native size rather than shrinking with the bitmap: source name,
-recording time, UTC assumption where applicable, retained/stale states and data
-credit. Required credit is allowed to wrap; only the source name is line-clamped.
+The normal screen contains the image and native title bar only: **Abyss** at
+bottom left, camera location and depth at bottom right. The location uses the
+framework's native clamp when space is tight; the depth does not shrink away.
+A brief status label appears only when an update is delayed or a test fixture
+is displayed. Recording times, freshness details, full attribution and reuse
+terms are available in settings and on the product page. One compact source
+credit remains in the PNG, without a duplicate markup credit block.
+
+Current OOI depth is displayed as **~1,540 m**, rounded from the operator's
+preliminary 1,543 m deployment record. See the
+[depth evidence](../docs/evidence/ooi-camera-depth-20261028.json).
+
 The 800×448 upstream image is still a raster; a larger device does not create
 additional photographic detail.
 

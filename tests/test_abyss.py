@@ -235,6 +235,8 @@ class IntegrationTests(unittest.TestCase):
             generate(root,a.base_url,root/'settings.yml')
             self.assertIn('Test camera (archive)',(root/'settings.yml').read_text())
             self.assertIn('source_id',(root/'settings.yml').read_text())
+            self.assertIn('name: Abyss', (root/'settings.yml').read_text())
+            self.assertIn(s['acknowledgment'], (root/'settings.yml').read_text())
             a.force=True; a.local_video=str(root/'missing.mp4')
             for _ in range(3): self.assertEqual(run([s],a)[s['id']],'failed')
             self.assertEqual(latest.read_bytes(),original)
@@ -257,6 +259,19 @@ class IntegrationTests(unittest.TestCase):
             self.assertEqual(run([s],a)[s['id']],'rejected')
             self.assertEqual(latest.read_bytes(),original)
             a.force=False
+            self.assertEqual(run([s],a)[s['id']],'unchanged')
+
+    def test_changed_credit_rerenders_known_recording_once(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            s=source(); a=args(tmp,self.video)
+            self.assertEqual(run([s],a)[s['id']],'published')
+            latest=Path(tmp)/'public/sources/test-camera/latest.json'
+            before=read_json(latest,{})
+            self.assertEqual(run([s],a)[s['id']],'unchanged')
+            s['image_credit_lines']=['Test data credit: updated required acknowledgment']
+            self.assertEqual(run([s],a)[s['id']],'published')
+            self.assertNotEqual(read_json(latest,{})['image_sha256'],before['image_sha256'])
+            self.assertTrue(read_json(latest,{})['attribution_embedded'])
             self.assertEqual(run([s],a)[s['id']],'unchanged')
 
     def test_two_sources_and_invalid_selection(self):

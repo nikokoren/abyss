@@ -85,7 +85,7 @@ components, containment and typography, with no custom CSS or fixed view sizes.
 See [the markup update guide](trmnl/README.md) to replace the corresponding tabs
 in an existing plugin without changing its polling configuration. Each site
 build publishes the templates under `/trmnl/` and bundles them with current
-settings in `/ambient-ocean-trmnl.zip`.
+settings in `/abyss-trmnl.zip`.
 
 ## Recent-recording search and cadence
 

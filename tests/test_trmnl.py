@@ -12,6 +12,8 @@ LAYOUTS = ('full', 'half_horizontal', 'half_vertical', 'quadrant')
 def catalog():
     camera = {
         'source_id': 'ooi-axial', 'source_name': 'Axial Seamount · hydrothermal vents',
+        'location': 'Axial Seamount, ASHES vent field', 'location_label': 'Axial Seamount',
+        'depth_m': 1543, 'depth_label': '~1,540 m', 'depth_status': 'preliminary',
         'source_type': 'periodic_recording', 'image_url': 'https://example.invalid/ocean.png',
         'captured_at': '2026-10-28T06:28:01+00:00', 'timestamp_basis': 'filename_assumed_utc',
         'attribution': ('Ocean Observatories Initiative / Woods Hole Oceanographic Institution OOI Program Office / '
@@ -56,7 +58,13 @@ class TrmnlTests(unittest.TestCase):
                 images = [attrs for tag, attrs in markup.elements if tag == 'img']
                 self.assertEqual(len(images), 1)
                 self.assertIn('image--contain', images[0]['class'].split())
-                self.assertIn('UTC assumed', render(layout, catalog()))
+                text = render(layout, catalog())
+                self.assertIn('<span class="title">Abyss</span>', text)
+                self.assertIn('Axial Seamount', text)
+                self.assertIn('~1,540 m', text)
+                self.assertNotIn('Recorded ', text)
+                self.assertNotIn('Data:', text)
+                self.assertNotIn('Periodic recording', text)
 
     def test_missing_selection_keeps_default_and_retained_image(self):
         data = catalog()
@@ -65,10 +73,8 @@ class TrmnlTests(unittest.TestCase):
         for layout in LAYOUTS:
             text = render(layout, data, 'removed-source')
             self.assertIn('https://example.invalid/ocean.png', text)
-            self.assertIn('Unavailable · last good image', text)
-            self.assertIn('Stale recording · last good image', text)
-            self.assertIn('WHOI OOI Program Office', text)
-            self.assertIn('U.S. NSF, Award 2244833', text)
+            self.assertIn('Last good image · update delayed', text)
+            self.assertIn('~1,540 m', text)
 
     def test_empty_catalog_has_native_empty_state_without_an_image(self):
         for layout in LAYOUTS:
@@ -81,6 +87,7 @@ class TrmnlTests(unittest.TestCase):
         data = catalog()
         other = copy.deepcopy(data['default_image'])
         other.update(source_id='other', source_name='<script>bad()</script>',
+                     location_label='Other observatory', depth_label=None,
                      source_type='archive', image_url='https://example.invalid/second.png',
                      captured_at=None, fixture=True)
         data['sources']['other'] = other
@@ -88,9 +95,9 @@ class TrmnlTests(unittest.TestCase):
             text = render(layout, data, 'other')
             self.assertIn('https://example.invalid/second.png', text)
             self.assertNotIn('https://example.invalid/ocean.png', text)
-            self.assertIn('Recording time unknown', text)
+            self.assertIn('Depth unknown', text)
             self.assertIn('Synthetic fixture', text)
-            self.assertIn('Archive', text)
+            self.assertNotIn('Recorded ', text)
             self.assertNotIn('<script>', text)
             self.assertIn('&lt;script&gt;', text)
 
