@@ -1,15 +1,55 @@
 """Still galleries cover multiple bursts under a separate, bounded budget."""
 import copy
+import json
+import tempfile
 import unittest
 from datetime import datetime, timezone
 from unittest.mock import patch
+from pathlib import Path
+from PIL import Image
 
 from abyss.adapters import discover_many
 from abyss.registry import load
-from abyss.review import review_inputs
+from abyss.review import Gallery, distinct_candidates, near_duplicate, review_inputs
+from abyss.preferences import FEATURE_COUNT, FEATURE_SPACE
 
 
 class StillReviewTests(unittest.TestCase):
+    def candidate(self, axis=6, quality=.8):
+        features = [0.] * FEATURE_COUNT
+        features[0] = 1; features[1] = .4; features[axis] = 1
+        return {'features': features, 'quality_score': quality, 'fingerprint': '01' * 128}
+
+    def test_duplicate_filter_keeps_best_and_preserves_visual_or_quality_changes(self):
+        first = self.candidate(); better = self.candidate(quality=.82)
+        self.assertTrue(near_duplicate(first, better))
+        for different in (self.candidate(axis=7), self.candidate(quality=.9),
+                          dict(first, fingerprint='10' * 128)):
+            self.assertFalse(near_duplicate(first, different))
+        brighter = copy.deepcopy(first); brighter['features'][1] = .5
+        self.assertFalse(near_duplicate(first, brighter))
+        self.assertEqual(list(distinct_candidates({'a': first, 'b': better, 'c': self.candidate(axis=7)})), ['b', 'c'])
+
+    def test_static_still_gallery_reports_no_review_and_can_be_manually_unfiltered(self):
+        class Encoder:
+            provenance = {'feature_space': FEATURE_SPACE, 'weights_sha256': 'test'}
+        for include_similar in (False, True):
+            gallery = Gallery(self.camera(), 'nikokoren', 'nikokoren/abyss', include_similar=include_similar)
+            for i in range(3):
+                candidate = self.candidate(quality=.8 + .01 * i)
+                gallery.add({'recording': {'url': f'https://camera.example/{i}.jpg', 'recorded_at': None},
+                             'seconds': 0, 'stage': 'snapshot', 'quality': {'score': candidate['quality_score'],
+                             'fingerprint': candidate['fingerprint']}, 'selection_score': .8},
+                            Image.new('RGB', (800, 448), 'gray'), candidate['features'])
+            with tempfile.TemporaryDirectory() as tmp:
+                manifest = gallery.save(tmp, Encoder(), {})
+                report = json.loads(Path(tmp, 'gallery-report.json').read_text())
+                self.assertEqual(report['sampled_candidate_count'], 3)
+                self.assertEqual(report['candidate_count'], 3 if include_similar else 1)
+                self.assertEqual(report['review_status'], 'ready' if include_similar else 'no_review_needed')
+                self.assertEqual(manifest['review_status'], report['review_status'])
+                self.assertNotIn('comparisons', manifest)
+
     def camera(self):
         return next(s for s in load('sources.json') if s['id'] == 'ooi-hydrate-ridge')
 

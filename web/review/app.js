@@ -36,5 +36,14 @@
   el('profile').textContent='Personal taste · '+data.reviewer;el('attribution').textContent=data.attribution||'';el('license').textContent=data.license||'';
   if(data.model.status==='ready'){const e=data.model.evaluation;el('model-status').textContent='Model snapshot: '+data.model.comparisons+' comparisons · '+(e&&e.status==='measured'?'held-out checks available':'awaiting independent validation');}
   else el('model-status').textContent=data.model.comparisons?'Model snapshot: '+data.model.comparisons+' submitted comparisons · keep teaching with fresh scenes.':'Your choices will guide future selections. Aim for 30–50 comparisons.';
+  if(data.review_status==='no_review_needed'){
+    document.querySelector('h1').textContent='No review needed.';
+    document.querySelector('.intro p').textContent='These snapshots show essentially the same view. No preference choices are needed for this batch.';
+    el('complete').querySelector('.eyebrow').textContent='SIMILAR CAMERA VIEWS';
+    el('complete').querySelector('h2').textContent='Nothing useful to compare this time.';
+    el('complete').querySelector('p').textContent=(data.candidates[0]?.source_name||'This camera')+' stays in your display rotation. Review a fresh batch when the view changes.';
+    el('review-again').hidden=true;el('goal').hidden=true;
+    document.querySelector('.toolbar').hidden=true;document.querySelector('.bottom').hidden=true;
+  }
   next();
 })();

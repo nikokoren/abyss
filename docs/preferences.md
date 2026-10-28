@@ -12,7 +12,10 @@
    account on another service, or continuously running personal computer is needed.
 3. Choose **A**, **B**, or **Neither**. Optionally mark a scene **Feels repetitive**.
    Original mode is selected by default. The optional e-paper approximation uses
-   the former Abyss processing, not TRMNL's hosted native renderer. Keyboard shortcuts:
+   the former Abyss processing, not TRMNL's hosted native renderer. Skip pairs
+   that look effectively identical. **Neither** means both scenes are unwanted;
+   it teaches rejection of both and should not stand in for "these look the same."
+   Keyboard shortcuts:
    `1`, `2`, `0`, and `S` to skip. Undo corrects the last change; **Review saved
    choices** lets you edit earlier decisions, including after reopening.
 4. Aim for 30–50 comparisons across several batches. Choices save in browser
@@ -168,13 +171,29 @@ cameras trains the same appearance ranker, so still-camera choices also teach
 the shared model. Review 20–30 comparisons from each still camera, then use a
 fresh capture window rather than repeating the same batch.
 
+Still-camera galleries now collapse near-identical views before creating pairs,
+keeping the best-quality representative. If fewer than two distinct views remain,
+the Actions summary and downloaded gallery say **No review needed**. This is a
+successful observation, not a retrieval failure; no preference labels are invented
+and the camera remains in normal display rotation. Video review sampling and
+production selection are unchanged.
+
+The initial heuristic combines at least 95% structural-hash agreement and 0.975
+appearance-vector cosine similarity, while requiring brightness differences no
+greater than 0.04 and quality-score differences no greater than 0.05. It is not
+an animal/change detector, and may group small subject changes. The actual nine
+Hydrate Ridge snapshots reported as identical by the owner collapse to one
+representative under this rule. Use CLI `--include-similar` to inspect an unfiltered
+batch when checking a possible false positive. A static batch can be skipped
+entirely; more clicks on visually indistinguishable scenes are not useful training.
+
 Tests:
 
 ```sh
 python -m unittest discover -s tests -v
 node tests/review-core.test.js
 # Optional with Playwright and Chromium installed:
-python scripts/check_review_browser.py
+python scripts/check_review_browser.py --chromium /usr/bin/chromium
 ```
 
 The browser test covers choices, repetition, undo, reload persistence, backups,

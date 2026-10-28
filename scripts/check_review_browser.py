@@ -17,6 +17,7 @@ from abyss.review import Gallery
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--check-file',action='store_true',help='Also test file URLs when browser policy permits')
+    parser.add_argument('--chromium',help='Use an installed Chromium instead of the Playwright download')
     arguments=parser.parse_args()
     source={'id':'demo','name':'SYNTHETIC DEMO · not ocean footage','fixture':True,
             'attribution':'Generated test scenes','license':'Test data only'}
@@ -31,13 +32,21 @@ def main():
                      'seconds':i*90,'stage':'coarse','quality':{'score':.8-i*.03,'fingerprint':'01'*128},'selection_score':.8-i*.03},image,features)
     with tempfile.TemporaryDirectory() as tmp:
         gallery.save(tmp,Encoder(),{})
+        stable=Gallery(dict(source,adapter='ooi_image_directory'),'nikokoren','nikokoren/abyss')
+        for i in range(2):
+            stable.add({'recording':{'url':f'https://example.invalid/static-{i}.jpg','recorded_at':None},
+                        'seconds':0,'stage':'snapshot','quality':{'score':.8,'fingerprint':'01'*128},
+                        'selection_score':.8},image,features)
+        stable.save(Path(tmp)/'static',Encoder(),{})
         class Handler(SimpleHTTPRequestHandler):
             def log_message(self,*args):pass
         server=ThreadingHTTPServer(('127.0.0.1',0),functools.partial(Handler,directory=tmp))
         thread=threading.Thread(target=server.serve_forever,daemon=True);thread.start()
         try:
             with sync_playwright() as p:
-                browser=p.chromium.launch(executable_path='/usr/bin/chromium',args=['--no-sandbox'])
+                launch={'args':['--no-sandbox']}
+                if arguments.chromium:launch['executable_path']=arguments.chromium
+                browser=p.chromium.launch(**launch)
                 page=browser.new_page(viewport={'width':1440,'height':1050})
                 errors=[];page.on('pageerror',lambda error:errors.append(str(error)))
                 page.goto(f'http://127.0.0.1:{server.server_port}/')
@@ -73,6 +82,16 @@ def main():
                 page.locator('#choose-b').click()
                 assert page.locator('#count').inner_text()=='2 choices saved'
                 page.context.set_offline(False)
+                page.goto(f'http://127.0.0.1:{server.server_port}/static/')
+                page.get_by_role('heading',name='No review needed.').wait_for()
+                assert not page.locator('#pair-grid').is_visible()
+                assert not page.locator('#submit').is_visible()
+                assert page.locator('#submit').is_disabled()
+                page.keyboard.press('1');page.keyboard.press('0')
+                assert page.locator('#count').inner_text()=='0 choices saved'
+                assert page.evaluate('document.documentElement.scrollWidth <= innerWidth')
+                page.screenshot(path='output/validation/preference-gallery-static.png',full_page=True)
+                assert not errors,errors
                 if arguments.check_file:
                     page.goto(Path(tmp,'index.html').as_uri())
                     page.get_by_role('heading',name='Teach Abyss your eye.').wait_for()
@@ -80,7 +99,7 @@ def main():
                     assert page.locator('#count').inner_text()=='1 choice saved'
                 browser.close()
         finally:server.shutdown();server.server_close();thread.join()
-    print('Browser checks passed: choices, neither/repetition, undo, reload, export/import, edit, GitHub draft, mobile layout, offline interactions. File-URL test is opt-in for compatible browser policies.')
+    print('Browser checks passed: choices, neither/repetition, undo, reload, export/import, edit, GitHub draft, mobile layout, offline interactions and no-review-needed static batches. File-URL test is opt-in for compatible browser policies.')
 
 
 if __name__=='__main__':main()

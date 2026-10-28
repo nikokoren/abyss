@@ -77,8 +77,11 @@ jobs:
           from pathlib import Path
           report = json.loads(Path('/tmp/abyss-review/gallery-report.json').read_text())
           with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as summary:
-              summary.write('## Your preference gallery is ready\n\nDownload **abyss-review-gallery** below, unzip it, and open `index.html`.\n\nChoose A, B, or neither. Submit the prefilled GitHub issues to store feedback and train in the cloud.\n\n')
-              summary.write(f"Camera: {report['source_name']}. Candidates: {report['candidate_count']}. Batch: `{report['batch_id']}`. No public Pages publication.\n")
+              if report['review_status'] == 'no_review_needed':
+                  summary.write('## No review needed\n\nThe sampled snapshots show essentially the same view. No preference choices are needed. The camera remains in the display rotation.\n\n')
+              else:
+                  summary.write('## Your preference gallery is ready\n\nDownload **abyss-review-gallery** below, unzip it, and open `index.html`.\n\nChoose A, B, or neither. Skip pairs that look the same. Submit the prefilled GitHub issues to store feedback and train in the cloud.\n\n')
+              summary.write(f"Camera: {report['source_name']}. Sampled: {report['sampled_candidate_count']}. Distinct candidates: {report['candidate_count']}. Batch: `{report['batch_id']}`. No public Pages publication.\n")
           PYCODE
       - uses: actions/upload-artifact@v4
         with:

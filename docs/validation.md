@@ -1,5 +1,18 @@
 # Validation evidence and remaining acceptance gates
 
+## Static still-camera review batches — 28 October 2026
+
+**86 Python tests passed**, plus review-core and real-browser checks. Still
+review galleries collapse near-identical appearance/structure while retaining
+substantial exposure, quality or composition differences. The actual nine-frame
+Hydrate Ridge batch `3c26eb62faad8bc2af8eda58a6b3217b`, reported as identical
+by the owner, reduces to one representative and returns `no_review_needed`.
+The gallery and Actions summary explain that no preference choices are needed;
+the browser check verifies zero saved choices and no visible submission control.
+No feedback or model labels are invented. Production selection and video review
+sampling are unaffected. This is a heuristic, with an unfiltered CLI override;
+see [the review guide](preferences.md) for thresholds and limitations.
+
 ## Native rotation, optional QR and source-resolution delivery — 28 October 2026
 
 [GitHub CI](https://github.com/nikokoren/abyss/actions/runs/40698966070) and the

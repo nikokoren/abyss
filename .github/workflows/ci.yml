@@ -29,6 +29,8 @@ jobs:
             public/js/3.4.4
             public/fonts
       - run: python -m playwright install --with-deps chromium
+      - name: Check preference review and unchanged-view behavior
+        run: python scripts/check_review_browser.py
       - name: Check native layouts on different screens and views
         run: python scripts/check_trmnl_browser.py --framework-root output/framework
       - uses: actions/upload-artifact@v4
