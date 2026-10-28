@@ -84,6 +84,7 @@ def main():
                 if (parts.scheme == 'https' and parts.hostname in HOSTS and
                         parts.hostname != 'rawdata.oceanobservatories.org' and
                         not re.search(r'visions?\d+|v\d+-live', parts.path) and
+                        not re.search(r'/page/\d+', parts.path) and
                         INTEREST.search(parts.path + ' ' + label) and
                         not re.search(r'\.(jpg|jpeg|png|gif|mp4|zip|tar)$', parts.path, re.I)):
                     follow.append(url)

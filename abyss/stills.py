@@ -3,9 +3,20 @@ import io
 from pathlib import Path
 from urllib.request import Request
 
-from PIL import Image, ImageOps
+from PIL import Image, ImageOps, ImageFile
 
-from .network import RetrievalError, check_url, opener
+from .network import RangeVideo, RetrievalError, check_url, opener
+
+
+def probe_image(recording, source):
+    """Read at most 128 KiB to measure JPEG headers before choosing a budget."""
+    video = RangeVideo(recording['url'], source['allowed_hosts'], 128 * 1024)
+    header = video._fetch(0, min(video.total - 1, 65535))
+    parser = ImageFile.Parser()
+    parser.feed(header)
+    return {'recording_bytes': video.total, 'header_bytes_downloaded': video.bytes_read,
+            'format': parser.image.format if parser.image else None,
+            'decoded_size': list(parser.image.size) if parser.image else None}
 
 
 def download_image(recording, source, directory, budget, index):
@@ -27,7 +38,7 @@ def download_image(recording, source, directory, budget, index):
             declared = response.headers.get('Content-Length')
             length = int(declared) if declared is not None else None
             if length is not None and (length < 1 or length > cap):
-                raise RetrievalError('Image exceeds remaining byte budget or 4 MiB per-image cap')
+                raise RetrievalError(f'Image size {length} exceeds available {cap} bytes (4 MiB per-image cap)')
             received = response.read(cap)
             budget.used += len(received)
             if length is not None and len(received) != length:

@@ -83,7 +83,7 @@ class StillTests(unittest.TestCase):
             response = Response(body)
             with patch('abyss.stills.opener') as make:
                 make.return_value.open.return_value = response
-                with self.assertRaisesRegex(RetrievalError, 'budget'):
+                with self.assertRaisesRegex(RetrievalError, 'exceeds available'):
                     download_image({'url': 'https://camera.example/photo.jpg'}, camera(), tmp, budget, 1)
             self.assertEqual(response.bytes_read, 0)
             self.assertLessEqual(budget.used, budget.limit)

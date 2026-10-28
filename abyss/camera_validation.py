@@ -14,6 +14,7 @@ from .network import classify_failure
 from .pipeline import utcnow
 from .registry import load
 from .search import search
+from .stills import probe_image
 
 
 def main():
@@ -33,6 +34,10 @@ def main():
         try:
             recordings = discover_many(source, limit=source['images_per_search'])
             record['recordings'] = recordings
+            try:
+                record['image_header_probe'] = probe_image(recordings[0], source)
+            except Exception as exc:
+                record['image_header_probe'] = {'failure': str(exc)[:500]}
             search_args = SimpleNamespace(candidates=9, coarse_candidates=4, refine_candidates=0,
                                           refine_windows=1, interval=1, max_bytes=source['max_search_bytes'],
                                           local_video=None, preference_model=None)
