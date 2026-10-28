@@ -1,0 +1,54 @@
+name: Investigate additional ocean cameras
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/research-cameras.yml
+      - scripts/research_cameras.py
+      - docs/camera-research-targets.json
+permissions:
+  contents: write
+concurrency:
+  group: camera-research
+  cancel-in-progress: false
+jobs:
+  investigate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: sudo apt-get update && sudo apt-get install -y poppler-utils
+      - name: Retrieve public metadata and official policy pages
+        run: PYTHONPATH=. python scripts/research_cameras.py --output /tmp/camera-research
+      - uses: actions/upload-artifact@v4
+        with:
+          name: camera-research-${{ github.run_id }}
+          path: /tmp/camera-research/
+          retention-days: 30
+      - name: Save evidence independently of release approval
+        shell: bash
+        run: |
+          set -euo pipefail
+          set +e
+          git ls-remote --exit-code origin refs/heads/camera-research > /tmp/camera-research-ref
+          status=$?
+          set -e
+          if [ "$status" -eq 0 ]; then
+            git fetch --depth=1 origin refs/heads/camera-research:refs/remotes/origin/camera-research
+            git checkout --detach refs/remotes/origin/camera-research
+          elif [ "$status" -eq 2 ]; then
+            git checkout --orphan camera-research
+            git rm -rf --ignore-unmatch .
+          else
+            exit "$status"
+          fi
+          mkdir -p "research/${GITHUB_RUN_ID}"
+          cp /tmp/camera-research/* "research/${GITHUB_RUN_ID}/"
+          cp /tmp/camera-research/index.json research/latest.json
+          git add research
+          git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Record additional camera access and policy investigation'
+          git push origin HEAD:refs/heads/camera-research
