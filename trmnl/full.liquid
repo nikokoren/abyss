@@ -1,19 +1,36 @@
+{% comment %}Native TRMNL Framework 3.4. The platform supplies screen, view and assets.{% endcomment %}
 {% assign selected_id = trmnl.plugin_settings.custom_fields_values.source_id %}
-{% assign camera = sources[selected_id] %}
-{% if camera == nil %}{% assign camera = default_image %}{% endif %}
-<div class="layout layout--col" style="padding:0; gap:0;">
+{% assign camera = sources[selected_id] | default: default_image %}
+{% assign source_type = camera.source_type | default: 'periodic_recording' | replace: '_', ' ' %}
+{% assign credit = camera.attribution | replace: 'Ocean Observatories Initiative', 'OOI' | replace: 'Woods Hole Oceanographic Institution', 'WHOI' | replace: 'University of Washington', 'UW' | replace: 'U.S. National Science Foundation', 'U.S. NSF' | replace: 'Cooperative Agreement', 'Award' %}
+
+<div class="layout layout--col gap--small">
   {% if camera and camera.image_url %}
-    <img src="{{ camera.image_url | escape }}" alt="{{ camera.source_name | escape }}" style="width:100%; height:calc(100% - 32px); object-fit:contain;" />
-    <div class="title_bar" style="height:32px; padding:0 12px;">
-      <span class="title" style="font-size:14px;">{{ camera.source_name | escape }}</span>
-      <span class="instance" style="font-size:12px;">
-        {% if camera.captured_at %}Recorded {{ camera.captured_at | date: "%d %b %Y %H:%M UTC" }}{% if camera.timestamp_basis == 'filename_assumed_utc' %} (UTC assumed){% endif %}{% else %}Recording time unknown{% endif %}
-        · {{ camera.source_type | replace: '_', ' ' | escape }}
-        {% unless camera.available %} · unavailable, last good image{% endunless %}
-        {% if camera.stale %} · stale recording{% endif %}
+    <div class="flex flex--center stretch w--full">
+      <img class="image image--contain w--full h--full" src="{{ camera.image_url | escape }}" alt="{{ camera.source_name | escape }}" />
+    </div>
+    <div class="flex flex--col flex--left gap--none w--full shrink-0">
+      <span class="label w--full" data-clamp="1">{{ camera.source_name | escape }}</span>
+      <span class="label label--small w--full">
+        {% if camera.captured_at %}
+          Recorded {{ camera.captured_at | date: "%d %b %Y %H:%M" }} {% if camera.timestamp_basis == 'filename_assumed_utc' %}UTC assumed{% else %}UTC{% endif %}
+        {% else %}
+          Recording time unknown
+        {% endif %}
       </span>
+      {% if camera.fixture %}<span class="label label--small label--outline">Synthetic fixture</span>{% endif %}
+      {% unless camera.available %}<span class="label label--small label--outline">Unavailable · last good image</span>{% endunless %}
+      {% if camera.stale %}<span class="label label--small label--outline">Stale recording · last good image</span>{% endif %}
+      {% if credit != blank %}<span class="label label--small w--full">Data: {{ credit | escape }}</span>{% endif %}
     </div>
   {% else %}
-    <div class="content"><span class="title">Ambient Ocean</span><span class="description">No validated image available. Please check source health.</span></div>
+    <div class="flex flex--col flex--center gap--small">
+      <span class="title">A window below.</span>
+      <span class="description" data-clamp="3">No ocean image is available yet. The next successful update will appear here.</span>
+    </div>
   {% endif %}
+</div>
+<div class="title_bar">
+  <span class="title">Abyss</span>
+  <span class="instance">{% if camera and camera.image_url %}{{ source_type | capitalize | escape }}{% else %}Awaiting an image{% endif %}</span>
 </div>

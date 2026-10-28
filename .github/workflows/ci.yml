@@ -12,9 +12,29 @@ jobs:
         with:
           python-version: '3.12'
       - run: sudo apt-get update && sudo apt-get install -y ffmpeg
-      - run: python -m pip install -e .
+      - run: python -m pip install -e . -r requirements-dev.txt
       - run: python -m unittest discover -s tests -v
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
       - run: node tests/review-core.test.js
+      - name: Read the exact released TRMNL framework assets
+        uses: actions/checkout@v4
+        with:
+          repository: usetrmnl/trmnl-framework
+          ref: f366a9303bbce97adca73d5747da8e2212379bbc
+          path: output/framework
+          sparse-checkout: |
+            public/css/3.4.4
+            public/js/3.4.4
+            public/fonts
+      - run: python -m playwright install --with-deps chromium
+      - name: Check native layouts on different screens and views
+        run: python scripts/check_trmnl_browser.py --framework-root output/framework
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: native-trmnl-3.4-previews
+          path: output/validation/trmnl/
+          if-no-files-found: ignore
+          retention-days: 14

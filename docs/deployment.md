@@ -40,13 +40,16 @@ and GitHub Pages deployment. Never paste keys into chat or source files.
    image dimensions, source credit, recording age and `fixture: false`.
    Measure workflow duration and `diagnostics.bytes_downloaded`. Compare current
    billing/Pages usage to [architecture.md](architecture.md).
-6. Download `settings.yml` from the public site and import it with the Liquid
-   files in `trmnl/`. Preview and test the actual device, including source
+6. Download `/ambient-ocean-trmnl.zip` from the public site, which contains
+   settings and all four native Framework 3.4 layouts plus Shared. For an existing
+   plugin, replace the five markup tabs using [the update guide](../trmnl/README.md).
+   Preview and test the actual device, including source
    changes, absent selections, outages and stale capture timestamps. No
    credentials or user-supplied arbitrary media URLs belong in recipe settings.
 
 Schedule: 03:23 and 15:23 UTC, away from the top of the hour. In Europe/Berlin on
 2026-10-27 this is 04:23 and 16:23 CET; daylight-saving changes affect local time.
+Native template, recipe and site-builder pushes also trigger deployment.
 Scheduled jobs may run late or be dropped; a manual run is the recovery path.
 Monitor default-branch schedule activation and public-repository inactivity
 rules; do not treat scheduled output as a live camera.

@@ -1,5 +1,38 @@
 # Validation evidence and remaining acceptance gates
 
+## Native TRMNL Framework 3.4 views — 28 October 2026
+
+Full, half horizontal, half vertical and quadrant now use native Framework 3.4
+components, with no custom CSS, fixed dimensions or device scripts. The title
+bar is a sibling of the layout, allowing the host framework to size both.
+Native image containment keeps the complete picture; source credit, time and
+retained-image status use framework typography outside the bitmap.
+
+**55/55 Python tests passed** (14.791 seconds), including actual Liquid rendering
+for each view, source selection, removed-source fallback, missing capture time,
+empty catalogs and HTML escaping. Review JavaScript tests also passed.
+
+The real published OOI image and catalog passed **32 Chromium cases** using the
+unmodified official 3.4.4 CSS, fonts and runtime: OG, v2 and Kindle 2024 profiles,
+landscape/portrait, all four views, and extra quadrant cases for retained/stale,
+unknown-time, empty and long-name states. Checks include view bounds, title-bar
+separation, text/image containment, neighboring mashup cells and JavaScript
+errors. Selected screenshots were visually inspected. See the
+[metadata-only report](evidence/trmnl-3.4.4-layouts-20261028.json), which includes
+the exact upstream release commit and asset hashes. Screenshots remain under
+`output/validation/trmnl/`; CI also uploads synthetic-image previews.
+
+Site packaging was exercised with and without settings: the ZIP includes all
+four layouts, Shared, the guide and version manifest; current settings are
+included when available and stale settings are removed otherwise. Retained
+imagery remains unchanged. Device template changes now trigger site deployment.
+
+Use [the markup update guide](../trmnl/README.md) for the existing plugin.
+Browser checks do not establish that a user's TRMNL account has imported the
+new markup or that a physical screen has rendered it.
+
+## Earlier build and source-rights evidence
+
 **Current update, 28 October 2026:** OOI derived-still reuse is approved and the
 source is enabled. Required credits are embedded outside the complete footage,
 and the viewer includes the official acknowledgment, terms, original recording

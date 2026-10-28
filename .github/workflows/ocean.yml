@@ -1,6 +1,12 @@
 name: Process and publish ocean stills
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - trmnl/**
+      - abyss/recipe.py
+      - scripts/build_site.py
   schedule:
     - cron: '23 3,15 * * *'
 permissions:
@@ -98,13 +104,13 @@ jobs:
         env:
           PUBLIC_BASE_URL: ${{ vars.PUBLIC_BASE_URL }}
         run: |
-          python scripts/build_site.py
           if python -m abyss.cli recipe --base-url "$PUBLIC_BASE_URL"; then
             cp output/recipe/settings.yml output/public/settings.yml
           else
             rm -f output/public/settings.yml
             echo 'No eligible recipe export; inspect health.json and source validation.'
           fi
+          python scripts/build_site.py
       - name: Persist output before deployment (never force push)
         shell: bash
         run: |

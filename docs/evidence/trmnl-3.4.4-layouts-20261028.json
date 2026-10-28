@@ -1,0 +1,712 @@
+{
+  "framework": {
+    "framework": "TRMNL",
+    "track": "3.4",
+    "tested_release": "3.4.4",
+    "upstream": "https://github.com/usetrmnl/trmnl-framework",
+    "upstream_commit": "f366a9303bbce97adca73d5747da8e2212379bbc",
+    "assets_provided_by": "TRMNL host platform",
+    "layouts": [
+      "full",
+      "half_horizontal",
+      "half_vertical",
+      "quadrant"
+    ]
+  },
+  "image": "published ocean still",
+  "cases": [
+    {
+      "errors": [],
+      "view": {
+        "x": 10,
+        "y": 10,
+        "w": 780,
+        "h": 460,
+        "right": 790,
+        "bottom": 470
+      },
+      "image": {
+        "x": 10,
+        "y": 10,
+        "w": 780,
+        "h": 355,
+        "right": 790,
+        "bottom": 365
+      },
+      "label_font": "16px",
+      "name": "og-landscape-full-available",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 10,
+        "y": 10,
+        "w": 780,
+        "h": 225,
+        "right": 790,
+        "bottom": 235
+      },
+      "image": {
+        "x": 20,
+        "y": 20,
+        "w": 760,
+        "h": 118,
+        "right": 780,
+        "bottom": 138
+      },
+      "label_font": "16px",
+      "name": "og-landscape-half_horizontal-available",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 10,
+        "y": 10,
+        "w": 385,
+        "h": 460,
+        "right": 395,
+        "bottom": 470
+      },
+      "image": {
+        "x": 20,
+        "y": 20,
+        "w": 365,
+        "h": 341,
+        "right": 385,
+        "bottom": 361
+      },
+      "label_font": "16px",
+      "name": "og-landscape-half_vertical-available",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 10,
+        "y": 10,
+        "w": 385,
+        "h": 225,
+        "right": 395,
+        "bottom": 235
+      },
+      "image": {
+        "x": 20,
+        "y": 20,
+        "w": 365,
+        "h": 106,
+        "right": 385,
+        "bottom": 126
+      },
+      "label_font": "16px",
+      "name": "og-landscape-quadrant-available",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 10,
+        "y": 10,
+        "w": 460,
+        "h": 780,
+        "right": 470,
+        "bottom": 790
+      },
+      "image": {
+        "x": 10,
+        "y": 10,
+        "w": 460,
+        "h": 663,
+        "right": 470,
+        "bottom": 673
+      },
+      "label_font": "16px",
+      "name": "og-portrait-full-available",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 10,
+        "y": 10,
+        "w": 460,
+        "h": 385,
+        "right": 470,
+        "bottom": 395
+      },
+      "image": {
+        "x": 20,
+        "y": 20,
+        "w": 440,
+        "h": 266,
+        "right": 460,
+        "bottom": 286
+      },
+      "label_font": "16px",
+      "name": "og-portrait-half_horizontal-available",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 10,
+        "y": 10,
+        "w": 225,
+        "h": 780,
+        "right": 235,
+        "bottom": 790
+      },
+      "image": {
+        "x": 20,
+        "y": 20,
+        "w": 205,
+        "h": 637,
+        "right": 225,
+        "bottom": 657
+      },
+      "label_font": "16px",
+      "name": "og-portrait-half_vertical-available",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 10,
+        "y": 10,
+        "w": 225,
+        "h": 385,
+        "right": 235,
+        "bottom": 395
+      },
+      "image": {
+        "x": 20,
+        "y": 20,
+        "w": 205,
+        "h": 242,
+        "right": 225,
+        "bottom": 262
+      },
+      "label_font": "16px",
+      "name": "og-portrait-quadrant-available",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 18,
+        "y": 18,
+        "w": 1836,
+        "h": 1368,
+        "right": 1854,
+        "bottom": 1386
+      },
+      "image": {
+        "x": 18,
+        "y": 18,
+        "w": 1836,
+        "h": 1175.4000244140625,
+        "right": 1854,
+        "bottom": 1193.4000244140625
+      },
+      "label_font": "16px",
+      "name": "v2-landscape-full-available",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 18,
+        "y": 18,
+        "w": 1836,
+        "h": 675,
+        "right": 1854,
+        "bottom": 693
+      },
+      "image": {
+        "x": 36,
+        "y": 36,
+        "w": 1800,
+        "h": 478.79998779296875,
+        "right": 1836,
+        "bottom": 514.7999877929688
+      },
+      "label_font": "16px",
+      "name": "v2-landscape-half_horizontal-available",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 18,
+        "y": 18,
+        "w": 909,
+        "h": 1368,
+        "right": 927,
+        "bottom": 1386
+      },
+      "image": {
+        "x": 36,
+        "y": 36,
+        "w": 873,
+        "h": 1148.4000244140625,
+        "right": 909,
+        "bottom": 1184.4000244140625
+      },
+      "label_font": "16px",
+      "name": "v2-landscape-half_vertical-available",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 18,
+        "y": 18,
+        "w": 909,
+        "h": 675,
+        "right": 927,
+        "bottom": 693
+      },
+      "image": {
+        "x": 36,
+        "y": 36,
+        "w": 873,
+        "h": 455.3999938964844,
+        "right": 909,
+        "bottom": 491.3999938964844
+      },
+      "label_font": "16px",
+      "name": "v2-landscape-quadrant-available",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 18,
+        "y": 18,
+        "w": 1368,
+        "h": 1836,
+        "right": 1386,
+        "bottom": 1854
+      },
+      "image": {
+        "x": 18,
+        "y": 18,
+        "w": 1368,
+        "h": 1643.39990234375,
+        "right": 1386,
+        "bottom": 1661.39990234375
+      },
+      "label_font": "16px",
+      "name": "v2-portrait-full-available",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 18,
+        "y": 18,
+        "w": 1368,
+        "h": 909,
+        "right": 1386,
+        "bottom": 927
+      },
+      "image": {
+        "x": 36,
+        "y": 36,
+        "w": 1332,
+        "h": 712.7999877929688,
+        "right": 1368,
+        "bottom": 748.7999877929688
+      },
+      "label_font": "16px",
+      "name": "v2-portrait-half_horizontal-available",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 18,
+        "y": 18,
+        "w": 675,
+        "h": 1836,
+        "right": 693,
+        "bottom": 1854
+      },
+      "image": {
+        "x": 36,
+        "y": 36,
+        "w": 639,
+        "h": 1616.39990234375,
+        "right": 675,
+        "bottom": 1652.39990234375
+      },
+      "label_font": "16px",
+      "name": "v2-portrait-half_vertical-available",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 18,
+        "y": 18,
+        "w": 675,
+        "h": 909,
+        "right": 693,
+        "bottom": 927
+      },
+      "image": {
+        "x": 36,
+        "y": 36,
+        "w": 639,
+        "h": 689.3999633789062,
+        "right": 675,
+        "bottom": 725.3999633789062
+      },
+      "label_font": "16px",
+      "name": "v2-portrait-quadrant-available",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 17.5,
+        "y": 17.5,
+        "w": 1365,
+        "h": 805,
+        "right": 1382.5,
+        "bottom": 822.5
+      },
+      "image": {
+        "x": 17.5,
+        "y": 17.5,
+        "w": 1365,
+        "h": 649.27734375,
+        "right": 1382.5,
+        "bottom": 666.77734375
+      },
+      "label_font": "12.8px",
+      "name": "amazon_kindle_2024-landscape-full-available",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 17.5,
+        "y": 17.5,
+        "w": 1365,
+        "h": 393.75,
+        "right": 1382.5,
+        "bottom": 411.25
+      },
+      "image": {
+        "x": 35,
+        "y": 35,
+        "w": 1330,
+        "h": 231.7109375,
+        "right": 1365,
+        "bottom": 266.7109375
+      },
+      "label_font": "12.8px",
+      "name": "amazon_kindle_2024-landscape-half_horizontal-available",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 17.5,
+        "y": 17.5,
+        "w": 673.75,
+        "h": 805,
+        "right": 691.25,
+        "bottom": 822.5
+      },
+      "image": {
+        "x": 35,
+        "y": 35,
+        "w": 638.75,
+        "h": 624.75,
+        "right": 673.75,
+        "bottom": 659.75
+      },
+      "label_font": "12.8px",
+      "name": "amazon_kindle_2024-landscape-half_vertical-available",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 17.5,
+        "y": 17.5,
+        "w": 673.75,
+        "h": 393.75,
+        "right": 691.25,
+        "bottom": 411.25
+      },
+      "image": {
+        "x": 35,
+        "y": 35,
+        "w": 638.75,
+        "h": 213.5,
+        "right": 673.75,
+        "bottom": 248.5
+      },
+      "label_font": "12.8px",
+      "name": "amazon_kindle_2024-landscape-quadrant-available",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 17.5,
+        "y": 17.5,
+        "w": 805,
+        "h": 1365,
+        "right": 822.5,
+        "bottom": 1382.5
+      },
+      "image": {
+        "x": 17.5,
+        "y": 17.5,
+        "w": 805,
+        "h": 1209.27734375,
+        "right": 822.5,
+        "bottom": 1226.77734375
+      },
+      "label_font": "12.8px",
+      "name": "amazon_kindle_2024-portrait-full-available",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 17.5,
+        "y": 17.5,
+        "w": 805,
+        "h": 673.75,
+        "right": 822.5,
+        "bottom": 691.25
+      },
+      "image": {
+        "x": 35,
+        "y": 35,
+        "w": 770,
+        "h": 511.7109375,
+        "right": 805,
+        "bottom": 546.7109375
+      },
+      "label_font": "12.8px",
+      "name": "amazon_kindle_2024-portrait-half_horizontal-available",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 17.5,
+        "y": 17.5,
+        "w": 393.75,
+        "h": 1365,
+        "right": 411.25,
+        "bottom": 1382.5
+      },
+      "image": {
+        "x": 35,
+        "y": 35,
+        "w": 358.75,
+        "h": 1148.328125,
+        "right": 393.75,
+        "bottom": 1183.328125
+      },
+      "label_font": "12.8px",
+      "name": "amazon_kindle_2024-portrait-half_vertical-available",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 17.5,
+        "y": 17.5,
+        "w": 393.75,
+        "h": 673.75,
+        "right": 411.25,
+        "bottom": 691.25
+      },
+      "image": {
+        "x": 35,
+        "y": 35,
+        "w": 358.75,
+        "h": 457.078125,
+        "right": 393.75,
+        "bottom": 492.078125
+      },
+      "label_font": "12.8px",
+      "name": "amazon_kindle_2024-portrait-quadrant-available",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 10,
+        "y": 10,
+        "w": 385,
+        "h": 225,
+        "right": 395,
+        "bottom": 235
+      },
+      "image": {
+        "x": 20,
+        "y": 20,
+        "w": 365,
+        "h": 76,
+        "right": 385,
+        "bottom": 96
+      },
+      "label_font": "16px",
+      "name": "og-landscape-quadrant-retained",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 10,
+        "y": 10,
+        "w": 225,
+        "h": 385,
+        "right": 235,
+        "bottom": 395
+      },
+      "image": {
+        "x": 20,
+        "y": 20,
+        "w": 205,
+        "h": 212,
+        "right": 225,
+        "bottom": 232
+      },
+      "label_font": "16px",
+      "name": "og-portrait-quadrant-retained",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 10,
+        "y": 10,
+        "w": 385,
+        "h": 225,
+        "right": 395,
+        "bottom": 235
+      },
+      "image": {
+        "x": 20,
+        "y": 20,
+        "w": 365,
+        "h": 91,
+        "right": 385,
+        "bottom": 111
+      },
+      "label_font": "16px",
+      "name": "og-landscape-quadrant-unknown_time",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 10,
+        "y": 10,
+        "w": 225,
+        "h": 385,
+        "right": 235,
+        "bottom": 395
+      },
+      "image": {
+        "x": 20,
+        "y": 20,
+        "w": 205,
+        "h": 239,
+        "right": 225,
+        "bottom": 259
+      },
+      "label_font": "16px",
+      "name": "og-portrait-quadrant-unknown_time",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 10,
+        "y": 10,
+        "w": 385,
+        "h": 225,
+        "right": 395,
+        "bottom": 235
+      },
+      "image": null,
+      "label_font": "12px",
+      "name": "og-landscape-quadrant-empty",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 10,
+        "y": 10,
+        "w": 225,
+        "h": 385,
+        "right": 235,
+        "bottom": 395
+      },
+      "image": null,
+      "label_font": "12px",
+      "name": "og-portrait-quadrant-empty",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 10,
+        "y": 10,
+        "w": 385,
+        "h": 225,
+        "right": 395,
+        "bottom": 235
+      },
+      "image": {
+        "x": 20,
+        "y": 20,
+        "w": 365,
+        "h": 106,
+        "right": 385,
+        "bottom": 126
+      },
+      "label_font": "16px",
+      "name": "og-landscape-quadrant-long_name",
+      "browser_errors": []
+    },
+    {
+      "errors": [],
+      "view": {
+        "x": 10,
+        "y": 10,
+        "w": 225,
+        "h": 385,
+        "right": 235,
+        "bottom": 395
+      },
+      "image": {
+        "x": 20,
+        "y": 20,
+        "w": 205,
+        "h": 242,
+        "right": 225,
+        "bottom": 262
+      },
+      "label_font": "16px",
+      "name": "og-portrait-quadrant-long_name",
+      "browser_errors": []
+    }
+  ],
+  "checked_at": "2026-10-28T08:50:43.952939+00:00",
+  "framework_css_sha256": "af12fdc34f6186fa0a208fe1c1dc37a14e98c8bfa09139e1be02e0600669be18",
+  "framework_js_sha256": "26c630c5ea8f679befa4f161abe92062aa6a82214698a41a93dac7a0a97f1f59"
+}

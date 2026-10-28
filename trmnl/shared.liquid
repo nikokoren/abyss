@@ -1,8 +1,6 @@
 {% comment %}
-OOI's required credit is embedded below the complete footage in the PNG. Other
-sources without embedded credit use this fallback. Never overlay existing notices.
+Abyss uses native TRMNL Framework 3.4 markup in every layout tab.
+No CSS overrides, fixed view dimensions, browser scripts or framework imports.
+TRMNL supplies the screen, view, mashup and framework runtime.
+Each layout is self-contained so it also works when copied on its own.
 {% endcomment %}
-{% assign selected_id = trmnl.plugin_settings.custom_fields_values.source_id %}
-{% assign credit = sources[selected_id] | default: default_image %}
-<style>.ocean-credit { position:absolute; bottom:34px; left:8px; background:white; color:black; padding:2px 5px; font-size:10px; max-width:95%; }</style>
-{% if credit and credit.attribution_embedded != true %}<div class="ocean-credit">{{ credit.attribution | escape }} · {{ credit.license | escape }}</div>{% endif %}

@@ -24,6 +24,7 @@ cd /workspace/abyss
 python -m venv .venv
 . .venv/bin/activate
 python -m pip install -e .
+python -m pip install -r requirements-dev.txt
 python -m unittest discover -s tests -v
 python -m abyss.cli sources
 ```
@@ -75,6 +76,16 @@ python -m abyss.cli recipe --base-url https://OWNER.github.io/abyss
 
 A real run requires a public HTTPS base URL. OOI is the currently eligible real
 source. Other candidates remain excluded until their own reviews are complete.
+
+## Native TRMNL views
+
+The device UI uses **TRMNL Framework 3.4**, tested against the official 3.4.4
+release. Full, half horizontal, half vertical and quadrant layouts use native
+components, containment and typography, with no custom CSS or fixed view sizes.
+See [the markup update guide](trmnl/README.md) to replace the corresponding tabs
+in an existing plugin without changing its polling configuration. Each site
+build publishes the templates under `/trmnl/` and bundles them with current
+settings in `/ambient-ocean-trmnl.zip`.
 
 ## Recent-recording search and cadence
 
