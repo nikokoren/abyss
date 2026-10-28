@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_id": "ooi-axial",
-  "checked_at": "2026-10-28T16:43:06.236795+00:00",
+  "checked_at": "2026-10-28T18:12:32.416532+00:00",
   "status": "observed",
   "timestamp_basis": "Filename parsed as UTC; source timezone not independently confirmed",
   "directory_dates_checked": [
@@ -11,7 +11,7 @@
   ],
   "directory_errors": [],
   "recordings_listed": 22,
-  "new_recordings_since_prior_coverage": 1,
+  "new_recordings_since_prior_coverage": 0,
   "baseline_recordings": 0,
   "recording_intervals_seconds": {
     "samples": 21,
@@ -27,27 +27,11 @@
   },
   "latest_nominal_recording_at": "2026-10-28T15:15:00+00:00",
   "publication_delay_observations": 5,
-  "new_appearances": [
-    {
-      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/10/28/CAMHDA301-20261028T151500.mp4",
-      "recorded_at": "2026-10-28T15:15:00+00:00",
-      "first_seen_at": "2026-10-28T16:43:05.386996+00:00",
-      "baseline": false,
-      "appeared_between": [
-        "2026-10-28T14:25:58.223918+00:00",
-        "2026-10-28T16:43:05.386996+00:00"
-      ],
-      "nominal_publication_delay_bounds_seconds": [
-        0,
-        5285.386996
-      ],
-      "last_seen_at": "2026-10-28T16:43:05.386996+00:00"
-    }
-  ],
+  "new_appearances": [],
   "publication_delay_note": "Baseline files have unknown publication time. Delay bounds require prior successful coverage of that date; filename timezone remains an assumption.",
   "environment": "github_actions",
-  "tested_commit": "413f54bc31ec7367b7f6a22a26f44cf1aa8a6f3e",
-  "run_url": "https://github.com/nikokoren/abyss/actions/runs/40728686323",
+  "tested_commit": "d8fd4778dd47d5ad2199b927c194552da6121e01",
+  "run_url": "https://github.com/nikokoren/abyss/actions/runs/40742849700",
   "imagery_published": false,
   "rights_status": "not_assessed"
 }
