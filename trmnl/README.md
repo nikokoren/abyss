@@ -17,7 +17,9 @@ sources are preprocessed by the shared scheduled job, so changing selection
 changes the displayed footage without exposing keys or triggering costly
 per-user video jobs. It does not trigger an immediate processing job.
 
-The 800×480 default display uses an 800×448 still plus title/attribution. Other
+The 800×480 default display uses an 800×448 image plus a title bar. OOI's image
+contains the complete resized footage and a separate NSF/WHOI/UW credit band;
+Shared markup does not overlay a second credit onto that footage. Other
 devices can use CLI width/height and adapted markup. Grayscale is opt-in;
 ordered 1-bit output is the conservative default pending physical testing.
 Only a full-screen layout is supplied. Use TRMNL's preview and a physical device

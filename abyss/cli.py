@@ -5,7 +5,7 @@ import tempfile
 from pathlib import Path
 from PIL import Image
 from .adapters import discover
-from .imaging import quality, render
+from .imaging import quality, render_for_source
 from .pipeline import candidates, run, utcnow
 from .publication import atomic_json
 from .recipe import generate
@@ -68,7 +68,7 @@ def main():
                     with Image.open(frame) as image:
                         scores.append({'frame_seconds': seconds, **quality(image)})
                         for method in ('ordered', 'floyd', 'threshold', 'grayscale'):
-                            render(image, args.width, args.height, method).save(output / f'{i:02}-{method}.png')
+                            render_for_source(image, source, args.width, args.height, method).save(output / f'{i:02}-{method}.png')
                 atomic_json(output / 'inspection.json', {'source_id': source['id'], 'checked_at': utcnow(),
                             'recording': recording, 'diagnostics': diagnostics, 'scores': scores,
                             'fixture': bool(args.local_video), 'note': 'Technical inspection only; reuse terms require separate review'})

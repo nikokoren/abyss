@@ -6,7 +6,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from PIL import Image
 from .adapters import discover_many
-from .imaging import render
+from .imaging import render_for_source
 from .network import RangeVideo
 from .publication import atomic_json, catalog, publish, read_json
 from .registry import eligible
@@ -81,7 +81,8 @@ def run_source(source, args):
                 return 'rejected'
             extracted = datetime.fromtimestamp(frame.stat().st_mtime, timezone.utc).isoformat()
             with Image.open(frame) as image:
-                processed = render(image, args.width, args.height, args.method, args.contrast, args.brightness)
+                processed = render_for_source(image, source, args.width, args.height, args.method,
+                                              args.contrast, args.brightness)
             capture = None
             if recording.get('recorded_at'):
                 stamp = datetime.fromisoformat(recording['recorded_at'].replace('Z', '+00:00'))
@@ -93,7 +94,13 @@ def run_source(source, args):
                         'frame_seconds': round(seconds, 3), 'captured_at': capture, 'extracted_at': extracted,
                         'processed_at': utcnow(), 'published_at': utcnow(), 'original_url': recording['url'],
                         'attribution': source['attribution'], 'attribution_url': source['attribution_url'],
+                        'attribution_embedded': bool(source.get('image_credit_lines')),
                         'license': source['license'], 'license_url': source['license_url'],
+                        'acknowledgment': source.get('acknowledgment'),
+                        'data_doi': source.get('data_doi'),
+                        'rights_review_url': source.get('rights_review_url'),
+                        'timestamp_basis': source.get('timestamp_basis'),
+                        'processing_note': 'Derived still: resized, contrast adjusted and rendered for e-paper',
                         'preference': diagnostics.get('preference'), 'selection_score': best.get('selection_score', score),
                         'width': args.width, 'height': args.height, 'method': args.method, 'quality': metrics,
                         'selection_reason': 'Best readable coarse/fine candidate using quality, novelty and any active personal preference model',

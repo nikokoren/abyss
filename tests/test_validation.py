@@ -51,7 +51,10 @@ class ValidationTests(unittest.TestCase):
         self.assertEqual(ooi['validation']['technical_status'], 'runner_verified')
         self.assertEqual(ooi['validation']['user_verification']['verified_by'], 'user_on_mac')
         self.assertEqual(ooi['validation']['deployment_environment_status'], 'passed')
-        self.assertEqual(ooi['status'], 'pending_rights_review')
+        self.assertEqual(ooi['validation']['rights_status'], 'approved_attributed_derived_stills')
+        self.assertTrue(eligible(ooi))
+        self.assertIn('/terms/ooi-axial/', ooi['validation']['terms_evidence'])
+        ooi['validation']['terms_reviewed_at'] = None
         self.assertFalse(eligible(ooi))
         ooi['validation']['terms_reviewed_at'] = '2026-10-27'
         ooi['status'] = 'validated'

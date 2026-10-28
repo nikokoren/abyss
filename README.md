@@ -9,8 +9,10 @@ verified by the user on a Mac.** GitHub-hosted validation also passed: four fram
 payload (1.08% of the 949 MB recording), in 20.1 seconds. See the
 [runner report](docs/evidence/ooi-20261027-github-actions.json).
 Codex's proxy restriction is an infrastructure limitation, not an upstream OOI
-failure. Public recipe release still needs licensing/attribution review and
-recurring discovery/freshness checks. See [runner validation](docs/runner-validation.md),
+failure. **OOI derived-still reuse is now reviewed and enabled**, with required
+NSF/WHOI/UW credit embedded in exported images; see the
+[rights review](docs/ooi-rights-review.md). Public Pages delivery and TRMNL
+device rendering remain unverified. See [runner validation](docs/runner-validation.md),
 [source audit](docs/sources.md), and [acceptance status](docs/validation.md).
 
 ## Develop
@@ -71,8 +73,8 @@ python -m abyss.cli run --base-url https://OWNER.github.io/abyss
 python -m abyss.cli recipe --base-url https://OWNER.github.io/abyss
 ```
 
-A real run requires a public HTTPS base URL. The registry defaults to no eligible
-sources and intentionally fails a processing run until validation is complete.
+A real run requires a public HTTPS base URL. OOI is the currently eligible real
+source. Other candidates remain excluded until their own reviews are complete.
 
 ## Recent-recording search and cadence
 

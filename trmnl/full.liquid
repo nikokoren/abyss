@@ -7,7 +7,7 @@
     <div class="title_bar" style="height:32px; padding:0 12px;">
       <span class="title" style="font-size:14px;">{{ camera.source_name | escape }}</span>
       <span class="instance" style="font-size:12px;">
-        {% if camera.captured_at %}Recorded {{ camera.captured_at | date: "%d %b %Y %H:%M UTC" }}{% else %}Recording time unknown{% endif %}
+        {% if camera.captured_at %}Recorded {{ camera.captured_at | date: "%d %b %Y %H:%M UTC" }}{% if camera.timestamp_basis == 'filename_assumed_utc' %} (UTC assumed){% endif %}{% else %}Recording time unknown{% endif %}
         · {{ camera.source_type | replace: '_', ' ' | escape }}
         {% unless camera.available %} · unavailable, last good image{% endunless %}
         {% if camera.stale %} · stale recording{% endif %}

@@ -12,7 +12,7 @@ from pathlib import Path
 from PIL import Image
 from .adapters import discover_many
 from .feedback import batch_id
-from .imaging import render
+from .imaging import render_for_source
 from .preferences import FEATURE_SPACE, ImageEncoder, digest, load_model
 from .publication import atomic_json, read_json
 from .registry import load
@@ -43,7 +43,7 @@ class Gallery:
             'quality_score': metrics['score'], 'selection_score': candidate['selection_score'],
             'preference_score': candidate.get('preference_score'), 'fixture': bool(self.source.get('fixture'))}
         raw = image.convert('RGB'); raw.thumbnail((640, 400), Image.Resampling.LANCZOS)
-        paper = render(image)
+        paper = render_for_source(image, self.source)
         self.images[identity] = {'original': data_url(raw), 'paper': data_url(paper)}
 
     def save(self, output, encoder, diagnostics):

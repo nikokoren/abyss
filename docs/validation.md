@@ -1,5 +1,22 @@
 # Validation evidence and remaining acceptance gates
 
+**Current update, 28 October 2026:** OOI derived-still reuse is approved and the
+source is enabled. Required credits are embedded outside the complete footage,
+and the viewer includes the official acknowledgment, terms, original recording
+and platform DOI. See [the rights review](ooi-rights-review.md) for immutable
+runner evidence. Earlier ledger entries below describe their original stage;
+Pages deployment and actual TRMNL rendering still remain to be verified.
+
+The rights/rendering update passed **51/51 Python tests** (10.133 seconds),
+JavaScript review-core tests and viewer syntax checks. The new image test uses
+an unusually wide frame with notices at both edges to detect cropping, checks
+that credit pixels occupy a separate band, and verifies refusal of a target
+too small for attribution. Actual FFmpeg pipeline tests verify that embedded
+credit, acknowledgment, DOI and the UTC-assumption marker reach published
+metadata. A synthetic 800×448 preview was visually inspected; this is not a
+physical e-paper test. Official source terms were retrieved in successful
+[GitHub run 40651933247](https://github.com/nikokoren/abyss/actions/runs/40651933247).
+
 Build session: 2026-10-27. Python 3.12.14, FFmpeg 7.1.5, Pillow 11.3.0,
 NumPy 2.2.6. Dependencies installed in `.venv`; no API keys used.
 

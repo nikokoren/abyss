@@ -9,9 +9,9 @@ from datetime import datetime, timezone
 from pathlib import Path
 from unittest.mock import patch
 import numpy as np
-from PIL import Image, ImageFilter
+from PIL import Image, ImageDraw, ImageFilter
 from abyss.adapters import discover
-from abyss.imaging import fingerprint, quality, render, similarity
+from abyss.imaging import fingerprint, quality, render, render_for_source, similarity
 from abyss.network import RangeVideo, RetrievalError, check_url
 from abyss.pipeline import run
 from abyss.publication import atomic_json, catalog, read_json
@@ -39,7 +39,7 @@ def args(root, video=None):
 
 class RegistryTests(unittest.TestCase):
     def test_unverified_sources_not_selectable(self):
-        self.assertFalse(any(eligible(s) for s in load('sources.json')))
+        self.assertEqual([s['id'] for s in load('sources.json') if eligible(s)], ['ooi-axial'])
         s = source()
         self.assertTrue(eligible(s))
         s['validation']['terms_reviewed_at'] = None
@@ -94,6 +94,25 @@ class ImageTests(unittest.TestCase):
 
     def test_dimensions_guarded(self):
         with self.assertRaises(ValueError): render(self.scene,0,448)
+
+    def test_attributed_render_preserves_edge_notices_and_separates_credit(self):
+        # A wide frame with source notices at both edges would lose them to a crop.
+        original = Image.new('L', (1600, 400), 160)
+        draw = ImageDraw.Draw(original)
+        draw.rectangle((0, 0, 100, 399), fill=0)
+        draw.rectangle((1499, 0, 1599, 399), fill=0)
+        s = load('sources.json')[0]
+        image = render_for_source(original, s, method='threshold')
+        self.assertEqual(image.size, (800, 448))
+        self.assertEqual(image.mode, '1')
+        self.assertEqual(image.getpixel((20, 200)), 0)
+        self.assertEqual(image.getpixel((780, 200)), 0)
+        self.assertEqual(image.getpixel((400, 200)), 255)
+        self.assertEqual(image.getpixel((400, 405)), 0)  # letterboxing, no overlay
+        self.assertLess(np.asarray(image)[415:440].mean(), 1)  # visible credit glyphs
+        self.assertEqual(image.getpixel((0, 447)), 255)  # separate white credit band
+        with self.assertRaisesRegex(ValueError, 'attribution'):
+            render_for_source(original, s, width=64)
 
 
 class FakeResponse(io.BytesIO):
@@ -194,6 +213,10 @@ class IntegrationTests(unittest.TestCase):
     def test_pipeline_repeatability_failure_and_recipe(self):
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp); s=source(); a=args(root,self.video)
+            ooi = load('sources.json')[0]
+            for key in ('image_credit_lines', 'preserve_frame', 'acknowledgment', 'data_doi',
+                        'rights_review_url', 'timestamp_basis'):
+                s[key] = ooi[key]
             result=run([s],a)
             self.assertEqual(result[s['id']],'published')
             latest=root/'public/sources/test-camera/latest.json'
@@ -202,6 +225,10 @@ class IntegrationTests(unittest.TestCase):
             self.assertEqual(metadata['recorded_at'],'2026-01-01T10:00:00+00:00')
             self.assertNotEqual(metadata['captured_at'],metadata['published_at'])
             self.assertTrue(metadata['fixture'])
+            self.assertTrue(metadata['attribution_embedded'])
+            self.assertEqual(metadata['acknowledgment'], s['acknowledgment'])
+            self.assertEqual(metadata['data_doi'], s['data_doi'])
+            self.assertEqual(metadata['timestamp_basis'], 'filename_assumed_utc')
             image=root/'public'/metadata['image_url'].split('/abyss/')[1]
             with Image.open(image) as rendered: self.assertEqual(rendered.size,(800,448))
             self.assertEqual(run([s],a)[s['id']],'unchanged')
@@ -245,7 +272,10 @@ class IntegrationTests(unittest.TestCase):
 
     def test_empty_catalog_and_recipe_refusal(self):
         with tempfile.TemporaryDirectory() as tmp:
-            self.assertEqual(run(load('sources.json'),args(tmp)),{})
+            disabled = source()
+            disabled['status'] = 'pending_rights_review'
+            disabled['validation']['terms_reviewed_at'] = None
+            self.assertEqual(run([disabled],args(tmp)),{})
             with self.assertRaisesRegex(ValueError,'No validated'): generate(tmp,'https://site.example',Path(tmp)/'settings.yml')
 
     def test_failed_publication_does_not_skip_recording(self):

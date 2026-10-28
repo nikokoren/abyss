@@ -7,6 +7,11 @@ OOI's status. First complete source access, timestamp, actual-frame, partial
 retrieval, and rights checks in [sources.md](sources.md). Cloud publication and TRMNL installation require the account-level steps below.
 Local tests do not establish hosted deployment readiness.
 
+OOI's technical validation and [derived-still rights review](ooi-rights-review.md)
+are complete; `ooi-axial` is enabled with embedded NSF/WHOI/UW credit. Filename
+timestamps retain an explicit UTC assumption. Hosting and physical TRMNL checks
+are still outstanding.
+
 The network additions are saved in the environment draft. Review and save them
 in environment settings to apply them, then retry `inspect`. Publish the cloud
 environment when satisfied with setup; publication is separate from code hosting
@@ -14,9 +19,8 @@ and GitHub Pages deployment. Never paste keys into chat or source files.
 
 ## GitHub deployment
 
-1. Review the generated code and commit/push it to this repository's default
-   branch (the requested target was `main`; the original checkout has an unborn
-   local `work` branch). This guide does not create or push a commit implicitly.
+1. Code and the OOI approval are pushed to this repository's default `main`
+   branch. Review the source registry and linked evidence before deployment.
 2. Use a public repository for GitHub Free Pages. For a private repository,
    verify an eligible Pages plan and remaining Actions allowance. Confirm
    organization policy permits Actions, Pages and bot writes. Check billing

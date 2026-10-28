@@ -17,14 +17,26 @@
       "discovery": "UTC date directories; timestamped CAMHDA301-YYYYMMDDTHHMMSS.mp4 files",
       "cadence": "Observed three-hour filename spacing: all 23 gaps across 24 recordings on 2026-10-25 through 2026-10-27. Sustained cadence is still monitored.",
       "expected_delay": "Publication appearance delay is not yet measured; hourly observations are collecting. Listing appearance does not establish media completion.",
-      "attribution": "Ocean Observatories Initiative, Regional Cabled Array / University of Washington",
-      "attribution_url": "https://oceanobservatories.org/",
-      "license": "Reuse and derived-still attribution requirements pending review",
-      "license_url": "https://oceanobservatories.org/data/",
-      "status": "pending_rights_review",
+      "attribution": "Ocean Observatories Initiative / Woods Hole Oceanographic Institution OOI Program Office / University of Washington; supported by the U.S. National Science Foundation, Cooperative Agreement 2244833",
+      "attribution_url": "https://oceanobservatories.org/how-to-use-acknowledge-and-cite-data/",
+      "license": "OOI User Terms and Conditions v2-00 (attribution required)",
+      "license_url": "https://oceanobservatories.org/wp-content/uploads/2022/12/1102-00020_Data_User_Terms_Conditions_OOI_2019-01-02_Ver_2-00.pdf",
+      "acknowledgment": "This material is based upon work supported by the Ocean Observatories Initiative (OOI), a major facility fully funded by the US National Science Foundation under Cooperative Agreement No. 2244833, and the Woods Hole Oceanographic Institution OOI Program Office.",
+      "data_doi": "https://doi.org/10.58046/OOI-RS03ASHS",
+      "rights_review_url": "https://github.com/nikokoren/abyss/blob/main/docs/ooi-rights-review.md",
+      "timestamp_basis": "filename_assumed_utc",
+      "preserve_frame": true,
+      "image_credit_lines": [
+        "Data: Ocean Observatories Initiative / WHOI OOI Program Office / University of Washington",
+        "Supported by the U.S. National Science Foundation - Cooperative Agreement 2244833"
+      ],
+      "status": "validated",
       "validation": {
         "retrieval_at": "2026-10-27T22:46:24.574855+00:00",
-        "terms_reviewed_at": null,
+        "terms_reviewed_at": "2026-10-28",
+        "rights_status": "approved_attributed_derived_stills",
+        "terms_evidence": "https://github.com/nikokoren/abyss/tree/b24fb04ec4c9e1ad4d5fc89e16bb390494156bfb/terms/ooi-axial/40651933247",
+        "terms_run_url": "https://github.com/nikokoren/abyss/actions/runs/40651933247",
         "evidence": "https://github.com/nikokoren/abyss/blob/3f989f17256ce8a4c33ac0450b57beae2b1c8902/validation/ooi-axial/latest.json",
         "technical_status": "runner_verified",
         "recording_url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/10/27/CAMHDA301-20261027T181500.mp4",
@@ -56,7 +68,8 @@
       },
       "last_successful_retrieval": "2026-10-27T22:46:24.574855+00:00",
       "limitations": [
-        "Publication delay, filename timezone and reuse terms require separate review",
+        "Publication delay and filename timezone remain unconfirmed; timestamps explicitly identify the UTC assumption",
+        "Derived-still reuse follows OOI terms, with NSF, WHOI OOI Program Office and UW credit; no Creative Commons or public-domain claim",
         "Adaptive benchmark covers three recordings; sustained operation is monitored separately"
       ],
       "scoring": {

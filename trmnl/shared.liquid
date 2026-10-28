@@ -1,8 +1,8 @@
 {% comment %}
-Attribution belongs with every image. Full-size image reserves 448 of 480 pixels
-for footage. Keep the institution credit visible in the recipe's Shared markup.
+OOI's required credit is embedded below the complete footage in the PNG. Other
+sources without embedded credit use this fallback. Never overlay existing notices.
 {% endcomment %}
 {% assign selected_id = trmnl.plugin_settings.custom_fields_values.source_id %}
 {% assign credit = sources[selected_id] | default: default_image %}
 <style>.ocean-credit { position:absolute; bottom:34px; left:8px; background:white; color:black; padding:2px 5px; font-size:10px; max-width:95%; }</style>
-{% if credit %}<div class="ocean-credit">{{ credit.attribution | escape }} · {{ credit.license | escape }}</div>{% endif %}
+{% if credit and credit.attribution_embedded != true %}<div class="ocean-credit">{{ credit.attribution | escape }} · {{ credit.license | escape }}</div>{% endif %}

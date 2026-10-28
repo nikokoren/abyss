@@ -1,5 +1,11 @@
 # Source discovery audit
 
+**Current status, 28 October 2026:** OOI CAMHDA301 passed the
+[reuse/attribution review](ooi-rights-review.md) using official documents
+retrieved on GitHub runners. It is eligible for attributed derived-still
+publication. Other candidates remain research-only. The initial audit and
+follow-up measurements below preserve their historical conclusions.
+
 Audit date: 2026-10-27. **Update:** OOI access, byte ranges and a visible
 vent frame are user-verified on a Mac. GitHub-hosted retrieval and four FFmpeg
 seeks also passed; the remaining release review is separate
@@ -38,7 +44,7 @@ Links: [OOI archive](https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B
 [ONC](https://www.oceannetworks.ca/), [MBARI](https://www.mbari.org/).
 These are discovery leads, not citations asserting verified technical properties.
 
-All four registry candidates are excluded from public recipe release pending rights/retrieval requirements specific to each source. None is permanently
+At the initial audit, all four registry candidates were excluded from public recipe release pending rights/retrieval requirements specific to each source. None is permanently
 rejected as a scientific source. They are rejected from the **initial dropdown**
 because rights review remains incomplete for OOI, and the other candidates lack both technical and rights validation. No suitable second or
 third source has yet been established; the two-source behavior is fixture-tested.

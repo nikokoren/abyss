@@ -1,6 +1,6 @@
 import math
 import numpy as np
-from PIL import Image, ImageEnhance, ImageFilter, ImageOps
+from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont, ImageOps
 
 
 def fingerprint(image):
@@ -37,10 +37,12 @@ def quality(image, history=(), novelty_weight=0.12):
             'similarity': duplicate, 'fingerprint': fp}
 
 
-def render(image, width=800, height=448, method='ordered', contrast=1.25, brightness=1.03):
+def render(image, width=800, height=448, method='ordered', contrast=1.25, brightness=1.03,
+           *, preserve_frame=False):
     if not (64 <= width <= 4096 and 64 <= height <= 4096):
         raise ValueError('Target dimensions must be between 64 and 4096')
-    gray = ImageOps.fit(image.convert('L'), (width, height), method=Image.Resampling.LANCZOS)
+    resize = ImageOps.pad if preserve_frame else ImageOps.fit
+    gray = resize(image.convert('L'), (width, height), method=Image.Resampling.LANCZOS)
     gray = ImageOps.autocontrast(gray, cutoff=1)
     gray = ImageEnhance.Contrast(gray).enhance(contrast)
     gray = ImageEnhance.Brightness(gray).enhance(brightness)
@@ -56,3 +58,25 @@ def render(image, width=800, height=448, method='ordered', contrast=1.25, bright
     bayer = np.array([[0, 8, 2, 10], [12, 4, 14, 6], [3, 11, 1, 9], [15, 7, 13, 5]])
     thresholds = (np.tile(bayer, (math.ceil(height / 4), math.ceil(width / 4)))[:height, :width] + .5) * 16
     return Image.fromarray(np.where(np.asarray(gray) >= thresholds, 255, 0).astype('uint8')).convert('1')
+
+
+def render_for_source(image, source, width=800, height=448, method='ordered',
+                      contrast=1.25, brightness=1.03):
+    """Keep source notices in-frame and put required credits outside the footage."""
+    lines = source.get('image_credit_lines', [])
+    if not lines:
+        return render(image, width, height, method, contrast, brightness,
+                      preserve_frame=source.get('preserve_frame', False))
+    font = ImageFont.load_default(size=max(10, round(width * 12 / 800)))
+    spacing = max(14, round(width * 16 / 800))
+    footer = spacing * len(lines) + 6
+    if any(font.getlength(line) > width - 16 for line in lines) or height - footer < 64:
+        raise ValueError('Target dimensions cannot fit required source attribution')
+    footage = render(image, width, height - footer, method, contrast, brightness,
+                     preserve_frame=True)
+    result = Image.new(footage.mode, (width, height), 255)
+    result.paste(footage, (0, 0))
+    draw = ImageDraw.Draw(result)
+    for i, line in enumerate(lines):
+        draw.text((8, height - footer + 3 + spacing * i), line, font=font, fill=0)
+    return result
