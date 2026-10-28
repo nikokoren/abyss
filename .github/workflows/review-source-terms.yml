@@ -1,0 +1,52 @@
+name: Capture official OOI reuse terms
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/review-source-terms.yml
+      - scripts/capture_source_terms.py
+permissions:
+  contents: write
+concurrency:
+  group: source-terms
+  cancel-in-progress: false
+jobs:
+  capture:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: sudo apt-get update && sudo apt-get install -y poppler-utils
+      - name: Retrieve official policy and instrument pages
+        run: python scripts/capture_source_terms.py --output /tmp/source-terms
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ooi-source-terms-${{ github.run_id }}
+          path: /tmp/source-terms/
+          retention-days: 30
+      - name: Preserve dated review evidence
+        shell: bash
+        run: |
+          set -euo pipefail
+          set +e
+          git ls-remote --exit-code origin refs/heads/source-terms > /tmp/terms-ref
+          status=$?
+          set -e
+          if [ "$status" -eq 0 ]; then
+            git fetch --depth=1 origin refs/heads/source-terms:refs/remotes/origin/source-terms
+            git checkout --detach refs/remotes/origin/source-terms
+          elif [ "$status" -eq 2 ]; then
+            git checkout --orphan source-terms
+            git rm -rf --ignore-unmatch .
+          else
+            exit "$status"
+          fi
+          mkdir -p "terms/ooi-axial/${GITHUB_RUN_ID}"
+          cp /tmp/source-terms/* "terms/ooi-axial/${GITHUB_RUN_ID}/"
+          git add terms
+          git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Capture official OOI source terms for review'
+          git push origin HEAD:refs/heads/source-terms
