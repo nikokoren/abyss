@@ -4,26 +4,24 @@ from html import escape
 
 SUMMARY = 'A window into the deep ocean'
 HEADLINE = 'A window into the abyss.'
-INTRO = ('Hydrothermal vents on an active underwater volcano. A methane seep on '
-         'the Pacific seafloor. Extraordinary places, quietly on your TRMNL.')
+INTRO = 'Turn your TRMNL into your personal window into the deep ocean.'
 OVERVIEW = (
-    'Abyss brings an extraordinary corner of our planet to your TRMNL: the deep Pacific. '
+    'Turn your TRMNL into your personal window into the deep ocean. Abyss lets you '
+    'peek into a fascinating corner of our planet: the deep Pacific. '
     'Look into hydrothermal vent habitats on Axial Seamount, an active underwater volcano, '
     'and a methane seep at Southern Hydrate Ridge off Oregon. These are real research '
     'camera images from places most of us will never visit.\n\n'
-    'This window exists because of public investment in science. The U.S. National '
+    'This window is made possible by public investment in science. The U.S. National '
     'Science Foundation funds the Ocean Observatories Initiative, whose Regional '
     'Cabled Array connects deep-ocean instruments to shore through a 900-kilometre '
     'network of power and data cables. '
-    'Scientists, engineers and research crews make these observations possible, '
-    'and open data lets the rest of us look in. That is a remarkable return on a '
-    'science budget: a view into another world, shared with everyone.\n\n'
-    'Abyss selects stills from periodic recordings and snapshots, preserving their '
-    'original detail for TRMNL to render. Cycle through all three camera views, '
-    'choose a few favourites, or settle into one. Images are processed twice daily; '
-    'the default 15-minute refresh rotates your selected views. When a camera cannot '
-    'update, its last good image stays with you. This is a window into real ocean '
-    'research, rather than a continuous live stream.'
+    'Scientists, engineers and research crews keep this observatory running, '
+    'and open data lets the rest of us look in, right from your TRMNL.\n\n'
+    'Abyss selects stills from these cameras\' periodic recordings and snapshots. '
+    'Cycle through all three cameras, choose a few favourites, or settle into one. '
+    'The default 15-minute refresh rotates your selected views. Images are processed '
+    'twice daily, and a camera\'s last good image stays on display when it cannot '
+    'update.'
 )
 CAMERAS = (
     {
