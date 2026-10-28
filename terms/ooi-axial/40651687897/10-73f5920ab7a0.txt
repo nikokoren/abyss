@@ -1,0 +1,1015 @@
+
+
+
+
+
+
+Acknowledgements – OOI Regional Cabled Array
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to content
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Interactive Map
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Search
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Home
+
+About
+
+
+Regional Cabled Array
+
+Ocean Observatories Initiative
+
+People
+
+Acknowledgements
+
+Contact
+
+
+
+Research Sites
+
+
+Axial Base
+
+Axial Caldera
+
+
+ASHES
+
+International District
+
+Central Caldera
+
+Eastern Caldera
+
+
+
+Oregon Offshore
+
+Oregon Shelf
+
+Oregon Slope Base
+
+Southern Hydrate Ridge
+
+Mid-Plate
+
+
+
+Technology
+
+
+Cabled Network
+
+Cables & Connectors
+
+CTD Rosette
+
+Primary Nodes
+
+Junction Boxes
+
+Benthic Experiment Package (BEP)
+
+Deep Profiler Moorings
+
+Shallow Profiler Moorings
+
+ROVs
+
+Ships
+
+Terrestrial Network
+
+
+
+Instruments
+
+Expeditions
+
+
+VISIONS 26
+
+VISIONS 25
+
+VISIONS 24
+
+VISIONS 23
+
+VISIONS 22
+
+VISIONS 21
+
+VISIONS 20
+
+VISIONS 19
+
+VISIONS 18
+
+VISIONS 17
+
+VISIONS 16
+
+VISIONS 15
+
+VISIONS 14
+
+VISIONS 13
+
+VISIONS 11
+
+
+
+Education
+
+
+Cabled Array in the Classroom
+
+Engagement Products
+
+K12 Lessons
+
+Data Portal
+
+
+
+Resources
+
+
+Galleries
+
+Biology Catalog
+
+Featured Posts
+
+Glossary
+
+
+
+
+
+
+
+
+Home
+
+About
+
+
+Regional Cabled Array
+
+Ocean Observatories Initiative
+
+People
+
+Acknowledgements
+
+Contact
+
+
+
+Research Sites
+
+
+Axial Base
+
+Axial Caldera
+
+
+ASHES
+
+International District
+
+Central Caldera
+
+Eastern Caldera
+
+
+
+Oregon Offshore
+
+Oregon Shelf
+
+Oregon Slope Base
+
+Southern Hydrate Ridge
+
+Mid-Plate
+
+
+
+Technology
+
+
+Cabled Network
+
+Cables & Connectors
+
+CTD Rosette
+
+Primary Nodes
+
+Junction Boxes
+
+Benthic Experiment Package (BEP)
+
+Deep Profiler Moorings
+
+Shallow Profiler Moorings
+
+ROVs
+
+Ships
+
+Terrestrial Network
+
+
+
+Instruments
+
+Expeditions
+
+
+VISIONS 26
+
+VISIONS 25
+
+VISIONS 24
+
+VISIONS 23
+
+VISIONS 22
+
+VISIONS 21
+
+VISIONS 20
+
+VISIONS 19
+
+VISIONS 18
+
+VISIONS 17
+
+VISIONS 16
+
+VISIONS 15
+
+VISIONS 14
+
+VISIONS 13
+
+VISIONS 11
+
+
+
+Education
+
+
+Cabled Array in the Classroom
+
+Engagement Products
+
+K12 Lessons
+
+Data Portal
+
+
+
+Resources
+
+
+Galleries
+
+Biology Catalog
+
+Featured Posts
+
+Glossary
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Acknowledgements
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Regional Cabled Array
+
+Ocean Observatories Initiative
+
+People
+
+Acknowledgements
+
+Contact
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Special thanks too:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+National Science Foundation
+
+
+
+
+
+
+The National Science Foundation (NSF) is an independent federal agency that supports fundamental research and education across all fields of science and engineering. In September 2009 the Foundation signed a cooperative agreement with the Consortium for Ocean Leadership to support the construction and initial operation of the Ocean Observatories Initiative (OOI). Construction of the Regional Cabled Array was completed in 2014. In 2019, phase 2 of OOI was implemented through a cooperative agreement to Woods Hole Oceanographic Institution with partners that include the University of Washington, Oregon State University, and Rutgers University.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Ocean Observatories Initiative
+
+
+
+
+
+
+
+The Ocean Observatories Initiative (OOI), a project funded by the National Science Foundation, is a networked infrastructure of science-driven sensor systems to measure the physical, chemical, geological and biological variables in the ocean and seafloor. The OOI is a fully integrated system collecting data on coastal, regional and global scales. Greater knowledge of the ocean’s interrelated systems is vital for increased understanding of their effects on biodiversity, ocean and coastal ecosystems, ecosystem health and climate change. OOI is placing real time ocean observing data in the hands of a vast user community of oceanographers, scientists and researchers, educators and the public.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+University of Washington
+
+
+
+
+
+
+As a leading research university, the University of Washington possesses exceptional resources and strengths across many disciplines related to ocean science and education: marine research and education programs within the School of Oceanography; the 274-foot Global Class Research Vessel Thomas G. Thompson; expert ocean engineers in the Applied Physics Laboratory; the College of Engineering; the College of Education; the College of the Environment; and centers in cutting-edge research ranging from nanotechnology to high-frequency ultrasound, from genome science to robotics.
+
+The UW also possesses exceptional telecommunications networking assets that include a 25-year track record of advanced computing and communications that support nearly all forms of data, voice, video, and broadcast networks on campus, and at metropolitan, regional, national, and international scales.
+The Regional Cabled Array component within the NSF Ocean Observatories Initiative is led by the University of Washington.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+School of Oceanography
+
+
+
+
+
+
+The School of Oceanography fosters continued advancement of the ocean sciences, solutions to problems of societal relevance, and public awareness of the marine environment. It is at the forefront of creating knowledge and understanding about the ocean through observation, theory, modeling and technological innovation. The School focuses on learning and discovery, equipping students with knowledge and insights, scholarly methods, scientific tools and communication skills.
+There are currently 60 faculty. An additional 37 affiliate faculty, mainly drawn from the UW Applied Physics Laboratory and NOAA’s Pacific Marine Environmental Laboratory, are also active in graduate advising.
+
+The School offers outstanding educational opportunities. Sixty graduate students are in residence working within four areas of specialization (biological, chemical, physical, and marine geology and geophysics) and on a variety of interdisciplinary topics (climate change, extreme environments, and coastal systems). The School is the only leading oceanography program to offer a bachelors degree.
+The Regional Cabled Array (RCA) office is housed in the School of Oceanography as is the RCA Operations Center. Our team of engineers is located 5 minutes away at the Applied Physics Lab.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+UW College of the Environment
+
+
+
+
+
+
+Discovery is at the heart of the vision of the University of Washington College of the Environment, the home college of the School of Oceanography and the Regional Cabled Observatory. College of the Environment programs in environmental research, education, and application span the forests to the seas, the depths of the Earth to the edges of the solar system. In partnership with industry, government, and nonprofits, the College of the Environmen is committed to creating future leaders, steeped in basic science and critical thinking, and focused on developing sustainable solutions to the critical challenges of our time.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Applied Physics Laboratory
+
+
+
+
+
+
+The Applied Physics Laboratory, founded at the University of Washington in 1943, serves society by contributing new knowledge and technology to academia, industry, and the national defense enterprise. Core expertise is in ocean physics and engineering, acoustics (under water and in the human body), polar science, environmental remote sensing, and signal processing. Fully integrated into the UW research and teaching missions, Laboratory scientists train scores of students, and pursue collaborative research across more than 30 UW academic units.
+APL-UW engineers are principal partners in the OOI Regional Cabled Array (RCA). Electrical, mechanical, ocean, and systems engineering contributed to the design, development, and installation of the RCA, including the secondary nodes that host all scientific instruments, the deep and shallow profiling moorings, and the high-definition video camera. They support the operations center on the UW campus in Seattle and are part of all VISIONS expeditions in the Northeast Pacific to maintain and expand RCA capabilities.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Interactive Map
+
+Contact
+
+Ocean Observatories Initiative
+
+NSF Disclaimer
+
+Privacy & Terms
+
+
+
+Interactive Map
+
+Contact
+
+Ocean Observatories Initiative
+
+NSF Disclaimer
+
+Privacy & Terms
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Instagram
+
+
+
+
+Twitter
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Close Panel
+
+
+
+
+
+
+Regional Cabled Array
+
+Ocean Observatories Initiative
+
+People
+
+Acknowledgements
+
+Contact
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,1231 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Cookie Policy (EU) - Ocean Observatories Initiative
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to content
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Subscribe
+Access Data
+Help
+
+
+
+
+
+
+
+
+
+
+Menu
+
+
+
+
+The Observatory
+
+
+
+About OOI
+
+
+
+The Vision
+
+Leadership
+
+Program Documents
+
+Advisory Committees
+
+Glossary
+
+By the Numbers
+
+
+
+Arrays
+
+
+
+Global Irminger Sea Array
+
+Global Station Papa Array
+
+Coastal Endurance Array
+
+Coastal Pioneer Mid-Atlantic Bight Array
+
+Coastal Pioneer New England Shelf Array
+
+Regional Cabled Array
+
+Cabled Continental Margin Array
+
+Cabled Axial Seamount Array
+
+Cabled Endurance Array
+
+Global Argentine Basin
+
+Global Southern Ocean Array
+
+Additional Observing Assets in the Region
+
+
+
+Platforms and Nodes
+
+Infrastructure
+
+
+
+Cabled Infrastructure
+
+Moorings
+
+Profilers
+
+AUVs
+
+Gliders
+
+Cyberinfrastructure
+
+
+
+Instruments
+
+
+
+Science
+
+
+
+Expeditions
+
+Publications
+
+
+
+OOI-Related Publications
+
+Submit a Publication
+
+
+
+Science Highlights
+
+Science Questions
+
+Projects and Related Research
+
+
+
+Participate in OOI
+
+
+
+Adding Instruments or Platforms
+
+Participating in Cruises
+
+Deploying in OOI Areas
+
+Developing a Proposal
+
+Propose Modifications to Sampling
+
+Borrowing OOI Assets
+
+
+
+Community Engagement
+
+
+
+OOI Ambassador Program
+
+Science User Group for Research meetings
+
+Communities
+
+
+
+Educators
+
+Mariners
+
+
+
+Newsletter
+
+Events
+
+Visual Galleries
+
+Media
+
+Webinar Archive
+
+Join Us
+
+
+
+OOI Data
+
+
+
+Data Access
+
+
+
+Data Explorer
+
+
+
+Data Quality
+
+
+
+Data Updates and Corrections
+
+
+
+Data Products
+
+
+
+Data Products List
+
+
+
+Community Datasets
+
+Community Data Tools
+
+Jupyter Notebook
+
+How to Use, Acknowledge, and Cite Data
+
+Data HelpDesk
+
+
+
+Tutorials
+
+FAQs (Knowledge Base)
+
+Discourse
+
+
+
+
+
+Resources
+
+
+
+For Educators
+
+Image Gallery
+
+Video Gallery
+
+Glossary
+
+Contact
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Home
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Subscribe
+Access Data
+Help
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+Skip to Navigation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{{ searchMessage }}
+
+
+
+
+{{ searchItems.length }} results for "{{ searchQuery.trim() }}"
+
+
+
+
+
+
+
+You searched: {{ searchQuery }}
+
+
+
+Searching in:
+
+
+
+{{source.name}}
+
+
+
+
+
+
+
+
+{{ searchItems.length }} results for "{{ searchQuery.trim() }}"
+
+
+
+
+
+
+
+
+
+[{{ decodeEntities(result.type) | removeUnderscore}}]
+{{ decodeEntities(result.excerpt.rendered) | truncate(380) }}
+
+
+
+[{{ decodeEntities(result.type) | removeUnderscore }}]
+{{ decodeEntities(result.content.rendered) | truncate(380) }}
+
+
+
+
+
+
+
+
+
+
+Quick Links
+
+Home
+
+Data Portal
+
+Data Explorer
+
+Partner Data Sites
+
+How to Use, Acknowledge, and Cite Data
+
+How to Participate
+
+Infrastructure Status
+
+Need Help?
+
+
+
+Close Menu
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Menu
+
+
+
+
+The Observatory
+
+
+
+About OOI
+
+
+
+The Vision
+
+Leadership
+
+Program Documents
+
+Advisory Committees
+
+Glossary
+
+By the Numbers
+
+
+
+Arrays
+
+
+
+Global Irminger Sea Array
+
+Global Station Papa Array
+
+Coastal Endurance Array
+
+Coastal Pioneer Mid-Atlantic Bight Array
+
+Coastal Pioneer New England Shelf Array
+
+Regional Cabled Array
+
+Cabled Continental Margin Array
+
+Cabled Axial Seamount Array
+
+Cabled Endurance Array
+
+Global Argentine Basin
+
+Global Southern Ocean Array
+
+Additional Observing Assets in the Region
+
+
+
+Platforms and Nodes
+
+Infrastructure
+
+
+
+Cabled Infrastructure
+
+Moorings
+
+Profilers
+
+AUVs
+
+Gliders
+
+Cyberinfrastructure
+
+
+
+Instruments
+
+
+
+Quick Links
+Home
+
+Data Portal
+
+Data Explorer
+
+Partner Data Sites
+
+How to Use, Acknowledge, and Cite Data
+
+How to Participate
+
+Infrastructure Status
+
+Need Help?
+
+
+Science
+
+
+
+Expeditions
+
+Publications
+
+
+
+OOI-Related Publications
+
+Submit a Publication
+
+
+
+Science Highlights
+
+Science Questions
+
+Projects and Related Research
+
+
+
+Quick Links
+Home
+
+Data Portal
+
+Data Explorer
+
+Partner Data Sites
+
+How to Use, Acknowledge, and Cite Data
+
+How to Participate
+
+Infrastructure Status
+
+Need Help?
+
+
+Participate in OOI
+
+
+
+Adding Instruments or Platforms
+
+Participating in Cruises
+
+Deploying in OOI Areas
+
+Developing a Proposal
+
+Propose Modifications to Sampling
+
+Borrowing OOI Assets
+
+
+
+Quick Links
+Home
+
+Data Portal
+
+Data Explorer
+
+Partner Data Sites
+
+How to Use, Acknowledge, and Cite Data
+
+How to Participate
+
+Infrastructure Status
+
+Need Help?
+
+
+Community Engagement
+
+
+
+OOI Ambassador Program
+
+Science User Group for Research meetings
+
+Communities
+
+
+
+Educators
+
+Mariners
+
+
+
+Newsletter
+
+Events
+
+Visual Galleries
+
+Media
+
+Webinar Archive
+
+Join Us
+
+
+
+Quick Links
+Home
+
+Data Portal
+
+Data Explorer
+
+Partner Data Sites
+
+How to Use, Acknowledge, and Cite Data
+
+How to Participate
+
+Infrastructure Status
+
+Need Help?
+
+
+OOI Data
+
+
+
+Data Access
+
+
+
+Data Explorer
+
+
+
+Data Quality
+
+
+
+Data Updates and Corrections
+
+
+
+Data Products
+
+
+
+Data Products List
+
+
+
+Community Datasets
+
+Community Data Tools
+
+Jupyter Notebook
+
+How to Use, Acknowledge, and Cite Data
+
+Data HelpDesk
+
+
+
+Tutorials
+
+FAQs (Knowledge Base)
+
+Discourse
+
+
+
+
+
+Quick Links
+Home
+
+Data Portal
+
+Data Explorer
+
+Partner Data Sites
+
+How to Use, Acknowledge, and Cite Data
+
+How to Participate
+
+Infrastructure Status
+
+Need Help?
+
+
+Resources
+
+
+
+For Educators
+
+Image Gallery
+
+Video Gallery
+
+Glossary
+
+Contact
+
+
+
+Quick Links
+Home
+
+Data Portal
+
+Data Explorer
+
+Partner Data Sites
+
+How to Use, Acknowledge, and Cite Data
+
+How to Participate
+
+Infrastructure Status
+
+Need Help?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Home :: Cookie Policy (EU)
+
+
+
+
+
+
+
+
+
+
+
+Cookie Policy (EU)
+
+
+
+Region EU not activated for cookie-statement.
+
+
+
+
+
+
+
+
+
+
+
+The Observatory
+
+
+About OOI
+
+
+The Vision
+
+Leadership
+
+Program Documents
+
+Advisory Committees
+
+Glossary
+
+By the Numbers
+
+
+
+Arrays
+
+
+Global Irminger Sea Array
+
+Global Station Papa Array
+
+Coastal Endurance Array
+
+Coastal Pioneer Mid-Atlantic Bight Array
+
+Coastal Pioneer New England Shelf Array
+
+Regional Cabled Array
+
+Cabled Continental Margin Array
+
+Cabled Axial Seamount Array
+
+Cabled Endurance Array
+
+Global Argentine Basin
+
+Global Southern Ocean Array
+
+Additional Observing Assets in the Region
+
+
+
+Platforms and Nodes
+
+Infrastructure
+
+
+Cabled Infrastructure
+
+Moorings
+
+Profilers
+
+AUVs
+
+Gliders
+
+Cyberinfrastructure
+
+
+
+Instruments
+
+
+
+Science
+
+
+Expeditions
+
+Publications
+
+
+OOI-Related Publications
+
+Submit a Publication
+
+
+
+Science Highlights
+
+Science Questions
+
+Projects and Related Research
+
+
+
+Participate in OOI
+
+
+Adding Instruments or Platforms
+
+Participating in Cruises
+
+Deploying in OOI Areas
+
+Developing a Proposal
+
+Propose Modifications to Sampling
+
+Borrowing OOI Assets
+
+
+
+Community Engagement
+
+
+OOI Ambassador Program
+
+Science User Group for Research meetings
+
+Communities
+
+
+Educators
+
+Mariners
+
+
+
+Newsletter
+
+Events
+
+Visual Galleries
+
+Media
+
+Webinar Archive
+
+Join Us
+
+
+
+OOI Data
+
+
+Data Access
+
+
+Data Explorer
+
+
+
+Data Quality
+
+
+Data Updates and Corrections
+
+
+
+Data Products
+
+
+Data Products List
+
+
+
+Community Datasets
+
+Community Data Tools
+
+Jupyter Notebook
+
+How to Use, Acknowledge, and Cite Data
+
+Data HelpDesk
+
+
+Tutorials
+
+FAQs (Knowledge Base)
+
+Discourse
+
+
+
+
+
+Resources
+
+
+For Educators
+
+Image Gallery
+
+Video Gallery
+
+Glossary
+
+Contact
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The Ocean Observatories Initiative (OOI) is a science-driven ocean observing network that delivers real-time data from more than 900 instruments to address critical science questions regarding the world’s oceans.
+
+
+
+
+
+About OOI
+
+
+Science
+
+The Ocean Observatories Initiative
+
+Data Products
+
+Contact
+
+
+
+Resources
+
+
+Community Data Tools
+
+Data Access
+
+OOI Ambassador Program
+
+FAQ and Knowledgebase
+
+Glossary
+
+Need Help?
+
+
+
+Join Us
+
+
+How to Participate
+
+Workshops/Conferences
+
+
+
+Stay Connected
+
+Sign up for our newsletter to get the latest news from Ocean Observatories Initiative
+Subscribe now
+
+Join the Conversation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+© 2026 NSF Ocean Observatories Initiative. All Rights Reserved. The Ocean Observatories Initiative is a major facility fully funded by the U.S. National Science Foundation.
+
+
+
+Any opinions, findings, and conclusions or recommendations expressed in this material do not necessarily reflect the views of the U.S. National Science Foundation. Internal | PMO/MIO Log in
+
+
+
+
+
+
+
+
+
+
+
+Scroll To Top
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

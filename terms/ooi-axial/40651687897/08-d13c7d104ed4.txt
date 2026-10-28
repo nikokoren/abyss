@@ -1,0 +1,1402 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+NSF Solicitation Supports AI-Ready Scientific Datasets - Ocean Observatories Initiative
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skip to content
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Subscribe
+Access Data
+Help
+
+
+
+
+
+
+
+
+
+
+Menu
+
+
+
+
+The Observatory
+
+
+
+About OOI
+
+
+
+The Vision
+
+Leadership
+
+Program Documents
+
+Advisory Committees
+
+Glossary
+
+By the Numbers
+
+
+
+Arrays
+
+
+
+Global Irminger Sea Array
+
+Global Station Papa Array
+
+Coastal Endurance Array
+
+Coastal Pioneer Mid-Atlantic Bight Array
+
+Coastal Pioneer New England Shelf Array
+
+Regional Cabled Array
+
+Cabled Continental Margin Array
+
+Cabled Axial Seamount Array
+
+Cabled Endurance Array
+
+Global Argentine Basin
+
+Global Southern Ocean Array
+
+Additional Observing Assets in the Region
+
+
+
+Platforms and Nodes
+
+Infrastructure
+
+
+
+Cabled Infrastructure
+
+Moorings
+
+Profilers
+
+AUVs
+
+Gliders
+
+Cyberinfrastructure
+
+
+
+Instruments
+
+
+
+Science
+
+
+
+Expeditions
+
+Publications
+
+
+
+OOI-Related Publications
+
+Submit a Publication
+
+
+
+Science Highlights
+
+Science Questions
+
+Projects and Related Research
+
+
+
+Participate in OOI
+
+
+
+Adding Instruments or Platforms
+
+Participating in Cruises
+
+Deploying in OOI Areas
+
+Developing a Proposal
+
+Propose Modifications to Sampling
+
+Borrowing OOI Assets
+
+
+
+Community Engagement
+
+
+
+OOI Ambassador Program
+
+Science User Group for Research meetings
+
+Communities
+
+
+
+Educators
+
+Mariners
+
+
+
+Newsletter
+
+Events
+
+Visual Galleries
+
+Media
+
+Webinar Archive
+
+Join Us
+
+
+
+OOI Data
+
+
+
+Data Access
+
+
+
+Data Explorer
+
+
+
+Data Quality
+
+
+
+Data Updates and Corrections
+
+
+
+Data Products
+
+
+
+Data Products List
+
+
+
+Community Datasets
+
+Community Data Tools
+
+Jupyter Notebook
+
+How to Use, Acknowledge, and Cite Data
+
+Data HelpDesk
+
+
+
+Tutorials
+
+FAQs (Knowledge Base)
+
+Discourse
+
+
+
+
+
+Resources
+
+
+
+For Educators
+
+Image Gallery
+
+Video Gallery
+
+Glossary
+
+Contact
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Home
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Subscribe
+Access Data
+Help
+
+
+
+
+
+
+
+
+
+
+
+Skip to main content
+
+
+
+Skip to Navigation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{{ searchMessage }}
+
+
+
+
+{{ searchItems.length }} results for "{{ searchQuery.trim() }}"
+
+
+
+
+
+
+
+You searched: {{ searchQuery }}
+
+
+
+Searching in:
+
+
+
+{{source.name}}
+
+
+
+
+
+
+
+
+{{ searchItems.length }} results for "{{ searchQuery.trim() }}"
+
+
+
+
+
+
+
+
+
+[{{ decodeEntities(result.type) | removeUnderscore}}]
+{{ decodeEntities(result.excerpt.rendered) | truncate(380) }}
+
+
+
+[{{ decodeEntities(result.type) | removeUnderscore }}]
+{{ decodeEntities(result.content.rendered) | truncate(380) }}
+
+
+
+
+
+
+
+
+
+
+Quick Links
+
+Home
+
+Data Portal
+
+Data Explorer
+
+Partner Data Sites
+
+How to Use, Acknowledge, and Cite Data
+
+How to Participate
+
+Infrastructure Status
+
+Need Help?
+
+
+
+Close Menu
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Menu
+
+
+
+
+The Observatory
+
+
+
+About OOI
+
+
+
+The Vision
+
+Leadership
+
+Program Documents
+
+Advisory Committees
+
+Glossary
+
+By the Numbers
+
+
+
+Arrays
+
+
+
+Global Irminger Sea Array
+
+Global Station Papa Array
+
+Coastal Endurance Array
+
+Coastal Pioneer Mid-Atlantic Bight Array
+
+Coastal Pioneer New England Shelf Array
+
+Regional Cabled Array
+
+Cabled Continental Margin Array
+
+Cabled Axial Seamount Array
+
+Cabled Endurance Array
+
+Global Argentine Basin
+
+Global Southern Ocean Array
+
+Additional Observing Assets in the Region
+
+
+
+Platforms and Nodes
+
+Infrastructure
+
+
+
+Cabled Infrastructure
+
+Moorings
+
+Profilers
+
+AUVs
+
+Gliders
+
+Cyberinfrastructure
+
+
+
+Instruments
+
+
+
+Quick Links
+Home
+
+Data Portal
+
+Data Explorer
+
+Partner Data Sites
+
+How to Use, Acknowledge, and Cite Data
+
+How to Participate
+
+Infrastructure Status
+
+Need Help?
+
+
+Science
+
+
+
+Expeditions
+
+Publications
+
+
+
+OOI-Related Publications
+
+Submit a Publication
+
+
+
+Science Highlights
+
+Science Questions
+
+Projects and Related Research
+
+
+
+Quick Links
+Home
+
+Data Portal
+
+Data Explorer
+
+Partner Data Sites
+
+How to Use, Acknowledge, and Cite Data
+
+How to Participate
+
+Infrastructure Status
+
+Need Help?
+
+
+Participate in OOI
+
+
+
+Adding Instruments or Platforms
+
+Participating in Cruises
+
+Deploying in OOI Areas
+
+Developing a Proposal
+
+Propose Modifications to Sampling
+
+Borrowing OOI Assets
+
+
+
+Quick Links
+Home
+
+Data Portal
+
+Data Explorer
+
+Partner Data Sites
+
+How to Use, Acknowledge, and Cite Data
+
+How to Participate
+
+Infrastructure Status
+
+Need Help?
+
+
+Community Engagement
+
+
+
+OOI Ambassador Program
+
+Science User Group for Research meetings
+
+Communities
+
+
+
+Educators
+
+Mariners
+
+
+
+Newsletter
+
+Events
+
+Visual Galleries
+
+Media
+
+Webinar Archive
+
+Join Us
+
+
+
+Quick Links
+Home
+
+Data Portal
+
+Data Explorer
+
+Partner Data Sites
+
+How to Use, Acknowledge, and Cite Data
+
+How to Participate
+
+Infrastructure Status
+
+Need Help?
+
+
+OOI Data
+
+
+
+Data Access
+
+
+
+Data Explorer
+
+
+
+Data Quality
+
+
+
+Data Updates and Corrections
+
+
+
+Data Products
+
+
+
+Data Products List
+
+
+
+Community Datasets
+
+Community Data Tools
+
+Jupyter Notebook
+
+How to Use, Acknowledge, and Cite Data
+
+Data HelpDesk
+
+
+
+Tutorials
+
+FAQs (Knowledge Base)
+
+Discourse
+
+
+
+
+
+Quick Links
+Home
+
+Data Portal
+
+Data Explorer
+
+Partner Data Sites
+
+How to Use, Acknowledge, and Cite Data
+
+How to Participate
+
+Infrastructure Status
+
+Need Help?
+
+
+Resources
+
+
+
+For Educators
+
+Image Gallery
+
+Video Gallery
+
+Glossary
+
+Contact
+
+
+
+Quick Links
+Home
+
+Data Portal
+
+Data Explorer
+
+Partner Data Sites
+
+How to Use, Acknowledge, and Cite Data
+
+How to Participate
+
+Infrastructure Status
+
+Need Help?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Home :: What's New ::NSF Solicitation Supports AI-Ready Scientific Datasets
+
+
+
+July 22, 2026
+
+
+
+
+
+
+
+
+
+
+
+
+
+NSF Solicitation Supports AI-Ready Scientific Datasets
+
+By Amber Coogan | July 22, 2026 | Comments Off on NSF Solicitation Supports AI-Ready Scientific Datasets
+
+
+
+
+
+
+
+
+
+
+
+Researchers interested in applying artificial intelligence (AI) to scientific discovery may be interested in a new funding opportunity from the U.S. National Science Foundation (NSF).
+
+The new Unlocking Dataset Value for AI-Enabled Scientific Discovery (NSF 26-512) solicitation supports projects that increase the scientific value of existing datasets by preparing them for AI-driven research. The program seeks to improve the accessibility, interoperability, and usability of scientific datasets, enabling new discoveries through automated analysis, machine learning, and other AI-enabled approaches.
+
+The solicitation also encourages projects that integrate multiple datasets, support interdisciplinary research, and enable investigations beyond the original purpose for which data were collected.
+
+With more than a decade of openly available, quality-controlled ocean observations, the Ocean Observatories Initiative (OOI) provides a rich resource for researchers developing new AI applications. OOI datasets span physical, chemical, biological, and geological measurements collected across diverse ocean environments, making them well suited for innovative analyses that combine multiple data sources and scientific disciplines.
+
+Researchers considering proposals are encouraged to review the full solicitation to determine whether their work aligns with the program’s objectives.
+
+Proposal deadline: November 4, 2026
+
+For complete program information, eligibility requirements, and proposal instructions, visit the NSF website:
+
+https://www.nsf.gov/funding/opportunities/ai-datasets-unlocking-dataset-value-ai-enabled-scientific-discovery/nsf26-512/solicitation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The Observatory
+
+
+About OOI
+
+
+The Vision
+
+Leadership
+
+Program Documents
+
+Advisory Committees
+
+Glossary
+
+By the Numbers
+
+
+
+Arrays
+
+
+Global Irminger Sea Array
+
+Global Station Papa Array
+
+Coastal Endurance Array
+
+Coastal Pioneer Mid-Atlantic Bight Array
+
+Coastal Pioneer New England Shelf Array
+
+Regional Cabled Array
+
+Cabled Continental Margin Array
+
+Cabled Axial Seamount Array
+
+Cabled Endurance Array
+
+Global Argentine Basin
+
+Global Southern Ocean Array
+
+Additional Observing Assets in the Region
+
+
+
+Platforms and Nodes
+
+Infrastructure
+
+
+Cabled Infrastructure
+
+Moorings
+
+Profilers
+
+AUVs
+
+Gliders
+
+Cyberinfrastructure
+
+
+
+Instruments
+
+
+
+Science
+
+
+Expeditions
+
+Publications
+
+
+OOI-Related Publications
+
+Submit a Publication
+
+
+
+Science Highlights
+
+Science Questions
+
+Projects and Related Research
+
+
+
+Participate in OOI
+
+
+Adding Instruments or Platforms
+
+Participating in Cruises
+
+Deploying in OOI Areas
+
+Developing a Proposal
+
+Propose Modifications to Sampling
+
+Borrowing OOI Assets
+
+
+
+Community Engagement
+
+
+OOI Ambassador Program
+
+Science User Group for Research meetings
+
+Communities
+
+
+Educators
+
+Mariners
+
+
+
+Newsletter
+
+Events
+
+Visual Galleries
+
+Media
+
+Webinar Archive
+
+Join Us
+
+
+
+OOI Data
+
+
+Data Access
+
+
+Data Explorer
+
+
+
+Data Quality
+
+
+Data Updates and Corrections
+
+
+
+Data Products
+
+
+Data Products List
+
+
+
+Community Datasets
+
+Community Data Tools
+
+Jupyter Notebook
+
+How to Use, Acknowledge, and Cite Data
+
+Data HelpDesk
+
+
+Tutorials
+
+FAQs (Knowledge Base)
+
+Discourse
+
+
+
+
+
+Resources
+
+
+For Educators
+
+Image Gallery
+
+Video Gallery
+
+Glossary
+
+Contact
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The Ocean Observatories Initiative (OOI) is a science-driven ocean observing network that delivers real-time data from more than 900 instruments to address critical science questions regarding the world’s oceans.
+
+
+
+
+
+About OOI
+
+
+Science
+
+The Ocean Observatories Initiative
+
+Data Products
+
+Contact
+
+
+
+Resources
+
+
+Community Data Tools
+
+Data Access
+
+OOI Ambassador Program
+
+FAQ and Knowledgebase
+
+Glossary
+
+Need Help?
+
+
+
+Join Us
+
+
+How to Participate
+
+Workshops/Conferences
+
+
+
+Stay Connected
+
+Sign up for our newsletter to get the latest news from Ocean Observatories Initiative
+Subscribe now
+
+Join the Conversation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+© 2026 NSF Ocean Observatories Initiative. All Rights Reserved. The Ocean Observatories Initiative is a major facility fully funded by the U.S. National Science Foundation.
+
+
+
+Any opinions, findings, and conclusions or recommendations expressed in this material do not necessarily reflect the views of the U.S. National Science Foundation. Internal | PMO/MIO Log in
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Cookies Policy
+
+
+
+
+
+
+
+
+
+
+
+
+To provide the best experience possible, we use cookies and other data for a number of reasons, such as keeping the OOI sites reliable and secure, providing social media features and to analyze how our sites are used.
+
+
+
+
+
+
+
+Functional
+
+
+
+Functional
+
+Always active
+
+
+
+
+
+
+
+The technical storage or access is strictly necessary for the legitimate purpose of enabling the use of a specific service explicitly requested by the subscriber or user, or for the sole purpose of carrying out the transmission of a communication over an electronic communications network.
+
+
+
+
+
+
+Preferences
+
+
+Preferences
+
+
+
+
+
+
+
+
+The technical storage or access is necessary for the legitimate purpose of storing preferences that are not requested by the subscriber or user.
+
+
+
+
+
+
+Statistics
+
+
+Statistics
+
+
+
+
+
+
+
+
+The technical storage or access that is used exclusively for statistical purposes.
+The technical storage or access that is used exclusively for anonymous statistical purposes. Without a subpoena, voluntary compliance on the part of your Internet Service Provider, or additional records from a third party, information stored or retrieved for this purpose alone cannot usually be used to identify you.
+
+
+
+
+
+Marketing
+
+
+Marketing
+
+
+
+
+
+
+
+
+The technical storage or access is required to create user profiles to send advertising, or to track the user on a website or across several websites for similar marketing purposes.
+
+
+
+
+
+
+
+Manage options
+Manage services
+Manage {vendor_count} vendors
+Read more about these purposes
+
+
+
+
+
+
+
+Accept All
+Necessary cookies only
+Customize settings
+Save preferences
+Customize settings
+
+
+
+
+{title}
+{title}
+{title}
+
+
+
+
+
+Manage consent
+
+Scroll To Top
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
