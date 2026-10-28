@@ -34,12 +34,18 @@ jobs:
           PUBLIC_BASE_URL: ${{ vars.PUBLIC_BASE_URL }}
         run: |
           set -euo pipefail
-          python scripts/verify_production.py --base-url "$PUBLIC_BASE_URL" --model /tmp/production-preference-model.json
+          mkdir -p output
+          python scripts/verify_production.py --base-url "$PUBLIC_BASE_URL" --model /tmp/production-preference-model.json 2>&1 | tee output/production-verification.log
+      - name: Retain verification evidence in the job summary
+        if: always()
+        run: |
           echo '## Live production verification' >> "$GITHUB_STEP_SUMMARY"
           echo '```json' >> "$GITHUB_STEP_SUMMARY"
-          cat output/production-verification.json >> "$GITHUB_STEP_SUMMARY"
+          if [ -f output/production-verification.log ]; then cat output/production-verification.log >> "$GITHUB_STEP_SUMMARY"; fi
           echo '```' >> "$GITHUB_STEP_SUMMARY"
       - uses: actions/upload-artifact@v4
+        if: always()
         with:
           name: production-verification
-          path: output/production-verification.json
+          path: output/production-verification.*
+          if-no-files-found: ignore

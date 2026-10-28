@@ -20,7 +20,7 @@ def verify(base_url, model):
     if parsed.scheme != 'https' or not parsed.netloc or parsed.username or parsed.password:
         raise ValueError('Production verification requires a public HTTPS URL')
 
-    def read(url, limit=32 * 1024 * 1024):
+    def read(url, limit=64 * 1024 * 1024):
         if not url.startswith(base_url + '/'):
             raise ValueError('Expected a same-site published asset')
         with urlopen(url, timeout=45) as response:
