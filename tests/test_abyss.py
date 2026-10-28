@@ -39,7 +39,13 @@ def args(root, video=None):
 
 class RegistryTests(unittest.TestCase):
     def test_unverified_sources_not_selectable(self):
-        self.assertEqual([s['id'] for s in load('sources.json') if eligible(s)], ['ooi-axial'])
+        sources = load('sources.json')
+        self.assertTrue(eligible(sources[0]))
+        for item in sources:
+            if item['status'] != 'validated':
+                self.assertFalse(eligible(item))
+            else:
+                self.assertTrue(eligible(item))
         s = source()
         self.assertTrue(eligible(s))
         s['validation']['terms_reviewed_at'] = None

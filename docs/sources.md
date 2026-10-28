@@ -1,5 +1,11 @@
 # Source discovery audit
 
+**Latest camera expansion:** Southern Hydrate Ridge and International District
+still cameras are now enabled alongside Axial HD. Six new OOI cameras were
+retrieved and decoded on GitHub runners; four remain held for image quality.
+ONC authentication, MBARI permission requirements and NOAA's public-domain
+video portal are recorded in [the additional-camera audit](additional-cameras.md).
+
 **Current status, 28 October 2026:** OOI CAMHDA301 passed the
 [reuse/attribution review](ooi-rights-review.md) using official documents
 retrieved on GitHub runners. It is eligible for attributed derived-still

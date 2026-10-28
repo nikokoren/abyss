@@ -74,8 +74,9 @@ python -m abyss.cli run --base-url https://OWNER.github.io/abyss
 python -m abyss.cli recipe --base-url https://OWNER.github.io/abyss
 ```
 
-A real run requires a public HTTPS base URL. OOI is the currently eligible real
-source. Other candidates remain excluded until their own reviews are complete.
+A real run requires a public HTTPS base URL. Three real cameras are eligible: the original Axial HD camera plus Southern
+Hydrate Ridge and International District still cameras. Four other reachable
+OOI cameras remain on image-quality hold. See [camera access and evidence](docs/additional-cameras.md).
 
 ## Native TRMNL views
 
@@ -97,6 +98,10 @@ over the newest. The independent hourly metadata observer measures
 filename intervals and first appearances without repeatedly downloading video.
 See [search and cadence](docs/search-and-cadence.md) for exact limits, reporting,
 and how publication-delay observations differ from a baseline archive listing.
+
+The two still-camera feeds compare two recent JPEGs per camera under a 48 MiB
+search cap, preserving the full frame and required credit. Their upstream
+archives show half-hour bursts; Abyss's publication schedule remains twice daily.
 
 ## Train your preferences
 

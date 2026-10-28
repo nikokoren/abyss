@@ -1,5 +1,24 @@
 # Validation evidence and remaining acceptance gates
 
+## Additional still cameras — 28 October 2026
+
+**63/63 Python tests passed** (18.922 seconds). Seven still-image tests cover
+camera/path/UTC filtering, truncated and shared-byte accounting, HTML/oversized
+image rejection, source-specific large-image limits, measured 21 MP JPEG decoder
+scaling, quality ranking without video probing, partial-failure retention and
+publication/known-image skips. Existing FFmpeg, preference and native Liquid
+checks remain in the suite.
+
+The [real runner validation](https://github.com/nikokoren/abyss/actions/runs/40689383752)
+retrieved and decoded twelve 21 MP JPEGs from six camera archives. Southern
+Hydrate Ridge and International District passed technical, rights and rendered
+preview review and are enabled. Shelf and water-column cameras remain on
+quality hold with separate reasons. [Exact results and byte counts](additional-cameras.md)
+include immutable evidence; these decisions were not inferred from Codex access.
+
+Native layouts are also checked with long camera locations, preserving the depth
+field when the location needs clamping in a small view.
+
 ## Native TRMNL Framework 3.4 views — 28 October 2026
 
 Full, half horizontal, half vertical and quadrant now use native Framework 3.4

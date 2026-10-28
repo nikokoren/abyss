@@ -117,6 +117,7 @@ def main():
         else:
             for camera in changed['sources'].values():
                 camera['source_name'] = 'A much longer observatory name with a remote hydrothermal vent field'
+                camera['location_label'] = 'International District with a much longer hydrothermal camera location'
         for orientation in ('landscape', 'portrait'):
             cases.append(('og', orientation, 'quadrant', state, changed,
                           'removed-source' if state == 'retained' else None))

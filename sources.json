@@ -104,13 +104,18 @@
       "category": "seafloor",
       "type": "archive",
       "adapter": null,
-      "discovery": "Investigate Oceans 3.0 video access and API authentication",
+      "discovery": "Oceans 3.0 camera API tested on GitHub runner; unauthenticated request returned 401. Dataset ownership and any token configuration require review.",
       "attribution_url": "https://www.oceannetworks.ca/",
       "status": "research_only",
-      "validation": {},
+      "validation": {
+        "access_checked_at": "2026-10-28",
+        "technical_status": "authentication_required",
+        "evidence": "https://github.com/nikokoren/abyss/tree/cbe9af8e9a84431c21e06612c3c34e30a140a59d/research/40689383752",
+        "policy_url": "https://www.oceannetworks.ca/data/data-policy/"
+      },
       "limitations": [
-        "API authentication and reuse terms not verified",
-        "Not offered in recipe"
+        "Camera API returned 401 without a token on the deployment runner",
+        "Solely ONC-owned data are CC BY 4.0; partner and website multimedia licenses differ, so a particular camera must be reviewed"
       ]
     },
     {
@@ -122,13 +127,19 @@
       "category": "rov",
       "type": "archive",
       "adapter": null,
-      "discovery": "Investigate expedition video archives and direct media access",
+      "discovery": "Current NOAA data-access page identifies the NCEI Ocean Exploration Video Portal as an archive with downloadable video. A recurring ingestion adapter is not yet validated.",
       "attribution_url": "https://oceanexplorer.noaa.gov/",
       "status": "research_only",
-      "validation": {},
+      "validation": {
+        "access_checked_at": "2026-10-28",
+        "technical_status": "archive_portal_identified",
+        "portal_url": "https://www.ncei.noaa.gov/access/ocean-exploration/video/",
+        "policy_url": "https://oceanexplorer.noaa.gov/data/access/",
+        "evidence": "https://github.com/nikokoren/abyss/tree/cbe9af8e9a84431c21e06612c3c34e30a140a59d/research/40689383752"
+      },
       "limitations": [
-        "Direct media endpoint and clip-specific rights unverified",
-        "Not offered in recipe"
+        "NOAA explicitly describes video on its named Ocean Exploration Video Portal as public domain; this is not a blanket license for unrelated website images",
+        "Specific media retrieval, metadata normalization and recurring archive discovery remain unverified"
       ]
     },
     {
@@ -143,11 +154,488 @@
       "discovery": "Investigate institutional video catalog and reuse policy",
       "attribution_url": "https://www.mbari.org/",
       "status": "research_only",
-      "validation": {},
+      "validation": {
+        "access_checked_at": "2026-10-28",
+        "rights_status": "permission_required",
+        "policy_url": "https://www.mbari.org/legal/",
+        "evidence": "https://github.com/nikokoren/abyss/tree/cbe9af8e9a84431c21e06612c3c34e30a140a59d/research/40689383752"
+      },
       "limitations": [
-        "Reuse permission and direct retrieval unverified",
-        "Not offered in recipe"
+        "Current website materials license covers non-commercial classroom education; personal use and non-classroom copying require written permission",
+        "No suitable recurring direct media endpoint has been verified; no request was sent to MBARI"
       ]
+    },
+    {
+      "operator": "Ocean Observatories Initiative / University of Washington",
+      "attribution": "Ocean Observatories Initiative / Woods Hole Oceanographic Institution OOI Program Office / University of Washington; supported by the U.S. National Science Foundation, Cooperative Agreement 2244833",
+      "attribution_url": "https://oceanobservatories.org/how-to-use-acknowledge-and-cite-data/",
+      "license": "OOI User Terms and Conditions v2-00 (attribution required)",
+      "license_url": "https://oceanobservatories.org/wp-content/uploads/2022/12/1102-00020_Data_User_Terms_Conditions_OOI_2019-01-02_Ver_2-00.pdf",
+      "acknowledgment": "This material is based upon work supported by the Ocean Observatories Initiative (OOI), a major facility fully funded by the US National Science Foundation under Cooperative Agreement No. 2244833, and the Woods Hole Oceanographic Institution OOI Program Office.",
+      "preserve_frame": true,
+      "image_credit_lines": [
+        "Data: OOI / WHOI OOI Program Office / UW | Supported by U.S. NSF 2244833"
+      ],
+      "allowed_hosts": [
+        "rawdata.oceanobservatories.org"
+      ],
+      "scoring": {
+        "min_score": 0.3,
+        "novelty_weight": 0.12
+      },
+      "id": "ooi-oregon-shelf",
+      "name": "Oregon Shelf · seafloor",
+      "description": "OOI still camera at Oregon Shelf benthic platform; periodic snapshots, not live.",
+      "location": "Oregon Shelf benthic platform",
+      "location_label": "Oregon Shelf",
+      "depth_m": 81,
+      "depth_label": "~80 m",
+      "depth_status": "preliminary",
+      "depth_evidence": "https://github.com/ooi-integration/asset-management/blob/c294b195630a9df5f1b90dac9e8ab1ef6f8effb1/deployment/CE02SHBP_Deploy.csv",
+      "category": "seafloor",
+      "type": "periodic_snapshot",
+      "adapter": "ooi_image_directory",
+      "camera_code": "CAMDSB107",
+      "base_url": "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/",
+      "status": "quality_hold",
+      "timestamp_basis": "explicit_utc_filename",
+      "completion_delay_minutes": 5,
+      "images_per_search": 2,
+      "max_search_bytes": 50331648,
+      "rights_review_url": "https://github.com/nikokoren/abyss/blob/main/docs/additional-cameras.md",
+      "license_scope": "OOI instrument-data derived stills with required attribution",
+      "cadence": "Archive listings show three-image bursts approximately every 30 minutes across 2026-10-27 and 2026-10-28; sustained cadence and publication delay are not yet measured.",
+      "expected_delay": "Not measured; five-minute capture-age buffer is a retrieval safeguard, not an observed delivery delay.",
+      "validation": {
+        "terms_reviewed_at": "2026-10-28",
+        "rights_status": "approved_attributed_derived_stills",
+        "terms_evidence": "https://github.com/nikokoren/abyss/tree/b24fb04ec4c9e1ad4d5fc89e16bb390494156bfb/terms/ooi-axial/40651933247",
+        "archive_evidence": "https://github.com/nikokoren/abyss/tree/1baa44ca1bcc612fb7cfe32a6179195f1b2242a7/research/40664258062",
+        "technical_status": "runner_verified",
+        "retrieval_at": "2026-10-28T12:38:18.087913+00:00",
+        "evidence": "https://github.com/nikokoren/abyss/blob/cbe9af8e9a84431c21e06612c3c34e30a140a59d/research/40689383752/image-validation.json",
+        "deployment_environment_status": "passed",
+        "deployment_run_url": "https://github.com/nikokoren/abyss/actions/runs/40689383752",
+        "technical_usable": true,
+        "image_quality_score": 0.582032,
+        "images_decoded": 2,
+        "bytes_downloaded": 39053260,
+        "decoded_size": [
+          1336,
+          1002
+        ],
+        "original_size": [
+          5344,
+          4008
+        ],
+        "recording_url": "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/2026/10/28/CAMDSB107_10.33.13.8_20261028T114613_UTC.jpg",
+        "preview_reviewed_at": "2026-10-28",
+        "preview_review_method": "agent_visual_review",
+        "preview_review": "Automated score passed, but the actual ordered 1-bit preview is dominated by central glare and has too little readable scene detail. Hold from the selector pending improved imagery or a reviewed render profile.",
+        "image_quality_status": "render_review_hold",
+        "preview_status": "held"
+      },
+      "limitations": [
+        "Deployment depth is preliminary",
+        "Publication delay not measured; delivered as periodic stills",
+        "Seafloor view visible, with suspended particles, central glare and some obscured areas; offered as an optional camera.",
+        "Monochrome preview review did not pass; not offered in the current recipe dropdown despite accessible data and a passing automated raw-image score."
+      ],
+      "data_doi": "https://doi.org/10.58046/OOI-CE02SHBP",
+      "max_image_bytes": 25165824,
+      "max_image_pixels": 24000000,
+      "last_successful_retrieval": "2026-10-28T12:38:18.087913+00:00"
+    },
+    {
+      "operator": "Ocean Observatories Initiative / University of Washington",
+      "attribution": "Ocean Observatories Initiative / Woods Hole Oceanographic Institution OOI Program Office / University of Washington; supported by the U.S. National Science Foundation, Cooperative Agreement 2244833",
+      "attribution_url": "https://oceanobservatories.org/how-to-use-acknowledge-and-cite-data/",
+      "license": "OOI User Terms and Conditions v2-00 (attribution required)",
+      "license_url": "https://oceanobservatories.org/wp-content/uploads/2022/12/1102-00020_Data_User_Terms_Conditions_OOI_2019-01-02_Ver_2-00.pdf",
+      "acknowledgment": "This material is based upon work supported by the Ocean Observatories Initiative (OOI), a major facility fully funded by the US National Science Foundation under Cooperative Agreement No. 2244833, and the Woods Hole Oceanographic Institution OOI Program Office.",
+      "preserve_frame": true,
+      "image_credit_lines": [
+        "Data: OOI / WHOI OOI Program Office / UW | Supported by U.S. NSF 2244833"
+      ],
+      "allowed_hosts": [
+        "rawdata.oceanobservatories.org"
+      ],
+      "scoring": {
+        "min_score": 0.3,
+        "novelty_weight": 0.12
+      },
+      "id": "ooi-oregon-offshore",
+      "name": "Oregon Offshore · seafloor",
+      "description": "OOI still camera at Oregon Offshore benthic platform; periodic snapshots, not live.",
+      "location": "Oregon Offshore benthic platform",
+      "location_label": "Oregon Offshore",
+      "depth_m": 582,
+      "depth_label": "~580 m",
+      "depth_status": "preliminary",
+      "depth_evidence": "https://github.com/ooi-integration/asset-management/blob/c294b195630a9df5f1b90dac9e8ab1ef6f8effb1/deployment/CE04OSBP_Deploy.csv",
+      "category": "seafloor",
+      "type": "periodic_snapshot",
+      "adapter": "ooi_image_directory",
+      "camera_code": "CAMDSB106",
+      "base_url": "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/",
+      "status": "quality_hold",
+      "timestamp_basis": "explicit_utc_filename",
+      "completion_delay_minutes": 5,
+      "images_per_search": 2,
+      "max_search_bytes": 50331648,
+      "rights_review_url": "https://github.com/nikokoren/abyss/blob/main/docs/additional-cameras.md",
+      "license_scope": "OOI instrument-data derived stills with required attribution",
+      "cadence": "Archive listings show three-image bursts approximately every 30 minutes across 2026-10-27 and 2026-10-28; sustained cadence and publication delay are not yet measured.",
+      "expected_delay": "Not measured; five-minute capture-age buffer is a retrieval safeguard, not an observed delivery delay.",
+      "validation": {
+        "terms_reviewed_at": "2026-10-28",
+        "rights_status": "approved_attributed_derived_stills",
+        "terms_evidence": "https://github.com/nikokoren/abyss/tree/b24fb04ec4c9e1ad4d5fc89e16bb390494156bfb/terms/ooi-axial/40651933247",
+        "archive_evidence": "https://github.com/nikokoren/abyss/tree/1baa44ca1bcc612fb7cfe32a6179195f1b2242a7/research/40664258062",
+        "technical_status": "runner_verified",
+        "retrieval_at": "2026-10-28T12:38:21.733259+00:00",
+        "evidence": "https://github.com/nikokoren/abyss/blob/cbe9af8e9a84431c21e06612c3c34e30a140a59d/research/40689383752/image-validation.json",
+        "deployment_environment_status": "passed",
+        "deployment_run_url": "https://github.com/nikokoren/abyss/actions/runs/40689383752",
+        "technical_usable": true,
+        "image_quality_score": 0.611758,
+        "images_decoded": 2,
+        "bytes_downloaded": 18941747,
+        "decoded_size": [
+          1336,
+          1002
+        ],
+        "original_size": [
+          5344,
+          4008
+        ],
+        "recording_url": "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/28/CAMDSB106_10.33.9.6_20261028T111617_UTC.jpg",
+        "preview_reviewed_at": "2026-10-28",
+        "preview_review_method": "agent_visual_review",
+        "preview_review": "Automated score passed, but the actual ordered 1-bit preview is dominated by central glare and has too little readable scene detail. Hold from the selector pending improved imagery or a reviewed render profile.",
+        "image_quality_status": "render_review_hold",
+        "preview_status": "held"
+      },
+      "limitations": [
+        "Deployment depth is preliminary",
+        "Publication delay not measured; delivered as periodic stills",
+        "Sediment/seafloor features visible, with bright central illumination and suspended particles; offered as an optional camera.",
+        "Monochrome preview review did not pass; not offered in the current recipe dropdown despite accessible data and a passing automated raw-image score."
+      ],
+      "data_doi": "https://doi.org/10.58046/OOI-CE04OSBP",
+      "max_image_bytes": 25165824,
+      "max_image_pixels": 24000000,
+      "last_successful_retrieval": "2026-10-28T12:38:21.733259+00:00"
+    },
+    {
+      "operator": "Ocean Observatories Initiative / University of Washington",
+      "attribution": "Ocean Observatories Initiative / Woods Hole Oceanographic Institution OOI Program Office / University of Washington; supported by the U.S. National Science Foundation, Cooperative Agreement 2244833",
+      "attribution_url": "https://oceanobservatories.org/how-to-use-acknowledge-and-cite-data/",
+      "license": "OOI User Terms and Conditions v2-00 (attribution required)",
+      "license_url": "https://oceanobservatories.org/wp-content/uploads/2022/12/1102-00020_Data_User_Terms_Conditions_OOI_2019-01-02_Ver_2-00.pdf",
+      "acknowledgment": "This material is based upon work supported by the Ocean Observatories Initiative (OOI), a major facility fully funded by the US National Science Foundation under Cooperative Agreement No. 2244833, and the Woods Hole Oceanographic Institution OOI Program Office.",
+      "preserve_frame": true,
+      "image_credit_lines": [
+        "Data: OOI / WHOI OOI Program Office / UW | Supported by U.S. NSF 2244833"
+      ],
+      "allowed_hosts": [
+        "rawdata.oceanobservatories.org"
+      ],
+      "scoring": {
+        "min_score": 0.3,
+        "novelty_weight": 0.12
+      },
+      "id": "ooi-slope-water-column",
+      "name": "Oregon Slope Base · water column",
+      "description": "OOI still camera at Oregon Slope Base shallow-profiler platform; periodic snapshots, not live.",
+      "location": "Oregon Slope Base shallow-profiler platform",
+      "location_label": "Oregon Slope Base",
+      "depth_m": 191,
+      "depth_label": "191 m",
+      "depth_status": "operator_reported",
+      "depth_evidence": "https://github.com/ooi-integration/asset-management/blob/c294b195630a9df5f1b90dac9e8ab1ef6f8effb1/deployment/RS01SBPS_Deploy.csv",
+      "category": "water_column",
+      "type": "periodic_snapshot",
+      "adapter": "ooi_image_directory",
+      "camera_code": "CAMDSC102",
+      "base_url": "https://rawdata.oceanobservatories.org/files/RS01SBPS/PC01A/CAMDSC102/",
+      "status": "quality_hold",
+      "timestamp_basis": "explicit_utc_filename",
+      "completion_delay_minutes": 5,
+      "images_per_search": 2,
+      "max_search_bytes": 50331648,
+      "rights_review_url": "https://github.com/nikokoren/abyss/blob/main/docs/additional-cameras.md",
+      "license_scope": "OOI instrument-data derived stills with required attribution",
+      "cadence": "Archive listings show three-image bursts approximately every 30 minutes across 2026-10-27 and 2026-10-28; sustained cadence and publication delay are not yet measured.",
+      "expected_delay": "Not measured; five-minute capture-age buffer is a retrieval safeguard, not an observed delivery delay.",
+      "validation": {
+        "terms_reviewed_at": "2026-10-28",
+        "rights_status": "approved_attributed_derived_stills",
+        "terms_evidence": "https://github.com/nikokoren/abyss/tree/b24fb04ec4c9e1ad4d5fc89e16bb390494156bfb/terms/ooi-axial/40651933247",
+        "archive_evidence": "https://github.com/nikokoren/abyss/tree/1baa44ca1bcc612fb7cfe32a6179195f1b2242a7/research/40664258062",
+        "technical_status": "runner_verified",
+        "retrieval_at": "2026-10-28T12:38:24.511400+00:00",
+        "evidence": "https://github.com/nikokoren/abyss/blob/cbe9af8e9a84431c21e06612c3c34e30a140a59d/research/40689383752/image-validation.json",
+        "deployment_environment_status": "passed",
+        "deployment_run_url": "https://github.com/nikokoren/abyss/actions/runs/40689383752",
+        "technical_usable": false,
+        "image_quality_score": 0.085077,
+        "images_decoded": 2,
+        "bytes_downloaded": 45283165,
+        "decoded_size": [
+          1336,
+          1002
+        ],
+        "original_size": [
+          5344,
+          4008
+        ],
+        "recording_url": "https://rawdata.oceanobservatories.org/files/RS01SBPS/PC01A/CAMDSC102/2026/10/28/CAMDSC102_10.33.3.146_20261028T111558_UTC.jpg",
+        "image_quality_status": "below_threshold"
+      },
+      "limitations": [
+        "Depth is instrument depth, not the much deeper seabed",
+        "Publication delay not measured; delivered as periodic stills",
+        "Current sampled images are dominated by backscatter/noise and score below the .30 quality gate; access and decoding passed. Not offered until usable imagery is confirmed."
+      ],
+      "data_doi": "https://doi.org/10.58046/OOI-RS01SBPS",
+      "max_image_bytes": 25165824,
+      "max_image_pixels": 24000000,
+      "last_successful_retrieval": "2026-10-28T12:38:24.511400+00:00"
+    },
+    {
+      "operator": "Ocean Observatories Initiative / University of Washington",
+      "attribution": "Ocean Observatories Initiative / Woods Hole Oceanographic Institution OOI Program Office / University of Washington; supported by the U.S. National Science Foundation, Cooperative Agreement 2244833",
+      "attribution_url": "https://oceanobservatories.org/how-to-use-acknowledge-and-cite-data/",
+      "license": "OOI User Terms and Conditions v2-00 (attribution required)",
+      "license_url": "https://oceanobservatories.org/wp-content/uploads/2022/12/1102-00020_Data_User_Terms_Conditions_OOI_2019-01-02_Ver_2-00.pdf",
+      "acknowledgment": "This material is based upon work supported by the Ocean Observatories Initiative (OOI), a major facility fully funded by the US National Science Foundation under Cooperative Agreement No. 2244833, and the Woods Hole Oceanographic Institution OOI Program Office.",
+      "preserve_frame": true,
+      "image_credit_lines": [
+        "Data: OOI / WHOI OOI Program Office / UW | Supported by U.S. NSF 2244833"
+      ],
+      "allowed_hosts": [
+        "rawdata.oceanobservatories.org"
+      ],
+      "scoring": {
+        "min_score": 0.3,
+        "novelty_weight": 0.12
+      },
+      "id": "ooi-hydrate-ridge",
+      "name": "Southern Hydrate Ridge · methane seep",
+      "description": "OOI still camera at Southern Hydrate Ridge, Einstein's Grotto methane seep; periodic snapshots, not live.",
+      "location": "Southern Hydrate Ridge, Einstein's Grotto methane seep",
+      "location_label": "Hydrate Ridge",
+      "depth_m": 775,
+      "depth_label": "~780 m",
+      "depth_status": "preliminary",
+      "depth_evidence": "https://github.com/ooi-integration/asset-management/blob/c294b195630a9df5f1b90dac9e8ab1ef6f8effb1/deployment/RS01SUM2_Deploy.csv",
+      "category": "methane_seep",
+      "type": "periodic_snapshot",
+      "adapter": "ooi_image_directory",
+      "camera_code": "CAMDSB103",
+      "base_url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/",
+      "status": "validated",
+      "timestamp_basis": "explicit_utc_filename",
+      "completion_delay_minutes": 5,
+      "images_per_search": 2,
+      "max_search_bytes": 50331648,
+      "rights_review_url": "https://github.com/nikokoren/abyss/blob/main/docs/additional-cameras.md",
+      "license_scope": "OOI instrument-data derived stills with required attribution",
+      "cadence": "Archive listings show three-image bursts approximately every 30 minutes across 2026-10-27 and 2026-10-28; sustained cadence and publication delay are not yet measured.",
+      "expected_delay": "Not measured; five-minute capture-age buffer is a retrieval safeguard, not an observed delivery delay.",
+      "validation": {
+        "terms_reviewed_at": "2026-10-28",
+        "rights_status": "approved_attributed_derived_stills",
+        "terms_evidence": "https://github.com/nikokoren/abyss/tree/b24fb04ec4c9e1ad4d5fc89e16bb390494156bfb/terms/ooi-axial/40651933247",
+        "archive_evidence": "https://github.com/nikokoren/abyss/tree/1baa44ca1bcc612fb7cfe32a6179195f1b2242a7/research/40664258062",
+        "technical_status": "runner_verified",
+        "retrieval_at": "2026-10-28T12:38:27.869257+00:00",
+        "evidence": "https://github.com/nikokoren/abyss/blob/cbe9af8e9a84431c21e06612c3c34e30a140a59d/research/40689383752/image-validation.json",
+        "deployment_environment_status": "passed",
+        "deployment_run_url": "https://github.com/nikokoren/abyss/actions/runs/40689383752",
+        "technical_usable": true,
+        "image_quality_score": 0.850733,
+        "images_decoded": 2,
+        "bytes_downloaded": 17251842,
+        "decoded_size": [
+          1336,
+          1002
+        ],
+        "original_size": [
+          5344,
+          4008
+        ],
+        "recording_url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/28/CAMDSB103_10.33.7.5_20261028T114616_UTC.jpg",
+        "preview_reviewed_at": "2026-10-28",
+        "preview_review_method": "agent_visual_review",
+        "preview_review": "Rocky methane-seep habitat and surface details visible; full-frame grayscale preview reviewed.",
+        "preview_status": "approved"
+      },
+      "limitations": [
+        "Deployment depth is preliminary",
+        "Publication delay not measured; delivered as periodic stills",
+        "Rocky methane-seep habitat and surface details visible; full-frame grayscale preview reviewed."
+      ],
+      "data_doi": "https://doi.org/10.58046/OOI-RS01SUM2",
+      "max_image_bytes": 25165824,
+      "max_image_pixels": 24000000,
+      "last_successful_retrieval": "2026-10-28T12:38:27.869257+00:00"
+    },
+    {
+      "operator": "Ocean Observatories Initiative / University of Washington",
+      "attribution": "Ocean Observatories Initiative / Woods Hole Oceanographic Institution OOI Program Office / University of Washington; supported by the U.S. National Science Foundation, Cooperative Agreement 2244833",
+      "attribution_url": "https://oceanobservatories.org/how-to-use-acknowledge-and-cite-data/",
+      "license": "OOI User Terms and Conditions v2-00 (attribution required)",
+      "license_url": "https://oceanobservatories.org/wp-content/uploads/2022/12/1102-00020_Data_User_Terms_Conditions_OOI_2019-01-02_Ver_2-00.pdf",
+      "acknowledgment": "This material is based upon work supported by the Ocean Observatories Initiative (OOI), a major facility fully funded by the US National Science Foundation under Cooperative Agreement No. 2244833, and the Woods Hole Oceanographic Institution OOI Program Office.",
+      "preserve_frame": true,
+      "image_credit_lines": [
+        "Data: OOI / WHOI OOI Program Office / UW | Supported by U.S. NSF 2244833"
+      ],
+      "allowed_hosts": [
+        "rawdata.oceanobservatories.org"
+      ],
+      "scoring": {
+        "min_score": 0.3,
+        "novelty_weight": 0.12
+      },
+      "id": "ooi-axial-water-column",
+      "name": "Axial Base · water column",
+      "description": "OOI still camera at Axial Base shallow-profiler platform; periodic snapshots, not live.",
+      "location": "Axial Base shallow-profiler platform",
+      "location_label": "Axial Base",
+      "depth_m": 190,
+      "depth_label": "190 m",
+      "depth_status": "operator_reported",
+      "depth_evidence": "https://github.com/ooi-integration/asset-management/blob/c294b195630a9df5f1b90dac9e8ab1ef6f8effb1/deployment/RS03AXPS_Deploy.csv",
+      "category": "water_column",
+      "type": "periodic_snapshot",
+      "adapter": "ooi_image_directory",
+      "camera_code": "CAMDSC302",
+      "base_url": "https://rawdata.oceanobservatories.org/files/RS03AXPS/PC03A/CAMDSC302/",
+      "status": "quality_hold",
+      "timestamp_basis": "explicit_utc_filename",
+      "completion_delay_minutes": 5,
+      "images_per_search": 2,
+      "max_search_bytes": 50331648,
+      "rights_review_url": "https://github.com/nikokoren/abyss/blob/main/docs/additional-cameras.md",
+      "license_scope": "OOI instrument-data derived stills with required attribution",
+      "cadence": "Archive listings show three-image bursts approximately every 30 minutes across 2026-10-27 and 2026-10-28; sustained cadence and publication delay are not yet measured.",
+      "expected_delay": "Not measured; five-minute capture-age buffer is a retrieval safeguard, not an observed delivery delay.",
+      "validation": {
+        "terms_reviewed_at": "2026-10-28",
+        "rights_status": "approved_attributed_derived_stills",
+        "terms_evidence": "https://github.com/nikokoren/abyss/tree/b24fb04ec4c9e1ad4d5fc89e16bb390494156bfb/terms/ooi-axial/40651933247",
+        "archive_evidence": "https://github.com/nikokoren/abyss/tree/1baa44ca1bcc612fb7cfe32a6179195f1b2242a7/research/40664258062",
+        "technical_status": "runner_verified",
+        "retrieval_at": "2026-10-28T12:38:30.878425+00:00",
+        "evidence": "https://github.com/nikokoren/abyss/blob/cbe9af8e9a84431c21e06612c3c34e30a140a59d/research/40689383752/image-validation.json",
+        "deployment_environment_status": "passed",
+        "deployment_run_url": "https://github.com/nikokoren/abyss/actions/runs/40689383752",
+        "technical_usable": false,
+        "image_quality_score": 0.05496,
+        "images_decoded": 2,
+        "bytes_downloaded": 40722570,
+        "decoded_size": [
+          1336,
+          1002
+        ],
+        "original_size": [
+          5344,
+          4008
+        ],
+        "recording_url": "https://rawdata.oceanobservatories.org/files/RS03AXPS/PC03A/CAMDSC302/2026/10/28/CAMDSC302_10.31.3.146_20261028T111603_UTC.jpg",
+        "image_quality_status": "below_threshold"
+      },
+      "limitations": [
+        "Depth is instrument depth, not the much deeper seabed",
+        "Publication delay not measured; delivered as periodic stills",
+        "Current sampled images are dominated by backscatter/noise and score below the .30 quality gate; access and decoding passed. Not offered until usable imagery is confirmed."
+      ],
+      "data_doi": "https://doi.org/10.58046/OOI-RS03AXPS",
+      "max_image_bytes": 25165824,
+      "max_image_pixels": 24000000,
+      "last_successful_retrieval": "2026-10-28T12:38:30.878425+00:00"
+    },
+    {
+      "operator": "Ocean Observatories Initiative / University of Washington",
+      "attribution": "Ocean Observatories Initiative / Woods Hole Oceanographic Institution OOI Program Office / University of Washington; supported by the U.S. National Science Foundation, Cooperative Agreement 2244833",
+      "attribution_url": "https://oceanobservatories.org/how-to-use-acknowledge-and-cite-data/",
+      "license": "OOI User Terms and Conditions v2-00 (attribution required)",
+      "license_url": "https://oceanobservatories.org/wp-content/uploads/2022/12/1102-00020_Data_User_Terms_Conditions_OOI_2019-01-02_Ver_2-00.pdf",
+      "acknowledgment": "This material is based upon work supported by the Ocean Observatories Initiative (OOI), a major facility fully funded by the US National Science Foundation under Cooperative Agreement No. 2244833, and the Woods Hole Oceanographic Institution OOI Program Office.",
+      "preserve_frame": true,
+      "image_credit_lines": [
+        "Data: OOI / WHOI OOI Program Office / UW | Supported by U.S. NSF 2244833"
+      ],
+      "allowed_hosts": [
+        "rawdata.oceanobservatories.org"
+      ],
+      "scoring": {
+        "min_score": 0.3,
+        "novelty_weight": 0.12
+      },
+      "id": "ooi-international-district",
+      "name": "International District · hydrothermal vents",
+      "description": "OOI still camera at Axial Seamount, International District, Tiny Towers; periodic snapshots, not live.",
+      "location": "Axial Seamount, International District, Tiny Towers",
+      "location_label": "International District",
+      "depth_m": 1521,
+      "depth_label": "~1,520 m",
+      "depth_status": "preliminary",
+      "depth_evidence": "https://github.com/ooi-integration/asset-management/blob/c294b195630a9df5f1b90dac9e8ab1ef6f8effb1/deployment/RS03INT1_Deploy.csv",
+      "category": "hydrothermal_vent",
+      "type": "periodic_snapshot",
+      "adapter": "ooi_image_directory",
+      "camera_code": "CAMDSB303",
+      "base_url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/",
+      "status": "validated",
+      "timestamp_basis": "explicit_utc_filename",
+      "completion_delay_minutes": 5,
+      "images_per_search": 2,
+      "max_search_bytes": 50331648,
+      "rights_review_url": "https://github.com/nikokoren/abyss/blob/main/docs/additional-cameras.md",
+      "license_scope": "OOI instrument-data derived stills with required attribution",
+      "cadence": "Archive listings show three-image bursts approximately every 30 minutes across 2026-10-27 and 2026-10-28; sustained cadence and publication delay are not yet measured.",
+      "expected_delay": "Not measured; five-minute capture-age buffer is a retrieval safeguard, not an observed delivery delay.",
+      "validation": {
+        "terms_reviewed_at": "2026-10-28",
+        "rights_status": "approved_attributed_derived_stills",
+        "terms_evidence": "https://github.com/nikokoren/abyss/tree/b24fb04ec4c9e1ad4d5fc89e16bb390494156bfb/terms/ooi-axial/40651933247",
+        "archive_evidence": "https://github.com/nikokoren/abyss/tree/1baa44ca1bcc612fb7cfe32a6179195f1b2242a7/research/40664258062",
+        "technical_status": "runner_verified",
+        "retrieval_at": "2026-10-28T12:38:34.241616+00:00",
+        "evidence": "https://github.com/nikokoren/abyss/blob/cbe9af8e9a84431c21e06612c3c34e30a140a59d/research/40689383752/image-validation.json",
+        "deployment_environment_status": "passed",
+        "deployment_run_url": "https://github.com/nikokoren/abyss/actions/runs/40689383752",
+        "technical_usable": true,
+        "image_quality_score": 0.842495,
+        "images_decoded": 2,
+        "bytes_downloaded": 39736917,
+        "decoded_size": [
+          1336,
+          1002
+        ],
+        "original_size": [
+          5344,
+          4008
+        ],
+        "recording_url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/28/CAMDSB303_10.31.8.5_20261028T114618_UTC.jpg",
+        "preview_reviewed_at": "2026-10-28",
+        "preview_review_method": "agent_visual_review",
+        "preview_review": "Textured vent habitat visible; full-frame grayscale preview reviewed.",
+        "preview_status": "approved"
+      },
+      "limitations": [
+        "Deployment depth is preliminary",
+        "Publication delay not measured; delivered as periodic stills",
+        "Textured vent habitat visible; full-frame grayscale preview reviewed."
+      ],
+      "data_doi": "https://doi.org/10.58046/OOI-RS03INT1",
+      "max_image_bytes": 25165824,
+      "max_image_pixels": 24000000,
+      "last_successful_retrieval": "2026-10-28T12:38:34.241616+00:00"
     }
   ]
 }

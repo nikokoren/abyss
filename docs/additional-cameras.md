@@ -1,8 +1,10 @@
 # Additional camera access and reuse investigation
 
-Investigation started 28 October 2026. The existing Axial HD camera remains
-enabled. Additional cameras are held outside the production registry until
-actual retrieval, decoding, image quality and rendered previews are reviewed.
+Updated 28 October 2026. **Southern Hydrate Ridge and International District
+are enabled**, joining the existing Axial HD camera. All six new archives are
+reachable and decode successfully on GitHub runners. Four cameras remain on
+image-quality hold: the two water-column cameras failed the raw-image quality
+gate, while both shelf-camera monochrome previews are dominated by glare.
 
 ## OOI still cameras: rights review
 
@@ -52,9 +54,52 @@ endorsement claim. The [original terms evidence](https://github.com/nikokoren/ab
 is preserved separately from new technical evidence. No Creative Commons or
 public-domain status is asserted for OOI imagery.
 
-The next runner check may publish credited grayscale/monochrome preview images
-on `camera-research` under this reviewed use. It does not itself add an eligible
-camera to `sources.json` or the production dropdown.
+## Observed frame validation and release decision
+
+[Runner validation 40689383752](https://github.com/nikokoren/abyss/actions/runs/40689383752)
+decoded two images from each of the six cameras, with complete searches and no
+failed retrievals. The [immutable evidence and credited previews](https://github.com/nikokoren/abyss/tree/cbe9af8e9a84431c21e06612c3c34e30a140a59d/research/40689383752)
+and [local metadata copy](evidence/ooi-still-cameras-20261028.json) retain the
+exact URLs, capture times, decoded sizes, quality metrics and byte counts.
+Grayscale previews from all six cameras and 1-bit previews from the four that
+passed the automated score were visually reviewed.
+
+| Camera | Best automated score | Two-image payload | Decision |
+| --- | --- | --- | --- |
+| Southern Hydrate Ridge | .851 | 17,251,842 bytes | **Enabled**; readable rocky methane-seep habitat |
+| International District | .842 | 39,736,917 bytes | **Enabled**; readable vent habitat |
+| Oregon Shelf | .582 | 39,053,260 bytes | Hold: 1-bit preview dominated by glare despite passing the automated score |
+| Oregon Offshore | .612 | 18,941,747 bytes | Hold: 1-bit preview dominated by glare despite passing the automated score |
+| Oregon Slope Base water column | .085 | 45,283,165 bytes | Hold: below .30 gate; noise/backscatter |
+| Axial Base water column | .055 | 40,722,570 bytes | Hold: below .30 gate; noise/backscatter |
+
+The cameras deliver **5344 × 4008 (21.4 MP)** JPEGs of roughly 8–23 MB each.
+A 65,537-byte range probe per camera established size/dimensions before changing
+retrieval limits. Production now compares two recent snapshots, capped at
+24 MiB per image, 48 MiB per camera search and 24 million source pixels. JPEG
+native decoder scaling produces 1336 × 1002 input for ranking/rendering while
+preserving the entire frame. Unknown streams, oversized images, unsupported
+formats, incomplete responses and animated images are rejected. Hard ceilings
+remain in the reader even if a source profile requests more.
+
+The two enabled cameras used 56,988,759 payload bytes together in the validation
+run. Range-header probes and directory/policy metadata are separate from that
+figure. Current production remains twice daily, so an upstream half-hour camera
+cadence does not mean the TRMNL image updates every half hour. The existing
+personal ranking model is used by production when available, but this technical
+trial used quality ranking alone and does not prove preference generalization.
+
+The source registry records the reviewed terms, deployment/DOI links, exact
+runner evidence and per-camera visual-review decisions. `quality_hold` means
+accessible but currently unsuitable for this display; it does not report a
+camera outage or Codex network failure. The staging `camera-candidates.json`
+remains a reproducible validation input; `sources.json` records release status.
+
+The same discovery, personal ranking, quality gate, publication, native layouts,
+credits and last-good behavior serve both video and still cameras. Source-registry
+changes trigger deployment and regenerate the recipe's static source options.
+Existing installations need the updated settings/options to select new cameras;
+existing markup already supports their location/depth metadata.
 
 ## Other institutions
 
@@ -67,10 +112,18 @@ camera to `sources.json` or the production dropdown.
 - **NOAA Ocean Exploration:** the initial historical stream page returned 404,
   and an alternative hostname did not resolve on the runner. These are exact
   endpoint results, not evidence that NOAA footage in general is unavailable.
-  Current landing-page discovery and clip-specific ownership checks continue.
+  The current homepage, multimedia library and data-access page returned 200.
+  The data-access page specifically identifies the
+  [NCEI Ocean Exploration Video Portal](https://www.ncei.noaa.gov/access/ocean-exploration/video/)
+  and states that all video on that portal is public domain. This is a promising
+  archive source; exact media retrieval and recurring ingestion are still
+  unvalidated. It does not grant rights to unrelated third-party website images.
 - **MBARI:** the current homepage is accessible; the historical MARS URL
   returned 404. A homepage promotional MP4 is not treated as an ocean camera.
-  Current observatory, media and legal pages are being examined.
+  Current observatory, media and legal pages returned 200. The legal page
+  licenses non-commercial classroom education and expressly restricts personal
+  use/non-classroom copying without written permission. This ambient display
+  is not covered by that classroom license. No permission request was sent.
 
 Codex still returns a proxy CONNECT denial for OOI. The deployment runner's
 successful archive access is independent evidence and takes precedence for

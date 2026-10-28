@@ -7,6 +7,11 @@ on:
       - trmnl/**
       - abyss/recipe.py
       - scripts/build_site.py
+      - sources.json
+      - abyss/adapters.py
+      - abyss/stills.py
+      - abyss/search.py
+      - abyss/pipeline.py
   schedule:
     - cron: '23 3,15 * * *'
 permissions:
