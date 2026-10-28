@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "source_id": "ooi-axial",
+  "recording_url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/10/27/CAMHDA301-20261027T181500.mp4",
+  "checked_at": "2026-10-28T13:43:38.184867+00:00",
+  "environment": "github_actions",
+  "commit": "cf341f352ed040c520e29619c1103a4e7559c1a0",
+  "run_url": "https://github.com/nikokoren/abyss/actions/runs/40698966068",
+  "technical_status": "passed",
+  "byte_budget": 67108864,
+  "rights_status": "not_assessed",
+  "imagery_published": false,
+  "scope": "Exact recording access and extraction; not cadence, discovery or rights approval",
+  "head": {
+    "status": 200,
+    "content_type": "video/mp4",
+    "content_length": "949254467",
+    "accept_ranges": "bytes"
+  },
+  "range": {
+    "status": 206,
+    "requested": "bytes=0-1023",
+    "bytes_received": 1024,
+    "recording_bytes": 949254467
+  },
+  "extraction": {
+    "duration_seconds": 893.359133,
+    "codec": "h264",
+    "candidates_requested": 4,
+    "candidates_extracted": 4,
+    "extraction_errors": []
+  },
+  "frames": [
+    {
+      "frame_seconds": 111.669891625,
+      "decoded_size": [
+        1920,
+        1080
+      ],
+      "rendered_size": [
+        800,
+        448
+      ],
+      "rendered_mode": "1",
+      "quality": {
+        "score": 0,
+        "base_score": 0,
+        "brightness": 0.11273121553308826,
+        "clipped": 0.0,
+        "sharpness": 0.003160056701793356,
+        "contrast": 0.02187202864621227,
+        "similarity": 0,
+        "fingerprint": "1001000100000000101001000000000001001000000000000101000010000000100101000000000010100100000000001010100000000000101010000000000010101000001000000010100000000000001010000000000010101000000000001010100000000000101001000000000010100100000000001010100000000000"
+      }
+    },
+    {
+      "frame_seconds": 335.00967487500003,
+      "decoded_size": [
+        1920,
+        1080
+      ],
+      "rendered_size": [
+        800,
+        448
+      ],
+      "rendered_mode": "1",
+      "quality": {
+        "score": 0.887513,
+        "base_score": 0.887513,
+        "brightness": 0.4587487553615196,
+        "clipped": 0.0,
+        "sharpness": 1,
+        "contrast": 0.5900207284440067,
+        "similarity": 0,
+        "fingerprint": "1110010100011101111001100001100111110010101010101011001001010100100101100101000010011110010010101000111001001000110111100110010011111010100001001111001010100110110110100110001010011110011001101001110010000100100011110100000100000110101100010110101100101000"
+      }
+    },
+    {
+      "frame_seconds": 558.3494581250001,
+      "decoded_size": [
+        1920,
+        1080
+      ],
+      "rendered_size": [
+        800,
+        448
+      ],
+      "rendered_mode": "1",
+      "quality": {
+        "score": 0.897496,
+        "base_score": 0.897496,
+        "brightness": 0.4057884306066176,
+        "clipped": 0.0134765625,
+        "sharpness": 1,
+        "contrast": 0.7420782155568262,
+        "similarity": 0,
+        "fingerprint": "1101100000111001110110000111010110101001011011001000100111110101100101011110101101100001101010010010000110101001010000101011010010011001101100001001100110010010001010110100000100101010001001011001101001111001001101110100100100100111001110000010011000111000"
+      }
+    },
+    {
+      "frame_seconds": 781.689241375,
+      "decoded_size": [
+        1920,
+        1080
+      ],
+      "rendered_size": [
+        800,
+        448
+      ],
+      "rendered_mode": "1",
+      "quality": {
+        "score": 0.938703,
+        "base_score": 0.938703,
+        "brightness": 0.40445503982843134,
+        "clipped": 0.00048828125,
+        "sharpness": 1,
+        "contrast": 0.8723436432541238,
+        "similarity": 0,
+        "fingerprint": "1011111001000010101101010001000010110000010000011111011001000001111110100010000111111010001000010111101100000001111011100101100111101110010010011011111010011000111111011000100011111010110110000101101011010000011011110101000000101111011110000010111100101010"
+      }
+    }
+  ],
+  "transfer": {
+    "bytes_downloaded": 10255684,
+    "upstream_requests": 42,
+    "recording_bytes": 949254467,
+    "payload_fraction": 0.010803935463597876
+  },
+  "elapsed_seconds": 19.217
+}
