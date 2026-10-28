@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_id": "ooi-axial",
-  "checked_at": "2026-10-28T09:50:04.199140+00:00",
+  "checked_at": "2026-10-28T12:38:23.482666+00:00",
   "status": "observed",
   "timestamp_basis": "Filename parsed as UTC; source timezone not independently confirmed",
   "directory_dates_checked": [
@@ -10,28 +10,44 @@
     "2026-10-28"
   ],
   "directory_errors": [],
-  "recordings_listed": 19,
-  "new_recordings_since_prior_coverage": 0,
+  "recordings_listed": 20,
+  "new_recordings_since_prior_coverage": 1,
   "baseline_recordings": 0,
   "recording_intervals_seconds": {
-    "samples": 18,
+    "samples": 19,
     "median": 10800.0,
     "minimum": 10800.0,
     "maximum": 10800.0,
     "common": [
       {
         "seconds": 10800.0,
-        "count": 18
+        "count": 19
       }
     ]
   },
-  "latest_nominal_recording_at": "2026-10-28T06:15:00+00:00",
-  "publication_delay_observations": 2,
-  "new_appearances": [],
+  "latest_nominal_recording_at": "2026-10-28T09:15:00+00:00",
+  "publication_delay_observations": 3,
+  "new_appearances": [
+    {
+      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/10/28/CAMHDA301-20261028T091500.mp4",
+      "recorded_at": "2026-10-28T09:15:00+00:00",
+      "first_seen_at": "2026-10-28T12:38:22.496743+00:00",
+      "baseline": false,
+      "appeared_between": [
+        "2026-10-28T09:50:02.636290+00:00",
+        "2026-10-28T12:38:22.496743+00:00"
+      ],
+      "nominal_publication_delay_bounds_seconds": [
+        2102.63629,
+        12202.496743
+      ],
+      "last_seen_at": "2026-10-28T12:38:22.496743+00:00"
+    }
+  ],
   "publication_delay_note": "Baseline files have unknown publication time. Delay bounds require prior successful coverage of that date; filename timezone remains an assumption.",
   "environment": "github_actions",
-  "tested_commit": "ccb8fffe38d3d7b2a1851e12aaf7d1c103ffaab9",
-  "run_url": "https://github.com/nikokoren/abyss/actions/runs/40667312928",
+  "tested_commit": "61960acbfa91c62e9ad6523e54a142ff14966934",
+  "run_url": "https://github.com/nikokoren/abyss/actions/runs/40689383784",
   "imagery_published": false,
   "rights_status": "not_assessed"
 }
