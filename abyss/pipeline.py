@@ -9,7 +9,8 @@ from pathlib import Path
 from PIL import Image
 from .adapters import discover_many
 from .imaging import render_for_source
-from .network import RangeVideo
+from .network import RangeVideo, TransferBudget
+from .stills import download_image
 from .publication import atomic_json, catalog, publish, read_json
 from .registry import eligible
 from .video import extract
@@ -25,6 +26,13 @@ def utcnow():
 
 def candidates(source, recording, directory, args):
     start = time.monotonic()
+    if recording.get('media_type') == 'image':
+        budget = TransferBudget(min(args.max_bytes, source.get('max_search_bytes', args.max_bytes)))
+        path, diagnostics = download_image(recording, source, directory, budget, 0)
+        diagnostics.update(elapsed_seconds=round(time.monotonic() - start, 3),
+                           upstream_requests=budget.requests, byte_budget=budget.limit,
+                           candidates_requested=1, candidates_extracted=1, strategy='snapshot')
+        return [(0, path)], diagnostics
     video = None
     if args.local_video:
         manager = contextlib.nullcontext(str(Path(args.local_video).resolve()))
@@ -52,8 +60,9 @@ def run_source(source, args):
         return 'cooldown'
     state['last_checked_at'] = now
     try:
+        count = source.get('images_per_search', 9) if source['adapter'] == 'ooi_image_directory' else getattr(args, 'recordings', 3)
         recordings = ([{'url': 'local-fixture', 'recorded_at': args.recorded_at}] if args.local_video
-                      else discover_many(source, limit=getattr(args, 'recordings', 3)))
+                      else discover_many(source, limit=count))
         preference = load_model(getattr(args, 'preference_model', None))
         requested_model_id = preference['model_id'] if preference else None
         render_profile = hashlib.sha256(json.dumps({
@@ -115,7 +124,7 @@ def run_source(source, args):
                         'processing_note': 'Derived still: resized, contrast adjusted and rendered for e-paper',
                         'preference': diagnostics.get('preference'), 'selection_score': best.get('selection_score', score),
                         'width': args.width, 'height': args.height, 'method': args.method, 'quality': metrics,
-                        'selection_reason': 'Best readable coarse/fine candidate using quality, novelty and any active personal preference model',
+                        'selection_reason': 'Best readable recent snapshot or video frame using quality, novelty and any active personal preference model',
                         'diagnostics': diagnostics, 'fixture': bool(args.local_video)}
             publish(args.output, source, processed, metadata, args.base_url)
             state['processed'] = processed_recordings

@@ -7,6 +7,7 @@ from .imaging import quality
 from .preferences import ImageEncoder, load_model, rank
 from .network import RangeVideo, TransferBudget
 from .video import extract_positions, probe
+from .stills import download_image
 
 
 def search(source, recordings, directory, args, history=()):
@@ -19,7 +20,7 @@ def search(source, recordings, directory, args, history=()):
         raise ValueError('Invalid coarse/fine search limits')
     if args.interval < 1 or not 1 <= len(recordings) <= 12:
         raise ValueError('Invalid interval or recording count')
-    budget = TransferBudget(args.max_bytes)
+    budget = TransferBudget(min(args.max_bytes, source.get('max_search_bytes', args.max_bytes)))
     sessions, candidates = [], []
     profile = source.get('scoring', {})
     model = load_model(getattr(args, 'preference_model', None))
@@ -63,6 +64,12 @@ def search(source, recordings, directory, args, history=()):
                        'fine_requested': 0, 'fine_extracted': 0, 'index': index}
             sessions.append(session)
             try:
+                if recording.get('media_type') == 'image':
+                    session['coarse_requested'] = 1
+                    path, details = download_image(recording, source, directory, budget, index)
+                    session.update(details, coarse_extracted=1)
+                    score_frames([(0, path)], session, 'snapshot')
+                    continue
                 if args.local_video:
                     url = str(Path(args.local_video).resolve())
                 else:
@@ -90,6 +97,8 @@ def search(source, recordings, directory, args, history=()):
         chosen, used = [], 0
         for candidate in promising:
             session = candidate['session']
+            if session['recording'].get('media_type') == 'image':
+                continue  # An immutable snapshot has no adjacent video moments.
             if candidate['quality']['score'] < profile.get('min_score', .30):
                 continue
             if session['errors'] or (session['video'] and session['video'].error):
@@ -135,15 +144,17 @@ def search(source, recordings, directory, args, history=()):
                         'duration_seconds': session.get('duration'), 'codec': session.get('codec'),
                         'coarse_requested': session['coarse_requested'], 'coarse_extracted': session['coarse_extracted'],
                         'fine_requested': session['fine_requested'], 'fine_extracted': session['fine_extracted'],
-                        'bytes_downloaded': video.bytes_read if video else 0,
-                        'upstream_requests': video.requests if video else 0, 'errors': errors,
+                        'bytes_downloaded': video.bytes_read if video else session.get('bytes_downloaded', 0),
+                        'upstream_requests': video.requests if video else int(session.get('bytes_downloaded', 0) > 0), 'errors': errors,
+                        'decoded_size': session.get('decoded_size'),
                         'recording_bytes': video.total if video else None})
     usable = [c for c in candidates if c['quality']['score'] >= profile.get('min_score', .30)]
     best = max(usable or candidates, key=lambda c: (c['selection_score'] if usable else c['quality']['score'], c['recording'].get('recorded_at') or ''), default=None)
-    diagnostics = {'strategy': 'coarse_to_fine',
+    diagnostics = {'strategy': 'recent_snapshots' if all(r.get('media_type') == 'image' for r in recordings) else 'coarse_to_fine',
                    'preference': {'model_id': model['model_id'] if model else None,
                                   'status': 'active' if model else 'quality_fallback', 'error': preference_error}, 'recordings_considered': len(recordings),
                    'candidates_extracted': len(candidates), 'coarse_extracted': sum(s['coarse_extracted'] for s in sessions),
+                   'images_extracted': sum(c['stage'] == 'snapshot' for c in candidates),
                    'fine_extracted': sum(s['fine_extracted'] for s in sessions),
                    'bytes_downloaded': budget.used, 'byte_budget': budget.limit,
                    'upstream_requests': budget.requests,

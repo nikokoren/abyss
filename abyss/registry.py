@@ -16,6 +16,6 @@ def load(path: str | Path) -> list[dict]:
 
 def eligible(source: dict) -> bool:
     evidence = source.get('validation', {})
-    return (source.get('status') == 'validated' and source.get('adapter') in {'ooi_directory', 'direct'}
+    return (source.get('status') == 'validated' and source.get('adapter') in {'ooi_directory', 'ooi_image_directory', 'direct'}
             and all(evidence.get(k) for k in ('retrieval_at', 'terms_reviewed_at', 'evidence'))
             and all(source.get(k) for k in ('attribution', 'attribution_url', 'license', 'license_url', 'allowed_hosts')))
