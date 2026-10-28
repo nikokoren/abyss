@@ -1,0 +1,425 @@
+Cabled Continental Margin Array - Ocean Observatories Initiative
+Skip to content
+Subscribe
+Access Data
+Help
+Menu
+The Observatory
+About OOI
+The Vision
+Leadership
+Program Documents
+Advisory Committees
+Glossary
+By the Numbers
+Arrays
+Global Irminger Sea Array
+Global Station Papa Array
+Coastal Endurance Array
+Coastal Pioneer Mid-Atlantic Bight Array
+Coastal Pioneer New England Shelf Array
+Regional Cabled Array
+Cabled Continental Margin Array
+Cabled Axial Seamount Array
+Cabled Endurance Array
+Global Argentine Basin
+Global Southern Ocean Array
+Additional Observing Assets in the Region
+Platforms and Nodes
+Infrastructure
+Cabled Infrastructure
+Moorings
+Profilers
+AUVs
+Gliders
+Cyberinfrastructure
+Instruments
+Science
+Expeditions
+Publications
+OOI-Related Publications
+Submit a Publication
+Science Highlights
+Science Questions
+Projects and Related Research
+Participate in OOI
+Adding Instruments or Platforms
+Participating in Cruises
+Deploying in OOI Areas
+Developing a Proposal
+Propose Modifications to Sampling
+Borrowing OOI Assets
+Community Engagement
+OOI Ambassador Program
+Science User Group for Research meetings
+Communities
+Educators
+Mariners
+Newsletter
+Events
+Visual Galleries
+Media
+Webinar Archive
+Join Us
+OOI Data
+Data Access
+Data Explorer
+Data Quality
+Data Updates and Corrections
+Data Products
+Data Products List
+Community Datasets
+Community Data Tools
+Jupyter Notebook
+How to Use, Acknowledge, and Cite Data
+Data HelpDesk
+Tutorials
+FAQs (Knowledge Base)
+Discourse
+Resources
+For Educators
+Image Gallery
+Video Gallery
+Glossary
+Contact
+Home
+Subscribe
+Access Data
+Help
+Skip to main content
+Skip to Navigation
+{{ searchMessage }}
+{{ searchItems.length }} results for "{{ searchQuery.trim() }}"
+You searched: {{ searchQuery }}
+Searching in:
+{{source.name}}
+{{ searchItems.length }} results for "{{ searchQuery.trim() }}"
+[{{ decodeEntities(result.type) | removeUnderscore}}]
+{{ decodeEntities(result.excerpt.rendered) | truncate(380) }}
+[{{ decodeEntities(result.type) | removeUnderscore }}]
+{{ decodeEntities(result.content.rendered) | truncate(380) }}
+Quick Links
+Home
+Data Portal
+Data Explorer
+Partner Data Sites
+How to Use, Acknowledge, and Cite Data
+How to Participate
+Infrastructure Status
+Need Help?
+Close Menu
+Menu
+The Observatory
+About OOI
+The Vision
+Leadership
+Program Documents
+Advisory Committees
+Glossary
+By the Numbers
+Arrays
+Global Irminger Sea Array
+Global Station Papa Array
+Coastal Endurance Array
+Coastal Pioneer Mid-Atlantic Bight Array
+Coastal Pioneer New England Shelf Array
+Regional Cabled Array
+Cabled Continental Margin Array
+Cabled Axial Seamount Array
+Cabled Endurance Array
+Global Argentine Basin
+Global Southern Ocean Array
+Additional Observing Assets in the Region
+Platforms and Nodes
+Infrastructure
+Cabled Infrastructure
+Moorings
+Profilers
+AUVs
+Gliders
+Cyberinfrastructure
+Instruments
+Quick Links
+Home
+Data Portal
+Data Explorer
+Partner Data Sites
+How to Use, Acknowledge, and Cite Data
+How to Participate
+Infrastructure Status
+Need Help?
+Science
+Expeditions
+Publications
+OOI-Related Publications
+Submit a Publication
+Science Highlights
+Science Questions
+Projects and Related Research
+Quick Links
+Home
+Data Portal
+Data Explorer
+Partner Data Sites
+How to Use, Acknowledge, and Cite Data
+How to Participate
+Infrastructure Status
+Need Help?
+Participate in OOI
+Adding Instruments or Platforms
+Participating in Cruises
+Deploying in OOI Areas
+Developing a Proposal
+Propose Modifications to Sampling
+Borrowing OOI Assets
+Quick Links
+Home
+Data Portal
+Data Explorer
+Partner Data Sites
+How to Use, Acknowledge, and Cite Data
+How to Participate
+Infrastructure Status
+Need Help?
+Community Engagement
+OOI Ambassador Program
+Science User Group for Research meetings
+Communities
+Educators
+Mariners
+Newsletter
+Events
+Visual Galleries
+Media
+Webinar Archive
+Join Us
+Quick Links
+Home
+Data Portal
+Data Explorer
+Partner Data Sites
+How to Use, Acknowledge, and Cite Data
+How to Participate
+Infrastructure Status
+Need Help?
+OOI Data
+Data Access
+Data Explorer
+Data Quality
+Data Updates and Corrections
+Data Products
+Data Products List
+Community Datasets
+Community Data Tools
+Jupyter Notebook
+How to Use, Acknowledge, and Cite Data
+Data HelpDesk
+Tutorials
+FAQs (Knowledge Base)
+Discourse
+Quick Links
+Home
+Data Portal
+Data Explorer
+Partner Data Sites
+How to Use, Acknowledge, and Cite Data
+How to Participate
+Infrastructure Status
+Need Help?
+Resources
+For Educators
+Image Gallery
+Video Gallery
+Glossary
+Contact
+Quick Links
+Home
+Data Portal
+Data Explorer
+Partner Data Sites
+How to Use, Acknowledge, and Cite Data
+How to Participate
+Infrastructure Status
+Need Help?
+Home
+::
+The Observatory
+::
+Research Arrays
+::
+Cabled Continental Margin Array
+Cabled Continental Margin Array
+Credit: Center for Environmental Visualization, University of Washington
+The Cabled Continental Margin Array portion of the Regional Cabled Array spans coastal to blue-water environments and includes electro-optical submarine cables that provide high power, bandwidth, and two-way real-time communication to seafloor and water column instrumentation. Within the Continental Margin Array, infrastructure is located just off the continental slope near the Cascadia subduction zone, on the continental slope at Southern Hydrate Ridge (an area with methane hydrates), and then connects further up the slope to the Endurance Array Oregon Line at the Offshore, and Shelf sites.
+Three Junction Boxes located at the Southern Hydrate Ridge site contain geophysical instruments (seismometers and hydrophones), as well as sensors to image and measure the rising plumes, the flow of fluid into and out of the seafloor, and fluid chemistry. At the Slope Base, observations are made from the seafloor to near the sea surface using Junction Boxes hosting geophysical instruments and those focused on water column processes. These are paired with a Cabled Deep Profiler Mooring and a Cabled Shallow Profiler Mooring. All instrumentation and infrastructure are connected to the cable for power and communication, ultimately making possible real-time data flow.
+For more information, check out the Regional Cabled Array related news stories.
+Sites/Platforms
+This array includes following research sites and platforms.
+KeySite/Platform NameWater DepthDOI
+1
+Oregon Slope Base Seafloor (RS01SLBS)
+2901 meters
+10.58046/OOI-RS01SLBS
+2
+Oregon Slope Base Shallow Profiler Mooring (RS01SBPS)
+2906 meters
+10.58046/OOI-RS01SBPS
+3
+Oregon Slope Base Deep Profiler Mooring (RS01SBPD)
+2893 meters
+10.58046/OOI-RS01SBPD
+4
+Southern Hydrate Summit 1 Seafloor (RS01SUM1)
+775 meters
+10.58046/OOI-RS01SUM1
+5
+Southern Hydrate Summit 2 Seafloor (RS01SUM2)
+772 meters
+10.58046/OOI-RS01SUM2
+PN01A
+Oregon Slope Base Primary Node (PN01A)
+2905 meters
+PN01B
+Hydrate Ridge Primary Node (PN01B)
+1241 meters
+Research Themes
+Climate Variability, Ocean Circulation, and Ecosystems
+Coastal Ocean Dynamics and Ecosystems
+Ocean-Atmosphere Exchange
+The Observatory
+About OOI
+The Vision
+Leadership
+Program Documents
+Advisory Committees
+Glossary
+By the Numbers
+Arrays
+Global Irminger Sea Array
+Global Station Papa Array
+Coastal Endurance Array
+Coastal Pioneer Mid-Atlantic Bight Array
+Coastal Pioneer New England Shelf Array
+Regional Cabled Array
+Cabled Continental Margin Array
+Cabled Axial Seamount Array
+Cabled Endurance Array
+Global Argentine Basin
+Global Southern Ocean Array
+Additional Observing Assets in the Region
+Platforms and Nodes
+Infrastructure
+Cabled Infrastructure
+Moorings
+Profilers
+AUVs
+Gliders
+Cyberinfrastructure
+Instruments
+Science
+Expeditions
+Publications
+OOI-Related Publications
+Submit a Publication
+Science Highlights
+Science Questions
+Projects and Related Research
+Participate in OOI
+Adding Instruments or Platforms
+Participating in Cruises
+Deploying in OOI Areas
+Developing a Proposal
+Propose Modifications to Sampling
+Borrowing OOI Assets
+Community Engagement
+OOI Ambassador Program
+Science User Group for Research meetings
+Communities
+Educators
+Mariners
+Newsletter
+Events
+Visual Galleries
+Media
+Webinar Archive
+Join Us
+OOI Data
+Data Access
+Data Explorer
+Data Quality
+Data Updates and Corrections
+Data Products
+Data Products List
+Community Datasets
+Community Data Tools
+Jupyter Notebook
+How to Use, Acknowledge, and Cite Data
+Data HelpDesk
+Tutorials
+FAQs (Knowledge Base)
+Discourse
+Resources
+For Educators
+Image Gallery
+Video Gallery
+Glossary
+Contact
+Cabled Continental Margin Array
+Approximate Water Depth
+770-2, 900 meters
+Research Setting
+North Pacific coastal to blue water, continental shelf and slope
+Instrument Table
+Quicklook Brochure
+The Ocean Observatories Initiative (OOI) is a science-driven ocean observing network that delivers real-time data from more than 900 instruments to address critical science questions regarding the world’s oceans.
+About OOI
+Science
+The Ocean Observatories Initiative
+Data Products
+Contact
+Resources
+Community Data Tools
+Data Access
+OOI Ambassador Program
+FAQ and Knowledgebase
+Glossary
+Need Help?
+Join Us
+How to Participate
+Workshops/Conferences
+Stay Connected
+Sign up for our newsletter to get the latest news from Ocean Observatories Initiative
+Subscribe now
+Join the Conversation
+© 2026 NSF Ocean Observatories Initiative. All Rights Reserved. The Ocean Observatories Initiative is a major facility fully funded by the U.S. National Science Foundation.
+Any opinions, findings, and conclusions or recommendations expressed in this material do not necessarily reflect the views of the U.S. National Science Foundation. Internal | PMO/MIO Log in
+Cookies Policy
+To provide the best experience possible, we use cookies and other data for a number of reasons, such as keeping the OOI sites reliable and secure, providing social media features and to analyze how our sites are used.
+Functional
+Functional
+Always active
+The technical storage or access is strictly necessary for the legitimate purpose of enabling the use of a specific service explicitly requested by the subscriber or user, or for the sole purpose of carrying out the transmission of a communication over an electronic communications network.
+Preferences
+Preferences
+The technical storage or access is necessary for the legitimate purpose of storing preferences that are not requested by the subscriber or user.
+Statistics
+Statistics
+The technical storage or access that is used exclusively for statistical purposes.
+The technical storage or access that is used exclusively for anonymous statistical purposes. Without a subpoena, voluntary compliance on the part of your Internet Service Provider, or additional records from a third party, information stored or retrieved for this purpose alone cannot usually be used to identify you.
+Marketing
+Marketing
+The technical storage or access is required to create user profiles to send advertising, or to track the user on a website or across several websites for similar marketing purposes.
+Manage options
+Manage services
+Manage {vendor_count} vendors
+Read more about these purposes
+Accept All
+Necessary cookies only
+Customize settings
+Save preferences
+Customize settings
+{title}
+{title}
+{title}
+Manage consent
+Scroll To Top

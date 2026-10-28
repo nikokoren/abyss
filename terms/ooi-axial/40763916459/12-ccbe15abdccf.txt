@@ -1,0 +1,220 @@
+Southern Hydrate Ridge – OOI Regional Cabled Array
+Skip to content
+Interactive Map
+Search
+Home
+About
+Regional Cabled Array
+Ocean Observatories Initiative
+People
+Acknowledgements
+Contact
+Research Sites
+Axial Base
+Axial Caldera
+ASHES
+International District
+Central Caldera
+Eastern Caldera
+Oregon Offshore
+Oregon Shelf
+Oregon Slope Base
+Southern Hydrate Ridge
+Mid-Plate
+Technology
+Cabled Network
+Cables & Connectors
+CTD Rosette
+Primary Nodes
+Junction Boxes
+Benthic Experiment Package (BEP)
+Deep Profiler Moorings
+Shallow Profiler Moorings
+ROVs
+Ships
+Terrestrial Network
+Instruments
+Expeditions
+VISIONS 26
+VISIONS 25
+VISIONS 24
+VISIONS 23
+VISIONS 22
+VISIONS 21
+VISIONS 20
+VISIONS 19
+VISIONS 18
+VISIONS 17
+VISIONS 16
+VISIONS 15
+VISIONS 14
+VISIONS 13
+VISIONS 11
+Education
+Cabled Array in the Classroom
+Engagement Products
+K12 Lessons
+Data Portal
+Resources
+Galleries
+Biology Catalog
+Featured Posts
+Glossary
+Home
+About
+Regional Cabled Array
+Ocean Observatories Initiative
+People
+Acknowledgements
+Contact
+Research Sites
+Axial Base
+Axial Caldera
+ASHES
+International District
+Central Caldera
+Eastern Caldera
+Oregon Offshore
+Oregon Shelf
+Oregon Slope Base
+Southern Hydrate Ridge
+Mid-Plate
+Technology
+Cabled Network
+Cables & Connectors
+CTD Rosette
+Primary Nodes
+Junction Boxes
+Benthic Experiment Package (BEP)
+Deep Profiler Moorings
+Shallow Profiler Moorings
+ROVs
+Ships
+Terrestrial Network
+Instruments
+Expeditions
+VISIONS 26
+VISIONS 25
+VISIONS 24
+VISIONS 23
+VISIONS 22
+VISIONS 21
+VISIONS 20
+VISIONS 19
+VISIONS 18
+VISIONS 17
+VISIONS 16
+VISIONS 15
+VISIONS 14
+VISIONS 13
+VISIONS 11
+Education
+Cabled Array in the Classroom
+Engagement Products
+K12 Lessons
+Data Portal
+Resources
+Galleries
+Biology Catalog
+Featured Posts
+Glossary
+Southern Hydrate Ridge
+Axial Base
+Axial Caldera
+ASHES
+International District
+Eastern Caldera
+Central Caldera
+Oregon Offshore
+Oregon Shelf
+Oregon Slope Base
+Southern Hydrate Ridge
+Mid-Plate
+Loading the player…
+Right Click/Save As to Download VideoThe digital still camera (CAMDSB103) sits atop a small, heavily sedimented rampart in front of the actively venting methane seep Einstein’s Grotto at the summit of SHR. Credit: UW/NSF-OOI/CSSF; ROPOS Dive R1767; V14.
+The Ocean Observatories Initiative (OOI) Regional Cabled Array (RCA), operational in the NE Pacific since 2014, includes two cabled junction boxes at Southern Hydrate Ridge, a site of methane seeps at ~780 m water depth ~90 km west of Newport, OR. Located in the central Cascadia accretionary complex, Southern Hydrate Ridge is one of the most highly studied gas hydrate deposit in the oceans, with documented explosive seafloor venting, formation of gas-rich methane hydrate deposits near the seafloor, and exposed hydrate.
+Previous research through the Ocean Drilling Program, by Alvin and numerous remotely-operated vehicles (ROVs),as well as by autonomous underwater vehicle (AUVs), and by myriad seismic studies provide a strong understanding of the heterogeneous distribution of gas hydrates in this area and the processes that lead to their formation and demise (e.g Suess et al., 2001; Trehu, et. al. 2004; Bangs et al., 2011′ Philip et al., 2016, Marcon et al., 2021). Subseafloor imaging using three dimensional seismic surveys have defined a focused plumbing system that the OOI used to determine deployment locations for observatory sensors (Bangs, et al. 2011).RCA infrastructure at Southern Hydrate Ridge as installed in 2019. Also shown are instruments funded by MARUM1 (2 sonars, 4K camera, and a CTD). Credit: University of Washington.
+The fluid flow system at SHR appears to be controlled by structures that cut across stratigraphic horizons, which differs from gas hydrate systems explored on the northern Cascadia margin (Trehu et al., 2004; Johnson, et al. 2003). There is also a greater abundance of coarse-grained sediments in the north (Trehu, et. al. 2004), which has a strong impact on gas hydrate deposition processes.
+The now decade-long RCA-OOI time series from cabled data and annual ROV visits to SHR, coupled with data from central and northern Cascadia and other seep locations, is leading to a more comprehensive understanding of gas hydrate processes, changes over time, and the evolution of the biological community associated with these environments.
+The RCA-OOI observatory includes seismometers, hydrophones, an acoustic doppler curren meter, pressure sensor, osmotic fluid samplers, seafloor cameras, and flow meters; see table below for full list. Many of the key processes associated with gas hydrate systems occur over short time scales (e.g., gas hydrate release due to small and large earthquakes, tidal pumping, – Marcon et al., 2021), so real-time data transmission and the capability for adaptive response and sampling adjustment are fundamental observatory benefits that bolster research advancements. The RCA infrastructure enables 24/7 real-time communications and power to the array of scientific instruments at Southern Hydrate Ridge.Scarlet King Crabs were seen at multiple locations along Hydrate Ridge. They are commonly found in sandier substrate, however this one was sighted among a large group of brooding Neptunea snails. Photo Credit: NSF-OOI/UW/CSSF; Dive 1758; V14
+Southern Hydrate Ridge is a core component of the OOI because the science conducted at this site spans both seafloor and water column themes that form the foundation of the OOI: e.g., Climate Variability, Ocean Circulation, and Ecosystems; Coastal Ocean Dynamics and Ecosystems; Fluid-Rock Interactions and the Sub-seafloor Biosphere, and Plate-Scale Geodynamics.
+The cabled infrastructure at SHR specifically addresses 5 out of 10 OOI major science questions [as detailed in the Ocean Observatories Initiative (OOI) Scientific Objectives A Closer Look (2007), and as part of the Conceptual Network Design]. These include: 1) What is the ocean’s role in the global carbon cycle, and more specifically, gas hydrates and marine seeps? 2) How does plate-scale deformation mediate fluid flow, chemical and heat fluxes, and microbial productivity? 3) What are the forces acting on plates and plate boundaries that give rise to local and regional deformation and what is the relation between the localization of deformation and the physical structure of the coupled asthenosphere-lithosphere system? 4) How do tectonic, oceanographic, and biological processes modulate the flux of carbon into and out of the submarine gas hydrate ‘capacitor,” and are there dynamic feedbacks between the gas hydrate reservoir and other benthic, oceanic, and atmospheric processes? 5) What are the dynamics of hypoxia on continental shelves?
+References:
+Bangs, N. L. B., Hornbach, M.J., and Berndt, C., 2011. The mechanics of intermittent methane venting at South Hydrate Ridge inferred from 4D seismic surveying. Earth and Planetary Science Letters. 310(1‐2): 105–112, doi:10.1016/j.epsl.2011.06.022.
+Johnson, J.E., Goldfinger, C., Suess, E., 2003. Geophysical constraints on the surface distribution of authigenic carbonates across the Hydrate Ridge region, Cascadia margin. Marine Geology. 202(1–2): 79-120.
+Suess, E., Bohrmann, G., Rickert, D., Kuhs, W.F., Torres, M.E., Trehu, A., Linke, P., 2002. Properties and fabric of near-surface methane hydrates at Hydrate Ridge, Cascadia margin. In 4th International Conference on Gas Hydrates (pp. 740 – 744), Yokohama, Japan.
+Tréhu, A., Long, P.E., Torres, M.E., Bohrmann, G., Rack, F.R., Collett, T.S., Goldberg, D.S., Milkov, A.V., Riedel, M., Schultheiss, P., Bangs, N.L., Barr, S.R., Borowski, W.S., Claypool, G.E., Delwiche, M.E., Dickens, G.R., Gracia, E., Guerin, G., Holland, M., Johnson, J.E., Lee, Y.-J., Liu, C.-S., Su, X., Teichert, B., Tomaru, H., Vanneste, M., Watanabe, M., Weinberger, J.L., 2004. Three-dimensional distribution of gas hydrate beneath southern Hydrate Ridge: constraints from ODP Leg 204. Earth and Planetary Science Letters. 222(3–4): 845-862.
+Tryon, M., Brown, K.M., Torres, M.E., 2002. Fluid and chemical flux in and out of sediments hosting methane hydrate deposits on Hydrate Ridge, OR, II: hydrological processes. Earth and Planetary Science Letters. 201: 541–557.
+Instruments at Hydrate Ridge
+Instrument Name Make/ModelNumberScienceLife Cycle
+Low Frequency HydrophoneHIT/90-U1T-waves, ocean acoustics, mammal detection5 YearBroadband Ocean Bottom SeismometerGuralp/CMG-1T5T1Regional earthquakes5 YearsShort-period SeismometerGuralp/CMG-1 sec3Regional earthquakes, local cracking events, improve pumping system for methane gas subsurface5 yearsSeafloor PressureSea-bird/SBE 541Tides, tsunami, storms, uplift, deflation5 years3D Velocity MeterNobska/MAVS41Local currents3 yearsADCP 75 kHzTeledyne RDI/Workhorse LongRanger1Currents, bubble plume dynamics3 yearsDigital Still CameraSubC1Bubble plume characterization, macrofauana and microbial distribution, seep morphology1 yearBenthic Flow MeterNon-commercial2Fluid flow into and out of the seafloor--flux calculations1 yearOsmo SamplerNon-commercial1Fluid chemistry, flux calculations1 yearMass SpectrometerNon-commercial1Gas analyses, flux calculations1 year
+Cabled infrastructure now installed at Southern Hydrate Ridge providing real-time data to shore. The main focus site is called 'Enstein's Grotto, a site where vigorous venting of methane bubbles rise several hundred meters above the seafloor. Credit: University of Washington.
+Bathymetric map of Southern Hydrate Ridge showing core OOI Cabled Array infrastructure and instruments as installed in 2017. The main study site is focused on Einsteins' Grotto that is highly dynamic with explosive bubble plumes and large collapse zones that have formed since 2010. Credit: M. Elend, University of Washington.
+An overview sonar being installed at Southern Hydrate Ridge - the multibeam's "head" is in the down position, prior to completion of the installation. Credit: UW/NSF_OOI/MARUM, V19.
+One of Evan Solomon's mosquitoes (a flow meter) deployed at Southern Hydrate Ridge August 14, 2011 with the ROV ROPOS.
+The digital still camera (CAMDSB103) sits atop a small, heavily sedimented rampart in front of the actively venting methane seep Einstein's Grotto at the summit of Southern Hydrate Ridge. Credit: UW/NSF-OOI/CSSF; ROPOS Dive R1767; V14.
+Microbial mats cover expansive areas of the Smokey Caverns site, which hosted exposed gas hydrate in 2017. Credit: UW/OOI-NSF/WHOI: V19.
+Beggiatoa bacterial matting at Southern Hydrate Ridge. The green lasers are turned on for scale and are 10 cm apart.
+An active methane hydrate seep site at Southern Hydrate Ridge. Emanating out of the cavity in the sediments are bubbles from gas hydrate dissociation within the shallow sediments. Photo credit: NSF-OOI/UW/CSSF
+Beggiatoa matting (white) at Southern Hydrate Ridge with small snails. Photo credit: NSF-OOI/UW/CSSF
+This down-looking image was taken to create an extremely detailed view of methane seeps at Southern Hydrate Ridge. The left portion of the image shows part of a large collapse zone. White areas are bacterial mats. Credit. M. Elend, University of Washington.
+Clams are commonly found at the summit of Southern Hydrate Ridge surrounding areas of white bacterial mat.
+Hagfish, corals, lobster at Southern Hydrate Ridge.Credit: UW/OOI-NSF/CSSF.
+Thick bacteria mats rimmed by colonies of yellow worms at Southern Hydrate Ridge. Photo credit: UW/NSF-OOI/CSSF; ROPOS Dive R1750; V14
+A pair of hermit crabs (possibly mating?) at Hydrate Ridge, near Einstein's Grotto.
+Photo Credit: NSF-OOI/UW/CSSF, Dive R1750, V14
+A beautiful soft coral attached to hard substrate at Southern Hydrate Ridge, near Einstein's Grotto.
+Photo Credit: NSF-OOI/UW/CSSF, Dive R1750, V14
+A hagfish curled up on the seafloor at Southern Hydrate Ridge, water depth ~ 780 m. Credit: RCA, University of Washington.
+Photo Credit: NSF-OOI/UW/CSSF, Dive R1750, V14
+A spiny pink crab (missing a rear leg) seen at Hydrate Ridge, near Einstein's Grotto.
+Photo Credit: NSF-OOI/UW/CSSF, Dive R1750, V14
+An eelpout resting on the sediment at Hydrate Ridge, near Einstein's Grotto.
+Photo Credit: NSF-OOI/UW/CSSF, Dive R1750, V14
+A CAT flow meter near Einstein's Grotto. It is home to a rockfish and sea star. Photo Credit: NSF-OOI/UW/CSSF, Dive R1750, V14
+Exposed gas hydrate (a clathrate of water ice that forms around methane) observed in Einstein,s Grotto at the Southern Hydrate Ridge summit. Large bubbles were escaping intermittently from the crevice, indicating an active methane seep. A rockfish is sheltering within the grotto as well. Credit: UW/NSF-OOI//CSSF, ROPOS Dive R1754, VI14.
+A rockfish and hermit crabs hang out in a nursery of Neptunea snails at the summit of Southern Hydrate Ridge.The snail stalks rise from small carbonate cobbles. Photo credit: UW/NSF-OOI/CSSF; ROPOS Dive R1766; V14.
+Hagfish (purple), red rockfish, crabs, and hermit crabs wander within the nursery for Neptunea snails laying eggs that form yellow stalks on carbonate cobbles. Southern Hydrate Ridge. Credit: UW/NSF-OOI/CSSF; ROPOS Dive R1766; V14.
+Close up of a Neptunea snail on its egg stalk at the summit of Southern Hydrate Ridge. Credit: UW/NSF-OOI/CSSF; ROPOS Dive R1758; V14.
+A Starry Flounder hangs out during installation of short-period seismometers at Southern Hydrate Ridge. Credit: UW/NSF-OOI//CSSF; ROPOS Dive R1769; V14.
+A Mosquito; flow meter (far left) and osmotic fluid sampler (far right) installed in methane seep at Southern Hydrate Ridge. A second Mosquito, colonized by organisms, awaits recovery. These instruments provide fluid chemistry information, as well as calculations of fluid flow in and out of the seafloor. Credit: UW/NSF-OOI/CSSF; Dive R1772; V14.
+An in situ, cabled mass spectrometer is installed at a methane seep at the summit of Southern Hydrate Ridge. The OOI-RCA mass spectrometer was built by Peter Girguis, Harvard University. Credit: UW/NSF-OOI/CSSF; ROPOS Dive R1772; V14.
+Soft corals bend in the currents at the edge of a bacterial mat. Here, live clams with symbionts thrive in the methane and hydrogen sulfide-rich fluids. Credit: UW/NSF-OOI/CSSF; ROPOS Dive R1773; V14.
+The manipulator arm of the ROV ROPOS reaches for a small block of methane hydrate wedged against a small rampart and nearly vertical wall within a large collapsed area at the summit of Southern Hydrate Ridge. Several minutes after sampling this site with the ROV, a continuous jet of methane bubbles issued from the large opening to the right of the hydrate sample. The methane hydrate is translucent, very clean and is reminiscent of quartz with a conchoidal-like fracture pattern and is partially encased in a thin skin of sediment. Credit: UW/NSF-OOI/CSSF; ROPOS Dive R1784; V14.
+Soft corals dot the rough carbonate surfaces of the ~ 60 m-tall limestone monolith west of the active seeps at Southern Hydrate Ridge. Credit: UW/NSF-OOI/CSSF; ROPOS Dive R1779; V14.
+A red jellyfish (Poralia rufescens) at Southern Hydrate Ridge undulates past the ROV ROPOS near the carbonate pinnacle site during Dive R1851. Credit: UW/NSF-OOI/CSSF; V15.
+A rockfish and a pedicellasterid starfish (possibly Ampheraster sp.) are intermixed with clams near a bacterial mat on the methane seep site, Southern Hydrate Ridge during ROPOS Dive R1850. Credit: NSF-OOI/UW/CSSF, V15.
+Hagfish investigate flow meters called Mosquitos at methane seeps at Southern Hydrate Ridge (water depth ~800 m). Data from these instruments allow calculation of the flux of fluids into and out of sediments at this gas hydrate site marked by thick bacterial mats and abundant clams. Credit: UW/NSF-OOI/WHOI; V16.
+The seep sites at Southern Hydrate Ridge are characterized by several meter-tall hummocks, the summits and sides of which are variably covered by white bacterial mats. Credit: UW/OOI-NSF/WHOI; J2-981; V17.
+A Mosquito, developed by UW Marine Geologist, Evan Solomon, is deployed at a methane seep at Southern Hydrate Ridge. The instrument pulls in fluids in the sediments with a tracer. The instruments are recovered annually and the fluid chemistry analyzed, providing calculations of the flow of fluids both into, and out of the seafloor. Credit: UW/OOI-NSF/WHOI; V17.
+This sole is at Southern Hydrate Ridge at ~800 m water depth. Credit: UW/NSF-OOI/CSSF; ROPOS Dive R1765; V14.
+Eelpouts have been spotted at Southern Hydrate Ridge around the FLOBN-MOS1 site at a water depth of ~775 m Credit: UW/NSF-OOI//CSSF; ROPOS Dive 1784; V14.
+Neptune Canada’s guide included it in the “sea anemone” category because of similarity, but it belongs to another order: Corallimorpharia. This Corallimorph anemone was spotted on the seafloor at Southern Hydrate Ridge at a depth of 774 m.
+This coral is not rigid, but is soft -it does not produce a calcium carbonate skeleton. The soft coral is at Southern Hydrate Ridge and the Pinnacle at depths around 775 m deep.
+Hermit crabs belonging to the genus Pagurus use snail shells as homes. There are over 170 species of hermit crab in this genus. These two hermit crabs were seen at Southern Hydrate Ridge at depth of 774 m. The species was unable to be identified. Credit: UW/NSF-OOI/CSSF; ROPOS Dive 1750; V14
+These clams thrive in hydrogen sulfide-rich environments, like the methane seep at Einstein's Grotto at Southern Hydrate Ridge. They usually have white shells and are typically partially buried beneath the sediment. Credit: UW/NSF-OOI/CSSF; ROPOS Dive 1750; V14.
+The roughtail skate has a broad nose and sharp scales on the surface. Roughtail skates are around 91 cm in length. This skate was seen at Southern Hydrate Ridge. Credit: UW/NSF-OOI/CSSF; ROPOS Dive 1777; V14.
+The anemone we found was purple in color and only had tentacles on the top around its oral disc, it was unable to be properly identified. This anemone was found on a rock at a depth of 775 m at Southern Hydrate Ridge. Credit: UW/NSF-OOI/CSSF; ROPOS Dive 1758; V14.
+These snails lay eggs in a spiral tower and the adult snail sits on top of the tower waiting for the eggs to hatch. The snails were all clustered together along a cable route SUM1W2 at Southern Hydrate Ridge. We did not see the snails at any location other than here. The depth at this location was 776 m. Credit: UW/NSF-OOI//CSSF; ROPOS Dive 1758; V14
+The Scarlet King Crab was seen at multiple locations along Hydrate Ridge. It was often found in sandier substrate, however it was also found among a large group of snails. Photo Credit: NSF-OOI/UW/CSSF; Dive 1758; V14
+A deep sea sole, surrounded by clam shells at Southern Hydrate Ridge (~ 800 m water depth). Credit. UW/NSF-OOI/WHOI, V18.
+An old Ocean Drilling Program hole serves as a nursery for hagfish and crabs at the summit of Southern Hydrate Ridge. Credit: UW/NSF-OOI/WHOI, V18.
+A hagfish with mouth wide open slithers around the Southern Hydrate Ridge methane seep site. Credit: UW/NSF-OOI/WHOI, V18.
+Interactive Map
+Contact
+Ocean Observatories Initiative
+NSF Disclaimer
+Privacy & Terms
+Interactive Map
+Contact
+Ocean Observatories Initiative
+NSF Disclaimer
+Privacy & Terms
+Instagram
+Twitter
+Close Panel
+Regional Cabled Array
+Ocean Observatories Initiative
+People
+Acknowledgements
+Contact

@@ -1,0 +1,705 @@
+Platforms and Nodes List - Ocean Observatories Initiative
+Skip to content
+Subscribe
+Access Data
+Help
+Menu
+The Observatory
+About OOI
+The Vision
+Leadership
+Program Documents
+Advisory Committees
+Glossary
+By the Numbers
+Arrays
+Global Irminger Sea Array
+Global Station Papa Array
+Coastal Endurance Array
+Coastal Pioneer Mid-Atlantic Bight Array
+Coastal Pioneer New England Shelf Array
+Regional Cabled Array
+Cabled Continental Margin Array
+Cabled Axial Seamount Array
+Cabled Endurance Array
+Global Argentine Basin
+Global Southern Ocean Array
+Additional Observing Assets in the Region
+Platforms and Nodes
+Infrastructure
+Cabled Infrastructure
+Moorings
+Profilers
+AUVs
+Gliders
+Cyberinfrastructure
+Instruments
+Science
+Expeditions
+Publications
+OOI-Related Publications
+Submit a Publication
+Science Highlights
+Science Questions
+Projects and Related Research
+Participate in OOI
+Adding Instruments or Platforms
+Participating in Cruises
+Deploying in OOI Areas
+Developing a Proposal
+Propose Modifications to Sampling
+Borrowing OOI Assets
+Community Engagement
+OOI Ambassador Program
+Science User Group for Research meetings
+Communities
+Educators
+Mariners
+Newsletter
+Events
+Visual Galleries
+Media
+Webinar Archive
+Join Us
+OOI Data
+Data Access
+Data Explorer
+Data Quality
+Data Updates and Corrections
+Data Products
+Data Products List
+Community Datasets
+Community Data Tools
+Jupyter Notebook
+How to Use, Acknowledge, and Cite Data
+Data HelpDesk
+Tutorials
+FAQs (Knowledge Base)
+Discourse
+Resources
+For Educators
+Image Gallery
+Video Gallery
+Glossary
+Contact
+Home
+Subscribe
+Access Data
+Help
+Skip to main content
+Skip to Navigation
+{{ searchMessage }}
+{{ searchItems.length }} results for "{{ searchQuery.trim() }}"
+You searched: {{ searchQuery }}
+Searching in:
+{{source.name}}
+{{ searchItems.length }} results for "{{ searchQuery.trim() }}"
+[{{ decodeEntities(result.type) | removeUnderscore}}]
+{{ decodeEntities(result.excerpt.rendered) | truncate(380) }}
+[{{ decodeEntities(result.type) | removeUnderscore }}]
+{{ decodeEntities(result.content.rendered) | truncate(380) }}
+Quick Links
+Home
+Data Portal
+Data Explorer
+Partner Data Sites
+How to Use, Acknowledge, and Cite Data
+How to Participate
+Infrastructure Status
+Need Help?
+Close Menu
+Menu
+The Observatory
+About OOI
+The Vision
+Leadership
+Program Documents
+Advisory Committees
+Glossary
+By the Numbers
+Arrays
+Global Irminger Sea Array
+Global Station Papa Array
+Coastal Endurance Array
+Coastal Pioneer Mid-Atlantic Bight Array
+Coastal Pioneer New England Shelf Array
+Regional Cabled Array
+Cabled Continental Margin Array
+Cabled Axial Seamount Array
+Cabled Endurance Array
+Global Argentine Basin
+Global Southern Ocean Array
+Additional Observing Assets in the Region
+Platforms and Nodes
+Infrastructure
+Cabled Infrastructure
+Moorings
+Profilers
+AUVs
+Gliders
+Cyberinfrastructure
+Instruments
+Quick Links
+Home
+Data Portal
+Data Explorer
+Partner Data Sites
+How to Use, Acknowledge, and Cite Data
+How to Participate
+Infrastructure Status
+Need Help?
+Science
+Expeditions
+Publications
+OOI-Related Publications
+Submit a Publication
+Science Highlights
+Science Questions
+Projects and Related Research
+Quick Links
+Home
+Data Portal
+Data Explorer
+Partner Data Sites
+How to Use, Acknowledge, and Cite Data
+How to Participate
+Infrastructure Status
+Need Help?
+Participate in OOI
+Adding Instruments or Platforms
+Participating in Cruises
+Deploying in OOI Areas
+Developing a Proposal
+Propose Modifications to Sampling
+Borrowing OOI Assets
+Quick Links
+Home
+Data Portal
+Data Explorer
+Partner Data Sites
+How to Use, Acknowledge, and Cite Data
+How to Participate
+Infrastructure Status
+Need Help?
+Community Engagement
+OOI Ambassador Program
+Science User Group for Research meetings
+Communities
+Educators
+Mariners
+Newsletter
+Events
+Visual Galleries
+Media
+Webinar Archive
+Join Us
+Quick Links
+Home
+Data Portal
+Data Explorer
+Partner Data Sites
+How to Use, Acknowledge, and Cite Data
+How to Participate
+Infrastructure Status
+Need Help?
+OOI Data
+Data Access
+Data Explorer
+Data Quality
+Data Updates and Corrections
+Data Products
+Data Products List
+Community Datasets
+Community Data Tools
+Jupyter Notebook
+How to Use, Acknowledge, and Cite Data
+Data HelpDesk
+Tutorials
+FAQs (Knowledge Base)
+Discourse
+Quick Links
+Home
+Data Portal
+Data Explorer
+Partner Data Sites
+How to Use, Acknowledge, and Cite Data
+How to Participate
+Infrastructure Status
+Need Help?
+Resources
+For Educators
+Image Gallery
+Video Gallery
+Glossary
+Contact
+Quick Links
+Home
+Data Portal
+Data Explorer
+Partner Data Sites
+How to Use, Acknowledge, and Cite Data
+How to Participate
+Infrastructure Status
+Need Help?
+Home::The Observatory::Platforms and Nodes
+Platforms and Nodes List
+This page provides a comprehensive listing of deployed infrastructure (i.e., platforms and nodes) across OOI arrays. Selecting the Array name provides a detailed description of the array. Selecting a Platform Name, ID, or DOI opens a detailed landing page mapped to the corresponding Digital Object Identifier (DOI). The landing page provides citation guidance, data access resources, descriptions, and a table of associated instruments. Each platform and instrument link directs users to their location within the OOI Data Explorer or to other resources on our data access page for further data exploration and download. This inventory enables cross-referencing of infrastructure and datasets to support time-series analyses, model-data comparisons, process studies, and integrated investigations across OOI’s Coastal, Global, and Cabled arrays.
+Additional Access to OOI-Related Data
+These pathways provide access to publications and curated OOI-based datasets, enabling cross-referencing for time-series, model–data, process, and integrated studies across OOI arrays.
+NSF Public Access Repository (PAR)
+OOI Community Datasets (provided by OOI users)
+Platforms
+Platform: An infrastructure setup that supports integrated scientific instruments. It can be fixed (e.g., a surface mooring) or mobile (e.g., a profiler mooring or glider). Platforms often contain multiple nodes for instrument attachment and data transmission to shore.
+Array
+Platform Name
+ID
+DOI
+Cabled Axial Seamount Array
+ASHES Vent Field
+RS03ASHS
+10.58046/OOI-RS03ASHS
+Cabled Axial Seamount Array
+Axial Base Seafloor
+RS03AXBS
+10.58046/OOI-RS03AXBS
+Cabled Axial Seamount Array
+Axial Base Deep Profiler Mooring
+RS03AXPD
+10.58046/OOI-RS03AXPD
+Cabled Axial Seamount Array
+Axial Base Shallow Profiler Mooring
+RS03AXPS
+10.58046/OOI-RS03AXPS
+Cabled Axial Seamount Array
+Central Caldera
+RS03CCAL
+10.58046/OOI-RS03CCAL
+Cabled Axial Seamount Array
+Eastern Caldera
+RS03ECAL
+10.58046/OOI-RS03ECAL
+Cabled Axial Seamount Array
+International District Vent Field 1
+RS03INT1
+10.58046/OOI-RS03INT1
+Cabled Axial Seamount Array
+International District Vent Field 2
+RS03INT2
+10.58046/OOI-RS03INT2
+Cabled Continental Margin Array
+Oregon Slope Base Deep Profiler Mooring
+RS01SBPD
+10.58046/OOI-RS01SBPD
+Cabled Continental Margin Array
+Oregon Slope Base Shallow Profiler Mooring
+RS01SBPS
+10.58046/OOI-RS01SBPS
+Cabled Continental Margin Array
+Oregon Slope Base Seafloor
+RS01SLBS
+10.58046/OOI-RS01SLBS
+Cabled Continental Margin Array
+Southern Hydrate Summit 1 Seafloor
+RS01SUM1
+10.58046/OOI-RS01SUM1
+Cabled Continental Margin Array
+Southern Hydrate Summit 2 Seafloor
+RS01SUM2
+10.58046/OOI-RS01SUM2
+Cabled Endurance Array
+Oregon Shelf Benthic Experiment Package
+CE02SHBP
+10.58046/OOI-CE02SHBP
+Cabled Endurance Array
+Oregon Offshore Cabled Benthic Experiment Package
+CE04OSBP
+10.58046/OOI-CE04OSBP
+Cabled Endurance Array
+Oregon Offshore Cabled Deep Profiler Mooring
+CE04OSPD
+10.58046/OOI-CE04OSPD
+Cabled Endurance Array
+Oregon Offshore Cabled Shallow Profiler Mooring
+CE04OSPS
+10.58046/OOI-CE04OSPS
+Coastal Endurance Array
+Oregon Inshore Surface Mooring
+CE01ISSM
+10.58046/OOI-CE01ISSM
+Coastal Endurance Array
+Oregon Inshore Surface Piercing Profiler Mooring
+CE01ISSP
+10.58046/OOI-CE01ISSP
+Coastal Endurance Array
+Oregon Shelf Surface Mooring
+CE02SHSM
+10.58046/OOI-CE02SHSM
+Coastal Endurance Array
+Oregon Shelf Surface Piercing Profiler Mooring
+CE02SHSP
+10.58046/OOI-CE02SHSP
+Coastal Endurance Array
+Oregon Offshore Surface Mooring
+CE04OSSM
+10.58046/OOI-CE04OSSM
+Coastal Endurance Array
+Mobile Assets
+CE05MOAS
+10.58046/OOI-CE05MOAS
+Coastal Endurance Array
+Washington Inshore Surface Mooring
+CE06ISSM
+10.58046/OOI-CE06ISSM
+Coastal Endurance Array
+Washington Inshore Surface Piercing Profiler Mooring
+CE06ISSP
+10.58046/OOI-CE06ISSP
+Coastal Endurance Array
+Washington Shelf Surface Mooring
+CE07SHSM
+10.58046/OOI-CE07SHSM
+Coastal Endurance Array
+Washington Shelf Surface Piercing Profiler Mooring
+CE07SHSP
+10.58046/OOI-CE07SHSP
+Coastal Endurance Array
+Washington Offshore Profiler Mooring
+CE09OSPM
+10.58046/OOI-CE09OSPM
+Coastal Endurance Array
+Washington Offshore Surface Mooring
+CE09OSSM
+10.58046/OOI-CE09OSSM
+Coastal Pioneer Mid-Atlantic Bight Array
+Central Surface Mooring
+CP10CNSM
+10.58046/OOI-CP10CNSM
+Coastal Pioneer Mid-Atlantic Bight Array
+Northern Surface Mooring
+CP11NOSM
+10.58046/OOI-CP11NOSM
+Coastal Pioneer Mid-Atlantic Bight Array
+Southern Surface Mooring
+CP11SOSM
+10.58046/OOI-CP11SOSM
+Coastal Pioneer Mid-Atlantic Bight Array
+Central Shallow Water Mooring
+CP12CNSW
+10.58046/OOI-CP12CNSW
+Coastal Pioneer Mid-Atlantic Bight Array
+Western Shallow Water Mooring
+CP12WESW
+10.58046/OOI-CP12WESW
+Coastal Pioneer Mid-Atlantic Bight Array
+Eastern Profiler Mooring
+CP13EAPM
+10.58046/OOI-CP13EAPM
+Coastal Pioneer Mid-Atlantic Bight Array
+Northern Profiler Mooring
+CP13NOPM
+10.58046/OOI-CP13NOPM
+Coastal Pioneer Mid-Atlantic Bight Array
+Southern Profiler Mooring
+CP13SOPM
+10.58046/OOI-CP13SOPM
+Coastal Pioneer Mid-Atlantic Bight Array
+Northeastern Profiler Mooring
+CP14NEPM
+10.58046/OOI-CP14NEPM
+Coastal Pioneer Mid-Atlantic Bight Array
+Southeastern Profiler Mooring
+CP14SEPM
+10.58046/OOI-CP14SEPM
+Coastal Pioneer Mid-Atlantic Bight Array
+Pioneer MAB Glider Mobile Assets
+CP15MOAS
+10.58046/OOI-CP15MOAS
+Coastal Pioneer Mid-Atlantic Bight Array
+Pioneer MAB AUV Mobile Assets
+CP16MOAS
+10.58046/OOI-CP16MOAS
+Coastal Pioneer New England Shelf Array
+Central Profiler Mooring
+CP01CNPM
+10.58046/OOI-CP01CNPM
+Coastal Pioneer New England Shelf Array
+Central Surface Mooring
+CP01CNSM
+10.58046/OOI-CP01CNSM
+Coastal Pioneer New England Shelf Array
+Central Surface Piercing Profiler Mooring
+CP01CNSP
+10.58046/OOI-CP01CNSP
+Coastal Pioneer New England Shelf Array
+Central Inshore Profiler Mooring
+CP02PMCI
+10.58046/OOI-CP02PMCI
+Coastal Pioneer New England Shelf Array
+Central Offshore Profiler Mooring
+CP02PMCO
+10.58046/OOI-CP02PMCO
+Coastal Pioneer New England Shelf Array
+Upstream Inshore Profiler Mooring
+CP02PMUI
+10.58046/OOI-CP02PMUI
+Coastal Pioneer New England Shelf Array
+Upstream Offshore Profiler Mooring
+CP02PMUO
+10.58046/OOI-CP02PMUO
+Coastal Pioneer New England Shelf Array
+Inshore Profiler Mooring
+CP03ISPM
+10.58046/OOI-CP03ISPM
+Coastal Pioneer New England Shelf Array
+Inshore Surface Mooring
+CP03ISSM
+10.58046/OOI-CP03ISSM
+Coastal Pioneer New England Shelf Array
+Inshore Surface Piercing Profiler Mooring
+CP03ISSP
+10.58046/OOI-CP03ISSP
+Coastal Pioneer New England Shelf Array
+Offshore Profiler Mooring
+CP04OSPM
+10.58046/OOI-CP04OSPM
+Coastal Pioneer New England Shelf Array
+Offshore Surface Mooring
+CP04OSSM
+10.58046/OOI-CP04OSSM
+Coastal Pioneer New England Shelf Array
+Mobile Assets
+CP05MOAS
+10.58046/OOI-CP05MOAS
+Global Argentine Basin
+Apex Surface Mooring
+GA01SUMO
+10.58046/OOI-GA01SUMO
+Global Argentine Basin
+Apex Profiler Mooring
+GA02HYPM
+10.58046/OOI-GA02HYPM
+Global Argentine Basin
+Flanking Subsurface Mooring A
+GA03FLMA
+10.58046/OOI-GA03FLMA
+Global Argentine Basin
+Flanking Subsurface Mooring B
+GA03FLMB
+10.58046/OOI-GA03FLMB
+Global Argentine Basin
+Mobile Assets
+GA05MOAS
+10.58046/OOI-GA05MOAS
+Global Irminger Sea Array
+Apex Surface Mooring
+GI01SUMO
+10.58046/OOI-GI01SUMO
+Global Irminger Sea Array
+Apex Profiler Mooring
+GI02HYPM
+10.58046/OOI-GI02HYPM
+Global Irminger Sea Array
+Flanking Subsurface Mooring A
+GI03FLMA
+10.58046/OOI-GI03FLMA
+Global Irminger Sea Array
+Flanking Subsurface Mooring B
+GI03FLMB
+10.58046/OOI-GI03FLMB
+Global Irminger Sea Array
+Mobile Assets
+GI05MOAS
+10.58046/OOI-GI05MOAS
+Global Southern Ocean Array
+Apex Surface Mooring
+GS01SUMO
+10.58046/OOI-GS01SUMO
+Global Southern Ocean Array
+Apex Profiler Mooring
+GS02HYPM
+10.58046/OOI-GS02HYPM
+Global Southern Ocean Array
+Flanking Subsurface Mooring A
+GS03FLMA
+10.58046/OOI-GS03FLMA
+Global Southern Ocean Array
+Flanking Subsurface Mooring B
+GS03FLMB
+10.58046/OOI-GS03FLMB
+Global Southern Ocean Array
+Mobile Assets
+GS05MOAS
+10.58046/OOI-GS05MOAS
+Global Station Papa Array
+Apex Profiler Mooring
+GP02HYPM
+10.58046/OOI-GP02HYPM
+Global Station Papa Array
+Flanking Subsurface Mooring A
+GP03FLMA
+10.58046/OOI-GP03FLMA
+Global Station Papa Array
+Flanking Subsurface Mooring B
+GP03FLMB
+10.58046/OOI-GP03FLMB
+Global Station Papa Array
+Mobile Assets
+GP05MOAS
+10.58046/OOI-GP05MOAS
+Nodes
+Node: A part of a platform that houses computers and power converters, collecting and transmitting instrument data. Some platforms, like gliders, have a single node, while others, like moorings, connect multiple nodes for various instruments.
+Array
+Node Name
+ID
+DOI
+Cabled Axial Seamount Array
+Axial Base Primary Node
+PN03A
+Cabled Axial Seamount Array
+ASHES Vent Field Primary Node
+PN03B
+Cabled Axial Seamount Array
+Juan de Fuca Mid-Plate Primary Node
+PN05A
+Cabled Continental Margin Array
+Oregon Slope Base Primary Node
+PN01A
+Cabled Continental Margin Array
+Hydrate Ridge Primary Node
+PN01B
+Coastal Endurance Array
+Oregon Offshore Primary Node
+PN01C
+Coastal Endurance Array
+Oregon Shelf Primary Node
+PN01D
+The Observatory
+About OOI
+The Vision
+Leadership
+Program Documents
+Advisory Committees
+Glossary
+By the Numbers
+Arrays
+Global Irminger Sea Array
+Global Station Papa Array
+Coastal Endurance Array
+Coastal Pioneer Mid-Atlantic Bight Array
+Coastal Pioneer New England Shelf Array
+Regional Cabled Array
+Cabled Continental Margin Array
+Cabled Axial Seamount Array
+Cabled Endurance Array
+Global Argentine Basin
+Global Southern Ocean Array
+Additional Observing Assets in the Region
+Platforms and Nodes
+Infrastructure
+Cabled Infrastructure
+Moorings
+Profilers
+AUVs
+Gliders
+Cyberinfrastructure
+Instruments
+Science
+Expeditions
+Publications
+OOI-Related Publications
+Submit a Publication
+Science Highlights
+Science Questions
+Projects and Related Research
+Participate in OOI
+Adding Instruments or Platforms
+Participating in Cruises
+Deploying in OOI Areas
+Developing a Proposal
+Propose Modifications to Sampling
+Borrowing OOI Assets
+Community Engagement
+OOI Ambassador Program
+Science User Group for Research meetings
+Communities
+Educators
+Mariners
+Newsletter
+Events
+Visual Galleries
+Media
+Webinar Archive
+Join Us
+OOI Data
+Data Access
+Data Explorer
+Data Quality
+Data Updates and Corrections
+Data Products
+Data Products List
+Community Datasets
+Community Data Tools
+Jupyter Notebook
+How to Use, Acknowledge, and Cite Data
+Data HelpDesk
+Tutorials
+FAQs (Knowledge Base)
+Discourse
+Resources
+For Educators
+Image Gallery
+Video Gallery
+Glossary
+Contact
+The Ocean Observatories Initiative (OOI) is a science-driven ocean observing network that delivers real-time data from more than 900 instruments to address critical science questions regarding the world’s oceans.
+About OOI
+Science
+The Ocean Observatories Initiative
+Data Products
+Contact
+Resources
+Community Data Tools
+Data Access
+OOI Ambassador Program
+FAQ and Knowledgebase
+Glossary
+Need Help?
+Join Us
+How to Participate
+Workshops/Conferences
+Stay Connected
+Sign up for our newsletter to get the latest news from Ocean Observatories Initiative
+Subscribe now
+Join the Conversation
+© 2026 NSF Ocean Observatories Initiative. All Rights Reserved. The Ocean Observatories Initiative is a major facility fully funded by the U.S. National Science Foundation.
+Any opinions, findings, and conclusions or recommendations expressed in this material do not necessarily reflect the views of the U.S. National Science Foundation. Internal | PMO/MIO Log in
+Cookies Policy
+To provide the best experience possible, we use cookies and other data for a number of reasons, such as keeping the OOI sites reliable and secure, providing social media features and to analyze how our sites are used.
+Functional
+Functional
+Always active
+The technical storage or access is strictly necessary for the legitimate purpose of enabling the use of a specific service explicitly requested by the subscriber or user, or for the sole purpose of carrying out the transmission of a communication over an electronic communications network.
+Preferences
+Preferences
+The technical storage or access is necessary for the legitimate purpose of storing preferences that are not requested by the subscriber or user.
+Statistics
+Statistics
+The technical storage or access that is used exclusively for statistical purposes.
+The technical storage or access that is used exclusively for anonymous statistical purposes. Without a subpoena, voluntary compliance on the part of your Internet Service Provider, or additional records from a third party, information stored or retrieved for this purpose alone cannot usually be used to identify you.
+Marketing
+Marketing
+The technical storage or access is required to create user profiles to send advertising, or to track the user on a website or across several websites for similar marketing purposes.
+Manage options
+Manage services
+Manage {vendor_count} vendors
+Read more about these purposes
+Accept All
+Necessary cookies only
+Customize settings
+Save preferences
+Customize settings
+{title}
+{title}
+{title}
+Manage consent
+Scroll To Top
