@@ -11,6 +11,12 @@ Download `/abyss-trmnl.zip` from the published site and import the **whole recip
 The archive includes `settings.yml`, `transform.py`, four layouts, Shared and this
 guide. Updating only the Liquid markup is insufficient for rotation.
 
+The export also includes the public recipe overview and an **About Abyss** field
+with the introduction, camera locations and depths, official maps, full science
+credits and a support link. Re-import settings to receive About updates; they
+do not add text to the device layouts. The same introduction appears on the
+public site's About section.
+
 For a manual update, keep the polling URL (`/catalog.json`, GET) and playlist;
 apply the generated settings, including the optional **multiple** select
 `source_ids`, enable the native **Python serverless transform**, and install

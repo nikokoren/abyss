@@ -6,9 +6,11 @@ on:
     paths:
       - trmnl/**
       - abyss/recipe.py
+      - abyss/about.py
       - abyss/cli.py
       - abyss/publication.py
       - scripts/build_site.py
+      - docs/viewer.html
       - sources.json
       - abyss/adapters.py
       - abyss/stills.py

@@ -1,0 +1,95 @@
+{
+  "reviewed_at": "2026-10-28",
+  "runner_url": "https://github.com/nikokoren/abyss/actions/runs/40764629022",
+  "evidence_url": "https://github.com/nikokoren/abyss/tree/4f306f2d5e4bf1d9c0a0b95b5e35f8b1cb14a798/terms/ooi-axial/40764629022",
+  "pages": [
+    {
+      "url": "https://interactiveoceans.washington.edu/research-sites/axial-caldera/ashes/",
+      "status": 200,
+      "sha256": "c22a3db5f96e65cf783bb903074846929819c8e9269c2d3f5e8f2b6cbe6fe58f",
+      "text": "04-4632dc66920b.txt"
+    },
+    {
+      "url": "https://oceanobservatories.org/array/cabled-axial-seamount-array/",
+      "status": 200,
+      "sha256": "3e54e9e125f4db8471170cc999e1715f59774dc2c940170c23fe4c7556a02307",
+      "text": "08-51ee58be4ea9.txt"
+    },
+    {
+      "url": "https://oceanobservatories.org/array/cabled-continental-margin-array/",
+      "status": 200,
+      "sha256": "885ddc54a9a1244c79ad4b06059614831f982a01bf3b2283f04d26d4b368e545",
+      "text": "09-a2ccdbd9bfa6.txt"
+    },
+    {
+      "url": "https://oceanobservatories.org/regional-cabled-array/",
+      "status": 200,
+      "sha256": "a30d3990d58300c229dc8a49d92bf75b4453dd41808b5c5b532a14ba107c7ef6",
+      "text": "10-1e9c627ab929.txt"
+    },
+    {
+      "url": "https://interactiveoceans.washington.edu/research-sites/axial-caldera/international-district/",
+      "status": 200,
+      "sha256": "158b012104f84df9cb25575b1822c79264146431d21863629568551dc531dd89",
+      "text": "11-0bfea8c357f7.txt"
+    },
+    {
+      "url": "https://interactiveoceans.washington.edu/research-sites/southern-hydrate-ridge/",
+      "status": 200,
+      "sha256": "67e6f07606bfb86797d38568e273c09afd16185aa5ee0186ab9accf991c6916a",
+      "text": "12-ccbe15abdccf.txt"
+    }
+  ],
+  "graphic_links": [
+    {
+      "name": "Axial Seamount array illustration",
+      "url": "https://oceanobservatories.org/wp-content/uploads/2020/10/CEV-OOI-CabledArray-Axialt-scaled.jpg",
+      "checked_at": "2026-10-28T20:35:44.845216+00:00",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "content_length": "729671"
+    },
+    {
+      "name": "Continental margin array illustration",
+      "url": "https://oceanobservatories.org/wp-content/uploads/2020/10/CEV-OOI-CabledArray-ContinentalMargint-scaled.jpg",
+      "checked_at": "2026-10-28T20:35:44.845577+00:00",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "content_length": "588725"
+    },
+    {
+      "name": "Regional Cabled Array map",
+      "url": "https://oceanobservatories.org/wp-content/uploads/2023/09/OOI_Map_Cabled_Array-OPTIMIZED.png",
+      "checked_at": "2026-10-28T20:35:44.846017+00:00",
+      "status": 200,
+      "content_type": "image/png",
+      "content_length": "464396"
+    },
+    {
+      "name": "ASHES site map",
+      "url": "https://s3-us-west-2.amazonaws.com/media.ooica.net/wp-content/uploads/2020/08/06193730/ASHES-Map-2020.png",
+      "checked_at": "2026-10-28T20:35:45.029156+00:00",
+      "status": 200,
+      "content_type": "image/png",
+      "content_length": "13940325"
+    },
+    {
+      "name": "Tiny Towers site map",
+      "url": "https://s3-us-west-2.amazonaws.com/media.ooica.net/wp-content/uploads/2020/08/06193821/Tiny-Towers-Hydrothermal-Field-Map-2020.png",
+      "checked_at": "2026-10-28T20:35:45.031011+00:00",
+      "status": 200,
+      "content_type": "image/png",
+      "content_length": "10404901"
+    },
+    {
+      "name": "Southern Hydrate Ridge site map",
+      "url": "https://s3.us-west-2.amazonaws.com/media.ooica.net/wp-content/uploads/2021/01/28232704/Southern-Hydrate-Map.png",
+      "checked_at": "2026-10-28T20:35:45.031152+00:00",
+      "status": 200,
+      "content_type": "image/png",
+      "content_length": "2687143"
+    }
+  ],
+  "graphics_copied": false,
+  "scope": "Location and link verification. Links to website artwork do not extend the separate derived-instrument-still rights review."
+}

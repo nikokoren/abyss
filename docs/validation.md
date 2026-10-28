@@ -1,5 +1,20 @@
 # Validation evidence and remaining acceptance gates
 
+## About, camera locations and official graphics — 28 October 2026
+
+The recipe now exports a public overview and native `author_bio` About field;
+the website uses the same introduction and geography. **107 Python tests passed**.
+Browser checks at 390 and 1280 pixels verified all three camera descriptions,
+official links, expanded content placeholders and absence of horizontal overflow.
+All six official graphic links returned HTTP 200 with image MIME types on
+[the GitHub runner](https://github.com/nikokoren/abyss/actions/runs/40764629022).
+The new [evidence index](evidence/camera-location-links-20261028.json) records
+source-page hashes and HEAD results. Website graphics remain externally linked;
+they were not copied into the release or included in the instrument-still license.
+OOI confirms the 900 km cable network, both vent fields on Axial Seamount, and
+Southern Hydrate Ridge about 90 km west of Newport, Oregon. Depths remain
+approximate and source site-map captions retain historical deployment dates.
+
 ## Compact QR overlay — 28 October 2026
 
 **107 Python tests and 100 native Framework 3.4.4 browser cases passed.** The

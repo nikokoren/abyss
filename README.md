@@ -1,8 +1,14 @@
 # Abyss — Ambient Ocean for TRMNL
 
-A cloud-run underwater camera discovery and image-selection pipeline. It samples
-research recordings, ranks frames, preserves full-resolution color stills, and serves
-attributed metadata for a source-selectable TRMNL recipe.
+A window into the deep Pacific, quietly on your TRMNL. Explore hydrothermal
+vents on Axial Seamount and a methane seep at Southern Hydrate Ridge off Oregon.
+U.S. public investment in NSF's Ocean Observatories Initiative makes these
+extraordinary observations possible; open science lets the rest of us look in.
+
+Abyss samples research recordings, ranks frames, preserves full-resolution color
+stills, and serves attributed metadata for a source-selectable TRMNL recipe.
+The recipe's About section includes the camera locations, approximate depths,
+and official regional maps, site maps and array illustrations.
 
 **Status: implemented; OOI access, range support and visible vent footage were
 verified by the user on a Mac.** GitHub-hosted validation also passed: four frame seeks, 10.26 MB of video
