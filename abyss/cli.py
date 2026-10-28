@@ -22,13 +22,13 @@ def main():
         p.add_argument('--source')
         p.add_argument('--output', default='output')
         p.add_argument('--base-url')
-        p.add_argument('--max-bytes', type=int, default=64 * 1024 * 1024)
-        p.add_argument('--candidates', type=int, default=8, help='Maximum frames per recording including refinement')
+        p.add_argument('--max-bytes', type=int, default=96 * 1024 * 1024)
+        p.add_argument('--candidates', type=int, default=10, help='Maximum frames per recording including refinement')
         p.add_argument('--recordings', type=int, default=3)
         p.add_argument('--preference-model', default='preferences/model.json')
-        p.add_argument('--coarse-candidates', type=int, default=4)
-        p.add_argument('--refine-candidates', type=int, default=4, help='Total extra frame seeks across the search')
-        p.add_argument('--refine-windows', type=int, default=2)
+        p.add_argument('--coarse-candidates', type=int, default=6)
+        p.add_argument('--refine-candidates', type=int, default=6, help='Total extra frame seeks across the search')
+        p.add_argument('--refine-windows', type=int, default=3)
         p.add_argument('--interval', type=float, default=60)
         p.add_argument('--width', type=int, default=800)
         p.add_argument('--height', type=int, default=448)
@@ -43,11 +43,19 @@ def main():
     recipe.add_argument('--output', default='output')
     recipe.add_argument('--base-url', required=True)
     recipe.add_argument('--destination', default='output/recipe/settings.yml')
+    retention = sub.add_parser('retain')
+    retention.add_argument('--output', default='output')
+    retention.add_argument('--base-url', required=True)
+    retention.add_argument('--max-bytes', type=int, default=640 * 1024 * 1024)
     args = parser.parse_args()
     logging.basicConfig(level=logging.INFO, format='%(levelname)s %(message)s')
     try:
         if args.command == 'recipe':
             generate(args.output, args.base_url, args.destination)
+            return
+        if args.command == 'retain':
+            from .retention import retain
+            print(json.dumps(retain(args.output, args.base_url, max_bytes=args.max_bytes), indent=2))
             return
         sources = load(args.registry)
         if args.command == 'sources':

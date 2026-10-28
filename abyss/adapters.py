@@ -7,6 +7,10 @@ from .network import read_small, classify_failure
 UTC = timezone.utc
 
 
+class NoFreshRecordings(RuntimeError):
+    failure_category = 'discovery_no_fresh_recordings'
+
+
 class Links(HTMLParser):
     def __init__(self):
         super().__init__()
@@ -51,24 +55,30 @@ def directory_recordings(source, day):
     return sorted(records.values(), key=lambda r: r['recorded_at'], reverse=True)
 
 
-def discover_many(source, now=None, limit=3, *, min_spacing_seconds=0):
+def discover_many(source, now=None, limit=3, *, min_spacing_seconds=0, exclude_urls=(), recorded_after=None):
     """Newest eligible recordings, including across UTC date boundaries."""
     if not 1 <= limit <= 12:
         raise ValueError('Recording count must be 1..12')
     if not 0 <= min_spacing_seconds <= 86400:
         raise ValueError('Recording spacing must be 0..86400 seconds')
+    excluded = set(exclude_urls)
+    after = datetime.fromisoformat(recorded_after.replace('Z', '+00:00')) if recorded_after else None
+    if after and after.tzinfo is None:
+        raise ValueError('Fresh-recording cutoff needs a timezone')
     if source['adapter'] == 'direct':
         stamp = source.get('recorded_at')
         if stamp:
             parsed = datetime.fromisoformat(stamp.replace('Z', '+00:00'))
             if parsed.tzinfo is None:
                 raise ValueError('Recording timestamps must include a timezone')
+        if source['video_url'] in excluded or (after and (not stamp or parsed <= after)):
+            raise NoFreshRecordings('The direct recording has already been reviewed')
         return [{'url': source['video_url'], 'recorded_at': stamp}]
     if source['adapter'] not in {'ooi_directory', 'ooi_image_directory'}:
         raise ValueError('No adapter for source')
     now = now or datetime.now(UTC)
     cutoff = (now - timedelta(minutes=source.get('completion_delay_minutes', 60))).isoformat()
-    candidates, failures = [], []
+    candidates, failures, directories_read = [], [], 0
     def spaced(records):
         selected = []
         for record in sorted(records, key=lambda r: r['recorded_at'], reverse=True):
@@ -79,15 +89,21 @@ def discover_many(source, now=None, limit=3, *, min_spacing_seconds=0):
                 break
         return selected
     for days in range(source.get('lookback_days', 14)):
+        if after and (now - timedelta(days=days)).date() < after.date():
+            break
         try:
             recordings = directory_recordings(source, now - timedelta(days=days))
+            directories_read += 1
         except Exception as exc:
             failures.append(classify_failure(exc))
             continue
-        candidates.extend(r for r in recordings if r['recorded_at'] <= cutoff)
+        candidates.extend(r for r in recordings if r['recorded_at'] <= cutoff and r['url'] not in excluded
+                          and (after is None or datetime.fromisoformat(r['recorded_at']) > after))
         if len(spaced(candidates)) >= limit:
             break
     if not candidates:
+        if directories_read and (excluded or after):
+            raise NoFreshRecordings('No new eligible recordings since the reviewed footage; wait for a fresh session')
         failure = RuntimeError(f'No eligible recordings in lookback window ({len(failures)} directory failures)')
         failure.failure_category = failures[0] if failures and len(set(failures)) == 1 else 'discovery_no_eligible_recordings'
         raise failure

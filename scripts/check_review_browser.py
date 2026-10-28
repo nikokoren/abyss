@@ -38,6 +38,8 @@ def main():
                         'seconds':0,'stage':'snapshot','quality':{'score':.8,'fingerprint':'01'*128},
                         'selection_score':.8},image,features)
         stable.save(Path(tmp)/'static',Encoder(),{})
+        waiting=Gallery(source,'nikokoren','nikokoren/abyss')
+        waiting.save(Path(tmp)/'waiting',Encoder(),{},waiting=True)
         class Handler(SimpleHTTPRequestHandler):
             def log_message(self,*args):pass
         server=ThreadingHTTPServer(('127.0.0.1',0),functools.partial(Handler,directory=tmp))
@@ -91,6 +93,13 @@ def main():
                 assert page.locator('#count').inner_text()=='0 choices saved'
                 assert page.evaluate('document.documentElement.scrollWidth <= innerWidth')
                 page.screenshot(path='output/validation/preference-gallery-static.png',full_page=True)
+                assert not errors,errors
+                page.goto(f'http://127.0.0.1:{server.server_port}/waiting/')
+                page.get_by_role('heading',name='Waiting for fresh footage.').wait_for()
+                assert not page.locator('#pair-grid').is_visible()
+                assert not page.locator('#submit').is_visible()
+                page.keyboard.press('1')
+                assert page.locator('#count').inner_text()=='0 choices saved'
                 assert not errors,errors
                 if arguments.check_file:
                     page.goto(Path(tmp,'index.html').as_uri())

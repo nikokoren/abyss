@@ -94,6 +94,14 @@ def search(source, recordings, directory, args, history=()):
         # Only refine promising, technically usable moments. Deduplicate offsets
         # within a recording and honor both total and per-recording candidate caps.
         promising = sorted(candidates, key=lambda c: c['selection_score'], reverse=True)
+        # Refine each recording's strongest moment before revisiting one session.
+        leaders = []
+        for session in sessions:
+            leader = next((c for c in promising if c['session'] is session), None)
+            if leader:
+                leaders.append(leader)
+        promising = sorted(leaders, key=lambda c: c['selection_score'], reverse=True) + [
+            c for c in promising if not any(c is leader for leader in leaders)]
         chosen, used = [], 0
         for candidate in promising:
             session = candidate['session']
@@ -149,8 +157,18 @@ def search(source, recordings, directory, args, history=()):
                         'decoded_size': session.get('decoded_size'),
                         'original_size': session.get('original_size'),
                         'recording_bytes': video.total if video else None})
-    usable = [c for c in candidates if c['quality']['score'] >= profile.get('min_score', .30)]
-    best = max(usable or candidates, key=lambda c: (c['selection_score'] if usable else c['quality']['score'], c['recording'].get('recorded_at') or ''), default=None)
+    winners = []
+    for session in sessions:
+        group = [c for c in candidates if c['session'] is session]
+        usable = [c for c in group if c['quality']['score'] >= profile.get('min_score', .30)]
+        winner = max(usable or group, key=lambda c: (c['selection_score'] if usable else c['quality']['score'], -c['seconds']), default=None)
+        if winner:
+            winners.append(winner)
+    usable = [c for c in winners if c['quality']['score'] >= profile.get('min_score', .30)]
+    selected = max(usable or winners, key=lambda c: (c['selection_score'] if usable else c['quality']['score'], c['recording'].get('recorded_at') or ''), default=None)
+    best = dict(selected) if selected else None
+    if best:
+        best['session_winners'] = winners
     diagnostics = {'strategy': 'recent_snapshots' if all(r.get('media_type') == 'image' for r in recordings) else 'coarse_to_fine',
                    'preference': {'model_id': model['model_id'] if model else None,
                                   'status': 'active' if model else 'quality_fallback', 'error': preference_error}, 'recordings_considered': len(recordings),
@@ -165,4 +183,7 @@ def search(source, recordings, directory, args, history=()):
                    'candidate_scores': [{'recording_url': c['recording']['url'], 'frame_seconds': c['seconds'],
                                          'stage': c['stage'], 'selection_score': c['selection_score'],
                                          'preference_score': c['preference_score'], **c['quality']} for c in candidates]}
+    diagnostics['session_winners'] = [{'recording_url': c['recording']['url'], 'frame_seconds': c['seconds'],
+        'quality_score': c['quality']['score'], 'selection_score': c['selection_score'],
+        'accepted': c['quality']['score'] >= profile.get('min_score', .30)} for c in winners]
     return best, diagnostics, completed

@@ -213,12 +213,29 @@ class RankingIntegrationTests(unittest.TestCase):
                 self.assertEqual(run([s],a)[s['id']],'published')
                 self.assertEqual(run([s],a)[s['id']],'unchanged')
                 atomic_json(p,model)
-                self.assertEqual(run([s],a)[s['id']],'published')
+                # The model is reevaluated, but an identical winning image is not republished.
+                self.assertEqual(run([s],a)[s['id']],'unchanged')
                 self.assertEqual(run([s],a)[s['id']],'unchanged')
                 self.assertEqual(searcher.call_count,2)
 
 
 class GalleryTests(unittest.TestCase):
+    def test_fresh_evaluation_eligibility_is_computed_from_actual_candidate_recordings(self):
+        class Encoder: provenance = {'feature_space': FEATURE_SPACE, 'weights_sha256': 'test'}
+        model = {'status': 'ready', 'model_id': 'frozen', 'comparisons': 80}
+        for leaked in (False, True):
+            context = {'fresh_recordings_only': True, 'training_recording_urls': ['https://camera.example/old.mp4']}
+            gallery = Gallery(source(), 'nikokoren', 'nikokoren/abyss', model, evaluation_context=context)
+            for i in range(2):
+                url = 'https://camera.example/old.mp4' if leaked and i == 0 else f'https://camera.example/new-{i}.mp4'
+                gallery.add({'recording': {'url': url, 'recorded_at': None}, 'seconds': i, 'stage': 'coarse',
+                             'quality': {'score': .8, 'fingerprint': '0'*256}, 'selection_score': .9,
+                             'preference_score': .95}, Image.new('RGB', (800, 448), 'gray'), features(6+i))
+            with tempfile.TemporaryDirectory() as tmp:
+                result = gallery.save(tmp, Encoder(), {})
+            self.assertEqual(result['evaluation_context']['eligible'], not leaked)
+            self.assertEqual(result['evaluation_context']['model_id'], 'frozen')
+
     def test_single_file_gallery_escapes_metadata_and_manifest_has_no_images(self):
         s=source();s['name']='Ocean </script><script>alert(1)</script>'
         gallery=Gallery(s,'nikokoren','nikokoren/abyss')

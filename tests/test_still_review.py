@@ -102,11 +102,11 @@ class StillReviewTests(unittest.TestCase):
                 with self.assertRaises(ValueError):
                     review_inputs(camera, **changes)
 
-    def test_video_review_keeps_three_recordings_and_64_mib_default(self):
+    def test_video_review_keeps_three_recordings_and_96_mib_default(self):
         source = next(s for s in load('sources.json') if s['id'] == 'ooi-axial')
         with patch('abyss.review.discover_many', return_value=['video']) as discover:
             reviewed, records, budget = review_inputs(source)
         self.assertIs(reviewed, source)
         self.assertEqual(records, ['video'])
-        self.assertEqual(budget, 64 * 1024 * 1024)
+        self.assertEqual(budget, 96 * 1024 * 1024)
         discover.assert_called_once_with(source, limit=3)

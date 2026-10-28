@@ -8,10 +8,12 @@ import os
 import re
 import tempfile
 import time
+from types import SimpleNamespace
 from datetime import datetime, timezone
 from pathlib import Path
 from PIL import Image
-from .adapters import discover_many
+from .adapters import discover_many, NoFreshRecordings
+from .evaluation import feedback_context
 from .feedback import batch_id
 from .imaging import render_for_source, similarity
 from .preferences import FEATURE_SPACE, ImageEncoder, digest, load_model
@@ -43,15 +45,17 @@ def distinct_candidates(candidates):
     return kept
 
 
-def review_inputs(source, *, max_bytes=None, snapshot_count=9, snapshot_spacing_minutes=20):
+def review_inputs(source, *, max_bytes=None, snapshot_count=9, snapshot_spacing_minutes=20, fresh_context=None):
     """Review several capture bursts without changing production byte limits."""
     if not 2 <= snapshot_count <= 12 or not 1 <= snapshot_spacing_minutes <= 1440:
         raise ValueError('Review requires 2..12 snapshots spaced 1..1440 minutes apart')
     if source['adapter'] != 'ooi_image_directory':
-        limit = max_bytes if max_bytes is not None else 64 * 1024 * 1024
+        limit = max_bytes if max_bytes is not None else 96 * 1024 * 1024
         if limit < 1:
             raise ValueError('Review byte budget must be positive')
-        return source, discover_many(source, limit=3), limit
+        fresh = ({'exclude_urls': fresh_context.get('training_recording_urls', []),
+                  'recorded_after': fresh_context.get('recorded_after')} if fresh_context else {})
+        return source, discover_many(source, limit=3, **fresh), limit
     ceiling = min(snapshot_count * source.get('max_image_bytes', 4 * 1024 * 1024), 256 * 1024 * 1024)
     limit = min(max_bytes, ceiling) if max_bytes is not None else ceiling
     if limit < 1:
@@ -68,10 +72,11 @@ def data_url(image):
 
 
 class Gallery:
-    def __init__(self, source, reviewer, repo, model=None, *, include_similar=False):
+    def __init__(self, source, reviewer, repo, model=None, *, include_similar=False, evaluation_context=None):
         self.source, self.reviewer, self.repo, self.model = source, reviewer, repo, model
         self.candidates, self.images = {}, {}
         self.include_similar = include_similar
+        self.evaluation_context = evaluation_context or {}
 
     def add(self, candidate, image, features):
         if features is None:
@@ -90,12 +95,18 @@ class Gallery:
         paper = render_for_source(image, self.source)
         self.images[identity] = {'original': data_url(raw), 'paper': data_url(paper)}
 
-    def save(self, output, encoder, diagnostics):
-        if len(self.candidates) < 2:
+    def save(self, output, encoder, diagnostics, *, waiting=False):
+        if len(self.candidates) < 2 and not waiting:
             raise ValueError('At least two decoded frames are needed for review')
         filter_similar = self.source.get('adapter') == 'ooi_image_directory' and not self.include_similar
         candidates = distinct_candidates(self.candidates) if filter_similar else self.candidates
-        status = 'ready' if len(candidates) >= 2 else 'no_review_needed'
+        status = 'waiting_for_fresh_recordings' if waiting else 'ready' if len(candidates) >= 2 else 'no_review_needed'
+        evaluation_context = dict(self.evaluation_context)
+        evaluation_context['scope'] = 'frozen_rankings_on_the_same_candidate_pool'
+        evaluation_context.update(model_id=(self.model or {}).get('model_id'),
+            eligible=bool(not waiting and candidates and evaluation_context.get('fresh_recordings_only')
+                          and (self.model or {}).get('status') == 'ready'
+                          and not any(c['recording_url'] in evaluation_context.get('training_recording_urls', []) for c in candidates.values())))
         diversity = {'sampled_candidate_count': len(self.candidates),
                      'candidate_count': len(candidates),
                      'similar_candidates_suppressed': len(self.candidates) - len(candidates),
@@ -105,6 +116,7 @@ class Gallery:
                     'created_at': datetime.now(timezone.utc).isoformat(),
                     'encoder': encoder.provenance, 'candidates': candidates,
                     'review_status': status, 'diversity': diversity,
+                    'evaluation_context': evaluation_context,
                     'source_attribution': self.source.get('attribution'),
                     'source_license': self.source.get('license'),
                     'source_url': self.source.get('attribution_url')}
@@ -114,8 +126,9 @@ class Gallery:
         data = {'batch_id': manifest['batch_id'], 'reviewer': self.reviewer, 'repository': self.repo,
                 'candidates': public_candidates, 'attribution': manifest['source_attribution'],
                 'review_status': status,
+                'evaluation_context': evaluation_context,
                 'license': manifest['source_license'], 'source_url': manifest['source_url'],
-                'model': ({k: self.model.get(k) for k in ('status', 'comparisons', 'trained_at', 'evaluation')}
+                'model': ({k: self.model.get(k) for k in ('status', 'comparisons', 'trained_at', 'evaluation', 'prospective_evaluation')}
                           if self.model else {'status': 'needs_more_feedback', 'comparisons': 0})}
         resources = Path(__file__).resolve().parent.parent / 'web' / 'review'
         template = (resources / 'index.html').read_text()
@@ -127,6 +140,7 @@ class Gallery:
         atomic_json(output / 'gallery-report.json', {'schema_version': 1, 'batch_id': manifest['batch_id'],
                     'source_id': self.source['id'], 'source_name': self.source['name'],
                     'review_status': status, **diversity, 'encoder': encoder.provenance,
+                    'evaluation_context': evaluation_context,
                     'reviewer': self.reviewer, 'diagnostics': diagnostics,
                     'run_url': (f'https://github.com/{self.repo}/actions/runs/{os.environ["GITHUB_RUN_ID"]}'
                                 if os.environ.get('GITHUB_RUN_ID') else None),
@@ -146,6 +160,8 @@ def main():
     parser.add_argument('--snapshot-count', type=int, default=9)
     parser.add_argument('--snapshot-spacing-minutes', type=int, default=20)
     parser.add_argument('--include-similar', action='store_true', help='Include near-identical stills for manual inspection')
+    parser.add_argument('--feedback-state', help='Trusted preference state; video galleries use only newer, unreviewed recordings')
+    parser.add_argument('--allow-reviewed', action='store_true', help='Explicitly allow video sessions already used for training')
     parser.add_argument('--local-video')
     args = parser.parse_args()
     if not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9-]{0,38}', args.reviewer) or not re.fullmatch(r'[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+', args.repository):
@@ -158,19 +174,31 @@ def main():
     if args.local_video and not source.get('fixture'):
         parser.error('Local review video requires a fixture-only source')
     model = load_model(args.preference_model)
-    started = time.monotonic(); encoder = ImageEncoder()
+    started = time.monotonic()
     metadata = read_json(args.preference_model, {})
     if not model and (metadata.get('status') != 'needs_more_feedback' or metadata.get('feature_space') != FEATURE_SPACE or metadata.get('reviewer') != args.reviewer):
         metadata = None
-    gallery = Gallery(source, args.reviewer, args.repository, model or metadata, include_similar=args.include_similar)
+    context = feedback_context(args.feedback_state, args.reviewer, source['id']) if args.feedback_state else {}
+    context['fresh_recordings_only'] = bool(args.feedback_state and not args.allow_reviewed and not args.local_video
+                                           and source['adapter'] != 'ooi_image_directory')
+    gallery = Gallery(source, args.reviewer, args.repository, model or metadata,
+                      include_similar=args.include_similar, evaluation_context=context)
     if args.local_video:
         records = [{'url': 'local-fixture', 'recorded_at': None}]
-        byte_limit = args.max_bytes if args.max_bytes is not None else 64 * 1024 * 1024
+        byte_limit = args.max_bytes if args.max_bytes is not None else 96 * 1024 * 1024
     else:
-        source, records, byte_limit = review_inputs(source, max_bytes=args.max_bytes,
-            snapshot_count=args.snapshot_count, snapshot_spacing_minutes=args.snapshot_spacing_minutes)
-    search_args = argparse.Namespace(local_video=args.local_video, max_bytes=byte_limit, candidates=8,
-                    coarse_candidates=4, refine_candidates=4, refine_windows=2, interval=1 if args.local_video else 60,
+        try:
+            source, records, byte_limit = review_inputs(source, max_bytes=args.max_bytes,
+                snapshot_count=args.snapshot_count, snapshot_spacing_minutes=args.snapshot_spacing_minutes,
+                fresh_context=context if context['fresh_recordings_only'] else None)
+        except NoFreshRecordings:
+            gallery.save(args.output, SimpleNamespace(provenance={'feature_space': FEATURE_SPACE,
+                         'status': 'not_needed_without_fresh_footage'}), {}, waiting=True)
+            print('Waiting for new eligible recordings. Existing footage was not reused for validation.')
+            return
+    encoder = ImageEncoder()
+    search_args = argparse.Namespace(local_video=args.local_video, max_bytes=byte_limit, candidates=10,
+                    coarse_candidates=6, refine_candidates=6, refine_windows=3, interval=1 if args.local_video else 60,
                     preference_model=args.preference_model, preference_encoder=encoder, review_sink=gallery.add)
     with tempfile.TemporaryDirectory(prefix='abyss-review-') as tmp:
         _, diagnostics, _ = search(source, records, tmp, search_args)

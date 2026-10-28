@@ -7,6 +7,7 @@ from datetime import datetime
 from pathlib import Path
 from abyss.feedback import normalize, parse_body
 from abyss.preferences import train
+from abyss.evaluation import prospective_report
 from abyss.publication import atomic_json
 
 
@@ -42,9 +43,11 @@ def main():
         ingest(args.state, json.loads(Path(args.event).read_text()), args.reviewer, os.environ.get('GITHUB_ACTOR'))
     documents = [json.loads(p.read_text()) for p in sorted((Path(args.state) / 'feedback').glob('*.json'))]
     model = train(documents, args.reviewer)
+    manifests = {p.stem: json.loads(p.read_text()) for p in (Path(args.state) / 'batches').glob('*.json')}
+    model['prospective_evaluation'] = prospective_report(documents, manifests, args.reviewer)
     atomic_json(Path(args.state) / 'model.json', model)
     atomic_json(Path(args.state) / 'training-report.json', {k: v for k, v in model.items() if k != 'weights'})
-    print(json.dumps({k: model[k] for k in ('status', 'reviewer', 'comparisons', 'pairwise_comparisons', 'evaluation', 'model_id')}, indent=2))
+    print(json.dumps({k: model[k] for k in ('status', 'reviewer', 'comparisons', 'pairwise_comparisons', 'evaluation', 'prospective_evaluation', 'model_id')}, indent=2))
 
 
 if __name__ == '__main__': main()

@@ -1,5 +1,28 @@
 # Validation evidence and remaining acceptance gates
 
+## Bounded storage, recording winners and prospective review — 28 October 2026
+
+**107 Python tests passed** plus review-core and real-browser checks. Tests cover
+640 MiB retention, protected last-good/session images, legacy QR migration,
+preview retirement with original-video timestamps, unsafe paths, missing assets,
+and exact-lease rejection of concurrent generated-output updates. A real local
+Git remote verifies one-commit snapshot history without changing main's checkout
+or index. A dry run on saved production output migrated three issued QR pages,
+preserved all six current full-size assets, and stayed under the budget.
+
+Session tests verify 18 coarse plus six fine frames across three recordings,
+one saved winner per recording, reuse of a stronger cached winner, rescoring on
+model changes and preservation of camera latest metadata after partial failure.
+The CLI fixture smoke test exercised native source-size delivery, the session
+index and retention together. Full source resolution remains unchanged.
+
+Fresh-gallery tests enforce exclusion of training recordings, distinguish waiting
+for new footage from infrastructure errors, validate frozen prospective scores,
+deduplicate edited/split feedback and keep small samples provisional. The browser
+test includes a waiting gallery with no usable vote/submission controls. Actual
+model-versus-baseline accuracy remains **awaiting the owner's new choices**.
+See [the operational policy](retention-and-sessions.md) for lifecycle details.
+
 ## Static still-camera review batches — 28 October 2026
 
 **87 Python tests passed**, plus review-core and real-browser checks. Still

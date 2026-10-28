@@ -101,8 +101,10 @@ dithering in the default `native` delivery mode. Low-resolution scoring/encoder
 work does not change the published pixels. Explicit CLI preview methods still
 support the old 800 × 448 comparison variants; production no longer uses them.
 Full-resolution lossless photographs consume more delivery bandwidth and retained
-storage. Monitor `image_bytes` and the Pages 1 GB site limit; immutable imagery
-and QR destinations are currently retained without automatic history pruning.
+storage. The published snapshot has a 640 MiB budget: current camera images and
+saved session winners are protected; older full-size history retires while QR
+observation pages retain previews or original-footage links. See
+[retention policy](../docs/retention-and-sessions.md).
 The display image uses `display_image_url`; `image_url` remains the attributed
 download. `display_image_bytes` and `image_bytes` expose both asset sizes.
 

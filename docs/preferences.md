@@ -80,6 +80,24 @@ exploration choice. Other pairs emphasize uncertain/close current scores. This
 keeps the review pool broader than only the algorithm's winners. You can skip
 pairs that are visually indistinguishable.
 
+## Fresh-footage validation
+
+Video galleries now use trusted submitted feedback to exclude training recordings
+and request newer footage. If no new eligible recording is available, the job
+reports **Waiting for fresh footage** instead of recycling old scenes. The gallery
+freezes the active model's predictions and model ID. After you post 20–30 useful
+A/B choices, **Learn image preferences** reports `prospective_evaluation`: model
+agreement versus quality-only agreement on those unseen recordings, plus sample
+and recording counts. A result below ten choices remains collecting. Neither
+choices train rejection but do not count as A/B validation wins. Repeated or
+edited choices do not inflate counts. The new model learns from the labels;
+validation scores still refer to the frozen pre-feedback model.
+
+See [the full session/evaluation policy](retention-and-sessions.md). Manual CLI
+reviews use `--feedback-state /path/to/preference-state`; `--allow-reviewed`
+explicitly permits old recordings for inspection, without qualifying that batch
+as a fresh evaluation.
+
 ## Honest evaluation
 
 Thirty comparisons from one gallery are not thirty independent scenes. The
@@ -146,11 +164,11 @@ ResNet18 weights come from the official HTTPS URL. Their full SHA-256 is verifie
 on download and on every cache load; deserialization uses `weights_only=True`.
 The weights are approximately 45 MB. The CPU torch wheel is approximately 196 MB
 plus smaller dependencies. Pip/model caches reduce subsequent setup transfer.
-These downloads are separate from the **64 MiB video payload cap**; encoder CPU
+These downloads are separate from the **96 MiB video payload cap**; encoder CPU
 work is also additional and must be measured independently.
 
-A gallery samples the standard three recordings with 12 coarse + up to four fine
-frames. Generated review images and HTML go only to the download artifact; the
+A video gallery samples up to three fresh recordings with six coarse frames
+each and up to six total fine frames, under one shared 96 MiB budget. Generated review images and HTML go only to the download artifact; the
 persistent branch holds metadata/features. Each daily gallery still consumes
 runner setup time, video traffic, feature inference and artifact storage. Check
 private-repository Actions allowances and repository/metadata growth. Retraining

@@ -30,7 +30,7 @@ registry candidates are implemented adapters.
 Remote data goes through inherited proxies and TLS trust. FFmpeg connects only
 to a local bridge. Each upstream byte range is verified as 206 with consistent
 Content-Range/length/ETag, limited to 256 KiB, cached (32 MiB max), and charged
-against a default 64 MiB/source-search budget shared across recordings. HTTP redirects remain within the
+against a default 96 MiB/video-source-search budget shared across recordings. HTTP redirects remain within the
 source's HTTPS hostname allowlist. A server ignoring ranges is refused before
 reading its body. A budget failure preserves the last good still, not a full-file
 fallback. OS/TLS buffering and HTTP headers are not included in measured payload
@@ -39,11 +39,11 @@ serialized upstream. The bridge serves complete requested ranges so FFmpeg does
 not confuse a cache block with end-of-file.
 
 FFmpeg seeks before decoding and limits threads/candidate count. Production
-search now compares three recent unseen recordings with four coarse samples each,
-then four total fine samples around the strongest moments. Each recording has an
-eight-frame cap, coarse density defaults to a 60-second minimum interval, each
+search now compares three recent unseen recordings with six coarse samples each,
+then six total fine samples, offering refinement to each recording first. Each recording has a
+ten-frame cap, coarse density defaults to a 60-second minimum interval, each
 subprocess times out after 60 seconds, and recordings are limited to 24 hours.
-The 64 MiB source-search cap applies to all coarse/fine retrieval together.
+The 96 MiB video source-search cap applies to all coarse/fine retrieval together.
 The configuration does not promise that every GOP/codec fits the budget; partial
 coverage is reported and valid candidates survive other recording failures.
 See [search-and-cadence.md](search-and-cadence.md) for the hourly metadata observer.
@@ -104,7 +104,7 @@ policies and billing budget; use spending controls appropriate to the account.
 
 For N sources at two runs/day over 30 days:
 
-- Max attempted video payload per twice-daily production source search: N × 60 × 64 MiB = **3.75 GiB/month/source**,
+- Max attempted video payload per twice-daily production source search: N × 60 × 96 MiB = **5.625 GiB/month/video source**,
   plus bounded discovery pages and protocol overhead. Identical/rejected known
   recordings are skipped before video transfer. Startup races or failed runs
   may still transfer data again.
@@ -112,12 +112,13 @@ For N sources at two runs/day over 30 days:
   job ceiling is 1,200 minutes/month for the shared scheduled job, plus CI/manual
   jobs. This is not a private-plan free-tier entitlement.
 - A 100 KiB output PNG at 60 new frames/month adds roughly 5.9 MiB/source/month
-  of site files; Git history also grows. Immutable images are retained to keep
-  cached metadata valid. No automatic pruning or repository-history compaction
-  is supplied; monitor growth before the 1 GB Pages limit.
+  of site files before retention. The public snapshot is bounded to 640 MiB,
+  with protected current/session images and observation-specific QR fallbacks.
+  Output branch ancestry is compacted using an exact lease; main and preferences
+  retain normal history. GitHub garbage collection of old blobs may be delayed.
 - That 100 KiB illustration describes the former 800 × 448 output. Full-resolution
   RGB delivery can be tens of MiB per PNG; use published `image_bytes` and actual
-  update counts for storage/bandwidth estimates. No automatic pruning is enabled.
+  update counts for delivery estimates. See [retention and sessions](retention-and-sessions.md).
 - Delivery bandwidth: devices × polls/day × average response bytes. For example,
   1,000 devices × 6 polls/day × 100 KiB × 30 ≈ **17.2 GiB/month** before catalog
   overhead. Caches may reduce this, but do not rely on undocumented cache TTLs.

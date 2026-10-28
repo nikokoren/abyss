@@ -47,8 +47,11 @@ jobs:
           report = json.loads(Path('/tmp/preference-state/training-report.json').read_text())
           with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as summary:
               summary.write('## Personal preference learning\n\n')
-              for key in ('status', 'reviewer', 'comparisons', 'pairwise_comparisons', 'neither_comparisons', 'evaluation', 'model_id'):
+              for key in ('status', 'reviewer', 'comparisons', 'pairwise_comparisons', 'neither_comparisons', 'evaluation', 'prospective_evaluation', 'model_id'):
                   summary.write(f'- {key}: `{json.dumps(report[key])}`\n')
+              fresh = report['prospective_evaluation']
+              if fresh['status'] in ('collecting', 'measured'):
+                  summary.write(f"\nFrozen model agreement: **{fresh['learned_accuracy']:.1%}**, quality-only: **{fresh['quality_baseline_accuracy']:.1%}**, on {fresh['comparisons']} choices from {fresh['unseen_recording_count']} unseen recordings. Small/correlated samples remain provisional.\n")
               summary.write('\nThe production pipeline and next gallery load this model; technical readability checks remain in force.\n')
           PYCODE
       - name: Persist feedback and model (never force push)

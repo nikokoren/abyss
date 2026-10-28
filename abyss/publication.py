@@ -25,7 +25,7 @@ def read_json(path, default):
     return json.loads(path.read_text()) if path.exists() else default
 
 
-def publish(root, source, image, metadata, base_url, *, display_image=None):
+def publish(root, source, image, metadata, base_url, *, display_image=None, update_latest=True):
     from PIL import Image
     directory = Path(root) / 'public' / 'sources' / source['id']
     directory.mkdir(parents=True, exist_ok=True)
@@ -59,8 +59,9 @@ def publish(root, source, image, metadata, base_url, *, display_image=None):
                             display_attribution_embedded=False,
                             display_credit=' | '.join(source.get('image_credit_lines', [])))
         from .media_page import publish_media_page
-        publish_media_page(Path(root) / 'public', metadata, base_url)
-        atomic_json(directory / 'latest.json', metadata)
+        publish_media_page(Path(root) / 'public', metadata, base_url, preview_image=image)
+        if update_latest:
+            atomic_json(directory / 'latest.json', metadata)
     finally:
         Path(temporary).unlink(missing_ok=True)
     return metadata

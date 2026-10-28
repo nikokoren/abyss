@@ -102,14 +102,17 @@ See the guide for image sizes, native caching and storage considerations.
 
 ## Recent-recording search and cadence
 
-Production selection compares the three newest unseen recordings: four coarse
-samples each, then up to four extra samples around the strongest moments, under
-one shared 64 MiB video budget. The live runner benchmark extracted 16 frames
-across three recordings using 44.5 MB in 55 seconds and selected an older clip
-over the newest. The independent hourly metadata observer measures
-filename intervals and first appearances without repeatedly downloading video.
-See [search and cadence](docs/search-and-cadence.md) for exact limits, reporting,
-and how publication-delay observations differ from a baseline archive listing.
+Production samples up to six coarse frames per recent video recording, then
+six refinement frames across three sessions, under one shared 96 MiB budget.
+Each recording's winner is saved; current selection compares recent session
+winners and reuses compatible cached scores. The maximum is 24 frames per search.
+[Retention, session selection and fresh evaluation](docs/retention-and-sessions.md)
+describes limits, preserved QR observations and model validation.
+
+Published images are bounded to a 640 MiB site budget. Current and saved session
+winners stay at source resolution; older QR pages retain compact previews and
+original-footage links. The generated output branch is an exact-lease snapshot,
+so retired PNG history does not remain reachable through branch ancestry.
 
 The two still-camera feeds compare two recent JPEGs per camera under a 48 MiB
 search cap, preserving the full frame and required credit. Their upstream

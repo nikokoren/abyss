@@ -76,7 +76,9 @@ Pages or bypass scientific source-rights approval. See [preferences.md](preferen
 ## Last-good and restart behavior
 
 `ocean-output` contains only generated `public/` and `state/` directories. Each
-job restores them before processing, and commits them back without force pushes.
+job restores them before processing. Publication writes a bounded root snapshot
+with an exact force-with-lease on `ocean-output`, rejecting concurrent updates.
+Source and preference branches are not rewritten; a metadata audit log keeps 32 runs.
 The Pages artifact includes only `public/`, never source registry or internal
 state. An unsuccessful processing step still publishes retained imagery and
 updated health, then reports the workflow as failed. If persistence fails,
@@ -87,8 +89,8 @@ registry. It generates an empty catalog/health report and reports failure so
 missing validation cannot be mistaken for successful ocean processing.
 Regenerating settings retains offline feeds that have a published image, along
 with their rotation slots and last-good metadata. Existing TRMNL installations
-must re-import settings to receive new dropdown options. Keep all retained images while cached metadata may reference
-them. `published_at` is the time the pipeline committed the image to its local
+must re-import settings to receive new dropdown options. QR observation pages remain stable when older full PNGs retire; use those
+pages for lasting references instead of bookmarking a PNG. `published_at` is the time the pipeline committed the image to its local
 public bundle; actual Pages/CDN deployment occurs later and is visible in the
 Actions deployment log.
 
@@ -103,7 +105,9 @@ credit. Native `image-dither` lets
 TRMNL render full-resolution RGB photographs for its device; Abyss no longer
 pre-dithers or downsizes production exports. Inspect the actual `image_bytes`
 and `display_image_bytes` and total site size because full-resolution lossless PNGs are much larger than
-the old 800 × 448 bitonal output. Existing image history has no automatic pruning.
+the old 800 × 448 bitonal output. The 640 MiB retention step protects current
+images and session winners, retires older full PNGs, and preserves useful QR
+observation destinations. See [the full policy](retention-and-sessions.md).
 
 The output branch is durable state. Do not delete it casually: doing so loses
 processing history and retained images, and may cause old recordings to be

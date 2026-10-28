@@ -2,40 +2,30 @@
 
 ## Selection behavior
 
-The production `run` command now searches up to the three newest eligible
-recordings, including across UTC day boundaries. It skips URLs already recorded
-as successfully processed or rejected, unless `--force` is used. Selection is
-across the current batch of unseen recordings, not an all-time best-frame library.
+The production `run` command samples the three newest eligible video recordings,
+including across UTC date boundaries. Six coarse moments per recording and up
+to six fine seeks give a maximum of 24 frames, under one shared **96 MiB** budget.
+Each recording has a ten-frame cap. Refinement visits each recording's strongest
+usable moment before spending another window on the same recording.
 
-1. Coarse stage: up to four uniformly spaced frame samples per recording.
-2. Rank all decoded candidates with the existing quality and recent-image
-   similarity scoring.
-3. Fine stage: sample two additional nearby offsets around each of the two best
-   usable moments. The offset is one quarter of that recording's coarse spacing.
-4. Choose the highest-scoring candidate across both stages and all recordings.
-   Equal scores prefer the newer recording. Preserve the previous public image
-   if no candidate clears the source threshold.
+Each recording's best readable frame is published to the bounded session index
+(`sources/ID/sessions.json`, six recent winners). Current camera selection compares
+winners within the current three-recording window. Known sessions reuse their
+saved image and scores; changed model/search contexts require reevaluation. A
+new, weaker clip can leave the existing camera winner unchanged. Capture and
+publication timestamps stay accurate. A failed session batch leaves the camera's
+previous latest metadata intact. Partial extraction remains visible in diagnostics;
+only fully searched URLs enter the durable processed list.
 
-Default maximum: 12 coarse + 4 fine samples across three recordings. A recording
-has a separate eight-candidate maximum. Short recordings may use fewer coarse
-samples; dark/flat or otherwise low-quality scenes do not trigger refinement.
-No animal/vent recognition or subject-following crop has been added.
-
-One **64 MiB video-payload budget is shared across the entire source search**,
-not reset for each recording. Each recording keeps its range cache through both
-stages. Invalid files and failed seeks are recorded individually. Good decoded
-frames from other recordings survive; `search_complete: false` discloses partial
-coverage, including budget exhaustion. Only completely searched recordings are
-added to the durable processed list; partial failures can be retried on a later
-run. This does not guarantee the whole search fits every source's codec/GOP;
-actual bytes and coverage must be inspected.
-
-Arguments on `python -m abyss.cli run`:
+Defaults:
 
 ```
---recordings 3 --coarse-candidates 4 --refine-candidates 4 \
---refine-windows 2 --candidates 8 --max-bytes 67108864
+--recordings 3 --coarse-candidates 6 --refine-candidates 6 \
+--refine-windows 3 --candidates 10 --max-bytes 100663296
 ```
+
+[Retention and fresh evaluation](retention-and-sessions.md) explains saved images,
+QR fallbacks, output-branch compaction and leakage-free review batches.
 
 `--interval` limits coarse sampling density; refinement intentionally samples
 more densely near promising moments. `inspect` retains its single-recording

@@ -36,12 +36,24 @@
   el('profile').textContent='Personal taste · '+data.reviewer;el('attribution').textContent=data.attribution||'';el('license').textContent=data.license||'';
   if(data.model.status==='ready'){const e=data.model.evaluation;el('model-status').textContent='Model snapshot: '+data.model.comparisons+' comparisons · '+(e&&e.status==='measured'?'held-out checks available':'awaiting independent validation');}
   else el('model-status').textContent=data.model.comparisons?'Model snapshot: '+data.model.comparisons+' submitted comparisons · keep teaching with fresh scenes.':'Your choices will guide future selections. Aim for 30–50 comparisons.';
+  const prospective=data.model.prospective_evaluation;
+  if(prospective?.status==='measured')el('model-status').textContent='Fresh-footage check: '+Math.round(prospective.learned_accuracy*100)+'% model agreement vs '+Math.round(prospective.quality_baseline_accuracy*100)+'% quality-only · '+prospective.comparisons+' choices';
+  if(data.evaluation_context?.eligible)el('save-note').querySelector('strong').textContent='This batch uses previously unreviewed recordings.';
   if(data.review_status==='no_review_needed'){
     document.querySelector('h1').textContent='No review needed.';
     document.querySelector('.intro p').textContent='These snapshots show essentially the same view. No preference choices are needed for this batch.';
     el('complete').querySelector('.eyebrow').textContent='SIMILAR CAMERA VIEWS';
     el('complete').querySelector('h2').textContent='Nothing useful to compare this time.';
     el('complete').querySelector('p').textContent=(data.candidates[0]?.source_name||'This camera')+' stays in your display rotation. Review a fresh batch when the view changes.';
+    el('review-again').hidden=true;el('goal').hidden=true;
+    document.querySelector('.toolbar').hidden=true;document.querySelector('.bottom').hidden=true;
+  }
+  if(data.review_status==='waiting_for_fresh_recordings'){
+    document.querySelector('h1').textContent='Waiting for fresh footage.';
+    document.querySelector('.intro p').textContent='No newer, unreviewed recording is eligible yet. Check again after the next recording is complete.';
+    el('complete').querySelector('.eyebrow').textContent='NO NEW COMPARISONS YET';
+    el('complete').querySelector('h2').textContent='Your earlier choices are saved.';
+    el('complete').querySelector('p').textContent='Old recordings were not reused for this evaluation.';
     el('review-again').hidden=true;el('goal').hidden=true;
     document.querySelector('.toolbar').hidden=true;document.querySelector('.bottom').hidden=true;
   }
