@@ -24,7 +24,8 @@ def download_image(recording, source, directory, budget, index):
     check_url(url, source['allowed_hosts'])
     received = b''
     with budget.lock:
-        cap = min(4 * 1024 * 1024, budget.remaining)
+        image_limit = min(source.get('max_image_bytes', 4 * 1024 * 1024), 32 * 1024 * 1024)
+        cap = min(image_limit, budget.remaining)
         if cap < 1:
             raise RetrievalError('Image byte budget exhausted')
         request = Request(url, headers={'User-Agent': 'AbyssOcean/0.1', 'Accept-Encoding': 'identity'})
@@ -38,7 +39,7 @@ def download_image(recording, source, directory, budget, index):
             declared = response.headers.get('Content-Length')
             length = int(declared) if declared is not None else None
             if length is not None and (length < 1 or length > cap):
-                raise RetrievalError(f'Image size {length} exceeds available {cap} bytes (4 MiB per-image cap)')
+                raise RetrievalError(f'Image size {length} exceeds available {cap} bytes (image cap {image_limit})')
             received = response.read(cap)
             budget.used += len(received)
             if length is not None and len(received) != length:
@@ -47,12 +48,18 @@ def download_image(recording, source, directory, budget, index):
                 raise RetrievalError('Image reached byte cap without a declared complete length')
     with Image.open(io.BytesIO(received)) as image:
         if (image.format not in {'JPEG', 'PNG'} or image.width < 64 or image.height < 64
-                or image.width * image.height > 16_777_216 or getattr(image, 'n_frames', 1) != 1):
+                or image.width * image.height > min(source.get('max_image_pixels', 16_777_216), 32_000_000)
+                or getattr(image, 'n_frames', 1) != 1):
             raise RetrievalError('Unsupported snapshot format, dimensions or animation')
         image.verify()
     with Image.open(io.BytesIO(received)) as image:
+        original_size = list(image.size)
+        # Native JPEG decoder scaling keeps the full frame and avoids allocating
+        # a full-resolution RGB buffer for a 21 MP camera image destined for 800px.
+        image.draft('RGB', (1200, 900))
         image.load()
         path = Path(directory) / f'r{index}-snapshot.png'
         ImageOps.exif_transpose(image).convert('RGB').save(path)
         return path, {'bytes_downloaded': len(received), 'codec': image.format,
-                      'decoded_size': list(image.size), 'content_type': kind, 'status': 200}
+                      'decoded_size': list(image.size), 'original_size': original_size,
+                      'content_type': kind, 'status': 200}

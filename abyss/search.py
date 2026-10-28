@@ -147,6 +147,7 @@ def search(source, recordings, directory, args, history=()):
                         'bytes_downloaded': video.bytes_read if video else session.get('bytes_downloaded', 0),
                         'upstream_requests': video.requests if video else int(session.get('bytes_downloaded', 0) > 0), 'errors': errors,
                         'decoded_size': session.get('decoded_size'),
+                        'original_size': session.get('original_size'),
                         'recording_bytes': video.total if video else None})
     usable = [c for c in candidates if c['quality']['score'] >= profile.get('min_score', .30)]
     best = max(usable or candidates, key=lambda c: (c['selection_score'] if usable else c['quality']['score'], c['recording'].get('recorded_at') or ''), default=None)

@@ -36,8 +36,8 @@
       "status": "pending_technical_validation",
       "timestamp_basis": "explicit_utc_filename",
       "completion_delay_minutes": 5,
-      "images_per_search": 9,
-      "max_search_bytes": 8388608,
+      "images_per_search": 2,
+      "max_search_bytes": 50331648,
       "rights_review_url": "https://github.com/nikokoren/abyss/blob/main/docs/additional-cameras.md",
       "license_scope": "OOI instrument-data derived stills with required attribution",
       "cadence": "Archive listings show three-image bursts approximately every 30 minutes across 2026-10-27 and 2026-10-28; sustained cadence and publication delay are not yet measured.",
@@ -54,7 +54,9 @@
         "Publication delay not measured; delivered as periodic stills",
         "Technical decoding, acceptable image quality and rendered previews require validation before enabling"
       ],
-      "data_doi": "https://doi.org/10.58046/OOI-CE02SHBP"
+      "data_doi": "https://doi.org/10.58046/OOI-CE02SHBP",
+      "max_image_bytes": 25165824,
+      "max_image_pixels": 24000000
     },
     {
       "operator": "Ocean Observatories Initiative / University of Washington",
@@ -91,8 +93,8 @@
       "status": "pending_technical_validation",
       "timestamp_basis": "explicit_utc_filename",
       "completion_delay_minutes": 5,
-      "images_per_search": 9,
-      "max_search_bytes": 8388608,
+      "images_per_search": 2,
+      "max_search_bytes": 50331648,
       "rights_review_url": "https://github.com/nikokoren/abyss/blob/main/docs/additional-cameras.md",
       "license_scope": "OOI instrument-data derived stills with required attribution",
       "cadence": "Archive listings show three-image bursts approximately every 30 minutes across 2026-10-27 and 2026-10-28; sustained cadence and publication delay are not yet measured.",
@@ -109,7 +111,9 @@
         "Publication delay not measured; delivered as periodic stills",
         "Technical decoding, acceptable image quality and rendered previews require validation before enabling"
       ],
-      "data_doi": "https://doi.org/10.58046/OOI-CE04OSBP"
+      "data_doi": "https://doi.org/10.58046/OOI-CE04OSBP",
+      "max_image_bytes": 25165824,
+      "max_image_pixels": 24000000
     },
     {
       "operator": "Ocean Observatories Initiative / University of Washington",
@@ -146,8 +150,8 @@
       "status": "pending_technical_validation",
       "timestamp_basis": "explicit_utc_filename",
       "completion_delay_minutes": 5,
-      "images_per_search": 9,
-      "max_search_bytes": 8388608,
+      "images_per_search": 2,
+      "max_search_bytes": 50331648,
       "rights_review_url": "https://github.com/nikokoren/abyss/blob/main/docs/additional-cameras.md",
       "license_scope": "OOI instrument-data derived stills with required attribution",
       "cadence": "Archive listings show three-image bursts approximately every 30 minutes across 2026-10-27 and 2026-10-28; sustained cadence and publication delay are not yet measured.",
@@ -164,7 +168,9 @@
         "Publication delay not measured; delivered as periodic stills",
         "Technical decoding, acceptable image quality and rendered previews require validation before enabling"
       ],
-      "data_doi": "https://doi.org/10.58046/OOI-RS01SBPS"
+      "data_doi": "https://doi.org/10.58046/OOI-RS01SBPS",
+      "max_image_bytes": 25165824,
+      "max_image_pixels": 24000000
     },
     {
       "operator": "Ocean Observatories Initiative / University of Washington",
@@ -201,8 +207,8 @@
       "status": "pending_technical_validation",
       "timestamp_basis": "explicit_utc_filename",
       "completion_delay_minutes": 5,
-      "images_per_search": 9,
-      "max_search_bytes": 8388608,
+      "images_per_search": 2,
+      "max_search_bytes": 50331648,
       "rights_review_url": "https://github.com/nikokoren/abyss/blob/main/docs/additional-cameras.md",
       "license_scope": "OOI instrument-data derived stills with required attribution",
       "cadence": "Archive listings show three-image bursts approximately every 30 minutes across 2026-10-27 and 2026-10-28; sustained cadence and publication delay are not yet measured.",
@@ -219,7 +225,9 @@
         "Publication delay not measured; delivered as periodic stills",
         "Technical decoding, acceptable image quality and rendered previews require validation before enabling"
       ],
-      "data_doi": "https://doi.org/10.58046/OOI-RS01SUM2"
+      "data_doi": "https://doi.org/10.58046/OOI-RS01SUM2",
+      "max_image_bytes": 25165824,
+      "max_image_pixels": 24000000
     },
     {
       "operator": "Ocean Observatories Initiative / University of Washington",
@@ -256,8 +264,8 @@
       "status": "pending_technical_validation",
       "timestamp_basis": "explicit_utc_filename",
       "completion_delay_minutes": 5,
-      "images_per_search": 9,
-      "max_search_bytes": 8388608,
+      "images_per_search": 2,
+      "max_search_bytes": 50331648,
       "rights_review_url": "https://github.com/nikokoren/abyss/blob/main/docs/additional-cameras.md",
       "license_scope": "OOI instrument-data derived stills with required attribution",
       "cadence": "Archive listings show three-image bursts approximately every 30 minutes across 2026-10-27 and 2026-10-28; sustained cadence and publication delay are not yet measured.",
@@ -274,7 +282,9 @@
         "Publication delay not measured; delivered as periodic stills",
         "Technical decoding, acceptable image quality and rendered previews require validation before enabling"
       ],
-      "data_doi": "https://doi.org/10.58046/OOI-RS03AXPS"
+      "data_doi": "https://doi.org/10.58046/OOI-RS03AXPS",
+      "max_image_bytes": 25165824,
+      "max_image_pixels": 24000000
     },
     {
       "operator": "Ocean Observatories Initiative / University of Washington",
@@ -311,8 +321,8 @@
       "status": "pending_technical_validation",
       "timestamp_basis": "explicit_utc_filename",
       "completion_delay_minutes": 5,
-      "images_per_search": 9,
-      "max_search_bytes": 8388608,
+      "images_per_search": 2,
+      "max_search_bytes": 50331648,
       "rights_review_url": "https://github.com/nikokoren/abyss/blob/main/docs/additional-cameras.md",
       "license_scope": "OOI instrument-data derived stills with required attribution",
       "cadence": "Archive listings show three-image bursts approximately every 30 minutes across 2026-10-27 and 2026-10-28; sustained cadence and publication delay are not yet measured.",
@@ -329,7 +339,9 @@
         "Publication delay not measured; delivered as periodic stills",
         "Technical decoding, acceptable image quality and rendered previews require validation before enabling"
       ],
-      "data_doi": "https://doi.org/10.58046/OOI-RS03INT1"
+      "data_doi": "https://doi.org/10.58046/OOI-RS03INT1",
+      "max_image_bytes": 25165824,
+      "max_image_pixels": 24000000
     }
   ]
 }
