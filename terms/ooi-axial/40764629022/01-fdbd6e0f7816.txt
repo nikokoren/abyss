@@ -1,0 +1,418 @@
+How to Use, Acknowledge, and Cite Data - Ocean Observatories Initiative
+Skip to content
+Subscribe
+Access Data
+Help
+Menu
+The Observatory
+About OOI
+The Vision
+Leadership
+Program Documents
+Advisory Committees
+Glossary
+By the Numbers
+Arrays
+Global Irminger Sea Array
+Global Station Papa Array
+Coastal Endurance Array
+Coastal Pioneer Mid-Atlantic Bight Array
+Coastal Pioneer New England Shelf Array
+Regional Cabled Array
+Cabled Continental Margin Array
+Cabled Axial Seamount Array
+Cabled Endurance Array
+Global Argentine Basin
+Global Southern Ocean Array
+Additional Observing Assets in the Region
+Platforms and Nodes
+Infrastructure
+Cabled Infrastructure
+Moorings
+Profilers
+AUVs
+Gliders
+Cyberinfrastructure
+Instruments
+Science
+Expeditions
+Publications
+OOI-Related Publications
+Submit a Publication
+Science Highlights
+Science Questions
+Projects and Related Research
+Participate in OOI
+Adding Instruments or Platforms
+Participating in Cruises
+Deploying in OOI Areas
+Developing a Proposal
+Propose Modifications to Sampling
+Borrowing OOI Assets
+Community Engagement
+OOI Ambassador Program
+Science User Group for Research meetings
+Communities
+Educators
+Mariners
+Newsletter
+Events
+Visual Galleries
+Media
+Webinar Archive
+Join Us
+OOI Data
+Data Access
+Data Explorer
+Data Quality
+Data Updates and Corrections
+Data Products
+Data Products List
+Community Datasets
+Community Data Tools
+Jupyter Notebook
+How to Use, Acknowledge, and Cite Data
+Data HelpDesk
+Tutorials
+FAQs (Knowledge Base)
+Discourse
+Resources
+For Educators
+Image Gallery
+Video Gallery
+Glossary
+Contact
+Home
+Subscribe
+Access Data
+Help
+Skip to main content
+Skip to Navigation
+{{ searchMessage }}
+{{ searchItems.length }} results for "{{ searchQuery.trim() }}"
+You searched: {{ searchQuery }}
+Searching in:
+{{source.name}}
+{{ searchItems.length }} results for "{{ searchQuery.trim() }}"
+[{{ decodeEntities(result.type) | removeUnderscore}}]
+{{ decodeEntities(result.excerpt.rendered) | truncate(380) }}
+[{{ decodeEntities(result.type) | removeUnderscore }}]
+{{ decodeEntities(result.content.rendered) | truncate(380) }}
+Quick Links
+Home
+Data Portal
+Data Explorer
+Partner Data Sites
+How to Use, Acknowledge, and Cite Data
+How to Participate
+Infrastructure Status
+Need Help?
+Close Menu
+Menu
+The Observatory
+About OOI
+The Vision
+Leadership
+Program Documents
+Advisory Committees
+Glossary
+By the Numbers
+Arrays
+Global Irminger Sea Array
+Global Station Papa Array
+Coastal Endurance Array
+Coastal Pioneer Mid-Atlantic Bight Array
+Coastal Pioneer New England Shelf Array
+Regional Cabled Array
+Cabled Continental Margin Array
+Cabled Axial Seamount Array
+Cabled Endurance Array
+Global Argentine Basin
+Global Southern Ocean Array
+Additional Observing Assets in the Region
+Platforms and Nodes
+Infrastructure
+Cabled Infrastructure
+Moorings
+Profilers
+AUVs
+Gliders
+Cyberinfrastructure
+Instruments
+Quick Links
+Home
+Data Portal
+Data Explorer
+Partner Data Sites
+How to Use, Acknowledge, and Cite Data
+How to Participate
+Infrastructure Status
+Need Help?
+Science
+Expeditions
+Publications
+OOI-Related Publications
+Submit a Publication
+Science Highlights
+Science Questions
+Projects and Related Research
+Quick Links
+Home
+Data Portal
+Data Explorer
+Partner Data Sites
+How to Use, Acknowledge, and Cite Data
+How to Participate
+Infrastructure Status
+Need Help?
+Participate in OOI
+Adding Instruments or Platforms
+Participating in Cruises
+Deploying in OOI Areas
+Developing a Proposal
+Propose Modifications to Sampling
+Borrowing OOI Assets
+Quick Links
+Home
+Data Portal
+Data Explorer
+Partner Data Sites
+How to Use, Acknowledge, and Cite Data
+How to Participate
+Infrastructure Status
+Need Help?
+Community Engagement
+OOI Ambassador Program
+Science User Group for Research meetings
+Communities
+Educators
+Mariners
+Newsletter
+Events
+Visual Galleries
+Media
+Webinar Archive
+Join Us
+Quick Links
+Home
+Data Portal
+Data Explorer
+Partner Data Sites
+How to Use, Acknowledge, and Cite Data
+How to Participate
+Infrastructure Status
+Need Help?
+OOI Data
+Data Access
+Data Explorer
+Data Quality
+Data Updates and Corrections
+Data Products
+Data Products List
+Community Datasets
+Community Data Tools
+Jupyter Notebook
+How to Use, Acknowledge, and Cite Data
+Data HelpDesk
+Tutorials
+FAQs (Knowledge Base)
+Discourse
+Quick Links
+Home
+Data Portal
+Data Explorer
+Partner Data Sites
+How to Use, Acknowledge, and Cite Data
+How to Participate
+Infrastructure Status
+Need Help?
+Resources
+For Educators
+Image Gallery
+Video Gallery
+Glossary
+Contact
+Quick Links
+Home
+Data Portal
+Data Explorer
+Partner Data Sites
+How to Use, Acknowledge, and Cite Data
+How to Participate
+Infrastructure Status
+Need Help?
+Home::OOI Data::How to Use, Acknowledge, and Cite Data
+How to Use, Acknowledge, and Cite Data
+All OOI data are freely available to everyone who has an Internet connection. The only requirement for use of OOI data is to acknowledge OOI as its source, provide citations where appropriate, and include acknowledgment of the US National Science Foundation’s support. Guidelines for how to use, acknowledge, and cite OOI data are described below.
+Use
+Data use, limitations, and disclaimer are detailed in the OOI User Terms and Conditions (US National Science Foundation Cooperative Agreement, Financial and Administrative Terms and Conditions, May 13, 2022).
+OOI participates in global registries that enhance data discoverability, interoperability, and adherence to FAIR principles, ensuring OOI data are accessible and properly attributed. OOI is registered with the Research Organization Registry (ROR) (https://ror.org/00vnfmn19), an open registry for research organizations used in metadata systems and data repositories.
+Acknowledge
+The OOI Program Management Office requires acknowledgment (in publications, conference presentations, etc.) from those who use data from OOI, as well as tools or software. Users are required to acknowledge the US National Science Foundation (NSF) and
+the Woods Hole Oceanographic Institution (WHOI) OOI Program Management Office when core data/infrastructure is used, and
+individual researchers, groups, or organizations when project specific data is used.
+Please use the NSF logo if a presentation is graphical in nature, and include the NSF award number in a publication or other written material. The OOI is funded by the US National Science Foundation under Cooperative Agreement No. 2244833.
+Acknowledgement in publication
+“This material is based upon work supported by the Ocean Observatories Initiative (OOI), a major facility fully funded by the US National Science Foundation under Cooperative Agreement No. 2244833, and the Woods Hole Oceanographic Institution OOI Program Office.”
+Acknowledgment in social media
+The US National Science Foundation and the Ocean Observatories Initiative should be acknowledged in posts on social media with the hashtag #NSFfunded and a link to the OOI data, if applicable. Additionally, please “tag” NSF and OOI, as follows:
+Facebook: @US.NSF, #NSFfunded, @ooi.org
+Twitter: @NSF, #NSFfunded, @oceanobserv
+Instagram: @nsfgov, #NSFfunded, @oceanobservatories_initiative
+LinkedIn: US National Science Foundation (NSF), #NSFfunded, Ocean Observatories Initiative (OOI)
+DOIs
+The OOI program has implemented Digital Object Identifiers (DOIs) to assist researchers in citing data. As of 2025 DOIs are available for OOI Platforms. The recommended citation format described below is based on specifying the subset of data used from a Platform.
+For a complete list of platform and node DOIs, please visit our Platform and Nodes page.
+Cite
+For references/bibliography, OOI’s recommended citation format is based on the Earth Science Information Partners (ESIP) format, adopted by journals in relevant professional societies such as the American Geophysical Union (AGU) and the American Meteorological Society (AMS). For a data availability statement in a publication, consider how best to direct the reader/reviewer to the data by directly linking to the data or providing information to get to the data efficiently.
+Recommended citation format:
+NSF Ocean Observatories Initiative. ([date or year published]). [Platform title] [[Instrument(s) and/or data product(s) (reference designators, if applicable) data from [start date] to [end date]. [Repository]. [URL]]. [Platform DOI]. Accessed on [date accessed].
+Guidance for citing data in this format
+The recommended citation format is based on specifying the subset of data used from a Platform. If you are using a reference manager to generate a citation directly from the Platform DOI, please add in brackets: the instrument(s) and/or data product(s) used from that Platform, start and end dates, and the repository with respective URL from which you accessed data.
+The repository can be the OOI Data Portal, Data Explorer ERDDAP, Raw Data Archive, etc., with respective URL.
+Depending on the repository, the date published would be either the same as the date accessed (Data Portal, M2M API), the date last modified (Raw Data Archive, THREDDS, Data Explorer ERDDAP), or the date in README or filename (Cruise Data)
+To find the date last modified for Data Explorer ERDDAP, click on the RSS button (to right of Dataset Title) to view pubDate.
+Recommended date format YYYY-MM-DD.
+To find the reference designator in Data Explorer: When displaying a data product, click on More information (tab near top) or on Source (tab near bottom).
+Example for specific instrument and time frame
+NSF Ocean Observatories Initiative. (2014). Central Caldera [Bottom Pressure and Tilt (RS03CCAL-MJ03F-05-BOTPTA301) data from 2015-01-25 to 2016-05-25. JupyterHub. https://jupyter.oceanobservatories.org] doi:10.58046/ooi-rs03ccal. Accessed on 2024-10-26.
+Example for multiple instruments (same time frame)
+NSF Ocean Observatories Initiative. (2014). Pioneer New England Shelf Inshore Surface Mooring [Bulk Meteorology Instrument (CP03ISSM-SBD11-06-METBKA000) and CTD (CP03ISSM-RID27-03-CTDBPC000) data from 2015-05-09 to 2022-06-01. Data Explorer ERDDAP. https://erddap.dataexplorer.oceanobservatories.org] doi:10.58046/OOI-CP03ISSM. Accessed on 2024-11-22.
+Example for cruise data
+OOI provides cruise data, organized per cruise, through the Raw Data Archive (as of 2025; previously through Alfresco ) and to external repositories which may have their own citation guidance (please see OOI’s cruise data webpage for more information).
+To cite OOI’s Water Sampling data, per cruise, please refer to the format of the following example:
+NSF Ocean Observatories Initiative. (2024-11-06). Oxygen sample data from cruise AR84-01 to the Global Irminger Sea Array. Raw Data Archive. https://rawdata.oceanobservatories.org/files/cruise_data/Irminger_Sea/Irminger_Sea-11_AR84-01_2024-06-02/Water_Sampling/Irminger_Sea-11_AR84-01_Oxygen_Sample_Data_2024-11-06_Ver_1-00.xlsx. Accessed on 2024-12-11.
+OOI cruise data is also compiled per array and published through the Biological and Chemical Oceanography Data Management Office (BCO-DMO). As new water sampling data is gathered and processed at an OOI array, subsequent new and expanded versions of this time-series data are published at BCO-DMO. An example citation for OOI water sampling data accessed through BCO-DMO follows this format:
+NSF Ocean Observatories Initiative (2014) OOI Global Irminger Sea Array CTD and Discrete Water Sampling Data from Mooring Overturning Cruises in the Irminger Sea from 2014-2023 (OOI Cruise Data project). Biological and Chemical Oceanography Data Management Office (BCO-DMO). (Version 1) Version Date 2023-10-24, from 2014-09-08 to 2023-09-12. doi:10.26008/1912/bco-dmo.911407.1 Accessed on 2025-02-27.
+We’re here to help!
+If you have a question regarding how to use, acknowledge, or cite OOI data, please contact the HelpDesk.
+The Observatory
+About OOI
+The Vision
+Leadership
+Program Documents
+Advisory Committees
+Glossary
+By the Numbers
+Arrays
+Global Irminger Sea Array
+Global Station Papa Array
+Coastal Endurance Array
+Coastal Pioneer Mid-Atlantic Bight Array
+Coastal Pioneer New England Shelf Array
+Regional Cabled Array
+Cabled Continental Margin Array
+Cabled Axial Seamount Array
+Cabled Endurance Array
+Global Argentine Basin
+Global Southern Ocean Array
+Additional Observing Assets in the Region
+Platforms and Nodes
+Infrastructure
+Cabled Infrastructure
+Moorings
+Profilers
+AUVs
+Gliders
+Cyberinfrastructure
+Instruments
+Science
+Expeditions
+Publications
+OOI-Related Publications
+Submit a Publication
+Science Highlights
+Science Questions
+Projects and Related Research
+Participate in OOI
+Adding Instruments or Platforms
+Participating in Cruises
+Deploying in OOI Areas
+Developing a Proposal
+Propose Modifications to Sampling
+Borrowing OOI Assets
+Community Engagement
+OOI Ambassador Program
+Science User Group for Research meetings
+Communities
+Educators
+Mariners
+Newsletter
+Events
+Visual Galleries
+Media
+Webinar Archive
+Join Us
+OOI Data
+Data Access
+Data Explorer
+Data Quality
+Data Updates and Corrections
+Data Products
+Data Products List
+Community Datasets
+Community Data Tools
+Jupyter Notebook
+How to Use, Acknowledge, and Cite Data
+Data HelpDesk
+Tutorials
+FAQs (Knowledge Base)
+Discourse
+Resources
+For Educators
+Image Gallery
+Video Gallery
+Glossary
+Contact
+The Ocean Observatories Initiative (OOI) is a science-driven ocean observing network that delivers real-time data from more than 900 instruments to address critical science questions regarding the world’s oceans.
+About OOI
+Science
+The Ocean Observatories Initiative
+Data Products
+Contact
+Resources
+Community Data Tools
+Data Access
+OOI Ambassador Program
+FAQ and Knowledgebase
+Glossary
+Need Help?
+Join Us
+How to Participate
+Workshops/Conferences
+Stay Connected
+Sign up for our newsletter to get the latest news from Ocean Observatories Initiative
+Subscribe now
+Join the Conversation
+© 2026 NSF Ocean Observatories Initiative. All Rights Reserved. The Ocean Observatories Initiative is a major facility fully funded by the U.S. National Science Foundation.
+Any opinions, findings, and conclusions or recommendations expressed in this material do not necessarily reflect the views of the U.S. National Science Foundation. Internal | PMO/MIO Log in
+Cookies Policy
+To provide the best experience possible, we use cookies and other data for a number of reasons, such as keeping the OOI sites reliable and secure, providing social media features and to analyze how our sites are used.
+Functional
+Functional
+Always active
+The technical storage or access is strictly necessary for the legitimate purpose of enabling the use of a specific service explicitly requested by the subscriber or user, or for the sole purpose of carrying out the transmission of a communication over an electronic communications network.
+Preferences
+Preferences
+The technical storage or access is necessary for the legitimate purpose of storing preferences that are not requested by the subscriber or user.
+Statistics
+Statistics
+The technical storage or access that is used exclusively for statistical purposes.
+The technical storage or access that is used exclusively for anonymous statistical purposes. Without a subpoena, voluntary compliance on the part of your Internet Service Provider, or additional records from a third party, information stored or retrieved for this purpose alone cannot usually be used to identify you.
+Marketing
+Marketing
+The technical storage or access is required to create user profiles to send advertising, or to track the user on a website or across several websites for similar marketing purposes.
+Manage options
+Manage services
+Manage {vendor_count} vendors
+Read more about these purposes
+Accept All
+Necessary cookies only
+Customize settings
+Save preferences
+Customize settings
+{title}
+{title}
+{title}
+Manage consent
+Scroll To Top

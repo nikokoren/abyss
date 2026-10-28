@@ -1,0 +1,178 @@
+ASHES – OOI Regional Cabled Array
+Skip to content
+Interactive Map
+Search
+Home
+About
+Regional Cabled Array
+Ocean Observatories Initiative
+People
+Acknowledgements
+Contact
+Research Sites
+Axial Base
+Axial Caldera
+ASHES
+International District
+Central Caldera
+Eastern Caldera
+Oregon Offshore
+Oregon Shelf
+Oregon Slope Base
+Southern Hydrate Ridge
+Mid-Plate
+Technology
+Cabled Network
+Cables & Connectors
+CTD Rosette
+Primary Nodes
+Junction Boxes
+Benthic Experiment Package (BEP)
+Deep Profiler Moorings
+Shallow Profiler Moorings
+ROVs
+Ships
+Terrestrial Network
+Instruments
+Expeditions
+VISIONS 26
+VISIONS 25
+VISIONS 24
+VISIONS 23
+VISIONS 22
+VISIONS 21
+VISIONS 20
+VISIONS 19
+VISIONS 18
+VISIONS 17
+VISIONS 16
+VISIONS 15
+VISIONS 14
+VISIONS 13
+VISIONS 11
+Education
+Cabled Array in the Classroom
+Engagement Products
+K12 Lessons
+Data Portal
+Resources
+Galleries
+Biology Catalog
+Featured Posts
+Glossary
+Home
+About
+Regional Cabled Array
+Ocean Observatories Initiative
+People
+Acknowledgements
+Contact
+Research Sites
+Axial Base
+Axial Caldera
+ASHES
+International District
+Central Caldera
+Eastern Caldera
+Oregon Offshore
+Oregon Shelf
+Oregon Slope Base
+Southern Hydrate Ridge
+Mid-Plate
+Technology
+Cabled Network
+Cables & Connectors
+CTD Rosette
+Primary Nodes
+Junction Boxes
+Benthic Experiment Package (BEP)
+Deep Profiler Moorings
+Shallow Profiler Moorings
+ROVs
+Ships
+Terrestrial Network
+Instruments
+Expeditions
+VISIONS 26
+VISIONS 25
+VISIONS 24
+VISIONS 23
+VISIONS 22
+VISIONS 21
+VISIONS 20
+VISIONS 19
+VISIONS 18
+VISIONS 17
+VISIONS 16
+VISIONS 15
+VISIONS 14
+VISIONS 13
+VISIONS 11
+Education
+Cabled Array in the Classroom
+Engagement Products
+K12 Lessons
+Data Portal
+Resources
+Galleries
+Biology Catalog
+Featured Posts
+Glossary
+ASHES
+Axial Base
+Axial Caldera
+ASHES
+International District
+Eastern Caldera
+Central Caldera
+Oregon Offshore
+Oregon Shelf
+Oregon Slope Base
+Southern Hydrate Ridge
+Mid-Plate
+ASHES Vent Field
+This map shows the locations of instrumentation as installed in 2019. Credit: M. Elend, University of Washington.
+The ASHES vent field is located ~130 m east of the caldera boundary fault. Most of the hydrothermal activity is located in an area ~ 60-80 m across, within a small depression, with only a few meters of relief. The area is floored by fractured lobate flows and some sheet flows, with pillows more common around the outer perimeter of the field. Many of the narrow fractures are diffusely venting and support tubeworms, palmworms, limpets and rare clams. The ASHES field hosts numerous small chimneys (e.g. Mushroom, Inferno, Hell, Phoenix, Virgin) that are generally small (less than ~ 4 m in height) and typically host numerous, very narrow discharge orifices (<5 cm). The edifices are commonly covered in dense macrofaunal communities that are similar to those at the diffuse flow sites, but they lack clams. Many of the chimneys have remained similar in size since the late 1980’s (Butterfield et al., 1990; Hammond, 1990). New growth forms slender, highly friable spires that are rich in anhydrite, pyrite and zinc sulfide.A healthy tubeworm bush encases a small chimney adjacent to the Phoenix edifice in ASHES. Credit: UW/NSF-OOI/CSSF/V15.
+Fluid temperatures and chemistry, in concert with mineralogy and vent deposit chemistry define steep chemical and thermal gradients within the walls of the actively venting edifices. Hydrothermal fluids egressing from the chimney orifices show temperatures in excess of 275°C and rapidly entrain 2°C seawater as they exit the narrow spigots. Likely due to boiling, the venting fluids are relatively particle-poor compared to many high-temperature chimneys in other vent fields (Butterfield et al., 1990). The northeastern portion of the field hosts a < 1 m tall anhydrite spire (Virgin mound) bounded by a anhydrite mound that vents clear fluids and emits some of the highest CO2-rich fluids in the caldera (Butterfield et al., 1990).
+Core OOI infrastructure at ASHES is focused on examining the relationships between seismic activity and fluid flow in diffuse and black smoker sites, and how changes in diffuse fluid temperature and chemistry impacts macrofaunal communities. The main focus sites for hydrothermal flow instrumentation are adjacent to the chimneys called Mushroom and Inferno, which are located ~ 10 m apart. A network of actively venting fractures (filled with bacteria, small tube worms and limets) that radiate away from Mushroom are a hallmark of this site. On July 4, the OOI Cabled Array high definition camera, built by the UW, was reinstalled at the actively venting chimney “Mushroom” in the ASHES hydrothermal field on Axial Seamount. Credit: UW/NSF-OOI/WHOI, V18.
+A NE-looking high definition video camera (CAMHDS301) focuses on Mushroom imaging the entire chimney every 3 hrs, twice a month 24 hrs, and once a month for 72 hrs. A long-duration osmotic fluid sampler (OSMOA301), and a three-dimensional thermistory array (TMPSFA301) are located in a small diffuse flow site near Inferno. A tight array of two short-period seismometers feeding out from this site is designed to capture local seismic events beneath the field, with the goal of defining the nature of the upflow zone beneath ASHES. Daily histograms, locations and magnitudes of seismic events at Axial are provided by W. Wilcock, University of Washington.
+In 2017, a bottom pressure-tilt instrument (BOTPTA304) and CTD (CTDPFB304) were also installed as PI instruments through an NSF award to W. Chadwick, Oregon State University and daily visualizations of uplift and estimates of when Axial will erupt again are provided on his website. In 2018, a multibeam sonar system (COVIS – Cabled Observatory Vent Imaging Sonar) was installed to image diffuse and high temperature flow at Inferno, Mushroom, and associated diffuse flow sites. The sonar was installed through an NSF award to K. Bemis, Rutgers University.
+A vibrant tube worm, intermixed with sulfiide worms, thrives on the side of Inferno. Credit. D. Kelley, University of Washington, Bureau of Ocean Energy Management, WHOI, V21.
+A hydrothermal vent chimney at ASHES in Axial Caldera, covered with Ridgeia tube worms, palm worms, limpets, scale worms, and bacteria. Credit: UW/NSF-OOI/WHOI, Dive J2-1197, V19
+Spider crab at Phoenix vent in ASHES vent field during dive J2-1650. Credit: M. Vardaro, University of Washington, V24.
+A scarlet mound of thriving tube worms at Phoenix vent in ASHES vent field during dive J2-1650. Credit: M. Vardaro, University of Washington, V24.
+An active black smoker on the hydrothermal chimney "Mushroom" is surrounded by a dense colony of beautiful tube worms. Credit: UW/NSF-OOI/CSSF
+The orifice at the base of the hydrothermal chimney called Mushroom is marked by a strong jet of high temperature hydrothermal fluid. Sulfide worms, scale worms and limpets are bathed in a mixture of the high temperature fluid and seawater. Credit: UW/NSF-OOI/WHOI, V18.
+Small spigots on the ~4 m tall vent called Mushroom issue clear high temperature fluids. Healthy communities of sulfide worms and tubeworms cover the outer surfaces of the chimney. The tubeworms have no mouth or anus, but their tubes are filled with symbiotic microorganisms that process carbon which sustains the worms. Credit: UW/NSF-OOI/CSSF; V11.
+The UW-APL-built high definition camera lights up the 12-13 ft tall hot spring deposit called Mushroom, nearly 5000 ft beneath the oceans surface at the summit of Axial Seamount. Credit: UW/NSF-OOI/WHOI,V18.
+A shot of the newly installed HD camera lighting up the face of the actively venting Mushroom chimney in the ASHES hydrothermal field. Credit: UW/OOI-NSF/WHOI; V17.
+The multibeam sonar system COVIS that images hydrothermal plumes installed in the ASHES hydrothermal field near teh hot vents Mushroom and Inferno. Credit: UW/NSF-OOI/WHOI;V19.
+The Mushroom hydrothermal chimney at the ASHES vent field, hosts dense communities of limpets, a variety of worms (palm, tube, scale, sulfide), and filamentous bacteria. The chimney rises ~ 4 m above the seafloor. This mosaic was compiled by M. Elend, University of Washington from several high definition images. Credti: M. Elend, University of Washington.
+Cooling lava takes on different shapes, depending on the temperature and vigor of the flow. Here, lava lobes, sheet flow and jumbled flow types fill the frame near to the Ashes vent site on Axial. (VISIONS '13 Dive R-1613)
+Photo credit: OOI-NSF/UW/CSSF
+A lush community of vibrant red tube worms grows on a 1 m tall black smoker chimney in the ASHES hydrothermal field. The tube worms, which are hosted in white housings about the diameter of your small finger, are intergrown with brown palm worms.Credit: NSF-OOI/UW/CSSF; Dive R1835; V15.
+Beautiful sheet flow swirl with broken hackly edges. Credit: UW/NSF-OOI/CSSF; V13.
+A close up of animals, including palm worms and tubeworms, on the hydrothermal chimney called Mushroom in the ASHES hydrothermal field. The image is a frame grab from video streamed during testing of the OOI-RCA high-definition video camera built by the Applied Physics Lab at the University of Washington. The camera has been at this site for 1 year. Credit: UW/NSF-OOI/ V14.
+This short-period seismometer was deployed on a flat sheet flow ~ 1.3 km east of the ASHES hydrothermal field in 2013. The black ball in the yellow circle shows that it is perfectly level, helping to insure that the highest quality data comes off of this network. Axial Volcano is likely to be quite seismically active and we are anxious to get the real-time data on shore next year. This will help us understand magma and fluid migration in the subsurface of the volcano...and eventually these data may help us predict an eruption. Several earthquakes were detected in real-time during testing of these seismometers in 2013. Credit: UW/NSF-OOI/CSSF, ROPOS Dive R1635; V13.
+Two parasitic chimlets on the side of Mushroom are covered by filamentous bacteria and limpets (background) and sulfide worms (foreground). UW/NSF-OOI/WHOI; J2-1650; V24.
+The high definition camera lights up a highly active black smoker chimlet in front of the ~ 3 m tall Mushroom edifice. UW/NSF-OOI/WHOI, V24.
+The ROV ROPOS powers up the RSN-OOI camera for the first time at the hydrothermal chimney called Mushroom. This image is from ROPOS with the vehicle lights off, and only the RSN-OOI HD camera providing illumination of the chimney while collecting the first video imagery from the seafloor, which was then streamed live over the Internet. Photo credit: NSF-OOI/UW/CSSF.
+Beauitful lavender-blue protists thrive at the base of the active chimney 'Mushroom'. Credit: UW/NSF-OOI/WHOI. V20.
+Interactive Map
+Contact
+Ocean Observatories Initiative
+NSF Disclaimer
+Privacy & Terms
+Interactive Map
+Contact
+Ocean Observatories Initiative
+NSF Disclaimer
+Privacy & Terms
+Instagram
+Twitter
+Close Panel
+Regional Cabled Array
+Ocean Observatories Initiative
+People
+Acknowledgements
+Contact
