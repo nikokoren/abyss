@@ -23,6 +23,11 @@ SEEDS = [
     'https://oceanobservatories.org/site-list/',
     'https://www.nsf.gov/policies/logos.jsp',
     'https://www.washington.edu/online/privacy/',
+    'https://oceanobservatories.org/array/cabled-axial-seamount-array/',
+    'https://oceanobservatories.org/array/cabled-continental-margin-array/',
+    'https://oceanobservatories.org/regional-cabled-array/',
+    'https://interactiveoceans.washington.edu/research-sites/axial-caldera/international-district/',
+    'https://interactiveoceans.washington.edu/research-sites/southern-hydrate-ridge/',
 ]
 RELEVANT = re.compile(r'polic|terms|copyright|\bcite\b|citation|licen[cs]|acknowledg', re.I)
 LIMIT = 2 * 1024 * 1024
@@ -102,6 +107,8 @@ def capture(output, seeds, max_pages):
                 links = [{'url': urldefrag(urljoin(record['final_url'], href))[0], 'label': label}
                          for href, label in page.links]
                 record['links'] = links
+                record['image_links'] = [dict(i, url=urljoin(record['final_url'], i['url']))
+                                         for i in page.images]
                 record['logo_images'] = [dict(i, url=urljoin(record['final_url'], i['url']))
                                          for i in page.images if 'logo' in str(i).lower()]
                 for link in links:
