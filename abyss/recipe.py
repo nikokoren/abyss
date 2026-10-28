@@ -14,7 +14,9 @@ def generate(output, base_url, destination):
     options = catalog.get('options', [])
     if not options:
         raise ValueError('No validated published sources; recipe dropdown cannot be generated yet')
-    quote = lambda value: json.dumps(value, ensure_ascii=False)
+    # YAML accepts JSON Unicode escapes. Keep the import file ASCII-safe even
+    # when an importer guesses a legacy encoding instead of UTF-8.
+    quote = lambda value: json.dumps(value, ensure_ascii=True)
     entries = [catalog.get('sources', {}).get(o['value'], {}) for o in options]
     credits = ' '.join(dict.fromkeys(e.get('attribution', '') for e in entries if e.get('attribution')))
     acknowledgments = ' '.join(dict.fromkeys(e.get('acknowledgment', '') for e in entries if e.get('acknowledgment')))
@@ -31,9 +33,9 @@ def generate(output, base_url, destination):
             '    field_type: select', '    multiple: true', '    optional: true',
             '    description: ' + quote(details.strip()),
             '    default: []', '    options:']
-    text.extend('      - ' + quote(o['label']) + ': ' + quote(o['value']) for o in options)
+    text.extend('      - ' + quote(o['label'].replace('·', '-')) + ': ' + quote(o['value']) for o in options)
     text.extend(['  - keyname: show_qr', '    name: Show QR code', '    field_type: boolean',
                  '    optional: true', '    default: false',
                  '    description: "Full-screen view only: scan the bottom-right overlay to open this exact image or video recording. Off by default."'])
     Path(destination).parent.mkdir(parents=True, exist_ok=True)
-    Path(destination).write_text('\n'.join(text) + '\n')
+    Path(destination).write_text('\n'.join(text) + '\n', encoding='utf-8')
