@@ -1,0 +1,178 @@
+Using the NOAA Ocean Exploration Data Access Tools - NOAA Ocean Exploration
+An official website of the United States government
+Here’s how you know
+Here’s how you know
+Official websites use .gov
+A
+.gov website belongs to an official government
+organization in the United States.
+Secure .gov websites use HTTPS
+A
+lock (
+Lock
+Locked padlock icon
+) or https:// means you’ve safely connected to
+the .gov website. Share sensitive information only on official,
+secure websites.
+Menu
+About
+About
+Our Mission
+Who We Are
+Annual Reports
+Program Reviews
+Media Kit
+Ocean Exploration Advisory Board
+National Forums on Ocean Exploration
+Search for:
+Search
+Home
+Science & Exploration
+Science & Exploration
+Science & Exploration
+Expeditions & Projects
+Why We Explore
+Why Ocean Exploration Matters
+NOAA History
+How We Explore
+NOAA Ship Okeanos Explorer
+Science & Technology for Exploration
+Partnerships
+What We Explore
+Marine Critical Minerals
+NOAA Omics
+Data & Products
+Data Access Tools
+Benthic Animal Guide
+Publications & Reports
+Learn & Discover
+Learn & Discover
+For Educators
+All Classroom Materials
+Professional Development Opportunities
+Deep Ocean Education Project
+Ocean Science For Everyone
+Ocean Exploration Facts
+Dive Deeper
+Multimedia
+News
+Get Involved
+Get Involved
+Opportunities to Join Us
+Student Opportunities
+Employment Opportunities
+Career and Education Resources
+Back to Data & Products
+Using the NOAA Ocean Exploration Data Access Tools
+The primary tools for accessing data collected during NOAA Ocean Exploration-supported expeditions, and archived at NOAA’s National Centers for Environmental Information (NCEI), are the NOAA Ocean Exploration Data Atlas, the NOAA Ship Okeanos Explorer data landing pages, and the Ocean Exploration Video Portal.
+Which tool?
+NOAA Ocean Exploration Data Atlas: The data atlas is recommended for location-based searches. The data atlas includes data for all NOAA Ocean Exploration-supported expeditions in the NOAA archives. This includes data from all expeditions on NOAA Ship Okeanos Explorer as well as some expeditions on Ocean Exploration Trust’s Exploration Vessel Nautilus and some expeditions supported by NOAA Ocean Exploration’s annual competitive grants program.
+NOAA Ship Okeanos Explorer data landing pages: The data landing pages are recommended for accessing data from expeditions on Okeanos Explorer by date rather than location. Each expedition on Okeanos Explorer has its own data landing page with direct links to its archived data, including undersea video and images. Each expedition with remotely operated vehicle (ROV) operations also has sub-pages for each of its ROV dives for easy access to dive-specific data.
+Ocean Exploration Video Portal: The video portal is recommended for searching for specific video content regardless of when and where it was collected. The portal provides access to an extensive collection of undersea video collected during expeditions on Okeanos Explorer and other NOAA Ocean Exploration-supported expeditions.
+These tools are described in more detail below.
+On this page: NOAA Ocean Exploration Data Atlas | NOAA Ship Okeanos Explorer Data Landing Pages | Ocean Exploration Video Portal
+NOAA Ocean Exploration Data Atlas
+The NOAA Ocean Exploration Data Atlas is a map-based portal that provides access to all data from NOAA Ocean Exploration-supported expeditions in the NOAA archives. It replaces the Ocean Exploration Digital Atlas, which will be retired in 2023.
+NOAA Ocean Exploration expeditions are displayed graphically on the map and listed in the pane on the right side of the viewer. The map and list change as filters are applied in the Filter tab in the pane on the left side of the viewer and when a selection is made.
+To make a selection and learn more about an expedition, click on its track or point on the map, and the expedition track will be highlighted and a pop-up windw will appear. Click Zoom to on the pop-up window to zoom in to the expedition. Alternatively, click on the related Show on Map link in the right pane to zoom directly to the expedition (the expedition track will also be highlighted and the pop-up window will appear).
+You can use the filters in the Filters tab to search the data atlas by collection year, expedition name/number, platform name, mission group (e.g., campaign), and open text (e.g., seamount, coral). The results of the search will be displayed on the map and in the right pane. Click on the Show on Map link in the right pane for the expedition of interest to zoom in to the expedition. Note: If searching on text, click the magnifying glass icon after entering the text.
+A help dialog box will be displayed when entering the data atlas and can also be accessed by clicking on the question mark icon in the upper-right corner of the viewer.
+The details provided in the following sections are based on expeditions on NOAA Ship Okeanos Explorer as of 2021. Details and data may vary for older expeditions and expeditions on other platforms. NCEI adds data to the data atlas after data are quality controlled and released and publications and related materials are published. Thus, not all data will be made available at the same time.
+Expedition Pop-Up Windows
+Expedition data and information in a pop-up window include:*
+Basic Expedition Information: This section includes the expedition name and number, dates, vessel, project principals, a brief description, and links to the expedition website and report.
+Data Access: This section includes links to expedition-related data, including:
+Cruise Summary Products:
+Cruise summary map, cruise ship track, seafloor mapping products collection, mapping data report, and CTD profile data.
+Archived Collections:
+Expedition metadata; multibeam, water column sonar, single-beam and sub-bottom, and physical, chemical, and biological archive collections.
+Selected Data Sets:
+Ship navigation data and ship SCS/sensor data.
+ROV Data Access: For expeditions with ROV operations, this section provides links to ROV-related data, including:
+ROV Summary Products:
+ROV data access by dive, ROV dive event logs, video, samples collected during dive operations, and submersible navigation/sensor data.
+Sample Repositories:
+Repositories for biological and geological samples collected during an expedition (see Accessing Samples Collected During Expeditions on NOAA Ship Okeanos Explorer).
+Surveys of Opportunity:
+Unplanned data collected as circumstances allow (e.g., photometer data for the NASA Maritime Aerosol Network).
+Publications: This link provides access to expedition-specific plans and reports and expedition-related peer-reviewed publications through the NOAA Central Library’s NOAA Ocean Exploration Library Guide.
+Education: This section describes and links to general and expedition-specific educational materials. (Note: expedition-specific educational materials were not produced for expeditions on Okeanos Explorer after 2019.)
+*Some old expeditions had more than one leg. These legs are treated as individual expeditions.
+ROV Dive Pop-Up Windows
+In the right pane of an ROV expedition display, click on the [number] ROV Dives link to expand the pane to show each of the dives by number. Click on a dive number to zoom to the dive on the map. ROV dive data layers include ROV dive location, ROV entry/exit points (in water, out water, on bottom, off bottom), dive track, and sample locations by type (biological, geological).
+Click on a dive location (green diamond) or dive track when zoomed in (purple line) to access a pop-up window.
+ROV dive data and information in a pop-up window include:
+Basic Dive Information:
+Expedition name and number, dive number, dates, platform, dive duration, time on seafloor, and maximum depth.
+ROV Data Access:
+Links to ROV-related data, including ROV data access by dive, ROV dive event logs, video, samples collected during dive operations, and submersible navigation/sensor data.
+Sample Repositories:
+Links to repositories for biological and geological samples collected during an expedition (see Accessing Samples Collected During Expeditions on NOAA Ship Okeanos Explorer).
+Basic Expedition Information:
+Expedition dates, vessel, project principals, and a brief description plus links to the expedition’s website and report.
+NOAA Ship Okeanos Explorer Data Landing Pages
+NCEI develops data landing pages for expeditions on NOAA Ship Okeanos Explorer. These pages are accessible by clicking the tab with the year of the expedition of interest on the website homepage and then the link to the expedition itself. An expedition’s data landing page includes an interactive map that highlights the track and dive locations (if applicable), an overview of operations, and links to bulk download, open, or otherwise access expedition data and information, such as:
+Expedition Data and Resources:
+Expedition reports; ship navigation, SCS/sensor, and CTD data; and mapping and GIS products.
+Submersible Data and Resources:
+Dive summaries, dive tracks, ROV dive event logs, video, samples collected during dive operations, and submersible navigation/sensor and CTD data.
+Collected Specimen Repositories
+Educational Resources
+Publication Resources
+Links to Archived Data and Resources:
+Expedition metadata; multibeam, water column sonar, and physical, chemical, and biological archive collections.
+Landing Page ROV Dive Data and Information
+Dive-specific pages are available via the data tabs with dive numbers. These pages include interactive and static dive track maps; a dive overview, including area, date, maximum depth, bottom time, and purpose; and links to download, open, or otherwise access dive-specific data and information, such as:
+Dive Summary Report
+Dive Track
+ROV Ancillary Data:
+Dive basics, Hypack targets, ROV sensor list, ROV track/path, dive summary report
+ROV CTD/Sensor Data (Deep Discoverer)
+Camera Platform Sensor Data (Seirios)
+Underwater Still Images
+Underwater Video Clips
+Ocean Exploration Video Portal
+The Ocean Exploration Video Portal enables users to search for, discover, and access video data collected largely during remotely operated vehicle expeditions led or supported by NOAA Ocean Exploration on NOAA Ship Okeanos Explorer and other ships. It features previews of videos, the ability to download low-resolution and ProRes versions of videos, and details about when and where videos were collected, including downloadable dive summaries, as applicable. All video on the video portal is in the public domain.
+Search Fields
+All fields are optional, but filling in as many fields as possible will narrow down the number of results returned. The video portals search fields are:
+Keywords: The keywords field returns results based primarily on annotations of observations made by scientists and technicians. To search for a particular video, enter relevant keyword(s) in the keywords field, but do not include information that can be requested in the other fields. An autocomplete option is selected by default. You can enter multiple keywords by separating them with commas and selecting the OR or AND radio button as appropriate. To search for video taken during a specific dive, you can indicate the dive number (DIVENN) here (and select the associated cruise in the Cruises field at the bottom of the search form).
+Observation Dates: To search for video from a certain period of time, enter the start and end dates that frame that period using the YYYY-MM-DD format.
+Depth Range: To search for video taken at a certain depth, enter the minimum and maximum depths (positive values, in meters) for your depth range of interest.
+Video Type: Three types of video are available in the video portal: segments, streams, and highlights. To search for a certain type of video, click on the associated checkbox(es). The default is set to search all.
+Segments are videos clipped from the original source, typically in 5-minute increments.
+Streams are from older expeditions and are lower resolution and typically longer than segments.
+Highlights are videos produced by videographers and may be composed of clips from multiple segments.
+Camera Location: The video portal includes video taken from cameras on remotely operated vehicles (e.g., Deep Discoverer), camera platforms (e.g., Seirios), and elsewhere (e.g., unknown cameras, scan converters). To search for a video segment (not stream or highlight) taken by a camera located in a specific place, click on the associated checkbox(es). The default is set to search all.
+Dive Site Names: Dive sites for which video is available are listed in alphabetical order. To search for video from a specific dive site, select its name from the list box. You can select multiple dives by pressing the Shift key and selecting the first and last dive site in a range of sites or by pressing the Ctrl or command key and selecting individual dives (release the Shift/Ctrl/command key to scroll through the list). To deselect a site from your search, press the Ctrl or command key and select it.
+Cruises: Cruises on Okeanos Explorer along with some others supported by NOAA Ocean Exploration for which video is available are listed in date order with a short title and cruise ID (the alphanumeric designator assigned to a cruise). To search for video from a specific cruise, select its name from the list box. You can select multiple cruises by pressing the Shift key and selecting the first and last cruise in a range of cruises or by pressing the Ctrl or command key and selecting individual cruises (release the Shift/Ctrl/command key to scroll through the list). To deselect a cruise from your search, press the Ctrl or command key and select it.
+Geographic Coverage: To search for video from a specific part of the ocean, you can enter the latitude and longitude or hold down the Shift key and drag your mouse over your area of interest to draw a bounding box around it. You can then select whether the data can intersect or be fully within the bounding box.
+Search Results
+After entering and selecting your search criteria, click on Search. Your results will open in a new page. The top of the page will show you your search criteria (exclusive of the defaults), the number of videos found, and options to refine your search or conduct a new one.
+Search results will include select associated data (e.g., type of video, dive number, cruise name and number, date and time collected, length, camera and camera type, dive site, depth, and keywords) as well as, where available, a thumbnail image from the video and links to video details, a dive summary, and a video preview.
+You can add a video to your basket by clicking on the associated checkbox on the results page or clicking on the Add file to Basket button in the video preview pop-up window. To view your basket, click on the View Basket button in the upper right corner of the results page or a video preview pop-up window.
+Your basket will show the video(s) you’ve selected and the resolutions available. Typically, videos are available in two resolutions:
+Low resolution — H.264 .mp4 format. Low resolution videos are available for immediate download.
+Full resolution — ProRes422 .mov format. Full resolution videos are ordered and filled by an automated system. When your order is ready, the system will send you an email with a link(s) to your video(s). The link(s) will expire three days (96 hours) after they are sent.
+Click on the checkbox(es) for the resolutions you want and then click the Get File(s) button.
+NCEI’s NOAA Ocean Exploration Data Management Team is committed to providing reliable, timely access to data produced aboard NOAA Ship Okeanos Explorer. The team is continuously working to expand the types of data available, including data from other NOAA Ocean Exploration-supported expeditions, and improve the ease of access. If you’re not able to find what you’re looking for, you can request assistance by submitting a data request or sending an email to oer.info.mgmt@noaa.gov. Questions and suggestions are welcome.
+Back to top
+Homepage
+Science & Exploration
+Learn & Discover
+Multimedia
+News
+Get Involved
+Website Satisfaction Survey
+About
+Contact Us
+Report an Error
+Privacy Policy
+Disclaimer
+Accessibility Statement
+FOIA
+Information Quality
+USA.gov
+Stay connected to NOAA Ocean ExplorationFacebookXInstagramYoutubeLinkedIn
+Department of Commerce
+National Oceanic and Atmospheric Administration (NOAA)
+Close

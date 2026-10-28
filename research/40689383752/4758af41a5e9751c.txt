@@ -1,0 +1,247 @@
+Monterey Accelerated Research System (MARS) • MBARI
+Skip to content
+MBARI
+Publications
+Data
+Directory
+Galleries
+Our Work
+Our Work
+MBARI creates and globally scales the visionary technologies required to explore, map, and understand our changing ocean.
+Our Work Sub
+Research & Development
+Focus Areas
+Teams
+Projects
+Data & Repositories
+Publications
+Expeditions
+Technology
+All Technologies
+Instruments
+Observatories
+Software
+Vehicles
+Tech Transfer
+Marine Operations
+Monterey Bay Today
+Ships
+Schedules
+Our People
+Our People
+MBARI staff are driven by a curiosity to learn more about the ocean and a passion to protect its future.
+Our People Sub
+Leadership & Staff
+Meet our staff, leadership, and board of directors.
+Collaboration in Action
+Get an insider’s look at our team’s work.
+Internship Impacts
+Launching the next generation of ocean explorers.
+Navigating STEM Careers
+Learn how some of our staff navigated to a career at MBARI.
+Education
+Education
+Resources for educators, students, and anyone aspiring to learn how science and technology brings us closer to the ocean.
+Education Sub
+EARTH Curriculum
+Integrate MBARI data with lesson plans and workshops.
+Animals of the Deep
+Discover deep-sea critters, including exclusive footage and info.
+Know Your Ocean
+Dive into topics about ocean health and its fascinating features.
+Deep-Sea Guide
+Explore deep-sea observations with this interactive guide.
+Library
+Learn about the MLML/MBARI Research Library.
+More Resources
+Access more educational resources from the teams at MBARI.
+News
+About
+About
+MBARI is a non-profit oceanographic research center advancing marine science and engineering to understand our changing ocean.
+About Sub
+Mission & Vision
+Learn about MBARI’s mission, vision, and values.
+Strategic Roadmap
+Learn about our strategic priorities for the years ahead.
+Leadership & Staff
+Meet our staff, leadership, and board of directors.
+Careers
+Find job openings and postdoc and internship opportunities.
+Connect with Us
+Follow MBARI on social media and stay updated.
+Events
+See upcoming seminars, lectures, and public events.
+Reports & Financials
+Access the latest annual reports and financial information.
+History
+Explore MBARI’s rich history spanning over three decades.
+For Media
+Get media-specific information and assets.
+Search
+Navigation Toggle
+Our Work
+Our Work
+MBARI creates and globally scales the visionary technologies required to explore, map, and understand our changing ocean.
+Our Work Sub
+Research & Development
+Focus Areas
+Teams
+Projects
+Data & Repositories
+Publications
+Expeditions
+Technology
+All Technologies
+Instruments
+Observatories
+Software
+Vehicles
+Tech Transfer
+Marine Operations
+Monterey Bay Today
+Ships
+Schedules
+Our People
+Our People
+MBARI staff are driven by a curiosity to learn more about the ocean and a passion to protect its future.
+Our People Sub
+Leadership & Staff
+Meet our staff, leadership, and board of directors.
+Collaboration in Action
+Get an insider’s look at our team’s work.
+Internship Impacts
+Launching the next generation of ocean explorers.
+Navigating STEM Careers
+Learn how some of our staff navigated to a career at MBARI.
+Education
+Education
+Resources for educators, students, and anyone aspiring to learn how science and technology brings us closer to the ocean.
+Education Sub
+EARTH Curriculum
+Integrate MBARI data with lesson plans and workshops.
+Animals of the Deep
+Discover deep-sea critters, including exclusive footage and info.
+Know Your Ocean
+Dive into topics about ocean health and its fascinating features.
+Deep-Sea Guide
+Explore deep-sea observations with this interactive guide.
+Library
+Learn about the MLML/MBARI Research Library.
+More Resources
+Access more educational resources from the teams at MBARI.
+News
+About
+About
+MBARI is a non-profit oceanographic research center advancing marine science and engineering to understand our changing ocean.
+About Sub
+Mission & Vision
+Learn about MBARI’s mission, vision, and values.
+Strategic Roadmap
+Learn about our strategic priorities for the years ahead.
+Leadership & Staff
+Meet our staff, leadership, and board of directors.
+Careers
+Find job openings and postdoc and internship opportunities.
+Connect with Us
+Follow MBARI on social media and stay updated.
+Events
+See upcoming seminars, lectures, and public events.
+Reports & Financials
+Access the latest annual reports and financial information.
+History
+Explore MBARI’s rich history spanning over three decades.
+For Media
+Get media-specific information and assets.
+Publications
+Data
+Directory
+Galleries
+Keyword search
+Submit
+Search
+Close
+You might be interested in:
+Job Openings
+Find the latest job openings and join the team.
+Internships
+Learn about our summer internship program.
+Staff Directory
+Meet our leadership and staff.
+Animals of the Deep
+Discover deep-sea critters of all types.
+Data & Repositories
+Search MBARI’s library of data.
+Technologies
+Learn about our technologies.
+Technologies
+Monterey Accelerated Research System (MARS)
+Overview
+Contacts
+Site Description
+How to Interface
+The MARS system was initially developed here at MBARI. It has been federally supported by grant awards from the National Science Foundation continuously since 2002.
+Most oceanographic instruments on the seafloor have no connections with the surface, so they have to run on batteries and store their own data. A cabled observatory like MARS removes those restrictions, allowing scientists to design new types of oceanographic equipment and study the ocean in new ways. MARS provides electrical power and data connections for new research instruments in the deep-sea. That’s the vision behind the Monterey Accelerated Research System (MARS).
+The Monterey Accelerated Research System (MARS) allows scientists to perform long-term and real-time experiments 900 meters below the surface of Monterey Bay. The main MARS node (orange box with sloping sides) connects to shore through a 51-km-long power and fibre-optic cable. MARS serves as an engineering, science, and education test bed for even larger regional ocean observatories.
+The system consists of a 52-km (32-mile) undersea cable that carries data and power to a “science node” 891 meters (2,923 feet) below the surface of Monterey Bay. More than eight different science experiments can be attached to this main hub with eight nodes. Additional experiments can be daisy-chained to each node. MARS is located at latitude North 36 degrees 42.7481 minutes and longitude West 122 degrees 11.2139 minutes. We invite ocean scientists to consider deploying instruments on the MARS ocean observatory testbed.
+MARS Technology
+Overview
+Like a power strip at the end of an oversized extension cord, the bright-orange MARS science node lies at the end of a 52-km (32-mile) cable connecting the unit to power and computers at MBARI. Electronics within the node can route electricity and data to up to eight science experiments, each of which may incorporate multiple sensors.
+The undersea cable
+The MARS power and data cable follows a 52-km (32-mile) arc across Monterey Bay to the MARS observatory site. This curved route was chosen to avoid areas of rocky bottom and submarine landslides around Monterey Canyon. Along most of its route, the cable is buried about one meter (three feet) below the seafloor to minimize its effects on marine life and reduce the chance of its being snagged by anchors or fishing gear. In order to minimize the cable’s impacts, MBARI scientists spent over a year studying the effects of a cable that runs offshore from Half Moon Bay.
+The trawl-resistant frame
+The MARS science node consists of two pieces: the massive orange “trawl-resistant frame” and the electronics package, which fits inside this frame.
+The trawl-resistant frame consists of a truncated pyramid made of steel plates that is 3.7 by 4.6 meters (12 by 15 feet) wide at the base and 1.2 meters (4 feet) tall. This frame protects the node’s electronic components from boat anchors or commercial fishing gear. Its smooth corners and sloping sides are designed to prevent such gear from snagging. Doors on each side of the frame can be opened, allowing remotely operated vehicles to plug or unplug experiments.
+The electronics package
+The heart of the science node, the electronics package, consists of two titanium pressure housings suspended beneath a block of yellow buoyant foam. Inside one housing is electronic equipment for routing data and controlling power to the instruments. Inside the second housing is the equivalent of an electrical substation, to convert the high voltage in the cable to lower voltages used by science instruments.
+Electrical power
+The MARS cable carries 10,000 volts of electricity directly to the science node. This high voltage minimizes power loss as the electricity moves through the 52-km (32-mile) seafloor cable. Within the science node, transformers convert the 10,000 volts to an instrument-friendly 375 and 48 volts (DC).
+Data
+Using the eight ports on the science node, each science experiment can send up to 100 megabits per second of data back to scientists’ computers on shore. Scientists, in turn are able to send commands back to reprogram or reset their instruments.
+Installing the equipment
+The trawl-resistant frame was installed on the seafloor during the cable-laying process. Later, the science node, with its yellow floatation pack, was lowered into the frame by ROV Ventana, a remote-controlled submarine. Each time a new experiment is added to the observatory, the ROV will use its robotic arm to plug an underwater “extension cord” from the experiment into one of eight “wet-mateable connectors” (waterproof power and data outlets) on the side of the science node. Once connected, each experiment will communicate directly with electronics in the science node or use a science instrument interface module to convert power and data from the science node so that they can be used by the experiment.
+Related Technologies
+Instrument
+MARS Echosounder
+Technology
+MARS Echosounder
+DEIMOS data helps researchers understand how animals in the open ocean respond to underwater events and processes.
+Instrument
+Directional Hydrophone
+Technology
+Directional Hydrophone
+The Directional Hydrophone samples sound at a much lower rate than the MARS omnidirectional hydrophone of the Ocean Soundscape Project.
+Vehicle, Autonomous Robotic Rover, Autonomous Underwater Vehicle (AUV)
+Benthic Rover
+Technology
+Benthic Rover
+A mobile lab that methodically charts deep-sea carbon cycles.
+Related News
+News
+MBARI researchers deploy innovative new tech for seafloor monitoring
+Behind the Scenes
+03.17.25
+News
+A tale of two whales: Songs reveal levels of resilience among whales
+News
+02.26.25
+News
+Sound provides new information about the secret lives of sperm whales
+News
+09.24.24
+Stay Connected
+Receive the latest MBARI News
+Email
+Submit
+youtube
+instagram
+tiktok
+facebook
+bluesky
+linkedin
+tumblr
+7700 Sandholdt Road, Moss Landing, California 95039
+© 2026 MBARI
+Staff Login
+Legal
+Website by Visceral

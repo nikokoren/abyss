@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-28T12:33:32.907489+00:00",
+  "checked_at": "2026-10-28T12:38:17.915209+00:00",
   "purpose": "Camera discovery and rights evidence; no publication approval inferred",
-  "run_url": "https://github.com/nikokoren/abyss/actions/runs/40688727414",
+  "run_url": "https://github.com/nikokoren/abyss/actions/runs/40689383752",
   "targets": {
     "schema_version": 1,
     "cameras": [
@@ -182,13 +182,16 @@
       "https://www.mbari.org/our-work/technologies/observatories/",
       "https://www.mbari.org/our-work/monterey-bay-today/",
       "https://www.mbari.org/about/for-media/",
-      "https://www.mbari.org/legal/"
+      "https://www.mbari.org/legal/",
+      "https://oceanexplorer.noaa.gov/multimedia/",
+      "https://oceanexplorer.noaa.gov/disclaimer/",
+      "https://oceanexplorer.noaa.gov/data/access/"
     ]
   },
   "pages": [
     {
       "url": "https://interactiveoceans.washington.edu/instruments/digital-still-camera/",
-      "checked_at": "2026-10-28T12:33:26.452091+00:00",
+      "checked_at": "2026-10-28T12:38:12.860702+00:00",
       "status": 200,
       "final_url": "https://interactiveoceans.washington.edu/instruments/digital-still-camera/",
       "content_type": "text/html",
@@ -627,7 +630,7 @@
     },
     {
       "url": "https://www.oceannetworks.ca/data/",
-      "checked_at": "2026-10-28T12:33:26.452493+00:00",
+      "checked_at": "2026-10-28T12:38:12.861017+00:00",
       "status": 200,
       "final_url": "https://www.oceannetworks.ca/data/",
       "content_type": "text/html",
@@ -790,7 +793,7 @@
     },
     {
       "url": "https://www.oceannetworks.ca/data/data-policy/",
-      "checked_at": "2026-10-28T12:33:26.452951+00:00",
+      "checked_at": "2026-10-28T12:38:12.861393+00:00",
       "status": 200,
       "final_url": "https://www.oceannetworks.ca/data/data-policy/",
       "content_type": "text/html",
@@ -973,7 +976,7 @@
     },
     {
       "url": "https://data.oceannetworks.ca/api/devices?method=get&deviceCategoryCode=CAMERA",
-      "checked_at": "2026-10-28T12:33:26.453461+00:00",
+      "checked_at": "2026-10-28T12:38:12.861647+00:00",
       "failure": {
         "category": "upstream_http_error",
         "message": "HTTP Error 401: ",
@@ -982,7 +985,7 @@
     },
     {
       "url": "https://oceanexplorer.noaa.gov/okeanos/media/exstream/exstream.html",
-      "checked_at": "2026-10-28T12:33:26.787784+00:00",
+      "checked_at": "2026-10-28T12:38:13.181340+00:00",
       "failure": {
         "category": "upstream_http_error",
         "message": "HTTP Error 404: Not Found",
@@ -991,7 +994,7 @@
     },
     {
       "url": "https://oceanexploration.noaa.gov/",
-      "checked_at": "2026-10-28T12:33:26.794950+00:00",
+      "checked_at": "2026-10-28T12:38:13.205642+00:00",
       "failure": {
         "category": "network_path_error",
         "message": "<urlopen error [Errno -2] Name or service not known>"
@@ -999,7 +1002,7 @@
     },
     {
       "url": "https://www.mbari.org/at-sea/observatories/mars/",
-      "checked_at": "2026-10-28T12:33:26.932215+00:00",
+      "checked_at": "2026-10-28T12:38:13.270671+00:00",
       "failure": {
         "category": "upstream_http_error",
         "message": "HTTP Error 404: Not Found",
@@ -1008,7 +1011,7 @@
     },
     {
       "url": "https://www.mbari.org/",
-      "checked_at": "2026-10-28T12:33:27.070690+00:00",
+      "checked_at": "2026-10-28T12:38:13.325995+00:00",
       "status": 200,
       "final_url": "https://www.mbari.org/",
       "content_type": "text/html",
@@ -1349,12 +1352,12 @@
     },
     {
       "url": "https://oceanexplorer.noaa.gov/",
-      "checked_at": "2026-10-28T12:33:27.091450+00:00",
+      "checked_at": "2026-10-28T12:38:13.531612+00:00",
       "status": 200,
       "final_url": "https://oceanexplorer.noaa.gov/",
       "content_type": "text/html",
       "bytes_received": 73681,
-      "sha256": "80d5e09c6826d5da5067511de8106b534931cc3e41b727db3b54bc818b26e860",
+      "sha256": "a13be6ae3c505cf88e54207f5635e5aac9ad8c01a894458ea6c3f8a4d73f390d",
       "links": [
         [
           "https://oceanexplorer.noaa.gov/",
@@ -1674,7 +1677,7 @@
     },
     {
       "url": "https://www.mbari.org/our-work/technologies/observatories/",
-      "checked_at": "2026-10-28T12:33:27.122973+00:00",
+      "checked_at": "2026-10-28T12:38:13.607248+00:00",
       "status": 200,
       "final_url": "https://www.mbari.org/our-work/technologies/observatories/",
       "content_type": "text/html",
@@ -1909,7 +1912,7 @@
     },
     {
       "url": "https://www.mbari.org/our-work/monterey-bay-today/",
-      "checked_at": "2026-10-28T12:33:27.151414+00:00",
+      "checked_at": "2026-10-28T12:38:13.711965+00:00",
       "status": 200,
       "final_url": "https://www.mbari.org/our-work/monterey-bay-today/",
       "content_type": "text/html",
@@ -2160,7 +2163,7 @@
     },
     {
       "url": "https://www.mbari.org/about/for-media/",
-      "checked_at": "2026-10-28T12:33:27.572051+00:00",
+      "checked_at": "2026-10-28T12:38:13.719477+00:00",
       "status": 200,
       "final_url": "https://www.mbari.org/about/for-media/",
       "content_type": "text/html",
@@ -2455,7 +2458,7 @@
     },
     {
       "url": "https://www.mbari.org/legal/",
-      "checked_at": "2026-10-28T12:33:27.585906+00:00",
+      "checked_at": "2026-10-28T12:38:13.834513+00:00",
       "status": 200,
       "final_url": "https://www.mbari.org/legal/",
       "content_type": "text/html",
@@ -2676,8 +2679,893 @@
       "text": "a172dcbc1c462451.txt"
     },
     {
+      "url": "https://oceanexplorer.noaa.gov/multimedia/",
+      "checked_at": "2026-10-28T12:38:14.076563+00:00",
+      "status": 200,
+      "final_url": "https://oceanexplorer.noaa.gov/multimedia/",
+      "content_type": "text/html",
+      "bytes_received": 86103,
+      "sha256": "b1799e0ea6c03518e62e44430d2417ea07773e6af73acde202dd71ad81c16025",
+      "links": [
+        [
+          "https://oceanexplorer.noaa.gov/",
+          "Homepage"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/multimedia/",
+          "Multimedia"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/about/",
+          "About"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/about/what-we-do/",
+          "Our Mission"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/about/who-we-are/",
+          "Who We Are"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/about/annual-reports/",
+          "Annual Reports"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/about/what-we-do-program-review/",
+          "Program Reviews"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/about/media-kit/",
+          "Media Kit"
+        ],
+        [
+          "https://oeab.noaa.gov/",
+          "Ocean Exploration Advisory Board"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/about/national-forums/",
+          "National Forums on Ocean Exploration"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/science-exploration/",
+          "Science & Exploration"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/expeditions/",
+          "Expeditions & Projects"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/why-exploration-matters/",
+          "Why Ocean Exploration Matters"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/history/",
+          "NOAA History"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/okeanos/",
+          "NOAA Ship Okeanos Explorer"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/technology/",
+          "Science & Technology for Exploration"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/about/partnerships/",
+          "Partnerships"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/noaa-ocean-exploration-minerals/",
+          "Marine Critical Minerals"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/noaa-omics/",
+          "NOAA Omics"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/data/",
+          "Data & Products"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/data/access/",
+          "Data Access Tools"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/data/animal-guide/",
+          "Benthic Animal Guide"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/data/publications/",
+          "Publications & Reports"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/discover/",
+          "Learn & Discover"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/discover/educators/",
+          "For Educators"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/classroom-materials/",
+          "All Classroom Materials"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/discover/professional-development/",
+          "Professional Development Opportunities"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/discover/deep-ocean-education-projects/",
+          "Deep Ocean Education Project"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/ocean-facts/",
+          "Ocean Exploration Facts"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/dive-deeper/",
+          "Dive Deeper"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/news/",
+          "News"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/get-involved/",
+          "Get Involved"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/join-us/",
+          "Opportunities to Join Us"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/careers/student-opportunities/",
+          "Student Opportunities"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/careers/employment-opportunities/",
+          "Employment Opportunities"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/careers/career-and-education-resources/",
+          "Career and Education Resources"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/multimedia/okeanos-explorations-ex1907-dailyupdates-coral-garden-coral-garden/",
+          "Watch Video"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/multimedia/deep-discoverer-imaging-yorktown-wreck/",
+          "View Image"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/multimedia/okeanos-explorations-seascape-alaska-ex2306-gallery-media-dive08-changingcolors/",
+          "Watch Video"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/multimedia/largest-sponge-ever-found/",
+          "The Largest Sponge Ever Found"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/multimedia/a-dinner-at-sea/",
+          "A Dinner at Sea"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/multimedia/okeanos-explorer-gym/",
+          " Okeanos Explorer Gym"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/multimedia/okeanos-explorer-fantail/",
+          " Okeanos Explorer Fantail"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/multimedia/teachers-pose-at-2026-american-samoa-workshop/",
+          "Teachers Pose at 2026 American Samoa Workshop"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/multimedia/2026-american-samoa-professional-development-instructors/",
+          "2026 American Samoa Professional Development Instructors"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/multimedia/fifty-percent-a-historic-first/",
+          "Fifty Percent: A Historic First"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/multimedia/filtering-water-samples-2/",
+          "Filtering Water Samples"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/multimedia/two-mapped-guyots/",
+          "Two Mapped Guyots"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/multimedia/replenishing-the-xbts/",
+          "Replenishing the XBTs"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/multimedia/pacific-islands-mapping-ex2604-summary-map/",
+          "Pacific Islands Mapping (EX2604) Summary Map"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/multimedia/calendar-wallpaper/",
+          "Batfish"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/multimedia/principal-investigators/",
+          "Principal Investigators"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/multimedia/tech-testing-2/",
+          "Tech Testing"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/multimedia/?pg=2",
+          "Next"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/multimedia/?pg=3",
+          "3"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/multimedia/?pg=339",
+          "339"
+        ],
+        [
+          "https://touchpoints.app.cloud.gov/touchpoints/56753158/submit",
+          "Website Satisfaction Survey"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/contact-us/",
+          "Report an Error"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/privacy/",
+          "Privacy Policy"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/disclaimer/",
+          "Disclaimer"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/accessibility/",
+          "Accessibility Statement"
+        ],
+        [
+          "https://www.noaa.gov/information-technology/foia",
+          "FOIA"
+        ],
+        [
+          "https://www.noaa.gov/organization/information-technology/policy-oversight/information-quality",
+          "Information Quality"
+        ],
+        [
+          "https://www.usa.gov",
+          "USA.gov"
+        ],
+        [
+          "https://www.facebook.com/OceanExplorationResearch",
+          "Facebook"
+        ],
+        [
+          "https://x.com/oceanexplorer",
+          "X"
+        ],
+        [
+          "https://www.instagram.com/noaaoceanexploration/",
+          "Instagram"
+        ],
+        [
+          "https://www.youtube.com/oceanexplorergov",
+          "Youtube"
+        ],
+        [
+          "https://www.linkedin.com/showcase/noaa-ocean-exploration/",
+          "LinkedIn"
+        ],
+        [
+          "https://www.commerce.gov/",
+          "Department of Commerce"
+        ],
+        [
+          "http://www.noaa.gov/",
+          "National Oceanic and Atmospheric Administration (NOAA)"
+        ]
+      ],
+      "image_links": [
+        {
+          "url": "https://oceanexplorer.noaa.gov/wp-content/themes/noaa/assets/images/uswds/usa-banner/us_flag_small.png",
+          "alt": ""
+        },
+        {
+          "url": "https://oceanexplorer.noaa.gov/wp-content/themes/noaa/assets/images/uswds/usa-banner/icon-dot-gov.svg",
+          "alt": ""
+        },
+        {
+          "url": "https://oceanexplorer.noaa.gov/wp-content/themes/noaa/assets/images/uswds/usa-banner/icon-https.svg",
+          "alt": ""
+        },
+        {
+          "url": "https://oceanexplorer.noaa.gov/wp-content/uploads/2025/07/noaa-oe-emblem-2024-color.svg",
+          "alt": "NOAA Ocean Exploration logo featuring a blue circular emblem and text with wave patterns."
+        },
+        {
+          "url": "https://oceanexplorer.noaa.gov/wp-content/uploads/2025/07/noaa-oe-emblem-2024-color.svg",
+          "alt": "NOAA Ocean Exploration logo featuring a blue circular emblem and text with wave patterns."
+        },
+        {
+          "url": "https://oceanexplorer.noaa.gov/wp-content/uploads/2025/05/anemone-800-1.jpg",
+          "alt": "This beautiful sea anemone was seen during Dive 02 of the 2021 North Atlantic Stepping Stones expedition. Very little is known about this animal\u2014it is likely an unknown species, genus, and even family. It is believed to have been seen once before on a NOAA Ocean Exploration expedition on NOAA Ship Okeanos Explorer, but in the Pacific Ocean."
+        },
+        {
+          "url": "https://oceanexplorer.noaa.gov/wp-content/uploads/2025/04/coral-garden-poster.jpg",
+          "alt": ""
+        },
+        {
+          "url": "https://oceanexplorer.noaa.gov/wp-content/uploads/2025/06/dive06-dd-exploring-1024x576.jpg",
+          "alt": ""
+        },
+        {
+          "url": "https://oceanexplorer.noaa.gov/wp-content/uploads/2023/10/dive08-changingColors-1920x1080-1-1024x576.jpg",
+          "alt": ""
+        },
+        {
+          "url": "https://oceanexplorer.noaa.gov/wp-content/uploads/2025/07/noaa-logo-rgb-footer.svg",
+          "alt": "NOAA logo: a white seagull silhouette on a blue circle with white NOAA text at the top."
+        }
+      ],
+      "embedded_media": [],
+      "text": "f05f05dbede2b95d.txt"
+    },
+    {
+      "url": "https://oceanexplorer.noaa.gov/disclaimer/",
+      "checked_at": "2026-10-28T12:38:14.084737+00:00",
+      "status": 200,
+      "final_url": "https://oceanexplorer.noaa.gov/disclaimer/",
+      "content_type": "text/html",
+      "bytes_received": 50508,
+      "sha256": "a1dce6a98d7108238950e9418f4f8a07ddbdb413c419d43ceec437175fdca42c",
+      "links": [
+        [
+          "https://oceanexplorer.noaa.gov/",
+          "Homepage"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/disclaimer/",
+          "Disclaimer"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/about/",
+          "About"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/about/what-we-do/",
+          "Our Mission"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/about/who-we-are/",
+          "Who We Are"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/about/annual-reports/",
+          "Annual Reports"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/about/what-we-do-program-review/",
+          "Program Reviews"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/about/media-kit/",
+          "Media Kit"
+        ],
+        [
+          "https://oeab.noaa.gov/",
+          "Ocean Exploration Advisory Board"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/about/national-forums/",
+          "National Forums on Ocean Exploration"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/science-exploration/",
+          "Science & Exploration"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/expeditions/",
+          "Expeditions & Projects"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/why-exploration-matters/",
+          "Why Ocean Exploration Matters"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/history/",
+          "NOAA History"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/okeanos/",
+          "NOAA Ship Okeanos Explorer"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/technology/",
+          "Science & Technology for Exploration"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/about/partnerships/",
+          "Partnerships"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/noaa-ocean-exploration-minerals/",
+          "Marine Critical Minerals"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/noaa-omics/",
+          "NOAA Omics"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/data/",
+          "Data & Products"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/data/access/",
+          "Data Access Tools"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/data/animal-guide/",
+          "Benthic Animal Guide"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/data/publications/",
+          "Publications & Reports"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/discover/",
+          "Learn & Discover"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/discover/educators/",
+          "For Educators"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/classroom-materials/",
+          "All Classroom Materials"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/discover/professional-development/",
+          "Professional Development Opportunities"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/discover/deep-ocean-education-projects/",
+          "Deep Ocean Education Project"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/ocean-facts/",
+          "Ocean Exploration Facts"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/dive-deeper/",
+          "Dive Deeper"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/multimedia/",
+          "Multimedia"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/news/",
+          "News"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/get-involved/",
+          "Get Involved"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/join-us/",
+          "Opportunities to Join Us"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/careers/student-opportunities/",
+          "Student Opportunities"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/careers/employment-opportunities/",
+          "Employment Opportunities"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/careers/career-and-education-resources/",
+          "Career and Education Resources"
+        ],
+        [
+          "https://www.google.com/",
+          "google.com"
+        ],
+        [
+          "https://touchpoints.app.cloud.gov/touchpoints/56753158/submit",
+          "Website Satisfaction Survey"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/contact-us/",
+          "Report an Error"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/privacy/",
+          "Privacy Policy"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/accessibility/",
+          "Accessibility Statement"
+        ],
+        [
+          "https://www.noaa.gov/information-technology/foia",
+          "FOIA"
+        ],
+        [
+          "https://www.noaa.gov/organization/information-technology/policy-oversight/information-quality",
+          "Information Quality"
+        ],
+        [
+          "https://www.usa.gov",
+          "USA.gov"
+        ],
+        [
+          "https://www.facebook.com/OceanExplorationResearch",
+          "Facebook"
+        ],
+        [
+          "https://x.com/oceanexplorer",
+          "X"
+        ],
+        [
+          "https://www.instagram.com/noaaoceanexploration/",
+          "Instagram"
+        ],
+        [
+          "https://www.youtube.com/oceanexplorergov",
+          "Youtube"
+        ],
+        [
+          "https://www.linkedin.com/showcase/noaa-ocean-exploration/",
+          "LinkedIn"
+        ],
+        [
+          "https://www.commerce.gov/",
+          "Department of Commerce"
+        ],
+        [
+          "http://www.noaa.gov/",
+          "National Oceanic and Atmospheric Administration (NOAA)"
+        ]
+      ],
+      "image_links": [
+        {
+          "url": "https://oceanexplorer.noaa.gov/wp-content/themes/noaa/assets/images/uswds/usa-banner/us_flag_small.png",
+          "alt": ""
+        },
+        {
+          "url": "https://oceanexplorer.noaa.gov/wp-content/themes/noaa/assets/images/uswds/usa-banner/icon-dot-gov.svg",
+          "alt": ""
+        },
+        {
+          "url": "https://oceanexplorer.noaa.gov/wp-content/themes/noaa/assets/images/uswds/usa-banner/icon-https.svg",
+          "alt": ""
+        },
+        {
+          "url": "https://oceanexplorer.noaa.gov/wp-content/uploads/2025/07/noaa-oe-emblem-2024-color.svg",
+          "alt": "NOAA Ocean Exploration logo featuring a blue circular emblem and text with wave patterns."
+        },
+        {
+          "url": "https://oceanexplorer.noaa.gov/wp-content/uploads/2025/07/noaa-oe-emblem-2024-color.svg",
+          "alt": "NOAA Ocean Exploration logo featuring a blue circular emblem and text with wave patterns."
+        },
+        {
+          "url": "https://oceanexplorer.noaa.gov/wp-content/uploads/2025/07/noaa-logo-rgb-footer.svg",
+          "alt": "NOAA logo: a white seagull silhouette on a blue circle with white NOAA text at the top."
+        }
+      ],
+      "embedded_media": [],
+      "text": "ad9c1e9bdd34e261.txt"
+    },
+    {
+      "url": "https://oceanexplorer.noaa.gov/data/access/",
+      "checked_at": "2026-10-28T12:38:14.105440+00:00",
+      "status": 200,
+      "final_url": "https://oceanexplorer.noaa.gov/data/access/",
+      "content_type": "text/html",
+      "bytes_received": 58417,
+      "sha256": "581112eb6437a68a6e68bdd4cf44c681d74f8fd2fe832c632491c57239e326be",
+      "links": [
+        [
+          "https://oceanexplorer.noaa.gov/",
+          "Homepage"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/data/access/",
+          "Back to top"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/about/",
+          "About"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/about/what-we-do/",
+          "Our Mission"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/about/who-we-are/",
+          "Who We Are"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/about/annual-reports/",
+          "Annual Reports"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/about/what-we-do-program-review/",
+          "Program Reviews"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/about/media-kit/",
+          "Media Kit"
+        ],
+        [
+          "https://oeab.noaa.gov/",
+          "Ocean Exploration Advisory Board"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/about/national-forums/",
+          "National Forums on Ocean Exploration"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/science-exploration/",
+          "Science & Exploration"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/expeditions/",
+          "Expeditions & Projects"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/why-exploration-matters/",
+          "Why Ocean Exploration Matters"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/history/",
+          "NOAA History"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/okeanos/",
+          "NOAA Ship Okeanos Explorer"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/technology/",
+          "Science & Technology for Exploration"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/about/partnerships/",
+          "Partnerships"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/noaa-ocean-exploration-minerals/",
+          "Marine Critical Minerals"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/noaa-omics/",
+          "NOAA Omics"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/data/",
+          "Back to Data & Products"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/data/animal-guide/",
+          "Benthic Animal Guide"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/data/publications/",
+          "Publications & Reports"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/discover/",
+          "Learn & Discover"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/discover/educators/",
+          "For Educators"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/classroom-materials/",
+          "All Classroom Materials"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/discover/professional-development/",
+          "Professional Development Opportunities"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/discover/deep-ocean-education-projects/",
+          "Deep Ocean Education Project"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/ocean-facts/",
+          "Ocean Exploration Facts"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/dive-deeper/",
+          "Dive Deeper"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/multimedia/",
+          "Multimedia"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/news/",
+          "News"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/get-involved/",
+          "Get Involved"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/join-us/",
+          "Opportunities to Join Us"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/careers/student-opportunities/",
+          "Student Opportunities"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/careers/employment-opportunities/",
+          "Employment Opportunities"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/careers/career-and-education-resources/",
+          "Career and Education Resources"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/wp-content/uploads/2018/04/presidents-panel-on-ocean-exploration-report.pdf",
+          "2000 report of the president\u2019s panel on ocean exploration"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/wp-content/uploads/2018/04/public-law-111-11.pdf",
+          "Public law 111-11 [Section XII Ocean Exploration]"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/data/access-tools/",
+          "Using the NOAA Ocean Exploration Data Access Tools"
+        ],
+        [
+          "https://www.ncei.noaa.gov/maps/ocean-exploration-data-atlas/",
+          "NOAA Ocean Exploration Data Atlas"
+        ],
+        [
+          "https://noaa.maps.arcgis.com/home/webmap/viewer.html?webmap=5afb3b1849314cd4b1d768067cf98bdb",
+          "Okeanos Explorer \u2013 Live Operations Map"
+        ],
+        [
+          "https://noaa.maps.arcgis.com/home/group.html?id=62137203f7d34d5ca1b3108acd1b4884",
+          "Access the NOAA Ocean Exploration (NCEI) ArcGIS Online Group"
+        ],
+        [
+          "https://www.ncei.noaa.gov/waf/okeanos-rov-cruises/",
+          "NOAA Ship Okeanos Explorer Data Landing Pages"
+        ],
+        [
+          "https://www.ncei.noaa.gov/access/ocean-exploration/video/",
+          "Access the Ocean Exploration Video Portal"
+        ],
+        [
+          "https://www.ncei.noaa.gov/waf/ocean-exploration-nofo/",
+          "Access the Competitive Grant Program Data Landing Pages"
+        ],
+        [
+          "https://www.ncei.noaa.gov/products/ocean-exploration-and-research-oer-data-management",
+          "NOAA Ocean Exploration Data Management web page"
+        ],
+        [
+          "https://docs.google.com/a/noaa.gov/spreadsheet/viewform?fromEmail=true&formkey=dHAycC1MYndJb0hTdGRaYXAzVTVBdWc6MA",
+          "data request form"
+        ],
+        [
+          "mailto:oer.info.mgmt@noaa.gov",
+          "oer.info.mgmt@noaa.gov"
+        ],
+        [
+          "mailto:ex.expeditioncoordinator@noaa.gov.",
+          "ex.expeditioncoordinator@noaa.gov."
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/data/ex-sample-access/",
+          "Learn About Accessing Samples"
+        ],
+        [
+          "https://touchpoints.app.cloud.gov/touchpoints/56753158/submit",
+          "Website Satisfaction Survey"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/contact-us/",
+          "Report an Error"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/privacy/",
+          "Privacy Policy"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/disclaimer/",
+          "Disclaimer"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/accessibility/",
+          "Accessibility Statement"
+        ],
+        [
+          "https://www.noaa.gov/information-technology/foia",
+          "FOIA"
+        ],
+        [
+          "https://www.noaa.gov/organization/information-technology/policy-oversight/information-quality",
+          "Information Quality"
+        ],
+        [
+          "https://www.usa.gov",
+          "USA.gov"
+        ],
+        [
+          "https://www.facebook.com/OceanExplorationResearch",
+          "Facebook"
+        ],
+        [
+          "https://x.com/oceanexplorer",
+          "X"
+        ],
+        [
+          "https://www.instagram.com/noaaoceanexploration/",
+          "Instagram"
+        ],
+        [
+          "https://www.youtube.com/oceanexplorergov",
+          "Youtube"
+        ],
+        [
+          "https://www.linkedin.com/showcase/noaa-ocean-exploration/",
+          "LinkedIn"
+        ],
+        [
+          "https://www.commerce.gov/",
+          "Department of Commerce"
+        ],
+        [
+          "http://www.noaa.gov/",
+          "National Oceanic and Atmospheric Administration (NOAA)"
+        ]
+      ],
+      "image_links": [
+        {
+          "url": "https://oceanexplorer.noaa.gov/wp-content/themes/noaa/assets/images/uswds/usa-banner/us_flag_small.png",
+          "alt": ""
+        },
+        {
+          "url": "https://oceanexplorer.noaa.gov/wp-content/themes/noaa/assets/images/uswds/usa-banner/icon-dot-gov.svg",
+          "alt": ""
+        },
+        {
+          "url": "https://oceanexplorer.noaa.gov/wp-content/themes/noaa/assets/images/uswds/usa-banner/icon-https.svg",
+          "alt": ""
+        },
+        {
+          "url": "https://oceanexplorer.noaa.gov/wp-content/uploads/2025/07/noaa-oe-emblem-2024-color.svg",
+          "alt": "NOAA Ocean Exploration logo featuring a blue circular emblem and text with wave patterns."
+        },
+        {
+          "url": "https://oceanexplorer.noaa.gov/wp-content/uploads/2025/07/noaa-oe-emblem-2024-color.svg",
+          "alt": "NOAA Ocean Exploration logo featuring a blue circular emblem and text with wave patterns."
+        },
+        {
+          "url": "https://oceanexplorer.noaa.gov/wp-content/uploads/2025/07/noaa-logo-rgb-footer.svg",
+          "alt": "NOAA logo: a white seagull silhouette on a blue circle with white NOAA text at the top."
+        }
+      ],
+      "embedded_media": [],
+      "text": "565c8d05a68b4e63.txt"
+    },
+    {
       "url": "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/",
-      "checked_at": "2026-10-28T12:33:27.602888+00:00",
+      "checked_at": "2026-10-28T12:38:14.160618+00:00",
       "status": 200,
       "final_url": "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/",
       "content_type": "text/html",
@@ -2824,7 +3712,7 @@
     },
     {
       "url": "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/2026/10/28/",
-      "checked_at": "2026-10-28T12:33:27.990683+00:00",
+      "checked_at": "2026-10-28T12:38:14.182521+00:00",
       "status": 200,
       "final_url": "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/2026/10/28/",
       "content_type": "text/html",
@@ -3427,7 +4315,7 @@
     },
     {
       "url": "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/2026/10/27/",
-      "checked_at": "2026-10-28T12:33:28.141865+00:00",
+      "checked_at": "2026-10-28T12:38:14.205256+00:00",
       "status": 200,
       "final_url": "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/2026/10/27/",
       "content_type": "text/html",
@@ -4630,7 +5518,7 @@
     },
     {
       "url": "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/",
-      "checked_at": "2026-10-28T12:33:28.250827+00:00",
+      "checked_at": "2026-10-28T12:38:14.616340+00:00",
       "status": 200,
       "final_url": "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/",
       "content_type": "text/html",
@@ -4777,7 +5665,7 @@
     },
     {
       "url": "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/28/",
-      "checked_at": "2026-10-28T12:33:28.294186+00:00",
+      "checked_at": "2026-10-28T12:38:14.623602+00:00",
       "status": 200,
       "final_url": "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/28/",
       "content_type": "text/html",
@@ -5356,7 +6244,7 @@
     },
     {
       "url": "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/27/",
-      "checked_at": "2026-10-28T12:33:28.515394+00:00",
+      "checked_at": "2026-10-28T12:38:14.635118+00:00",
       "status": 200,
       "final_url": "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/27/",
       "content_type": "text/html",
@@ -6559,7 +7447,7 @@
     },
     {
       "url": "https://rawdata.oceanobservatories.org/files/RS01SBPS/PC01A/CAMDSC102/",
-      "checked_at": "2026-10-28T12:33:28.610442+00:00",
+      "checked_at": "2026-10-28T12:38:14.679412+00:00",
       "status": 200,
       "final_url": "https://rawdata.oceanobservatories.org/files/RS01SBPS/PC01A/CAMDSC102/",
       "content_type": "text/html",
@@ -6706,7 +7594,7 @@
     },
     {
       "url": "https://rawdata.oceanobservatories.org/files/RS01SBPS/PC01A/CAMDSC102/2026/10/28/",
-      "checked_at": "2026-10-28T12:33:28.824827+00:00",
+      "checked_at": "2026-10-28T12:38:15.018979+00:00",
       "status": 200,
       "final_url": "https://rawdata.oceanobservatories.org/files/RS01SBPS/PC01A/CAMDSC102/2026/10/28/",
       "content_type": "text/html",
@@ -7285,7 +8173,7 @@
     },
     {
       "url": "https://rawdata.oceanobservatories.org/files/RS01SBPS/PC01A/CAMDSC102/2026/10/27/",
-      "checked_at": "2026-10-28T12:33:28.837950+00:00",
+      "checked_at": "2026-10-28T12:38:15.031778+00:00",
       "status": 200,
       "final_url": "https://rawdata.oceanobservatories.org/files/RS01SBPS/PC01A/CAMDSC102/2026/10/27/",
       "content_type": "text/html",
@@ -8488,7 +9376,7 @@
     },
     {
       "url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/",
-      "checked_at": "2026-10-28T12:33:29.124250+00:00",
+      "checked_at": "2026-10-28T12:38:15.036469+00:00",
       "status": 200,
       "final_url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/",
       "content_type": "text/html",
@@ -8627,7 +9515,7 @@
     },
     {
       "url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/28/",
-      "checked_at": "2026-10-28T12:33:29.217555+00:00",
+      "checked_at": "2026-10-28T12:38:15.079624+00:00",
       "status": 200,
       "final_url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/28/",
       "content_type": "text/html",
@@ -9230,7 +10118,7 @@
     },
     {
       "url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/27/",
-      "checked_at": "2026-10-28T12:33:29.356674+00:00",
+      "checked_at": "2026-10-28T12:38:15.475806+00:00",
       "status": 200,
       "final_url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/27/",
       "content_type": "text/html",
@@ -10433,7 +11321,7 @@
     },
     {
       "url": "https://rawdata.oceanobservatories.org/files/RS03AXPS/PC03A/CAMDSC302/",
-      "checked_at": "2026-10-28T12:33:29.449887+00:00",
+      "checked_at": "2026-10-28T12:38:15.480291+00:00",
       "status": 200,
       "final_url": "https://rawdata.oceanobservatories.org/files/RS03AXPS/PC03A/CAMDSC302/",
       "content_type": "text/html",
@@ -10588,7 +11476,7 @@
     },
     {
       "url": "https://rawdata.oceanobservatories.org/files/RS03AXPS/PC03A/CAMDSC302/2026/10/28/",
-      "checked_at": "2026-10-28T12:33:29.646330+00:00",
+      "checked_at": "2026-10-28T12:38:15.480786+00:00",
       "status": 200,
       "final_url": "https://rawdata.oceanobservatories.org/files/RS03AXPS/PC03A/CAMDSC302/2026/10/28/",
       "content_type": "text/html",
@@ -11167,7 +12055,7 @@
     },
     {
       "url": "https://rawdata.oceanobservatories.org/files/RS03AXPS/PC03A/CAMDSC302/2026/10/27/",
-      "checked_at": "2026-10-28T12:33:29.649046+00:00",
+      "checked_at": "2026-10-28T12:38:15.539063+00:00",
       "status": 200,
       "final_url": "https://rawdata.oceanobservatories.org/files/RS03AXPS/PC03A/CAMDSC302/2026/10/27/",
       "content_type": "text/html",
@@ -12370,7 +13258,7 @@
     },
     {
       "url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/",
-      "checked_at": "2026-10-28T12:33:29.814729+00:00",
+      "checked_at": "2026-10-28T12:38:15.788768+00:00",
       "status": 200,
       "final_url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/",
       "content_type": "text/html",
@@ -12525,7 +13413,7 @@
     },
     {
       "url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/28/",
-      "checked_at": "2026-10-28T12:33:29.889582+00:00",
+      "checked_at": "2026-10-28T12:38:15.800543+00:00",
       "status": 200,
       "final_url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/28/",
       "content_type": "text/html",
@@ -13128,7 +14016,7 @@
     },
     {
       "url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/27/",
-      "checked_at": "2026-10-28T12:33:30.256593+00:00",
+      "checked_at": "2026-10-28T12:38:15.837995+00:00",
       "status": 200,
       "final_url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/27/",
       "content_type": "text/html",
@@ -14331,7 +15219,7 @@
     },
     {
       "url": "https://interactiveoceans.washington.edu/about/ocean-observatories-initiative/",
-      "checked_at": "2026-10-28T12:33:30.764606+00:00",
+      "checked_at": "2026-10-28T12:38:16.347640+00:00",
       "status": 200,
       "final_url": "https://interactiveoceans.washington.edu/about/ocean-observatories-initiative/",
       "content_type": "text/html",
@@ -14642,7 +15530,7 @@
     },
     {
       "url": "https://interactiveoceans.washington.edu/collaborators/",
-      "checked_at": "2026-10-28T12:33:30.764874+00:00",
+      "checked_at": "2026-10-28T12:38:16.347861+00:00",
       "status": 200,
       "final_url": "https://interactiveoceans.washington.edu/collaborators/",
       "content_type": "text/html",
@@ -14969,7 +15857,7 @@
     },
     {
       "url": "https://interactiveoceans.washington.edu/instruments/high-definition-video-camera/",
-      "checked_at": "2026-10-28T12:33:30.765163+00:00",
+      "checked_at": "2026-10-28T12:38:16.348071+00:00",
       "status": 200,
       "final_url": "https://interactiveoceans.washington.edu/instruments/high-definition-video-camera/",
       "content_type": "text/html",
@@ -15413,7 +16301,7 @@
     },
     {
       "url": "https://www.oceannetworks.ca/observatories/",
-      "checked_at": "2026-10-28T12:33:30.765391+00:00",
+      "checked_at": "2026-10-28T12:38:16.348264+00:00",
       "status": 200,
       "final_url": "https://www.oceannetworks.ca/observatories/",
       "content_type": "text/html",
@@ -15568,7 +16456,7 @@
     },
     {
       "url": "https://www.oceannetworks.ca/legal-notices/",
-      "checked_at": "2026-10-28T12:33:30.831069+00:00",
+      "checked_at": "2026-10-28T12:38:16.488705+00:00",
       "status": 200,
       "final_url": "https://www.oceannetworks.ca/legal-notices/",
       "content_type": "text/html",
@@ -15715,7 +16603,7 @@
     },
     {
       "url": "https://www.oceannetworks.ca/terms-of-use/",
-      "checked_at": "2026-10-28T12:33:31.013881+00:00",
+      "checked_at": "2026-10-28T12:38:16.625396+00:00",
       "status": 200,
       "final_url": "https://www.oceannetworks.ca/terms-of-use/",
       "content_type": "text/html",
@@ -15861,307 +16749,8 @@
       "text": "1b55f5cba1dc4e8d.txt"
     },
     {
-      "url": "https://oceanexplorer.noaa.gov/data/access/",
-      "checked_at": "2026-10-28T12:33:31.201798+00:00",
-      "status": 200,
-      "final_url": "https://oceanexplorer.noaa.gov/data/access/",
-      "content_type": "text/html",
-      "bytes_received": 58417,
-      "sha256": "d726fb7106adfc650f86be87445a41a38dfbad1179eea5add697ce03594cac14",
-      "links": [
-        [
-          "https://oceanexplorer.noaa.gov/",
-          "Homepage"
-        ],
-        [
-          "https://oceanexplorer.noaa.gov/data/access/",
-          "Back to top"
-        ],
-        [
-          "https://oceanexplorer.noaa.gov/about/",
-          "About"
-        ],
-        [
-          "https://oceanexplorer.noaa.gov/about/what-we-do/",
-          "Our Mission"
-        ],
-        [
-          "https://oceanexplorer.noaa.gov/about/who-we-are/",
-          "Who We Are"
-        ],
-        [
-          "https://oceanexplorer.noaa.gov/about/annual-reports/",
-          "Annual Reports"
-        ],
-        [
-          "https://oceanexplorer.noaa.gov/about/what-we-do-program-review/",
-          "Program Reviews"
-        ],
-        [
-          "https://oceanexplorer.noaa.gov/about/media-kit/",
-          "Media Kit"
-        ],
-        [
-          "https://oeab.noaa.gov/",
-          "Ocean Exploration Advisory Board"
-        ],
-        [
-          "https://oceanexplorer.noaa.gov/about/national-forums/",
-          "National Forums on Ocean Exploration"
-        ],
-        [
-          "https://oceanexplorer.noaa.gov/science-exploration/",
-          "Science & Exploration"
-        ],
-        [
-          "https://oceanexplorer.noaa.gov/expeditions/",
-          "Expeditions & Projects"
-        ],
-        [
-          "https://oceanexplorer.noaa.gov/why-exploration-matters/",
-          "Why Ocean Exploration Matters"
-        ],
-        [
-          "https://oceanexplorer.noaa.gov/history/",
-          "NOAA History"
-        ],
-        [
-          "https://oceanexplorer.noaa.gov/okeanos/",
-          "NOAA Ship Okeanos Explorer"
-        ],
-        [
-          "https://oceanexplorer.noaa.gov/technology/",
-          "Science & Technology for Exploration"
-        ],
-        [
-          "https://oceanexplorer.noaa.gov/about/partnerships/",
-          "Partnerships"
-        ],
-        [
-          "https://oceanexplorer.noaa.gov/noaa-ocean-exploration-minerals/",
-          "Marine Critical Minerals"
-        ],
-        [
-          "https://oceanexplorer.noaa.gov/noaa-omics/",
-          "NOAA Omics"
-        ],
-        [
-          "https://oceanexplorer.noaa.gov/data/",
-          "Back to Data & Products"
-        ],
-        [
-          "https://oceanexplorer.noaa.gov/data/animal-guide/",
-          "Benthic Animal Guide"
-        ],
-        [
-          "https://oceanexplorer.noaa.gov/data/publications/",
-          "Publications & Reports"
-        ],
-        [
-          "https://oceanexplorer.noaa.gov/discover/",
-          "Learn & Discover"
-        ],
-        [
-          "https://oceanexplorer.noaa.gov/discover/educators/",
-          "For Educators"
-        ],
-        [
-          "https://oceanexplorer.noaa.gov/classroom-materials/",
-          "All Classroom Materials"
-        ],
-        [
-          "https://oceanexplorer.noaa.gov/discover/professional-development/",
-          "Professional Development Opportunities"
-        ],
-        [
-          "https://oceanexplorer.noaa.gov/discover/deep-ocean-education-projects/",
-          "Deep Ocean Education Project"
-        ],
-        [
-          "https://oceanexplorer.noaa.gov/ocean-facts/",
-          "Ocean Exploration Facts"
-        ],
-        [
-          "https://oceanexplorer.noaa.gov/dive-deeper/",
-          "Dive Deeper"
-        ],
-        [
-          "https://oceanexplorer.noaa.gov/multimedia/",
-          "Multimedia"
-        ],
-        [
-          "https://oceanexplorer.noaa.gov/news/",
-          "News"
-        ],
-        [
-          "https://oceanexplorer.noaa.gov/get-involved/",
-          "Get Involved"
-        ],
-        [
-          "https://oceanexplorer.noaa.gov/join-us/",
-          "Opportunities to Join Us"
-        ],
-        [
-          "https://oceanexplorer.noaa.gov/careers/student-opportunities/",
-          "Student Opportunities"
-        ],
-        [
-          "https://oceanexplorer.noaa.gov/careers/employment-opportunities/",
-          "Employment Opportunities"
-        ],
-        [
-          "https://oceanexplorer.noaa.gov/careers/career-and-education-resources/",
-          "Career and Education Resources"
-        ],
-        [
-          "https://oceanexplorer.noaa.gov/wp-content/uploads/2018/04/presidents-panel-on-ocean-exploration-report.pdf",
-          "2000 report of the president\u2019s panel on ocean exploration"
-        ],
-        [
-          "https://oceanexplorer.noaa.gov/wp-content/uploads/2018/04/public-law-111-11.pdf",
-          "Public law 111-11 [Section XII Ocean Exploration]"
-        ],
-        [
-          "https://oceanexplorer.noaa.gov/data/access-tools/",
-          "Using the NOAA Ocean Exploration Data Access Tools"
-        ],
-        [
-          "https://www.ncei.noaa.gov/maps/ocean-exploration-data-atlas/",
-          "NOAA Ocean Exploration Data Atlas"
-        ],
-        [
-          "https://noaa.maps.arcgis.com/home/webmap/viewer.html?webmap=5afb3b1849314cd4b1d768067cf98bdb",
-          "Okeanos Explorer \u2013 Live Operations Map"
-        ],
-        [
-          "https://noaa.maps.arcgis.com/home/group.html?id=62137203f7d34d5ca1b3108acd1b4884",
-          "Access the NOAA Ocean Exploration (NCEI) ArcGIS Online Group"
-        ],
-        [
-          "https://www.ncei.noaa.gov/waf/okeanos-rov-cruises/",
-          "NOAA Ship Okeanos Explorer Data Landing Pages"
-        ],
-        [
-          "https://www.ncei.noaa.gov/access/ocean-exploration/video/",
-          "Access the Ocean Exploration Video Portal"
-        ],
-        [
-          "https://www.ncei.noaa.gov/waf/ocean-exploration-nofo/",
-          "Access the Competitive Grant Program Data Landing Pages"
-        ],
-        [
-          "https://www.ncei.noaa.gov/products/ocean-exploration-and-research-oer-data-management",
-          "NOAA Ocean Exploration Data Management web page"
-        ],
-        [
-          "https://docs.google.com/a/noaa.gov/spreadsheet/viewform?fromEmail=true&formkey=dHAycC1MYndJb0hTdGRaYXAzVTVBdWc6MA",
-          "data request form"
-        ],
-        [
-          "mailto:oer.info.mgmt@noaa.gov",
-          "oer.info.mgmt@noaa.gov"
-        ],
-        [
-          "mailto:ex.expeditioncoordinator@noaa.gov.",
-          "ex.expeditioncoordinator@noaa.gov."
-        ],
-        [
-          "https://oceanexplorer.noaa.gov/data/ex-sample-access/",
-          "Learn About Accessing Samples"
-        ],
-        [
-          "https://touchpoints.app.cloud.gov/touchpoints/56753158/submit",
-          "Website Satisfaction Survey"
-        ],
-        [
-          "https://oceanexplorer.noaa.gov/contact-us/",
-          "Report an Error"
-        ],
-        [
-          "https://oceanexplorer.noaa.gov/privacy/",
-          "Privacy Policy"
-        ],
-        [
-          "https://oceanexplorer.noaa.gov/disclaimer/",
-          "Disclaimer"
-        ],
-        [
-          "https://oceanexplorer.noaa.gov/accessibility/",
-          "Accessibility Statement"
-        ],
-        [
-          "https://www.noaa.gov/information-technology/foia",
-          "FOIA"
-        ],
-        [
-          "https://www.noaa.gov/organization/information-technology/policy-oversight/information-quality",
-          "Information Quality"
-        ],
-        [
-          "https://www.usa.gov",
-          "USA.gov"
-        ],
-        [
-          "https://www.facebook.com/OceanExplorationResearch",
-          "Facebook"
-        ],
-        [
-          "https://x.com/oceanexplorer",
-          "X"
-        ],
-        [
-          "https://www.instagram.com/noaaoceanexploration/",
-          "Instagram"
-        ],
-        [
-          "https://www.youtube.com/oceanexplorergov",
-          "Youtube"
-        ],
-        [
-          "https://www.linkedin.com/showcase/noaa-ocean-exploration/",
-          "LinkedIn"
-        ],
-        [
-          "https://www.commerce.gov/",
-          "Department of Commerce"
-        ],
-        [
-          "http://www.noaa.gov/",
-          "National Oceanic and Atmospheric Administration (NOAA)"
-        ]
-      ],
-      "image_links": [
-        {
-          "url": "https://oceanexplorer.noaa.gov/wp-content/themes/noaa/assets/images/uswds/usa-banner/us_flag_small.png",
-          "alt": ""
-        },
-        {
-          "url": "https://oceanexplorer.noaa.gov/wp-content/themes/noaa/assets/images/uswds/usa-banner/icon-dot-gov.svg",
-          "alt": ""
-        },
-        {
-          "url": "https://oceanexplorer.noaa.gov/wp-content/themes/noaa/assets/images/uswds/usa-banner/icon-https.svg",
-          "alt": ""
-        },
-        {
-          "url": "https://oceanexplorer.noaa.gov/wp-content/uploads/2025/07/noaa-oe-emblem-2024-color.svg",
-          "alt": "NOAA Ocean Exploration logo featuring a blue circular emblem and text with wave patterns."
-        },
-        {
-          "url": "https://oceanexplorer.noaa.gov/wp-content/uploads/2025/07/noaa-oe-emblem-2024-color.svg",
-          "alt": "NOAA Ocean Exploration logo featuring a blue circular emblem and text with wave patterns."
-        },
-        {
-          "url": "https://oceanexplorer.noaa.gov/wp-content/uploads/2025/07/noaa-logo-rgb-footer.svg",
-          "alt": "NOAA logo: a white seagull silhouette on a blue circle with white NOAA text at the top."
-        }
-      ],
-      "embedded_media": [],
-      "text": "565c8d05a68b4e63.txt"
-    },
-    {
       "url": "https://www.mbari.org/technology/monterey-accelerated-research-system-mars/",
-      "checked_at": "2026-10-28T12:33:31.388297+00:00",
+      "checked_at": "2026-10-28T12:38:16.760778+00:00",
       "status": 200,
       "final_url": "https://www.mbari.org/technology/monterey-accelerated-research-system-mars/",
       "content_type": "text/html",
@@ -16440,7 +17029,7 @@
     },
     {
       "url": "https://www.mbari.org/technology/moorings/",
-      "checked_at": "2026-10-28T12:33:31.656698+00:00",
+      "checked_at": "2026-10-28T12:38:16.762266+00:00",
       "status": 200,
       "final_url": "https://www.mbari.org/technology/moorings/",
       "content_type": "text/html",
@@ -16699,7 +17288,7 @@
     },
     {
       "url": "https://www.mbari.org/technology/station-m/",
-      "checked_at": "2026-10-28T12:33:31.990361+00:00",
+      "checked_at": "2026-10-28T12:38:16.769968+00:00",
       "status": 200,
       "final_url": "https://www.mbari.org/technology/station-m/",
       "content_type": "text/html",
@@ -17013,7 +17602,7 @@
     },
     {
       "url": "https://www.mbari.org/about/for-media/media-kit/",
-      "checked_at": "2026-10-28T12:33:32.265445+00:00",
+      "checked_at": "2026-10-28T12:38:16.797109+00:00",
       "status": 200,
       "final_url": "https://www.mbari.org/about/for-media/media-kit/",
       "content_type": "text/html",
@@ -17272,7 +17861,7 @@
     },
     {
       "url": "https://www.mbari.org/about/for-media/media-request/",
-      "checked_at": "2026-10-28T12:33:32.267230+00:00",
+      "checked_at": "2026-10-28T12:38:17.006125+00:00",
       "status": 200,
       "final_url": "https://www.mbari.org/about/for-media/media-request/",
       "content_type": "text/html",
@@ -17494,7 +18083,7 @@
     },
     {
       "url": "https://www.mbari.org/about/for-media/location-shoots/",
-      "checked_at": "2026-10-28T12:33:32.308707+00:00",
+      "checked_at": "2026-10-28T12:38:17.024423+00:00",
       "status": 200,
       "final_url": "https://www.mbari.org/about/for-media/location-shoots/",
       "content_type": "text/html",
@@ -17717,6 +18306,849 @@
       "image_links": [],
       "embedded_media": [],
       "text": "48e46aa9da74bf53.txt"
+    },
+    {
+      "url": "https://oceanexplorer.noaa.gov/multimedia/okeanos-explorations-ex1907-dailyupdates-coral-garden-coral-garden/",
+      "checked_at": "2026-10-28T12:38:17.043624+00:00",
+      "status": 200,
+      "final_url": "https://oceanexplorer.noaa.gov/multimedia/okeanos-explorations-ex1907-dailyupdates-coral-garden-coral-garden/",
+      "content_type": "text/html",
+      "bytes_received": 53774,
+      "sha256": "772b9f41c71866556fae80569dbe4719df05cb31a415dd88e8e5bcc2f19cf491",
+      "links": [
+        [
+          "https://oceanexplorer.noaa.gov/",
+          "Homepage"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/multimedia/okeanos-explorations-ex1907-dailyupdates-coral-garden-coral-garden/",
+          "Back to top"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/about/",
+          "About"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/about/what-we-do/",
+          "Our Mission"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/about/who-we-are/",
+          "Who We Are"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/about/annual-reports/",
+          "Annual Reports"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/about/what-we-do-program-review/",
+          "Program Reviews"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/about/media-kit/",
+          "Media Kit"
+        ],
+        [
+          "https://oeab.noaa.gov/",
+          "Ocean Exploration Advisory Board"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/about/national-forums/",
+          "National Forums on Ocean Exploration"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/science-exploration/",
+          "Science & Exploration"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/expeditions/",
+          "Expeditions & Projects"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/why-exploration-matters/",
+          "Why Ocean Exploration Matters"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/history/",
+          "NOAA History"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/okeanos/",
+          "NOAA Ship Okeanos Explorer"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/technology/",
+          "Science & Technology for Exploration"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/about/partnerships/",
+          "Partnerships"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/noaa-ocean-exploration-minerals/",
+          "Marine Critical Minerals"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/noaa-omics/",
+          "NOAA Omics"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/data/",
+          "Data & Products"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/data/access/",
+          "Data Access Tools"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/data/animal-guide/",
+          "Benthic Animal Guide"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/data/publications/",
+          "Publications & Reports"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/discover/",
+          "Learn & Discover"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/discover/educators/",
+          "For Educators"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/classroom-materials/",
+          "All Classroom Materials"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/discover/professional-development/",
+          "Professional Development Opportunities"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/discover/deep-ocean-education-projects/",
+          "Deep Ocean Education Project"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/ocean-facts/",
+          "Ocean Exploration Facts"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/dive-deeper/",
+          "Dive Deeper"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/multimedia/",
+          "Multimedia"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/news/",
+          "News"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/get-involved/",
+          "Get Involved"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/join-us/",
+          "Opportunities to Join Us"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/careers/student-opportunities/",
+          "Student Opportunities"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/careers/employment-opportunities/",
+          "Employment Opportunities"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/careers/career-and-education-resources/",
+          "Career and Education Resources"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/wp-content/uploads/2019/11/coral-garden-640x360-1.mp4",
+          "SD version (mp4, 42.0 MB)"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/wp-content/uploads/2019/11/coral-garden-1280x720-1.mp4",
+          "HD version (mp4, 199.7 MB)"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/expedition/ex1907/",
+          "2019 Southeastern U.S. Deep-Sea Exploration \u2013 Remotely Operated Vehicle and Mapping Operations (EX1907)"
+        ],
+        [
+          "https://touchpoints.app.cloud.gov/touchpoints/56753158/submit",
+          "Website Satisfaction Survey"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/contact-us/",
+          "Report an Error"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/privacy/",
+          "Privacy Policy"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/disclaimer/",
+          "Disclaimer"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/accessibility/",
+          "Accessibility Statement"
+        ],
+        [
+          "https://www.noaa.gov/information-technology/foia",
+          "FOIA"
+        ],
+        [
+          "https://www.noaa.gov/organization/information-technology/policy-oversight/information-quality",
+          "Information Quality"
+        ],
+        [
+          "https://www.usa.gov",
+          "USA.gov"
+        ],
+        [
+          "https://www.facebook.com/OceanExplorationResearch",
+          "Facebook"
+        ],
+        [
+          "https://x.com/oceanexplorer",
+          "X"
+        ],
+        [
+          "https://www.instagram.com/noaaoceanexploration/",
+          "Instagram"
+        ],
+        [
+          "https://www.youtube.com/oceanexplorergov",
+          "Youtube"
+        ],
+        [
+          "https://www.linkedin.com/showcase/noaa-ocean-exploration/",
+          "LinkedIn"
+        ],
+        [
+          "https://www.commerce.gov/",
+          "Department of Commerce"
+        ],
+        [
+          "http://www.noaa.gov/",
+          "National Oceanic and Atmospheric Administration (NOAA)"
+        ]
+      ],
+      "image_links": [
+        {
+          "url": "https://oceanexplorer.noaa.gov/wp-content/themes/noaa/assets/images/uswds/usa-banner/us_flag_small.png",
+          "alt": ""
+        },
+        {
+          "url": "https://oceanexplorer.noaa.gov/wp-content/themes/noaa/assets/images/uswds/usa-banner/icon-dot-gov.svg",
+          "alt": ""
+        },
+        {
+          "url": "https://oceanexplorer.noaa.gov/wp-content/themes/noaa/assets/images/uswds/usa-banner/icon-https.svg",
+          "alt": ""
+        },
+        {
+          "url": "https://oceanexplorer.noaa.gov/wp-content/uploads/2025/07/noaa-oe-emblem-2024-color.svg",
+          "alt": "NOAA Ocean Exploration logo featuring a blue circular emblem and text with wave patterns."
+        },
+        {
+          "url": "https://oceanexplorer.noaa.gov/wp-content/uploads/2025/07/noaa-oe-emblem-2024-color.svg",
+          "alt": "NOAA Ocean Exploration logo featuring a blue circular emblem and text with wave patterns."
+        },
+        {
+          "url": "https://oceanexplorer.noaa.gov/wp-content/uploads/2025/07/noaa-logo-rgb-footer.svg",
+          "alt": "NOAA logo: a white seagull silhouette on a blue circle with white NOAA text at the top."
+        }
+      ],
+      "embedded_media": [
+        "https://oceanexplorer.noaa.gov/wp-content/uploads/2019/11/coral-garden-1280x720-1.mp4",
+        "https://oceanexplorer.noaa.gov/wp-content/uploads/2019/11/coral-garden-640x360-1.mp4"
+      ],
+      "text": "fcd70cfc23865020.txt"
+    },
+    {
+      "url": "https://oceanexplorer.noaa.gov/multimedia/okeanos-explorations-seascape-alaska-ex2306-gallery-media-dive08-changingcolors/",
+      "checked_at": "2026-10-28T12:38:17.045482+00:00",
+      "status": 200,
+      "final_url": "https://oceanexplorer.noaa.gov/multimedia/okeanos-explorations-seascape-alaska-ex2306-gallery-media-dive08-changingcolors/",
+      "content_type": "text/html",
+      "bytes_received": 55126,
+      "sha256": "f63afbb71e4dfd8fefca6e2421ffb55758b0f0571c529d37eacb0d6786c9d620",
+      "links": [
+        [
+          "https://oceanexplorer.noaa.gov/",
+          "Homepage"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/multimedia/okeanos-explorations-seascape-alaska-ex2306-gallery-media-dive08-changingcolors/",
+          "Back to top"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/about/",
+          "About"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/about/what-we-do/",
+          "Our Mission"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/about/who-we-are/",
+          "Who We Are"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/about/annual-reports/",
+          "Annual Reports"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/about/what-we-do-program-review/",
+          "Program Reviews"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/about/media-kit/",
+          "Media Kit"
+        ],
+        [
+          "https://oeab.noaa.gov/",
+          "Ocean Exploration Advisory Board"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/about/national-forums/",
+          "National Forums on Ocean Exploration"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/science-exploration/",
+          "Science & Exploration"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/expeditions/",
+          "Expeditions & Projects"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/why-exploration-matters/",
+          "Why Ocean Exploration Matters"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/history/",
+          "NOAA History"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/okeanos/",
+          "NOAA Ship Okeanos Explorer"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/technology/",
+          "Science & Technology for Exploration"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/about/partnerships/",
+          "Partnerships"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/noaa-ocean-exploration-minerals/",
+          "Marine Critical Minerals"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/noaa-omics/",
+          "NOAA Omics"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/data/",
+          "Data & Products"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/data/access/",
+          "Data Access Tools"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/data/animal-guide/",
+          "Benthic Animal Guide"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/data/publications/",
+          "Publications & Reports"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/discover/",
+          "Learn & Discover"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/discover/educators/",
+          "For Educators"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/classroom-materials/",
+          "All Classroom Materials"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/discover/professional-development/",
+          "Professional Development Opportunities"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/discover/deep-ocean-education-projects/",
+          "Deep Ocean Education Project"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/ocean-facts/",
+          "Ocean Exploration Facts"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/dive-deeper/",
+          "Dive Deeper"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/multimedia/",
+          "Multimedia"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/news/",
+          "News"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/get-involved/",
+          "Get Involved"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/join-us/",
+          "Opportunities to Join Us"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/careers/student-opportunities/",
+          "Student Opportunities"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/careers/employment-opportunities/",
+          "Employment Opportunities"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/careers/career-and-education-resources/",
+          "Career and Education Resources"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/wp-content/uploads/2023/10/dive08-changingColors-640x360-1.mp4",
+          "SD version (mp4, 17.5 MB)"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/wp-content/uploads/2023/10/dive08-changingColors-1280x720-1.mp4",
+          "HD version (mp4, 60.7 MB)"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/expedition/ex2306/",
+          "Seascape Alaska 5: Gulf of Alaska Remotely Operated Vehicle Exploration and Mapping (EX2306)"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/expedition-seascape-alaska/",
+          "2023 Seascape Alaska Expeditions"
+        ],
+        [
+          "https://touchpoints.app.cloud.gov/touchpoints/56753158/submit",
+          "Website Satisfaction Survey"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/contact-us/",
+          "Report an Error"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/privacy/",
+          "Privacy Policy"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/disclaimer/",
+          "Disclaimer"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/accessibility/",
+          "Accessibility Statement"
+        ],
+        [
+          "https://www.noaa.gov/information-technology/foia",
+          "FOIA"
+        ],
+        [
+          "https://www.noaa.gov/organization/information-technology/policy-oversight/information-quality",
+          "Information Quality"
+        ],
+        [
+          "https://www.usa.gov",
+          "USA.gov"
+        ],
+        [
+          "https://www.facebook.com/OceanExplorationResearch",
+          "Facebook"
+        ],
+        [
+          "https://x.com/oceanexplorer",
+          "X"
+        ],
+        [
+          "https://www.instagram.com/noaaoceanexploration/",
+          "Instagram"
+        ],
+        [
+          "https://www.youtube.com/oceanexplorergov",
+          "Youtube"
+        ],
+        [
+          "https://www.linkedin.com/showcase/noaa-ocean-exploration/",
+          "LinkedIn"
+        ],
+        [
+          "https://www.commerce.gov/",
+          "Department of Commerce"
+        ],
+        [
+          "http://www.noaa.gov/",
+          "National Oceanic and Atmospheric Administration (NOAA)"
+        ]
+      ],
+      "image_links": [
+        {
+          "url": "https://oceanexplorer.noaa.gov/wp-content/themes/noaa/assets/images/uswds/usa-banner/us_flag_small.png",
+          "alt": ""
+        },
+        {
+          "url": "https://oceanexplorer.noaa.gov/wp-content/themes/noaa/assets/images/uswds/usa-banner/icon-dot-gov.svg",
+          "alt": ""
+        },
+        {
+          "url": "https://oceanexplorer.noaa.gov/wp-content/themes/noaa/assets/images/uswds/usa-banner/icon-https.svg",
+          "alt": ""
+        },
+        {
+          "url": "https://oceanexplorer.noaa.gov/wp-content/uploads/2025/07/noaa-oe-emblem-2024-color.svg",
+          "alt": "NOAA Ocean Exploration logo featuring a blue circular emblem and text with wave patterns."
+        },
+        {
+          "url": "https://oceanexplorer.noaa.gov/wp-content/uploads/2025/07/noaa-oe-emblem-2024-color.svg",
+          "alt": "NOAA Ocean Exploration logo featuring a blue circular emblem and text with wave patterns."
+        },
+        {
+          "url": "https://oceanexplorer.noaa.gov/wp-content/uploads/2025/07/noaa-logo-rgb-footer.svg",
+          "alt": "NOAA logo: a white seagull silhouette on a blue circle with white NOAA text at the top."
+        }
+      ],
+      "embedded_media": [
+        "https://oceanexplorer.noaa.gov/wp-content/uploads/2023/10/dive08-changingColors-1280x720-1.mp4",
+        "https://oceanexplorer.noaa.gov/wp-content/uploads/2023/10/dive08-changingColors-640x360-1.mp4"
+      ],
+      "text": "2927549dcb93d7ef.txt"
+    },
+    {
+      "url": "https://oceanexplorer.noaa.gov/data/access-tools/",
+      "checked_at": "2026-10-28T12:38:17.233873+00:00",
+      "status": 200,
+      "final_url": "https://oceanexplorer.noaa.gov/data/access-tools/",
+      "content_type": "text/html",
+      "bytes_received": 70500,
+      "sha256": "e681364799a81653b03dedb76f60a48dd71b9c8890573cbaba8fb15f887e58fb",
+      "links": [
+        [
+          "https://oceanexplorer.noaa.gov/",
+          "Homepage"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/data/access-tools/",
+          "Back to top"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/about/",
+          "About"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/about/what-we-do/",
+          "Our Mission"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/about/who-we-are/",
+          "Who We Are"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/about/annual-reports/",
+          "Annual Reports"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/about/what-we-do-program-review/",
+          "Program Reviews"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/about/media-kit/",
+          "Media Kit"
+        ],
+        [
+          "https://oeab.noaa.gov/",
+          "Ocean Exploration Advisory Board"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/about/national-forums/",
+          "National Forums on Ocean Exploration"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/science-exploration/",
+          "Science & Exploration"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/expeditions/",
+          "Expeditions & Projects"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/why-exploration-matters/",
+          "Why Ocean Exploration Matters"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/history/",
+          "NOAA History"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/okeanos/",
+          "NOAA Ship Okeanos Explorer"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/technology/",
+          "Science & Technology for Exploration"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/about/partnerships/",
+          "Partnerships"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/noaa-ocean-exploration-minerals/",
+          "Marine Critical Minerals"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/noaa-omics/",
+          "NOAA Omics"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/data/",
+          "Back to Data & Products"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/data/access/",
+          "Data Access Tools"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/data/animal-guide/",
+          "Benthic Animal Guide"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/data/publications/",
+          "Publications & Reports"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/discover/",
+          "Learn & Discover"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/discover/educators/",
+          "For Educators"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/classroom-materials/",
+          "All Classroom Materials"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/discover/professional-development/",
+          "Professional Development Opportunities"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/discover/deep-ocean-education-projects/",
+          "Deep Ocean Education Project"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/ocean-facts/",
+          "Ocean Exploration Facts"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/dive-deeper/",
+          "Dive Deeper"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/multimedia/",
+          "Multimedia"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/news/",
+          "News"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/get-involved/",
+          "Get Involved"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/join-us/",
+          "Opportunities to Join Us"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/careers/student-opportunities/",
+          "Student Opportunities"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/careers/employment-opportunities/",
+          "Employment Opportunities"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/careers/career-and-education-resources/",
+          "Career and Education Resources"
+        ],
+        [
+          "https://www.ncei.noaa.gov/maps/ocean-exploration-data-atlas/",
+          "NOAA Ocean Exploration Data Atlas"
+        ],
+        [
+          "https://www.ncei.noaa.gov/waf/okeanos-rov-cruises/",
+          "data landing pages"
+        ],
+        [
+          "https://www.ncei.noaa.gov/access/ocean-exploration/video/",
+          "Ocean Exploration Video Portal"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/data/ex-sample-access/",
+          "Accessing Samples Collected During Expeditions on NOAA Ship Okeanos Explorer"
+        ],
+        [
+          "https://library.noaa.gov/friendly.php?s=oceanexplorationbib",
+          "NOAA Central Library\u2019s NOAA Ocean Exploration Library Guide"
+        ],
+        [
+          "https://docs.google.com/a/noaa.gov/spreadsheet/viewform?fromEmail=true&formkey=dHAycC1MYndJb0hTdGRaYXAzVTVBdWc6MA",
+          "data request"
+        ],
+        [
+          "mailto:oer.info.mgmt@noaa.gov",
+          "oer.info.mgmt@noaa.gov"
+        ],
+        [
+          "https://touchpoints.app.cloud.gov/touchpoints/56753158/submit",
+          "Website Satisfaction Survey"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/contact-us/",
+          "Report an Error"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/privacy/",
+          "Privacy Policy"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/disclaimer/",
+          "Disclaimer"
+        ],
+        [
+          "https://oceanexplorer.noaa.gov/accessibility/",
+          "Accessibility Statement"
+        ],
+        [
+          "https://www.noaa.gov/information-technology/foia",
+          "FOIA"
+        ],
+        [
+          "https://www.noaa.gov/organization/information-technology/policy-oversight/information-quality",
+          "Information Quality"
+        ],
+        [
+          "https://www.usa.gov",
+          "USA.gov"
+        ],
+        [
+          "https://www.facebook.com/OceanExplorationResearch",
+          "Facebook"
+        ],
+        [
+          "https://x.com/oceanexplorer",
+          "X"
+        ],
+        [
+          "https://www.instagram.com/noaaoceanexploration/",
+          "Instagram"
+        ],
+        [
+          "https://www.youtube.com/oceanexplorergov",
+          "Youtube"
+        ],
+        [
+          "https://www.linkedin.com/showcase/noaa-ocean-exploration/",
+          "LinkedIn"
+        ],
+        [
+          "https://www.commerce.gov/",
+          "Department of Commerce"
+        ],
+        [
+          "http://www.noaa.gov/",
+          "National Oceanic and Atmospheric Administration (NOAA)"
+        ]
+      ],
+      "image_links": [
+        {
+          "url": "https://oceanexplorer.noaa.gov/wp-content/themes/noaa/assets/images/uswds/usa-banner/us_flag_small.png",
+          "alt": ""
+        },
+        {
+          "url": "https://oceanexplorer.noaa.gov/wp-content/themes/noaa/assets/images/uswds/usa-banner/icon-dot-gov.svg",
+          "alt": ""
+        },
+        {
+          "url": "https://oceanexplorer.noaa.gov/wp-content/themes/noaa/assets/images/uswds/usa-banner/icon-https.svg",
+          "alt": ""
+        },
+        {
+          "url": "https://oceanexplorer.noaa.gov/wp-content/uploads/2025/07/noaa-oe-emblem-2024-color.svg",
+          "alt": "NOAA Ocean Exploration logo featuring a blue circular emblem and text with wave patterns."
+        },
+        {
+          "url": "https://oceanexplorer.noaa.gov/wp-content/uploads/2025/07/noaa-oe-emblem-2024-color.svg",
+          "alt": "NOAA Ocean Exploration logo featuring a blue circular emblem and text with wave patterns."
+        },
+        {
+          "url": "https://oceanexplorer.noaa.gov/wp-content/uploads/2021/11/data-atlas-800.jpg",
+          "alt": "Screenshot of the NOAA Ocean Exploration Data Atlas"
+        },
+        {
+          "url": "https://oceanexplorer.noaa.gov/wp-content/uploads/2021/11/data-atlas-ex1907-800.jpg",
+          "alt": "Screenshot of the NOAA Ocean Exploration Data Atlas Pop-Up Windows"
+        },
+        {
+          "url": "https://oceanexplorer.noaa.gov/wp-content/uploads/2021/11/data-atlas-dive-800.jpg",
+          "alt": "Screenshot of the NOAA Ocean Exploration Data Atlas ROV Dive Pop-Up Windows"
+        },
+        {
+          "url": "https://oceanexplorer.noaa.gov/wp-content/uploads/2021/11/data-atlas-dive-window-800.jpg",
+          "alt": "Another screenshot of the NOAA Ocean Exploration Data Atlas ROV Dive Pop-Up Windows"
+        },
+        {
+          "url": "https://oceanexplorer.noaa.gov/wp-content/uploads/2021/11/data-landing-page-hires.jpg",
+          "alt": "Screenshot of the NOAA Ship Okeanos Explorer Data Landing Pages"
+        },
+        {
+          "url": "https://oceanexplorer.noaa.gov/wp-content/uploads/2021/11/dive-landing-page-800.jpg",
+          "alt": "Screenshot of the NOAA Ship Okeanos Explorer Data Landing Pages"
+        },
+        {
+          "url": "https://oceanexplorer.noaa.gov/wp-content/uploads/2021/11/ocean-exploration-video-portal-800.jpg",
+          "alt": "Screenshot of the Ocean Exploration Video Portal"
+        },
+        {
+          "url": "https://oceanexplorer.noaa.gov/wp-content/uploads/2021/11/video-portal-results-800.jpg",
+          "alt": "Screenshot of the Ocean Exploration Video Portal results"
+        },
+        {
+          "url": "https://oceanexplorer.noaa.gov/wp-content/uploads/2021/11/video-portal-preview-800.jpg",
+          "alt": "Screenshot of the Ocean Exploration Video Portal preview"
+        },
+        {
+          "url": "https://oceanexplorer.noaa.gov/wp-content/uploads/2021/11/video-portal-basket-800.jpg",
+          "alt": "Screenshot of the Ocean Exploration Video Portal basket data"
+        },
+        {
+          "url": "https://oceanexplorer.noaa.gov/wp-content/uploads/2025/07/noaa-logo-rgb-footer.svg",
+          "alt": "NOAA logo: a white seagull silhouette on a blue circle with white NOAA text at the top."
+        }
+      ],
+      "embedded_media": [],
+      "text": "5ba1390603310355.txt"
     }
   ],
   "imagery_published": false

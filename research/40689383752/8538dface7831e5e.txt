@@ -1,0 +1,271 @@
+Station M • MBARI
+Skip to content
+MBARI
+Publications
+Data
+Directory
+Galleries
+Our Work
+Our Work
+MBARI creates and globally scales the visionary technologies required to explore, map, and understand our changing ocean.
+Our Work Sub
+Research & Development
+Focus Areas
+Teams
+Projects
+Data & Repositories
+Publications
+Expeditions
+Technology
+All Technologies
+Instruments
+Observatories
+Software
+Vehicles
+Tech Transfer
+Marine Operations
+Monterey Bay Today
+Ships
+Schedules
+Our People
+Our People
+MBARI staff are driven by a curiosity to learn more about the ocean and a passion to protect its future.
+Our People Sub
+Leadership & Staff
+Meet our staff, leadership, and board of directors.
+Collaboration in Action
+Get an insider’s look at our team’s work.
+Internship Impacts
+Launching the next generation of ocean explorers.
+Navigating STEM Careers
+Learn how some of our staff navigated to a career at MBARI.
+Education
+Education
+Resources for educators, students, and anyone aspiring to learn how science and technology brings us closer to the ocean.
+Education Sub
+EARTH Curriculum
+Integrate MBARI data with lesson plans and workshops.
+Animals of the Deep
+Discover deep-sea critters, including exclusive footage and info.
+Know Your Ocean
+Dive into topics about ocean health and its fascinating features.
+Deep-Sea Guide
+Explore deep-sea observations with this interactive guide.
+Library
+Learn about the MLML/MBARI Research Library.
+More Resources
+Access more educational resources from the teams at MBARI.
+News
+About
+About
+MBARI is a non-profit oceanographic research center advancing marine science and engineering to understand our changing ocean.
+About Sub
+Mission & Vision
+Learn about MBARI’s mission, vision, and values.
+Strategic Roadmap
+Learn about our strategic priorities for the years ahead.
+Leadership & Staff
+Meet our staff, leadership, and board of directors.
+Careers
+Find job openings and postdoc and internship opportunities.
+Connect with Us
+Follow MBARI on social media and stay updated.
+Events
+See upcoming seminars, lectures, and public events.
+Reports & Financials
+Access the latest annual reports and financial information.
+History
+Explore MBARI’s rich history spanning over three decades.
+For Media
+Get media-specific information and assets.
+Search
+Navigation Toggle
+Our Work
+Our Work
+MBARI creates and globally scales the visionary technologies required to explore, map, and understand our changing ocean.
+Our Work Sub
+Research & Development
+Focus Areas
+Teams
+Projects
+Data & Repositories
+Publications
+Expeditions
+Technology
+All Technologies
+Instruments
+Observatories
+Software
+Vehicles
+Tech Transfer
+Marine Operations
+Monterey Bay Today
+Ships
+Schedules
+Our People
+Our People
+MBARI staff are driven by a curiosity to learn more about the ocean and a passion to protect its future.
+Our People Sub
+Leadership & Staff
+Meet our staff, leadership, and board of directors.
+Collaboration in Action
+Get an insider’s look at our team’s work.
+Internship Impacts
+Launching the next generation of ocean explorers.
+Navigating STEM Careers
+Learn how some of our staff navigated to a career at MBARI.
+Education
+Education
+Resources for educators, students, and anyone aspiring to learn how science and technology brings us closer to the ocean.
+Education Sub
+EARTH Curriculum
+Integrate MBARI data with lesson plans and workshops.
+Animals of the Deep
+Discover deep-sea critters, including exclusive footage and info.
+Know Your Ocean
+Dive into topics about ocean health and its fascinating features.
+Deep-Sea Guide
+Explore deep-sea observations with this interactive guide.
+Library
+Learn about the MLML/MBARI Research Library.
+More Resources
+Access more educational resources from the teams at MBARI.
+News
+About
+About
+MBARI is a non-profit oceanographic research center advancing marine science and engineering to understand our changing ocean.
+About Sub
+Mission & Vision
+Learn about MBARI’s mission, vision, and values.
+Strategic Roadmap
+Learn about our strategic priorities for the years ahead.
+Leadership & Staff
+Meet our staff, leadership, and board of directors.
+Careers
+Find job openings and postdoc and internship opportunities.
+Connect with Us
+Follow MBARI on social media and stay updated.
+Events
+See upcoming seminars, lectures, and public events.
+Reports & Financials
+Access the latest annual reports and financial information.
+History
+Explore MBARI’s rich history spanning over three decades.
+For Media
+Get media-specific information and assets.
+Publications
+Data
+Directory
+Galleries
+Keyword search
+Submit
+Search
+Close
+You might be interested in:
+Job Openings
+Find the latest job openings and join the team.
+Internships
+Learn about our summer internship program.
+Staff Directory
+Meet our leadership and staff.
+Animals of the Deep
+Discover deep-sea critters of all types.
+Data & Repositories
+Search MBARI’s library of data.
+Technologies
+Learn about our technologies.
+Technologies
+Station M
+Station M
+The flat, muddy deep ocean floor—known as the abyssal plain—is one of the largest and least known habitats on this planet. It covers more than 50 percent of Earth’s surface and plays a critical role in the carbon cycle. For 30 years, MBARI Senior Scientist Ken Smith and his colleagues have studied deep-sea communities at a research site called Station M, located 4,000 meters (2.5 miles) below the ocean’s surface and 291 kilometers (181 miles) off the coast of Santa Barbara, California.
+Doing deep-sea research is incredibly challenging, time-consuming, and sometimes dangerous. For this reason, MBARI strives to build and deploy robots that help scientists better understand the changes taking place in our ocean. At Station M, Smith and his colleagues rely upon satellites, human-occupied vehicles, such as Alvin, remotely operated vehicles (ROVs), a seafloor rover, seafloor landers, coring devices, fish traps, sediment traps, respirometers (which measure oxygen consumption), current meters, and time-lapse cameras to study abyssal ecosystems.
+Over the past 30 years, Smith and his team have constructed a truly unique underwater observatory that operates 24 hours a day, seven days a week, for a full year without servicing. Building a robotic observatory is challenging under normal circumstances; imagine doing it 4,000 meters underwater!
+The results of their research have dramatically changed marine biologists’ perceptions of life in the deep sea and our understanding of climate change. Data collected at Station M show that the deep sea is far from static—physical conditions and biological communities can change dramatically over timescales ranging from days to decades.
+Ultimately, this work highlights that persistent, long-term, time-series observations are critical for furthering our understanding of carbon cycling between the surface waters and the deep sea. With more companies looking to extract resources from the abyssal plain, these data also give scientists valuable insights into “baseline conditions” in deep-sea areas now under consideration for industrial development or deep-sea mining.
+Read More
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+Additional Information
+Vehicle Specifications
+Dorado-class AUV, flooded fairing design with electronics, payload and batteries in sealed glass-spheres or separate metal pressure housings.
+Length: 19.5 ft
+Mass: 1350 lbs (Mass at recovery with entrained water: xxxx lbs)
+Weight in water: -4 lbs (4 lbs buoyant)
+Propulsion and control: single propeller with duct on 2-axis gimbal, allowing for rudder and elevator function, oil compensated
+Batteries: 14.5 kWh LiIon batteries in 3 glass spheres
+Navigation: RDI Workhorse 1200kHz in water track mode and VectorNav VN100 MEMS compass
+Acoustic Comms: Sonardyne AvTrak 6 tracking beacon with SMS feature
+Camera: 2k Video camera systems in underwater housing with aspherical dome
+Lights: 4x DSP&L lights with up to 9000 lm each
+Bioacoustics: Downward and forward looking acoustic transducers (200 and 333 kHz)
+Water Sensors: Seabird Conductivity, Temperature and Oxygen sensor as well as transmissometer
+i2Map Research
+MBARI has been running video transects in the midwater out in Monterey Bay for the last 25 years. These efforts have historically involved ROVs that have been manually driven to a particular depth and through the transects. This required a whole day of operations on a large ship with a work-class ROV to get just a few transects lines covered. In 2014 the i2map project was started to move task of the recording of these video transects to an AUV. At that point, MBARI had been deploying deep-water AUVs for at least 15 years so a new nose payload with a high resolution camera and a solid-state recorder was built to be tested on an existing AUV.
+The advantage of using an AUV for running video transects is not just limited to the reduced work effort. Since after deployment the vehicle operates without supervision for around 24 hours, it can run many more transects that would be possible in a typical day of ROV operations, including transects all the way through the night.
+The i2map transects start at 25m and stretch all the way to 1000m. The maximum depth the vehicle can operate in is 1500m.
+In 2018 the i2map vehicle got updated with an additional sensor suite as part of MBARIs interest in bioacoustic research, which uses sonars to detect and even identify biology in the water column using their acoustic signature. Now the i2map vehicle has a set of forward and downward looking sonars that work around 200 kHz and 333 kHz.
+Combining these instruments with the camera-equipped vehicle allowed to see the influence the vehicle and especially the lights have on the animals around the vehicle. The acoustic system has a much larger range than what can be seen in the camera pictures which allows the study of avoidance and attraction behavior of the creatures. Furthermore, the vehicle is repeating transects without the lights and camera on at all, which can tell the researchers something about if the animals react to the vehicle based on noise or if it is just the super-bright lights.
+Related Technologies
+Instrument
+Midwater Respirometer System (MRS)
+Technology
+Midwater Respirometer System (MRS)
+An instrument that allows MBARI researchers to study the breathing of deep-sea animals without removing the animals from their environment.
+Instrument
+Benthic Respirometer System (BRS)
+Technology
+Benthic Respirometer System (BRS)
+This system measures the oxygen consumption of organisms living in the sediment.
+Vehicle, Autonomous Robotic Rover, Autonomous Underwater Vehicle (AUV)
+Benthic Rover
+Technology
+Benthic Rover
+A mobile lab that methodically charts deep-sea carbon cycles.
+Vehicle, Autonomous Surface Vehicle (ASV)
+Wave Glider
+Technology
+Wave Glider
+An autonomous surface vehicle built by Liquid Robotics, purchased and outfitted with sensors and communications gear by MBARI engineering.
+Vehicle, Remotely Operated Vehicle (ROV)
+ROV Doc Ricketts
+Technology
+ROV Doc Ricketts
+An integrated unmanned submersible research platform with features providing efficient, reliable, and precise sampling and data collection.
+Instrument
+Sediment Traps
+Technology
+Sediment Traps
+Sediment traps collect the samples needed for the lab’s measure of particulate organic carbon.
+Instrument
+Sedimentation Event Sensor (SES)
+Technology
+Sedimentation Event Sensor (SES)
+A sediment trap that images the sample rather than collecting it.
+Related News
+News
+Autonomous robotic rover helps scientists with long-term monitoring of deep-sea carbon cycle and climate change
+Press Release
+11.03.21
+News
+New papers describe discoveries at MBARI’s long-term deep-sea research site off California
+News
+06.16.20
+News
+Deep-sea animal communities can change dramatically and erratically over time
+News
+04.07.20
+Stay Connected
+Receive the latest MBARI News
+Email
+Submit
+youtube
+instagram
+tiktok
+facebook
+bluesky
+linkedin
+tumblr
+7700 Sandholdt Road, Moss Landing, California 95039
+© 2026 MBARI
+Staff Login
+Legal
+Website by Visceral
