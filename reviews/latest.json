@@ -1,0 +1,669 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-28T20:43:29.103699+00:00",
+  "commit": "85f0b10522a611aa53addd43b65df10c6281c1a8",
+  "run_url": "https://github.com/nikokoren/abyss/actions/runs/40765670080",
+  "scope": "Fresh-frame and native-layout preview review; does not enable cameras",
+  "sampling": {
+    "snapshots_per_camera": 6,
+    "minimum_spacing_seconds": 3600,
+    "max_bytes_per_camera": 150994944,
+    "production_limits_unchanged": true
+  },
+  "rendering": "Official TRMNL 3.4.4 assets plus TRMNLP ImageQuantizer steps. Preview only; not an account or physical-device render.",
+  "quantizer_reference": "https://github.com/usetrmnl/trmnlp/blob/30e770ba7da3f2a195aa70cd1571a35c6013947f/lib/trmnlp/image_quantizer.rb",
+  "sources": [
+    {
+      "source_id": "ooi-oregon-shelf",
+      "camera": "Oregon Shelf \u00b7 seafloor",
+      "depth": "~80 m",
+      "previous_status": "quality_hold",
+      "snapshots": [
+        {
+          "recording": {
+            "url": "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/2026/10/28/CAMDSB107_10.33.13.8_20261028T194618_UTC.jpg",
+            "recorded_at": "2026-10-28T19:46:18+00:00",
+            "media_type": "image"
+          },
+          "bytes_downloaded": 19733079,
+          "codec": "JPEG",
+          "decoded_size": [
+            5344,
+            4008
+          ],
+          "original_size": [
+            5344,
+            4008
+          ],
+          "content_type": "image/jpeg",
+          "status": 200,
+          "quality": {
+            "score": 0.60091,
+            "base_score": 0.60091,
+            "brightness": 0.42304170496323523,
+            "clipped": 0.000244140625,
+            "sharpness": 0.13819848081563363,
+            "contrast": 0.6615133077469185,
+            "similarity": 0,
+            "fingerprint": "0111101110110010111110111011001011111110100000011111111010010001111111110001000111111111000000001111111100000000111111110000000011111111000000001111111000000000111111110000000011111101000000001111111100000000111111100000000011111111000000001111110000000000"
+          },
+          "colour_preview": "ooi-oregon-shelf-00-colour.jpg"
+        },
+        {
+          "recording": {
+            "url": "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/2026/10/28/CAMDSB107_10.33.13.8_20261028T184618_UTC.jpg",
+            "recorded_at": "2026-10-28T18:46:18+00:00",
+            "media_type": "image"
+          },
+          "bytes_downloaded": 19658776,
+          "codec": "JPEG",
+          "decoded_size": [
+            5344,
+            4008
+          ],
+          "original_size": [
+            5344,
+            4008
+          ],
+          "content_type": "image/jpeg",
+          "status": 200,
+          "quality": {
+            "score": 0.605592,
+            "base_score": 0.605592,
+            "brightness": 0.4383257697610293,
+            "clipped": 0.0,
+            "sharpness": 0.16036082352181616,
+            "contrast": 0.6244177588694145,
+            "similarity": 0,
+            "fingerprint": "1111110000110000111111101011001011111111100000011111111100000001111111110000000111111111000000001111111100000000111111110000000011111111000000001111111000000000111111011000000011111110000000001111111100000000111111110000000011111110000000001111110100000000"
+          },
+          "colour_preview": "ooi-oregon-shelf-01-colour.jpg"
+        },
+        {
+          "recording": {
+            "url": "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/2026/10/28/CAMDSB107_10.33.13.8_20261028T174618_UTC.jpg",
+            "recorded_at": "2026-10-28T17:46:18+00:00",
+            "media_type": "image"
+          },
+          "bytes_downloaded": 19666175,
+          "codec": "JPEG",
+          "decoded_size": [
+            5344,
+            4008
+          ],
+          "original_size": [
+            5344,
+            4008
+          ],
+          "content_type": "image/jpeg",
+          "status": 200,
+          "quality": {
+            "score": 0.588402,
+            "base_score": 0.588402,
+            "brightness": 0.4258929802389706,
+            "clipped": 0.0001220703125,
+            "sharpness": 0.11049077581729479,
+            "contrast": 0.644103470290435,
+            "similarity": 0,
+            "fingerprint": "1011011000110010011111111011001011111111010000011011111100000001111111100000000111111110100000001111111100000000111111110000000011111111000000001111111000000000111111110000000011111111000000001111110100000000111111001000000011111111000010001111111010000000"
+          },
+          "colour_preview": "ooi-oregon-shelf-02-colour.jpg"
+        },
+        {
+          "recording": {
+            "url": "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/2026/10/28/CAMDSB107_10.33.13.8_20261028T164618_UTC.jpg",
+            "recorded_at": "2026-10-28T16:46:18+00:00",
+            "media_type": "image"
+          },
+          "bytes_downloaded": 19735113,
+          "codec": "JPEG",
+          "decoded_size": [
+            5344,
+            4008
+          ],
+          "original_size": [
+            5344,
+            4008
+          ],
+          "content_type": "image/jpeg",
+          "status": 200,
+          "quality": {
+            "score": 0.576336,
+            "base_score": 0.576336,
+            "brightness": 0.42142482383578433,
+            "clipped": 2.44140625e-05,
+            "sharpness": 0.09873785933904868,
+            "contrast": 0.6218893801589378,
+            "similarity": 0,
+            "fingerprint": "1111111010110000111111100011001011111110010000011111110000000001111111110000000111111111000000001111111100000000111111110000000011111111000000001111111000000000111111110000000011111111000000001111111100000000111111101000000011111111000000001111111100000000"
+          },
+          "colour_preview": "ooi-oregon-shelf-03-colour.jpg"
+        },
+        {
+          "recording": {
+            "url": "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/2026/10/28/CAMDSB107_10.33.13.8_20261028T154618_UTC.jpg",
+            "recorded_at": "2026-10-28T15:46:18+00:00",
+            "media_type": "image"
+          },
+          "bytes_downloaded": 19679472,
+          "codec": "JPEG",
+          "decoded_size": [
+            5344,
+            4008
+          ],
+          "original_size": [
+            5344,
+            4008
+          ],
+          "content_type": "image/jpeg",
+          "status": 200,
+          "quality": {
+            "score": 0.586598,
+            "base_score": 0.586598,
+            "brightness": 0.4236163449754901,
+            "clipped": 2.44140625e-05,
+            "sharpness": 0.11785423925568261,
+            "contrast": 0.62628928856307,
+            "similarity": 0,
+            "fingerprint": "1111011110110010111101101011001011111101100000011111110100000001111111110000000111111111000000001111111100000000111111110000000011111111000000001111111100000000111111010000000011111111100000001111111100000000111111110000000011111111000000001111111000000000"
+          },
+          "colour_preview": "ooi-oregon-shelf-04-colour.jpg"
+        },
+        {
+          "recording": {
+            "url": "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/2026/10/28/CAMDSB107_10.33.13.8_20261028T144618_UTC.jpg",
+            "recorded_at": "2026-10-28T14:46:18+00:00",
+            "media_type": "image"
+          },
+          "bytes_downloaded": 19527740,
+          "codec": "JPEG",
+          "decoded_size": [
+            5344,
+            4008
+          ],
+          "original_size": [
+            5344,
+            4008
+          ],
+          "content_type": "image/jpeg",
+          "status": 200,
+          "quality": {
+            "score": 0.594895,
+            "base_score": 0.594895,
+            "brightness": 0.4354752604166666,
+            "clipped": 0.0,
+            "sharpness": 0.13523474084721776,
+            "contrast": 0.613964671637275,
+            "similarity": 0,
+            "fingerprint": "1110110000110010110111101011001011111111100000011111101100000001111110100000000011111111100000001111111100000000111111110000000011111111000000001111111000000000111111100000000011111111000000001111111100000000111111100000000011111110000000001111110100000000"
+          },
+          "colour_preview": "ooi-oregon-shelf-05-colour.jpg"
+        }
+      ],
+      "previews": [
+        {
+          "image": "ooi-oregon-shelf-og-light.png",
+          "device": "og",
+          "depth": 1,
+          "dark": false,
+          "layout_checks": {
+            "errors": [],
+            "view": {
+              "x": 10,
+              "y": 10,
+              "w": 780,
+              "h": 460,
+              "right": 790,
+              "bottom": 470
+            },
+            "image": {
+              "x": 10,
+              "y": 10,
+              "w": 780,
+              "h": 389,
+              "right": 790,
+              "bottom": 399
+            },
+            "credit_color": "rgb(0, 0, 0)",
+            "canvas_color": "rgb(255, 255, 255)",
+            "label_font": "12px"
+          }
+        },
+        {
+          "image": "ooi-oregon-shelf-og-dark.png",
+          "device": "og",
+          "depth": 1,
+          "dark": true,
+          "layout_checks": {
+            "errors": [],
+            "view": {
+              "x": 10,
+              "y": 10,
+              "w": 780,
+              "h": 460,
+              "right": 790,
+              "bottom": 470
+            },
+            "image": {
+              "x": 10,
+              "y": 10,
+              "w": 780,
+              "h": 389,
+              "right": 790,
+              "bottom": 399
+            },
+            "credit_color": "rgb(255, 255, 255)",
+            "canvas_color": "rgb(0, 0, 0)",
+            "label_font": "12px"
+          }
+        },
+        {
+          "image": "ooi-oregon-shelf-v2-light.png",
+          "device": "v2",
+          "depth": 4,
+          "dark": false,
+          "layout_checks": {
+            "errors": [],
+            "view": {
+              "x": 18,
+              "y": 18,
+              "w": 1836,
+              "h": 1368,
+              "right": 1854,
+              "bottom": 1386
+            },
+            "image": {
+              "x": 18,
+              "y": 18,
+              "w": 1836,
+              "h": 1238.4000244140625,
+              "right": 1854,
+              "bottom": 1256.4000244140625
+            },
+            "credit_color": "rgb(0, 0, 0)",
+            "canvas_color": "rgb(255, 255, 255)",
+            "label_font": "13px"
+          }
+        },
+        {
+          "image": "ooi-oregon-shelf-v2-dark.png",
+          "device": "v2",
+          "depth": 4,
+          "dark": true,
+          "layout_checks": {
+            "errors": [],
+            "view": {
+              "x": 18,
+              "y": 18,
+              "w": 1836,
+              "h": 1368,
+              "right": 1854,
+              "bottom": 1386
+            },
+            "image": {
+              "x": 18,
+              "y": 18,
+              "w": 1836,
+              "h": 1238.4000244140625,
+              "right": 1854,
+              "bottom": 1256.4000244140625
+            },
+            "credit_color": "rgb(255, 255, 255)",
+            "canvas_color": "rgb(0, 0, 0)",
+            "label_font": "13px"
+          }
+        }
+      ],
+      "attribution": "Ocean Observatories Initiative / Woods Hole Oceanographic Institution OOI Program Office / University of Washington; supported by the U.S. National Science Foundation, Cooperative Agreement 2244833",
+      "acknowledgment": "This material is based upon work supported by the Ocean Observatories Initiative (OOI), a major facility fully funded by the US National Science Foundation under Cooperative Agreement No. 2244833, and the Woods Hole Oceanographic Institution OOI Program Office.",
+      "license_url": "https://oceanobservatories.org/wp-content/uploads/2022/12/1102-00020_Data_User_Terms_Conditions_OOI_2019-01-02_Ver_2-00.pdf",
+      "data_doi": "https://doi.org/10.58046/OOI-CE02SHBP",
+      "bytes_downloaded": 118000355,
+      "requests": 6,
+      "decoded_count": 6,
+      "best": {
+        "recording": {
+          "url": "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/2026/10/28/CAMDSB107_10.33.13.8_20261028T184618_UTC.jpg",
+          "recorded_at": "2026-10-28T18:46:18+00:00",
+          "media_type": "image"
+        },
+        "quality": {
+          "score": 0.605592,
+          "base_score": 0.605592,
+          "brightness": 0.4383257697610293,
+          "clipped": 0.0,
+          "sharpness": 0.16036082352181616,
+          "contrast": 0.6244177588694145,
+          "similarity": 0,
+          "fingerprint": "1111110000110000111111101011001011111111100000011111111100000001111111110000000111111111000000001111111100000000111111110000000011111111000000001111111000000000111111011000000011111110000000001111111100000000111111110000000011111110000000001111110100000000"
+        }
+      }
+    },
+    {
+      "source_id": "ooi-oregon-offshore",
+      "camera": "Oregon Offshore \u00b7 seafloor",
+      "depth": "~580 m",
+      "previous_status": "quality_hold",
+      "snapshots": [
+        {
+          "recording": {
+            "url": "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/28/CAMDSB106_10.33.9.6_20261028T191616_UTC.jpg",
+            "recorded_at": "2026-10-28T19:16:16+00:00",
+            "media_type": "image"
+          },
+          "bytes_downloaded": 9051094,
+          "codec": "JPEG",
+          "decoded_size": [
+            5344,
+            4008
+          ],
+          "original_size": [
+            5344,
+            4008
+          ],
+          "content_type": "image/jpeg",
+          "status": 200,
+          "quality": {
+            "score": 0.600081,
+            "base_score": 0.600081,
+            "brightness": 0.4663133808210785,
+            "clipped": 0.0,
+            "sharpness": 0.04359806388357268,
+            "contrast": 0.7578409081265078,
+            "similarity": 0,
+            "fingerprint": "1111111000000000111111110000000011111111000000001111111100000000111111110000000011111110000000001111111000000000111111100000000011111111000000001111111100000000111111100000000011111111000000001111111100000000111111110000000011111110000000001111111100000000"
+          },
+          "colour_preview": "ooi-oregon-offshore-00-colour.jpg"
+        },
+        {
+          "recording": {
+            "url": "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/28/CAMDSB106_10.33.9.6_20261028T181616_UTC.jpg",
+            "recorded_at": "2026-10-28T18:16:16+00:00",
+            "media_type": "image"
+          },
+          "bytes_downloaded": 9187063,
+          "codec": "JPEG",
+          "decoded_size": [
+            5344,
+            4008
+          ],
+          "original_size": [
+            5344,
+            4008
+          ],
+          "content_type": "image/jpeg",
+          "status": 200,
+          "quality": {
+            "score": 0.602786,
+            "base_score": 0.602786,
+            "brightness": 0.45241277956495096,
+            "clipped": 0.0,
+            "sharpness": 0.05039286166271338,
+            "contrast": 0.7820020865264697,
+            "similarity": 0,
+            "fingerprint": "1111111000000000111101100000000011110110000000000111011000000000101101110000000011111111000000001111111000000000111111100000000011111111000000001111111000000000111111100000000011111111000000001111111100000000111111111000000011111110000000001111111100000000"
+          },
+          "colour_preview": "ooi-oregon-offshore-01-colour.jpg"
+        },
+        {
+          "recording": {
+            "url": "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/28/CAMDSB106_10.33.9.6_20261028T171616_UTC.jpg",
+            "recorded_at": "2026-10-28T17:16:16+00:00",
+            "media_type": "image"
+          },
+          "bytes_downloaded": 9255261,
+          "codec": "JPEG",
+          "decoded_size": [
+            5344,
+            4008
+          ],
+          "original_size": [
+            5344,
+            4008
+          ],
+          "content_type": "image/jpeg",
+          "status": 200,
+          "quality": {
+            "score": 0.602021,
+            "base_score": 0.602021,
+            "brightness": 0.4365371285232843,
+            "clipped": 0.0,
+            "sharpness": 0.04402604394049953,
+            "contrast": 0.819905731936329,
+            "similarity": 0,
+            "fingerprint": "1111111000000000111111000000000011111100000000001111111000000000111111110000000011111110000000001111111000000000111111100000000011111111000000001111111000000000111111100000000011111111000000001111111100000000111111111000000011111110000000001111111100000000"
+          },
+          "colour_preview": "ooi-oregon-offshore-02-colour.jpg"
+        },
+        {
+          "recording": {
+            "url": "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/28/CAMDSB106_10.33.9.6_20261028T161611_UTC.jpg",
+            "recorded_at": "2026-10-28T16:16:11+00:00",
+            "media_type": "image"
+          },
+          "bytes_downloaded": 9341163,
+          "codec": "JPEG",
+          "decoded_size": [
+            5344,
+            4008
+          ],
+          "original_size": [
+            5344,
+            4008
+          ],
+          "content_type": "image/jpeg",
+          "status": 200,
+          "quality": {
+            "score": 0.607892,
+            "base_score": 0.607892,
+            "brightness": 0.4299985638786765,
+            "clipped": 0.0,
+            "sharpness": 0.04453133276770768,
+            "contrast": 0.8556027989932066,
+            "similarity": 0,
+            "fingerprint": "1111111000000000111111100000000011111110000000001111111000000000111111110000000011111101000000001111111000000000111111100000000011111111000000001111111000000000111111100000000011111111000000001111111100000000111111110000000011111110000000001111111100000000"
+          },
+          "colour_preview": "ooi-oregon-offshore-03-colour.jpg"
+        },
+        {
+          "recording": {
+            "url": "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/28/CAMDSB106_10.33.9.6_20261028T151611_UTC.jpg",
+            "recorded_at": "2026-10-28T15:16:11+00:00",
+            "media_type": "image"
+          },
+          "bytes_downloaded": 9237462,
+          "codec": "JPEG",
+          "decoded_size": [
+            5344,
+            4008
+          ],
+          "original_size": [
+            5344,
+            4008
+          ],
+          "content_type": "image/jpeg",
+          "status": 200,
+          "quality": {
+            "score": 0.604013,
+            "base_score": 0.604013,
+            "brightness": 0.43723575367647066,
+            "clipped": 0.0,
+            "sharpness": 0.03991508972594569,
+            "contrast": 0.8344227345184698,
+            "similarity": 0,
+            "fingerprint": "1111111100000000111111110000000011111100000000001111111100000000111111110000000011111110000000001111111000000000111111100000000011111111000000001111111000000000111111100000000011111111000000001111111100000000111111110000000011111110000000001111111100000000"
+          },
+          "colour_preview": "ooi-oregon-offshore-04-colour.jpg"
+        },
+        {
+          "recording": {
+            "url": "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/28/CAMDSB106_10.33.9.6_20261028T141611_UTC.jpg",
+            "recorded_at": "2026-10-28T14:16:11+00:00",
+            "media_type": "image"
+          },
+          "bytes_downloaded": 9266128,
+          "codec": "JPEG",
+          "decoded_size": [
+            5344,
+            4008
+          ],
+          "original_size": [
+            5344,
+            4008
+          ],
+          "content_type": "image/jpeg",
+          "status": 200,
+          "quality": {
+            "score": 0.604265,
+            "base_score": 0.604265,
+            "brightness": 0.4342547487745098,
+            "clipped": 0.0,
+            "sharpness": 0.038792929555566694,
+            "contrast": 0.8414373207801183,
+            "similarity": 0,
+            "fingerprint": "1111111000000000111111100000000011111100000000001111111000000000111111110000000011111110000000001111111000000000111111100000000011111111000000001111111100000000111111100000000011111111000000001111111100000000111111110000000011111110000000001111111100000000"
+          },
+          "colour_preview": "ooi-oregon-offshore-05-colour.jpg"
+        }
+      ],
+      "previews": [
+        {
+          "image": "ooi-oregon-offshore-og-light.png",
+          "device": "og",
+          "depth": 1,
+          "dark": false,
+          "layout_checks": {
+            "errors": [],
+            "view": {
+              "x": 10,
+              "y": 10,
+              "w": 780,
+              "h": 460,
+              "right": 790,
+              "bottom": 470
+            },
+            "image": {
+              "x": 10,
+              "y": 10,
+              "w": 780,
+              "h": 389,
+              "right": 790,
+              "bottom": 399
+            },
+            "credit_color": "rgb(0, 0, 0)",
+            "canvas_color": "rgb(255, 255, 255)",
+            "label_font": "12px"
+          }
+        },
+        {
+          "image": "ooi-oregon-offshore-og-dark.png",
+          "device": "og",
+          "depth": 1,
+          "dark": true,
+          "layout_checks": {
+            "errors": [],
+            "view": {
+              "x": 10,
+              "y": 10,
+              "w": 780,
+              "h": 460,
+              "right": 790,
+              "bottom": 470
+            },
+            "image": {
+              "x": 10,
+              "y": 10,
+              "w": 780,
+              "h": 389,
+              "right": 790,
+              "bottom": 399
+            },
+            "credit_color": "rgb(255, 255, 255)",
+            "canvas_color": "rgb(0, 0, 0)",
+            "label_font": "12px"
+          }
+        },
+        {
+          "image": "ooi-oregon-offshore-v2-light.png",
+          "device": "v2",
+          "depth": 4,
+          "dark": false,
+          "layout_checks": {
+            "errors": [],
+            "view": {
+              "x": 18,
+              "y": 18,
+              "w": 1836,
+              "h": 1368,
+              "right": 1854,
+              "bottom": 1386
+            },
+            "image": {
+              "x": 18,
+              "y": 18,
+              "w": 1836,
+              "h": 1238.4000244140625,
+              "right": 1854,
+              "bottom": 1256.4000244140625
+            },
+            "credit_color": "rgb(0, 0, 0)",
+            "canvas_color": "rgb(255, 255, 255)",
+            "label_font": "13px"
+          }
+        },
+        {
+          "image": "ooi-oregon-offshore-v2-dark.png",
+          "device": "v2",
+          "depth": 4,
+          "dark": true,
+          "layout_checks": {
+            "errors": [],
+            "view": {
+              "x": 18,
+              "y": 18,
+              "w": 1836,
+              "h": 1368,
+              "right": 1854,
+              "bottom": 1386
+            },
+            "image": {
+              "x": 18,
+              "y": 18,
+              "w": 1836,
+              "h": 1238.4000244140625,
+              "right": 1854,
+              "bottom": 1256.4000244140625
+            },
+            "credit_color": "rgb(255, 255, 255)",
+            "canvas_color": "rgb(0, 0, 0)",
+            "label_font": "13px"
+          }
+        }
+      ],
+      "attribution": "Ocean Observatories Initiative / Woods Hole Oceanographic Institution OOI Program Office / University of Washington; supported by the U.S. National Science Foundation, Cooperative Agreement 2244833",
+      "acknowledgment": "This material is based upon work supported by the Ocean Observatories Initiative (OOI), a major facility fully funded by the US National Science Foundation under Cooperative Agreement No. 2244833, and the Woods Hole Oceanographic Institution OOI Program Office.",
+      "license_url": "https://oceanobservatories.org/wp-content/uploads/2022/12/1102-00020_Data_User_Terms_Conditions_OOI_2019-01-02_Ver_2-00.pdf",
+      "data_doi": "https://doi.org/10.58046/OOI-CE04OSBP",
+      "bytes_downloaded": 55338171,
+      "requests": 6,
+      "decoded_count": 6,
+      "best": {
+        "recording": {
+          "url": "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/28/CAMDSB106_10.33.9.6_20261028T161611_UTC.jpg",
+          "recorded_at": "2026-10-28T16:16:11+00:00",
+          "media_type": "image"
+        },
+        "quality": {
+          "score": 0.607892,
+          "base_score": 0.607892,
+          "brightness": 0.4299985638786765,
+          "clipped": 0.0,
+          "sharpness": 0.04453133276770768,
+          "contrast": 0.8556027989932066,
+          "similarity": 0,
+          "fingerprint": "1111111000000000111111100000000011111110000000001111111000000000111111110000000011111101000000001111111000000000111111100000000011111111000000001111111000000000111111100000000011111111000000001111111100000000111111110000000011111110000000001111111100000000"
+        }
+      }
+    }
+  ]
+}
