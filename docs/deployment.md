@@ -140,3 +140,14 @@ processes; no persistent server is needed by the CLI processing workflow.
 Never expose full source recordings or credentials. No user-tracking or camera
 account management is part of the public site. If commercial/SaaS distribution
 is intended, reassess hosting terms and scale before relying on Pages.
+
+## Live production verification
+
+`Verify deployed production` runs on GitHub after successful image publication
+and can also be dispatched manually. It reads the current trusted shared model,
+checks all production cameras and default rotation in the live Pages catalog,
+then verifies Offshore uses that model with full-resolution RGB images and
+required credit. It also checks the published About and Framework 3.4.4 recipe.
+The job summary and `production-verification` artifact retain the exact image
+URLs, model ID, dimensions and verification time. CDN propagation is retried
+for up to eight attempts; an unresolved mismatch fails the check.

@@ -1,0 +1,45 @@
+name: Verify deployed production
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: [Process and publish ocean stills]
+    types: [completed]
+  push:
+    branches: [main]
+    paths:
+      - scripts/verify_production.py
+      - .github/workflows/verify-production.yml
+permissions:
+  contents: read
+jobs:
+  verify:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -e .
+      - name: Read the current shared preference model
+        run: |
+          set -euo pipefail
+          git fetch --depth=1 origin refs/heads/preference-data:refs/remotes/origin/preference-data
+          git show origin/preference-data:model.json > /tmp/production-preference-model.json
+      - name: Verify live Pages metadata and full-resolution Offshore images
+        env:
+          PUBLIC_BASE_URL: ${{ vars.PUBLIC_BASE_URL }}
+        run: |
+          set -euo pipefail
+          python scripts/verify_production.py --base-url "$PUBLIC_BASE_URL" --model /tmp/production-preference-model.json
+          echo '## Live production verification' >> "$GITHUB_STEP_SUMMARY"
+          echo '```json' >> "$GITHUB_STEP_SUMMARY"
+          cat output/production-verification.json >> "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: production-verification
+          path: output/production-verification.json
