@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-28T09:41:23.327233+00:00",
+  "checked_at": "2026-10-28T12:33:32.907489+00:00",
   "purpose": "Camera discovery and rights evidence; no publication approval inferred",
-  "run_url": "https://github.com/nikokoren/abyss/actions/runs/40666113611",
+  "run_url": "https://github.com/nikokoren/abyss/actions/runs/40688727414",
   "targets": {
     "schema_version": 1,
     "cameras": [
@@ -188,12 +188,12 @@
   "pages": [
     {
       "url": "https://interactiveoceans.washington.edu/instruments/digital-still-camera/",
-      "checked_at": "2026-10-28T09:41:16.651275+00:00",
+      "checked_at": "2026-10-28T12:33:26.452091+00:00",
       "status": 200,
       "final_url": "https://interactiveoceans.washington.edu/instruments/digital-still-camera/",
       "content_type": "text/html",
       "bytes_received": 140756,
-      "sha256": "8b5896352f543b88101551701a9c5415d8e8bd13ed3de67ad9ca8ecddf953da0",
+      "sha256": "dbf9249a85156ed422b9ae628a9783beaa720c95f7ae91cfa6b8f53143b26361",
       "links": [
         [
           "https://interactiveoceans.washington.edu/instruments/digital-still-camera/",
@@ -627,7 +627,7 @@
     },
     {
       "url": "https://www.oceannetworks.ca/data/",
-      "checked_at": "2026-10-28T09:41:16.651742+00:00",
+      "checked_at": "2026-10-28T12:33:26.452493+00:00",
       "status": 200,
       "final_url": "https://www.oceannetworks.ca/data/",
       "content_type": "text/html",
@@ -790,7 +790,7 @@
     },
     {
       "url": "https://www.oceannetworks.ca/data/data-policy/",
-      "checked_at": "2026-10-28T09:41:16.652266+00:00",
+      "checked_at": "2026-10-28T12:33:26.452951+00:00",
       "status": 200,
       "final_url": "https://www.oceannetworks.ca/data/data-policy/",
       "content_type": "text/html",
@@ -973,7 +973,7 @@
     },
     {
       "url": "https://data.oceannetworks.ca/api/devices?method=get&deviceCategoryCode=CAMERA",
-      "checked_at": "2026-10-28T09:41:16.652663+00:00",
+      "checked_at": "2026-10-28T12:33:26.453461+00:00",
       "failure": {
         "category": "upstream_http_error",
         "message": "HTTP Error 401: ",
@@ -982,7 +982,7 @@
     },
     {
       "url": "https://oceanexplorer.noaa.gov/okeanos/media/exstream/exstream.html",
-      "checked_at": "2026-10-28T09:41:17.093860+00:00",
+      "checked_at": "2026-10-28T12:33:26.787784+00:00",
       "failure": {
         "category": "upstream_http_error",
         "message": "HTTP Error 404: Not Found",
@@ -991,7 +991,7 @@
     },
     {
       "url": "https://oceanexploration.noaa.gov/",
-      "checked_at": "2026-10-28T09:41:17.103294+00:00",
+      "checked_at": "2026-10-28T12:33:26.794950+00:00",
       "failure": {
         "category": "network_path_error",
         "message": "<urlopen error [Errno -2] Name or service not known>"
@@ -999,7 +999,7 @@
     },
     {
       "url": "https://www.mbari.org/at-sea/observatories/mars/",
-      "checked_at": "2026-10-28T09:41:17.172670+00:00",
+      "checked_at": "2026-10-28T12:33:26.932215+00:00",
       "failure": {
         "category": "upstream_http_error",
         "message": "HTTP Error 404: Not Found",
@@ -1008,7 +1008,7 @@
     },
     {
       "url": "https://www.mbari.org/",
-      "checked_at": "2026-10-28T09:41:17.173344+00:00",
+      "checked_at": "2026-10-28T12:33:27.070690+00:00",
       "status": 200,
       "final_url": "https://www.mbari.org/",
       "content_type": "text/html",
@@ -1349,12 +1349,12 @@
     },
     {
       "url": "https://oceanexplorer.noaa.gov/",
-      "checked_at": "2026-10-28T09:41:17.203463+00:00",
+      "checked_at": "2026-10-28T12:33:27.091450+00:00",
       "status": 200,
       "final_url": "https://oceanexplorer.noaa.gov/",
       "content_type": "text/html",
       "bytes_received": 73681,
-      "sha256": "a13be6ae3c505cf88e54207f5635e5aac9ad8c01a894458ea6c3f8a4d73f390d",
+      "sha256": "80d5e09c6826d5da5067511de8106b534931cc3e41b727db3b54bc818b26e860",
       "links": [
         [
           "https://oceanexplorer.noaa.gov/",
@@ -1674,7 +1674,7 @@
     },
     {
       "url": "https://www.mbari.org/our-work/technologies/observatories/",
-      "checked_at": "2026-10-28T09:41:17.363986+00:00",
+      "checked_at": "2026-10-28T12:33:27.122973+00:00",
       "status": 200,
       "final_url": "https://www.mbari.org/our-work/technologies/observatories/",
       "content_type": "text/html",
@@ -1909,7 +1909,7 @@
     },
     {
       "url": "https://www.mbari.org/our-work/monterey-bay-today/",
-      "checked_at": "2026-10-28T09:41:17.730119+00:00",
+      "checked_at": "2026-10-28T12:33:27.151414+00:00",
       "status": 200,
       "final_url": "https://www.mbari.org/our-work/monterey-bay-today/",
       "content_type": "text/html",
@@ -2160,7 +2160,7 @@
     },
     {
       "url": "https://www.mbari.org/about/for-media/",
-      "checked_at": "2026-10-28T09:41:17.743561+00:00",
+      "checked_at": "2026-10-28T12:33:27.572051+00:00",
       "status": 200,
       "final_url": "https://www.mbari.org/about/for-media/",
       "content_type": "text/html",
@@ -2455,7 +2455,7 @@
     },
     {
       "url": "https://www.mbari.org/legal/",
-      "checked_at": "2026-10-28T09:41:17.820093+00:00",
+      "checked_at": "2026-10-28T12:33:27.585906+00:00",
       "status": 200,
       "final_url": "https://www.mbari.org/legal/",
       "content_type": "text/html",
@@ -2677,7 +2677,7 @@
     },
     {
       "url": "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/",
-      "checked_at": "2026-10-28T09:41:18.087146+00:00",
+      "checked_at": "2026-10-28T12:33:27.602888+00:00",
       "status": 200,
       "final_url": "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/",
       "content_type": "text/html",
@@ -2824,12 +2824,12 @@
     },
     {
       "url": "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/2026/10/28/",
-      "checked_at": "2026-10-28T09:41:18.215073+00:00",
+      "checked_at": "2026-10-28T12:33:27.990683+00:00",
       "status": 200,
       "final_url": "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/2026/10/28/",
       "content_type": "text/html",
-      "bytes_received": 10523,
-      "sha256": "9ce9a7aa74888be8c8fa4bb2d0f84674df334a73b70a260e388ec5b4686d0fa3",
+      "bytes_received": 13088,
+      "sha256": "7aa523cdd8e2294894ba31908fa73e275d6d71cf763b628f4346c881ae050cbd",
       "links": [
         [
           "javascript:help();",
@@ -3070,6 +3070,66 @@
         [
           "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/2026/10/28/CAMDSB107_10.33.13.8_20261028T084618_UTC.jpg",
           "CAMDSB107_10.33.13.8_20261028T084618_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/2026/10/28/CAMDSB107_10.33.13.8_20261028T091610_UTC.jpg",
+          "CAMDSB107_10.33.13.8_20261028T091610_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/2026/10/28/CAMDSB107_10.33.13.8_20261028T091613_UTC.jpg",
+          "CAMDSB107_10.33.13.8_20261028T091613_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/2026/10/28/CAMDSB107_10.33.13.8_20261028T091618_UTC.jpg",
+          "CAMDSB107_10.33.13.8_20261028T091618_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/2026/10/28/CAMDSB107_10.33.13.8_20261028T094610_UTC.jpg",
+          "CAMDSB107_10.33.13.8_20261028T094610_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/2026/10/28/CAMDSB107_10.33.13.8_20261028T094613_UTC.jpg",
+          "CAMDSB107_10.33.13.8_20261028T094613_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/2026/10/28/CAMDSB107_10.33.13.8_20261028T094618_UTC.jpg",
+          "CAMDSB107_10.33.13.8_20261028T094618_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/2026/10/28/CAMDSB107_10.33.13.8_20261028T104610_UTC.jpg",
+          "CAMDSB107_10.33.13.8_20261028T104610_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/2026/10/28/CAMDSB107_10.33.13.8_20261028T104613_UTC.jpg",
+          "CAMDSB107_10.33.13.8_20261028T104613_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/2026/10/28/CAMDSB107_10.33.13.8_20261028T104618_UTC.jpg",
+          "CAMDSB107_10.33.13.8_20261028T104618_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/2026/10/28/CAMDSB107_10.33.13.8_20261028T111610_UTC.jpg",
+          "CAMDSB107_10.33.13.8_20261028T111610_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/2026/10/28/CAMDSB107_10.33.13.8_20261028T111613_UTC.jpg",
+          "CAMDSB107_10.33.13.8_20261028T111613_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/2026/10/28/CAMDSB107_10.33.13.8_20261028T111618_UTC.jpg",
+          "CAMDSB107_10.33.13.8_20261028T111618_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/2026/10/28/CAMDSB107_10.33.13.8_20261028T114610_UTC.jpg",
+          "CAMDSB107_10.33.13.8_20261028T114610_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/2026/10/28/CAMDSB107_10.33.13.8_20261028T114613_UTC.jpg",
+          "CAMDSB107_10.33.13.8_20261028T114613_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/2026/10/28/CAMDSB107_10.33.13.8_20261028T114618_UTC.jpg",
+          "CAMDSB107_10.33.13.8_20261028T114618_UTC.jpg"
         ]
       ],
       "image_links": [
@@ -3300,6 +3360,66 @@
         {
           "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
           "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
         }
       ],
       "embedded_media": [],
@@ -3307,7 +3427,7 @@
     },
     {
       "url": "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/2026/10/27/",
-      "checked_at": "2026-10-28T09:41:18.366323+00:00",
+      "checked_at": "2026-10-28T12:33:28.141865+00:00",
       "status": 200,
       "final_url": "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/2026/10/27/",
       "content_type": "text/html",
@@ -4510,7 +4630,7 @@
     },
     {
       "url": "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/",
-      "checked_at": "2026-10-28T09:41:18.422161+00:00",
+      "checked_at": "2026-10-28T12:33:28.250827+00:00",
       "status": 200,
       "final_url": "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/",
       "content_type": "text/html",
@@ -4657,12 +4777,12 @@
     },
     {
       "url": "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/28/",
-      "checked_at": "2026-10-28T09:41:18.543581+00:00",
+      "checked_at": "2026-10-28T12:33:28.294186+00:00",
       "status": 200,
       "final_url": "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/28/",
       "content_type": "text/html",
-      "bytes_received": 9906,
-      "sha256": "d6fe9a0d866b32d458704f74d70a43fe46e1039e249dee4bdaa3c9afe4dec2bd",
+      "bytes_received": 12441,
+      "sha256": "1d3d8ee2fe8714ace8c3c713a45edbf210f6db0799e0c0f8a4a3529507b067ad",
       "links": [
         [
           "javascript:help();",
@@ -4891,6 +5011,66 @@
         [
           "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/28/CAMDSB106_10.33.9.6_20261028T081616_UTC.jpg",
           "CAMDSB106_10.33.9.6_20261028T081616_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/28/CAMDSB106_10.33.9.6_20261028T084610_UTC.jpg",
+          "CAMDSB106_10.33.9.6_20261028T084610_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/28/CAMDSB106_10.33.9.6_20261028T084611_UTC.jpg",
+          "CAMDSB106_10.33.9.6_20261028T084611_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/28/CAMDSB106_10.33.9.6_20261028T084616_UTC.jpg",
+          "CAMDSB106_10.33.9.6_20261028T084616_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/28/CAMDSB106_10.33.9.6_20261028T091610_UTC.jpg",
+          "CAMDSB106_10.33.9.6_20261028T091610_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/28/CAMDSB106_10.33.9.6_20261028T091611_UTC.jpg",
+          "CAMDSB106_10.33.9.6_20261028T091611_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/28/CAMDSB106_10.33.9.6_20261028T091616_UTC.jpg",
+          "CAMDSB106_10.33.9.6_20261028T091616_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/28/CAMDSB106_10.33.9.6_20261028T094610_UTC.jpg",
+          "CAMDSB106_10.33.9.6_20261028T094610_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/28/CAMDSB106_10.33.9.6_20261028T094611_UTC.jpg",
+          "CAMDSB106_10.33.9.6_20261028T094611_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/28/CAMDSB106_10.33.9.6_20261028T094616_UTC.jpg",
+          "CAMDSB106_10.33.9.6_20261028T094616_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/28/CAMDSB106_10.33.9.6_20261028T104610_UTC.jpg",
+          "CAMDSB106_10.33.9.6_20261028T104610_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/28/CAMDSB106_10.33.9.6_20261028T104611_UTC.jpg",
+          "CAMDSB106_10.33.9.6_20261028T104611_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/28/CAMDSB106_10.33.9.6_20261028T104617_UTC.jpg",
+          "CAMDSB106_10.33.9.6_20261028T104617_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/28/CAMDSB106_10.33.9.6_20261028T111610_UTC.jpg",
+          "CAMDSB106_10.33.9.6_20261028T111610_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/28/CAMDSB106_10.33.9.6_20261028T111611_UTC.jpg",
+          "CAMDSB106_10.33.9.6_20261028T111611_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/28/CAMDSB106_10.33.9.6_20261028T111617_UTC.jpg",
+          "CAMDSB106_10.33.9.6_20261028T111617_UTC.jpg"
         ]
       ],
       "image_links": [
@@ -5109,6 +5289,66 @@
         {
           "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
           "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
         }
       ],
       "embedded_media": [],
@@ -5116,7 +5356,7 @@
     },
     {
       "url": "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/27/",
-      "checked_at": "2026-10-28T09:41:18.614815+00:00",
+      "checked_at": "2026-10-28T12:33:28.515394+00:00",
       "status": 200,
       "final_url": "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/27/",
       "content_type": "text/html",
@@ -6319,7 +6559,7 @@
     },
     {
       "url": "https://rawdata.oceanobservatories.org/files/RS01SBPS/PC01A/CAMDSC102/",
-      "checked_at": "2026-10-28T09:41:18.780666+00:00",
+      "checked_at": "2026-10-28T12:33:28.610442+00:00",
       "status": 200,
       "final_url": "https://rawdata.oceanobservatories.org/files/RS01SBPS/PC01A/CAMDSC102/",
       "content_type": "text/html",
@@ -6466,12 +6706,12 @@
     },
     {
       "url": "https://rawdata.oceanobservatories.org/files/RS01SBPS/PC01A/CAMDSC102/2026/10/28/",
-      "checked_at": "2026-10-28T09:41:18.781313+00:00",
+      "checked_at": "2026-10-28T12:33:28.824827+00:00",
       "status": 200,
       "final_url": "https://rawdata.oceanobservatories.org/files/RS01SBPS/PC01A/CAMDSC102/2026/10/28/",
       "content_type": "text/html",
-      "bytes_received": 11152,
-      "sha256": "94e8a433464a7638a2f06ab579e494ac93ed0a684f2ba8ee4677cb57054f1993",
+      "bytes_received": 12709,
+      "sha256": "9a9cb43adc9f526d514e735687a53d0307f8e757c7e7b428e465477a7294f36e",
       "links": [
         [
           "javascript:help();",
@@ -6724,6 +6964,42 @@
         [
           "https://rawdata.oceanobservatories.org/files/RS01SBPS/PC01A/CAMDSC102/2026/10/28/CAMDSC102_10.33.3.146_20261028T091603_UTC.jpg",
           "CAMDSC102_10.33.3.146_20261028T091603_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS01SBPS/PC01A/CAMDSC102/2026/10/28/CAMDSC102_10.33.3.146_20261028T094550_UTC.jpg",
+          "CAMDSC102_10.33.3.146_20261028T094550_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS01SBPS/PC01A/CAMDSC102/2026/10/28/CAMDSC102_10.33.3.146_20261028T094558_UTC.jpg",
+          "CAMDSC102_10.33.3.146_20261028T094558_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS01SBPS/PC01A/CAMDSC102/2026/10/28/CAMDSC102_10.33.3.146_20261028T094603_UTC.jpg",
+          "CAMDSC102_10.33.3.146_20261028T094603_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS01SBPS/PC01A/CAMDSC102/2026/10/28/CAMDSC102_10.33.3.146_20261028T104550_UTC.jpg",
+          "CAMDSC102_10.33.3.146_20261028T104550_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS01SBPS/PC01A/CAMDSC102/2026/10/28/CAMDSC102_10.33.3.146_20261028T104558_UTC.jpg",
+          "CAMDSC102_10.33.3.146_20261028T104558_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS01SBPS/PC01A/CAMDSC102/2026/10/28/CAMDSC102_10.33.3.146_20261028T104603_UTC.jpg",
+          "CAMDSC102_10.33.3.146_20261028T104603_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS01SBPS/PC01A/CAMDSC102/2026/10/28/CAMDSC102_10.33.3.146_20261028T111550_UTC.jpg",
+          "CAMDSC102_10.33.3.146_20261028T111550_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS01SBPS/PC01A/CAMDSC102/2026/10/28/CAMDSC102_10.33.3.146_20261028T111558_UTC.jpg",
+          "CAMDSC102_10.33.3.146_20261028T111558_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS01SBPS/PC01A/CAMDSC102/2026/10/28/CAMDSC102_10.33.3.146_20261028T111603_UTC.jpg",
+          "CAMDSC102_10.33.3.146_20261028T111603_UTC.jpg"
         ]
       ],
       "image_links": [
@@ -6966,6 +7242,42 @@
         {
           "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
           "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
         }
       ],
       "embedded_media": [],
@@ -6973,7 +7285,7 @@
     },
     {
       "url": "https://rawdata.oceanobservatories.org/files/RS01SBPS/PC01A/CAMDSC102/2026/10/27/",
-      "checked_at": "2026-10-28T09:41:18.829864+00:00",
+      "checked_at": "2026-10-28T12:33:28.837950+00:00",
       "status": 200,
       "final_url": "https://rawdata.oceanobservatories.org/files/RS01SBPS/PC01A/CAMDSC102/2026/10/27/",
       "content_type": "text/html",
@@ -8176,7 +8488,7 @@
     },
     {
       "url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/",
-      "checked_at": "2026-10-28T09:41:19.066103+00:00",
+      "checked_at": "2026-10-28T12:33:29.124250+00:00",
       "status": 200,
       "final_url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/",
       "content_type": "text/html",
@@ -8315,12 +8627,12 @@
     },
     {
       "url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/28/",
-      "checked_at": "2026-10-28T09:41:19.075403+00:00",
+      "checked_at": "2026-10-28T12:33:29.217555+00:00",
       "status": 200,
       "final_url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/28/",
       "content_type": "text/html",
-      "bytes_received": 10413,
-      "sha256": "3a97fe67100d98e0e7e85ce36abe5687a3cd22fcf677ab579b3538c1d01b94ec",
+      "bytes_received": 12948,
+      "sha256": "238697a075a666d24a2ee1782e04023f8877794a2ba8389f4bbc60966e6048f4",
       "links": [
         [
           "javascript:help();",
@@ -8561,6 +8873,66 @@
         [
           "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/28/CAMDSB103_10.33.7.5_20261028T084621_UTC.jpg",
           "CAMDSB103_10.33.7.5_20261028T084621_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/28/CAMDSB103_10.33.7.5_20261028T091615_UTC.jpg",
+          "CAMDSB103_10.33.7.5_20261028T091615_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/28/CAMDSB103_10.33.7.5_20261028T091617_UTC.jpg",
+          "CAMDSB103_10.33.7.5_20261028T091617_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/28/CAMDSB103_10.33.7.5_20261028T091621_UTC.jpg",
+          "CAMDSB103_10.33.7.5_20261028T091621_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/28/CAMDSB103_10.33.7.5_20261028T094615_UTC.jpg",
+          "CAMDSB103_10.33.7.5_20261028T094615_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/28/CAMDSB103_10.33.7.5_20261028T094617_UTC.jpg",
+          "CAMDSB103_10.33.7.5_20261028T094617_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/28/CAMDSB103_10.33.7.5_20261028T094622_UTC.jpg",
+          "CAMDSB103_10.33.7.5_20261028T094622_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/28/CAMDSB103_10.33.7.5_20261028T104615_UTC.jpg",
+          "CAMDSB103_10.33.7.5_20261028T104615_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/28/CAMDSB103_10.33.7.5_20261028T104617_UTC.jpg",
+          "CAMDSB103_10.33.7.5_20261028T104617_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/28/CAMDSB103_10.33.7.5_20261028T104621_UTC.jpg",
+          "CAMDSB103_10.33.7.5_20261028T104621_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/28/CAMDSB103_10.33.7.5_20261028T111615_UTC.jpg",
+          "CAMDSB103_10.33.7.5_20261028T111615_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/28/CAMDSB103_10.33.7.5_20261028T111617_UTC.jpg",
+          "CAMDSB103_10.33.7.5_20261028T111617_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/28/CAMDSB103_10.33.7.5_20261028T111621_UTC.jpg",
+          "CAMDSB103_10.33.7.5_20261028T111621_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/28/CAMDSB103_10.33.7.5_20261028T114615_UTC.jpg",
+          "CAMDSB103_10.33.7.5_20261028T114615_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/28/CAMDSB103_10.33.7.5_20261028T114616_UTC.jpg",
+          "CAMDSB103_10.33.7.5_20261028T114616_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/28/CAMDSB103_10.33.7.5_20261028T114621_UTC.jpg",
+          "CAMDSB103_10.33.7.5_20261028T114621_UTC.jpg"
         ]
       ],
       "image_links": [
@@ -8791,6 +9163,66 @@
         {
           "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
           "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
         }
       ],
       "embedded_media": [],
@@ -8798,7 +9230,7 @@
     },
     {
       "url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/27/",
-      "checked_at": "2026-10-28T09:41:19.121754+00:00",
+      "checked_at": "2026-10-28T12:33:29.356674+00:00",
       "status": 200,
       "final_url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/27/",
       "content_type": "text/html",
@@ -10001,7 +10433,7 @@
     },
     {
       "url": "https://rawdata.oceanobservatories.org/files/RS03AXPS/PC03A/CAMDSC302/",
-      "checked_at": "2026-10-28T09:41:19.127915+00:00",
+      "checked_at": "2026-10-28T12:33:29.449887+00:00",
       "status": 200,
       "final_url": "https://rawdata.oceanobservatories.org/files/RS03AXPS/PC03A/CAMDSC302/",
       "content_type": "text/html",
@@ -10156,12 +10588,12 @@
     },
     {
       "url": "https://rawdata.oceanobservatories.org/files/RS03AXPS/PC03A/CAMDSC302/2026/10/28/",
-      "checked_at": "2026-10-28T09:41:19.350008+00:00",
+      "checked_at": "2026-10-28T12:33:29.646330+00:00",
       "status": 200,
       "final_url": "https://rawdata.oceanobservatories.org/files/RS03AXPS/PC03A/CAMDSC302/2026/10/28/",
       "content_type": "text/html",
-      "bytes_received": 10114,
-      "sha256": "8d6fa9e265e08cf397b79ac3be78a7c51ae4b2fa7e65880db419ba1fc1a9f38b",
+      "bytes_received": 12709,
+      "sha256": "bd12cfc0bb72757e31ceb442af4814de0c6d70e284184d817b11279eaa990c68",
       "links": [
         [
           "javascript:help();",
@@ -10390,6 +10822,66 @@
         [
           "https://rawdata.oceanobservatories.org/files/RS03AXPS/PC03A/CAMDSC302/2026/10/28/CAMDSC302_10.31.3.146_20261028T081603_UTC.jpg",
           "CAMDSC302_10.31.3.146_20261028T081603_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS03AXPS/PC03A/CAMDSC302/2026/10/28/CAMDSC302_10.31.3.146_20261028T084550_UTC.jpg",
+          "CAMDSC302_10.31.3.146_20261028T084550_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS03AXPS/PC03A/CAMDSC302/2026/10/28/CAMDSC302_10.31.3.146_20261028T084558_UTC.jpg",
+          "CAMDSC302_10.31.3.146_20261028T084558_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS03AXPS/PC03A/CAMDSC302/2026/10/28/CAMDSC302_10.31.3.146_20261028T084603_UTC.jpg",
+          "CAMDSC302_10.31.3.146_20261028T084603_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS03AXPS/PC03A/CAMDSC302/2026/10/28/CAMDSC302_10.31.3.146_20261028T091550_UTC.jpg",
+          "CAMDSC302_10.31.3.146_20261028T091550_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS03AXPS/PC03A/CAMDSC302/2026/10/28/CAMDSC302_10.31.3.146_20261028T091558_UTC.jpg",
+          "CAMDSC302_10.31.3.146_20261028T091558_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS03AXPS/PC03A/CAMDSC302/2026/10/28/CAMDSC302_10.31.3.146_20261028T091603_UTC.jpg",
+          "CAMDSC302_10.31.3.146_20261028T091603_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS03AXPS/PC03A/CAMDSC302/2026/10/28/CAMDSC302_10.31.3.146_20261028T094550_UTC.jpg",
+          "CAMDSC302_10.31.3.146_20261028T094550_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS03AXPS/PC03A/CAMDSC302/2026/10/28/CAMDSC302_10.31.3.146_20261028T094558_UTC.jpg",
+          "CAMDSC302_10.31.3.146_20261028T094558_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS03AXPS/PC03A/CAMDSC302/2026/10/28/CAMDSC302_10.31.3.146_20261028T094604_UTC.jpg",
+          "CAMDSC302_10.31.3.146_20261028T094604_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS03AXPS/PC03A/CAMDSC302/2026/10/28/CAMDSC302_10.31.3.146_20261028T104550_UTC.jpg",
+          "CAMDSC302_10.31.3.146_20261028T104550_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS03AXPS/PC03A/CAMDSC302/2026/10/28/CAMDSC302_10.31.3.146_20261028T104558_UTC.jpg",
+          "CAMDSC302_10.31.3.146_20261028T104558_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS03AXPS/PC03A/CAMDSC302/2026/10/28/CAMDSC302_10.31.3.146_20261028T104603_UTC.jpg",
+          "CAMDSC302_10.31.3.146_20261028T104603_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS03AXPS/PC03A/CAMDSC302/2026/10/28/CAMDSC302_10.31.3.146_20261028T111550_UTC.jpg",
+          "CAMDSC302_10.31.3.146_20261028T111550_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS03AXPS/PC03A/CAMDSC302/2026/10/28/CAMDSC302_10.31.3.146_20261028T111558_UTC.jpg",
+          "CAMDSC302_10.31.3.146_20261028T111558_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS03AXPS/PC03A/CAMDSC302/2026/10/28/CAMDSC302_10.31.3.146_20261028T111603_UTC.jpg",
+          "CAMDSC302_10.31.3.146_20261028T111603_UTC.jpg"
         ]
       ],
       "image_links": [
@@ -10608,6 +11100,66 @@
         {
           "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
           "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
         }
       ],
       "embedded_media": [],
@@ -10615,7 +11167,7 @@
     },
     {
       "url": "https://rawdata.oceanobservatories.org/files/RS03AXPS/PC03A/CAMDSC302/2026/10/27/",
-      "checked_at": "2026-10-28T09:41:19.353219+00:00",
+      "checked_at": "2026-10-28T12:33:29.649046+00:00",
       "status": 200,
       "final_url": "https://rawdata.oceanobservatories.org/files/RS03AXPS/PC03A/CAMDSC302/2026/10/27/",
       "content_type": "text/html",
@@ -11818,7 +12370,7 @@
     },
     {
       "url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/",
-      "checked_at": "2026-10-28T09:41:19.358483+00:00",
+      "checked_at": "2026-10-28T12:33:29.814729+00:00",
       "status": 200,
       "final_url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/",
       "content_type": "text/html",
@@ -11973,12 +12525,12 @@
     },
     {
       "url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/28/",
-      "checked_at": "2026-10-28T09:41:19.412201+00:00",
+      "checked_at": "2026-10-28T12:33:29.889582+00:00",
       "status": 200,
       "final_url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/28/",
       "content_type": "text/html",
-      "bytes_received": 10413,
-      "sha256": "bbfab37759bc619f700ff538b015beabefcf144badc15583247aac1d2adfb451",
+      "bytes_received": 12948,
+      "sha256": "a762ebf100b4ee330aed98dcb7cc29c456ecaa9f6f20b592e461b54ef6cfcb37",
       "links": [
         [
           "javascript:help();",
@@ -12219,6 +12771,66 @@
         [
           "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/28/CAMDSB303_10.31.8.5_20261028T084618_UTC.jpg",
           "CAMDSB303_10.31.8.5_20261028T084618_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/28/CAMDSB303_10.31.8.5_20261028T091610_UTC.jpg",
+          "CAMDSB303_10.31.8.5_20261028T091610_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/28/CAMDSB303_10.31.8.5_20261028T091613_UTC.jpg",
+          "CAMDSB303_10.31.8.5_20261028T091613_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/28/CAMDSB303_10.31.8.5_20261028T091618_UTC.jpg",
+          "CAMDSB303_10.31.8.5_20261028T091618_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/28/CAMDSB303_10.31.8.5_20261028T094610_UTC.jpg",
+          "CAMDSB303_10.31.8.5_20261028T094610_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/28/CAMDSB303_10.31.8.5_20261028T094613_UTC.jpg",
+          "CAMDSB303_10.31.8.5_20261028T094613_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/28/CAMDSB303_10.31.8.5_20261028T094618_UTC.jpg",
+          "CAMDSB303_10.31.8.5_20261028T094618_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/28/CAMDSB303_10.31.8.5_20261028T104610_UTC.jpg",
+          "CAMDSB303_10.31.8.5_20261028T104610_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/28/CAMDSB303_10.31.8.5_20261028T104613_UTC.jpg",
+          "CAMDSB303_10.31.8.5_20261028T104613_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/28/CAMDSB303_10.31.8.5_20261028T104618_UTC.jpg",
+          "CAMDSB303_10.31.8.5_20261028T104618_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/28/CAMDSB303_10.31.8.5_20261028T111610_UTC.jpg",
+          "CAMDSB303_10.31.8.5_20261028T111610_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/28/CAMDSB303_10.31.8.5_20261028T111613_UTC.jpg",
+          "CAMDSB303_10.31.8.5_20261028T111613_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/28/CAMDSB303_10.31.8.5_20261028T111618_UTC.jpg",
+          "CAMDSB303_10.31.8.5_20261028T111618_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/28/CAMDSB303_10.31.8.5_20261028T114610_UTC.jpg",
+          "CAMDSB303_10.31.8.5_20261028T114610_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/28/CAMDSB303_10.31.8.5_20261028T114613_UTC.jpg",
+          "CAMDSB303_10.31.8.5_20261028T114613_UTC.jpg"
+        ],
+        [
+          "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/28/CAMDSB303_10.31.8.5_20261028T114618_UTC.jpg",
+          "CAMDSB303_10.31.8.5_20261028T114618_UTC.jpg"
         ]
       ],
       "image_links": [
@@ -12449,6 +13061,66 @@
         {
           "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
           "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/icons/image2.gif",
+          "alt": "[IMG]"
         }
       ],
       "embedded_media": [],
@@ -12456,7 +13128,7 @@
     },
     {
       "url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/27/",
-      "checked_at": "2026-10-28T09:41:19.582072+00:00",
+      "checked_at": "2026-10-28T12:33:30.256593+00:00",
       "status": 200,
       "final_url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/27/",
       "content_type": "text/html",
@@ -13659,12 +14331,12 @@
     },
     {
       "url": "https://interactiveoceans.washington.edu/about/ocean-observatories-initiative/",
-      "checked_at": "2026-10-28T09:41:19.950493+00:00",
+      "checked_at": "2026-10-28T12:33:30.764606+00:00",
       "status": 200,
       "final_url": "https://interactiveoceans.washington.edu/about/ocean-observatories-initiative/",
       "content_type": "text/html",
       "bytes_received": 125498,
-      "sha256": "5c7981df333be864de4acc4bb770823f716a42c2270a3a51daf086fef405a855",
+      "sha256": "d8f9da180d13f21dd1c0a0716354479b386b85c7f492ddf11aef507a42c8e973",
       "links": [
         [
           "https://interactiveoceans.washington.edu/about/ocean-observatories-initiative/",
@@ -13970,12 +14642,12 @@
     },
     {
       "url": "https://interactiveoceans.washington.edu/collaborators/",
-      "checked_at": "2026-10-28T09:41:19.950799+00:00",
+      "checked_at": "2026-10-28T12:33:30.764874+00:00",
       "status": 200,
       "final_url": "https://interactiveoceans.washington.edu/collaborators/",
       "content_type": "text/html",
       "bytes_received": 140150,
-      "sha256": "2563eff2bd3735ff93471f03db1a6e3e2cf1fbdd3587e1451218292d1d94a554",
+      "sha256": "6d07d80eb81030ac4d3a1d007b5e3b8eab043e5feda4ade3a679e874e90c61e3",
       "links": [
         [
           "https://interactiveoceans.washington.edu/collaborators/",
@@ -14297,12 +14969,12 @@
     },
     {
       "url": "https://interactiveoceans.washington.edu/instruments/high-definition-video-camera/",
-      "checked_at": "2026-10-28T09:41:19.951025+00:00",
+      "checked_at": "2026-10-28T12:33:30.765163+00:00",
       "status": 200,
       "final_url": "https://interactiveoceans.washington.edu/instruments/high-definition-video-camera/",
       "content_type": "text/html",
       "bytes_received": 144822,
-      "sha256": "9822f92023c5abac5e5961e0ec294364ac4d043ecd487a531649cd4b26b84a1a",
+      "sha256": "3a25f499393e2dba4259243f5af54c167d65ccbe086fc8815a39fa987007b768",
       "links": [
         [
           "https://interactiveoceans.washington.edu/instruments/high-definition-video-camera/",
@@ -14741,7 +15413,7 @@
     },
     {
       "url": "https://www.oceannetworks.ca/observatories/",
-      "checked_at": "2026-10-28T09:41:19.951657+00:00",
+      "checked_at": "2026-10-28T12:33:30.765391+00:00",
       "status": 200,
       "final_url": "https://www.oceannetworks.ca/observatories/",
       "content_type": "text/html",
@@ -14896,7 +15568,7 @@
     },
     {
       "url": "https://www.oceannetworks.ca/legal-notices/",
-      "checked_at": "2026-10-28T09:41:20.162963+00:00",
+      "checked_at": "2026-10-28T12:33:30.831069+00:00",
       "status": 200,
       "final_url": "https://www.oceannetworks.ca/legal-notices/",
       "content_type": "text/html",
@@ -15043,7 +15715,7 @@
     },
     {
       "url": "https://www.oceannetworks.ca/terms-of-use/",
-      "checked_at": "2026-10-28T09:41:20.351369+00:00",
+      "checked_at": "2026-10-28T12:33:31.013881+00:00",
       "status": 200,
       "final_url": "https://www.oceannetworks.ca/terms-of-use/",
       "content_type": "text/html",
@@ -15190,12 +15862,12 @@
     },
     {
       "url": "https://oceanexplorer.noaa.gov/data/access/",
-      "checked_at": "2026-10-28T09:41:20.424929+00:00",
+      "checked_at": "2026-10-28T12:33:31.201798+00:00",
       "status": 200,
       "final_url": "https://oceanexplorer.noaa.gov/data/access/",
       "content_type": "text/html",
       "bytes_received": 58417,
-      "sha256": "581112eb6437a68a6e68bdd4cf44c681d74f8fd2fe832c632491c57239e326be",
+      "sha256": "d726fb7106adfc650f86be87445a41a38dfbad1179eea5add697ce03594cac14",
       "links": [
         [
           "https://oceanexplorer.noaa.gov/",
@@ -15489,7 +16161,7 @@
     },
     {
       "url": "https://www.mbari.org/technology/monterey-accelerated-research-system-mars/",
-      "checked_at": "2026-10-28T09:41:20.426393+00:00",
+      "checked_at": "2026-10-28T12:33:31.388297+00:00",
       "status": 200,
       "final_url": "https://www.mbari.org/technology/monterey-accelerated-research-system-mars/",
       "content_type": "text/html",
@@ -15768,7 +16440,7 @@
     },
     {
       "url": "https://www.mbari.org/technology/moorings/",
-      "checked_at": "2026-10-28T09:41:20.508932+00:00",
+      "checked_at": "2026-10-28T12:33:31.656698+00:00",
       "status": 200,
       "final_url": "https://www.mbari.org/technology/moorings/",
       "content_type": "text/html",
@@ -16027,7 +16699,7 @@
     },
     {
       "url": "https://www.mbari.org/technology/station-m/",
-      "checked_at": "2026-10-28T09:41:20.601444+00:00",
+      "checked_at": "2026-10-28T12:33:31.990361+00:00",
       "status": 200,
       "final_url": "https://www.mbari.org/technology/station-m/",
       "content_type": "text/html",
@@ -16341,12 +17013,12 @@
     },
     {
       "url": "https://www.mbari.org/about/for-media/media-kit/",
-      "checked_at": "2026-10-28T09:41:20.843712+00:00",
+      "checked_at": "2026-10-28T12:33:32.265445+00:00",
       "status": 200,
       "final_url": "https://www.mbari.org/about/for-media/media-kit/",
       "content_type": "text/html",
-      "bytes_received": 166082,
-      "sha256": "408febf5db7c3e0a2b2bb8ee550f53f9de5b1fe9e8d09f4fd905105361b96db4",
+      "bytes_received": 166109,
+      "sha256": "0e0d5dd8819aaa209cf481ad36ee7aaa435af6072b489f5c37fd043b21311639",
       "links": [
         [
           "https://www.mbari.org/about/for-media/media-kit/",
@@ -16600,7 +17272,7 @@
     },
     {
       "url": "https://www.mbari.org/about/for-media/media-request/",
-      "checked_at": "2026-10-28T09:41:20.934124+00:00",
+      "checked_at": "2026-10-28T12:33:32.267230+00:00",
       "status": 200,
       "final_url": "https://www.mbari.org/about/for-media/media-request/",
       "content_type": "text/html",
@@ -16822,7 +17494,7 @@
     },
     {
       "url": "https://www.mbari.org/about/for-media/location-shoots/",
-      "checked_at": "2026-10-28T09:41:21.059959+00:00",
+      "checked_at": "2026-10-28T12:33:32.308707+00:00",
       "status": 200,
       "final_url": "https://www.mbari.org/about/for-media/location-shoots/",
       "content_type": "text/html",
@@ -17045,899 +17717,6 @@
       "image_links": [],
       "embedded_media": [],
       "text": "48e46aa9da74bf53.txt"
-    },
-    {
-      "url": "https://www.mbari.org/about/for-media/page/2/",
-      "checked_at": "2026-10-28T09:41:21.095519+00:00",
-      "status": 200,
-      "final_url": "https://www.mbari.org/about/for-media/page/2/",
-      "content_type": "text/html",
-      "bytes_received": 193718,
-      "sha256": "e25c81dd8d65a83664bfe31fbeda46d8d73714a2ca25b5a59289af11e76c8e95",
-      "links": [
-        [
-          "https://www.mbari.org/about/for-media/page/2/",
-          "External Links"
-        ],
-        [
-          "https://www.mbari.org/",
-          "MBARI      "
-        ],
-        [
-          "https://www.mbari.org/our-work/publications/",
-          "Publications"
-        ],
-        [
-          "https://www.mbari.org/our-work/data-repositories/",
-          "Data & Repositories Search MBARI\u2019s library of data."
-        ],
-        [
-          "https://www.mbari.org/our-people/leadership-staff/",
-          "Staff Directory Meet our leadership and staff."
-        ],
-        [
-          "https://www.mbari.org/galleries/",
-          "galleries"
-        ],
-        [
-          "https://www.mbari.org/our-work/focus-areas/",
-          "focus areas"
-        ],
-        [
-          "https://www.mbari.org/our-work/teams/",
-          "teams"
-        ],
-        [
-          "https://www.mbari.org/our-work/projects/",
-          "projects"
-        ],
-        [
-          "https://www.mbari.org/expeditions/",
-          "Expeditions"
-        ],
-        [
-          "https://www.mbari.org/our-work/technologies/",
-          "Technologies Learn about our technologies."
-        ],
-        [
-          "https://www.mbari.org/our-work/technologies/instruments/",
-          "Instruments"
-        ],
-        [
-          "https://www.mbari.org/our-work/technologies/observatories/",
-          "Observatories"
-        ],
-        [
-          "https://www.mbari.org/our-work/technologies/software/",
-          "Software"
-        ],
-        [
-          "https://www.mbari.org/our-work/technologies/vehicles/",
-          "Vehicles"
-        ],
-        [
-          "https://www.mbari.org/our-work/tech-transfer/",
-          "Tech Transfer"
-        ],
-        [
-          "https://www.mbari.org/our-work/monterey-bay-today/",
-          "Monterey Bay Today"
-        ],
-        [
-          "https://www.mbari.org/our-work/ships/",
-          "Ships"
-        ],
-        [
-          "https://www.mbari.org/our-work/schedules/",
-          "Schedules"
-        ],
-        [
-          "https://www.mbari.org/our-people/collaboration-in-action/",
-          "Collaboration in Action Get an insider\u2019s look at our team\u2019s work."
-        ],
-        [
-          "https://www.mbari.org/our-people/internship-impacts/",
-          "Internship Impacts Launching the next generation of ocean explorers."
-        ],
-        [
-          "https://www.mbari.org/our-people/navigating-stem-careers/",
-          "Navigating STEM Careers Learn how some of our staff navigated to a career at MBARI."
-        ],
-        [
-          "https://www.mbari.org/education/education-research-testing-hypotheses-earth/",
-          "EARTH Curriculum Integrate MBARI data with lesson plans and workshops."
-        ],
-        [
-          "https://www.mbari.org/education/animals-of-the-deep/",
-          "Animals of the Deep Discover deep-sea critters of all types."
-        ],
-        [
-          "https://www.mbari.org/education/know-your-ocean/",
-          "Know Your Ocean Dive into topics about ocean health and its fascinating features."
-        ],
-        [
-          "https://dsg.mbari.org/dsg/",
-          "Deep-Sea Guide Explore deep-sea observations with this interactive guide."
-        ],
-        [
-          "https://www.mbari.org/education/library/",
-          "Library Learn about the MLML/MBARI Research Library."
-        ],
-        [
-          "https://www.mbari.org/education/more-resources/",
-          "More Resources Access more educational resources from the teams at MBARI."
-        ],
-        [
-          "https://www.mbari.org/news/",
-          "News"
-        ],
-        [
-          "https://www.mbari.org/about/mission-values/",
-          "Mission & Vision Learn about MBARI\u2019s mission, vision, and values."
-        ],
-        [
-          "https://www.mbari.org/about/strategic-roadmap/",
-          "Strategic Roadmap Learn about our strategic priorities for the years ahead."
-        ],
-        [
-          "https://www.mbari.org/about/careers/",
-          "Careers Find job openings and postdoc and internship opportunities."
-        ],
-        [
-          "https://www.mbari.org/about/connect-with-us/",
-          "Connect with Us Follow MBARI on social media and stay updated."
-        ],
-        [
-          "https://www.mbari.org/about/events/",
-          "Events See upcoming seminars, lectures, and public events."
-        ],
-        [
-          "https://www.mbari.org/about/reports-financials/",
-          "Reports & Financials Access the latest annual reports and financial information."
-        ],
-        [
-          "https://www.mbari.org/about/history/",
-          "History Explore MBARI\u2019s rich history spanning over three decades."
-        ],
-        [
-          "https://www.mbari.org/about/for-media/",
-          "General Information"
-        ],
-        [
-          "https://www.mbari.org/?s=",
-          "Search   "
-        ],
-        [
-          "https://www.mbari.org/about/careers/job-openings/",
-          "Job Openings Find the latest job openings and join the team."
-        ],
-        [
-          "https://www.mbari.org/about/careers/internships/",
-          "Internships Learn about our summer internship program."
-        ],
-        [
-          "https://www.mbari.org/about/for-media/media-kit/",
-          "media kit"
-        ],
-        [
-          "https://www.mbari.org/about/for-media/media-request/",
-          "Media Request Form"
-        ],
-        [
-          "https://www.mbari.org/about/for-media/location-shoots/",
-          "location shoot guidelines"
-        ],
-        [
-          "mailto:pressroom@mbari.org",
-          "pressroom@mbari.org"
-        ],
-        [
-          "https://www.mbari.org/news/?visc-qf-news_tax_filter_category%5B%5D=press-release",
-          "All Press Releases"
-        ],
-        [
-          "http://www.cencoos.org/",
-          "CeNCOOS Website"
-        ],
-        [
-          "https://www.mbari.org/news/mbari-researchers-discover-remarkable-new-swimming-sea-slug-in-the-deep-sea/",
-          "       News    MBARI researchers discover remarkable new swimming sea slug in the deep sea  Press Release  11.12.24  "
-        ],
-        [
-          "https://www.mbari.org/news/new-mbari-research-reveals-the-dynamic-processes-that-sculpt-the-arctic-seafloor/",
-          "       News    New MBARI research reveals the dynamic processes that sculpt the Arctic seafloor  Press Release  10.01.24  "
-        ],
-        [
-          "https://www.mbari.org/news/new-research-reveals-that-prehistoric-seafloor-pockmarks-off-the-california-coast-are-maintained-by-powerful-sediment-flows/",
-          "       News    New research reveals that prehistoric seafloor pockmarks off the California coast are maintained by powerful sediment flows  Press Release  05.21.24  "
-        ],
-        [
-          "https://www.mbari.org/news/fathomverse-mobile-game-inspires-a-new-wave-of-ocean-exploration/",
-          "       News    FathomVerse mobile game inspires a new wave of ocean exploration  Press Release  05.01.24  "
-        ],
-        [
-          "https://www.mbari.org/news/scientists-solve-mystery-of-why-thousands-of-octopus-migrate-to-deep-sea-thermal-springs/",
-          "       News    Scientists solve mystery of why thousands of octopus migrate to deep-sea thermal springs  Press Release  08.23.23  "
-        ],
-        [
-          "https://www.mbari.org/news/genetic-research-offers-new-perspective-on-the-early-evolution-of-animals/",
-          "       News    Genetic research offers new perspective on the early evolution of animals  Press Release  05.17.23  "
-        ],
-        [
-          "https://www.mbari.org/about/for-media/page/1/",
-          "1"
-        ],
-        [
-          "https://www.mbari.org/about/for-media/page/3/",
-          "  Next"
-        ],
-        [
-          "https://www.mbari.org/about/for-media/page/4/",
-          "4"
-        ],
-        [
-          "https://www.mbari.org/about/for-media/page/10/",
-          "10"
-        ],
-        [
-          "http://www.youtube.com/user/MBARIvideo",
-          "    youtube "
-        ],
-        [
-          "https://instagram.com/mbari_news/",
-          "    instagram "
-        ],
-        [
-          "https://www.tiktok.com/@mbari_news",
-          "    tiktok "
-        ],
-        [
-          "https://www.facebook.com/MBARInews",
-          "    facebook "
-        ],
-        [
-          "https://bsky.app/profile/mbarinews.bsky.social",
-          "    bluesky "
-        ],
-        [
-          "https://www.linkedin.com/company/monterey-bay-aquarium-research-institute-mbari-/",
-          "    linkedin "
-        ],
-        [
-          "https://mbari-blog.tumblr.com/ ",
-          "    tumblr "
-        ],
-        [
-          "https://mww.mbari.org/",
-          "Staff Login"
-        ],
-        [
-          "https://www.mbari.org/legal/",
-          "Legal"
-        ],
-        [
-          "https://www.thisisvisceral.com",
-          "Website by Visceral    "
-        ]
-      ],
-      "image_links": [
-        {
-          "url": "https://www.mbari.org/wp-content/uploads/Mystery_mollusc_D0598_02_1800-1024x683.jpg",
-          "alt": "A transparent gelatinous sea slug drifts in open water. The sea slug has a cavernous hood facing the right side of the frame, pink organs inside its body, and a paddle-shaped tail with several finger-like projections. The background is dark-blue, almost black, water."
-        },
-        {
-          "url": "https://www.mbari.org/wp-content/uploads/2022_Arctic_Expedition_MiniROV_launch_01_Dave_Caress_1800-1024x683.jpeg",
-          "alt": "Marine operations crew members launch a robotic submersible into the water. The crew members are aboard a research ship on the right-hand side of the frame. The submersible has a yellow float, black frame, and a red mechanical arm, and is equipped with various scientific instruments. A black tether extending offscreen at the top of the frame is connected to a yellow crane on the research ship to lift the submersible from the ship into the water. Marine operations crew members are holding two yellow tethers, one to carry video from the submersible\u2019s cameras and one to stabilize the submersible during deployment. The background is blue ocean and bright-blue sky with scattered streaks of white clouds."
-        },
-        {
-          "url": "https://www.mbari.org/wp-content/uploads/Sur_Pockmark_Field_bathymetry_excerpt_01_1800-1024x683.jpg",
-          "alt": "A sample of multi-colored seafloor bathymetry shows circular depressions called pockmarks on the seafloor. The image color represents a depth gradient with shallower depths in orange on the right transitioning to yellow, green, and blue on the left to represent deeper depths. The pockmark formations are circular in shape and spaced evenly apart. There are 18 large pockmark formations in the frame, as well as four smaller pockmark formations and a handful of other small, dark pits on the seafloor."
-        },
-        {
-          "url": "https://www.mbari.org/wp-content/uploads/FathomVerse_splash_screen_revised_1800-1024x683.jpg",
-          "alt": "Promotional artwork for the FathomVerse video game features a blue background with a crab-shaped logo comprised of white circles and the word fathomverse above the crab\u2019s claws. Below are a wave of blue bubbles and a wave of pink bubbles. Images of marine life including, from left, an orange sea star, a purple octopus, a bluish-brown ratfish, a red jelly, and a purple worm. A white-and-blue petal-shaped illustrated avatar is riding the wave of blue dots in the center of the frame, just below the FathomVerse logo."
-        },
-        {
-          "url": "https://www.mbari.org/wp-content/uploads/Muusoctopus_robustus_brooding_aggregation_D1427_01_1800-1024x683.jpg",
-          "alt": "Several pale purple octopus nesting in between greenish brown boulders. This screen capture from underwater video shows octopus oriented upside down with their arms and suckers exposed. Several pale orange sea anemones are interspersed among the nesting octopus."
-        },
-        {
-          "url": "https://www.mbari.org/wp-content/uploads/Hormiphora_californensis_Darrin_Schultz_MBARI_1800-1024x683.jpg",
-          "alt": "An oval-shaped, transparent sea gooseberry with eight rows of iridescent comb plates and two long tentacles trailing to the left. This individual was photographed in a tank of water against a black background."
-        }
-      ],
-      "embedded_media": [],
-      "text": "5cc3cacc11cc43a9.txt"
-    },
-    {
-      "url": "https://www.mbari.org/about/for-media/page/3/",
-      "checked_at": "2026-10-28T09:41:21.434791+00:00",
-      "status": 200,
-      "final_url": "https://www.mbari.org/about/for-media/page/3/",
-      "content_type": "text/html",
-      "bytes_received": 190517,
-      "sha256": "aa3e2d30665ff0f0cead8815c94bec186240b03c116942ea387248bb3990b514",
-      "links": [
-        [
-          "https://www.mbari.org/about/for-media/page/3/",
-          "External Links"
-        ],
-        [
-          "https://www.mbari.org/",
-          "MBARI      "
-        ],
-        [
-          "https://www.mbari.org/our-work/publications/",
-          "Publications"
-        ],
-        [
-          "https://www.mbari.org/our-work/data-repositories/",
-          "Data & Repositories Search MBARI\u2019s library of data."
-        ],
-        [
-          "https://www.mbari.org/our-people/leadership-staff/",
-          "Staff Directory Meet our leadership and staff."
-        ],
-        [
-          "https://www.mbari.org/galleries/",
-          "galleries"
-        ],
-        [
-          "https://www.mbari.org/our-work/focus-areas/",
-          "focus areas"
-        ],
-        [
-          "https://www.mbari.org/our-work/teams/",
-          "teams"
-        ],
-        [
-          "https://www.mbari.org/our-work/projects/",
-          "projects"
-        ],
-        [
-          "https://www.mbari.org/expeditions/",
-          "Expeditions"
-        ],
-        [
-          "https://www.mbari.org/our-work/technologies/",
-          "Technologies Learn about our technologies."
-        ],
-        [
-          "https://www.mbari.org/our-work/technologies/instruments/",
-          "Instruments"
-        ],
-        [
-          "https://www.mbari.org/our-work/technologies/observatories/",
-          "Observatories"
-        ],
-        [
-          "https://www.mbari.org/our-work/technologies/software/",
-          "Software"
-        ],
-        [
-          "https://www.mbari.org/our-work/technologies/vehicles/",
-          "Vehicles"
-        ],
-        [
-          "https://www.mbari.org/our-work/tech-transfer/",
-          "Tech Transfer"
-        ],
-        [
-          "https://www.mbari.org/our-work/monterey-bay-today/",
-          "Monterey Bay Today"
-        ],
-        [
-          "https://www.mbari.org/our-work/ships/",
-          "Ships"
-        ],
-        [
-          "https://www.mbari.org/our-work/schedules/",
-          "Schedules"
-        ],
-        [
-          "https://www.mbari.org/our-people/collaboration-in-action/",
-          "Collaboration in Action Get an insider\u2019s look at our team\u2019s work."
-        ],
-        [
-          "https://www.mbari.org/our-people/internship-impacts/",
-          "Internship Impacts Launching the next generation of ocean explorers."
-        ],
-        [
-          "https://www.mbari.org/our-people/navigating-stem-careers/",
-          "Navigating STEM Careers Learn how some of our staff navigated to a career at MBARI."
-        ],
-        [
-          "https://www.mbari.org/education/education-research-testing-hypotheses-earth/",
-          "EARTH Curriculum Integrate MBARI data with lesson plans and workshops."
-        ],
-        [
-          "https://www.mbari.org/education/animals-of-the-deep/",
-          "Animals of the Deep Discover deep-sea critters of all types."
-        ],
-        [
-          "https://www.mbari.org/education/know-your-ocean/",
-          "Know Your Ocean Dive into topics about ocean health and its fascinating features."
-        ],
-        [
-          "https://dsg.mbari.org/dsg/",
-          "Deep-Sea Guide Explore deep-sea observations with this interactive guide."
-        ],
-        [
-          "https://www.mbari.org/education/library/",
-          "Library Learn about the MLML/MBARI Research Library."
-        ],
-        [
-          "https://www.mbari.org/education/more-resources/",
-          "More Resources Access more educational resources from the teams at MBARI."
-        ],
-        [
-          "https://www.mbari.org/news/",
-          "News"
-        ],
-        [
-          "https://www.mbari.org/about/mission-values/",
-          "Mission & Vision Learn about MBARI\u2019s mission, vision, and values."
-        ],
-        [
-          "https://www.mbari.org/about/strategic-roadmap/",
-          "Strategic Roadmap Learn about our strategic priorities for the years ahead."
-        ],
-        [
-          "https://www.mbari.org/about/careers/",
-          "Careers Find job openings and postdoc and internship opportunities."
-        ],
-        [
-          "https://www.mbari.org/about/connect-with-us/",
-          "Connect with Us Follow MBARI on social media and stay updated."
-        ],
-        [
-          "https://www.mbari.org/about/events/",
-          "Events See upcoming seminars, lectures, and public events."
-        ],
-        [
-          "https://www.mbari.org/about/reports-financials/",
-          "Reports & Financials Access the latest annual reports and financial information."
-        ],
-        [
-          "https://www.mbari.org/about/history/",
-          "History Explore MBARI\u2019s rich history spanning over three decades."
-        ],
-        [
-          "https://www.mbari.org/about/for-media/",
-          "General Information"
-        ],
-        [
-          "https://www.mbari.org/?s=",
-          "Search   "
-        ],
-        [
-          "https://www.mbari.org/about/careers/job-openings/",
-          "Job Openings Find the latest job openings and join the team."
-        ],
-        [
-          "https://www.mbari.org/about/careers/internships/",
-          "Internships Learn about our summer internship program."
-        ],
-        [
-          "https://www.mbari.org/about/for-media/media-kit/",
-          "media kit"
-        ],
-        [
-          "https://www.mbari.org/about/for-media/media-request/",
-          "Media Request Form"
-        ],
-        [
-          "https://www.mbari.org/about/for-media/location-shoots/",
-          "location shoot guidelines"
-        ],
-        [
-          "mailto:pressroom@mbari.org",
-          "pressroom@mbari.org"
-        ],
-        [
-          "https://www.mbari.org/news/?visc-qf-news_tax_filter_category%5B%5D=press-release",
-          "All Press Releases"
-        ],
-        [
-          "http://www.cencoos.org/",
-          "CeNCOOS Website"
-        ],
-        [
-          "https://www.mbari.org/news/introducing-fathomnet-new-open-source-image-database-unlocks-the-power-of-ai-for-ocean-exploration/",
-          "       News    Introducing FathomNet: New open-source image database unlocks the power of AI for ocean exploration  Press Release  10.18.22  "
-        ],
-        [
-          "https://www.mbari.org/news/sound-reveals-giant-blue-whales-dance-with-wind-find-food/",
-          "       News    Sound reveals giant blue whales dance with the wind to find food  Press Release  10.05.22  "
-        ],
-        [
-          "https://www.mbari.org/news/new-study-highlights-major-step-forward-in-monitoring-ocean-health/",
-          "       News    New study highlights major step forward in monitoring ocean health  Press Release  05.18.22  "
-        ],
-        [
-          "https://www.mbari.org/news/mapping-reveals-rapid-changes-to-the-arctic-seafloor-as-ancient-submerged-permafrost-thaws/",
-          "       News    Mapping reveals rapid changes to the Arctic seafloor as ancient submerged permafrost thaws  Press Release  03.14.22  "
-        ],
-        [
-          "https://www.mbari.org/news/researchers-recover-ancient-mammoth-tusk-during-deep-sea-expedition/",
-          "       News    Researchers recover ancient mammoth tusk during deep- sea expedition  Press Release  11.23.21  "
-        ],
-        [
-          "https://www.mbari.org/news/autonomous-robotic-rover-helps-scientists-with-long-term-monitoring-of-deep-sea-carbon-cycle-and-climate-change/",
-          "       News    Autonomous robotic rover helps scientists with long-term monitoring of deep-sea carbon cycle and climate change  Press Release  11.03.21  "
-        ],
-        [
-          "https://www.mbari.org/about/for-media/page/2/",
-          "2"
-        ],
-        [
-          "https://www.mbari.org/about/for-media/page/1/",
-          "1"
-        ],
-        [
-          "https://www.mbari.org/about/for-media/page/4/",
-          "  Next"
-        ],
-        [
-          "https://www.mbari.org/about/for-media/page/5/",
-          "5"
-        ],
-        [
-          "https://www.mbari.org/about/for-media/page/10/",
-          "10"
-        ],
-        [
-          "http://www.youtube.com/user/MBARIvideo",
-          "    youtube "
-        ],
-        [
-          "https://instagram.com/mbari_news/",
-          "    instagram "
-        ],
-        [
-          "https://www.tiktok.com/@mbari_news",
-          "    tiktok "
-        ],
-        [
-          "https://www.facebook.com/MBARInews",
-          "    facebook "
-        ],
-        [
-          "https://bsky.app/profile/mbarinews.bsky.social",
-          "    bluesky "
-        ],
-        [
-          "https://www.linkedin.com/company/monterey-bay-aquarium-research-institute-mbari-/",
-          "    linkedin "
-        ],
-        [
-          "https://mbari-blog.tumblr.com/ ",
-          "    tumblr "
-        ],
-        [
-          "https://mww.mbari.org/",
-          "Staff Login"
-        ],
-        [
-          "https://www.mbari.org/legal/",
-          "Legal"
-        ],
-        [
-          "https://www.thisisvisceral.com",
-          "Website by Visceral    "
-        ]
-      ],
-      "image_links": [
-        {
-          "url": "https://www.mbari.org/wp-content/uploads/fathomnet-featured-1024x557.jpg",
-          "alt": ""
-        },
-        {
-          "url": "https://www.mbari.org/wp-content/uploads/ELE-00542-2022_GoldbogenLabDukeMarineRoboticsRemoteSensingLab_NMFSPermit161111200-640.jpeg",
-          "alt": ""
-        },
-        {
-          "url": "https://www.mbari.org/wp-content/uploads/LRAUV_forward-MBARI_MBA-640.jpeg",
-          "alt": ""
-        },
-        {
-          "url": "https://www.mbari.org/wp-content/uploads/2017_Arctic_mapping_AUV_launch_Dave_Caress_1800-1024x683.jpg",
-          "alt": ""
-        },
-        {
-          "url": "https://www.mbari.org/wp-content/uploads/Mammoth_tusk_control_room_03_1800-1024x683.jpg",
-          "alt": "Two MBARI staff in the darkened control room of an MBARI research ship. On the left is an ROV pilot wearing a face mask, a red baseball cap, and headphones and sitting in a chair with a joystick controlling a robotic deep-sea submersible. To the right is a researchers wearing a face mask, glasses, and headphones. Both are watching four television screens displaying the tusk of an ancient mammoth on the deep seafloor. Several other screens display data from the deep-sea submersible."
-        },
-        {
-          "url": "https://www.mbari.org/wp-content/uploads/2021/11/BenthicRoverII_D906_2016-web.jpg",
-          "alt": ""
-        }
-      ],
-      "embedded_media": [],
-      "text": "cba6d97c6f236c2c.txt"
-    },
-    {
-      "url": "https://www.mbari.org/about/for-media/page/10/",
-      "checked_at": "2026-10-28T09:41:21.593868+00:00",
-      "status": 200,
-      "final_url": "https://www.mbari.org/about/for-media/page/10/",
-      "content_type": "text/html",
-      "bytes_received": 184856,
-      "sha256": "bd874886034a617caeb4bbecee9f62117b9e0192616f0a3afd39218843489a1c",
-      "links": [
-        [
-          "https://www.mbari.org/about/for-media/page/10/",
-          "External Links"
-        ],
-        [
-          "https://www.mbari.org/",
-          "MBARI      "
-        ],
-        [
-          "https://www.mbari.org/our-work/publications/",
-          "Publications"
-        ],
-        [
-          "https://www.mbari.org/our-work/data-repositories/",
-          "Data & Repositories Search MBARI\u2019s library of data."
-        ],
-        [
-          "https://www.mbari.org/our-people/leadership-staff/",
-          "Staff Directory Meet our leadership and staff."
-        ],
-        [
-          "https://www.mbari.org/galleries/",
-          "galleries"
-        ],
-        [
-          "https://www.mbari.org/our-work/focus-areas/",
-          "focus areas"
-        ],
-        [
-          "https://www.mbari.org/our-work/teams/",
-          "teams"
-        ],
-        [
-          "https://www.mbari.org/our-work/projects/",
-          "projects"
-        ],
-        [
-          "https://www.mbari.org/expeditions/",
-          "Expeditions"
-        ],
-        [
-          "https://www.mbari.org/our-work/technologies/",
-          "Technologies Learn about our technologies."
-        ],
-        [
-          "https://www.mbari.org/our-work/technologies/instruments/",
-          "Instruments"
-        ],
-        [
-          "https://www.mbari.org/our-work/technologies/observatories/",
-          "Observatories"
-        ],
-        [
-          "https://www.mbari.org/our-work/technologies/software/",
-          "Software"
-        ],
-        [
-          "https://www.mbari.org/our-work/technologies/vehicles/",
-          "Vehicles"
-        ],
-        [
-          "https://www.mbari.org/our-work/tech-transfer/",
-          "Tech Transfer"
-        ],
-        [
-          "https://www.mbari.org/our-work/monterey-bay-today/",
-          "Monterey Bay Today"
-        ],
-        [
-          "https://www.mbari.org/our-work/ships/",
-          "Ships"
-        ],
-        [
-          "https://www.mbari.org/our-work/schedules/",
-          "Schedules"
-        ],
-        [
-          "https://www.mbari.org/our-people/collaboration-in-action/",
-          "Collaboration in Action Get an insider\u2019s look at our team\u2019s work."
-        ],
-        [
-          "https://www.mbari.org/our-people/internship-impacts/",
-          "Internship Impacts Launching the next generation of ocean explorers."
-        ],
-        [
-          "https://www.mbari.org/our-people/navigating-stem-careers/",
-          "Navigating STEM Careers Learn how some of our staff navigated to a career at MBARI."
-        ],
-        [
-          "https://www.mbari.org/education/education-research-testing-hypotheses-earth/",
-          "EARTH Curriculum Integrate MBARI data with lesson plans and workshops."
-        ],
-        [
-          "https://www.mbari.org/education/animals-of-the-deep/",
-          "Animals of the Deep Discover deep-sea critters of all types."
-        ],
-        [
-          "https://www.mbari.org/education/know-your-ocean/",
-          "Know Your Ocean Dive into topics about ocean health and its fascinating features."
-        ],
-        [
-          "https://dsg.mbari.org/dsg/",
-          "Deep-Sea Guide Explore deep-sea observations with this interactive guide."
-        ],
-        [
-          "https://www.mbari.org/education/library/",
-          "Library Learn about the MLML/MBARI Research Library."
-        ],
-        [
-          "https://www.mbari.org/education/more-resources/",
-          "More Resources Access more educational resources from the teams at MBARI."
-        ],
-        [
-          "https://www.mbari.org/news/",
-          "News"
-        ],
-        [
-          "https://www.mbari.org/about/mission-values/",
-          "Mission & Vision Learn about MBARI\u2019s mission, vision, and values."
-        ],
-        [
-          "https://www.mbari.org/about/strategic-roadmap/",
-          "Strategic Roadmap Learn about our strategic priorities for the years ahead."
-        ],
-        [
-          "https://www.mbari.org/about/careers/",
-          "Careers Find job openings and postdoc and internship opportunities."
-        ],
-        [
-          "https://www.mbari.org/about/connect-with-us/",
-          "Connect with Us Follow MBARI on social media and stay updated."
-        ],
-        [
-          "https://www.mbari.org/about/events/",
-          "Events See upcoming seminars, lectures, and public events."
-        ],
-        [
-          "https://www.mbari.org/about/reports-financials/",
-          "Reports & Financials Access the latest annual reports and financial information."
-        ],
-        [
-          "https://www.mbari.org/about/history/",
-          "History Explore MBARI\u2019s rich history spanning over three decades."
-        ],
-        [
-          "https://www.mbari.org/about/for-media/",
-          "General Information"
-        ],
-        [
-          "https://www.mbari.org/?s=",
-          "Search   "
-        ],
-        [
-          "https://www.mbari.org/about/careers/job-openings/",
-          "Job Openings Find the latest job openings and join the team."
-        ],
-        [
-          "https://www.mbari.org/about/careers/internships/",
-          "Internships Learn about our summer internship program."
-        ],
-        [
-          "https://www.mbari.org/about/for-media/media-kit/",
-          "media kit"
-        ],
-        [
-          "https://www.mbari.org/about/for-media/media-request/",
-          "Media Request Form"
-        ],
-        [
-          "https://www.mbari.org/about/for-media/location-shoots/",
-          "location shoot guidelines"
-        ],
-        [
-          "mailto:pressroom@mbari.org",
-          "pressroom@mbari.org"
-        ],
-        [
-          "https://www.mbari.org/news/?visc-qf-news_tax_filter_category%5B%5D=press-release",
-          "All Press Releases"
-        ],
-        [
-          "http://www.cencoos.org/",
-          "CeNCOOS Website"
-        ],
-        [
-          "https://www.mbari.org/news/researchers-solve-mystery-of-deep-sea-fish-with-tubular-eyes-and-transparent-head/",
-          "       News    Researchers solve mystery of deep-sea fish with tubular eyes and transparent head  Press Release  02.23.09  "
-        ],
-        [
-          "https://www.mbari.org/news/discovery-of-the-yeti-crab/",
-          "       News    Discovery of the \u201cYeti crab\u201d  Press Release  03.01.06  "
-        ],
-        [
-          "https://www.mbari.org/news/sinkers-provide-missing-piece-in-deep-sea-puzzle/",
-          "       News    \u201cSinkers\u201d provide missing piece in deep-sea puzzle  Press Release  06.09.05  "
-        ],
-        [
-          "https://www.mbari.org/news/nurseries-in-the-deep-sea/",
-          "       News    Nurseries in the deep sea  Press Release  09.03.03  "
-        ],
-        [
-          "https://www.mbari.org/about/for-media/page/9/",
-          "9"
-        ],
-        [
-          "https://www.mbari.org/about/for-media/page/1/",
-          "1"
-        ],
-        [
-          "https://www.mbari.org/about/for-media/page/8/",
-          "8"
-        ],
-        [
-          "http://www.youtube.com/user/MBARIvideo",
-          "    youtube "
-        ],
-        [
-          "https://instagram.com/mbari_news/",
-          "    instagram "
-        ],
-        [
-          "https://www.tiktok.com/@mbari_news",
-          "    tiktok "
-        ],
-        [
-          "https://www.facebook.com/MBARInews",
-          "    facebook "
-        ],
-        [
-          "https://bsky.app/profile/mbarinews.bsky.social",
-          "    bluesky "
-        ],
-        [
-          "https://www.linkedin.com/company/monterey-bay-aquarium-research-institute-mbari-/",
-          "    linkedin "
-        ],
-        [
-          "https://mbari-blog.tumblr.com/ ",
-          "    tumblr "
-        ],
-        [
-          "https://mww.mbari.org/",
-          "Staff Login"
-        ],
-        [
-          "https://www.mbari.org/legal/",
-          "Legal"
-        ],
-        [
-          "https://www.thisisvisceral.com",
-          "Website by Visceral    "
-        ]
-      ],
-      "image_links": [
-        {
-          "url": "https://www.mbari.org/wp-content/uploads/Macropinna_microstoma_V2571_01_1800-1024x683.jpg",
-          "alt": "A barreleye fish with a transparent head, large, tubular, green eyes, a dark brown body, large brown fins, and a transparent tail. This image is a screen capture from underwater video filmed in the midwater with a blue background and drifting particles of marine snow."
-        },
-        {
-          "url": "https://www.mbari.org/wp-content/uploads/2016/01/yeti-crab-photo-350.jpg",
-          "alt": ""
-        },
-        {
-          "url": "https://www.mbari.org/wp-content/uploads/2016/11/larv4-350.jpg",
-          "alt": ""
-        },
-        {
-          "url": "https://www.mbari.org/wp-content/uploads/2016/12/3_octopus_f_350.jpg",
-          "alt": ""
-        }
-      ],
-      "embedded_media": [],
-      "text": "4cb34e092a8f545e.txt"
     }
   ],
   "imagery_published": false

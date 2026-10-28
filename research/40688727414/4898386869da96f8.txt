@@ -1,0 +1,210 @@
+Monterey Bay Today • MBARI
+Skip to content
+MBARI
+Publications
+Data
+Directory
+Galleries
+Our Work
+Our Work
+MBARI creates and globally scales the visionary technologies required to explore, map, and understand our changing ocean.
+Our Work Sub
+Research & Development
+Focus Areas
+Teams
+Projects
+Data & Repositories
+Publications
+Expeditions
+Technology
+All Technologies
+Instruments
+Observatories
+Software
+Vehicles
+Tech Transfer
+Marine Operations
+Monterey Bay Today
+Ships
+Schedules
+Our People
+Our People
+MBARI staff are driven by a curiosity to learn more about the ocean and a passion to protect its future.
+Our People Sub
+Leadership & Staff
+Meet our staff, leadership, and board of directors.
+Collaboration in Action
+Get an insider’s look at our team’s work.
+Internship Impacts
+Launching the next generation of ocean explorers.
+Navigating STEM Careers
+Learn how some of our staff navigated to a career at MBARI.
+Education
+Education
+Resources for educators, students, and anyone aspiring to learn how science and technology brings us closer to the ocean.
+Education Sub
+EARTH Curriculum
+Integrate MBARI data with lesson plans and workshops.
+Animals of the Deep
+Discover deep-sea critters, including exclusive footage and info.
+Know Your Ocean
+Dive into topics about ocean health and its fascinating features.
+Deep-Sea Guide
+Explore deep-sea observations with this interactive guide.
+Library
+Learn about the MLML/MBARI Research Library.
+More Resources
+Access more educational resources from the teams at MBARI.
+News
+About
+About
+MBARI is a non-profit oceanographic research center advancing marine science and engineering to understand our changing ocean.
+About Sub
+Mission & Vision
+Learn about MBARI’s mission, vision, and values.
+Strategic Roadmap
+Learn about our strategic priorities for the years ahead.
+Leadership & Staff
+Meet our staff, leadership, and board of directors.
+Careers
+Find job openings and postdoc and internship opportunities.
+Connect with Us
+Follow MBARI on social media and stay updated.
+Events
+See upcoming seminars, lectures, and public events.
+Reports & Financials
+Access the latest annual reports and financial information.
+History
+Explore MBARI’s rich history spanning over three decades.
+For Media
+Get media-specific information and assets.
+Search
+Navigation Toggle
+Our Work
+Our Work
+MBARI creates and globally scales the visionary technologies required to explore, map, and understand our changing ocean.
+Our Work Sub
+Research & Development
+Focus Areas
+Teams
+Projects
+Data & Repositories
+Publications
+Expeditions
+Technology
+All Technologies
+Instruments
+Observatories
+Software
+Vehicles
+Tech Transfer
+Marine Operations
+Monterey Bay Today
+Ships
+Schedules
+Our People
+Our People
+MBARI staff are driven by a curiosity to learn more about the ocean and a passion to protect its future.
+Our People Sub
+Leadership & Staff
+Meet our staff, leadership, and board of directors.
+Collaboration in Action
+Get an insider’s look at our team’s work.
+Internship Impacts
+Launching the next generation of ocean explorers.
+Navigating STEM Careers
+Learn how some of our staff navigated to a career at MBARI.
+Education
+Education
+Resources for educators, students, and anyone aspiring to learn how science and technology brings us closer to the ocean.
+Education Sub
+EARTH Curriculum
+Integrate MBARI data with lesson plans and workshops.
+Animals of the Deep
+Discover deep-sea critters, including exclusive footage and info.
+Know Your Ocean
+Dive into topics about ocean health and its fascinating features.
+Deep-Sea Guide
+Explore deep-sea observations with this interactive guide.
+Library
+Learn about the MLML/MBARI Research Library.
+More Resources
+Access more educational resources from the teams at MBARI.
+News
+About
+About
+MBARI is a non-profit oceanographic research center advancing marine science and engineering to understand our changing ocean.
+About Sub
+Mission & Vision
+Learn about MBARI’s mission, vision, and values.
+Strategic Roadmap
+Learn about our strategic priorities for the years ahead.
+Leadership & Staff
+Meet our staff, leadership, and board of directors.
+Careers
+Find job openings and postdoc and internship opportunities.
+Connect with Us
+Follow MBARI on social media and stay updated.
+Events
+See upcoming seminars, lectures, and public events.
+Reports & Financials
+Access the latest annual reports and financial information.
+History
+Explore MBARI’s rich history spanning over three decades.
+For Media
+Get media-specific information and assets.
+Publications
+Data
+Directory
+Galleries
+Keyword search
+Submit
+Search
+Close
+You might be interested in:
+Job Openings
+Find the latest job openings and join the team.
+Internships
+Learn about our summer internship program.
+Staff Directory
+Meet our leadership and staff.
+Animals of the Deep
+Discover deep-sea critters of all types.
+Data & Repositories
+Search MBARI’s library of data.
+Technologies
+Learn about our technologies.
+Monterey Bay Today
+The MBARI Oceanographic Decision Support System (ODSS) provides real-time feedback of research activity in Monterey Bay and provides a coordinated view of all ships, vehicles, and instruments involved in MBARI experiments.
+We utilize the ODSS for situational awareness, experiment planning, collaboration, and data analysis. In the ODSS, ocean scientists collaboratively design their experiments, communicate with other participants, track asset locations, and command robotic vehicles at sea. Data from these assets are retrieved when communication is possible, stored, then made available for download or playback from a single portal for further analysis either by human or machine learning methods.
+R/V Rachel Carson
+Autonomous underwater vehicle (AUV)
+Seaglider
+Wave Glider
+R/V David Packard
+Long-range autonomous underwater vehicle (LRAUV)
+Spray glider
+Mooring
+Instructions
+Clicking on the double arrow above the left-side “Data” panel will open a list of vessels and instruments under the “Platforms” section.
+Selecting any of those items will show the location of that particular asset.
+The “Layers” section shows various other types of information such as sea-surface temperature (SST), satellite chlorophyll measurements, or navigation charts.
+Dragging and zooming the map will provide different views of the activity in the bay.
+SOURCE CODE
+ODSS.MBARI.ORG
+Stay Connected
+Receive the latest MBARI News
+Email
+Submit
+youtube
+instagram
+tiktok
+facebook
+bluesky
+linkedin
+tumblr
+7700 Sandholdt Road, Moss Landing, California 95039
+© 2026 MBARI
+Staff Login
+Legal
+Website by Visceral

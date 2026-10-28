@@ -1,0 +1,1684 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-28T12:34:06.692113+00:00",
+  "commit": "eb390c6829e43f3fc28a62b5ebcffdbffde7c89c",
+  "run_url": "https://github.com/nikokoren/abyss/actions/runs/40688727414",
+  "imagery_published": false,
+  "scope": "Licensed OOI preview images and technical evidence; registry approval requires review",
+  "sources": [
+    {
+      "source_id": "ooi-oregon-shelf",
+      "checked_at": "2026-10-28T12:33:33.100095+00:00",
+      "technical_status": "failed",
+      "rights_status": "approved_attributed_derived_stills",
+      "reference": "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/",
+      "technical_usable": false,
+      "recordings": [
+        {
+          "url": "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/2026/10/28/CAMDSB107_10.33.13.8_20261028T114618_UTC.jpg",
+          "recorded_at": "2026-10-28T11:46:18+00:00",
+          "media_type": "image"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/2026/10/28/CAMDSB107_10.33.13.8_20261028T114613_UTC.jpg",
+          "recorded_at": "2026-10-28T11:46:13+00:00",
+          "media_type": "image"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/2026/10/28/CAMDSB107_10.33.13.8_20261028T114610_UTC.jpg",
+          "recorded_at": "2026-10-28T11:46:10+00:00",
+          "media_type": "image"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/2026/10/28/CAMDSB107_10.33.13.8_20261028T111618_UTC.jpg",
+          "recorded_at": "2026-10-28T11:16:18+00:00",
+          "media_type": "image"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/2026/10/28/CAMDSB107_10.33.13.8_20261028T111613_UTC.jpg",
+          "recorded_at": "2026-10-28T11:16:13+00:00",
+          "media_type": "image"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/2026/10/28/CAMDSB107_10.33.13.8_20261028T111610_UTC.jpg",
+          "recorded_at": "2026-10-28T11:16:10+00:00",
+          "media_type": "image"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/2026/10/28/CAMDSB107_10.33.13.8_20261028T104618_UTC.jpg",
+          "recorded_at": "2026-10-28T10:46:18+00:00",
+          "media_type": "image"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/2026/10/28/CAMDSB107_10.33.13.8_20261028T104613_UTC.jpg",
+          "recorded_at": "2026-10-28T10:46:13+00:00",
+          "media_type": "image"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/2026/10/28/CAMDSB107_10.33.13.8_20261028T104610_UTC.jpg",
+          "recorded_at": "2026-10-28T10:46:10+00:00",
+          "media_type": "image"
+        }
+      ],
+      "image_header_probe": {
+        "recording_bytes": 19491962,
+        "header_bytes_downloaded": 65537,
+        "format": "JPEG",
+        "decoded_size": [
+          5344,
+          4008
+        ]
+      },
+      "diagnostics": {
+        "strategy": "recent_snapshots",
+        "preference": {
+          "model_id": null,
+          "status": "quality_fallback",
+          "error": null
+        },
+        "recordings_considered": 9,
+        "candidates_extracted": 0,
+        "coarse_extracted": 0,
+        "images_extracted": 0,
+        "fine_extracted": 0,
+        "bytes_downloaded": 0,
+        "byte_budget": 8388608,
+        "upstream_requests": 9,
+        "search_complete": false,
+        "budget_exhausted": false,
+        "elapsed_seconds": 4.921,
+        "recordings": [
+          {
+            "recording": {
+              "url": "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/2026/10/28/CAMDSB107_10.33.13.8_20261028T114618_UTC.jpg",
+              "recorded_at": "2026-10-28T11:46:18+00:00",
+              "media_type": "image"
+            },
+            "complete": false,
+            "duration_seconds": null,
+            "codec": null,
+            "coarse_requested": 1,
+            "coarse_extracted": 0,
+            "fine_requested": 0,
+            "fine_extracted": 0,
+            "bytes_downloaded": 0,
+            "upstream_requests": 0,
+            "errors": [
+              "Image size 19491962 exceeds available 4194304 bytes (4 MiB per-image cap)"
+            ],
+            "decoded_size": null,
+            "recording_bytes": null
+          },
+          {
+            "recording": {
+              "url": "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/2026/10/28/CAMDSB107_10.33.13.8_20261028T114613_UTC.jpg",
+              "recorded_at": "2026-10-28T11:46:13+00:00",
+              "media_type": "image"
+            },
+            "complete": false,
+            "duration_seconds": null,
+            "codec": null,
+            "coarse_requested": 1,
+            "coarse_extracted": 0,
+            "fine_requested": 0,
+            "fine_extracted": 0,
+            "bytes_downloaded": 0,
+            "upstream_requests": 0,
+            "errors": [
+              "Image size 19561298 exceeds available 4194304 bytes (4 MiB per-image cap)"
+            ],
+            "decoded_size": null,
+            "recording_bytes": null
+          },
+          {
+            "recording": {
+              "url": "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/2026/10/28/CAMDSB107_10.33.13.8_20261028T114610_UTC.jpg",
+              "recorded_at": "2026-10-28T11:46:10+00:00",
+              "media_type": "image"
+            },
+            "complete": false,
+            "duration_seconds": null,
+            "codec": null,
+            "coarse_requested": 1,
+            "coarse_extracted": 0,
+            "fine_requested": 0,
+            "fine_extracted": 0,
+            "bytes_downloaded": 0,
+            "upstream_requests": 0,
+            "errors": [
+              "Image size 19598259 exceeds available 4194304 bytes (4 MiB per-image cap)"
+            ],
+            "decoded_size": null,
+            "recording_bytes": null
+          },
+          {
+            "recording": {
+              "url": "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/2026/10/28/CAMDSB107_10.33.13.8_20261028T111618_UTC.jpg",
+              "recorded_at": "2026-10-28T11:16:18+00:00",
+              "media_type": "image"
+            },
+            "complete": false,
+            "duration_seconds": null,
+            "codec": null,
+            "coarse_requested": 1,
+            "coarse_extracted": 0,
+            "fine_requested": 0,
+            "fine_extracted": 0,
+            "bytes_downloaded": 0,
+            "upstream_requests": 0,
+            "errors": [
+              "Image size 19556025 exceeds available 4194304 bytes (4 MiB per-image cap)"
+            ],
+            "decoded_size": null,
+            "recording_bytes": null
+          },
+          {
+            "recording": {
+              "url": "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/2026/10/28/CAMDSB107_10.33.13.8_20261028T111613_UTC.jpg",
+              "recorded_at": "2026-10-28T11:16:13+00:00",
+              "media_type": "image"
+            },
+            "complete": false,
+            "duration_seconds": null,
+            "codec": null,
+            "coarse_requested": 1,
+            "coarse_extracted": 0,
+            "fine_requested": 0,
+            "fine_extracted": 0,
+            "bytes_downloaded": 0,
+            "upstream_requests": 0,
+            "errors": [
+              "Image size 19698811 exceeds available 4194304 bytes (4 MiB per-image cap)"
+            ],
+            "decoded_size": null,
+            "recording_bytes": null
+          },
+          {
+            "recording": {
+              "url": "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/2026/10/28/CAMDSB107_10.33.13.8_20261028T111610_UTC.jpg",
+              "recorded_at": "2026-10-28T11:16:10+00:00",
+              "media_type": "image"
+            },
+            "complete": false,
+            "duration_seconds": null,
+            "codec": null,
+            "coarse_requested": 1,
+            "coarse_extracted": 0,
+            "fine_requested": 0,
+            "fine_extracted": 0,
+            "bytes_downloaded": 0,
+            "upstream_requests": 0,
+            "errors": [
+              "Image size 19663296 exceeds available 4194304 bytes (4 MiB per-image cap)"
+            ],
+            "decoded_size": null,
+            "recording_bytes": null
+          },
+          {
+            "recording": {
+              "url": "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/2026/10/28/CAMDSB107_10.33.13.8_20261028T104618_UTC.jpg",
+              "recorded_at": "2026-10-28T10:46:18+00:00",
+              "media_type": "image"
+            },
+            "complete": false,
+            "duration_seconds": null,
+            "codec": null,
+            "coarse_requested": 1,
+            "coarse_extracted": 0,
+            "fine_requested": 0,
+            "fine_extracted": 0,
+            "bytes_downloaded": 0,
+            "upstream_requests": 0,
+            "errors": [
+              "Image size 19521072 exceeds available 4194304 bytes (4 MiB per-image cap)"
+            ],
+            "decoded_size": null,
+            "recording_bytes": null
+          },
+          {
+            "recording": {
+              "url": "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/2026/10/28/CAMDSB107_10.33.13.8_20261028T104613_UTC.jpg",
+              "recorded_at": "2026-10-28T10:46:13+00:00",
+              "media_type": "image"
+            },
+            "complete": false,
+            "duration_seconds": null,
+            "codec": null,
+            "coarse_requested": 1,
+            "coarse_extracted": 0,
+            "fine_requested": 0,
+            "fine_extracted": 0,
+            "bytes_downloaded": 0,
+            "upstream_requests": 0,
+            "errors": [
+              "Image size 19711001 exceeds available 4194304 bytes (4 MiB per-image cap)"
+            ],
+            "decoded_size": null,
+            "recording_bytes": null
+          },
+          {
+            "recording": {
+              "url": "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/2026/10/28/CAMDSB107_10.33.13.8_20261028T104610_UTC.jpg",
+              "recorded_at": "2026-10-28T10:46:10+00:00",
+              "media_type": "image"
+            },
+            "complete": false,
+            "duration_seconds": null,
+            "codec": null,
+            "coarse_requested": 1,
+            "coarse_extracted": 0,
+            "fine_requested": 0,
+            "fine_extracted": 0,
+            "bytes_downloaded": 0,
+            "upstream_requests": 0,
+            "errors": [
+              "Image size 19530577 exceeds available 4194304 bytes (4 MiB per-image cap)"
+            ],
+            "decoded_size": null,
+            "recording_bytes": null
+          }
+        ],
+        "candidate_scores": []
+      },
+      "failure": {
+        "category": "processing_error",
+        "message": "No snapshots decoded"
+      }
+    },
+    {
+      "source_id": "ooi-oregon-offshore",
+      "checked_at": "2026-10-28T12:33:39.382058+00:00",
+      "technical_status": "failed",
+      "rights_status": "approved_attributed_derived_stills",
+      "reference": "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/",
+      "technical_usable": false,
+      "recordings": [
+        {
+          "url": "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/28/CAMDSB106_10.33.9.6_20261028T111617_UTC.jpg",
+          "recorded_at": "2026-10-28T11:16:17+00:00",
+          "media_type": "image"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/28/CAMDSB106_10.33.9.6_20261028T111611_UTC.jpg",
+          "recorded_at": "2026-10-28T11:16:11+00:00",
+          "media_type": "image"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/28/CAMDSB106_10.33.9.6_20261028T111610_UTC.jpg",
+          "recorded_at": "2026-10-28T11:16:10+00:00",
+          "media_type": "image"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/28/CAMDSB106_10.33.9.6_20261028T104617_UTC.jpg",
+          "recorded_at": "2026-10-28T10:46:17+00:00",
+          "media_type": "image"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/28/CAMDSB106_10.33.9.6_20261028T104611_UTC.jpg",
+          "recorded_at": "2026-10-28T10:46:11+00:00",
+          "media_type": "image"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/28/CAMDSB106_10.33.9.6_20261028T104610_UTC.jpg",
+          "recorded_at": "2026-10-28T10:46:10+00:00",
+          "media_type": "image"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/28/CAMDSB106_10.33.9.6_20261028T094616_UTC.jpg",
+          "recorded_at": "2026-10-28T09:46:16+00:00",
+          "media_type": "image"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/28/CAMDSB106_10.33.9.6_20261028T094611_UTC.jpg",
+          "recorded_at": "2026-10-28T09:46:11+00:00",
+          "media_type": "image"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/28/CAMDSB106_10.33.9.6_20261028T094610_UTC.jpg",
+          "recorded_at": "2026-10-28T09:46:10+00:00",
+          "media_type": "image"
+        }
+      ],
+      "image_header_probe": {
+        "recording_bytes": 9447823,
+        "header_bytes_downloaded": 65537,
+        "format": "JPEG",
+        "decoded_size": [
+          5344,
+          4008
+        ]
+      },
+      "diagnostics": {
+        "strategy": "recent_snapshots",
+        "preference": {
+          "model_id": null,
+          "status": "quality_fallback",
+          "error": null
+        },
+        "recordings_considered": 9,
+        "candidates_extracted": 0,
+        "coarse_extracted": 0,
+        "images_extracted": 0,
+        "fine_extracted": 0,
+        "bytes_downloaded": 0,
+        "byte_budget": 8388608,
+        "upstream_requests": 9,
+        "search_complete": false,
+        "budget_exhausted": false,
+        "elapsed_seconds": 4.24,
+        "recordings": [
+          {
+            "recording": {
+              "url": "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/28/CAMDSB106_10.33.9.6_20261028T111617_UTC.jpg",
+              "recorded_at": "2026-10-28T11:16:17+00:00",
+              "media_type": "image"
+            },
+            "complete": false,
+            "duration_seconds": null,
+            "codec": null,
+            "coarse_requested": 1,
+            "coarse_extracted": 0,
+            "fine_requested": 0,
+            "fine_extracted": 0,
+            "bytes_downloaded": 0,
+            "upstream_requests": 0,
+            "errors": [
+              "Image size 9447823 exceeds available 4194304 bytes (4 MiB per-image cap)"
+            ],
+            "decoded_size": null,
+            "recording_bytes": null
+          },
+          {
+            "recording": {
+              "url": "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/28/CAMDSB106_10.33.9.6_20261028T111611_UTC.jpg",
+              "recorded_at": "2026-10-28T11:16:11+00:00",
+              "media_type": "image"
+            },
+            "complete": false,
+            "duration_seconds": null,
+            "codec": null,
+            "coarse_requested": 1,
+            "coarse_extracted": 0,
+            "fine_requested": 0,
+            "fine_extracted": 0,
+            "bytes_downloaded": 0,
+            "upstream_requests": 0,
+            "errors": [
+              "Image size 9493924 exceeds available 4194304 bytes (4 MiB per-image cap)"
+            ],
+            "decoded_size": null,
+            "recording_bytes": null
+          },
+          {
+            "recording": {
+              "url": "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/28/CAMDSB106_10.33.9.6_20261028T111610_UTC.jpg",
+              "recorded_at": "2026-10-28T11:16:10+00:00",
+              "media_type": "image"
+            },
+            "complete": false,
+            "duration_seconds": null,
+            "codec": null,
+            "coarse_requested": 1,
+            "coarse_extracted": 0,
+            "fine_requested": 0,
+            "fine_extracted": 0,
+            "bytes_downloaded": 0,
+            "upstream_requests": 0,
+            "errors": [
+              "Image size 9439141 exceeds available 4194304 bytes (4 MiB per-image cap)"
+            ],
+            "decoded_size": null,
+            "recording_bytes": null
+          },
+          {
+            "recording": {
+              "url": "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/28/CAMDSB106_10.33.9.6_20261028T104617_UTC.jpg",
+              "recorded_at": "2026-10-28T10:46:17+00:00",
+              "media_type": "image"
+            },
+            "complete": false,
+            "duration_seconds": null,
+            "codec": null,
+            "coarse_requested": 1,
+            "coarse_extracted": 0,
+            "fine_requested": 0,
+            "fine_extracted": 0,
+            "bytes_downloaded": 0,
+            "upstream_requests": 0,
+            "errors": [
+              "Image size 9385434 exceeds available 4194304 bytes (4 MiB per-image cap)"
+            ],
+            "decoded_size": null,
+            "recording_bytes": null
+          },
+          {
+            "recording": {
+              "url": "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/28/CAMDSB106_10.33.9.6_20261028T104611_UTC.jpg",
+              "recorded_at": "2026-10-28T10:46:11+00:00",
+              "media_type": "image"
+            },
+            "complete": false,
+            "duration_seconds": null,
+            "codec": null,
+            "coarse_requested": 1,
+            "coarse_extracted": 0,
+            "fine_requested": 0,
+            "fine_extracted": 0,
+            "bytes_downloaded": 0,
+            "upstream_requests": 0,
+            "errors": [
+              "Image size 9428082 exceeds available 4194304 bytes (4 MiB per-image cap)"
+            ],
+            "decoded_size": null,
+            "recording_bytes": null
+          },
+          {
+            "recording": {
+              "url": "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/28/CAMDSB106_10.33.9.6_20261028T104610_UTC.jpg",
+              "recorded_at": "2026-10-28T10:46:10+00:00",
+              "media_type": "image"
+            },
+            "complete": false,
+            "duration_seconds": null,
+            "codec": null,
+            "coarse_requested": 1,
+            "coarse_extracted": 0,
+            "fine_requested": 0,
+            "fine_extracted": 0,
+            "bytes_downloaded": 0,
+            "upstream_requests": 0,
+            "errors": [
+              "Image size 9419534 exceeds available 4194304 bytes (4 MiB per-image cap)"
+            ],
+            "decoded_size": null,
+            "recording_bytes": null
+          },
+          {
+            "recording": {
+              "url": "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/28/CAMDSB106_10.33.9.6_20261028T094616_UTC.jpg",
+              "recorded_at": "2026-10-28T09:46:16+00:00",
+              "media_type": "image"
+            },
+            "complete": false,
+            "duration_seconds": null,
+            "codec": null,
+            "coarse_requested": 1,
+            "coarse_extracted": 0,
+            "fine_requested": 0,
+            "fine_extracted": 0,
+            "bytes_downloaded": 0,
+            "upstream_requests": 0,
+            "errors": [
+              "Image size 9320238 exceeds available 4194304 bytes (4 MiB per-image cap)"
+            ],
+            "decoded_size": null,
+            "recording_bytes": null
+          },
+          {
+            "recording": {
+              "url": "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/28/CAMDSB106_10.33.9.6_20261028T094611_UTC.jpg",
+              "recorded_at": "2026-10-28T09:46:11+00:00",
+              "media_type": "image"
+            },
+            "complete": false,
+            "duration_seconds": null,
+            "codec": null,
+            "coarse_requested": 1,
+            "coarse_extracted": 0,
+            "fine_requested": 0,
+            "fine_extracted": 0,
+            "bytes_downloaded": 0,
+            "upstream_requests": 0,
+            "errors": [
+              "Image size 9276773 exceeds available 4194304 bytes (4 MiB per-image cap)"
+            ],
+            "decoded_size": null,
+            "recording_bytes": null
+          },
+          {
+            "recording": {
+              "url": "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/28/CAMDSB106_10.33.9.6_20261028T094610_UTC.jpg",
+              "recorded_at": "2026-10-28T09:46:10+00:00",
+              "media_type": "image"
+            },
+            "complete": false,
+            "duration_seconds": null,
+            "codec": null,
+            "coarse_requested": 1,
+            "coarse_extracted": 0,
+            "fine_requested": 0,
+            "fine_extracted": 0,
+            "bytes_downloaded": 0,
+            "upstream_requests": 0,
+            "errors": [
+              "Image size 9234967 exceeds available 4194304 bytes (4 MiB per-image cap)"
+            ],
+            "decoded_size": null,
+            "recording_bytes": null
+          }
+        ],
+        "candidate_scores": []
+      },
+      "failure": {
+        "category": "processing_error",
+        "message": "No snapshots decoded"
+      }
+    },
+    {
+      "source_id": "ooi-slope-water-column",
+      "checked_at": "2026-10-28T12:33:45.025751+00:00",
+      "technical_status": "failed",
+      "rights_status": "approved_attributed_derived_stills",
+      "reference": "https://rawdata.oceanobservatories.org/files/RS01SBPS/PC01A/CAMDSC102/",
+      "technical_usable": false,
+      "recordings": [
+        {
+          "url": "https://rawdata.oceanobservatories.org/files/RS01SBPS/PC01A/CAMDSC102/2026/10/28/CAMDSC102_10.33.3.146_20261028T111603_UTC.jpg",
+          "recorded_at": "2026-10-28T11:16:03+00:00",
+          "media_type": "image"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/files/RS01SBPS/PC01A/CAMDSC102/2026/10/28/CAMDSC102_10.33.3.146_20261028T111558_UTC.jpg",
+          "recorded_at": "2026-10-28T11:15:58+00:00",
+          "media_type": "image"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/files/RS01SBPS/PC01A/CAMDSC102/2026/10/28/CAMDSC102_10.33.3.146_20261028T111550_UTC.jpg",
+          "recorded_at": "2026-10-28T11:15:50+00:00",
+          "media_type": "image"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/files/RS01SBPS/PC01A/CAMDSC102/2026/10/28/CAMDSC102_10.33.3.146_20261028T104603_UTC.jpg",
+          "recorded_at": "2026-10-28T10:46:03+00:00",
+          "media_type": "image"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/files/RS01SBPS/PC01A/CAMDSC102/2026/10/28/CAMDSC102_10.33.3.146_20261028T104558_UTC.jpg",
+          "recorded_at": "2026-10-28T10:45:58+00:00",
+          "media_type": "image"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/files/RS01SBPS/PC01A/CAMDSC102/2026/10/28/CAMDSC102_10.33.3.146_20261028T104550_UTC.jpg",
+          "recorded_at": "2026-10-28T10:45:50+00:00",
+          "media_type": "image"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/files/RS01SBPS/PC01A/CAMDSC102/2026/10/28/CAMDSC102_10.33.3.146_20261028T094603_UTC.jpg",
+          "recorded_at": "2026-10-28T09:46:03+00:00",
+          "media_type": "image"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/files/RS01SBPS/PC01A/CAMDSC102/2026/10/28/CAMDSC102_10.33.3.146_20261028T094558_UTC.jpg",
+          "recorded_at": "2026-10-28T09:45:58+00:00",
+          "media_type": "image"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/files/RS01SBPS/PC01A/CAMDSC102/2026/10/28/CAMDSC102_10.33.3.146_20261028T094550_UTC.jpg",
+          "recorded_at": "2026-10-28T09:45:50+00:00",
+          "media_type": "image"
+        }
+      ],
+      "image_header_probe": {
+        "recording_bytes": 22639036,
+        "header_bytes_downloaded": 65537,
+        "format": "JPEG",
+        "decoded_size": [
+          5344,
+          4008
+        ]
+      },
+      "diagnostics": {
+        "strategy": "recent_snapshots",
+        "preference": {
+          "model_id": null,
+          "status": "quality_fallback",
+          "error": null
+        },
+        "recordings_considered": 9,
+        "candidates_extracted": 0,
+        "coarse_extracted": 0,
+        "images_extracted": 0,
+        "fine_extracted": 0,
+        "bytes_downloaded": 0,
+        "byte_budget": 8388608,
+        "upstream_requests": 9,
+        "search_complete": false,
+        "budget_exhausted": false,
+        "elapsed_seconds": 4.389,
+        "recordings": [
+          {
+            "recording": {
+              "url": "https://rawdata.oceanobservatories.org/files/RS01SBPS/PC01A/CAMDSC102/2026/10/28/CAMDSC102_10.33.3.146_20261028T111603_UTC.jpg",
+              "recorded_at": "2026-10-28T11:16:03+00:00",
+              "media_type": "image"
+            },
+            "complete": false,
+            "duration_seconds": null,
+            "codec": null,
+            "coarse_requested": 1,
+            "coarse_extracted": 0,
+            "fine_requested": 0,
+            "fine_extracted": 0,
+            "bytes_downloaded": 0,
+            "upstream_requests": 0,
+            "errors": [
+              "Image size 22639036 exceeds available 4194304 bytes (4 MiB per-image cap)"
+            ],
+            "decoded_size": null,
+            "recording_bytes": null
+          },
+          {
+            "recording": {
+              "url": "https://rawdata.oceanobservatories.org/files/RS01SBPS/PC01A/CAMDSC102/2026/10/28/CAMDSC102_10.33.3.146_20261028T111558_UTC.jpg",
+              "recorded_at": "2026-10-28T11:15:58+00:00",
+              "media_type": "image"
+            },
+            "complete": false,
+            "duration_seconds": null,
+            "codec": null,
+            "coarse_requested": 1,
+            "coarse_extracted": 0,
+            "fine_requested": 0,
+            "fine_extracted": 0,
+            "bytes_downloaded": 0,
+            "upstream_requests": 0,
+            "errors": [
+              "Image size 22644129 exceeds available 4194304 bytes (4 MiB per-image cap)"
+            ],
+            "decoded_size": null,
+            "recording_bytes": null
+          },
+          {
+            "recording": {
+              "url": "https://rawdata.oceanobservatories.org/files/RS01SBPS/PC01A/CAMDSC102/2026/10/28/CAMDSC102_10.33.3.146_20261028T111550_UTC.jpg",
+              "recorded_at": "2026-10-28T11:15:50+00:00",
+              "media_type": "image"
+            },
+            "complete": false,
+            "duration_seconds": null,
+            "codec": null,
+            "coarse_requested": 1,
+            "coarse_extracted": 0,
+            "fine_requested": 0,
+            "fine_extracted": 0,
+            "bytes_downloaded": 0,
+            "upstream_requests": 0,
+            "errors": [
+              "Image size 22613142 exceeds available 4194304 bytes (4 MiB per-image cap)"
+            ],
+            "decoded_size": null,
+            "recording_bytes": null
+          },
+          {
+            "recording": {
+              "url": "https://rawdata.oceanobservatories.org/files/RS01SBPS/PC01A/CAMDSC102/2026/10/28/CAMDSC102_10.33.3.146_20261028T104603_UTC.jpg",
+              "recorded_at": "2026-10-28T10:46:03+00:00",
+              "media_type": "image"
+            },
+            "complete": false,
+            "duration_seconds": null,
+            "codec": null,
+            "coarse_requested": 1,
+            "coarse_extracted": 0,
+            "fine_requested": 0,
+            "fine_extracted": 0,
+            "bytes_downloaded": 0,
+            "upstream_requests": 0,
+            "errors": [
+              "Image size 22660199 exceeds available 4194304 bytes (4 MiB per-image cap)"
+            ],
+            "decoded_size": null,
+            "recording_bytes": null
+          },
+          {
+            "recording": {
+              "url": "https://rawdata.oceanobservatories.org/files/RS01SBPS/PC01A/CAMDSC102/2026/10/28/CAMDSC102_10.33.3.146_20261028T104558_UTC.jpg",
+              "recorded_at": "2026-10-28T10:45:58+00:00",
+              "media_type": "image"
+            },
+            "complete": false,
+            "duration_seconds": null,
+            "codec": null,
+            "coarse_requested": 1,
+            "coarse_extracted": 0,
+            "fine_requested": 0,
+            "fine_extracted": 0,
+            "bytes_downloaded": 0,
+            "upstream_requests": 0,
+            "errors": [
+              "Image size 22671129 exceeds available 4194304 bytes (4 MiB per-image cap)"
+            ],
+            "decoded_size": null,
+            "recording_bytes": null
+          },
+          {
+            "recording": {
+              "url": "https://rawdata.oceanobservatories.org/files/RS01SBPS/PC01A/CAMDSC102/2026/10/28/CAMDSC102_10.33.3.146_20261028T104550_UTC.jpg",
+              "recorded_at": "2026-10-28T10:45:50+00:00",
+              "media_type": "image"
+            },
+            "complete": false,
+            "duration_seconds": null,
+            "codec": null,
+            "coarse_requested": 1,
+            "coarse_extracted": 0,
+            "fine_requested": 0,
+            "fine_extracted": 0,
+            "bytes_downloaded": 0,
+            "upstream_requests": 0,
+            "errors": [
+              "Image size 22672793 exceeds available 4194304 bytes (4 MiB per-image cap)"
+            ],
+            "decoded_size": null,
+            "recording_bytes": null
+          },
+          {
+            "recording": {
+              "url": "https://rawdata.oceanobservatories.org/files/RS01SBPS/PC01A/CAMDSC102/2026/10/28/CAMDSC102_10.33.3.146_20261028T094603_UTC.jpg",
+              "recorded_at": "2026-10-28T09:46:03+00:00",
+              "media_type": "image"
+            },
+            "complete": false,
+            "duration_seconds": null,
+            "codec": null,
+            "coarse_requested": 1,
+            "coarse_extracted": 0,
+            "fine_requested": 0,
+            "fine_extracted": 0,
+            "bytes_downloaded": 0,
+            "upstream_requests": 0,
+            "errors": [
+              "Image size 22694362 exceeds available 4194304 bytes (4 MiB per-image cap)"
+            ],
+            "decoded_size": null,
+            "recording_bytes": null
+          },
+          {
+            "recording": {
+              "url": "https://rawdata.oceanobservatories.org/files/RS01SBPS/PC01A/CAMDSC102/2026/10/28/CAMDSC102_10.33.3.146_20261028T094558_UTC.jpg",
+              "recorded_at": "2026-10-28T09:45:58+00:00",
+              "media_type": "image"
+            },
+            "complete": false,
+            "duration_seconds": null,
+            "codec": null,
+            "coarse_requested": 1,
+            "coarse_extracted": 0,
+            "fine_requested": 0,
+            "fine_extracted": 0,
+            "bytes_downloaded": 0,
+            "upstream_requests": 0,
+            "errors": [
+              "Image size 22739958 exceeds available 4194304 bytes (4 MiB per-image cap)"
+            ],
+            "decoded_size": null,
+            "recording_bytes": null
+          },
+          {
+            "recording": {
+              "url": "https://rawdata.oceanobservatories.org/files/RS01SBPS/PC01A/CAMDSC102/2026/10/28/CAMDSC102_10.33.3.146_20261028T094550_UTC.jpg",
+              "recorded_at": "2026-10-28T09:45:50+00:00",
+              "media_type": "image"
+            },
+            "complete": false,
+            "duration_seconds": null,
+            "codec": null,
+            "coarse_requested": 1,
+            "coarse_extracted": 0,
+            "fine_requested": 0,
+            "fine_extracted": 0,
+            "bytes_downloaded": 0,
+            "upstream_requests": 0,
+            "errors": [
+              "Image size 22708179 exceeds available 4194304 bytes (4 MiB per-image cap)"
+            ],
+            "decoded_size": null,
+            "recording_bytes": null
+          }
+        ],
+        "candidate_scores": []
+      },
+      "failure": {
+        "category": "processing_error",
+        "message": "No snapshots decoded"
+      }
+    },
+    {
+      "source_id": "ooi-hydrate-ridge",
+      "checked_at": "2026-10-28T12:33:50.935029+00:00",
+      "technical_status": "failed",
+      "rights_status": "approved_attributed_derived_stills",
+      "reference": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/",
+      "technical_usable": false,
+      "recordings": [
+        {
+          "url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/28/CAMDSB103_10.33.7.5_20261028T114621_UTC.jpg",
+          "recorded_at": "2026-10-28T11:46:21+00:00",
+          "media_type": "image"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/28/CAMDSB103_10.33.7.5_20261028T114616_UTC.jpg",
+          "recorded_at": "2026-10-28T11:46:16+00:00",
+          "media_type": "image"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/28/CAMDSB103_10.33.7.5_20261028T114615_UTC.jpg",
+          "recorded_at": "2026-10-28T11:46:15+00:00",
+          "media_type": "image"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/28/CAMDSB103_10.33.7.5_20261028T111621_UTC.jpg",
+          "recorded_at": "2026-10-28T11:16:21+00:00",
+          "media_type": "image"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/28/CAMDSB103_10.33.7.5_20261028T111617_UTC.jpg",
+          "recorded_at": "2026-10-28T11:16:17+00:00",
+          "media_type": "image"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/28/CAMDSB103_10.33.7.5_20261028T111615_UTC.jpg",
+          "recorded_at": "2026-10-28T11:16:15+00:00",
+          "media_type": "image"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/28/CAMDSB103_10.33.7.5_20261028T104621_UTC.jpg",
+          "recorded_at": "2026-10-28T10:46:21+00:00",
+          "media_type": "image"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/28/CAMDSB103_10.33.7.5_20261028T104617_UTC.jpg",
+          "recorded_at": "2026-10-28T10:46:17+00:00",
+          "media_type": "image"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/28/CAMDSB103_10.33.7.5_20261028T104615_UTC.jpg",
+          "recorded_at": "2026-10-28T10:46:15+00:00",
+          "media_type": "image"
+        }
+      ],
+      "image_header_probe": {
+        "recording_bytes": 8640755,
+        "header_bytes_downloaded": 65537,
+        "format": "JPEG",
+        "decoded_size": [
+          5344,
+          4008
+        ]
+      },
+      "diagnostics": {
+        "strategy": "recent_snapshots",
+        "preference": {
+          "model_id": null,
+          "status": "quality_fallback",
+          "error": null
+        },
+        "recordings_considered": 9,
+        "candidates_extracted": 0,
+        "coarse_extracted": 0,
+        "images_extracted": 0,
+        "fine_extracted": 0,
+        "bytes_downloaded": 0,
+        "byte_budget": 8388608,
+        "upstream_requests": 9,
+        "search_complete": false,
+        "budget_exhausted": false,
+        "elapsed_seconds": 4.062,
+        "recordings": [
+          {
+            "recording": {
+              "url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/28/CAMDSB103_10.33.7.5_20261028T114621_UTC.jpg",
+              "recorded_at": "2026-10-28T11:46:21+00:00",
+              "media_type": "image"
+            },
+            "complete": false,
+            "duration_seconds": null,
+            "codec": null,
+            "coarse_requested": 1,
+            "coarse_extracted": 0,
+            "fine_requested": 0,
+            "fine_extracted": 0,
+            "bytes_downloaded": 0,
+            "upstream_requests": 0,
+            "errors": [
+              "Image size 8640755 exceeds available 4194304 bytes (4 MiB per-image cap)"
+            ],
+            "decoded_size": null,
+            "recording_bytes": null
+          },
+          {
+            "recording": {
+              "url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/28/CAMDSB103_10.33.7.5_20261028T114616_UTC.jpg",
+              "recorded_at": "2026-10-28T11:46:16+00:00",
+              "media_type": "image"
+            },
+            "complete": false,
+            "duration_seconds": null,
+            "codec": null,
+            "coarse_requested": 1,
+            "coarse_extracted": 0,
+            "fine_requested": 0,
+            "fine_extracted": 0,
+            "bytes_downloaded": 0,
+            "upstream_requests": 0,
+            "errors": [
+              "Image size 8611087 exceeds available 4194304 bytes (4 MiB per-image cap)"
+            ],
+            "decoded_size": null,
+            "recording_bytes": null
+          },
+          {
+            "recording": {
+              "url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/28/CAMDSB103_10.33.7.5_20261028T114615_UTC.jpg",
+              "recorded_at": "2026-10-28T11:46:15+00:00",
+              "media_type": "image"
+            },
+            "complete": false,
+            "duration_seconds": null,
+            "codec": null,
+            "coarse_requested": 1,
+            "coarse_extracted": 0,
+            "fine_requested": 0,
+            "fine_extracted": 0,
+            "bytes_downloaded": 0,
+            "upstream_requests": 0,
+            "errors": [
+              "Image size 8645677 exceeds available 4194304 bytes (4 MiB per-image cap)"
+            ],
+            "decoded_size": null,
+            "recording_bytes": null
+          },
+          {
+            "recording": {
+              "url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/28/CAMDSB103_10.33.7.5_20261028T111621_UTC.jpg",
+              "recorded_at": "2026-10-28T11:16:21+00:00",
+              "media_type": "image"
+            },
+            "complete": false,
+            "duration_seconds": null,
+            "codec": null,
+            "coarse_requested": 1,
+            "coarse_extracted": 0,
+            "fine_requested": 0,
+            "fine_extracted": 0,
+            "bytes_downloaded": 0,
+            "upstream_requests": 0,
+            "errors": [
+              "Image size 8579223 exceeds available 4194304 bytes (4 MiB per-image cap)"
+            ],
+            "decoded_size": null,
+            "recording_bytes": null
+          },
+          {
+            "recording": {
+              "url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/28/CAMDSB103_10.33.7.5_20261028T111617_UTC.jpg",
+              "recorded_at": "2026-10-28T11:16:17+00:00",
+              "media_type": "image"
+            },
+            "complete": false,
+            "duration_seconds": null,
+            "codec": null,
+            "coarse_requested": 1,
+            "coarse_extracted": 0,
+            "fine_requested": 0,
+            "fine_extracted": 0,
+            "bytes_downloaded": 0,
+            "upstream_requests": 0,
+            "errors": [
+              "Image size 8636970 exceeds available 4194304 bytes (4 MiB per-image cap)"
+            ],
+            "decoded_size": null,
+            "recording_bytes": null
+          },
+          {
+            "recording": {
+              "url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/28/CAMDSB103_10.33.7.5_20261028T111615_UTC.jpg",
+              "recorded_at": "2026-10-28T11:16:15+00:00",
+              "media_type": "image"
+            },
+            "complete": false,
+            "duration_seconds": null,
+            "codec": null,
+            "coarse_requested": 1,
+            "coarse_extracted": 0,
+            "fine_requested": 0,
+            "fine_extracted": 0,
+            "bytes_downloaded": 0,
+            "upstream_requests": 0,
+            "errors": [
+              "Image size 8640041 exceeds available 4194304 bytes (4 MiB per-image cap)"
+            ],
+            "decoded_size": null,
+            "recording_bytes": null
+          },
+          {
+            "recording": {
+              "url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/28/CAMDSB103_10.33.7.5_20261028T104621_UTC.jpg",
+              "recorded_at": "2026-10-28T10:46:21+00:00",
+              "media_type": "image"
+            },
+            "complete": false,
+            "duration_seconds": null,
+            "codec": null,
+            "coarse_requested": 1,
+            "coarse_extracted": 0,
+            "fine_requested": 0,
+            "fine_extracted": 0,
+            "bytes_downloaded": 0,
+            "upstream_requests": 0,
+            "errors": [
+              "Image size 8656553 exceeds available 4194304 bytes (4 MiB per-image cap)"
+            ],
+            "decoded_size": null,
+            "recording_bytes": null
+          },
+          {
+            "recording": {
+              "url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/28/CAMDSB103_10.33.7.5_20261028T104617_UTC.jpg",
+              "recorded_at": "2026-10-28T10:46:17+00:00",
+              "media_type": "image"
+            },
+            "complete": false,
+            "duration_seconds": null,
+            "codec": null,
+            "coarse_requested": 1,
+            "coarse_extracted": 0,
+            "fine_requested": 0,
+            "fine_extracted": 0,
+            "bytes_downloaded": 0,
+            "upstream_requests": 0,
+            "errors": [
+              "Image size 8662591 exceeds available 4194304 bytes (4 MiB per-image cap)"
+            ],
+            "decoded_size": null,
+            "recording_bytes": null
+          },
+          {
+            "recording": {
+              "url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/28/CAMDSB103_10.33.7.5_20261028T104615_UTC.jpg",
+              "recorded_at": "2026-10-28T10:46:15+00:00",
+              "media_type": "image"
+            },
+            "complete": false,
+            "duration_seconds": null,
+            "codec": null,
+            "coarse_requested": 1,
+            "coarse_extracted": 0,
+            "fine_requested": 0,
+            "fine_extracted": 0,
+            "bytes_downloaded": 0,
+            "upstream_requests": 0,
+            "errors": [
+              "Image size 8624783 exceeds available 4194304 bytes (4 MiB per-image cap)"
+            ],
+            "decoded_size": null,
+            "recording_bytes": null
+          }
+        ],
+        "candidate_scores": []
+      },
+      "failure": {
+        "category": "processing_error",
+        "message": "No snapshots decoded"
+      }
+    },
+    {
+      "source_id": "ooi-axial-water-column",
+      "checked_at": "2026-10-28T12:33:56.222414+00:00",
+      "technical_status": "failed",
+      "rights_status": "approved_attributed_derived_stills",
+      "reference": "https://rawdata.oceanobservatories.org/files/RS03AXPS/PC03A/CAMDSC302/",
+      "technical_usable": false,
+      "recordings": [
+        {
+          "url": "https://rawdata.oceanobservatories.org/files/RS03AXPS/PC03A/CAMDSC302/2026/10/28/CAMDSC302_10.31.3.146_20261028T111603_UTC.jpg",
+          "recorded_at": "2026-10-28T11:16:03+00:00",
+          "media_type": "image"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/files/RS03AXPS/PC03A/CAMDSC302/2026/10/28/CAMDSC302_10.31.3.146_20261028T111558_UTC.jpg",
+          "recorded_at": "2026-10-28T11:15:58+00:00",
+          "media_type": "image"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/files/RS03AXPS/PC03A/CAMDSC302/2026/10/28/CAMDSC302_10.31.3.146_20261028T111550_UTC.jpg",
+          "recorded_at": "2026-10-28T11:15:50+00:00",
+          "media_type": "image"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/files/RS03AXPS/PC03A/CAMDSC302/2026/10/28/CAMDSC302_10.31.3.146_20261028T104603_UTC.jpg",
+          "recorded_at": "2026-10-28T10:46:03+00:00",
+          "media_type": "image"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/files/RS03AXPS/PC03A/CAMDSC302/2026/10/28/CAMDSC302_10.31.3.146_20261028T104558_UTC.jpg",
+          "recorded_at": "2026-10-28T10:45:58+00:00",
+          "media_type": "image"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/files/RS03AXPS/PC03A/CAMDSC302/2026/10/28/CAMDSC302_10.31.3.146_20261028T104550_UTC.jpg",
+          "recorded_at": "2026-10-28T10:45:50+00:00",
+          "media_type": "image"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/files/RS03AXPS/PC03A/CAMDSC302/2026/10/28/CAMDSC302_10.31.3.146_20261028T094604_UTC.jpg",
+          "recorded_at": "2026-10-28T09:46:04+00:00",
+          "media_type": "image"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/files/RS03AXPS/PC03A/CAMDSC302/2026/10/28/CAMDSC302_10.31.3.146_20261028T094558_UTC.jpg",
+          "recorded_at": "2026-10-28T09:45:58+00:00",
+          "media_type": "image"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/files/RS03AXPS/PC03A/CAMDSC302/2026/10/28/CAMDSC302_10.31.3.146_20261028T094550_UTC.jpg",
+          "recorded_at": "2026-10-28T09:45:50+00:00",
+          "media_type": "image"
+        }
+      ],
+      "image_header_probe": {
+        "recording_bytes": 20374374,
+        "header_bytes_downloaded": 65537,
+        "format": "JPEG",
+        "decoded_size": [
+          5344,
+          4008
+        ]
+      },
+      "diagnostics": {
+        "strategy": "recent_snapshots",
+        "preference": {
+          "model_id": null,
+          "status": "quality_fallback",
+          "error": null
+        },
+        "recordings_considered": 9,
+        "candidates_extracted": 0,
+        "coarse_extracted": 0,
+        "images_extracted": 0,
+        "fine_extracted": 0,
+        "bytes_downloaded": 0,
+        "byte_budget": 8388608,
+        "upstream_requests": 9,
+        "search_complete": false,
+        "budget_exhausted": false,
+        "elapsed_seconds": 3.998,
+        "recordings": [
+          {
+            "recording": {
+              "url": "https://rawdata.oceanobservatories.org/files/RS03AXPS/PC03A/CAMDSC302/2026/10/28/CAMDSC302_10.31.3.146_20261028T111603_UTC.jpg",
+              "recorded_at": "2026-10-28T11:16:03+00:00",
+              "media_type": "image"
+            },
+            "complete": false,
+            "duration_seconds": null,
+            "codec": null,
+            "coarse_requested": 1,
+            "coarse_extracted": 0,
+            "fine_requested": 0,
+            "fine_extracted": 0,
+            "bytes_downloaded": 0,
+            "upstream_requests": 0,
+            "errors": [
+              "Image size 20374374 exceeds available 4194304 bytes (4 MiB per-image cap)"
+            ],
+            "decoded_size": null,
+            "recording_bytes": null
+          },
+          {
+            "recording": {
+              "url": "https://rawdata.oceanobservatories.org/files/RS03AXPS/PC03A/CAMDSC302/2026/10/28/CAMDSC302_10.31.3.146_20261028T111558_UTC.jpg",
+              "recorded_at": "2026-10-28T11:15:58+00:00",
+              "media_type": "image"
+            },
+            "complete": false,
+            "duration_seconds": null,
+            "codec": null,
+            "coarse_requested": 1,
+            "coarse_extracted": 0,
+            "fine_requested": 0,
+            "fine_extracted": 0,
+            "bytes_downloaded": 0,
+            "upstream_requests": 0,
+            "errors": [
+              "Image size 20348196 exceeds available 4194304 bytes (4 MiB per-image cap)"
+            ],
+            "decoded_size": null,
+            "recording_bytes": null
+          },
+          {
+            "recording": {
+              "url": "https://rawdata.oceanobservatories.org/files/RS03AXPS/PC03A/CAMDSC302/2026/10/28/CAMDSC302_10.31.3.146_20261028T111550_UTC.jpg",
+              "recorded_at": "2026-10-28T11:15:50+00:00",
+              "media_type": "image"
+            },
+            "complete": false,
+            "duration_seconds": null,
+            "codec": null,
+            "coarse_requested": 1,
+            "coarse_extracted": 0,
+            "fine_requested": 0,
+            "fine_extracted": 0,
+            "bytes_downloaded": 0,
+            "upstream_requests": 0,
+            "errors": [
+              "Image size 20383263 exceeds available 4194304 bytes (4 MiB per-image cap)"
+            ],
+            "decoded_size": null,
+            "recording_bytes": null
+          },
+          {
+            "recording": {
+              "url": "https://rawdata.oceanobservatories.org/files/RS03AXPS/PC03A/CAMDSC302/2026/10/28/CAMDSC302_10.31.3.146_20261028T104603_UTC.jpg",
+              "recorded_at": "2026-10-28T10:46:03+00:00",
+              "media_type": "image"
+            },
+            "complete": false,
+            "duration_seconds": null,
+            "codec": null,
+            "coarse_requested": 1,
+            "coarse_extracted": 0,
+            "fine_requested": 0,
+            "fine_extracted": 0,
+            "bytes_downloaded": 0,
+            "upstream_requests": 0,
+            "errors": [
+              "Image size 20357281 exceeds available 4194304 bytes (4 MiB per-image cap)"
+            ],
+            "decoded_size": null,
+            "recording_bytes": null
+          },
+          {
+            "recording": {
+              "url": "https://rawdata.oceanobservatories.org/files/RS03AXPS/PC03A/CAMDSC302/2026/10/28/CAMDSC302_10.31.3.146_20261028T104558_UTC.jpg",
+              "recorded_at": "2026-10-28T10:45:58+00:00",
+              "media_type": "image"
+            },
+            "complete": false,
+            "duration_seconds": null,
+            "codec": null,
+            "coarse_requested": 1,
+            "coarse_extracted": 0,
+            "fine_requested": 0,
+            "fine_extracted": 0,
+            "bytes_downloaded": 0,
+            "upstream_requests": 0,
+            "errors": [
+              "Image size 20342447 exceeds available 4194304 bytes (4 MiB per-image cap)"
+            ],
+            "decoded_size": null,
+            "recording_bytes": null
+          },
+          {
+            "recording": {
+              "url": "https://rawdata.oceanobservatories.org/files/RS03AXPS/PC03A/CAMDSC302/2026/10/28/CAMDSC302_10.31.3.146_20261028T104550_UTC.jpg",
+              "recorded_at": "2026-10-28T10:45:50+00:00",
+              "media_type": "image"
+            },
+            "complete": false,
+            "duration_seconds": null,
+            "codec": null,
+            "coarse_requested": 1,
+            "coarse_extracted": 0,
+            "fine_requested": 0,
+            "fine_extracted": 0,
+            "bytes_downloaded": 0,
+            "upstream_requests": 0,
+            "errors": [
+              "Image size 20339323 exceeds available 4194304 bytes (4 MiB per-image cap)"
+            ],
+            "decoded_size": null,
+            "recording_bytes": null
+          },
+          {
+            "recording": {
+              "url": "https://rawdata.oceanobservatories.org/files/RS03AXPS/PC03A/CAMDSC302/2026/10/28/CAMDSC302_10.31.3.146_20261028T094604_UTC.jpg",
+              "recorded_at": "2026-10-28T09:46:04+00:00",
+              "media_type": "image"
+            },
+            "complete": false,
+            "duration_seconds": null,
+            "codec": null,
+            "coarse_requested": 1,
+            "coarse_extracted": 0,
+            "fine_requested": 0,
+            "fine_extracted": 0,
+            "bytes_downloaded": 0,
+            "upstream_requests": 0,
+            "errors": [
+              "Image size 20296312 exceeds available 4194304 bytes (4 MiB per-image cap)"
+            ],
+            "decoded_size": null,
+            "recording_bytes": null
+          },
+          {
+            "recording": {
+              "url": "https://rawdata.oceanobservatories.org/files/RS03AXPS/PC03A/CAMDSC302/2026/10/28/CAMDSC302_10.31.3.146_20261028T094558_UTC.jpg",
+              "recorded_at": "2026-10-28T09:45:58+00:00",
+              "media_type": "image"
+            },
+            "complete": false,
+            "duration_seconds": null,
+            "codec": null,
+            "coarse_requested": 1,
+            "coarse_extracted": 0,
+            "fine_requested": 0,
+            "fine_extracted": 0,
+            "bytes_downloaded": 0,
+            "upstream_requests": 0,
+            "errors": [
+              "Image size 20313353 exceeds available 4194304 bytes (4 MiB per-image cap)"
+            ],
+            "decoded_size": null,
+            "recording_bytes": null
+          },
+          {
+            "recording": {
+              "url": "https://rawdata.oceanobservatories.org/files/RS03AXPS/PC03A/CAMDSC302/2026/10/28/CAMDSC302_10.31.3.146_20261028T094550_UTC.jpg",
+              "recorded_at": "2026-10-28T09:45:50+00:00",
+              "media_type": "image"
+            },
+            "complete": false,
+            "duration_seconds": null,
+            "codec": null,
+            "coarse_requested": 1,
+            "coarse_extracted": 0,
+            "fine_requested": 0,
+            "fine_extracted": 0,
+            "bytes_downloaded": 0,
+            "upstream_requests": 0,
+            "errors": [
+              "Image size 20266427 exceeds available 4194304 bytes (4 MiB per-image cap)"
+            ],
+            "decoded_size": null,
+            "recording_bytes": null
+          }
+        ],
+        "candidate_scores": []
+      },
+      "failure": {
+        "category": "processing_error",
+        "message": "No snapshots decoded"
+      }
+    },
+    {
+      "source_id": "ooi-international-district",
+      "checked_at": "2026-10-28T12:34:01.419837+00:00",
+      "technical_status": "failed",
+      "rights_status": "approved_attributed_derived_stills",
+      "reference": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/",
+      "technical_usable": false,
+      "recordings": [
+        {
+          "url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/28/CAMDSB303_10.31.8.5_20261028T114618_UTC.jpg",
+          "recorded_at": "2026-10-28T11:46:18+00:00",
+          "media_type": "image"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/28/CAMDSB303_10.31.8.5_20261028T114613_UTC.jpg",
+          "recorded_at": "2026-10-28T11:46:13+00:00",
+          "media_type": "image"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/28/CAMDSB303_10.31.8.5_20261028T114610_UTC.jpg",
+          "recorded_at": "2026-10-28T11:46:10+00:00",
+          "media_type": "image"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/28/CAMDSB303_10.31.8.5_20261028T111618_UTC.jpg",
+          "recorded_at": "2026-10-28T11:16:18+00:00",
+          "media_type": "image"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/28/CAMDSB303_10.31.8.5_20261028T111613_UTC.jpg",
+          "recorded_at": "2026-10-28T11:16:13+00:00",
+          "media_type": "image"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/28/CAMDSB303_10.31.8.5_20261028T111610_UTC.jpg",
+          "recorded_at": "2026-10-28T11:16:10+00:00",
+          "media_type": "image"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/28/CAMDSB303_10.31.8.5_20261028T104618_UTC.jpg",
+          "recorded_at": "2026-10-28T10:46:18+00:00",
+          "media_type": "image"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/28/CAMDSB303_10.31.8.5_20261028T104613_UTC.jpg",
+          "recorded_at": "2026-10-28T10:46:13+00:00",
+          "media_type": "image"
+        },
+        {
+          "url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/28/CAMDSB303_10.31.8.5_20261028T104610_UTC.jpg",
+          "recorded_at": "2026-10-28T10:46:10+00:00",
+          "media_type": "image"
+        }
+      ],
+      "image_header_probe": {
+        "recording_bytes": 19869800,
+        "header_bytes_downloaded": 65537,
+        "format": "JPEG",
+        "decoded_size": [
+          5344,
+          4008
+        ]
+      },
+      "diagnostics": {
+        "strategy": "recent_snapshots",
+        "preference": {
+          "model_id": null,
+          "status": "quality_fallback",
+          "error": null
+        },
+        "recordings_considered": 9,
+        "candidates_extracted": 0,
+        "coarse_extracted": 0,
+        "images_extracted": 0,
+        "fine_extracted": 0,
+        "bytes_downloaded": 0,
+        "byte_budget": 8388608,
+        "upstream_requests": 9,
+        "search_complete": false,
+        "budget_exhausted": false,
+        "elapsed_seconds": 3.985,
+        "recordings": [
+          {
+            "recording": {
+              "url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/28/CAMDSB303_10.31.8.5_20261028T114618_UTC.jpg",
+              "recorded_at": "2026-10-28T11:46:18+00:00",
+              "media_type": "image"
+            },
+            "complete": false,
+            "duration_seconds": null,
+            "codec": null,
+            "coarse_requested": 1,
+            "coarse_extracted": 0,
+            "fine_requested": 0,
+            "fine_extracted": 0,
+            "bytes_downloaded": 0,
+            "upstream_requests": 0,
+            "errors": [
+              "Image size 19869800 exceeds available 4194304 bytes (4 MiB per-image cap)"
+            ],
+            "decoded_size": null,
+            "recording_bytes": null
+          },
+          {
+            "recording": {
+              "url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/28/CAMDSB303_10.31.8.5_20261028T114613_UTC.jpg",
+              "recorded_at": "2026-10-28T11:46:13+00:00",
+              "media_type": "image"
+            },
+            "complete": false,
+            "duration_seconds": null,
+            "codec": null,
+            "coarse_requested": 1,
+            "coarse_extracted": 0,
+            "fine_requested": 0,
+            "fine_extracted": 0,
+            "bytes_downloaded": 0,
+            "upstream_requests": 0,
+            "errors": [
+              "Image size 19867117 exceeds available 4194304 bytes (4 MiB per-image cap)"
+            ],
+            "decoded_size": null,
+            "recording_bytes": null
+          },
+          {
+            "recording": {
+              "url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/28/CAMDSB303_10.31.8.5_20261028T114610_UTC.jpg",
+              "recorded_at": "2026-10-28T11:46:10+00:00",
+              "media_type": "image"
+            },
+            "complete": false,
+            "duration_seconds": null,
+            "codec": null,
+            "coarse_requested": 1,
+            "coarse_extracted": 0,
+            "fine_requested": 0,
+            "fine_extracted": 0,
+            "bytes_downloaded": 0,
+            "upstream_requests": 0,
+            "errors": [
+              "Image size 19816491 exceeds available 4194304 bytes (4 MiB per-image cap)"
+            ],
+            "decoded_size": null,
+            "recording_bytes": null
+          },
+          {
+            "recording": {
+              "url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/28/CAMDSB303_10.31.8.5_20261028T111618_UTC.jpg",
+              "recorded_at": "2026-10-28T11:16:18+00:00",
+              "media_type": "image"
+            },
+            "complete": false,
+            "duration_seconds": null,
+            "codec": null,
+            "coarse_requested": 1,
+            "coarse_extracted": 0,
+            "fine_requested": 0,
+            "fine_extracted": 0,
+            "bytes_downloaded": 0,
+            "upstream_requests": 0,
+            "errors": [
+              "Image size 19964395 exceeds available 4194304 bytes (4 MiB per-image cap)"
+            ],
+            "decoded_size": null,
+            "recording_bytes": null
+          },
+          {
+            "recording": {
+              "url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/28/CAMDSB303_10.31.8.5_20261028T111613_UTC.jpg",
+              "recorded_at": "2026-10-28T11:16:13+00:00",
+              "media_type": "image"
+            },
+            "complete": false,
+            "duration_seconds": null,
+            "codec": null,
+            "coarse_requested": 1,
+            "coarse_extracted": 0,
+            "fine_requested": 0,
+            "fine_extracted": 0,
+            "bytes_downloaded": 0,
+            "upstream_requests": 0,
+            "errors": [
+              "Image size 19955666 exceeds available 4194304 bytes (4 MiB per-image cap)"
+            ],
+            "decoded_size": null,
+            "recording_bytes": null
+          },
+          {
+            "recording": {
+              "url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/28/CAMDSB303_10.31.8.5_20261028T111610_UTC.jpg",
+              "recorded_at": "2026-10-28T11:16:10+00:00",
+              "media_type": "image"
+            },
+            "complete": false,
+            "duration_seconds": null,
+            "codec": null,
+            "coarse_requested": 1,
+            "coarse_extracted": 0,
+            "fine_requested": 0,
+            "fine_extracted": 0,
+            "bytes_downloaded": 0,
+            "upstream_requests": 0,
+            "errors": [
+              "Image size 19891996 exceeds available 4194304 bytes (4 MiB per-image cap)"
+            ],
+            "decoded_size": null,
+            "recording_bytes": null
+          },
+          {
+            "recording": {
+              "url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/28/CAMDSB303_10.31.8.5_20261028T104618_UTC.jpg",
+              "recorded_at": "2026-10-28T10:46:18+00:00",
+              "media_type": "image"
+            },
+            "complete": false,
+            "duration_seconds": null,
+            "codec": null,
+            "coarse_requested": 1,
+            "coarse_extracted": 0,
+            "fine_requested": 0,
+            "fine_extracted": 0,
+            "bytes_downloaded": 0,
+            "upstream_requests": 0,
+            "errors": [
+              "Image size 19903118 exceeds available 4194304 bytes (4 MiB per-image cap)"
+            ],
+            "decoded_size": null,
+            "recording_bytes": null
+          },
+          {
+            "recording": {
+              "url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/28/CAMDSB303_10.31.8.5_20261028T104613_UTC.jpg",
+              "recorded_at": "2026-10-28T10:46:13+00:00",
+              "media_type": "image"
+            },
+            "complete": false,
+            "duration_seconds": null,
+            "codec": null,
+            "coarse_requested": 1,
+            "coarse_extracted": 0,
+            "fine_requested": 0,
+            "fine_extracted": 0,
+            "bytes_downloaded": 0,
+            "upstream_requests": 0,
+            "errors": [
+              "Image size 19932410 exceeds available 4194304 bytes (4 MiB per-image cap)"
+            ],
+            "decoded_size": null,
+            "recording_bytes": null
+          },
+          {
+            "recording": {
+              "url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/28/CAMDSB303_10.31.8.5_20261028T104610_UTC.jpg",
+              "recorded_at": "2026-10-28T10:46:10+00:00",
+              "media_type": "image"
+            },
+            "complete": false,
+            "duration_seconds": null,
+            "codec": null,
+            "coarse_requested": 1,
+            "coarse_extracted": 0,
+            "fine_requested": 0,
+            "fine_extracted": 0,
+            "bytes_downloaded": 0,
+            "upstream_requests": 0,
+            "errors": [
+              "Image size 20008010 exceeds available 4194304 bytes (4 MiB per-image cap)"
+            ],
+            "decoded_size": null,
+            "recording_bytes": null
+          }
+        ],
+        "candidate_scores": []
+      },
+      "failure": {
+        "category": "processing_error",
+        "message": "No snapshots decoded"
+      }
+    }
+  ]
+}

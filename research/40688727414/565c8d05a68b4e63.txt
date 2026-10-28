@@ -1,0 +1,115 @@
+Data Access - NOAA Ocean Exploration
+An official website of the United States government
+Here’s how you know
+Here’s how you know
+Official websites use .gov
+A
+.gov website belongs to an official government
+organization in the United States.
+Secure .gov websites use HTTPS
+A
+lock (
+Lock
+Locked padlock icon
+) or https:// means you’ve safely connected to
+the .gov website. Share sensitive information only on official,
+secure websites.
+Menu
+About
+About
+Our Mission
+Who We Are
+Annual Reports
+Program Reviews
+Media Kit
+Ocean Exploration Advisory Board
+National Forums on Ocean Exploration
+Search for:
+Search
+Home
+Science & Exploration
+Science & Exploration
+Science & Exploration
+Expeditions & Projects
+Why We Explore
+Why Ocean Exploration Matters
+NOAA History
+How We Explore
+NOAA Ship Okeanos Explorer
+Science & Technology for Exploration
+Partnerships
+What We Explore
+Marine Critical Minerals
+NOAA Omics
+Data & Products
+Data Access Tools
+Benthic Animal Guide
+Publications & Reports
+Learn & Discover
+Learn & Discover
+For Educators
+All Classroom Materials
+Professional Development Opportunities
+Deep Ocean Education Project
+Ocean Science For Everyone
+Ocean Exploration Facts
+Dive Deeper
+Multimedia
+News
+Get Involved
+Get Involved
+Opportunities to Join Us
+Student Opportunities
+Employment Opportunities
+Career and Education Resources
+Back to Data & Products
+Data Access
+NOAA Ocean Exploration ensures public access to the diverse scientific data and information collected during ocean expeditions that we support, including those on NOAA Ship Okeanos Explorer. Digital data collections typically include oceanographic and geophysical parameters, video, images, documents, and other information, provided in a range of data formats and held in NOAA archives. Physical samples are archived with established repositories.
+Since the inception of NOAA Ocean Exploration in 2001, the NOAA Ocean Exploration Data Management Team at NOAA’s National Centers for Environmental Information (NCEI) has been guided by the recommendations in the 2000 report of the president’s panel on ocean exploration (pdf, 2.6 MB), which prioritized rapid and unrestricted data sharing. Today, national policy and international standards also guide NOAA Ocean Exploration’s data management to ensure timely and broad public accessibility to our data.
+In 2009, Public law 111-11 [Section XII Ocean Exploration] (pdf, 42 KB) reinforced and expanded NOAA Ocean Exploration’s data management objectives, continuing to stress the importance of sharing unique exploration data and information to improve public understanding of the ocean and for research and management purposes.
+Once data from expeditions supported by NOAA Ocean Exploration have undergone quality control, they are available via the links below.
+Digital Data Access Tools
+NOAA Ocean Exploration Data Atlas
+The NOAA Ocean Exploration Data Atlas is a searchable, interactive map that provides access to a continuously updated archive of NOAA Ocean Exploration data, information, and products from 2001 to the present. The map includes search filters for collection year, expedition name (number), platform name, mission group (e.g., campaign), and open text. Expeditions are displayed on a map and organized by year. Ship and remotely operated vehicle tracks and data points include access to expedition websites, data, and publications. The data atlas replaces the NOAA Ocean Exploration Digital Atlas. To learn more about the NOAA Ocean Exploration Data Atlas, visit Using the NOAA Ocean Exploration Data Access Tools.
+Access the NOAA Ocean Exploration Data Atlas
+NOAA Ocean Exploration (NCEI) ArcGIS Online Group
+This ArcGIS Online group provides access to all NOAA Ocean Exploration geospatial data services managed by NCEI. This group includes all geospatial data layers found within the NOAA Ocean Exploration Data Atlas, the Okeanos Explorer – Live Operations Map, and more. It’s updated regularly as more data are collected and as NCEI develops more NOAA Ocean Exploration GIS data services.
+Access the NOAA Ocean Exploration (NCEI) ArcGIS Online Group
+NOAA Ship Okeanos Explorer Data Landing Pages
+NCEI develops data landing pages for NOAA Ship Okeanos Explorer expeditions. These pages provide direct access links to all data and products collected or produced for each Okeanos Explorer expedition. Data landing pages for expeditions with remotely operated vehicle (ROV) operations feature data tabs for each ROV dive. To learn more about the NOAA Ship Okeanos Explorer data landing pages, visit Using the NOAA Ocean Exploration Data Access Tools.
+Access the NOAA Ship Okeanos Explorer Data Landing Pages
+Ocean Exploration Video Portal
+The Ocean Exploration Video Portal enables users to search for, discover, and access video data collected during remotely operated vehicle expeditions on NOAA Ship Okeanos Explorer as well as other expeditions supported by NOAA Ocean Exploration. The video portal features previews of videos, the ability to download low-resolution and ProRes versions of videos, and details about when and where videos were collected, including downloadable dive summaries, as applicable. All video on the portal is in the public domain. To learn more about the Ocean Exploration Video Portal, visit Using the NOAA Ocean Exploration Data Access Tools.
+Access the Ocean Exploration Video Portal
+NOAA Ocean Exploration Competitive Grant Program Data Landing Pages
+NCEI develops data landing pages for projects supported by NOAA Ocean Exploration through our competitive grant program. These pages provide direct access links to data and products resulting from these projects.
+Access the Competitive Grant Program Data Landing Pages
+NCEI adds data to these tools over time as quality-control measures are completed, data are released, and publications and related materials are published. Thus, not all data will be made available at the same time. These tools and more can also be found on NCEI’s NOAA Ocean Exploration Data Management web page. If you’re not able to find what you’re looking for or you are trying to access data from a recent expedition that aren’t yet public, you can request assistance from NOAA Ocean Exploration’s Data Management Team by submitting a data request form or sending an email to oer.info.mgmt@noaa.gov.
+Information About Video Annotations
+NOAA Ocean Exploration works closely with Ocean Networks Canada to implement SeaTube, a web-based annotation interface for remotely operated vehicle (ROV) operations on expeditions on NOAA Ship Okeanos Explorer. SeaTube is used by shipboard and shoreside expedition participants to log a variety of real-time observations during an ROV dive. At the conclusion of an expedition, annotations undergo quality control and are archived (see the ROV dive event logs on the NOAA Ocean Exploration Data Atlas and NOAA Ship Okeanos Explorer Data Landing Pages) to complete the dive’s metadata record and make video data more discoverable. Authorized scientists are also invited to annotate observations after an expedition.
+To learn more about SeaTube and get access, email: ex.expeditioncoordinator@noaa.gov.
+Information About Access to Samples
+Accessing Samples Collected During Expeditions on NOAA Ship Okeanos Explorer
+The intent of sampling operations during expeditions on NOAA Ship Okeanos Explorer is to collect the minimum number of samples needed to provide a general representation of the biological and geological settings, as well as other relevant information, for a given dive or an area of interest. This page provides information on how to access physical biological and geological samples and related digital sampling data collected during expeditions on Okeanos Explorer.
+Learn About Accessing Samples
+Back to top
+Homepage
+Science & Exploration
+Learn & Discover
+Multimedia
+News
+Get Involved
+Website Satisfaction Survey
+About
+Contact Us
+Report an Error
+Privacy Policy
+Disclaimer
+Accessibility Statement
+FOIA
+Information Quality
+USA.gov
+Stay connected to NOAA Ocean ExplorationFacebookXInstagramYoutubeLinkedIn
+Department of Commerce
+National Oceanic and Atmospheric Administration (NOAA)
+Close
