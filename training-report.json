@@ -2,7 +2,7 @@
   "schema_version": 1,
   "feature_space": "resnet18-imagenet1k-v1+quality-v1",
   "reviewer": "nikokoren",
-  "trained_at": "2026-10-28T15:45:58.463866+00:00",
+  "trained_at": "2026-10-28T18:13:13.469742+00:00",
   "status": "ready",
   "comparisons": 120,
   "pairwise_comparisons": 100,
@@ -14,5 +14,10 @@
     "reason": "Need at least three independent recording groups and held-out choices"
   },
   "note": "Appearance preference ranker, not a semantic subject detector; unmeasured evaluation is provisional.",
-  "model_id": "987e41ff06843c4b2311ea51955adb6c9f9f3e967a7b8a2420b1eaa0827cde8e"
+  "model_id": "987e41ff06843c4b2311ea51955adb6c9f9f3e967a7b8a2420b1eaa0827cde8e",
+  "prospective_evaluation": {
+    "status": "awaiting_feedback",
+    "comparisons": 0,
+    "note": "Review a fresh, non-overlapping gallery to compare frozen model predictions with quality-only selection."
+  }
 }
