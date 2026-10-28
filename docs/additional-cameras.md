@@ -1,5 +1,11 @@
 # Additional camera access and reuse investigation
 
+**Offshore wildlife follow-up:** a [seven-day, unranked sample](offshore-wildlife.md)
+found clear fish in 12/42 frames, another nine uncertain fish-like forms, and
+small seabed animals in all 42. This is stronger evidence for Offshore's visual
+interest than its earlier quality-only selected frame. It remains technically
+accessible and rights-reviewed; the observational study does not enable it.
+
 **Fresh native-preview recheck:** six hourly snapshots each from Oregon Shelf
 and Offshore still do not support adding them to the general rotation. Both
 remain accessible and rights-reviewed. See the [new review and previews](oregon-native-review.md);

@@ -1,5 +1,17 @@
 # Validation evidence and remaining acceptance gates
 
+## Unranked Offshore wildlife sample — 28 October 2026
+
+[Hosted run](https://github.com/nikokoren/abyss/actions/runs/40769530980) decoded
+42/42 fixed-time images over seven UTC dates, using about 370 MiB of its separate
+512 MiB budget. Three sampling tests verify time-based choice independent of
+quality, preservation of missing slots, future-capture exclusion and refusal to
+fill a slot with a distant capture. The visual review recorded 12 clear fish
+frames, nine uncertain fish-like forms and small seabed animals in all 42 frames.
+This is a descriptive review, not a species survey or animal visit-rate estimate.
+Production cadence, source eligibility and owner preference labels are unchanged.
+See [the method, per-day counts and gallery](offshore-wildlife.md).
+
 ## Fresh Oregon native-preview recheck — 28 October 2026
 
 [Hosted run](https://github.com/nikokoren/abyss/actions/runs/40765670080) decoded

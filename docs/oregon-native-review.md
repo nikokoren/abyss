@@ -1,5 +1,11 @@
 # Oregon Shelf and Offshore native-preview recheck
 
+**Follow-up:** a broader [seven-day Offshore wildlife sample](offshore-wildlife.md)
+found clear fish in 12/42 frames and small seabed animals throughout. It supports
+including Offshore despite the limited visual interest of the quality-only
+winner in this earlier six-hour review. Source eligibility has not been changed
+by the observational study.
+
 Reviewed 28 October 2026 after switching production to original-colour,
 source-resolution images and TRMNL-native delivery. Both sources remain
 `quality_hold`; the three active feeds and user selection behaviour are unchanged.
