@@ -3,12 +3,16 @@
 ## Use the gallery
 
 1. Open the repository's **Actions → Build preference review gallery**. Use the
-   latest successful run, or **Run workflow** to generate another batch.
+   latest successful run, or **Run workflow** and choose the camera to review:
+   `ooi-axial` (video), `ooi-hydrate-ridge` or `ooi-international-district` (stills).
+   Scheduled runs continue to use Axial; each manual still-camera run produces
+   its own gallery. The run summary names the camera.
 2. Download **abyss-review-gallery**, unzip it, and open `index.html` in your
    browser. The file includes its images and application code. No API key,
    account on another service, or continuously running personal computer is needed.
 3. Choose **A**, **B**, or **Neither**. Optionally mark a scene **Feels repetitive**.
-   You can compare the e-paper rendering with the original. Keyboard shortcuts:
+   Original mode is selected by default. The optional e-paper approximation uses
+   the former Abyss processing, not TRMNL's hosted native renderer. Keyboard shortcuts:
    `1`, `2`, `0`, and `S` to skip. Undo corrects the last change; **Review saved
    choices** lets you edit earlier decisions, including after reopening.
 4. Aim for 30–50 comparisons across several batches. Choices save in browser
@@ -150,6 +154,19 @@ private-repository Actions allowances and repository/metadata growth. Retraining
 uses NumPy and saved vectors, so it downloads neither recordings nor encoder
 weights. Gallery generation fails explicitly if its required encoder is missing;
 production scoring falls back to the baseline.
+
+For still cameras, a manual gallery instead requests up to **nine snapshots at
+least 20 minutes apart**. This selects different capture bursts and can cross
+UTC dates. Each original JPEG is decoded at full resolution for scoring; only
+small review previews are embedded in the gallery. Defaults allow at most
+**216 MiB** for nine images (24 MiB each); all still-review configurations are
+capped at **256 MiB**, and a smaller explicit `--max-bytes` is respected. Failed
+retrievals can reduce the candidate count. At least two are needed for a gallery.
+The source registry's production limit of two snapshots/48 MiB is unchanged.
+No review candidates are added to public Pages image history. Feedback from all
+cameras trains the same appearance ranker, so still-camera choices also teach
+the shared model. Review 20–30 comparisons from each still camera, then use a
+fresh capture window rather than repeating the same batch.
 
 Tests:
 

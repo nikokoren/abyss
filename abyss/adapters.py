@@ -51,10 +51,12 @@ def directory_recordings(source, day):
     return sorted(records.values(), key=lambda r: r['recorded_at'], reverse=True)
 
 
-def discover_many(source, now=None, limit=3):
+def discover_many(source, now=None, limit=3, *, min_spacing_seconds=0):
     """Newest eligible recordings, including across UTC date boundaries."""
     if not 1 <= limit <= 12:
         raise ValueError('Recording count must be 1..12')
+    if not 0 <= min_spacing_seconds <= 86400:
+        raise ValueError('Recording spacing must be 0..86400 seconds')
     if source['adapter'] == 'direct':
         stamp = source.get('recorded_at')
         if stamp:
@@ -67,6 +69,15 @@ def discover_many(source, now=None, limit=3):
     now = now or datetime.now(UTC)
     cutoff = (now - timedelta(minutes=source.get('completion_delay_minutes', 60))).isoformat()
     candidates, failures = [], []
+    def spaced(records):
+        selected = []
+        for record in sorted(records, key=lambda r: r['recorded_at'], reverse=True):
+            stamp = datetime.fromisoformat(record['recorded_at'])
+            if not selected or (datetime.fromisoformat(selected[-1]['recorded_at']) - stamp).total_seconds() >= min_spacing_seconds:
+                selected.append(record)
+            if len(selected) == limit:
+                break
+        return selected
     for days in range(source.get('lookback_days', 14)):
         try:
             recordings = directory_recordings(source, now - timedelta(days=days))
@@ -74,13 +85,13 @@ def discover_many(source, now=None, limit=3):
             failures.append(classify_failure(exc))
             continue
         candidates.extend(r for r in recordings if r['recorded_at'] <= cutoff)
-        if len(candidates) >= limit:
+        if len(spaced(candidates)) >= limit:
             break
     if not candidates:
         failure = RuntimeError(f'No eligible recordings in lookback window ({len(failures)} directory failures)')
         failure.failure_category = failures[0] if failures and len(set(failures)) == 1 else 'discovery_no_eligible_recordings'
         raise failure
-    return sorted(candidates, key=lambda r: r['recorded_at'], reverse=True)[:limit]
+    return spaced(candidates)
 
 
 def discover(source, now=None):

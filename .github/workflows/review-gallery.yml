@@ -1,6 +1,15 @@
 name: Build preference review gallery
 on:
   workflow_dispatch:
+    inputs:
+      source:
+        description: Camera to review
+        type: choice
+        default: ooi-axial
+        options:
+          - ooi-axial
+          - ooi-hydrate-ridge
+          - ooi-international-district
   schedule:
     - cron: '43 4 * * *'
   push:
@@ -23,6 +32,7 @@ jobs:
     env:
       PREFERENCE_REVIEWER: ${{ vars.PREFERENCE_REVIEWER || github.repository_owner }}
       TORCH_HOME: ${{ github.workspace }}/.torch-cache
+      REVIEW_SOURCE: ${{ inputs.source || 'ooi-axial' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -60,7 +70,7 @@ jobs:
           python scripts/preference_feedback.py --state /tmp/preference-state --reviewer "$PREFERENCE_REVIEWER"
       - name: Generate real candidate comparisons
         run: |
-          python -m abyss.review --reviewer "$PREFERENCE_REVIEWER" \
+          python -m abyss.review --reviewer "$PREFERENCE_REVIEWER" --source "$REVIEW_SOURCE" \
             --preference-model /tmp/preference-state/model.json --output /tmp/abyss-review
           python - <<'PYCODE'
           import json, os
@@ -68,7 +78,7 @@ jobs:
           report = json.loads(Path('/tmp/abyss-review/gallery-report.json').read_text())
           with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as summary:
               summary.write('## Your preference gallery is ready\n\nDownload **abyss-review-gallery** below, unzip it, and open `index.html`.\n\nChoose A, B, or neither. Submit the prefilled GitHub issues to store feedback and train in the cloud.\n\n')
-              summary.write(f"Candidates: {report['candidate_count']}. Batch: `{report['batch_id']}`. No public Pages publication.\n")
+              summary.write(f"Camera: {report['source_name']}. Candidates: {report['candidate_count']}. Batch: `{report['batch_id']}`. No public Pages publication.\n")
           PYCODE
       - uses: actions/upload-artifact@v4
         with:

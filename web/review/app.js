@@ -3,7 +3,7 @@
   const data=JSON.parse(document.getElementById('gallery-data').textContent), core=globalThis.AbyssReview;
   const el=id=>document.getElementById(id), images=new Map(data.candidates.map(c=>[c.id,c]));
   const pairs=core.makePairs(data.candidates,data.batch_id), storageKey='abyss-review-v1:'+data.reviewer+':'+data.batch_id;
-  let answers={}, history=[], cursor=0, mode='paper', draftIndex=0, reviewMode=false, renderedPairKey=null;
+  let answers={}, history=[], cursor=0, mode='original', draftIndex=0, reviewMode=false, renderedPairKey=null;
   const toast=message=>{el('toast').textContent=message;};
   try {const saved=JSON.parse(localStorage.getItem(storageKey)||'null');if(saved)answers=core.importAnswers(data,saved);}catch{toast('Browser storage is unavailable or could not be read. Download a backup to keep your choices.');}
   function save(){try{localStorage.setItem(storageKey,JSON.stringify(core.payload(data,answers)));}catch{toast('Browser storage is unavailable. Download a backup before closing this gallery.');}}

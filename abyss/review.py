@@ -15,7 +15,26 @@ from .feedback import batch_id
 from .imaging import render_for_source
 from .preferences import FEATURE_SPACE, ImageEncoder, digest, load_model
 from .publication import atomic_json, read_json
-from .registry import load
+from .registry import eligible, load
+
+
+def review_inputs(source, *, max_bytes=None, snapshot_count=9, snapshot_spacing_minutes=20):
+    """Review several capture bursts without changing production byte limits."""
+    if not 2 <= snapshot_count <= 12 or not 1 <= snapshot_spacing_minutes <= 1440:
+        raise ValueError('Review requires 2..12 snapshots spaced 1..1440 minutes apart')
+    if source['adapter'] != 'ooi_image_directory':
+        limit = max_bytes if max_bytes is not None else 64 * 1024 * 1024
+        if limit < 1:
+            raise ValueError('Review byte budget must be positive')
+        return source, discover_many(source, limit=3), limit
+    ceiling = min(snapshot_count * source.get('max_image_bytes', 4 * 1024 * 1024), 256 * 1024 * 1024)
+    limit = min(max_bytes, ceiling) if max_bytes is not None else ceiling
+    if limit < 1:
+        raise ValueError('Review byte budget must be positive')
+    reviewed_source = dict(source, max_search_bytes=limit)
+    records = discover_many(source, limit=snapshot_count,
+                            min_spacing_seconds=snapshot_spacing_minutes * 60)
+    return reviewed_source, records, limit
 from .search import search
 
 
@@ -72,6 +91,7 @@ class Gallery:
         (output / 'index.html').write_text(html)
         atomic_json(output / 'manifest.json', manifest)
         atomic_json(output / 'gallery-report.json', {'schema_version': 1, 'batch_id': manifest['batch_id'],
+                    'source_id': self.source['id'], 'source_name': self.source['name'],
                     'candidate_count': len(self.candidates), 'encoder': encoder.provenance,
                     'reviewer': self.reviewer, 'diagnostics': diagnostics,
                     'run_url': (f'https://github.com/{self.repo}/actions/runs/{os.environ["GITHUB_RUN_ID"]}'
@@ -88,7 +108,9 @@ def main():
     parser.add_argument('--reviewer', default=os.environ.get('PREFERENCE_REVIEWER', 'nikokoren'))
     parser.add_argument('--repository', default=os.environ.get('GITHUB_REPOSITORY', 'nikokoren/abyss'))
     parser.add_argument('--preference-model', default='preferences/model.json')
-    parser.add_argument('--max-bytes', type=int, default=64 * 1024 * 1024)
+    parser.add_argument('--max-bytes', type=int, help='Optional smaller retrieval cap; snapshot reviews are capped at 256 MiB')
+    parser.add_argument('--snapshot-count', type=int, default=9)
+    parser.add_argument('--snapshot-spacing-minutes', type=int, default=20)
     parser.add_argument('--local-video')
     args = parser.parse_args()
     if not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9-]{0,38}', args.reviewer) or not re.fullmatch(r'[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+', args.repository):
@@ -96,6 +118,8 @@ def main():
     source = next((s for s in load(args.registry) if s['id'] == args.source), None)
     if not source:
         parser.error('Unknown source')
+    if not eligible(source):
+        parser.error('Review requires a validated source with reviewed attribution and reuse terms')
     if args.local_video and not source.get('fixture'):
         parser.error('Local review video requires a fixture-only source')
     model = load_model(args.preference_model)
@@ -104,13 +128,19 @@ def main():
     if not model and (metadata.get('status') != 'needs_more_feedback' or metadata.get('feature_space') != FEATURE_SPACE or metadata.get('reviewer') != args.reviewer):
         metadata = None
     gallery = Gallery(source, args.reviewer, args.repository, model or metadata)
-    records = ([{'url': 'local-fixture', 'recorded_at': None}] if args.local_video else discover_many(source, limit=3))
-    search_args = argparse.Namespace(local_video=args.local_video, max_bytes=args.max_bytes, candidates=8,
+    if args.local_video:
+        records = [{'url': 'local-fixture', 'recorded_at': None}]
+        byte_limit = args.max_bytes if args.max_bytes is not None else 64 * 1024 * 1024
+    else:
+        source, records, byte_limit = review_inputs(source, max_bytes=args.max_bytes,
+            snapshot_count=args.snapshot_count, snapshot_spacing_minutes=args.snapshot_spacing_minutes)
+    search_args = argparse.Namespace(local_video=args.local_video, max_bytes=byte_limit, candidates=8,
                     coarse_candidates=4, refine_candidates=4, refine_windows=2, interval=1 if args.local_video else 60,
                     preference_model=args.preference_model, preference_encoder=encoder, review_sink=gallery.add)
     with tempfile.TemporaryDirectory(prefix='abyss-review-') as tmp:
         _, diagnostics, _ = search(source, records, tmp, search_args)
         diagnostics['gallery_elapsed_seconds'] = round(time.monotonic() - started, 3)
+        diagnostics['capture_times'] = [r.get('recorded_at') for r in records]
         manifest = gallery.save(args.output, encoder, diagnostics)
     print(json.dumps({'batch_id': manifest['batch_id'], 'candidates': len(manifest['candidates']), 'output': args.output}))
 
