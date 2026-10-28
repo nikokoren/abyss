@@ -1,5 +1,17 @@
 # Validation evidence and remaining acceptance gates
 
+## Fresh Oregon native-preview recheck — 28 October 2026
+
+[Hosted run](https://github.com/nikokoren/abyss/actions/runs/40765670080) decoded
+12 fresh 5344 × 4008 frames, six per camera at least an hour apart. Eight native
+full-screen previews cover OG/V2, light/dark, with TRMNLP-matching 1/4-bit
+quantization and passing layout checks. The six-frame colour contact sheets
+and both grayscale depths were visually reviewed. Shelf remains dominated by
+backscatter; Offshore has clearer seabed detail in four-bit but poor one-bit
+readability. Both remain `quality_hold`; no preference feedback was invented.
+These are native-layout previews, not actual account or hardware renders.
+See [the evidence and decision](oregon-native-review.md).
+
 ## About, camera locations and official graphics — 28 October 2026
 
 The recipe now exports a public overview and native `author_bio` About field;

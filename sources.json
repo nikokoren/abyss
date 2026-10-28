@@ -231,15 +231,26 @@
         "recording_url": "https://rawdata.oceanobservatories.org/files/CE02SHBP/MJ01C/CAMDSB107/2026/10/28/CAMDSB107_10.33.13.8_20261028T114613_UTC.jpg",
         "preview_reviewed_at": "2026-10-28",
         "preview_review_method": "agent_visual_review",
-        "preview_review": "Automated score passed, but the actual ordered 1-bit preview is dominated by central glare and has too little readable scene detail. Hold from the selector pending improved imagery or a reviewed render profile.",
+        "preview_review": "Six hourly RGB snapshots still show heavy particulate backscatter, persistent dark patches near the upper right, and little readable seabed detail. Native-layout 4-bit previews reveal the scene better, but 1-bit readability remains poor. Keep quality_hold.",
         "image_quality_status": "render_review_hold",
-        "preview_status": "held"
+        "preview_status": "held",
+        "native_preview_recheck": {
+          "reviewed_at": "2026-10-28",
+          "run_url": "https://github.com/nikokoren/abyss/actions/runs/40765670080",
+          "evidence": "https://github.com/nikokoren/abyss/blob/7036dbd6cbf8a3f52132301bdcf182c4c1c7c0f1/reviews/40765670080/report.json",
+          "snapshots_decoded": 6,
+          "minimum_spacing_seconds": 3600,
+          "bytes_downloaded": 118000355,
+          "best_quality_score": 0.605592,
+          "rendering": "Official TRMNL 3.4.4 assets plus TRMNLP ImageQuantizer steps. Preview only; not an account or physical-device render.",
+          "visual_decision": "quality_hold",
+          "visual_review": "Six hourly RGB snapshots still show heavy particulate backscatter, persistent dark patches near the upper right, and little readable seabed detail. Native-layout 4-bit previews reveal the scene better, but 1-bit readability remains poor. Keep quality_hold."
+        }
       },
       "limitations": [
         "Deployment depth is preliminary",
         "Publication delay not measured; delivered as periodic stills",
-        "Seafloor view visible, with suspended particles, central glare and some obscured areas; offered as an optional camera.",
-        "Monochrome preview review did not pass; not offered in the current recipe dropdown despite accessible data and a passing automated raw-image score."
+        "Six hourly RGB snapshots still show heavy particulate backscatter, persistent dark patches near the upper right, and little readable seabed detail. Native-layout 4-bit previews reveal the scene better, but 1-bit readability remains poor. Keep quality_hold."
       ],
       "data_doi": "https://doi.org/10.58046/OOI-CE02SHBP",
       "max_image_bytes": 25165824,
@@ -312,15 +323,26 @@
         "recording_url": "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/28/CAMDSB106_10.33.9.6_20261028T111617_UTC.jpg",
         "preview_reviewed_at": "2026-10-28",
         "preview_review_method": "agent_visual_review",
-        "preview_review": "Automated score passed, but the actual ordered 1-bit preview is dominated by central glare and has too little readable scene detail. Hold from the selector pending improved imagery or a reviewed render profile.",
+        "preview_review": "Six hourly RGB snapshots show the seabed and small seabed animals in 4-bit previews. Strong central illumination and low contrast still dominate 1-bit previews. Keep quality_hold for the general recipe across supported devices.",
         "image_quality_status": "render_review_hold",
-        "preview_status": "held"
+        "preview_status": "held",
+        "native_preview_recheck": {
+          "reviewed_at": "2026-10-28",
+          "run_url": "https://github.com/nikokoren/abyss/actions/runs/40765670080",
+          "evidence": "https://github.com/nikokoren/abyss/blob/7036dbd6cbf8a3f52132301bdcf182c4c1c7c0f1/reviews/40765670080/report.json",
+          "snapshots_decoded": 6,
+          "minimum_spacing_seconds": 3600,
+          "bytes_downloaded": 55338171,
+          "best_quality_score": 0.607892,
+          "rendering": "Official TRMNL 3.4.4 assets plus TRMNLP ImageQuantizer steps. Preview only; not an account or physical-device render.",
+          "visual_decision": "quality_hold",
+          "visual_review": "Six hourly RGB snapshots show the seabed and small seabed animals in 4-bit previews. Strong central illumination and low contrast still dominate 1-bit previews. Keep quality_hold for the general recipe across supported devices."
+        }
       },
       "limitations": [
         "Deployment depth is preliminary",
         "Publication delay not measured; delivered as periodic stills",
-        "Sediment/seafloor features visible, with bright central illumination and suspended particles; offered as an optional camera.",
-        "Monochrome preview review did not pass; not offered in the current recipe dropdown despite accessible data and a passing automated raw-image score."
+        "Six hourly RGB snapshots show the seabed and small seabed animals in 4-bit previews. Strong central illumination and low contrast still dominate 1-bit previews. Keep quality_hold for the general recipe across supported devices."
       ],
       "data_doi": "https://doi.org/10.58046/OOI-CE04OSBP",
       "max_image_bytes": 25165824,

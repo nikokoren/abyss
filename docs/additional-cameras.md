@@ -1,5 +1,10 @@
 # Additional camera access and reuse investigation
 
+**Fresh native-preview recheck:** six hourly snapshots each from Oregon Shelf
+and Offshore still do not support adding them to the general rotation. Both
+remain accessible and rights-reviewed. See the [new review and previews](oregon-native-review.md);
+the earlier ordered-dither results below are historical evidence.
+
 Updated 28 October 2026. **Southern Hydrate Ridge and International District
 are enabled**, joining the existing Axial HD camera. All six new archives are
 reachable and decode successfully on GitHub runners. Four cameras remain on
