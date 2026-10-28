@@ -2,7 +2,7 @@
   "schema_version": 1,
   "feature_space": "resnet18-imagenet1k-v1+quality-v1",
   "reviewer": "nikokoren",
-  "trained_at": "2026-10-28T14:11:14.560721+00:00",
+  "trained_at": "2026-10-28T14:26:15.780485+00:00",
   "status": "ready",
   "comparisons": 80,
   "pairwise_comparisons": 67,
