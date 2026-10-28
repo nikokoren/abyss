@@ -1,0 +1,234 @@
+V19 Live Video – OOI Regional Cabled Array
+Skip to content
+Interactive Map
+Search
+Home
+About
+Regional Cabled Array
+Ocean Observatories Initiative
+People
+Acknowledgements
+Contact
+Research Sites
+Axial Base
+Axial Caldera
+ASHES
+International District
+Central Caldera
+Eastern Caldera
+Oregon Offshore
+Oregon Shelf
+Oregon Slope Base
+Southern Hydrate Ridge
+Mid-Plate
+Technology
+Cabled Network
+Cables & Connectors
+CTD Rosette
+Primary Nodes
+Junction Boxes
+Benthic Experiment Package (BEP)
+Deep Profiler Moorings
+Shallow Profiler Moorings
+ROVs
+Ships
+Terrestrial Network
+Instruments
+Expeditions
+VISIONS 26
+VISIONS 25
+VISIONS 24
+VISIONS 23
+VISIONS 22
+VISIONS 21
+VISIONS 20
+VISIONS 19
+VISIONS 18
+VISIONS 17
+VISIONS 16
+VISIONS 15
+VISIONS 14
+VISIONS 13
+VISIONS 11
+Education
+Cabled Array in the Classroom
+Engagement Products
+K12 Lessons
+Data Portal
+Resources
+Galleries
+Biology Catalog
+Featured Posts
+Glossary
+Home
+About
+Regional Cabled Array
+Ocean Observatories Initiative
+People
+Acknowledgements
+Contact
+Research Sites
+Axial Base
+Axial Caldera
+ASHES
+International District
+Central Caldera
+Eastern Caldera
+Oregon Offshore
+Oregon Shelf
+Oregon Slope Base
+Southern Hydrate Ridge
+Mid-Plate
+Technology
+Cabled Network
+Cables & Connectors
+CTD Rosette
+Primary Nodes
+Junction Boxes
+Benthic Experiment Package (BEP)
+Deep Profiler Moorings
+Shallow Profiler Moorings
+ROVs
+Ships
+Terrestrial Network
+Instruments
+Expeditions
+VISIONS 26
+VISIONS 25
+VISIONS 24
+VISIONS 23
+VISIONS 22
+VISIONS 21
+VISIONS 20
+VISIONS 19
+VISIONS 18
+VISIONS 17
+VISIONS 16
+VISIONS 15
+VISIONS 14
+VISIONS 13
+VISIONS 11
+Education
+Cabled Array in the Classroom
+Engagement Products
+K12 Lessons
+Data Portal
+Resources
+Galleries
+Biology Catalog
+Featured Posts
+Glossary
+V19 Live Video
+V19 Live Video
+VISIONS'19 Expedition is Underway
+Live Video
+not live
+Live Video
+About
+People
+VISIONS 19 Images
+Daily Blog
+Student Blogs
+Student Participants
+Pythias Oasis Student Blog: Steven Karaduzovic
+When I first got on the boat, I felt like a kid. I was overcome with a sense of awe and curiosity. I kept thinking,
+Read More »
+January 22, 2020
+Tweets by VISIONSops
+July 8, 2019 11:27 local (Pacific): Our last dive of VISIONS ’19 is complete, and the profiler swap was a success! The inactive profiler was returned to the ship for repair, and a new profiler has been attached to the wire, powered up, and is communicating to shore. This concludes operations for the 2019 OOI Regional Cabled Array Operations and Maintenance cruise: 4 legs, 57 dives, and 105 core OOI instruments (plus 11 PI instruments) successfully deployed with the help of the crew of the R/V Atlantis, ROV Jason, and all of the science, engineering, and support staff from the University of Washington, APL, WHOI, and NSF. Thanks for joining us on our voyage!
+July 8, 2019 15:40 local (Pacific): The Deep Profiler wire at Slope Base (2900 m) was cleaned down to 800 meters depth by Jason, to help the profiler vehicle ascend more easily during profiles. The Atlantis is now about to head back to the Oregon Offshore (600 m) site, to swap out a Deep Profiler that has been experiencing power anomalies. That will be the last Jason dive of Leg 4!
+July 8, 2019 00:52 local (Pacific): Jason is currently on the first of two dives at Slope Base. First, we are following the mechanical leg of the 2-legged Shallow Profiler mooring upwards from the anchor at 2900 meters to the platform at 200 meters, in order to inspect it for fouling or damage since the last deployment. After this dive, we will move over to the Deep Profiler site and clean the top portion of the wire, to allow the profiler vehicle to climb the wire more easily, without slipping on detritus.
+July 7, 2019 02:25 local (Pacific): The Axial Base (2600 m) junction box has been replaced and is now powered and fully operational. The CTD rosette is in the water, collecting data and water samples that will be analyzed to verify the data from the deep and shallow profilers that were deployed here. Once the CTD is back on deck and secured, we will begin the 17-hour transit back to Slope Base (2900 m), where Jason will inspect the Shallow Profiler mooring, which has been experiencing pressure anomalies.
+July 6, 2019 15:43 local (Pacific): We have (sadly) left Axial behind us, following a successful thermal survey and some detailed video analysis of the Inferno vent and surrounding topography for future deployments. The Atlantis is now heading for Axial Base, where we will recover and replace one of the junction boxes for scheduled maintenance, and do a deep CTD cast to verify the data from the recently-deployed Deep Profiler.
+July 5, 2019 15:54 local (Pacific): The Wilcock (UW) A-0-A self-calibrating pressure sensor has been successfully deployed and powered on at Central Caldera, and the existing self-calibrating sensors (SCPR and SCTA) at the same site have been surveyed to check their status. Following recovery, Atlantis headed back to ASHES vent field, and Jason is currently diving with the 2019 COVIS sonar. It will be placed back at the Mushroom vent, where it will collect acoustic data on water temperature variations, plume dynamics, and overall heat flow from the vent.
+July 5, 2019 11:00 local (Pacific): Jason is diving at the Central Caldera site, a highly inflated old lava flow that has become a key geophysical experiment site for Axial. Here, four instruments "listen"/"feel" the movement of magma in the subsurface through measurements of earthquakes and deformation of the seafloor as it rises and falls with increasing melt pressure in the subsurface and cracking of the rocks. This morning we are installing William Wilcock’s (UW), NSF-funded high-resolution self-calibrating pressure sensor, that may someday be installed along the Cascadia Margin to examine earthquakes associated with the subduction zone.
+July 5, 2019 00:40 local (Pacific): After a long deployment dive and survey of the ASHES site, the new osmosampler has been placed near the Mushroom vent, a new CTD has been deployed near the MJ03B junction box, and the camera was positioned and tested. Jason is now on its way back to the surface with the recovered 2018 CTD in the undervator. Live video will not be available tonight, but please join us again later today for a dive at the Axial Central Caldera!
+July 4, 2019 15:21 local (Pacific): We have turned the digital still camera, and did a video survey of the International District vents this morning. The R/V Atlantis then headed back to ASHES, and Jason has just launched with a set of instruments in the undervator: a CTD tripod, an osmosampler, and a camera. Happy 4th of July!
+July 3, 2019 2300 local (Pacific): Jason is diving in the International District Hydrothermal Field at the ‘Tiny Towers’ site installing a cabled in situ vent fluid sampler coupled to a cabled sampler for microbial DNA. Jason will recover a similar platform that was installed last year, but which also hosted a cabled mass spectrometer. The follow-on dive tomorrow morning will be to turn a digital still camera.
+July 3, 2019 1600 local (Pacific): Jason is about to dive (J2-1190) in the International District Hydrothermal Field with the remote access hydrothermal fluid sampler and microbial DNA sampler for installation at the diffuse vent area called Tiny Towers. Jason will recover a similar platform that was installed last year, but which also hosted an in situ mass spectrometer.
+July 3, 2019 0706 local (Pacific): Jason is working at an anyhdrite (CaSO4)-and CO2-rich 309°C chimney called Diva. The vehicle will install a sensor that measures pH(acidity)-H2S(hydrogen sulfide) and temperature. Following that, Jason will be working at a chimney called Escargot that got its name from a metal suflide deposit on the top of the structure that looked very much like a snail. Here, Jason will recover an instrument installed 2-years ago in a high temperature orifice (305°C) near the top of the edifice that measures temperature and resistivity, which is an analogue for how salty the fluids are. Some of the chimneys in the International District are boiling at ~1500 m water depth.
+July 3, 2019 0550 local (Pacific): We are now at Axial Caldera, diving on a field of hydrothermal vents known as "International District"! Jason is currently diving to 1521m to tour the area, install temperature, gas, and chemical sensors inside several vents, and recover equipment deployed in 2018.
+July 2, 2019 1028 local (Pacific): Jason is now diving to turn the Deep Profiler vehicle at Axial Base (2600 m water depth). The vehicle is currently at 1489 m. This will be a several hour dive. Following this the Atlantis will transit to the summit of Axial Seamount to begin working in the hydrothermal vent fields.
+July 2, 2019 1955 local (Pacific): Atlantis has arrived at the Axial Base (2600 m) site, and we are preparing for the third Jason dive of Leg 4, to turn the Deep Profiler.
+July 2, 2019 1320 local (Pacific): Since ~ 0330 this morning, the Atlantis has been transiting to Axial Base where Jason will turn the Deep Profiler vehicle (2600 m), then we will work in the International District Hydrothermal Field.
+July 2, 2019 0057 local (Pacific): Jason has latched the 2019 Slope Base Deep Profiler vehicle to the wire, removed the 2018 Deep Profiler vehicle from its dock at 2900 meters depth, and is currently ascending through the water column, back to the ship. Following recovery, we will begin the transit to Axial Base.
+July 1, 2019 2027 local (Pacific): The Atlantis arrived at the Slope Base site and will very soon dive (J2-1187) with the Deep Profiler vehicle. Depth here is 2900 m so this will be a several hour dive.
+July 1, 2019 1306 local (Pacific): Jason was just launched with the Oregon Offshore (600m) 2019 deep profiler vehicle (the yellow pod dominating the left side of the camera feed) docked to the front of the ROV. Jason will descend towards the bottom of the mooring and swap out the new profiler for the 2018 one.
+July 1, 2019 1128 local (Pacific): The R/V Atlantis is on station at Oregon Offshore (600m) for the first Deep Profiler vehicle swap. Equipment and vehicle are ready on the back deck, and dive 1186, the opening dive of Leg 4, will commence soon!
+July 1, 2019 0810 local (Pacific): The R/V Atlantis is underway to the Oregon Offshore site to swap out the Deep Profiler vehicle…seas are calm and skies are overcast – an easy transit it is.
+June 30, 2019 1410 local (Pacific): Today is for lashing things down, putting supplies away, and welcoming new team members onboard. Our first stop on Leg 4 (the final segment of VISIONS ’19) will be Oregon Offshore (600m) to deploy a cabled wire-crawling deep profiler. This involves using the Jason ROV to bring down a new vehicle, attaching it to the line with a special Jason attachment, plucking the existing vehicle off the wire and bringing it back to the ship.
+June 29, 2019 1000 local (Pacific): The R/V Atlantis is offshore of Newport, and we’re busy packing up and preparing for demobilization later today. Live video from Jason will return on July 1st.
+June 28, 2019 2213 local (Pacific): Following the inspection dive, we recovered Jason and began a surface survey. Operations for Leg 3 will end at midnight local time, at which point we will head for Newport to begin offloading and mobilizing for Leg 4!
+June 28, 2019 1447 local (Pacific): Slight change in plans: we decided to transit back to Slope Base (2900m) to investigate a pressure anomaly on the Shallow Profiler 200m platform. First, Jason will conduct an engineering test, and then we’ll do the inspection dive.
+June 28, 2019 1015 local (Pacific): After recovering Jason from Slope Base we transited to the Oregon Offshore site and are in the process of conducting a CTD to verify the instruments on the Oregon Offshore Shallow Profiler. Following the CTD Jason will dive to survey the Shallow Profiler in action.
+June 28, 2019 0530 local (Pacific): Jason is currently diving at the Slope Base Shallow Profiler where instrumentation was deployed on Leg 2 to inspect the platform’s current status.
+June 27, 2019 1626 local (Pacific): Following the recovery of Jason this morning after the Hydrate Ridge survey, we moved to the Slope Base (2900m) site. First, we conducted a verification CTD cast to collect data and water samples next to the now-operational Shallow Profiler mooring, deployed on Leg 2. After the water samples were processed, Jason embarked on a 2.5 hour descent to the seafloor to conduct a cable survey at Primary Node PN1A, now in progress.
+June 26, 2019 2326 local (Pacific): The MARUM 4K camera was successfully deployed, plugged in, and tested, sending images of bubbles back to the control center in Seattle that we could then see from the ship! After Jason was recovered, the OSU-Harvard Benthic Microbial Fuel Cell (CH4-BMFC) was rigged up and taken over the side on the winch below Jason. It was landed on the seafloor, assembled into its final deployment position at Southern Hydrate Ridge (772m), and the science team is now taking push cores to collect associated mud samples.
+June 26, 2019 1231 local (Pacific): This morning we conducted a survey of Einstein’s Grotto and Smoky Caverns at Southern Hydrate Ridge (770m), and repositioned the digital still camera so that it was facing a methane bubble stream. We also participated in an NSF Facebook Live event (Science in the Deep). We’re now preparing to launch another dive to deploy the new MARUM 4K camera, also at Einstein’s Grotto.
+June 26, 2019 0050 local (Pacific): The MARUM OverView scanning sonar was deployed at Southern Hydrate Ridge (770m), powered up, and tested successfully! We then moved slightly offsite and began a multibeam sonar survey to map Hydrate Ridge and look for bubble plumes. We are now moving back to the Einstein’s Grotto area in preparation for ROV dives later today.
+June 25, 2019 1945 local (Pacific): The new short-period seismometer was deployed at Southern Hydrate Ridge (770m) and we are now mid-deployment of the MARUM OverView scanning sonar, which is used to image methane bubble plumes,
+June 25, 2019 0830 local (Pacific): The LJ01B node swap was completed successfully. With the old node safely on the back deck, a dive to swap a short period seismometer at Southern Hydrate Ridge (770m) will begin in half an hour.
+June 24, 2019 2145 local (Pacific): The mass spectrometer has been recovered, and we are now deploying several different types of osmotic samplers to collect fluid samples and measure flow rates at Hydrate Ridge. After that, we will conduct a short transit and swap out node LJ01B from the nearby SUM1 site.
+June 24, 2019 1605 local (Pacific): Camera swap at the Einstein’s Grotto formation on Southern Hydrate Ridge is complete. We have also conducted a site survey to look for new instrument deployment locations and bubble plumes, and are now in the process of recovering the mass spectrometer.
+June 24, 2019 0700 local (Pacific): Camera swap at the Einstein’s Grotto formation on Southern Hydrate Ridge is currently ongoing. Following that we will continue to dive at Southern Hydrate Ridge, surveying how the area has changed over the last year and swapping a variety of instruments.
+June 24, 2019 0235 local (Pacific): We recovered the BeObs (Benthic Observer) instrument and took push cores for Clare Reimers (Oregon State) at the Oregon Offshore (600m) site, and then conducted a CTD cast to collect water samples near the Shallow Profiler site. Once the CTD cast was complete, we headed for Hydrate Ridge, where we are now preparing for a camera swap near a formation called "Einstein’s Grotto".
+June 23, 2019 1644 local (Pacific): We are currently at the Oregon Offshore (600m) site, and have successfully deployed the BEP and swapped out the digital still camera. We’re now preparing to recover an instrument for an Oregon State researcher, and then will do a CTD cast to get some verification data.
+June 23, 2019 0600 local (Pacific): We are wrapping up the dive to recover the Marum sonar at Southern Hydrate Ridge and will be heading to the Oregon Offshore site to deploy a benthic experiment package (BEP) and new camera later today.
+June 23, 2019 0142 local (Pacific): We are now onsite at Hydrate Ridge (780m), and preparing for the MARUM recovery dive.
+June 22, 2019 2330 local (Pacific): Operations at the Oregon Shelf site (80m) are complete, and we are steaming towards Hydrate Ridge to recover the MARUM sonar and do a site survey.
+June 22, 2019 2015 local (Pacific): Conditions at the Oregon Shelf site (80 m) have been perfect: good visibility, calm weather. We have now completed two dives, the 2019 BEP and camera are in place, and the 2018 bioacoustic sonar has been recovered. Jason is now deploying the 2019 sonar package.
+June 22, 2019 1400 local (Pacific): The first dive of Leg 3 begins. Jason will be diving at the Oregon Shelf Site (80 m) to deploy a Benthic Experiment Package (BEP) and Camera.
+June 21, 2019 2150 local (Pacific): Today we finished demobilization of Leg 2, and welcomed a new group of students and scientists for Leg 3, which departs tomorrow. This portion of the cruise will visit Oregon Shelf (80m), Oregon Offshore (600m), and Hydrate Ridge, where a number of new and unique sensors will be deployed!
+June 19, 2019 2240 local (Pacific): The last dive of Leg 2 (Dive 1163) is complete, and the Oregon Shelf BEP is safely aboard. The next step is to steam to Newport to offload equipment and bring on new gear and students for Leg 3! Live video will return on 6/22.
+June 19, 2019 1835 local (Pacific): With successful recovery of the digital still camera, and good weather and visibility continuing, we are about to have one last dive on Leg 2 to recover the BEP (Dive 1163). Jason will shortly go back into the water.
+June 19, 2019 1435 local (Pacific): The Atlantis is moving towards station to recover the digital still camera at the Oregon Shelf site. Jason will take the undervator down. We are hoping that visibility is good there and that we get a look at the BEP and the junction box which, last year, was completely covered in huge sea anemones.
+June 19, 2019 0910 local (Pacific): The Atlantis is currently steaming to the 80 m site. If sea-visibility conditions are conducive, the digital still camera at this site will be recovered in the undervator.
+June 19, 2019 0615 local (Pacific): Jason is currently diving to recover a Benthic Experiment Package (BEP) at Oregon Offshore (600 m: 1800 ft).
+June 18, 2019 1845 local (Pacific): Jason is diving to swap out a CTD and optical attenuation/absorption tripod at Slope Base (2900 m; 9500 ft). After this dive, Atlantis will head back to the Oregon Offshore site.
+June 18, 2019 1345 local (Pacific): Jason at 2019 HPIES instrument that was free-fallen off the R/V Atlantis. Jason will now fly it to where the 2018 instrument is installed ~ 150 m away.
+June 18, 2019 1225 local (Pacific): Jason diving to 2900 m (9500 ft) at the toe of the Cascadia Margin to install and recover an HPIES instrument.
+June 18, 2019 1000 local (Pacific): We are still steaming towards Slope Base and will arrive onsite at 1100 for Jason Dive J2-1159. Misty it is out here – perfect diving weather.
+June 18, 2019 0005 local (Pacific): We completed all OOI work at Axial Seamount for Leg 2 and are now steaming towards Slope Base to recover the HPIES instrument and CTD at this site. With luck we will see the "weird" fish again..a fish previously found in waters off Antarctica and first filmed ever in 2014 on a Regional Cabled Array Cruise.
+June 17, 2019 1335 local (Pacific): Jason is at 1204 m on its ascent to the surface. The HPIES instrument was swapped out and the 2018 platform is attached beneath the vehicle for recovery.
+Following this dive, we will conduct a full water column (2600 m) CTD to collect verification samples for the adjacent Deep Profiler. Then off to Slope Base….
+June 17, 2019 0945 local (Pacific): Earlier this morning Jason successfully swapped a CTD stand at Axial Base. The vehicle is diving again to ~2600 m at the site following the free falling HPIES instrument. Once at the seafloor the new HPIES instrument will be swapped and the current instrument recovered.
+June 16, 2019 1015 local (Pacific): ASHES Hydrothermal Field: Jason had a power glitch in the wee hours of the morning and the vehicle was brought back on deck for trouble-shooting.
+Jason is now back in the water – heading for the underwater hot springs to turn the HD camera and pick up some small tripods with temperature sensors on them that were deployed last year.
+June 15, 2019 2230 local (Pacific): Jason just completed installing the two instrumented platforms on the Shallow Profiler Mooring at Axial Base. Soon we will transit to the top of Axial Seamount to begin work at the hydrothermal vents nearly a mile beneath the oceans surface.
+June 15, 2019 1400 local (Pacific): The new 120 m cable providing power and bandwidth to the Shallow Profiler Mooring installed last leg is now installed and connected. Jason is recovering the cabled installed in 2014, and will then return to the surface. Following this, two instrumented platforms will be installed on the mooring, completing mooring work for this Leg.
+June 15, 2019 855 local (Pacific): We are now working at Axial Base. Jason is diving to 2600 m (8500 ft). The seas are flat, flat, flat…perfect diving weather
+June 14, 2019 2035 local (Pacific): The R/V Atlantis continues to transit to Axial Seamount..stay tuned for Jason Dive J2-1150 ~ 0700 tomorrow morning.
+June 14, 2019 1330 local (Pacific): Jason is coming up from the last Shallow Profiler dive at Slope Base. Once on deck we will transit ~ 16 hrs to the base of Axial Seamount. The first dive (J2-1150) will be to replace a 120 m long cable that will then be connected to the LV03B junction box and to the newly installed Shallow Profiler Mooring (Leg 1). This dive will be at ~2600 m water depth and will last ~ 10 hrs.
+June 14, 2019 0730 local (Pacific): Jason is in the middle of dive J2-1147 at Slope Base. Preparations are underway to recover the platform interface assembly, the first of three dives at the shallow profiler here.
+June 13, 2019 2235 local (Pacific): Jason about to start dive J2-1146, the third dive of the day. This will deploy the new profiler pod at Oregon Offshore. Then on to Slope Base!
+June 13, 2019 1700 local (Pacific): Jason is not diving – will dive to ~200 m.
+June 13, 2019 1600 local (Pacific): We are on station at the Oregon Offshore site and Jason is about to go into the water J2-1144.
+June 13, 2019: We departed Newport at 1000 and in ~ 4-5 hrs will begin work at the Oregon Offshore Site first conducting a CTD, then turning the instrumented platforms on the Shallow Profiler Mooring. There will be three Jason dives to complete this work.
+June 12, 2019 Leg 2 Begins: Today we are finishing up mobilization of Leg 2 and will depart tomorrow for the Oregon Offshore site.
+June 10, 2019 Leg 1 Ends: Today demobilization begins of Leg 1 and mobilization of Leg 2. The ROV Jason will be loaded onboard, along with many tons of gear (shallow profiler pods, instruments..etc) for installation during Leg 2.
+June 9, 2019: With seastate significantly improved, the UW APL team was able to complete installation of the Shallow Profiler Mooring during a very long work day. The mooring will be plugged into the ‘Internet’ on Leg 2. With this success, the Atlantis began steaming into port.
+June 8, 2019: The weather gods shined on the Regional Cabled Array cruise today, and the Shallow Profiler Mooring is now being installed at the base of Axial Seamount. Once completed, the R/V Atlantis will steam into port for demobing of Leg 1 and mobing of Leg 2.
+June 7, 2019: Weather continues to frown on us, preventing Shallow Profiler Operations. However, tomorrows forecast looks very good. Mooring operations will begin early morning.
+June 6, 2019: This is a weather day as wind and seastate are preventing operations. At daylight tomorrow will determine of operations can commence
+June 5, 2019: Issues with the winch required time for complete a work around, weather worsening.
+June 3, 2019: The ship arrived at Axial Seamount. At 0815 work began to conduct a partial recovery of the Shallow Profiler Mooring using the medium-lift winch. The mechanical leg of the mooring was disconnected and the platform and electro-mechanical leg brought onboard.
+June 2, 2019: The R/V Atlantis departed Newport Oregon at 0800 for Axial Seamount.
+Lorem ipsum dolor sit amet consectetur ni adipiscing elit.
+Interactive Map
+Contact
+Ocean Observatories Initiative
+NSF Disclaimer
+Privacy & Terms
+Interactive Map
+Contact
+Ocean Observatories Initiative
+NSF Disclaimer
+Privacy & Terms
+Instagram
+Twitter
+Close Panel
+Regional Cabled Array
+Ocean Observatories Initiative
+People
+Acknowledgements
+Contact
