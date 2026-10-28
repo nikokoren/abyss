@@ -10,6 +10,7 @@ from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urldefrag, urljoin, urlsplit
 from urllib.request import Request, urlopen
+from concurrent.futures import ThreadPoolExecutor
 
 
 HOSTS = {'oceanobservatories.org', 'www.oceanobservatories.org',
@@ -31,6 +32,32 @@ SEEDS = [
 ]
 RELEVANT = re.compile(r'polic|terms|copyright|\bcite\b|citation|licen[cs]|acknowledg', re.I)
 LIMIT = 2 * 1024 * 1024
+GRAPHICS = [
+    ('Axial Seamount array illustration', 'https://oceanobservatories.org/wp-content/uploads/2020/10/CEV-OOI-CabledArray-Axialt-scaled.jpg'),
+    ('Continental margin array illustration', 'https://oceanobservatories.org/wp-content/uploads/2020/10/CEV-OOI-CabledArray-ContinentalMargint-scaled.jpg'),
+    ('Regional Cabled Array map', 'https://oceanobservatories.org/wp-content/uploads/2023/09/OOI_Map_Cabled_Array-OPTIMIZED.png'),
+    ('ASHES site map', 'https://s3-us-west-2.amazonaws.com/media.ooica.net/wp-content/uploads/2020/08/06193730/ASHES-Map-2020.png'),
+    ('Tiny Towers site map', 'https://s3-us-west-2.amazonaws.com/media.ooica.net/wp-content/uploads/2020/08/06193821/Tiny-Towers-Hydrothermal-Field-Map-2020.png'),
+    ('Southern Hydrate Ridge site map', 'https://s3.us-west-2.amazonaws.com/media.ooica.net/wp-content/uploads/2021/01/28232704/Southern-Hydrate-Map.png'),
+]
+
+
+def check_graphic(item):
+    """Verify a graphic link without copying website artwork into our release."""
+    name, url = item
+    record = {'name': name, 'url': url, 'checked_at': datetime.now(timezone.utc).isoformat()}
+    try:
+        request = Request(url, method='HEAD', headers={'User-Agent': 'Abyss-source-context/1.0'})
+        with urlopen(request, timeout=15) as response:
+            if response.url != url:
+                raise ValueError('Graphic redirected; review the destination separately')
+            record.update(status=response.status, content_type=response.headers.get_content_type(),
+                          content_length=response.headers.get('Content-Length'))
+            if not record['content_type'].startswith('image/'):
+                raise ValueError('Graphic URL did not return an image')
+    except Exception as exc:
+        record['failure'] = f'{type(exc).__name__}: {exc}'
+    return record
 
 
 class Page(HTMLParser):
@@ -123,8 +150,11 @@ def capture(output, seeds, max_pages):
         except Exception as exc:
             record['failure'] = f'{type(exc).__name__}: {exc}'
         records.append(record)
+    with ThreadPoolExecutor(max_workers=3) as pool:
+        graphics = list(pool.map(check_graphic, GRAPHICS))
     report = {'schema_version': 1, 'purpose': 'Evidence capture only; human review required',
-              'checked_at': datetime.now(timezone.utc).isoformat(), 'pages': records}
+              'checked_at': datetime.now(timezone.utc).isoformat(), 'pages': records,
+              'graphic_links': graphics, 'graphics_copied': False}
     (output / 'index.json').write_text(json.dumps(report, indent=2) + '\n')
     print(json.dumps([{k: p[k] for k in ('url', 'status', 'text', 'failure') if k in p}
                       for p in records], indent=2))
