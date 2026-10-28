@@ -23,7 +23,7 @@ from .search import search
 def near_duplicate(a, b):
     """Conservative still-review heuristic, not a subject/change detector."""
     if (not a.get('fingerprint') or not b.get('fingerprint')
-            or similarity(a['fingerprint'], b['fingerprint']) < .95
+            or similarity(a['fingerprint'], b['fingerprint']) < .88
             or abs(a['quality_score'] - b['quality_score']) > .05
             or abs(a['features'][1] - b['features'][1]) > .04):
         return False

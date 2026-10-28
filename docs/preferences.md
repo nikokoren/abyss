@@ -178,12 +178,15 @@ successful observation, not a retrieval failure; no preference labels are invent
 and the camera remains in normal display rotation. Video review sampling and
 production selection are unchanged.
 
-The initial heuristic combines at least 95% structural-hash agreement and 0.975
+The initial heuristic combines at least 88% structural-hash agreement and 0.975
 appearance-vector cosine similarity, while requiring brightness differences no
 greater than 0.04 and quality-score differences no greater than 0.05. It is not
 an animal/change detector, and may group small subject changes. The actual nine
-Hydrate Ridge snapshots reported as identical by the owner collapse to one
-representative under this rule. Use CLI `--include-similar` to inspect an unfiltered
+Hydrate Ridge snapshots and nine International District snapshots reported as
+near-identical by the owner each collapse to one representative under this rule.
+The original 95% structural threshold was too sensitive to International
+District's texture variations; appearance, brightness and quality guards remain.
+Use CLI `--include-similar` to inspect an unfiltered
 batch when checking a possible false positive. A static batch can be skipped
 entirely; more clicks on visually indistinguishable scenes are not useful training.
 

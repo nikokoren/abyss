@@ -30,6 +30,15 @@ class StillReviewTests(unittest.TestCase):
         self.assertFalse(near_duplicate(first, brighter))
         self.assertEqual(list(distinct_candidates({'a': first, 'b': better, 'c': self.candidate(axis=7)})), ['b', 'c'])
 
+    def test_small_texture_changes_do_not_force_another_same_view_comparison(self):
+        first = self.candidate()
+        def changed(bits):
+            value = dict(first)
+            value['fingerprint'] = ''.join('1' if c == '0' else '0' for c in first['fingerprint'][:bits]) + first['fingerprint'][bits:]
+            return value
+        self.assertTrue(near_duplicate(first, changed(26)))
+        self.assertFalse(near_duplicate(first, changed(40)))
+
     def test_static_still_gallery_reports_no_review_and_can_be_manually_unfiltered(self):
         class Encoder:
             provenance = {'feature_space': FEATURE_SPACE, 'weights_sha256': 'test'}

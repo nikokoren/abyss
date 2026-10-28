@@ -2,11 +2,16 @@
 
 ## Static still-camera review batches — 28 October 2026
 
-**86 Python tests passed**, plus review-core and real-browser checks. Still
+**87 Python tests passed**, plus review-core and real-browser checks. Still
 review galleries collapse near-identical appearance/structure while retaining
 substantial exposure, quality or composition differences. The actual nine-frame
 Hydrate Ridge batch `3c26eb62faad8bc2af8eda58a6b3217b`, reported as identical
 by the owner, reduces to one representative and returns `no_review_needed`.
+The owner's International District batch `ab9f3bfad4d9c6fa46e555e6baa0ea4c`
+also reduces from nine snapshots to one. Its texture variations exposed an overly
+strict structural threshold; relaxing that gate while retaining the appearance,
+brightness and quality checks prevents the seven redundant candidates it kept
+previously. A regression test preserves rejection of larger structural changes.
 The gallery and Actions summary explain that no preference choices are needed;
 the browser check verifies zero saved choices and no visible submission control.
 No feedback or model labels are invented. Production selection and video review
