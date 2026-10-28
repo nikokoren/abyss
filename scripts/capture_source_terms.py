@@ -13,14 +13,16 @@ from urllib.request import Request, urlopen
 
 
 HOSTS = {'oceanobservatories.org', 'www.oceanobservatories.org',
-         'interactiveoceans.washington.edu'}
+         'interactiveoceans.washington.edu', 'www.nsf.gov', 'nsf.gov',
+         'www.washington.edu'}
 SEEDS = [
-    'https://oceanobservatories.org/',
-    'https://oceanobservatories.org/data/',
-    'https://oceanobservatories.org/data/data-policy/',
-    'https://oceanobservatories.org/how-to-cite-ooi-data/',
-    'https://interactiveoceans.washington.edu/instruments/hd-video-camera/',
-    'https://interactiveoceans.washington.edu/',
+    'https://oceanobservatories.org/how-to-use-acknowledge-and-cite-data/',
+    'https://oceanobservatories.org/wp-content/uploads/2022/12/1102-00020_Data_User_Terms_Conditions_OOI_2019-01-02_Ver_2-00.pdf',
+    'https://interactiveoceans.washington.edu/instruments/high-definition-video-camera/',
+    'https://interactiveoceans.washington.edu/research-sites/axial-caldera/ashes/',
+    'https://oceanobservatories.org/site-list/',
+    'https://www.nsf.gov/policies/logos.jsp',
+    'https://www.washington.edu/online/privacy/',
 ]
 RELEVANT = re.compile(r'polic|terms|copyright|\bcite\b|citation|licen[cs]|acknowledg', re.I)
 LIMIT = 2 * 1024 * 1024
@@ -29,7 +31,7 @@ LIMIT = 2 * 1024 * 1024
 class Page(HTMLParser):
     def __init__(self):
         super().__init__(convert_charrefs=True)
-        self.text, self.links = [], []
+        self.text, self.links, self.images = [], [], []
         self.hidden = 0
         self.anchor = None
 
@@ -41,6 +43,8 @@ class Page(HTMLParser):
             self.text.append('\n')
         if tag == 'a':
             self.anchor = [attrs.get('href', ''), []]
+        if tag == 'img':
+            self.images.append({'url': attrs.get('src', ''), 'alt': attrs.get('alt', '')})
 
     def handle_endtag(self, tag):
         if tag in {'script', 'style', 'noscript'}:
@@ -92,14 +96,17 @@ def capture(output, seeds, max_pages):
             elif content_type in {'text/html', 'application/xhtml+xml'}:
                 page = Page()
                 page.feed(body.decode('utf-8', errors='replace'))
-                text = '\n'.join(re.sub(r'\s+', ' ', line).strip()
-                                 for line in ''.join(page.text).splitlines())
+                text = '\n'.join(line for line in (re.sub(r'\s+', ' ', line).strip()
+                                 for line in ''.join(page.text).splitlines()) if line)
                 (output / (stem + '.txt')).write_text(text, encoding='utf-8')
                 links = [{'url': urldefrag(urljoin(record['final_url'], href))[0], 'label': label}
                          for href, label in page.links]
                 record['links'] = links
+                record['logo_images'] = [dict(i, url=urljoin(record['final_url'], i['url']))
+                                         for i in page.images if 'logo' in str(i).lower()]
                 for link in links:
-                    if allowed(link['url']) and RELEVANT.search(link['url'] + ' ' + link['label']):
+                    if (allowed(link['url']) and 'cookie' not in link['url']
+                            and RELEVANT.search(link['url'] + ' ' + link['label'])):
                         queue.append(link['url'])
             elif content_type == 'text/plain':
                 (output / (stem + '.txt')).write_bytes(body)
