@@ -1,37 +1,37 @@
 {
   "schema_version": 1,
   "source_id": "ooi-axial",
-  "checked_at": "2026-10-27T23:40:57.293909+00:00",
+  "checked_at": "2026-10-28T02:23:15.787881+00:00",
   "status": "observed",
   "timestamp_basis": "Filename parsed as UTC; source timezone not independently confirmed",
   "directory_dates_checked": [
-    "2026-10-25",
     "2026-10-26",
-    "2026-10-27"
+    "2026-10-27",
+    "2026-10-28"
   ],
   "directory_errors": [],
-  "recordings_listed": 24,
+  "recordings_listed": 17,
   "new_recordings_since_prior_coverage": 0,
-  "baseline_recordings": 0,
+  "baseline_recordings": 1,
   "recording_intervals_seconds": {
-    "samples": 23,
+    "samples": 16,
     "median": 10800.0,
     "minimum": 10800.0,
     "maximum": 10800.0,
     "common": [
       {
         "seconds": 10800.0,
-        "count": 23
+        "count": 16
       }
     ]
   },
-  "latest_nominal_recording_at": "2026-10-27T21:15:00+00:00",
+  "latest_nominal_recording_at": "2026-10-28T00:15:00+00:00",
   "publication_delay_observations": 0,
   "new_appearances": [],
   "publication_delay_note": "Baseline files have unknown publication time. Delay bounds require prior successful coverage of that date; filename timezone remains an assumption.",
   "environment": "github_actions",
-  "tested_commit": "944226ce006944a734d332b425b2bacf551aa1a2",
-  "run_url": "https://github.com/nikokoren/abyss/actions/runs/40603578698",
+  "tested_commit": "0bfc86b2dd26e46b0b948eb94370331c68608312",
+  "run_url": "https://github.com/nikokoren/abyss/actions/runs/40620606870",
   "imagery_published": false,
   "rights_status": "not_assessed"
 }
