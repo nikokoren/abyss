@@ -82,6 +82,12 @@ def write_page(public, metadata, base_url, *, full_available=True, preview_avail
     record = {k: metadata[k] for k in RECORD_KEYS if k in metadata}
     record.update(schema_version=1, full_available=full_available, preview_available=preview_available)
     atomic_json(folder / (token + '.json'), record)
+    # Refresh cached observations too: their QR destination stays unchanged.
+    # One white module is the minimum verified against the native dark canvas.
+    code = qrcode.QRCode(error_correction=qrcode.constants.ERROR_CORRECT_M, box_size=4, border=1)
+    code.add_data(metadata['view_url'])
+    code.make(fit=True)
+    code.make_image(fill_color='black', back_color='white').save(folder / (token + '.png'))
 
 
 def publish_media_page(public, metadata, base_url, *, preview_image=None):
@@ -96,7 +102,3 @@ def publish_media_page(public, metadata, base_url, *, preview_image=None):
         save_preview(preview_image, folder / (token + '-preview.jpg'))
         metadata['preview_url'] = base_url.rstrip('/') + '/i/' + token + '-preview.jpg'
     write_page(public, metadata, base_url)
-    code = qrcode.QRCode(error_correction=qrcode.constants.ERROR_CORRECT_M, box_size=4, border=4)
-    code.add_data(view_url)
-    code.make(fit=True)
-    code.make_image(fill_color='black', back_color='white').save(folder / (token + '.png'))

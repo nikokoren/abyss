@@ -73,9 +73,15 @@ follows the framework's light/dark text colors. No credit is rasterized into the
 device photograph. A separate downloadable version retains embedded attribution.
 
 **Show QR code** is optional and off by default, and applies **only to full-screen
-view**. It overlays the bottom-right corner of the photo area using native
+view**. It overlays the bottom-right corner of the content area using native
 `relative`, `absolute bottom--0 right--0` and sizing utilities. It takes no space
 away from the photo or title bar and never appears in halves or quadrant.
+The recipe uses the framework's standard screen padding so its gap above the
+title bar matches the right screen inset; the native credit
+row reserves its width. The QR raster has a one-module white scan margin,
+reduced from four; removing it entirely fails decoding on the dark canvas.
+Cached observation codes are refreshed during
+publication without changing their destinations.
 It opens an immutable first-party observation page, rather
 than a changing camera homepage. That page includes the exact displayed still
 and either the original snapshot or the original MP4 positioned at the selected

@@ -1,5 +1,18 @@
 # Validation evidence and remaining acceptance gates
 
+## Compact QR overlay — 28 October 2026
+
+**107 Python tests and 100 native Framework 3.4.4 browser cases passed.** The
+full-screen QR uses a 96-unit native size and a one-module white scan margin,
+reduced from four modules. Decoding checks include the surrounding rendered
+screen: a zero-margin code failed on the black canvas. Equal right-screen and
+title-bar gaps use the framework's standard screen padding, requested by the
+updated recipe. Browser checks cover landscape/portrait across three devices,
+light/dark modes, credit clearance, and the optional platform padding override.
+The equal-gap assertion applies to the recipe's standard padding. Saved ocean
+imagery was also visually checked in native OG and V2 dark-mode previews.
+Publication refreshes cached QR rasters without changing observation URLs.
+
 ## Bounded storage, recording winners and prospective review — 28 October 2026
 
 **107 Python tests passed** plus review-core and real-browser checks. Tests cover

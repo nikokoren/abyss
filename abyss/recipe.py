@@ -27,7 +27,7 @@ def generate(output, base_url, destination):
                credits + ' ' + acknowledgments)
     text = ['---', 'name: Abyss', 'strategy: polling', 'polling_verb: get',
             'polling_url: ' + quote(base_url.rstrip('/') + '/catalog.json'),
-            "no_screen_padding: 'yes'", "dark_mode: 'no'", 'framework_version: "3.4.4"',
+            "no_screen_padding: 'no'", "dark_mode: 'no'", 'framework_version: "3.4.4"',
             'refresh_interval: 15', 'serverless_language: python',
             'custom_fields:', '  - keyname: source_ids', '    name: Underwater cameras',
             '    field_type: select', '    multiple: true', '    optional: true',

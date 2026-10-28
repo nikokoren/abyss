@@ -82,6 +82,10 @@ CHECK = '''() => {
     const q=rect(qr), box=rect(qr.parentElement);
     if(getComputedStyle(qr).position!=='absolute') errors.push('QR is not an overlay');
     if(Math.abs(q.right-box.right)>1 || Math.abs(q.bottom-box.bottom)>1) errors.push('QR is not at bottom right');
+    const rightGap=rect(document.querySelector('.screen')).right-q.right, bottomGap=rect(view.querySelector('.title_bar')).y-q.bottom;
+    if(!document.querySelector('.screen--no-bleed') && Math.abs(rightGap-bottomGap)>1) errors.push('QR title-bar gap differs from right-edge gap');
+    const credit=view.querySelector('.label.w--full');
+    if(credit && rect(credit).right>q.x-1) errors.push('Credit overlaps QR');
   }
   const credit=view.querySelector('.label.w--full');
   return {errors,view:rect(view),image:image?rect(image):null,
@@ -139,14 +143,18 @@ def main():
         for orientation in ('landscape', 'portrait'):
             cases.append(('og', orientation, 'quadrant', state, changed,
                           changed.get('default_source') if state == 'retained' else None))
-    # settings.yml requests no_screen_padding; exercise the corresponding host modifier.
+    # Also exercise the platform's optional no-padding override.
     for orientation in ('landscape', 'portrait'):
         for layout in LAYOUTS:
             cases.append(('og', orientation, layout, 'no_bleed', data, None))
+    for device in ('og', 'v2', 'amazon_kindle_2024'):
+        for orientation in ('landscape', 'portrait'):
+            for state in ('no_bleed_qr', 'no_bleed_dark'):
+                cases.append((device, orientation, 'full', state, data, None))
     with tempfile.TemporaryDirectory() as temporary:
         root = Path(temporary)
         qr_target = 'https://nikokoren.github.io/abyss/i/0123456789abcdef0123.html'
-        qrcode.make(qr_target, error_correction=qrcode.constants.ERROR_CORRECT_M, border=4).save(root / 'qr.png')
+        qrcode.make(qr_target, error_correction=qrcode.constants.ERROR_CORRECT_M, border=1).save(root / 'qr.png')
         for name in ('css', 'js', 'fonts', 'images'):
             # Served locally for exact release testing, never copied into app source.
             if (assets / name).is_dir():
@@ -159,8 +167,8 @@ def main():
             image.save(root / 'ocean.png')
         for device, orientation, layout, state, context, selection in cases:
             name = f'{device}-{orientation}-{layout}-{state}'
-            (root / (name + '.html')).write_text(document(render(layout, context, selection, show_qr=state in ('qr', 'dark')), device,
-                                                       orientation, layout, no_bleed=state == 'no_bleed', dark=state == 'dark'))
+            (root / (name + '.html')).write_text(document(render(layout, context, selection, show_qr=state in ('qr', 'dark', 'no_bleed_qr', 'no_bleed_dark')), device,
+                                                       orientation, layout, no_bleed=state.startswith('no_bleed'), dark=state in ('dark', 'no_bleed_dark')))
 
         class Handler(SimpleHTTPRequestHandler):
             def log_message(self, *args):
@@ -188,12 +196,18 @@ def main():
                     qr_count = page.locator('img[alt^="Scan"]').count()
                     if qr_count and layout != 'full':
                         result['errors'].append('QR shown outside full-screen view')
-                    if state in ('qr', 'dark') and layout == 'full':
+                    if state in ('qr', 'dark', 'no_bleed_qr', 'no_bleed_dark') and layout == 'full':
                         crop = page.locator('img[alt^="Scan"]').first.screenshot()
                         decoded = zxingcpp.read_barcode(Image.open(io.BytesIO(crop)))
                         result['qr_decoded'] = decoded.text if decoded else None
                         if result['qr_decoded'] != qr_target:
                             result['errors'].append('QR code cannot be decoded at native display size')
+                        # Cropping removes the dark surroundings and can hide scan failures.
+                        screen = page.locator('.screen').screenshot()
+                        decoded = zxingcpp.read_barcode(Image.open(io.BytesIO(screen)))
+                        result['qr_screen_decoded'] = decoded.text if decoded else None
+                        if result['qr_screen_decoded'] != qr_target:
+                            result['errors'].append('QR code cannot be decoded in the full rendered screen')
                     if state == 'dark' and result['credit_color'] != 'rgb(255, 255, 255)':
                         result['errors'].append('Native credit text did not switch to white in dark mode')
                     if state == 'dark' and result['canvas_color'] != 'rgb(0, 0, 0)':

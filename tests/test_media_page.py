@@ -49,6 +49,13 @@ class MediaPageTests(unittest.TestCase):
             qr = Path(tmp) / 'public' / first['qr_code_url'].split('/abyss/')[1]
             decoded = zxingcpp.read_barcode(Image.open(qr))
             self.assertEqual(decoded.text, first['view_url'])
+            code = Image.open(qr).convert('RGB')
+            # Tight one-module edge, including the three finder-pattern corners.
+            for point in ((4, 4), (code.width - 5, 4), (4, code.height - 5)):
+                self.assertEqual(code.getpixel(point), (0, 0, 0))
+            surround = Image.new('RGB', (code.width + 40, code.height + 40), 'black')
+            surround.paste(code, (20, 20))
+            self.assertEqual(zxingcpp.read_barcode(surround).text, first['view_url'])
             second = publish(tmp, {'id': 'camera'}, Image.new('RGB', (1200, 900), 'red'),
                              self.metadata(), 'https://site.example/abyss')
             self.assertNotEqual(first['view_url'], second['view_url'])
