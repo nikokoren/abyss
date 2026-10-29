@@ -5,6 +5,7 @@ import tempfile
 from datetime import datetime
 from pathlib import Path
 from .registry import eligible
+from .about import camera_options
 
 
 def atomic_json(path, data):
@@ -93,6 +94,8 @@ def catalog(root, sources, now, base_url):
         entries[source['id']] = latest
         options.append({'label': f'{source["name"]} ({source["type"].replace("_", " ")})', 'value': source['id'],
                         'description': source.get('description', '')})
+    options = camera_options(options)
+    entries = {o['value']: entries[o['value']] for o in options}
     default = options[0]['value'] if options else None
     # Stable default object keeps a retained good image visible during total outage.
     fallback = entries.get(default) or next(iter(entries.values()), None)

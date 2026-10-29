@@ -26,10 +26,10 @@ Replace the previous custom-field definitions with this entire block.
   description: "Leave all feeds deselected to cycle through every feed. Select one to pin it, or several to cycle through that subset. Offline cameras keep their last best image. Periodic recordings and archives, not a continuous live feed.  <a href=\"https://nikokoren.github.io/abyss/#about\">Meet the cameras, explore the maps and read the source credits</a>."
   default: []
   options:
-    - "Axial Seamount - hydrothermal vents (periodic recording)": "ooi-axial"
-    - "Oregon Offshore - seafloor (periodic snapshot)": "ooi-oregon-offshore"
-    - "Southern Hydrate Ridge - methane seep (periodic snapshot)": "ooi-hydrate-ridge"
-    - "International District - hydrothermal vents (periodic snapshot)": "ooi-international-district"
+    - "ASHES: Mushroom vent": "ooi-axial"
+    - "International District: Tiny Towers": "ooi-international-district"
+    - "Southern Hydrate Ridge: Einstein's Grotto": "ooi-hydrate-ridge"
+    - "Oregon Offshore: seafloor": "ooi-oregon-offshore"
 - keyname: show_qr
   name: Show QR code
   field_type: boolean
@@ -69,10 +69,10 @@ custom_fields:
     description: "Leave all feeds deselected to cycle through every feed. Select one to pin it, or several to cycle through that subset. Offline cameras keep their last best image. Periodic recordings and archives, not a continuous live feed.  <a href=\"https://nikokoren.github.io/abyss/#about\">Meet the cameras, explore the maps and read the source credits</a>."
     default: []
     options:
-      - "Axial Seamount - hydrothermal vents (periodic recording)": "ooi-axial"
-      - "Oregon Offshore - seafloor (periodic snapshot)": "ooi-oregon-offshore"
-      - "Southern Hydrate Ridge - methane seep (periodic snapshot)": "ooi-hydrate-ridge"
-      - "International District - hydrothermal vents (periodic snapshot)": "ooi-international-district"
+      - "ASHES: Mushroom vent": "ooi-axial"
+      - "International District: Tiny Towers": "ooi-international-district"
+      - "Southern Hydrate Ridge: Einstein's Grotto": "ooi-hydrate-ridge"
+      - "Oregon Offshore: seafloor": "ooi-oregon-offshore"
   - keyname: show_qr
     name: Show QR code
     field_type: boolean

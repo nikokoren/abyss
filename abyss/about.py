@@ -73,6 +73,15 @@ CAMERAS = (
         'array_graphic_url': 'https://oceanobservatories.org/wp-content/uploads/2020/10/CEV-OOI-CabledArray-ContinentalMargint-scaled.jpg',
     },
 )
+
+def camera_options(options):
+    """Match published camera choices to the names and order in About."""
+    names = {c['id']: c['name'] for c in CAMERAS}
+    order = {c['id']: i for i, c in enumerate(CAMERAS)}
+    return sorted((dict(o, label=names.get(o['value'], o['label'])) for o in options),
+                  key=lambda o: order.get(o['value'], len(order)))
+
+
 REGIONAL_MAP = 'https://app.interactiveoceans.washington.edu/map'
 REGIONAL_GRAPHIC = 'https://oceanobservatories.org/wp-content/uploads/2023/09/OOI_Map_Cabled_Array-OPTIMIZED.png'
 OOI_CREDIT = ('Ocean Observatories Initiative / Woods Hole Oceanographic Institution '

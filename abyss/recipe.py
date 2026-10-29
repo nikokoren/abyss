@@ -4,7 +4,7 @@ from html import escape
 from pathlib import Path
 from urllib.parse import urlsplit
 from .publication import read_json
-from .about import OVERVIEW, SUMMARY, about_trmnl_html
+from .about import OVERVIEW, SUMMARY, about_trmnl_html, camera_options
 
 
 def generate(output, base_url, destination):
@@ -12,7 +12,7 @@ def generate(output, base_url, destination):
     if parsed.scheme != 'https' or not parsed.netloc or parsed.query or parsed.fragment or parsed.username or parsed.password:
         raise ValueError('Recipe requires a public HTTPS base URL without query, fragment or credentials')
     catalog = read_json(Path(output) / 'public' / 'catalog.json', {})
-    options = catalog.get('options', [])
+    options = camera_options(catalog.get('options', []))
     if not options:
         raise ValueError('No validated published sources; recipe dropdown cannot be generated yet')
     # YAML accepts JSON Unicode escapes. Keep the import file ASCII-safe even

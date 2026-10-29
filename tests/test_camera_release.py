@@ -1,7 +1,7 @@
 """Production camera choices and shared public geography stay in sync."""
 import unittest
 
-from abyss.about import CAMERAS, OVERVIEW, REGIONAL_MAP, about_html, about_trmnl_html
+from abyss.about import CAMERAS, OVERVIEW, REGIONAL_MAP, about_html, about_trmnl_html, camera_options
 from abyss.registry import eligible, load
 
 
@@ -39,3 +39,12 @@ class CameraReleaseTests(unittest.TestCase):
             self.assertIn(camera['site_url'], html)
         self.assertIn('2244833', html)
         self.assertIn('<br><br>', html)
+
+    def test_camera_choices_match_about_even_with_old_catalog_labels(self):
+        options = [{'value': c['id'], 'label': 'Old label'} for c in reversed(CAMERAS)]
+        choices = camera_options(options)
+        self.assertEqual([(o['value'], o['label']) for o in choices],
+                         [(c['id'], c['name']) for c in CAMERAS])
+        self.assertEqual(len(camera_options(options[:1])), 1)
+        unknown = {'value': 'fixture', 'label': 'Fixture (archive)'}
+        self.assertEqual(camera_options([unknown]), [unknown])
