@@ -1,7 +1,7 @@
 """Production camera choices and shared public geography stay in sync."""
 import unittest
 
-from abyss.about import CAMERAS, OVERVIEW, REGIONAL_MAP, about_html
+from abyss.about import CAMERAS, OVERVIEW, REGIONAL_MAP, about_html, about_trmnl_html
 from abyss.registry import eligible, load
 
 
@@ -29,3 +29,13 @@ class CameraReleaseTests(unittest.TestCase):
                     self.assertIn(name, sources[camera['id']]['attribution'])
         self.assertIn('about 580 m', html)
         self.assertIn('CAMDSB106', html)
+
+    def test_trmnl_about_uses_breaks_without_relying_on_block_tags(self):
+        html = about_trmnl_html()
+        self.assertNotRegex(html, r'</?(?:p|h[1-6]|ul|li)\b')
+        self.assertIn('<strong>Choose your view</strong><br>', html)
+        for camera in CAMERAS:
+            self.assertIn('<strong>' + camera['name'].replace("'", '&#x27;') + '</strong><br>', html)
+            self.assertIn(camera['site_url'], html)
+        self.assertIn('2244833', html)
+        self.assertIn('<br><br>', html)

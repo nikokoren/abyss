@@ -1,5 +1,6 @@
 """Shared public-recipe introduction and camera geography."""
 from html import escape
+import re
 
 
 SUMMARY = 'A window into the deep ocean'
@@ -138,11 +139,22 @@ def about_html(credits=OOI_CREDIT, acknowledgments=OOI_ACKNOWLEDGMENT):
     return '\n'.join(parts)
 
 
+def about_trmnl_html(credits=OOI_CREDIT, acknowledgments=OOI_ACKNOWLEDGMENT):
+    """Use explicit breaks because TRMNL's About field removes block tags."""
+    html = about_html(credits, acknowledgments)
+    html = re.sub(r'<h[23][^>]*>(.*?)</h[23]>', r'<strong>\1</strong><br>', html)
+    html = html.replace('<p>', '').replace('</p>', '<br><br>')
+    html = html.replace('<ul>', '').replace('</ul>', '<br>')
+    html = html.replace('<li>', '').replace('</li>', '<br>')
+    html = re.sub(r'(?:<br>\s*){3,}', '<br><br>\n', html)
+    return html.rstrip().removesuffix('<br><br>').removesuffix('<br>')
+
+
 def about_field_yaml():
     """Replacement for the owner's existing TRMNL author_bio custom field."""
     lines = ['- keyname: author_bio', '  field_type: author_bio',
              '  name: About This Plugin', '  description: |']
-    lines.extend('    ' + line for line in about_html().splitlines())
+    lines.extend('    ' + line if line else '' for line in about_trmnl_html().splitlines())
     lines.extend(['  category: "discovery,education"',
                   '  email_address: "isarworks@gmail.com"'])
     return '\n'.join(lines) + '\n'

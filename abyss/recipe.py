@@ -4,7 +4,7 @@ from html import escape
 from pathlib import Path
 from urllib.parse import urlsplit
 from .publication import read_json
-from .about import OVERVIEW, SUMMARY, about_html
+from .about import OVERVIEW, SUMMARY, about_trmnl_html
 
 
 def generate(output, base_url, destination):
@@ -38,7 +38,7 @@ def generate(output, base_url, destination):
                  '    optional: true', '    default: false',
                  '    description: "Full-screen view only: scan the bottom-right overlay to open this exact image or video recording. Off by default."'])
     text.extend(['  - keyname: about_abyss', '    name: About Abyss', '    field_type: author_bio',
-                 '    description: ' + quote(about_html(credits, acknowledgments)),
+                 '    description: ' + quote(about_trmnl_html(credits, acknowledgments)),
                  '    github_url: https://github.com/nikokoren/abyss',
                  '    learn_more_url: ' + quote(base_url.rstrip('/') + '/#about')])
     Path(destination).parent.mkdir(parents=True, exist_ok=True)
