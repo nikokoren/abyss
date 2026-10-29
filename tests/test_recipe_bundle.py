@@ -29,7 +29,8 @@ class RecipeBundleTests(unittest.TestCase):
             with zipfile.ZipFile(archive) as bundle:
                 expected = {'settings.yml', 'transform.py', 'shared.liquid', 'full.liquid',
                             'half_horizontal.liquid', 'half_vertical.liquid', 'quadrant.liquid',
-                            'framework.json', 'README.md', 'settings.txt', 'about.txt'}
+                            'framework.json', 'README.md', 'settings.txt', 'about.txt',
+                            'storefront.json', 'storefront.txt'}
                 self.assertEqual(set(bundle.namelist()), expected)
                 self.assertEqual(bundle.read('transform.py'), (root / 'trmnl' / 'transform.py').read_bytes())
                 self.assertEqual(bundle.read('settings.yml'), b'serverless_language: python\n')
