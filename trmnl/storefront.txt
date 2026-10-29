@@ -1,11 +1,11 @@
 TEMPORARY STOREFRONT CAPTURE
 
 Chosen photograph
-International District: Tiny Towers hydrothermal habitat, Axial Seamount.
-Camera depth: approximately 1,520 m.
-Captured: 29 October 2026, 09:46:13 UTC.
-Camera: OOI CAMDSB303.
-The full-resolution 5344 x 4008 RGB PNG is an actual research-camera snapshot.
+Oregon Offshore: a large fish in full view, with a second slender fish below.
+Camera depth: approximately 580 m.
+Captured: 22 October 2026, 11:46:16 UTC.
+Camera: OOI CAMDSB106.
+The full-resolution 5344 x 4008 RGB JPEG is an actual research-camera snapshot.
 The static data preserves the original source URL, capture time and required
 OOI / WHOI / UW / NSF credit. TRMNL handles grayscale and dithering as usual.
 
@@ -13,7 +13,7 @@ Use with the existing polling recipe
 1. Temporarily change the polling URL to:
    https://raw.githubusercontent.com/nikokoren/abyss/main/trmnl/storefront.json
 2. Keep the GET method, Python transform and existing layouts.
-3. Clear Underwater cameras, or select International District: Tiny Towers.
+3. Clear Underwater cameras, or select Oregon Offshore: seafloor.
    Selecting another camera will produce an empty view because this payload
    deliberately contains just one camera.
 4. Leave Show QR code off for an uncluttered storefront capture.
@@ -33,5 +33,7 @@ Restore your preferred camera selections. A full recipe re-import would also
 restore its production URL; avoid doing that until after the capture.
 
 This is a temporary archived showcase image, not evidence of current conditions
-or model selection quality. Image links are pinned to a verified output commit;
-that old output snapshot is not promised permanent storage. Capture promptly.
+or model selection quality. The full-resolution JPEG is served by the original OOI archive. Its retrieval
+and decoding were verified in the seven-day GitHub-hosted sampling run. The
+credited review preview remains pinned to the sampling evidence commit.
+Codex cannot recheck current OOI access because its proxy restricts that domain.
