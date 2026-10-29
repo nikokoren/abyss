@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "batch_id": "78038bcd866547cdd113ec3b158128e9",
-  "source_id": "ooi-hydrate-ridge",
-  "source_name": "Southern Hydrate Ridge \u00b7 methane seep",
+  "batch_id": "4ed77f695eb2cddd71775bd4360fdab1",
+  "source_id": "ooi-international-district",
+  "source_name": "International District \u00b7 hydrothermal vents",
   "review_status": "ready",
   "sampled_candidate_count": 9,
-  "candidate_count": 2,
-  "similar_candidates_suppressed": 7,
+  "candidate_count": 3,
+  "similar_candidates_suppressed": 6,
   "policy": "still_appearance_structure_v1",
   "encoder": {
     "feature_space": "resnet18-imagenet1k-v1+quality-v1",
@@ -51,6 +51,8 @@
       "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/28/CAMDSB106_10.33.9.6_20261028T034616_UTC.jpg",
       "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/28/CAMDSB106_10.33.9.6_20261028T114616_UTC.jpg",
       "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/28/CAMDSB106_10.33.9.6_20261028T194616_UTC.jpg",
+      "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/29/CAMDSB103_10.33.7.5_20261029T114621_UTC.jpg",
+      "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/29/CAMDSB103_10.33.7.5_20261029T131621_UTC.jpg",
       "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/10/27/CAMHDA301-20261027T151500.mp4",
       "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/10/27/CAMHDA301-20261027T181500.mp4",
       "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/10/27/CAMHDA301-20261027T211500.mp4",
@@ -66,14 +68,14 @@
     "recorded_after": null,
     "fresh_recordings_only": false,
     "scope": "frozen_rankings_on_the_same_candidate_pool",
-    "model_id": "81547f99eb5efaf3a83c0f1c14198d2b598b354ac3cc5e08a46f3e41150e97d7",
+    "model_id": "df11ad7262a55de40a494f67a77217f84a814484b2342dc4ce6a301f34295ee9",
     "eligible": false
   },
   "reviewer": "nikokoren",
   "diagnostics": {
     "strategy": "recent_snapshots",
     "preference": {
-      "model_id": "81547f99eb5efaf3a83c0f1c14198d2b598b354ac3cc5e08a46f3e41150e97d7",
+      "model_id": "df11ad7262a55de40a494f67a77217f84a814484b2342dc4ce6a301f34295ee9",
       "status": "active",
       "error": null
     },
@@ -82,17 +84,17 @@
     "coarse_extracted": 9,
     "images_extracted": 9,
     "fine_extracted": 0,
-    "bytes_downloaded": 75108142,
+    "bytes_downloaded": 179330593,
     "byte_budget": 226492416,
     "upstream_requests": 9,
     "search_complete": true,
     "budget_exhausted": false,
-    "elapsed_seconds": 65.625,
+    "elapsed_seconds": 60.74,
     "recordings": [
       {
         "recording": {
-          "url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/29/CAMDSB103_10.33.7.5_20261029T131621_UTC.jpg",
-          "recorded_at": "2026-10-29T13:16:21+00:00",
+          "url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/29/CAMDSB303_10.31.8.5_20261029T144619_UTC.jpg",
+          "recorded_at": "2026-10-29T14:46:19+00:00",
           "media_type": "image"
         },
         "complete": true,
@@ -102,7 +104,7 @@
         "coarse_extracted": 1,
         "fine_requested": 0,
         "fine_extracted": 0,
-        "bytes_downloaded": 5388214,
+        "bytes_downloaded": 20039402,
         "upstream_requests": 1,
         "errors": [],
         "decoded_size": [
@@ -117,8 +119,8 @@
       },
       {
         "recording": {
-          "url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/29/CAMDSB103_10.33.7.5_20261029T121621_UTC.jpg",
-          "recorded_at": "2026-10-29T12:16:21+00:00",
+          "url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/29/CAMDSB303_10.31.8.5_20261029T141618_UTC.jpg",
+          "recorded_at": "2026-10-29T14:16:18+00:00",
           "media_type": "image"
         },
         "complete": true,
@@ -128,7 +130,7 @@
         "coarse_extracted": 1,
         "fine_requested": 0,
         "fine_extracted": 0,
-        "bytes_downloaded": 8729546,
+        "bytes_downloaded": 20002685,
         "upstream_requests": 1,
         "errors": [],
         "decoded_size": [
@@ -143,8 +145,8 @@
       },
       {
         "recording": {
-          "url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/29/CAMDSB103_10.33.7.5_20261029T114621_UTC.jpg",
-          "recorded_at": "2026-10-29T11:46:21+00:00",
+          "url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/29/CAMDSB303_10.31.8.5_20261029T134618_UTC.jpg",
+          "recorded_at": "2026-10-29T13:46:18+00:00",
           "media_type": "image"
         },
         "complete": true,
@@ -154,7 +156,7 @@
         "coarse_extracted": 1,
         "fine_requested": 0,
         "fine_extracted": 0,
-        "bytes_downloaded": 8723198,
+        "bytes_downloaded": 19884735,
         "upstream_requests": 1,
         "errors": [],
         "decoded_size": [
@@ -169,8 +171,8 @@
       },
       {
         "recording": {
-          "url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/29/CAMDSB103_10.33.7.5_20261029T111621_UTC.jpg",
-          "recorded_at": "2026-10-29T11:16:21+00:00",
+          "url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/29/CAMDSB303_10.31.8.5_20261029T131618_UTC.jpg",
+          "recorded_at": "2026-10-29T13:16:18+00:00",
           "media_type": "image"
         },
         "complete": true,
@@ -180,7 +182,7 @@
         "coarse_extracted": 1,
         "fine_requested": 0,
         "fine_extracted": 0,
-        "bytes_downloaded": 8749403,
+        "bytes_downloaded": 19844942,
         "upstream_requests": 1,
         "errors": [],
         "decoded_size": [
@@ -195,8 +197,8 @@
       },
       {
         "recording": {
-          "url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/29/CAMDSB103_10.33.7.5_20261029T104621_UTC.jpg",
-          "recorded_at": "2026-10-29T10:46:21+00:00",
+          "url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/29/CAMDSB303_10.31.8.5_20261029T124618_UTC.jpg",
+          "recorded_at": "2026-10-29T12:46:18+00:00",
           "media_type": "image"
         },
         "complete": true,
@@ -206,7 +208,7 @@
         "coarse_extracted": 1,
         "fine_requested": 0,
         "fine_extracted": 0,
-        "bytes_downloaded": 8676332,
+        "bytes_downloaded": 19745951,
         "upstream_requests": 1,
         "errors": [],
         "decoded_size": [
@@ -221,8 +223,8 @@
       },
       {
         "recording": {
-          "url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/29/CAMDSB103_10.33.7.5_20261029T101622_UTC.jpg",
-          "recorded_at": "2026-10-29T10:16:22+00:00",
+          "url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/29/CAMDSB303_10.31.8.5_20261029T121618_UTC.jpg",
+          "recorded_at": "2026-10-29T12:16:18+00:00",
           "media_type": "image"
         },
         "complete": true,
@@ -232,7 +234,7 @@
         "coarse_extracted": 1,
         "fine_requested": 0,
         "fine_extracted": 0,
-        "bytes_downloaded": 8679779,
+        "bytes_downloaded": 19858416,
         "upstream_requests": 1,
         "errors": [],
         "decoded_size": [
@@ -247,8 +249,8 @@
       },
       {
         "recording": {
-          "url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/29/CAMDSB103_10.33.7.5_20261029T094621_UTC.jpg",
-          "recorded_at": "2026-10-29T09:46:21+00:00",
+          "url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/29/CAMDSB303_10.31.8.5_20261029T114618_UTC.jpg",
+          "recorded_at": "2026-10-29T11:46:18+00:00",
           "media_type": "image"
         },
         "complete": true,
@@ -258,7 +260,7 @@
         "coarse_extracted": 1,
         "fine_requested": 0,
         "fine_extracted": 0,
-        "bytes_downloaded": 8722797,
+        "bytes_downloaded": 19949828,
         "upstream_requests": 1,
         "errors": [],
         "decoded_size": [
@@ -273,8 +275,8 @@
       },
       {
         "recording": {
-          "url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/29/CAMDSB103_10.33.7.5_20261029T091621_UTC.jpg",
-          "recorded_at": "2026-10-29T09:16:21+00:00",
+          "url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/29/CAMDSB303_10.31.8.5_20261029T111618_UTC.jpg",
+          "recorded_at": "2026-10-29T11:16:18+00:00",
           "media_type": "image"
         },
         "complete": true,
@@ -284,7 +286,7 @@
         "coarse_extracted": 1,
         "fine_requested": 0,
         "fine_extracted": 0,
-        "bytes_downloaded": 8707715,
+        "bytes_downloaded": 20020225,
         "upstream_requests": 1,
         "errors": [],
         "decoded_size": [
@@ -299,8 +301,8 @@
       },
       {
         "recording": {
-          "url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/29/CAMDSB103_10.33.7.5_20261029T084621_UTC.jpg",
-          "recorded_at": "2026-10-29T08:46:21+00:00",
+          "url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/29/CAMDSB303_10.31.8.5_20261029T104618_UTC.jpg",
+          "recorded_at": "2026-10-29T10:46:18+00:00",
           "media_type": "image"
         },
         "complete": true,
@@ -310,7 +312,7 @@
         "coarse_extracted": 1,
         "fine_requested": 0,
         "fine_extracted": 0,
-        "bytes_downloaded": 8731158,
+        "bytes_downloaded": 19984409,
         "upstream_requests": 1,
         "errors": [],
         "decoded_size": [
@@ -326,220 +328,220 @@
     ],
     "candidate_scores": [
       {
-        "recording_url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/29/CAMDSB103_10.33.7.5_20261029T131621_UTC.jpg",
+        "recording_url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/29/CAMDSB303_10.31.8.5_20261029T144619_UTC.jpg",
         "frame_seconds": 0,
         "stage": "snapshot",
-        "selection_score": 0.0335391,
-        "preference_score": 0.0745313,
-        "score": 0,
-        "base_score": 0,
-        "brightness": 0.025921032475490196,
-        "clipped": 0.5730712890625,
-        "sharpness": 0.01564531579928908,
-        "contrast": 0.07094500726180517,
+        "selection_score": 0.5775637,
+        "preference_score": 0.2236126,
+        "score": 0.86716,
+        "base_score": 0.86716,
+        "brightness": 0.3215379901960784,
+        "clipped": 0.0458740234375,
+        "sharpness": 1,
+        "contrast": 1,
         "similarity": 0,
-        "fingerprint": "1010110000000000011110100000000011111110000000000111111100000000111111100000000011111110000000001111110100000000111111110000000011111111000000001111111010000000111111000100000011111011000000001111111100000000111111100000000011011010000000000101010000000000"
+        "fingerprint": "0110110100001010111111110000111011111110000010011110011111100010111111101010010011111000011011001111000000111000111000011101100011100110101000001110010110101000111001010011100001110111001010000101011110010000011011110010000111101100101001001110111000110100"
       },
       {
-        "recording_url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/29/CAMDSB103_10.33.7.5_20261029T121621_UTC.jpg",
+        "recording_url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/29/CAMDSB303_10.31.8.5_20261029T141618_UTC.jpg",
         "frame_seconds": 0,
         "stage": "snapshot",
-        "selection_score": 0.5664065,
-        "preference_score": 0.229323,
-        "score": 0.842202,
-        "base_score": 0.842202,
-        "brightness": 0.3252585018382353,
-        "clipped": 0.057373046875,
+        "selection_score": 0.5649306,
+        "preference_score": 0.2193212,
+        "score": 0.847702,
+        "base_score": 0.847702,
+        "brightness": 0.31760703890931374,
+        "clipped": 0.065625,
         "sharpness": 1,
-        "contrast": 0.9719849298465416,
+        "contrast": 1,
         "similarity": 0,
-        "fingerprint": "0110101110100000110111111000000001111001010000001101101001000000110110100100000000010001100000001011001110000000001101101000000011111100100000011011000010010000101110100010000010011010000000001110000000011000111000011110100010100011111000000010011100010000"
+        "fingerprint": "1101111000001010111111110000111011111110000011001110011110100010011111101010010011111000011011001111000000111000111000011101100011100110101000001110010110101000111001010011100001110111001010000101011110010000011010110010000111101100101001001110111000110100"
       },
       {
-        "recording_url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/29/CAMDSB103_10.33.7.5_20261029T114621_UTC.jpg",
+        "recording_url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/29/CAMDSB303_10.31.8.5_20261029T134618_UTC.jpg",
         "frame_seconds": 0,
         "stage": "snapshot",
-        "selection_score": 0.5689131,
-        "preference_score": 0.2200764,
-        "score": 0.854325,
-        "base_score": 0.854325,
-        "brightness": 0.328322323069853,
-        "clipped": 0.0458984375,
+        "selection_score": 0.5639029,
+        "preference_score": 0.223195,
+        "score": 0.842664,
+        "base_score": 0.842664,
+        "brightness": 0.3180851715686274,
+        "clipped": 0.07060546875,
         "sharpness": 1,
-        "contrast": 0.973877293262997,
+        "contrast": 1,
         "similarity": 0,
-        "fingerprint": "1101001100100000110111111000000001111001010000001101101001000000110110100100100000010001100000001011001110000000001001101000000011111100100000011011000010010000101110100010000010011010000000001110000000011000111000011110100010100011111000000010011100010000"
+        "fingerprint": "1101111100001010111111110000101011111110000011001110011110100010011111101010010011111000011011001110000000111000111000011101100011100110101000001110010110101000111001010011100001110111001010000101011110010000011011110010010111101100101001001110111000110100"
       },
       {
-        "recording_url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/29/CAMDSB103_10.33.7.5_20261029T111621_UTC.jpg",
+        "recording_url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/29/CAMDSB303_10.31.8.5_20261029T131618_UTC.jpg",
         "frame_seconds": 0,
         "stage": "snapshot",
-        "selection_score": 0.5635005,
-        "preference_score": 0.2283225,
-        "score": 0.837737,
-        "base_score": 0.837737,
-        "brightness": 0.32313447840073534,
-        "clipped": 0.0599853515625,
+        "selection_score": 0.5743453,
+        "preference_score": 0.235118,
+        "score": 0.851895,
+        "base_score": 0.851895,
+        "brightness": 0.3204316980698529,
+        "clipped": 0.06142578125,
         "sharpness": 1,
-        "contrast": 0.9688755703596555,
+        "contrast": 1,
         "similarity": 0,
-        "fingerprint": "1101101110100000110101111000000011111001010000001101101001000000110110100100100000010001100000001011001110000000001101101000000011111100100000011011000010010000101110100010000010011010000000001110000000011000111000011110100010100011111000000010011100010000"
+        "fingerprint": "1111111100001010111111100000001011111110000011001110011110100010011111101010010011111000011011001111000000111000111000011101100011100110101000001110010110101000111001010011100001110111001010000101011110000100011011110010010111101100101001001110111000110100"
       },
       {
-        "recording_url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/29/CAMDSB103_10.33.7.5_20261029T104621_UTC.jpg",
+        "recording_url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/29/CAMDSB303_10.31.8.5_20261029T124618_UTC.jpg",
         "frame_seconds": 0,
         "stage": "snapshot",
-        "selection_score": 0.550466,
-        "preference_score": 0.2243624,
-        "score": 0.817278,
-        "base_score": 0.817278,
-        "brightness": 0.3264872472426471,
-        "clipped": 0.090576171875,
+        "selection_score": 0.5703137,
+        "preference_score": 0.2237266,
+        "score": 0.853885,
+        "base_score": 0.853885,
+        "brightness": 0.3234012140012255,
+        "clipped": 0.0605712890625,
         "sharpness": 1,
-        "contrast": 0.9878040726471723,
+        "contrast": 1,
         "similarity": 0,
-        "fingerprint": "0110010110100000110101111000000001111001010000001101101001000010110110100100000000010001100000001011001110000000001111101000000011111100100100011011000010010000101110100010000010011010000000001110000000011000111000011110100010100011111000000010011101010000"
+        "fingerprint": "1111111000001010111111110000111011111110000010011100011111100010011111101010010011111000011011001110000000111000111000011101100011100110101000001110010110101000111001010011100001110111001010000101011110010000011011110010010111101100101001001110111000110100"
       },
       {
-        "recording_url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/29/CAMDSB103_10.33.7.5_20261029T101622_UTC.jpg",
+        "recording_url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/29/CAMDSB303_10.31.8.5_20261029T121618_UTC.jpg",
         "frame_seconds": 0,
         "stage": "snapshot",
-        "selection_score": 0.5532741,
-        "preference_score": 0.2243902,
-        "score": 0.822361,
-        "base_score": 0.822361,
-        "brightness": 0.3264301853553922,
-        "clipped": 0.0849365234375,
+        "selection_score": 0.5764801,
+        "preference_score": 0.2309127,
+        "score": 0.859217,
+        "base_score": 0.859217,
+        "brightness": 0.32307875689338234,
+        "clipped": 0.0548828125,
         "sharpness": 1,
-        "contrast": 0.9849380534449521,
+        "contrast": 1,
         "similarity": 0,
-        "fingerprint": "1100101110100000110111111000000001111001010000001101101001000000110110100100100000010001100000001011001110000000001111101000000011111100100000011011000110010000101110100010000010011010000000001110000000011000111000011110100010100011111000000010011101010000"
+        "fingerprint": "0111111100001010111111010000011011111011000011011110011110100010011111101010010011111000011011001110000000111000111000011101100011100110101000001110010110101000111001010011100001110111001010000101011110010000011011110010010111101100101001001110111000110100"
       },
       {
-        "recording_url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/29/CAMDSB103_10.33.7.5_20261029T094621_UTC.jpg",
+        "recording_url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/29/CAMDSB303_10.31.8.5_20261029T114618_UTC.jpg",
         "frame_seconds": 0,
         "stage": "snapshot",
-        "selection_score": 0.5490772,
-        "preference_score": 0.2231964,
-        "score": 0.815707,
-        "base_score": 0.815707,
-        "brightness": 0.3213431564031863,
-        "clipped": 0.08603515625,
+        "selection_score": 0.5795036,
+        "preference_score": 0.2181738,
+        "score": 0.875137,
+        "base_score": 0.875137,
+        "brightness": 0.32326545266544116,
+        "clipped": 0.0343505859375,
         "sharpness": 1,
-        "contrast": 0.9714673603235046,
+        "contrast": 0.9971864929598705,
         "similarity": 0,
-        "fingerprint": "0110101110100000110111111000000001111001010000001101101001000000110110100100100000010001100000001011001110000000001111101000000011111100100100011011100110010000101110100010000010011010000000001110000000011000111000011110100010100011111000000010011101010000"
+        "fingerprint": "1111110000001010111111000000011011101110000010011110010110100010011111101010000110111000011001001011000010111000111000011101100011100110101000001110010110101000111001010011100101110111001010000101011110010000011010110010010111101100101001001110111000110100"
       },
       {
-        "recording_url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/29/CAMDSB103_10.33.7.5_20261029T091621_UTC.jpg",
+        "recording_url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/29/CAMDSB303_10.31.8.5_20261029T111618_UTC.jpg",
         "frame_seconds": 0,
         "stage": "snapshot",
-        "selection_score": 0.5558568,
-        "preference_score": 0.2257283,
-        "score": 0.825962,
-        "base_score": 0.825962,
-        "brightness": 0.325801451439951,
-        "clipped": 0.080126953125,
+        "selection_score": 0.5876427,
+        "preference_score": 0.2237379,
+        "score": 0.885383,
+        "base_score": 0.885383,
+        "brightness": 0.3282170075061275,
+        "clipped": 0.026708984375,
         "sharpness": 1,
-        "contrast": 0.9788497148550684,
+        "contrast": 0.998375943298655,
         "similarity": 0,
-        "fingerprint": "1100100110100000110101111000000001111001010000001101101001000000110110100100000000010001100000001011001110000000001111101000000011111100100100011011100110010000101110100010000010011010000000001110000000011000111000011110100010100011111000000010011101010000"
+        "fingerprint": "1111111110001010111101110010001011101110000010111110011110100010011111101010000111111000011011001110000000111000111000011101100011100110101000001110010110111000111001010011100001110111001010000101011110010000011011110010000111101100101001001110111000110100"
       },
       {
-        "recording_url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/29/CAMDSB103_10.33.7.5_20261029T084621_UTC.jpg",
+        "recording_url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/29/CAMDSB303_10.31.8.5_20261029T104618_UTC.jpg",
         "frame_seconds": 0,
         "stage": "snapshot",
-        "selection_score": 0.5602029,
-        "preference_score": 0.2230601,
-        "score": 0.836047,
-        "base_score": 0.836047,
-        "brightness": 0.3247231158088235,
-        "clipped": 0.065234375,
+        "selection_score": 0.5846326,
+        "preference_score": 0.2185143,
+        "score": 0.884184,
+        "base_score": 0.884184,
+        "brightness": 0.3280638212316177,
+        "clipped": 0.0234375,
         "sharpness": 1,
-        "contrast": 0.9702172394819216,
+        "contrast": 0.9881473408800309,
         "similarity": 0,
-        "fingerprint": "1110111110100000110110111000000001111001010000001101101001000000110110100100000000010001100000001011001110000000001101101000000011111100100000011011100110010000101110100010000010011010000000001110000000011000111000011110100010100011111000000010011101010000"
+        "fingerprint": "0111111100001010111110110000001011110110000011111110011101100010011111101010010011111000001001001110000001111000111000011101100011100110101000001110010110100000111001110011100101110111001010000101011110010000011010110010010111101100101001001110111000110100"
       }
     ],
     "session_winners": [
       {
-        "recording_url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/29/CAMDSB103_10.33.7.5_20261029T131621_UTC.jpg",
+        "recording_url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/29/CAMDSB303_10.31.8.5_20261029T144619_UTC.jpg",
         "frame_seconds": 0,
-        "quality_score": 0,
-        "selection_score": 0.0335391,
-        "accepted": false
-      },
-      {
-        "recording_url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/29/CAMDSB103_10.33.7.5_20261029T121621_UTC.jpg",
-        "frame_seconds": 0,
-        "quality_score": 0.842202,
-        "selection_score": 0.5664065,
+        "quality_score": 0.86716,
+        "selection_score": 0.5775637,
         "accepted": true
       },
       {
-        "recording_url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/29/CAMDSB103_10.33.7.5_20261029T114621_UTC.jpg",
+        "recording_url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/29/CAMDSB303_10.31.8.5_20261029T141618_UTC.jpg",
         "frame_seconds": 0,
-        "quality_score": 0.854325,
-        "selection_score": 0.5689131,
+        "quality_score": 0.847702,
+        "selection_score": 0.5649306,
         "accepted": true
       },
       {
-        "recording_url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/29/CAMDSB103_10.33.7.5_20261029T111621_UTC.jpg",
+        "recording_url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/29/CAMDSB303_10.31.8.5_20261029T134618_UTC.jpg",
         "frame_seconds": 0,
-        "quality_score": 0.837737,
-        "selection_score": 0.5635005,
+        "quality_score": 0.842664,
+        "selection_score": 0.5639029,
         "accepted": true
       },
       {
-        "recording_url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/29/CAMDSB103_10.33.7.5_20261029T104621_UTC.jpg",
+        "recording_url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/29/CAMDSB303_10.31.8.5_20261029T131618_UTC.jpg",
         "frame_seconds": 0,
-        "quality_score": 0.817278,
-        "selection_score": 0.550466,
+        "quality_score": 0.851895,
+        "selection_score": 0.5743453,
         "accepted": true
       },
       {
-        "recording_url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/29/CAMDSB103_10.33.7.5_20261029T101622_UTC.jpg",
+        "recording_url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/29/CAMDSB303_10.31.8.5_20261029T124618_UTC.jpg",
         "frame_seconds": 0,
-        "quality_score": 0.822361,
-        "selection_score": 0.5532741,
+        "quality_score": 0.853885,
+        "selection_score": 0.5703137,
         "accepted": true
       },
       {
-        "recording_url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/29/CAMDSB103_10.33.7.5_20261029T094621_UTC.jpg",
+        "recording_url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/29/CAMDSB303_10.31.8.5_20261029T121618_UTC.jpg",
         "frame_seconds": 0,
-        "quality_score": 0.815707,
-        "selection_score": 0.5490772,
+        "quality_score": 0.859217,
+        "selection_score": 0.5764801,
         "accepted": true
       },
       {
-        "recording_url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/29/CAMDSB103_10.33.7.5_20261029T091621_UTC.jpg",
+        "recording_url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/29/CAMDSB303_10.31.8.5_20261029T114618_UTC.jpg",
         "frame_seconds": 0,
-        "quality_score": 0.825962,
-        "selection_score": 0.5558568,
+        "quality_score": 0.875137,
+        "selection_score": 0.5795036,
         "accepted": true
       },
       {
-        "recording_url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/29/CAMDSB103_10.33.7.5_20261029T084621_UTC.jpg",
+        "recording_url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/29/CAMDSB303_10.31.8.5_20261029T111618_UTC.jpg",
         "frame_seconds": 0,
-        "quality_score": 0.836047,
-        "selection_score": 0.5602029,
+        "quality_score": 0.885383,
+        "selection_score": 0.5876427,
+        "accepted": true
+      },
+      {
+        "recording_url": "https://rawdata.oceanobservatories.org/files/RS03INT1/MJ03C/CAMDSB303/2026/10/29/CAMDSB303_10.31.8.5_20261029T104618_UTC.jpg",
+        "frame_seconds": 0,
+        "quality_score": 0.884184,
+        "selection_score": 0.5846326,
         "accepted": true
       }
     ],
-    "gallery_elapsed_seconds": 68.941,
+    "gallery_elapsed_seconds": 64.431,
     "capture_times": [
-      "2026-10-29T13:16:21+00:00",
-      "2026-10-29T12:16:21+00:00",
-      "2026-10-29T11:46:21+00:00",
-      "2026-10-29T11:16:21+00:00",
-      "2026-10-29T10:46:21+00:00",
-      "2026-10-29T10:16:22+00:00",
-      "2026-10-29T09:46:21+00:00",
-      "2026-10-29T09:16:21+00:00",
-      "2026-10-29T08:46:21+00:00"
+      "2026-10-29T14:46:19+00:00",
+      "2026-10-29T14:16:18+00:00",
+      "2026-10-29T13:46:18+00:00",
+      "2026-10-29T13:16:18+00:00",
+      "2026-10-29T12:46:18+00:00",
+      "2026-10-29T12:16:18+00:00",
+      "2026-10-29T11:46:18+00:00",
+      "2026-10-29T11:16:18+00:00",
+      "2026-10-29T10:46:18+00:00"
     ]
   },
-  "run_url": "https://github.com/nikokoren/abyss/actions/runs/40903725930",
+  "run_url": "https://github.com/nikokoren/abyss/actions/runs/40904391967",
   "artifact_name": "abyss-review-gallery",
   "public_pages_publication": false,
   "distribution": "GitHub Actions review artifact; access follows repository artifact permissions"
