@@ -9,11 +9,11 @@
     </div>
     {% if camera.display_credit %}<span class="label label--small w--full shrink-0">{{ camera.display_credit | escape }}</span>{% endif %}
     {% if camera.fixture %}<span class="label label--small label--outline shrink-0">Synthetic fixture</span>{% endif %}
-    {% if camera.available == false or camera.stale %}<span class="label label--small label--outline shrink-0">Last good image · update delayed</span>{% endif %}
+    {% if camera.available == false or camera.stale %}<span class="label label--small label--outline shrink-0">Holding steady · update delayed</span>{% endif %}
   {% else %}
     <div class="flex flex--col flex--center gap--small">
-      <span class="title">A window below.</span>
-      <span class="description" data-clamp="3">{% if abyss_ready %}No image is available for the selected feeds yet.{% else %}Abyss setup is incomplete. Import the updated recipe, including its transform.{% endif %}</span>
+      <span class="title">Between dives.</span>
+      <span class="description" data-clamp="3">{% if abyss_ready %}No images have surfaced for these cameras yet.{% else %}Not quite shipshape. Import the full recipe, including its transform.{% endif %}</span>
     </div>
   {% endif %}
 </div>

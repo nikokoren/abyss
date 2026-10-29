@@ -85,13 +85,13 @@ class TrmnlTests(unittest.TestCase):
         for layout in LAYOUTS:
             text = render(layout, data, 'ooi-axial')
             self.assertIn('https://example.invalid/ocean.png', text)
-            self.assertIn('Last good image · update delayed', text)
+            self.assertIn('Holding steady · update delayed', text)
             self.assertIn('~1,540 m', text)
 
     def test_empty_catalog_has_native_empty_state_without_an_image(self):
         for layout in LAYOUTS:
             text = render(layout, {'sources': {}, 'default_image': None})
-            self.assertIn('No image is available for the selected feeds yet', text)
+            self.assertIn('No images have surfaced for these cameras yet', text)
             self.assertNotIn('<img', text)
             self.assertNotIn('Periodic recording', text)
 
