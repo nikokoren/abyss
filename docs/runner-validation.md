@@ -1,5 +1,10 @@
 # Validate on the deployment runner
 
+This workflow is a bounded technical diagnostic. Current four-camera production,
+rights approval and Pages readiness are recorded in [validation.md](validation.md).
+Its 800 × 448 inspection output below is not the production delivery format;
+production retains source-resolution RGB images and delegates dithering to TRMNL.
+
 Source accessibility, compute compatibility, and redistribution rights are
 independent checks. Codex's allowlist is not the GitHub-hosted runner's network
 policy. A Codex CONNECT 403 cannot invalidate an OOI success observed elsewhere.

@@ -7,17 +7,19 @@ OOI's status. First complete source access, timestamp, actual-frame, partial
 retrieval, and rights checks in [sources.md](sources.md). Cloud publication and TRMNL installation require the account-level steps below.
 Local tests do not establish hosted deployment readiness.
 
-OOI's technical validation and [derived-still rights review](ooi-rights-review.md)
-are complete; `ooi-axial` is enabled with embedded NSF/WHOI/UW credit. Filename
-timestamps retain an explicit UTC assumption. Hosting and physical TRMNL checks
-are still outstanding.
+The four production cameras have passed technical and attributed-still reuse
+review. Pages is deployed at https://nikokoren.github.io/abyss, and hosted live
+verification has passed. ASHES video filenames retain an explicit UTC assumption;
+the still-camera filenames explicitly declare UTC. Physical-device checks remain
+unrecorded. See [current validation](validation.md) and the
+[publication handoff](publication.md).
 
-The network additions are saved in the environment draft. Review and save them
-in environment settings to apply them, then retry `inspect`. Publish the cloud
-environment when satisfied with setup; publication is separate from code hosting
-and GitHub Pages deployment. Never paste keys into chat or source files.
+For a new Codex environment, use its network settings if local source inspection
+is required. Saving a draft does not apply network access. Environment snapshot
+publication is separate from GitHub Pages deployment and TRMNL recipe submission.
+Never paste credentials into chat or source files.
 
-## GitHub deployment
+## Configure a new GitHub deployment
 
 1. Code and the OOI approval are pushed to this repository's default `main`
    branch. Review the source registry and linked evidence before deployment.
@@ -27,8 +29,8 @@ and GitHub Pages deployment. Never paste keys into chat or source files.
    controls before scheduling; no account-specific cost guarantee has been made.
 3. In repository **Settings → Pages**, select **GitHub Actions** as the source.
    Set repository Actions variable `PUBLIC_BASE_URL` to the actual public HTTPS
-   site root, e.g. `https://OWNER.github.io/abyss` (or the configured custom
-   domain). This is a non-secret variable. Public URLs must not require login.
+   site root: `https://nikokoren.github.io/abyss` for this repository (or the
+   configured custom domain). This is a non-secret variable. Public URLs must not require login.
 4. Validate and enable one real source in the registry. Use workflow_dispatch to
    run **Process and publish ocean stills**. The pipeline retains source state
    and last-good images on the dedicated `ocean-output` branch. Do not apply
@@ -50,7 +52,7 @@ and GitHub Pages deployment. Never paste keys into chat or source files.
 
 Schedule: every three hours at 00:23, 03:23, 06:23, 09:23, 12:23, 15:23,
 18:23 and 21:23 UTC, away from the top of the hour. In Europe/Berlin on
-2026-10-28 this is 01:23, 04:23, 07:23, 10:23, 13:23, 16:23, 19:23 and
+29 October 2026 this is 01:23, 04:23, 07:23, 10:23, 13:23, 16:23, 19:23 and
 22:23 CET; daylight-saving changes affect local time.
 Native template, recipe and site-builder pushes also trigger deployment.
 Scheduled jobs may run late or be dropped; a manual run is the recovery path.

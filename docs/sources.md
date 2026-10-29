@@ -1,28 +1,21 @@
 # Source discovery audit
 
-**Latest camera expansion:** Southern Hydrate Ridge and International District
-still cameras are now enabled alongside Axial HD. Six new OOI cameras were
-retrieved and decoded on GitHub runners; four remain held for image quality.
-ONC authentication, MBARI permission requirements and NOAA's public-domain
-video portal are recorded in [the additional-camera audit](additional-cameras.md).
+**Current production, 29 October 2026:** four OOI cameras are enabled in this
+order: ASHES: Mushroom vent, International District: Tiny Towers, Southern
+Hydrate Ridge: Einstein's Grotto, and Oregon Offshore: seafloor. Technical access,
+full-resolution decoding and attributed derived-still reuse were reviewed on
+GitHub runners. Oregon Shelf and both water-column cameras remain on quality
+hold. See [camera evidence](additional-cameras.md), [rights review](ooi-rights-review.md)
+and [current validation](validation.md).
 
-**Current status, 28 October 2026:** OOI CAMHDA301 passed the
-[reuse/attribution review](ooi-rights-review.md) using official documents
-retrieved on GitHub runners. It is eligible for attributed derived-still
-publication. Other candidates remain research-only. The initial audit and
-follow-up measurements below preserve their historical conclusions.
+ONC, NOAA and MBARI remain research leads without enabled production feeds.
+Codex network restrictions are separate from upstream availability and rights.
+Original requirements are retained in [requirements.md](requirements.md).
+The initial audit and dated measurements below preserve their original scope;
+early pending-rights/discovery decisions have been superseded for the four
+published OOI cameras.
 
-Audit date: 2026-10-27. **Update:** OOI access, byte ranges and a visible
-vent frame are user-verified on a Mac. GitHub-hosted retrieval and four FFmpeg
-seeks also passed; the remaining release review is separate
-from Codex network reachability. See [runner validation](runner-validation.md).
-
-The initial audit below records what was observable in Codex before that evidence
-was supplied. This is an evidence ledger, not a claim that all candidate
-institutions have been investigated successfully. Original product requirements
-are saved in [requirements.md](requirements.md).
-
-## Access evidence
+## Initial Codex access evidence — 27 October 2026
 
 - The supplied OOI MP4 and archive directory were requested via the managed HTTPS
   proxy. Both returned `CONNECT tunnel failed, response 403` before origin access.
@@ -35,7 +28,7 @@ are saved in [requirements.md](requirements.md).
   recipe export were inspected to establish settings shape. This is not an
   end-to-end TRMNL cloud render test.
 
-## Candidate comparison and initial shortlist
+## Initial shortlist — historical
 
 | Candidate | Location / subject | Access strategy to investigate | Cadence / latency | Reuse / attribution | Decision |
 |---|---|---|---|---|---|
@@ -50,10 +43,9 @@ Links: [OOI archive](https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B
 [ONC](https://www.oceannetworks.ca/), [MBARI](https://www.mbari.org/).
 These are discovery leads, not citations asserting verified technical properties.
 
-At the initial audit, all four registry candidates were excluded from public recipe release pending rights/retrieval requirements specific to each source. None is permanently
-rejected as a scientific source. They are rejected from the **initial dropdown**
-because rights review remains incomplete for OOI, and the other candidates lack both technical and rights validation. No suitable second or
-third source has yet been established; the two-source behavior is fixture-tested.
+At the initial audit, no scientific source was eligible for release. The later
+OOI rights review and four-camera deployment supersede that decision. Other
+institutions still need independent technical and reuse validation.
 
 ## Required real-source measurements
 
@@ -65,17 +57,18 @@ budgeted run to file size; a range header alone does not establish efficiency.
 Confirm whether MP4 metadata is at the head or tail and test both cases.
 Measure recording/publication cadence by observing at least two directory updates.
 Do not derive publication delay solely from a recording filename. Confirm the
-filename timezone with source documentation. The adapter currently assumes UTC
-and leaves discovery behind a validation gate until that is confirmed.
+filename timezone with source documentation. Production ASHES timestamps are explicitly marked as assumed UTC; still-camera
+filenames declare UTC. Do not describe the ASHES interpretation as confirmed.
 
 Read institutional terms and follow linked dataset licenses. Record the exact
 rights text/link, review date, allowed derived-still use and required attribution.
 A manual `terms_reviewed_at` is a record of a real review, not a toggle to bypass it.
 If rights remain ambiguous, obtain permission or keep the source disabled.
 
-Compare ordered, Floyd, threshold and grayscale on actual scenes and a physical
-device before treating the rendering defaults as tuned. Actual ocean image
-quality, bandwidth and pan coverage remain unknown.
+Production preserves full-resolution colour and lets TRMNL scale and dither it.
+Alternative rendering modes are inspection tools. Use the recorded runner
+measurements for bandwidth and search coverage; physical-device readability
+still needs confirmation.
 
 ## User-provided verification (accepted, separate provenance)
 
@@ -90,8 +83,8 @@ distinct from the subsequent agent-observed GitHub runner report.
 A later Codex retry still returned proxy CONNECT 403 before origin access.
 GitHub-hosted validation runs independently of that restriction. Its metadata
 report on the `source-validation` branch is authoritative for that runner/run,
-not an inference from either the Mac or Codex. OOI's release status is
-`pending_rights_review`, rather than blocked solely by Codex infrastructure.
+not an inference from either the Mac or Codex. OOI's release status was `pending_rights_review` at this technical checkpoint;
+the subsequent attributed-still rights review approved production use.
 
 ## GitHub-hosted result (observed)
 
@@ -109,7 +102,7 @@ measured validation time was 20.072 seconds, excluding runner setup.
 The first low-detail frame scored zero; the others scored .887889, .897527
 and .938558. No semantic subject claim is inferred from those quality scores.
 
-No imagery was uploaded or published. Rights/attribution, filename timezone,
+No imagery was uploaded or published by that validation workflow. Rights/attribution, filename timezone,
 recurring directory discovery and cadence remain separate checks. Codex's
 continued CONNECT denial does not override this deployment-environment success.
 

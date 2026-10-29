@@ -102,12 +102,15 @@ been measured; monitor runner usage, transfer and retained output as cadence inc
 
 ## Estimates — not measured live-source usage
 
-For N video sources at eight runs/day over 30 days:
+For N video sources at eight runs/day over 30 days (production has one video
+camera and three still cameras):
 
 - Max attempted video payload at the production search cap: N × 240 × 96 MiB = **22.5 × N GiB/month**,
   plus bounded discovery pages and protocol overhead. Identical/rejected known
   recordings are skipped before video transfer. Startup races or failed runs
   may still transfer data again.
+- Still-camera payload is separately capped at 48 MiB/search: up to **11.25 GiB
+  per still camera/month** at 240 searches, before skips, caching and overhead.
 - If a measured run takes 8 minutes: 1,920 runner-minutes/month. The 20-minute
   job ceiling is 4,800 minutes/month for the shared scheduled job, plus CI/manual
   jobs. This is not a private-plan free-tier entitlement.
@@ -120,8 +123,11 @@ For N video sources at eight runs/day over 30 days:
   RGB delivery can be tens of MiB per PNG; use published `image_bytes` and actual
   update counts for delivery estimates. See [retention and sessions](retention-and-sessions.md).
 - Delivery bandwidth: devices × polls/day × average response bytes. For example,
-  1,000 devices × 6 polls/day × 100 KiB × 30 ≈ **17.2 GiB/month** before catalog
-  overhead. Caches may reduce this, but do not rely on undocumented cache TTLs.
+  1,000 devices × 96 refreshes/day × 100 KiB × 30 ≈ **274.7 GiB/month** before catalog
+  overhead at the default 15-minute cadence. This deliberately small example is
+  not a forecast for full-resolution images: actual photographs can be tens of
+  MiB. Native caching may reduce transfers; measure it rather than assuming a
+  cache TTL or a photo download on every device wake.
 
 `diagnostics` captures elapsed extraction seconds, payload bytes, requests,
 recording size, codecs, candidates and seek errors. Workflow duration also

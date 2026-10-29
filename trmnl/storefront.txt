@@ -33,7 +33,8 @@ Restore your preferred camera selections. A full recipe re-import would also
 restore its production URL; avoid doing that until after the capture.
 
 This is a temporary archived showcase image, not evidence of current conditions
-or model selection quality. The full-resolution JPEG is served by the original OOI archive. Its retrieval
+or model selection quality. The full-resolution JPEG is served by the original
+OOI archive. Its retrieval
 and decoding were verified in the seven-day GitHub-hosted sampling run. The
 credited review preview remains pinned to the sampling evidence commit.
 Codex cannot recheck current OOI access because its proxy restricts that domain.

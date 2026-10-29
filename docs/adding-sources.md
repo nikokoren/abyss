@@ -8,7 +8,10 @@
    `{'url': 'https://…/recording.mp4', 'recorded_at': 'timezone-qualified ISO8601'}`.
    `recorded_at` may be null. The existing `direct` adapter accepts `video_url`
    and `recorded_at`; OOI's date-directory adapter accepts `base_url` and optional
-   `lookback_days`. Always register approved HTTPS hosts in `allowed_hosts`.
+   `lookback_days`. Existing OOI still cameras use `ooi_image_directory`,
+   `camera_code`, bounded image retrieval and explicit UTC filenames; reuse that
+   adapter for a compatible archive. Always register approved HTTPS hosts in
+   `allowed_hosts`.
 3. For a new adapter, add its name to `registry.eligible` after tests establish
    timestamp normalization and compatibility. Do not add a new source-specific
    path to the general frame-selection/rendering code.
@@ -29,9 +32,11 @@
    `stale_after_hours` defaults to 48 for periodically updated sources. Run the
    live pipeline and review a generated still, metadata and diagnostics.
 7. Regenerate the recipe settings from the actual published catalog and re-import
-   them in TRMNL. Only validated sources with a published good image and fewer
-   than three consecutive failures appear. Test changing the dropdown on a real
-   device. Source descriptions and type labels are included in generated setup.
+   them in TRMNL. Only validated sources with a published good image appear.
+   Runtime failures retain that option, its rotation slot and the last good
+   image. Test selection
+   on a real device. Add public camera geography to `abyss/about.py`; its camera
+   list supplies the names and order for About, dropdown options and rotation.
 
 Static registry status describes curation, not runtime health. Dynamic
 `last_successful_retrieval`, failures, cooldown, last checked/published timestamps

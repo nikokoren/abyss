@@ -1,14 +1,11 @@
 # Oregon Shelf and Offshore native-preview recheck
 
-**Follow-up:** a broader [seven-day Offshore wildlife sample](offshore-wildlife.md)
-found clear fish in 12/42 frames and small seabed animals throughout. It supports
-including Offshore despite the limited visual interest of the quality-only
-winner in this earlier six-hour review. Source eligibility has not been changed
-by the observational study.
-
-Reviewed 28 October 2026 after switching production to original-colour,
-source-resolution images and TRMNL-native delivery. Both sources remain
-`quality_hold`; the three active feeds and user selection behaviour are unchanged.
+**Historical review, 28 October 2026.** This six-hour recheck initially held both
+cameras for display quality. Offshore was subsequently enabled after a broader
+[seven-day wildlife sample](offshore-wildlife.md), accepted owner preferences
+and [verified production deployment](evidence/offshore-production-20261029.json).
+Oregon Shelf remains on hold. The measurements below describe the earlier
+review and do not revoke Offshore's current release status.
 
 [GitHub-hosted run](https://github.com/nikokoren/abyss/actions/runs/40765670080)
 sampled six snapshots per camera at least an hour apart, spanning five hours.
@@ -24,8 +21,9 @@ No preference labels or training examples were created from this inspection.
 The automated quality threshold of .30 passes both cameras. This does not prove
 that either image makes a useful ambient display: edges from suspended particles
 can score well despite a poorly readable scene. Fresh footage and native delivery
-have not resolved the visual reasons for holding these cameras from the general
-recipe. Neither camera is classified as offline or technically inaccessible.
+had not resolved the visual concerns at this checkpoint. The later Offshore
+release retains the one-bit contrast limitation. Neither camera was classified
+as offline or technically inaccessible.
 
 Original-colour thumbnails preserve the full frame and carry embedded credit.
 The best-scoring frame per camera was also rendered in the official, unmodified

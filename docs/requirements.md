@@ -1,5 +1,11 @@
 # Requirements: Ambient Ocean Camera for TRMNL
 
+> Original product brief. Implementation decisions subsequently changed delivery
+> to full-resolution colour with native TRMNL dithering, a 15-minute camera
+> rotation and three-hour processing. Use [validation.md](validation.md) for
+> current status and [architecture.md](architecture.md) for operating limits.
+> This brief is retained as the original requirements record.
+
 ## 1. Overview
 
 Build a TRMNL recipe that displays compelling still images extracted from underwater research camera footage. The initial source is the Ocean Observatories Initiative (OOI) hydrothermal vent camera at Axial Seamount, but the solution must support multiple camera feeds and data sources.

@@ -12,7 +12,12 @@ The archive includes `settings.yml`, `transform.py`, four layouts, Shared and th
 guide, plus [settings.txt](settings.txt) with exact polling settings, the complete
 Custom Fields YAML to paste into the editor, and the full recipe settings.yml.
 [about.txt](about.txt) is a standalone replacement for an existing `author_bio`
-About field; replace that block rather than adding a second About field. Updating only the Liquid markup is insufficient for rotation.
+About field; replace that block rather than adding a second About field.
+Updating only the Liquid markup is insufficient for rotation.
+
+About descriptions use explicit `<br>` breaks and inline emphasis because the
+TRMNL settings page can strip block tags. Keep those breaks when pasting YAML.
+The dropdown names and order match the About camera list.
 
 The export also includes the public recipe overview and an **About Abyss** field
 with the introduction, camera locations and depths, official maps, full science
@@ -141,8 +146,9 @@ release commit. Use `--chromium /usr/bin/chromium` for an installed browser.
 Optional `--catalog` and `--image` test a real published still; otherwise the test
 uses a clearly labeled synthetic image.
 
-The 88-case browser matrix covers four views on OG, v2 and Kindle 2024 profiles
+The 100-case browser matrix covers four views on OG, v2 and Kindle 2024 profiles
 in both orientations, retained/empty/long-name states, and no-padding mashups.
+It includes dark mode and full-screen QR clearance with and without padding.
 It checks bounds, image/text containment, title-bar separation, neighboring
 cells and browser errors, verifies full-screen-only bottom-right QR overlays,
 decodes each QR from its actual rendered size, and checks white native credit
@@ -156,3 +162,18 @@ Contract references: [official transform guide](https://github.com/usetrmnl/trmn
 [native state](https://github.com/usetrmnl/trmnlp/blob/30e770ba7da3f2a195aa70cd1571a35c6013947f/lib/trmnlp/transform_state.rb),
 [native input context](https://github.com/usetrmnl/trmnlp/blob/30e770ba7da3f2a195aa70cd1571a35c6013947f/lib/trmnlp/user_data_assembler.rb),
 [Framework 3.4.4 source](https://github.com/usetrmnl/trmnl-framework/tree/f366a9303bbce97adca73d5747da8e2212379bbc).
+
+## Publication and automated hints
+
+See the [publication handoff](../docs/publication.md) before submitting.
+For a temporary real-animal storefront capture, follow [storefront.txt](storefront.txt)
+and use [storefront.json](storefront.json). Restore the production polling URL
+after capture; the static sample intentionally stays on one historical fish image.
+
+All four layouts have a native `layout layout--col` container, photo
+`image-dither` and an inline `title_bar`. QR codes deliberately omit dithering.
+A checker looking only for a title-bar include or responsive prefixes can miss
+these native, flexible layouts. The 100-case matrix covers the framework's OG,
+large v2 and Kindle profiles in landscape/portrait; still review the actual
+TRMNL X account preview and device. Shared contains comments only: copy each
+view's markup into its matching layout tab.

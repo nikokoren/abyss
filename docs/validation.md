@@ -1,8 +1,27 @@
 # Validation evidence and remaining acceptance gates
 
+## Current status — 29 October 2026
+
+| Area | Verified status / remaining limitation |
+| --- | --- |
+| Real cameras | Four published: ASHES, International District, Southern Hydrate Ridge, Oregon Offshore. Names and order match About, selection and rotation. |
+| Hosted operation | [CI](https://github.com/nikokoren/abyss/actions/runs/40862043931), [Pages deployment](https://github.com/nikokoren/abyss/actions/runs/40862043763) and [live production verification](https://github.com/nikokoren/abyss/actions/runs/40862504685) passed for the latest storefront-data update. |
+| Owner feedback | 39 unique Offshore choices accepted; duplicate submissions deduplicated. Shared model reproduced from trusted features, with 164 total comparisons. No assistant wildlife labels used. |
+| Imagery and rights | Reviewed OOI attributed-still reuse; full-resolution colour, source notices and OOI/WHOI/UW/NSF acknowledgment retained. |
+| TRMNL delivery | Framework 3.4.4; four native layouts; optional QR; empty selection rotates all cameras; offline feeds retain their last good image. |
+| Local checks | 115 Python tests passed after the camera-order change; all 100 native browser cases passed after the message-copy change. |
+| Account and device | Owner supplied an account About screenshot; its formatting was corrected with explicit HTML breaks. Physical-device readability, rotation and QR scanning remain unrecorded. |
+| Other limits | One-bit Offshore contrast, provisional preference accuracy, assumed UTC for ASHES video filenames, unmeasured account billing, and undecided code license. |
+
+The [publication handoff](publication.md) lists the remaining owner checks.
+Dated evidence below describes the version tested at that checkpoint. Historical
+camera counts, output sizes, rendering modes and holds are not current settings.
+Immutable JSON evidence is retained without rewriting its observations.
+
+
 ## Offshore preference verification and release — 29 October 2026
 
-Current `preference-data` is `d2dcfbcfe14df20670ceeb7e9e370f16612256e2`.
+At this verification, `preference-data` was `d2dcfbcfe14df20670ceeb7e9e370f16612256e2`.
 Offshore issues #5 and #6 both trained successfully and contain identical sets of
 39 choices (9 A/B, 30 neither). Deduplication retains 39, rather than 78, Offshore
 comparisons. All feedback was checked against its trusted manifest, and local
@@ -48,7 +67,9 @@ full-screen previews cover OG/V2, light/dark, with TRMNLP-matching 1/4-bit
 quantization and passing layout checks. The six-frame colour contact sheets
 and both grayscale depths were visually reviewed. Shelf remains dominated by
 backscatter; Offshore has clearer seabed detail in four-bit but poor one-bit
-readability. Both remain `quality_hold`; no preference feedback was invented.
+readability. Both were on `quality_hold` at this checkpoint. Offshore was subsequently
+enabled after the seven-day sample and owner preference review; Shelf remains
+held. No preference feedback was invented.
 These are native-layout previews, not actual account or hardware renders.
 See [the evidence and decision](oregon-native-review.md).
 
@@ -292,29 +313,14 @@ NumPy 2.2.6. Dependencies installed in `.venv`; no API keys used.
   no-candidate retention, repeated failures/cooldown/recovery, and empty-recipe
   refusal. The suite outcome is recorded above.
 
-## Acceptance ledger
+## Acceptance ledger at the initial build (historical)
 
-| Requirement | Implementation evidence | Remaining gate |
-|---|---|---|
-| Cloud-only recurring processing | Scheduled Actions and Pages workflow | Execute in actual repository/account |
-| At least one good real source | OOI adapter + inspection command | Origin access, actual footage and reuse validation |
-| Efficient partial retrieval | Metered range bridge, cache, bounded requests and integration test | Measure real MP4/GOP transfer costs |
-| Quality selection, moving camera | Uniform pan sampling + quality/composition/novelty ranking | Tune on actual scenes and device |
-| Validated source dropdown | Gated settings generator and Liquid selection | No real source eligible yet; actual TRMNL import/render |
-| Source switching | Two fixture sources in catalog and separate image paths | Two additional real sources if suitable; device selection test |
-| Extensible sources | Registry + normalized adapters + shared extractor | Additional live/snapshot adapters not implemented |
-| Honest metadata and rights | Separate timestamps, credits, unknown-time handling | Confirm OOI filename timezone and clip rights |
-| Failure retention | Last-good immutable PNG/atomic JSON and durable output branch workflow | Test hosted persistence/deployment on Actions |
-| Live/periodic/archive distinction | Registry, setup labels, template and viewer | Actual endpoint classification per source |
-| Quotas and free tiers | Current public GitHub docs checked; cost model/caps | Account plan and real recurring run measurements |
-| Source rights | Release eligibility requires real reviewed evidence | All scientific candidates still pending |
-
-The initial build did not verify a hosted run, working ocean dropdown, source licensing clearance, physical
-e-paper quality, or zero-cost production operation. Source discovery
-beyond initial candidates is incomplete due environment access restrictions.
-Subject recognition and automatic subject-following crops are optional future
-extensions. GitHub publication and TRMNL import require account-level actions;
-local development and fixture tests are ready for continued implementation.
+The initial build had not yet verified hosted source access, rights, delivery or
+real-camera selection. Those gates were subsequently completed; use the current
+status table at the top of this document. The dated sections below preserve the
+original measurements and their scope rather than retroactively expanding them.
+Physical-device testing, billing measurements and ASHES filename timezone
+confirmation remain separate limitations.
 
 ## Follow-up: accepted external proof and deployment checks
 

@@ -11,17 +11,19 @@ stills, and serves attributed metadata for a source-selectable TRMNL recipe.
 The recipe's About section includes the camera locations, approximate depths,
 and official regional maps, site maps and array illustrations.
 
-**Status: implemented; OOI access, range support and visible vent footage were
-verified by the user on a Mac.** GitHub-hosted validation also passed: four frame seeks, 10.26 MB of video
-payload (1.08% of the 949 MB recording), in 20.1 seconds. See the
-[runner report](docs/evidence/ooi-20261027-github-actions.json).
-Codex's proxy restriction is an infrastructure limitation, not an upstream OOI
-failure. **OOI derived-still reuse is now reviewed and enabled**, with required
-NSF/WHOI/UW credit embedded in exported images; see the
-[rights review](docs/ooi-rights-review.md). Physical TRMNL
-device rendering remains unverified. GitHub Pages deployment has succeeded;
-see [current deployment evidence](docs/evidence/native-delivery-20261028.json), [runner validation](docs/runner-validation.md),
-[source audit](docs/sources.md), and [acceptance status](docs/validation.md).
+**Status: deployed with four real OOI cameras.** GitHub-hosted processing,
+Pages delivery and live production checks have passed. The current recipe uses
+native TRMNL Framework **3.4.4**, full-resolution colour images, a shared
+owner-trained preference model and required OOI/WHOI/UW/NSF attribution.
+Processing runs every three hours; TRMNL's separate 15-minute refresh rotates
+saved camera views. Offline cameras retain their last good image.
+
+Start with the [publication handoff](docs/publication.md),
+[installation guide](trmnl/README.md) and [current validation status](docs/validation.md).
+[Source access](docs/sources.md) and [imagery reuse rights](docs/ooi-rights-review.md)
+are documented separately. A Codex proxy restriction does not establish an
+OOI outage. Physical-device rendering remains unverified, and the project's
+code license is still undecided.
 
 ## Develop
 
@@ -82,9 +84,11 @@ python -m abyss.cli run --base-url https://OWNER.github.io/abyss
 python -m abyss.cli recipe --base-url https://OWNER.github.io/abyss
 ```
 
-A real run requires a public HTTPS base URL. Four real cameras are eligible: the original Axial HD camera plus Southern
-Hydrate Ridge, International District and Oregon Offshore still cameras. Three other reachable
-OOI cameras remain on image-quality hold. See [camera access and evidence](docs/additional-cameras.md).
+A real run requires a public HTTPS base URL. The published camera choices, in
+About/rotation order, are ASHES: Mushroom vent, International District: Tiny Towers,
+Southern Hydrate Ridge: Einstein's Grotto, and Oregon Offshore: seafloor.
+Oregon Shelf and both water-column cameras remain on image-quality hold.
+See [camera access and evidence](docs/additional-cameras.md).
 
 ## Native TRMNL views
 
