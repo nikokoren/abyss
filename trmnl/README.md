@@ -10,7 +10,9 @@ release used by the browser checks and recorded in [framework.json](framework.js
 Download `/abyss-trmnl.zip` from the published site and import the **whole recipe**.
 The archive includes `settings.yml`, `transform.py`, four layouts, Shared and this
 guide, plus [settings.txt](settings.txt) with exact polling settings, the complete
-Custom Fields YAML to paste into the editor, and the full recipe settings.yml. Updating only the Liquid markup is insufficient for rotation.
+Custom Fields YAML to paste into the editor, and the full recipe settings.yml.
+[about.txt](about.txt) is a standalone replacement for an existing `author_bio`
+About field; replace that block rather than adding a second About field. Updating only the Liquid markup is insufficient for rotation.
 
 The export also includes the public recipe overview and an **About Abyss** field
 with the introduction, camera locations and depths, official maps, full science

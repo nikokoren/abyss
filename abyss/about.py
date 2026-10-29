@@ -86,32 +86,48 @@ OOI_ACKNOWLEDGMENT = (
 
 
 def about_html(credits=OOI_CREDIT, acknowledgments=OOI_ACKNOWLEDGMENT):
-    paragraphs = OVERVIEW.split('\n\n')
-    parts = ['<h2>A window into the abyss.</h2>', *(f'<p>{escape(p)}</p>' for p in paragraphs),
-             '<h2>Where are the cameras?</h2>',
-             '<p>Four camera views, three research sites in the northeast Pacific. '
-             'Both vent cameras are on Axial Seamount; the methane-seep camera is at '
-             'Southern Hydrate Ridge, and the seafloor camera is at Oregon Offshore. Depths are approximate.</p>',
-             f'<p><a href="{REGIONAL_GRAPHIC}">Open the regional cable-network map</a> '
-             '(Center for Environmental Visualization, University of Washington).</p>']
+    introduction, science, viewing = OVERVIEW.split('\n\n')
+    parts = [
+        '<h2>A window into the abyss.</h2>',
+        f'<p>{escape(introduction)}</p>',
+        '<h3>Choose your view</h3>',
+        f'<p>{escape(viewing)}</p>',
+        '<h3>Where are the cameras?</h3>',
+        '<p>Four camera views, three research sites in the northeast Pacific. '
+        'Both vent cameras are on Axial Seamount; the methane-seep camera is at '
+        'Southern Hydrate Ridge, and the seafloor camera is at Oregon Offshore. '
+        'Depths are approximate.</p>',
+    ]
     for camera in CAMERAS:
-        detailed_map = (f'<a href="{camera["site_map_url"]}">Open the detailed site map</a> &middot; '
-                        if camera.get('site_map_url') else '')
+        links = [f'<a href="{camera["site_url"]}">Explore the research site</a>']
+        if camera.get('site_map_url'):
+            links.append(f'<a href="{camera["site_map_url"]}">Detailed site map</a>')
         parts.extend([
             f'<h3 id="about-{camera["id"]}">{escape(camera["name"])}</h3>',
-            f'<p><strong>{escape(camera["depth"])} below the surface.</strong> {escape(camera["description"])}</p>',
-            f'<p><a href="{camera["site_url"]}">Explore this research site</a> &middot; '
-            f'{detailed_map}'
-            f'<a href="{camera["array_graphic_url"]}">See the array illustration</a> &middot; '
-            f'<a href="{camera["map_url"]}">{camera["map_label"]}</a></p>',
+            f'<p><strong>{escape(camera["depth"])} below the surface.</strong> '
+            f'{escape(camera["description"])}</p>',
+            '<p>' + ' &middot; '.join(links) + '</p>',
         ])
     parts.extend([
-        f'<p><a href="{REGIONAL_MAP}">Explore the University of Washington interactive observatory map</a></p>',
+        '<h3>Explore the maps</h3>',
+        '<ul>',
+        f'<li><a href="{REGIONAL_GRAPHIC}">Regional cable-network map</a> '
+        '(Center for Environmental Visualization, University of Washington).</li>',
+        f'<li><a href="{REGIONAL_MAP}">Interactive observatory map</a> '
+        '(University of Washington).</li>',
+    ])
+    arrays = dict.fromkeys((c['map_url'], c['map_label'], c['array_graphic_url']) for c in CAMERAS)
+    for map_url, label, graphic in arrays:
+        parts.append(f'<li><a href="{map_url}">{label}</a> &middot; '
+                     f'<a href="{graphic}">Array illustration</a></li>')
+    parts.extend([
+        '</ul>',
         '<p>Maps, diagrams and site photographs remain on their official OOI and '
         'University of Washington pages, with their original captions and credits. '
         'Site maps: M. Elend, University of Washington; deployment dates are shown '
         'in the source captions.</p>',
         '<h3>Made possible by open ocean science</h3>',
+        f'<p>{escape(science)}</p>',
         f'<p>{escape(credits)}</p><p>{escape(acknowledgments)}</p>',
         '<p><a href="https://oceanobservatories.org/how-to-use-acknowledge-and-cite-data/">'
         'OOI data acknowledgment and reuse terms</a>. Abyss is an independent recipe; '
@@ -120,3 +136,13 @@ def about_html(credits=OOI_CREDIT, acknowledgments=OOI_ACKNOWLEDGMENT):
         '<p><a href="https://github.com/nikokoren/abyss/issues">Help, feedback and camera suggestions</a></p>',
     ])
     return '\n'.join(parts)
+
+
+def about_field_yaml():
+    """Replacement for the owner's existing TRMNL author_bio custom field."""
+    lines = ['- keyname: author_bio', '  field_type: author_bio',
+             '  name: About This Plugin', '  description: |']
+    lines.extend('    ' + line for line in about_html().splitlines())
+    lines.extend(['  category: "discovery,education"',
+                  '  email_address: "isarworks@gmail.com"'])
+    return '\n'.join(lines) + '\n'

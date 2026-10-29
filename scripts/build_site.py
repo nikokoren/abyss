@@ -4,7 +4,7 @@ import shutil
 import sys
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from abyss.about import HEADLINE, INTRO, about_html
+from abyss.about import HEADLINE, INTRO, about_html, about_field_yaml
 from abyss.recipe import settings_details
 from html import escape
 
@@ -21,6 +21,7 @@ viewer = (viewer.replace('<!-- ABYSS_HEADLINE -->', escape(HEADLINE))
     '<title>About Abyss</title><body>' + about_html() + '</body></html>', encoding='utf-8')
 shutil.rmtree(public/'trmnl', ignore_errors=True)
 shutil.copytree('trmnl', public/'trmnl', ignore=shutil.ignore_patterns('__pycache__', '*.pyc'))
+(public / 'trmnl' / 'about.txt').write_text(about_field_yaml(), encoding='utf-8')
 settings = public / 'trmnl' / 'settings.yml'
 if (public / 'settings.yml').exists():
     shutil.copyfile(public / 'settings.yml', settings)
