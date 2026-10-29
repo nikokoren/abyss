@@ -43,3 +43,42 @@ def generate(output, base_url, destination):
                  '    learn_more_url: ' + quote(base_url.rstrip('/') + '/#about')])
     Path(destination).parent.mkdir(parents=True, exist_ok=True)
     Path(destination).write_text('\n'.join(text) + '\n', encoding='utf-8')
+
+
+def settings_details(settings):
+    """Copy-and-paste values for the TRMNL settings editor and recipe import."""
+    fields = settings.partition('\ncustom_fields:\n')[2]
+    fields = '\n'.join(line[2:] if line.startswith('  ') else line
+                       for line in fields.splitlines())
+    return ("ABYSS — VALUES TO PASTE INTO TRMNL SETTINGS\n\n"
+            "Name: Abyss\n"
+            "Strategy: Polling\n"
+            "Polling URL: https://nikokoren.github.io/abyss/catalog.json\n"
+            "HTTP method: GET\n"
+            "Polling headers: leave blank\n"
+            "Polling body: leave blank\n"
+            "Refresh interval: 15 minutes\n"
+            "Framework version: 3.4.4\n"
+            "Serverless language: Python\n"
+            "Serverless transform: paste the complete contents of transform.py\n"
+            "No screen padding: No\n"
+            "Dark mode: No (default)\n\n"
+            "CUSTOM FIELDS — COMPLETE YAML TO PASTE\n"
+            "Paste the YAML below into the Custom Fields editor. It starts with\n"
+            "a list item; do not include a custom_fields: wrapper in that editor.\n"
+            "Replace the previous custom-field definitions with this entire block.\n\n"
+            + fields + '\n\n'
+            "FULL RECIPE SETTINGS.YML\n"
+            "The complete recipe YAML follows, including the custom_fields: wrapper.\n"
+            "Use this as settings.yml when importing the whole recipe; do not paste\n"
+            "this whole section into the Custom Fields editor.\n\n"
+            + settings + '\n'
+            "MARKUP AND TRANSFORM\n"
+            "Paste full.liquid, half_horizontal.liquid, half_vertical.liquid and\n"
+            "quadrant.liquid into the matching layout tabs; shared.liquid into Shared.\n"
+            "Paste transform.py into the Python serverless transform editor.\n"
+            "Importing the complete abyss-trmnl.zip installs these files together.\n\n"
+            "Leave Underwater cameras empty to rotate through all four published\n"
+            "cameras. Show QR code defaults to off. Offline cameras keep their last\n"
+            "good image. The 15-minute refresh rotates saved views; production image\n"
+            "processing separately runs every three hours (23 */3 * * * UTC).\n")

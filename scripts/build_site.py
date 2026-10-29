@@ -5,6 +5,7 @@ import sys
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from abyss.about import HEADLINE, INTRO, about_html
+from abyss.recipe import settings_details
 from html import escape
 
 public = Path('output/public')
@@ -23,6 +24,8 @@ shutil.copytree('trmnl', public/'trmnl', ignore=shutil.ignore_patterns('__pycach
 settings = public / 'trmnl' / 'settings.yml'
 if (public / 'settings.yml').exists():
     shutil.copyfile(public / 'settings.yml', settings)
+    (public / 'trmnl' / 'settings.txt').write_text(
+        settings_details(settings.read_text()), encoding='utf-8')
 else:
     settings.unlink(missing_ok=True)
 archive = shutil.make_archive(str(public / 'abyss-trmnl'), 'zip', root_dir=public / 'trmnl')
