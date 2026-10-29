@@ -1,0 +1,93 @@
+ABYSS — TRMNL SETTINGS
+
+Install or update
+Download https://nikokoren.github.io/abyss/abyss-trmnl.zip and import the whole
+recipe, including settings.yml, transform.py, Shared and all four layouts.
+The generated settings.yml is the authoritative import file; this text file
+summarizes the settings for manual setup. Re-import to receive new camera options
+and the shared About copy. Updating Liquid alone does not install rotation.
+
+Recipe details
+Name: Abyss
+Description: A window into the deep ocean
+Strategy: Polling
+HTTP method: GET
+Polling URL: https://nikokoren.github.io/abyss/catalog.json
+Framework version: 3.4.4 (native TRMNL Framework 3.4)
+Refresh interval: 15 minutes
+Serverless language: Python
+Serverless transform: transform.py
+No screen padding: No
+Dark mode: No (default)
+Help and feedback: https://github.com/nikokoren/abyss/issues
+Website and About: https://nikokoren.github.io/abyss/#about
+
+Overview
+Turn your TRMNL into your personal window into the deep ocean. Explore
+hydrothermal vent habitats on Axial Seamount, a methane seep at Southern
+Hydrate Ridge, and the Oregon Offshore seafloor. These are periodic research
+camera recordings and snapshots, not live streams. NSF's Ocean Observatories
+Initiative and the scientists, engineers and crews who maintain it make this
+window possible through public investment and open data.
+
+Custom field: Underwater cameras
+Key: source_ids
+Type: Select; multiple selections allowed; optional
+Default: [] (leave every feed deselected)
+Options:
+- ooi-axial — Axial Seamount, ASHES/Mushroom vent; about 1,540 m
+- ooi-international-district — International District/Tiny Towers; about 1,520 m
+- ooi-hydrate-ridge — Southern Hydrate Ridge/Einstein's Grotto; about 780 m
+- ooi-oregon-offshore — Oregon Offshore seafloor, CAMDSB106; about 580 m
+No selections rotates through all published cameras. One selection pins that
+camera; several selections rotate through that subset in catalog order.
+Offline cameras retain their slot and last good image.
+
+Custom field: Show QR code
+Key: show_qr
+Type: Boolean; optional
+Default: false
+Shows a QR overlay in full-screen view only. It opens the exact observation,
+with the displayed still and original snapshot or timestamped video link.
+
+Custom field: About Abyss
+Key: about_abyss
+Type: Author bio
+The generated settings.yml includes the complete shared introduction, camera
+locations and approximate depths, official maps, acknowledgment and reuse terms.
+GitHub URL: https://github.com/nikokoren/abyss
+Learn more URL: https://nikokoren.github.io/abyss/#about
+
+Official location and map links
+ASHES: https://interactiveoceans.washington.edu/research-sites/axial-caldera/ashes/
+International District: https://interactiveoceans.washington.edu/research-sites/axial-caldera/international-district/
+Southern Hydrate Ridge: https://interactiveoceans.washington.edu/research-sites/southern-hydrate-ridge/
+Oregon Offshore: https://interactiveoceans.washington.edu/research-sites/oregon-offshore/
+Axial maps: https://oceanobservatories.org/array/cabled-axial-seamount-array/
+Continental-margin maps: https://oceanobservatories.org/array/cabled-continental-margin-array/
+Interactive observatory map: https://app.interactiveoceans.washington.edu/map
+Detailed site-map and array-illustration links are included in the shared About.
+
+Image processing and cadence
+Production processing runs every three hours: cron 23 */3 * * * (UTC).
+The separate 15-minute TRMNL refresh rotates saved views; it does not start a
+new research-image processing job. Full-resolution source colour is preserved;
+TRMNL handles device scaling, grayscale and dithering. Required source credit
+appears below the device photograph; downloadable images have embedded credit.
+Oregon Offshore's strong illumination can reduce contrast on one-bit displays.
+Physical-device rendering remains unverified.
+
+Required attribution and acknowledgment
+Ocean Observatories Initiative / Woods Hole Oceanographic Institution OOI
+Program Office / University of Washington; supported by the U.S. National
+Science Foundation, Cooperative Agreement 2244833.
+
+This material is based upon work supported by the Ocean Observatories
+Initiative (OOI), a major facility fully funded by the US National Science
+Foundation under Cooperative Agreement No. 2244833, and the Woods Hole
+Oceanographic Institution OOI Program Office.
+
+Reuse terms: https://oceanobservatories.org/how-to-use-acknowledge-and-cite-data/
+Abyss is an independent recipe; attribution does not imply endorsement by OOI,
+NSF, WHOI or UW. For ambient viewing; OOI data are not for operational or
+decision-making use.

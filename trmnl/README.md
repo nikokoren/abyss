@@ -9,7 +9,8 @@ release used by the browser checks and recorded in [framework.json](framework.js
 
 Download `/abyss-trmnl.zip` from the published site and import the **whole recipe**.
 The archive includes `settings.yml`, `transform.py`, four layouts, Shared and this
-guide. Updating only the Liquid markup is insufficient for rotation.
+guide, plus [settings.txt](settings.txt) with plain-text settings details for
+manual setup. Updating only the Liquid markup is insufficient for rotation.
 
 The export also includes the public recipe overview and an **About Abyss** field
 with the introduction, camera locations and depths, official maps, full science
