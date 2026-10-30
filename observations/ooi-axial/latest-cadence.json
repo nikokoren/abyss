@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_id": "ooi-axial",
-  "checked_at": "2026-10-30T19:56:56.130183+00:00",
+  "checked_at": "2026-10-30T23:53:42.990057+00:00",
   "status": "observed",
   "timestamp_basis": "Filename parsed as UTC; source timezone not independently confirmed",
   "directory_dates_checked": [
@@ -10,59 +10,44 @@
     "2026-10-30"
   ],
   "directory_errors": [],
-  "recordings_listed": 23,
-  "new_recordings_since_prior_coverage": 2,
+  "recordings_listed": 24,
+  "new_recordings_since_prior_coverage": 1,
   "baseline_recordings": 0,
   "recording_intervals_seconds": {
-    "samples": 22,
+    "samples": 23,
     "median": 10800.0,
     "minimum": 10800.0,
     "maximum": 10800.0,
     "common": [
       {
         "seconds": 10800.0,
-        "count": 22
+        "count": 23
       }
     ]
   },
-  "latest_nominal_recording_at": "2026-10-30T18:15:00+00:00",
-  "publication_delay_observations": 20,
+  "latest_nominal_recording_at": "2026-10-30T21:15:00+00:00",
+  "publication_delay_observations": 21,
   "new_appearances": [
     {
-      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/10/30/CAMHDA301-20261030T181500.mp4",
-      "recorded_at": "2026-10-30T18:15:00+00:00",
-      "first_seen_at": "2026-10-30T19:56:55.474836+00:00",
+      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/10/30/CAMHDA301-20261030T211500.mp4",
+      "recorded_at": "2026-10-30T21:15:00+00:00",
+      "first_seen_at": "2026-10-30T23:53:42.407244+00:00",
       "baseline": false,
       "appeared_between": [
-        "2026-10-30T15:15:04.946019+00:00",
-        "2026-10-30T19:56:55.474836+00:00"
+        "2026-10-30T19:56:55.077020+00:00",
+        "2026-10-30T23:53:42.407244+00:00"
       ],
       "nominal_publication_delay_bounds_seconds": [
         0,
-        6115.474836
+        9522.407244
       ],
-      "last_seen_at": "2026-10-30T19:56:55.474836+00:00"
-    },
-    {
-      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/10/30/CAMHDA301-20261030T151500.mp4",
-      "recorded_at": "2026-10-30T15:15:00+00:00",
-      "first_seen_at": "2026-10-30T19:56:55.474836+00:00",
-      "baseline": false,
-      "appeared_between": [
-        "2026-10-30T15:15:04.946019+00:00",
-        "2026-10-30T19:56:55.474836+00:00"
-      ],
-      "nominal_publication_delay_bounds_seconds": [
-        4.946019,
-        16915.474836
-      ],
-      "last_seen_at": "2026-10-30T19:56:55.474836+00:00"
+      "last_seen_at": "2026-10-30T23:53:42.407244+00:00"
     }
   ],
   "publication_delay_note": "Baseline files have unknown publication time. Delay bounds require prior successful coverage of that date; filename timezone remains an assumption.",
   "environment": "github_actions",
   "tested_commit": "263805997ba935a381a3ae046130e92c6755fe45",
-  "run_url": "https://github.com/nikokoren/abyss/actions/runs/41119348124",
+  "run_url": "https://github.com/nikokoren/abyss/actions/runs/41147111051",
   "imagery_published": false,
   "rights_status": "not_assessed"
 }
