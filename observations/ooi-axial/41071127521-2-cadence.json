@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "source_id": "ooi-axial",
+  "checked_at": "2026-10-30T15:15:05.724927+00:00",
+  "status": "observed",
+  "timestamp_basis": "Filename parsed as UTC; source timezone not independently confirmed",
+  "directory_dates_checked": [
+    "2026-10-28",
+    "2026-10-29",
+    "2026-10-30"
+  ],
+  "directory_errors": [],
+  "recordings_listed": 21,
+  "new_recordings_since_prior_coverage": 2,
+  "baseline_recordings": 0,
+  "recording_intervals_seconds": {
+    "samples": 20,
+    "median": 10800.0,
+    "minimum": 10800.0,
+    "maximum": 10800.0,
+    "common": [
+      {
+        "seconds": 10800.0,
+        "count": 20
+      }
+    ]
+  },
+  "latest_nominal_recording_at": "2026-10-30T12:15:00+00:00",
+  "publication_delay_observations": 18,
+  "new_appearances": [
+    {
+      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/10/30/CAMHDA301-20261030T121500.mp4",
+      "recorded_at": "2026-10-30T12:15:00+00:00",
+      "first_seen_at": "2026-10-30T15:15:05.334712+00:00",
+      "baseline": false,
+      "appeared_between": [
+        "2026-10-30T07:15:46.932384+00:00",
+        "2026-10-30T15:15:05.334712+00:00"
+      ],
+      "nominal_publication_delay_bounds_seconds": [
+        0,
+        10805.334712
+      ],
+      "last_seen_at": "2026-10-30T15:15:05.334712+00:00"
+    },
+    {
+      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/10/30/CAMHDA301-20261030T091500.mp4",
+      "recorded_at": "2026-10-30T09:15:00+00:00",
+      "first_seen_at": "2026-10-30T15:15:05.334712+00:00",
+      "baseline": false,
+      "appeared_between": [
+        "2026-10-30T07:15:46.932384+00:00",
+        "2026-10-30T15:15:05.334712+00:00"
+      ],
+      "nominal_publication_delay_bounds_seconds": [
+        0,
+        21605.334712
+      ],
+      "last_seen_at": "2026-10-30T15:15:05.334712+00:00"
+    }
+  ],
+  "publication_delay_note": "Baseline files have unknown publication time. Delay bounds require prior successful coverage of that date; filename timezone remains an assumption.",
+  "environment": "github_actions",
+  "tested_commit": "263805997ba935a381a3ae046130e92c6755fe45",
+  "run_url": "https://github.com/nikokoren/abyss/actions/runs/41071127521",
+  "imagery_published": false,
+  "rights_status": "not_assessed"
+}
