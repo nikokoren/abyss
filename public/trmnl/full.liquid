@@ -1,0 +1,38 @@
+{% comment %}Native TRMNL Framework 3.4. The platform supplies screen, view and assets.{% endcomment %}
+{% assign camera = current_camera %}
+{% assign camera_location = camera.location_label | default: camera.location | default: camera.source_name %}
+
+<div class="layout layout--col gap--small relative">
+  {% if camera and camera.image_url %}
+    <div class="flex flex--center stretch w--full">
+      <img class="image image--contain image-dither w--full h--full" src="{{ camera.display_image_url | default: camera.image_url | escape }}" alt="{{ camera.source_name | escape }}" />
+    </div>
+    <div class="flex flex--row gap--small w--full shrink-0">
+      <div class="flex flex--col gap--small stretch">
+        {% if camera.display_credit %}<span class="label label--small w--full shrink-0">{{ camera.display_credit | escape }}</span>{% endif %}
+        {% if camera.fixture %}<span class="label label--small label--outline shrink-0">Synthetic fixture</span>{% endif %}
+        {% if camera.available == false or camera.stale %}<span class="label label--small label--outline shrink-0">Holding steady · update delayed</span>{% endif %}
+      </div>
+      {% if show_qr and camera.qr_code_url %}<span class="w--24 shrink-0" aria-hidden="true"></span>{% endif %}
+    </div>
+    {% if show_qr and camera.qr_code_url %}
+      <img class="image image--contain absolute bottom--0 right--0 z--2 w--24 h--24" src="{{ camera.qr_code_url | escape }}" alt="Scan to open this exact image or recording" />
+    {% endif %}
+  {% else %}
+    <div class="flex flex--col flex--center gap--small">
+      <span class="title">Between dives.</span>
+      <span class="description" data-clamp="3">{% if abyss_ready %}No images have surfaced for these cameras yet.{% else %}Not quite shipshape. Import the full recipe, including its transform.{% endif %}</span>
+    </div>
+  {% endif %}
+</div>
+<div class="title_bar">
+  <span class="title">Abyss</span>
+  <span class="instance flex flex--row flex--right gap--xsmall">
+    {% if camera and camera.image_url %}
+      <span class="stretch" data-clamp="1">{{ camera_location | escape }}</span>
+      <span class="shrink-0">· {{ camera.depth_label | default: 'Depth unknown' | escape }}</span>
+    {% else %}
+      <span>Awaiting an image</span>
+    {% endif %}
+  </span>
+</div>
