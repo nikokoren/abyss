@@ -9,7 +9,7 @@
     </div>
     {% if camera.display_credit %}<span class="label label--small w--full shrink-0">{{ camera.display_credit | escape }}</span>{% endif %}
     {% if camera.fixture %}<span class="label label--small label--outline shrink-0">Synthetic fixture</span>{% endif %}
-    {% if camera.available == false or camera.stale %}<span class="label label--small label--outline shrink-0">Holding steady · update delayed</span>{% endif %}
+    {% if camera.available == false or camera.stale %}<span class="label label--small label--outline shrink-0">Lost contact with station · showing last good view</span>{% endif %}
   {% else %}
     <div class="flex flex--col flex--center gap--small">
       <span class="title">Between dives.</span>

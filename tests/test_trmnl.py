@@ -85,7 +85,7 @@ class TrmnlTests(unittest.TestCase):
         for layout in LAYOUTS:
             text = render(layout, data, 'ooi-axial')
             self.assertIn('https://example.invalid/ocean.png', text)
-            self.assertIn('Holding steady · update delayed', text)
+            self.assertIn('Lost contact with station · showing last good view', text)
             self.assertIn('~1,540 m', text)
 
     def test_empty_catalog_has_native_empty_state_without_an_image(self):

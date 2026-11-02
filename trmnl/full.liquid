@@ -11,7 +11,7 @@
       <div class="flex flex--col gap--small stretch">
         {% if camera.display_credit %}<span class="label label--small w--full shrink-0">{{ camera.display_credit | escape }}</span>{% endif %}
         {% if camera.fixture %}<span class="label label--small label--outline shrink-0">Synthetic fixture</span>{% endif %}
-        {% if camera.available == false or camera.stale %}<span class="label label--small label--outline shrink-0">Holding steady · update delayed</span>{% endif %}
+        {% if camera.available == false or camera.stale %}<span class="label label--small label--outline shrink-0">Lost contact with station · showing last good view</span>{% endif %}
       </div>
       {% if show_qr and camera.qr_code_url %}<span class="w--24 shrink-0" aria-hidden="true"></span>{% endif %}
     </div>
