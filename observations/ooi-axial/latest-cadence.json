@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_id": "ooi-axial",
-  "checked_at": "2026-11-03T06:58:43.243636+00:00",
+  "checked_at": "2026-11-03T15:18:32.876080+00:00",
   "status": "observed",
   "timestamp_basis": "Filename parsed as UTC; source timezone not independently confirmed",
   "directory_dates_checked": [
@@ -10,119 +10,569 @@
     "2026-11-03"
   ],
   "directory_errors": [],
-  "recordings_listed": 210,
-  "new_recordings_since_prior_coverage": 6,
-  "baseline_recordings": 22,
+  "recordings_listed": 246,
+  "new_recordings_since_prior_coverage": 36,
+  "baseline_recordings": 0,
   "recording_intervals_seconds": {
-    "samples": 209,
+    "samples": 245,
     "median": 900.0,
     "minimum": 900.0,
     "maximum": 900.0,
     "common": [
       {
         "seconds": 900.0,
-        "count": 209
+        "count": 245
       }
     ]
   },
-  "latest_nominal_recording_at": "2026-11-03T05:15:00+00:00",
-  "publication_delay_observations": 173,
+  "latest_nominal_recording_at": "2026-11-03T14:15:00+00:00",
+  "publication_delay_observations": 209,
   "new_appearances": [
     {
-      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/02/CAMHDA301-20261102T234500.mp4",
-      "recorded_at": "2026-11-02T23:45:00+00:00",
-      "first_seen_at": "2026-11-03T06:58:42.481614+00:00",
+      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/03/CAMHDA301-20261103T141500.mp4",
+      "recorded_at": "2026-11-03T14:15:00+00:00",
+      "first_seen_at": "2026-11-03T15:18:32.051950+00:00",
       "baseline": false,
       "appeared_between": [
-        "2026-11-02T23:55:32.476252+00:00",
-        "2026-11-03T06:58:42.481614+00:00"
+        "2026-11-03T06:58:41.389925+00:00",
+        "2026-11-03T15:18:32.051950+00:00"
       ],
       "nominal_publication_delay_bounds_seconds": [
-        632.476252,
-        26022.481614
+        0,
+        3812.05195
       ],
-      "last_seen_at": "2026-11-03T06:58:42.481614+00:00"
+      "last_seen_at": "2026-11-03T15:18:32.051950+00:00"
     },
     {
-      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/02/CAMHDA301-20261102T233000.mp4",
-      "recorded_at": "2026-11-02T23:30:00+00:00",
-      "first_seen_at": "2026-11-03T06:58:42.481614+00:00",
+      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/03/CAMHDA301-20261103T140000.mp4",
+      "recorded_at": "2026-11-03T14:00:00+00:00",
+      "first_seen_at": "2026-11-03T15:18:32.051950+00:00",
       "baseline": false,
       "appeared_between": [
-        "2026-11-02T23:55:32.476252+00:00",
-        "2026-11-03T06:58:42.481614+00:00"
+        "2026-11-03T06:58:41.389925+00:00",
+        "2026-11-03T15:18:32.051950+00:00"
       ],
       "nominal_publication_delay_bounds_seconds": [
-        1532.476252,
-        26922.481614
+        0,
+        4712.05195
       ],
-      "last_seen_at": "2026-11-03T06:58:42.481614+00:00"
+      "last_seen_at": "2026-11-03T15:18:32.051950+00:00"
     },
     {
-      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/02/CAMHDA301-20261102T231500.mp4",
-      "recorded_at": "2026-11-02T23:15:00+00:00",
-      "first_seen_at": "2026-11-03T06:58:42.481614+00:00",
+      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/03/CAMHDA301-20261103T134500.mp4",
+      "recorded_at": "2026-11-03T13:45:00+00:00",
+      "first_seen_at": "2026-11-03T15:18:32.051950+00:00",
       "baseline": false,
       "appeared_between": [
-        "2026-11-02T23:55:32.476252+00:00",
-        "2026-11-03T06:58:42.481614+00:00"
+        "2026-11-03T06:58:41.389925+00:00",
+        "2026-11-03T15:18:32.051950+00:00"
       ],
       "nominal_publication_delay_bounds_seconds": [
-        2432.476252,
-        27822.481614
+        0,
+        5612.05195
       ],
-      "last_seen_at": "2026-11-03T06:58:42.481614+00:00"
+      "last_seen_at": "2026-11-03T15:18:32.051950+00:00"
     },
     {
-      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/02/CAMHDA301-20261102T230000.mp4",
-      "recorded_at": "2026-11-02T23:00:00+00:00",
-      "first_seen_at": "2026-11-03T06:58:42.481614+00:00",
+      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/03/CAMHDA301-20261103T133000.mp4",
+      "recorded_at": "2026-11-03T13:30:00+00:00",
+      "first_seen_at": "2026-11-03T15:18:32.051950+00:00",
       "baseline": false,
       "appeared_between": [
-        "2026-11-02T23:55:32.476252+00:00",
-        "2026-11-03T06:58:42.481614+00:00"
+        "2026-11-03T06:58:41.389925+00:00",
+        "2026-11-03T15:18:32.051950+00:00"
       ],
       "nominal_publication_delay_bounds_seconds": [
-        3332.476252,
-        28722.481614
+        0,
+        6512.05195
       ],
-      "last_seen_at": "2026-11-03T06:58:42.481614+00:00"
+      "last_seen_at": "2026-11-03T15:18:32.051950+00:00"
     },
     {
-      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/02/CAMHDA301-20261102T224500.mp4",
-      "recorded_at": "2026-11-02T22:45:00+00:00",
-      "first_seen_at": "2026-11-03T06:58:42.481614+00:00",
+      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/03/CAMHDA301-20261103T131500.mp4",
+      "recorded_at": "2026-11-03T13:15:00+00:00",
+      "first_seen_at": "2026-11-03T15:18:32.051950+00:00",
       "baseline": false,
       "appeared_between": [
-        "2026-11-02T23:55:32.476252+00:00",
-        "2026-11-03T06:58:42.481614+00:00"
+        "2026-11-03T06:58:41.389925+00:00",
+        "2026-11-03T15:18:32.051950+00:00"
       ],
       "nominal_publication_delay_bounds_seconds": [
-        4232.476252,
-        29622.481614
+        0,
+        7412.05195
       ],
-      "last_seen_at": "2026-11-03T06:58:42.481614+00:00"
+      "last_seen_at": "2026-11-03T15:18:32.051950+00:00"
     },
     {
-      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/02/CAMHDA301-20261102T223000.mp4",
-      "recorded_at": "2026-11-02T22:30:00+00:00",
-      "first_seen_at": "2026-11-03T06:58:42.481614+00:00",
+      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/03/CAMHDA301-20261103T130000.mp4",
+      "recorded_at": "2026-11-03T13:00:00+00:00",
+      "first_seen_at": "2026-11-03T15:18:32.051950+00:00",
       "baseline": false,
       "appeared_between": [
-        "2026-11-02T23:55:32.476252+00:00",
-        "2026-11-03T06:58:42.481614+00:00"
+        "2026-11-03T06:58:41.389925+00:00",
+        "2026-11-03T15:18:32.051950+00:00"
       ],
       "nominal_publication_delay_bounds_seconds": [
-        5132.476252,
-        30522.481614
+        0,
+        8312.05195
       ],
-      "last_seen_at": "2026-11-03T06:58:42.481614+00:00"
+      "last_seen_at": "2026-11-03T15:18:32.051950+00:00"
+    },
+    {
+      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/03/CAMHDA301-20261103T124500.mp4",
+      "recorded_at": "2026-11-03T12:45:00+00:00",
+      "first_seen_at": "2026-11-03T15:18:32.051950+00:00",
+      "baseline": false,
+      "appeared_between": [
+        "2026-11-03T06:58:41.389925+00:00",
+        "2026-11-03T15:18:32.051950+00:00"
+      ],
+      "nominal_publication_delay_bounds_seconds": [
+        0,
+        9212.05195
+      ],
+      "last_seen_at": "2026-11-03T15:18:32.051950+00:00"
+    },
+    {
+      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/03/CAMHDA301-20261103T123000.mp4",
+      "recorded_at": "2026-11-03T12:30:00+00:00",
+      "first_seen_at": "2026-11-03T15:18:32.051950+00:00",
+      "baseline": false,
+      "appeared_between": [
+        "2026-11-03T06:58:41.389925+00:00",
+        "2026-11-03T15:18:32.051950+00:00"
+      ],
+      "nominal_publication_delay_bounds_seconds": [
+        0,
+        10112.05195
+      ],
+      "last_seen_at": "2026-11-03T15:18:32.051950+00:00"
+    },
+    {
+      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/03/CAMHDA301-20261103T121500.mp4",
+      "recorded_at": "2026-11-03T12:15:00+00:00",
+      "first_seen_at": "2026-11-03T15:18:32.051950+00:00",
+      "baseline": false,
+      "appeared_between": [
+        "2026-11-03T06:58:41.389925+00:00",
+        "2026-11-03T15:18:32.051950+00:00"
+      ],
+      "nominal_publication_delay_bounds_seconds": [
+        0,
+        11012.05195
+      ],
+      "last_seen_at": "2026-11-03T15:18:32.051950+00:00"
+    },
+    {
+      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/03/CAMHDA301-20261103T120000.mp4",
+      "recorded_at": "2026-11-03T12:00:00+00:00",
+      "first_seen_at": "2026-11-03T15:18:32.051950+00:00",
+      "baseline": false,
+      "appeared_between": [
+        "2026-11-03T06:58:41.389925+00:00",
+        "2026-11-03T15:18:32.051950+00:00"
+      ],
+      "nominal_publication_delay_bounds_seconds": [
+        0,
+        11912.05195
+      ],
+      "last_seen_at": "2026-11-03T15:18:32.051950+00:00"
+    },
+    {
+      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/03/CAMHDA301-20261103T114500.mp4",
+      "recorded_at": "2026-11-03T11:45:00+00:00",
+      "first_seen_at": "2026-11-03T15:18:32.051950+00:00",
+      "baseline": false,
+      "appeared_between": [
+        "2026-11-03T06:58:41.389925+00:00",
+        "2026-11-03T15:18:32.051950+00:00"
+      ],
+      "nominal_publication_delay_bounds_seconds": [
+        0,
+        12812.05195
+      ],
+      "last_seen_at": "2026-11-03T15:18:32.051950+00:00"
+    },
+    {
+      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/03/CAMHDA301-20261103T113000.mp4",
+      "recorded_at": "2026-11-03T11:30:00+00:00",
+      "first_seen_at": "2026-11-03T15:18:32.051950+00:00",
+      "baseline": false,
+      "appeared_between": [
+        "2026-11-03T06:58:41.389925+00:00",
+        "2026-11-03T15:18:32.051950+00:00"
+      ],
+      "nominal_publication_delay_bounds_seconds": [
+        0,
+        13712.05195
+      ],
+      "last_seen_at": "2026-11-03T15:18:32.051950+00:00"
+    },
+    {
+      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/03/CAMHDA301-20261103T111500.mp4",
+      "recorded_at": "2026-11-03T11:15:00+00:00",
+      "first_seen_at": "2026-11-03T15:18:32.051950+00:00",
+      "baseline": false,
+      "appeared_between": [
+        "2026-11-03T06:58:41.389925+00:00",
+        "2026-11-03T15:18:32.051950+00:00"
+      ],
+      "nominal_publication_delay_bounds_seconds": [
+        0,
+        14612.05195
+      ],
+      "last_seen_at": "2026-11-03T15:18:32.051950+00:00"
+    },
+    {
+      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/03/CAMHDA301-20261103T110000.mp4",
+      "recorded_at": "2026-11-03T11:00:00+00:00",
+      "first_seen_at": "2026-11-03T15:18:32.051950+00:00",
+      "baseline": false,
+      "appeared_between": [
+        "2026-11-03T06:58:41.389925+00:00",
+        "2026-11-03T15:18:32.051950+00:00"
+      ],
+      "nominal_publication_delay_bounds_seconds": [
+        0,
+        15512.05195
+      ],
+      "last_seen_at": "2026-11-03T15:18:32.051950+00:00"
+    },
+    {
+      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/03/CAMHDA301-20261103T104500.mp4",
+      "recorded_at": "2026-11-03T10:45:00+00:00",
+      "first_seen_at": "2026-11-03T15:18:32.051950+00:00",
+      "baseline": false,
+      "appeared_between": [
+        "2026-11-03T06:58:41.389925+00:00",
+        "2026-11-03T15:18:32.051950+00:00"
+      ],
+      "nominal_publication_delay_bounds_seconds": [
+        0,
+        16412.05195
+      ],
+      "last_seen_at": "2026-11-03T15:18:32.051950+00:00"
+    },
+    {
+      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/03/CAMHDA301-20261103T103000.mp4",
+      "recorded_at": "2026-11-03T10:30:00+00:00",
+      "first_seen_at": "2026-11-03T15:18:32.051950+00:00",
+      "baseline": false,
+      "appeared_between": [
+        "2026-11-03T06:58:41.389925+00:00",
+        "2026-11-03T15:18:32.051950+00:00"
+      ],
+      "nominal_publication_delay_bounds_seconds": [
+        0,
+        17312.05195
+      ],
+      "last_seen_at": "2026-11-03T15:18:32.051950+00:00"
+    },
+    {
+      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/03/CAMHDA301-20261103T101500.mp4",
+      "recorded_at": "2026-11-03T10:15:00+00:00",
+      "first_seen_at": "2026-11-03T15:18:32.051950+00:00",
+      "baseline": false,
+      "appeared_between": [
+        "2026-11-03T06:58:41.389925+00:00",
+        "2026-11-03T15:18:32.051950+00:00"
+      ],
+      "nominal_publication_delay_bounds_seconds": [
+        0,
+        18212.05195
+      ],
+      "last_seen_at": "2026-11-03T15:18:32.051950+00:00"
+    },
+    {
+      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/03/CAMHDA301-20261103T100000.mp4",
+      "recorded_at": "2026-11-03T10:00:00+00:00",
+      "first_seen_at": "2026-11-03T15:18:32.051950+00:00",
+      "baseline": false,
+      "appeared_between": [
+        "2026-11-03T06:58:41.389925+00:00",
+        "2026-11-03T15:18:32.051950+00:00"
+      ],
+      "nominal_publication_delay_bounds_seconds": [
+        0,
+        19112.05195
+      ],
+      "last_seen_at": "2026-11-03T15:18:32.051950+00:00"
+    },
+    {
+      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/03/CAMHDA301-20261103T094500.mp4",
+      "recorded_at": "2026-11-03T09:45:00+00:00",
+      "first_seen_at": "2026-11-03T15:18:32.051950+00:00",
+      "baseline": false,
+      "appeared_between": [
+        "2026-11-03T06:58:41.389925+00:00",
+        "2026-11-03T15:18:32.051950+00:00"
+      ],
+      "nominal_publication_delay_bounds_seconds": [
+        0,
+        20012.05195
+      ],
+      "last_seen_at": "2026-11-03T15:18:32.051950+00:00"
+    },
+    {
+      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/03/CAMHDA301-20261103T093000.mp4",
+      "recorded_at": "2026-11-03T09:30:00+00:00",
+      "first_seen_at": "2026-11-03T15:18:32.051950+00:00",
+      "baseline": false,
+      "appeared_between": [
+        "2026-11-03T06:58:41.389925+00:00",
+        "2026-11-03T15:18:32.051950+00:00"
+      ],
+      "nominal_publication_delay_bounds_seconds": [
+        0,
+        20912.05195
+      ],
+      "last_seen_at": "2026-11-03T15:18:32.051950+00:00"
+    },
+    {
+      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/03/CAMHDA301-20261103T091500.mp4",
+      "recorded_at": "2026-11-03T09:15:00+00:00",
+      "first_seen_at": "2026-11-03T15:18:32.051950+00:00",
+      "baseline": false,
+      "appeared_between": [
+        "2026-11-03T06:58:41.389925+00:00",
+        "2026-11-03T15:18:32.051950+00:00"
+      ],
+      "nominal_publication_delay_bounds_seconds": [
+        0,
+        21812.05195
+      ],
+      "last_seen_at": "2026-11-03T15:18:32.051950+00:00"
+    },
+    {
+      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/03/CAMHDA301-20261103T090000.mp4",
+      "recorded_at": "2026-11-03T09:00:00+00:00",
+      "first_seen_at": "2026-11-03T15:18:32.051950+00:00",
+      "baseline": false,
+      "appeared_between": [
+        "2026-11-03T06:58:41.389925+00:00",
+        "2026-11-03T15:18:32.051950+00:00"
+      ],
+      "nominal_publication_delay_bounds_seconds": [
+        0,
+        22712.05195
+      ],
+      "last_seen_at": "2026-11-03T15:18:32.051950+00:00"
+    },
+    {
+      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/03/CAMHDA301-20261103T084500.mp4",
+      "recorded_at": "2026-11-03T08:45:00+00:00",
+      "first_seen_at": "2026-11-03T15:18:32.051950+00:00",
+      "baseline": false,
+      "appeared_between": [
+        "2026-11-03T06:58:41.389925+00:00",
+        "2026-11-03T15:18:32.051950+00:00"
+      ],
+      "nominal_publication_delay_bounds_seconds": [
+        0,
+        23612.05195
+      ],
+      "last_seen_at": "2026-11-03T15:18:32.051950+00:00"
+    },
+    {
+      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/03/CAMHDA301-20261103T083000.mp4",
+      "recorded_at": "2026-11-03T08:30:00+00:00",
+      "first_seen_at": "2026-11-03T15:18:32.051950+00:00",
+      "baseline": false,
+      "appeared_between": [
+        "2026-11-03T06:58:41.389925+00:00",
+        "2026-11-03T15:18:32.051950+00:00"
+      ],
+      "nominal_publication_delay_bounds_seconds": [
+        0,
+        24512.05195
+      ],
+      "last_seen_at": "2026-11-03T15:18:32.051950+00:00"
+    },
+    {
+      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/03/CAMHDA301-20261103T081500.mp4",
+      "recorded_at": "2026-11-03T08:15:00+00:00",
+      "first_seen_at": "2026-11-03T15:18:32.051950+00:00",
+      "baseline": false,
+      "appeared_between": [
+        "2026-11-03T06:58:41.389925+00:00",
+        "2026-11-03T15:18:32.051950+00:00"
+      ],
+      "nominal_publication_delay_bounds_seconds": [
+        0,
+        25412.05195
+      ],
+      "last_seen_at": "2026-11-03T15:18:32.051950+00:00"
+    },
+    {
+      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/03/CAMHDA301-20261103T080000.mp4",
+      "recorded_at": "2026-11-03T08:00:00+00:00",
+      "first_seen_at": "2026-11-03T15:18:32.051950+00:00",
+      "baseline": false,
+      "appeared_between": [
+        "2026-11-03T06:58:41.389925+00:00",
+        "2026-11-03T15:18:32.051950+00:00"
+      ],
+      "nominal_publication_delay_bounds_seconds": [
+        0,
+        26312.05195
+      ],
+      "last_seen_at": "2026-11-03T15:18:32.051950+00:00"
+    },
+    {
+      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/03/CAMHDA301-20261103T074500.mp4",
+      "recorded_at": "2026-11-03T07:45:00+00:00",
+      "first_seen_at": "2026-11-03T15:18:32.051950+00:00",
+      "baseline": false,
+      "appeared_between": [
+        "2026-11-03T06:58:41.389925+00:00",
+        "2026-11-03T15:18:32.051950+00:00"
+      ],
+      "nominal_publication_delay_bounds_seconds": [
+        0,
+        27212.05195
+      ],
+      "last_seen_at": "2026-11-03T15:18:32.051950+00:00"
+    },
+    {
+      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/03/CAMHDA301-20261103T073000.mp4",
+      "recorded_at": "2026-11-03T07:30:00+00:00",
+      "first_seen_at": "2026-11-03T15:18:32.051950+00:00",
+      "baseline": false,
+      "appeared_between": [
+        "2026-11-03T06:58:41.389925+00:00",
+        "2026-11-03T15:18:32.051950+00:00"
+      ],
+      "nominal_publication_delay_bounds_seconds": [
+        0,
+        28112.05195
+      ],
+      "last_seen_at": "2026-11-03T15:18:32.051950+00:00"
+    },
+    {
+      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/03/CAMHDA301-20261103T071500.mp4",
+      "recorded_at": "2026-11-03T07:15:00+00:00",
+      "first_seen_at": "2026-11-03T15:18:32.051950+00:00",
+      "baseline": false,
+      "appeared_between": [
+        "2026-11-03T06:58:41.389925+00:00",
+        "2026-11-03T15:18:32.051950+00:00"
+      ],
+      "nominal_publication_delay_bounds_seconds": [
+        0,
+        29012.05195
+      ],
+      "last_seen_at": "2026-11-03T15:18:32.051950+00:00"
+    },
+    {
+      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/03/CAMHDA301-20261103T070000.mp4",
+      "recorded_at": "2026-11-03T07:00:00+00:00",
+      "first_seen_at": "2026-11-03T15:18:32.051950+00:00",
+      "baseline": false,
+      "appeared_between": [
+        "2026-11-03T06:58:41.389925+00:00",
+        "2026-11-03T15:18:32.051950+00:00"
+      ],
+      "nominal_publication_delay_bounds_seconds": [
+        0,
+        29912.05195
+      ],
+      "last_seen_at": "2026-11-03T15:18:32.051950+00:00"
+    },
+    {
+      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/03/CAMHDA301-20261103T064500.mp4",
+      "recorded_at": "2026-11-03T06:45:00+00:00",
+      "first_seen_at": "2026-11-03T15:18:32.051950+00:00",
+      "baseline": false,
+      "appeared_between": [
+        "2026-11-03T06:58:41.389925+00:00",
+        "2026-11-03T15:18:32.051950+00:00"
+      ],
+      "nominal_publication_delay_bounds_seconds": [
+        821.389925,
+        30812.05195
+      ],
+      "last_seen_at": "2026-11-03T15:18:32.051950+00:00"
+    },
+    {
+      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/03/CAMHDA301-20261103T063000.mp4",
+      "recorded_at": "2026-11-03T06:30:00+00:00",
+      "first_seen_at": "2026-11-03T15:18:32.051950+00:00",
+      "baseline": false,
+      "appeared_between": [
+        "2026-11-03T06:58:41.389925+00:00",
+        "2026-11-03T15:18:32.051950+00:00"
+      ],
+      "nominal_publication_delay_bounds_seconds": [
+        1721.389925,
+        31712.05195
+      ],
+      "last_seen_at": "2026-11-03T15:18:32.051950+00:00"
+    },
+    {
+      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/03/CAMHDA301-20261103T061500.mp4",
+      "recorded_at": "2026-11-03T06:15:00+00:00",
+      "first_seen_at": "2026-11-03T15:18:32.051950+00:00",
+      "baseline": false,
+      "appeared_between": [
+        "2026-11-03T06:58:41.389925+00:00",
+        "2026-11-03T15:18:32.051950+00:00"
+      ],
+      "nominal_publication_delay_bounds_seconds": [
+        2621.389925,
+        32612.05195
+      ],
+      "last_seen_at": "2026-11-03T15:18:32.051950+00:00"
+    },
+    {
+      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/03/CAMHDA301-20261103T060000.mp4",
+      "recorded_at": "2026-11-03T06:00:00+00:00",
+      "first_seen_at": "2026-11-03T15:18:32.051950+00:00",
+      "baseline": false,
+      "appeared_between": [
+        "2026-11-03T06:58:41.389925+00:00",
+        "2026-11-03T15:18:32.051950+00:00"
+      ],
+      "nominal_publication_delay_bounds_seconds": [
+        3521.389925,
+        33512.05195
+      ],
+      "last_seen_at": "2026-11-03T15:18:32.051950+00:00"
+    },
+    {
+      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/03/CAMHDA301-20261103T054500.mp4",
+      "recorded_at": "2026-11-03T05:45:00+00:00",
+      "first_seen_at": "2026-11-03T15:18:32.051950+00:00",
+      "baseline": false,
+      "appeared_between": [
+        "2026-11-03T06:58:41.389925+00:00",
+        "2026-11-03T15:18:32.051950+00:00"
+      ],
+      "nominal_publication_delay_bounds_seconds": [
+        4421.389925,
+        34412.05195
+      ],
+      "last_seen_at": "2026-11-03T15:18:32.051950+00:00"
+    },
+    {
+      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/03/CAMHDA301-20261103T053000.mp4",
+      "recorded_at": "2026-11-03T05:30:00+00:00",
+      "first_seen_at": "2026-11-03T15:18:32.051950+00:00",
+      "baseline": false,
+      "appeared_between": [
+        "2026-11-03T06:58:41.389925+00:00",
+        "2026-11-03T15:18:32.051950+00:00"
+      ],
+      "nominal_publication_delay_bounds_seconds": [
+        5321.389925,
+        35312.05195
+      ],
+      "last_seen_at": "2026-11-03T15:18:32.051950+00:00"
     }
   ],
   "publication_delay_note": "Baseline files have unknown publication time. Delay bounds require prior successful coverage of that date; filename timezone remains an assumption.",
   "environment": "github_actions",
   "tested_commit": "40ecfe7a6ed55928bb61de80fa6cbc3ced8ccc4c",
-  "run_url": "https://github.com/nikokoren/abyss/actions/runs/41593251476",
+  "run_url": "https://github.com/nikokoren/abyss/actions/runs/41662496274",
   "imagery_published": false,
   "rights_status": "not_assessed"
 }
