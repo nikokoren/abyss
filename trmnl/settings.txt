@@ -30,6 +30,12 @@ Replace the previous custom-field definitions with this entire block.
     - "International District: Tiny Towers": "ooi-international-district"
     - "Southern Hydrate Ridge: Einstein's Grotto": "ooi-hydrate-ridge"
     - "Oregon Offshore: seafloor": "ooi-oregon-offshore"
+- keyname: fill_photo
+  name: Dive edge to edge?
+  field_type: boolean
+  optional: true
+  default: false
+  description: "Fill the photo area for a closer look into the deep. Some edges may be cropped. Leave off to show the entire image."
 - keyname: show_qr
   name: Show QR code
   field_type: boolean
@@ -73,6 +79,12 @@ custom_fields:
       - "International District: Tiny Towers": "ooi-international-district"
       - "Southern Hydrate Ridge: Einstein's Grotto": "ooi-hydrate-ridge"
       - "Oregon Offshore: seafloor": "ooi-oregon-offshore"
+  - keyname: fill_photo
+    name: Dive edge to edge?
+    field_type: boolean
+    optional: true
+    default: false
+    description: "Fill the photo area for a closer look into the deep. Some edges may be cropped. Leave off to show the entire image."
   - keyname: show_qr
     name: Show QR code
     field_type: boolean
@@ -93,6 +105,7 @@ Paste transform.py into the Python serverless transform editor.
 Importing the complete abyss-trmnl.zip installs these files together.
 
 Leave Underwater cameras empty to rotate through all four published
-cameras. Show QR code defaults to off. Offline cameras keep their last
-good image. The 15-minute refresh rotates saved views; production image
-processing separately runs every three hours (23 */3 * * * UTC).
+cameras. Dive edge to edge? and Show QR code default to off.
+Offline cameras keep their last good image. The 15-minute refresh rotates
+saved views; production image processing separately runs every three hours
+(23 */3 * * * UTC).

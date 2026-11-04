@@ -42,6 +42,7 @@ def run(input):
     raw = fields.get('source_ids') if 'source_ids' in fields else fields.get('source_id')
     selected = selected_ids(raw)
     show_qr = fields.get('show_qr') is True or str(fields.get('show_qr', '')).strip().lower() in {'true', '1', 'yes', 'on'}
+    fill_photo = fields.get('fill_photo') is True or str(fields.get('fill_photo', '')).strip().lower() in {'true', '1', 'yes', 'on'}
     sources = input['sources']
     order = input.get('rotation_order') or [o.get('value') for o in input.get('options', [])]
     order = list(dict.fromkeys([*order, *sources.keys()]))
@@ -81,7 +82,7 @@ def run(input):
         devices[key] = {'pool': signature, 'cycle': cycle, 'source_id': current}
         devices = dict(list(devices.items())[-16:])
         state['abyss'] = {'devices': devices}
-    return {'abyss_ready': True, 'current_camera': camera, 'show_qr': show_qr,
+    return {'abyss_ready': True, 'current_camera': camera, 'show_qr': show_qr, 'fill_photo': fill_photo,
             'rotation': {'feed_ids': pool, 'index': position, 'interval_seconds': interval,
                          'mode': 'selected' if selected else 'all'},
             'trmnl_state': state}

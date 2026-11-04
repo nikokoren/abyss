@@ -29,10 +29,10 @@ def catalog():
     return {'default_source': 'ooi-axial', 'default_image': camera, 'sources': {'ooi-axial': camera}}
 
 
-def render(layout, data, selection=None, show_qr=False):
+def render(layout, data, selection=None, show_qr=False, fill_photo=False):
     context = copy.deepcopy(data)
     context['trmnl'] = {'plugin_settings': {'custom_fields_values': {
-        'source_ids': selection if selection is not None else [], 'show_qr': show_qr},
+        'source_ids': selection if selection is not None else [], 'show_qr': show_qr, 'fill_photo': fill_photo},
         'refresh_interval_minutes': 15, 'data_fetched_utc': 1793167200},
         'device': {'friendly_id': 'TEST', 'refresh_interval_seconds': 900}, 'state': {}}
     transformed = native.run(context)
@@ -52,6 +52,26 @@ class Markup(HTMLParser):
 
 
 class TrmnlTests(unittest.TestCase):
+    def test_fill_photo_boolean_and_all_layouts_keep_credit_and_qr(self):
+        data = catalog()
+        data['sources']['ooi-axial']['qr_code_url'] = 'https://example.invalid/qr.png'
+        values = [(False, False), ('false', False), ('0', False), ('off', False),
+                  (None, False), ('', False), ('unexpected', False),
+                  (True, True), ('true', True), (' TRUE ', True), ('1', True),
+                  (1, True), ('yes', True), ('on', True)]
+        self.assertFalse(native.run(data)['fill_photo'])
+        for value, expected in values:
+            for layout in LAYOUTS:
+                with self.subTest(value=value, layout=layout):
+                    text = render(layout, data, show_qr=True, fill_photo=value)
+                    images = [attrs for tag, attrs in Markup(text).elements if tag == 'img']
+                    self.assertIn('image--cover' if expected else 'image--contain', images[0]['class'].split())
+                    self.assertNotIn('image--contain' if expected else 'image--cover', images[0]['class'].split())
+                    self.assertIn('Data: OOI', text)
+                    if layout == 'full':
+                        self.assertIn('image--contain', images[1]['class'].split())
+                        self.assertNotIn('image--cover', images[1]['class'].split())
+
     def test_all_layouts_use_native_framework_structure_and_image_containment(self):
         for layout in LAYOUTS:
             with self.subTest(layout=layout):

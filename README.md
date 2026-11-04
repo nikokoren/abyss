@@ -111,6 +111,10 @@ photo; the downloadable version retains embedded credit. The QR overlays the
 photo's bottom-right corner in full-screen view only.
 See the guide for image sizes, native caching and storage considerations.
 
+**Dive edge to edge?** is also off by default. Enable it to fill the photo area
+in any layout, cropping edges as needed; leave it off to see the entire frame.
+Source credit and the title bar stay visible in either mode.
+
 ## Recent-recording search and cadence
 
 Production samples up to six coarse frames per recent video recording, then

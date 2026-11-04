@@ -5,7 +5,7 @@
 <div class="layout layout--col gap--small relative">
   {% if camera and camera.image_url %}
     <div class="flex flex--center stretch w--full">
-      <img class="image image--contain image-dither w--full h--full" src="{{ camera.display_image_url | default: camera.image_url | escape }}" alt="{{ camera.source_name | escape }}" />
+      <img class="image {% if fill_photo %}image--cover{% else %}image--contain{% endif %} image-dither w--full h--full" src="{{ camera.display_image_url | default: camera.image_url | escape }}" alt="{{ camera.source_name | escape }}" />
     </div>
     <div class="flex flex--row gap--small w--full shrink-0">
       <div class="flex flex--col gap--small stretch">

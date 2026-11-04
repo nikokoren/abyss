@@ -34,6 +34,9 @@ def generate(output, base_url, destination):
             '    description: ' + quote(details.strip()),
             '    default: []', '    options:']
     text.extend('      - ' + quote(o['label'].replace('·', '-')) + ': ' + quote(o['value']) for o in options)
+    text.extend(['  - keyname: fill_photo', '    name: Dive edge to edge?', '    field_type: boolean',
+                 '    optional: true', '    default: false',
+                 '    description: "Fill the photo area for a closer look into the deep. Some edges may be cropped. Leave off to show the entire image."'])
     text.extend(['  - keyname: show_qr', '    name: Show QR code', '    field_type: boolean',
                  '    optional: true', '    default: false',
                  '    description: "Full-screen view only: scan the bottom-right overlay to open this exact image or video recording. Off by default."'])
@@ -79,6 +82,7 @@ def settings_details(settings):
             "Paste transform.py into the Python serverless transform editor.\n"
             "Importing the complete abyss-trmnl.zip installs these files together.\n\n"
             "Leave Underwater cameras empty to rotate through all four published\n"
-            "cameras. Show QR code defaults to off. Offline cameras keep their last\n"
-            "good image. The 15-minute refresh rotates saved views; production image\n"
-            "processing separately runs every three hours (23 */3 * * * UTC).\n")
+            "cameras. Dive edge to edge? and Show QR code default to off.\n"
+            "Offline cameras keep their last good image. The 15-minute refresh rotates\n"
+            "saved views; production image processing separately runs every three hours\n"
+            "(23 */3 * * * UTC).\n")

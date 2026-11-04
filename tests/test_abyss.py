@@ -257,6 +257,11 @@ class IntegrationTests(unittest.TestCase):
             generate(root,a.base_url,root/'settings.yml')
             self.assertIn('Test camera (archive)',(root/'settings.yml').read_text())
             settings = (root/'settings.yml').read_text()
+            fill_field = settings.split('  - keyname: fill_photo\n', 1)[1].split('  - keyname:', 1)[0]
+            for line in ('    name: Dive edge to edge?', '    field_type: boolean',
+                         '    optional: true', '    default: false'):
+                self.assertIn(line + '\n', fill_field)
+            self.assertIn('Some edges may be cropped.', fill_field)
             for line in ('  - keyname: source_ids', '    multiple: true', '    optional: true',
                          '    default: []', 'refresh_interval: 15', 'serverless_language: python',
                          'framework_version: "3.4.4"'):

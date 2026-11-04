@@ -1,6 +1,6 @@
 # Native TRMNL Framework 3.4
 
-Abyss uses native layout, image containment, typography and title-bar components
+Abyss uses native layout, image sizing, typography and title-bar components
 in all four views. There is no custom device CSS, browser JavaScript, fixed view
 size or extra framework import. Settings select Framework **3.4.4**, the exact
 release used by the browser checks and recorded in [framework.json](framework.json).
@@ -104,7 +104,16 @@ frame's timestamp. The phone browser controls video playback; the source must
 still serve the recording. QR pixels are not dithered and no external QR service
 receives the link. Outages retain the image's existing QR destination too.
 
-## Image resolution
+## Image fit and resolution
+
+**Dive edge to edge?** is optional and off by default. Leave it off to show the
+entire image with native `image--contain`. Turn it on to fill the photo area
+with `image--cover`, cropping edges as needed in full, half and quadrant views.
+Portrait screens can crop a large part of a landscape photograph. Source credit,
+the title bar and the full-screen QR overlay remain visible; QR codes always
+use containment. This setting changes only the display, not the downloadable
+image. Re-import the complete recipe, or update settings, the transform and all
+four layouts together, to receive the new option.
 
 Production now preserves the **highest resolution supplied by each selected
 source**. The OOI still cameras provide **5344 × 4008** JPEGs, decoded without
@@ -146,7 +155,7 @@ release commit. Use `--chromium /usr/bin/chromium` for an installed browser.
 Optional `--catalog` and `--image` test a real published still; otherwise the test
 uses a clearly labeled synthetic image.
 
-The 100-case browser matrix covers four views on OG, v2 and Kindle 2024 profiles
+The 200-case browser matrix covers both image-fit settings in four views on OG, v2 and Kindle 2024 profiles
 in both orientations, retained/empty/long-name states, and no-padding mashups.
 It includes dark mode and full-screen QR clearance with and without padding.
 It checks bounds, image/text containment, title-bar separation, neighboring

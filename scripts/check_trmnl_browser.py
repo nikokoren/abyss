@@ -42,7 +42,7 @@ def document(markup, device, orientation, layout, *, no_bleed=False, dark=False)
 {view}</div></body></html>'''
 
 
-CHECK = '''() => {
+CHECK = '''(fillPhoto) => {
   const rect = e => { const r=e.getBoundingClientRect(); return {x:r.x,y:r.y,w:r.width,h:r.height,right:r.right,bottom:r.bottom}; };
   const within = (a,b) => a.x>=b.x-1 && a.y>=b.y-1 && a.right<=b.right+1 && a.bottom<=b.bottom+1;
   const views = [...document.querySelectorAll('.view')];
@@ -64,7 +64,8 @@ CHECK = '''() => {
     }
     for (const el of view.querySelectorAll('img')) {
       if (!el.complete || el.naturalWidth===0) errors.push('Image failed');
-      if (getComputedStyle(el).objectFit!=='contain') errors.push('Image would crop source notices');
+      const expectedFit = fillPhoto && el.classList.contains('image-dither') ? 'cover' : 'contain';
+      if (getComputedStyle(el).objectFit!==expectedFit) errors.push('Incorrect image fit: '+expectedFit);
       if (rect(el).h<40 || rect(el).w<40) errors.push('Image collapsed');
       if (!within(rect(el),rect(layout))) errors.push('Image outside layout');
     }
@@ -151,6 +152,8 @@ def main():
         for orientation in ('landscape', 'portrait'):
             for state in ('no_bleed_qr', 'no_bleed_dark'):
                 cases.append((device, orientation, 'full', state, data, None))
+    # Exercise both settings for every layout, device, QR and retained-image case.
+    cases = [(*case, fill_photo) for case in cases for fill_photo in (False, True)]
     with tempfile.TemporaryDirectory() as temporary:
         root = Path(temporary)
         qr_target = 'https://nikokoren.github.io/abyss/i/0123456789abcdef0123.html'
@@ -165,9 +168,9 @@ def main():
             image = Image.new('RGB', (1920, 1080), (45, 140, 170))
             ImageDraw.Draw(image).text((20, 20), 'SYNTHETIC LAYOUT TEST', fill=0)
             image.save(root / 'ocean.png')
-        for device, orientation, layout, state, context, selection in cases:
-            name = f'{device}-{orientation}-{layout}-{state}'
-            (root / (name + '.html')).write_text(document(render(layout, context, selection, show_qr=state in ('qr', 'dark', 'no_bleed_qr', 'no_bleed_dark')), device,
+        for device, orientation, layout, state, context, selection, fill_photo in cases:
+            name = f'{device}-{orientation}-{layout}-{state}' + ('-cover' if fill_photo else '')
+            (root / (name + '.html')).write_text(document(render(layout, context, selection, fill_photo=fill_photo, show_qr=state in ('qr', 'dark', 'no_bleed_qr', 'no_bleed_dark')), device,
                                                        orientation, layout, no_bleed=state.startswith('no_bleed'), dark=state in ('dark', 'no_bleed_dark')))
 
         class Handler(SimpleHTTPRequestHandler):
@@ -187,12 +190,12 @@ def main():
                 page = browser.new_page(viewport={'width': 1800, 'height': 1800})
                 browser_errors = []
                 page.on('pageerror', lambda e: browser_errors.append(str(e)))
-                for device, orientation, layout, state, _, _ in cases:
-                    name = f'{device}-{orientation}-{layout}-{state}'
+                for device, orientation, layout, state, _, _, fill_photo in cases:
+                    name = f'{device}-{orientation}-{layout}-{state}' + ('-cover' if fill_photo else '')
                     browser_errors.clear()
                     page.goto(f'http://127.0.0.1:{server.server_port}/{name}.html', wait_until='networkidle')
                     page.evaluate('document.fonts.ready')
-                    result = page.evaluate(CHECK)
+                    result = page.evaluate(CHECK, fill_photo)
                     qr_count = page.locator('img[alt^="Scan"]').count()
                     if qr_count and layout != 'full':
                         result['errors'].append('QR shown outside full-screen view')
