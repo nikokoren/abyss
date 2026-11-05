@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "source_id": "ooi-axial",
+  "checked_at": "2026-11-05T00:25:23.655422+00:00",
+  "status": "partial",
+  "timestamp_basis": "Filename parsed as UTC; source timezone not independently confirmed",
+  "directory_dates_checked": [
+    "2026-11-03",
+    "2026-11-04"
+  ],
+  "directory_errors": [
+    {
+      "date": "2026-11-05",
+      "category": "upstream_http_error",
+      "error": "HTTP Error 404: Not Found"
+    }
+  ],
+  "recordings_listed": 105,
+  "new_recordings_since_prior_coverage": 2,
+  "baseline_recordings": 0,
+  "recording_intervals_seconds": {
+    "samples": 104,
+    "median": 900.0,
+    "minimum": 900.0,
+    "maximum": 10800.0,
+    "common": [
+      {
+        "seconds": 900.0,
+        "count": 97
+      },
+      {
+        "seconds": 10800.0,
+        "count": 7
+      }
+    ]
+  },
+  "latest_nominal_recording_at": "2026-11-04T21:15:00+00:00",
+  "publication_delay_observations": 254,
+  "new_appearances": [
+    {
+      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/04/CAMHDA301-20261104T211500.mp4",
+      "recorded_at": "2026-11-04T21:15:00+00:00",
+      "first_seen_at": "2026-11-05T00:25:23.158540+00:00",
+      "baseline": false,
+      "appeared_between": [
+        "2026-11-04T18:42:19.018957+00:00",
+        "2026-11-05T00:25:23.158540+00:00"
+      ],
+      "nominal_publication_delay_bounds_seconds": [
+        0,
+        11423.15854
+      ],
+      "last_seen_at": "2026-11-05T00:25:23.158540+00:00"
+    },
+    {
+      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/04/CAMHDA301-20261104T181500.mp4",
+      "recorded_at": "2026-11-04T18:15:00+00:00",
+      "first_seen_at": "2026-11-05T00:25:23.158540+00:00",
+      "baseline": false,
+      "appeared_between": [
+        "2026-11-04T18:42:19.018957+00:00",
+        "2026-11-05T00:25:23.158540+00:00"
+      ],
+      "nominal_publication_delay_bounds_seconds": [
+        1639.018957,
+        22223.15854
+      ],
+      "last_seen_at": "2026-11-05T00:25:23.158540+00:00"
+    }
+  ],
+  "publication_delay_note": "Baseline files have unknown publication time. Delay bounds require prior successful coverage of that date; filename timezone remains an assumption.",
+  "environment": "github_actions",
+  "tested_commit": "fc51d6534008d2b35010ec47df404352775f62f7",
+  "run_url": "https://github.com/nikokoren/abyss/actions/runs/41941183315",
+  "imagery_published": false,
+  "rights_status": "not_assessed"
+}
