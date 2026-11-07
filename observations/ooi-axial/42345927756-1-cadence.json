@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "source_id": "ooi-axial",
+  "checked_at": "2026-11-07T06:12:06.303358+00:00",
+  "status": "observed",
+  "timestamp_basis": "Filename parsed as UTC; source timezone not independently confirmed",
+  "directory_dates_checked": [
+    "2026-11-05",
+    "2026-11-06",
+    "2026-11-07"
+  ],
+  "directory_errors": [],
+  "recordings_listed": 18,
+  "new_recordings_since_prior_coverage": 0,
+  "baseline_recordings": 2,
+  "recording_intervals_seconds": {
+    "samples": 17,
+    "median": 10800.0,
+    "minimum": 10800.0,
+    "maximum": 10800.0,
+    "common": [
+      {
+        "seconds": 10800.0,
+        "count": 17
+      }
+    ]
+  },
+  "latest_nominal_recording_at": "2026-11-07T03:15:00+00:00",
+  "publication_delay_observations": 259,
+  "new_appearances": [],
+  "publication_delay_note": "Baseline files have unknown publication time. Delay bounds require prior successful coverage of that date; filename timezone remains an assumption.",
+  "environment": "github_actions",
+  "tested_commit": "fc51d6534008d2b35010ec47df404352775f62f7",
+  "run_url": "https://github.com/nikokoren/abyss/actions/runs/42345927756",
+  "imagery_published": false,
+  "rights_status": "not_assessed"
+}
