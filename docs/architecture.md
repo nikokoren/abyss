@@ -59,7 +59,9 @@ native attribution text beneath it; `image_url` retains the separate attributed
 download with a credit band. Video
 extraction has no fixed scaling filter and JPEG decoding has no draft reduction.
 TRMNL's native `image-dither` flag delegates device resizing and quantization to
-the host. Ordered, threshold, Floyd and grayscale remain explicit CLI inspection
+the host. Sources with `display_tone` also publish full-resolution grayscale
+2-bit/4-bit renditions (`abyss/tone.py`). Layouts pick one per screen depth with
+framework bit-depth classes. Ordered, threshold, Floyd and grayscale remain explicit CLI inspection
 options, not production defaults. QR codes stay binary and do not use that flag.
 
 Publication is content-addressed PNG and immutable QR observation page first, atomic `latest.json` second, catalog

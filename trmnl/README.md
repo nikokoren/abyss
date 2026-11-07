@@ -126,8 +126,25 @@ both source and published dimensions plus the actual PNG byte size. Native
 `image-dither` delegates resizing, palette conversion and dithering to TRMNL's
 renderer for its active device. The QR image has no such flag.
 
-There is no Abyss grayscale conversion, contrast adjustment, sharpening or
-dithering in the default `native` delivery mode. Low-resolution scoring/encoder
+By default there is no Abyss grayscale conversion, contrast adjustment,
+sharpening or dithering in `native` delivery mode.
+
+**Per-depth tone mapping (opt-in).** Dim, unevenly lit cameras can set
+`"display_tone": true` in `sources.json` (currently Oregon Offshore only). Each
+publish then adds two full-resolution grayscale PNGs, built by `abyss/tone.py`:
+partial lamp-falloff flattening with a capped gain, contrast-limited adaptive
+histogram equalization (CLAHE), a darker rendering of red so anemones separate
+from grey sand, and a black/white point stretch. `display_image_4bit_url` uses a
+gentle curve for 16-shade screens such as TRMNL X; `display_image_2bit_url` uses
+a firmer one for 4-shade OG screens, which most OG units have after the 2-bit
+firmware update (1-bit OG falls back to it too). The layouts render both with
+`image-dither`. Framework classes `1bit:hidden 2bit:hidden` and
+`hidden 1bit:block 2bit:block` show exactly one per screen, and screens that
+are neither 1-bit nor 2-bit get the 4-bit image. Nothing is resized, cropped,
+denoised or sharpened, and TRMNL still scales and dithers. `display_image_url`,
+the download and QR pages keep the untouched colour photo. Retention protects
+the current renditions only. Bump `TONE_REVISION` after changing a profile, so
+opted-in cameras republish. Low-resolution scoring/encoder
 work does not change the published pixels. Explicit CLI preview methods still
 support the old 800 × 448 comparison variants; production no longer uses them.
 Full-resolution lossless photographs consume more delivery bandwidth and retained
@@ -155,13 +172,14 @@ release commit. Use `--chromium /usr/bin/chromium` for an installed browser.
 Optional `--catalog` and `--image` test a real published still; otherwise the test
 uses a clearly labeled synthetic image.
 
-The 200-case browser matrix covers both image-fit settings in four views on OG, v2 and Kindle 2024 profiles
+The 232-case browser matrix covers both image-fit settings in four views on OG (2-bit, plus a 1-bit fallback), v2 and Kindle 2024 profiles
 in both orientations, retained/empty/long-name states, and no-padding mashups.
 It includes dark mode and full-screen QR clearance with and without padding.
 It checks bounds, image/text containment, title-bar separation, neighboring
 cells and browser errors, verifies full-screen-only bottom-right QR overlays,
 decodes each QR from its actual rendered size, and checks white native credit
-on a black canvas in dark mode.
+on a black canvas in dark mode. Tone-mapped cases check that exactly one
+rendition shows: 2-bit on OG (both depths), 4-bit elsewhere.
 CI uploads `native-trmnl-3.4-previews`; local reports
 live under `output/validation/trmnl/`. Rotation tests exercise the actual native
 transform, persisted state and Liquid templates, including all selection modes,

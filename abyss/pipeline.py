@@ -9,6 +9,7 @@ from pathlib import Path
 from PIL import Image
 from .adapters import discover_many
 from .imaging import render_for_source
+from .tone import TONE_REVISION, display_variants
 from .network import RangeVideo, TransferBudget
 from .stills import download_image
 from .publication import atomic_json, catalog, publish, read_json
@@ -58,6 +59,8 @@ def publish_candidate(source, args, candidate, diagnostics, context):
     with Image.open(frame) as image:
         original_size = image.size
         display_image = image.convert('RGB') if args.method == 'native' else None
+        variants = (display_variants(display_image, source.get('display_tone'))
+                    if display_image is not None else {})
         processed = render_for_source(image, source, args.width, args.height, args.method,
                                       args.contrast, args.brightness)
     capture = None
@@ -87,7 +90,11 @@ def publish_candidate(source, args, candidate, diagnostics, context):
                 'selection_reason': 'Best readable recent snapshot or video frame using quality, novelty and any active personal preference model',
                 'diagnostics': diagnostics, 'fixture': bool(args.local_video)}
     metadata['selection_context'] = context
-    publish(args.output, source, processed, metadata, args.base_url, display_image=display_image, update_latest=False)
+    if variants:
+        metadata['display_tone'] = {'revision': TONE_REVISION, 'depths': sorted(variants),
+                                    'note': 'Device-only grayscale tone mapping per screen depth; TRMNL still resizes and dithers.'}
+    publish(args.output, source, processed, metadata, args.base_url, display_image=display_image,
+            display_variants=variants, update_latest=False)
     return metadata
 
 
@@ -107,7 +114,7 @@ def run_source(source, args):
                       else discover_many(source, limit=count))
         preference = load_model(getattr(args, 'preference_model', None))
         requested_model_id = preference['model_id'] if preference else None
-        render_profile = hashlib.sha256(json.dumps({
+        profile = {
             'delivery_revision': 3, 'selection_revision': 2, 'recording_limit': count,
             'width': args.width, 'height': args.height, 'method': args.method,
             'contrast': args.contrast, 'brightness': args.brightness,
@@ -116,7 +123,11 @@ def run_source(source, args):
             'scoring': source.get('scoring', {}),
             'search': {key: getattr(args, key, None) for key in
                        ('candidates', 'coarse_candidates', 'refine_candidates', 'refine_windows', 'interval', 'max_bytes')},
-        }, sort_keys=True).encode()).hexdigest()
+        }
+        if source.get('display_tone'):
+            # Only opted-in sources re-render when the tone mapping changes.
+            profile['display_tone'] = [source['display_tone'], TONE_REVISION]
+        render_profile = hashlib.sha256(json.dumps(profile, sort_keys=True).encode()).hexdigest()
         context = {'model_id': requested_model_id, 'profile': render_profile}
         same_profile = (state.get('preference_model_id') == requested_model_id
                         and state.get('render_profile') == render_profile)

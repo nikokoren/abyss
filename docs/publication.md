@@ -22,6 +22,8 @@ Production processes images every three hours (`23 */3 * * *`, UTC).
 TRMNL's separate 15-minute refresh rotates saved views. Empty camera selection
 means all published cameras; offline cameras keep their slot and last good image.
 Full-resolution source colour is preserved; TRMNL handles device dithering.
+Oregon Offshore's device image is tone-mapped per screen depth (`display_tone`);
+its download is not.
 
 ## Install the current recipe
 

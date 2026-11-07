@@ -5,7 +5,13 @@
 <div class="layout layout--col gap--small">
   {% if camera and camera.image_url %}
     <div class="relative flex flex--center stretch w--full">
+      {% if camera.display_image_2bit_url and camera.display_image_4bit_url %}
+      {% comment %}Tone-mapped renditions per screen depth: 4-bit (TRMNL X) by default, 2-bit for OG and 1-bit fallback.{% endcomment %}
+      <img class="image {% if fill_photo %}image--cover{% else %}image--contain{% endif %} image-dither w--full h--full 1bit:hidden 2bit:hidden" src="{{ camera.display_image_4bit_url | escape }}" alt="{{ camera.source_name | escape }}" />
+      <img class="image {% if fill_photo %}image--cover{% else %}image--contain{% endif %} image-dither w--full h--full hidden 1bit:block 2bit:block" src="{{ camera.display_image_2bit_url | escape }}" alt="{{ camera.source_name | escape }}" />
+      {% else %}
       <img class="image {% if fill_photo %}image--cover{% else %}image--contain{% endif %} image-dither w--full h--full" src="{{ camera.display_image_url | default: camera.image_url | escape }}" alt="{{ camera.source_name | escape }}" />
+      {% endif %}
     </div>
     {% if camera.display_credit %}<span class="label label--small w--full shrink-0">{{ camera.display_credit | escape }}</span>{% endif %}
     {% if camera.fixture %}<span class="label label--small label--outline shrink-0">Synthetic fixture</span>{% endif %}

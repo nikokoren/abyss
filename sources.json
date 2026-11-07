@@ -293,6 +293,7 @@
       "timestamp_basis": "explicit_utc_filename",
       "completion_delay_minutes": 5,
       "images_per_search": 2,
+      "display_tone": true,
       "max_search_bytes": 50331648,
       "rights_review_url": "https://github.com/nikokoren/abyss/blob/main/docs/additional-cameras.md",
       "license_scope": "OOI instrument-data derived stills with required attribution",

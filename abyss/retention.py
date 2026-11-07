@@ -8,7 +8,7 @@ from urllib.parse import urlsplit, unquote
 from PIL import Image
 
 from .media_page import https_url, save_preview, write_page
-from .publication import atomic_json, read_json
+from .publication import DEVICE_VARIANT_KEYS, atomic_json, read_json
 
 DEFAULT_BUDGET = 640 * 1024 * 1024
 
@@ -87,8 +87,9 @@ def retain(root, base_url, *, max_bytes=DEFAULT_BUDGET, versions_per_camera=2, p
     root = Path(root); public = root / 'public'
     protected = set(); protected_views = set(); latest = {}
     def protect(record):
+        # Current device renditions are protected with the photo they derive from.
         required = [local_file(public, record[key], base_url)
-                    for key in ('image_url', 'display_image_url') if record.get(key)]
+                    for key in ('image_url', 'display_image_url', *DEVICE_VARIANT_KEYS) if record.get(key)]
         if not required or any(p is None or not p.is_file() for p in required):
             raise ValueError('Current camera/session image is missing; deployment must preserve the previous site')
         return set(required)

@@ -66,6 +66,9 @@ A manual `terms_reviewed_at` is a record of a real review, not a toggle to bypas
 If rights remain ambiguous, obtain permission or keep the source disabled.
 
 Production preserves full-resolution colour and lets TRMNL scale and dither it.
+Dim, unevenly lit cameras may opt into `display_tone` (see `trmnl/README.md`):
+the device then gets 2-bit and 4-bit grayscale tone-mapped renditions, and the
+download stays untouched.
 Alternative rendering modes are inspection tools. Use the recorded runner
 measurements for bandwidth and search coverage; physical-device readability
 still needs confirmation.
