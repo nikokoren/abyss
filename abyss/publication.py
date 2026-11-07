@@ -26,7 +26,26 @@ def read_json(path, default):
     return json.loads(path.read_text()) if path.exists() else default
 
 
-def publish(root, source, image, metadata, base_url, *, display_image=None, update_latest=True):
+DEVICE_VARIANT_KEYS = ('display_image_4bit_url', 'display_image_2bit_url')
+
+
+def _save_content_addressed(image, directory):
+    fd, temporary = tempfile.mkstemp(dir=directory, suffix='.png')
+    os.close(fd)
+    temporary = Path(temporary)
+    try:
+        image.save(temporary, format='PNG')
+        digest = hashlib.sha256(temporary.read_bytes()).hexdigest()
+        name = digest[:20] + '.png'
+        size = temporary.stat().st_size
+        os.replace(temporary, directory / name)
+        return name, digest, size
+    finally:
+        temporary.unlink(missing_ok=True)
+
+
+def publish(root, source, image, metadata, base_url, *, display_image=None, display_variants=None,
+            update_latest=True):
     from PIL import Image
     directory = Path(root) / 'public' / 'sources' / source['id']
     directory.mkdir(parents=True, exist_ok=True)
@@ -59,6 +78,11 @@ def publish(root, source, image, metadata, base_url, *, display_image=None, upda
                             display_image_sha256=raw_hash, display_image_bytes=raw_bytes,
                             display_attribution_embedded=False,
                             display_credit=' | '.join(source.get('image_credit_lines', [])))
+        for depth, variant in sorted((display_variants or {}).items()):
+            # Device-only tone-mapped renditions; downloads and QR pages keep the clean photo.
+            name, digest, size = _save_content_addressed(variant.convert('L'), directory)
+            metadata.update({f'display_image_{depth}_url': f'{base_url.rstrip("/")}/sources/{source["id"]}/{name}',
+                             f'display_image_{depth}_sha256': digest, f'display_image_{depth}_bytes': size})
         from .media_page import publish_media_page
         publish_media_page(Path(root) / 'public', metadata, base_url, preview_image=image)
         if update_latest:

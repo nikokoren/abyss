@@ -159,6 +159,31 @@ class StillTests(unittest.TestCase):
             self.assertEqual(run([value], options)[value['id']], 'unchanged')
             self.assertEqual(len(fake.requests), 1)
 
+    def test_display_tone_opt_in_publishes_depth_renditions_and_reprocesses(self):
+        url = 'https://camera.example/CAMDSB103/2026/01/01/CAMDSB103_10.33.7.5_20260101T110000_UTC.jpg'
+        fake = ImageOpener({url: picture()})
+        records = [{'url': url, 'recorded_at': '2026-01-01T11:00:00+00:00', 'media_type': 'image'}]
+        with tempfile.TemporaryDirectory() as tmp, patch('abyss.pipeline.discover_many', return_value=records), \
+                patch('abyss.stills.opener', return_value=fake):
+            value = camera(); value.update(preserve_frame=True, image_credit_lines=['OOI / WHOI / UW; NSF support'])
+            options = args(tmp); options.method = 'native'
+            self.assertEqual(run([value], options)[value['id']], 'published')
+            plain = read_json(Path(tmp) / 'public/sources/test-camera/latest.json', {})
+            self.assertNotIn('display_image_2bit_url', plain)
+            # Opting in changes the render profile, so the known snapshot is processed
+            # again; the same frame wins, and latest.json gains the device renditions.
+            value['display_tone'] = True
+            self.assertEqual(run([value], options)[value['id']], 'unchanged')
+            self.assertEqual(len(fake.requests), 2)
+            metadata = read_json(Path(tmp) / 'public/sources/test-camera/latest.json', {})
+            self.assertEqual(metadata['display_tone']['depths'], ['2bit', '4bit'])
+            self.assertEqual(metadata['display_image_url'], plain['display_image_url'])
+            for depth in ('2bit', '4bit'):
+                path = Path(tmp) / 'public' / metadata[f'display_image_{depth}_url'].split('/abyss/')[1]
+                with Image.open(path) as image:
+                    self.assertEqual(image.mode, 'L')
+                    self.assertEqual(image.size, (plain['source_width'], plain['source_height']))
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -22,14 +22,15 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'tests'))
 from test_trmnl import LAYOUTS, catalog, render
 
 
-def document(markup, device, orientation, layout, *, no_bleed=False, dark=False):
+def document(markup, device, orientation, layout, *, no_bleed=False, dark=False, depth=None):
     view = f'<div class="view view--{layout}">{markup}</div>'
     if layout != 'full':
         mashup = {'half_vertical': '1Lx1R', 'half_horizontal': '1Tx1B', 'quadrant': '2x2'}[layout]
         # Real mashups have neighboring cells; they must not overlap ours.
         cells = 4 if layout == 'quadrant' else 2
         view = f'<div class="mashup mashup--{mashup}">{view * cells}</div>'
-    mode = '1bit' if device == 'og' else '4bit'
+    # OG ships 2-bit firmware on most devices; pass depth='1bit' for older units.
+    mode = depth or ('2bit' if device == 'og' else '4bit')
     size = {'og': 'md', 'v2': 'lg', 'amazon_kindle_2024': 'sm'}[device]
     portrait = 'screen--portrait' if orientation == 'portrait' else ''
     padding = 'screen--no-bleed' if no_bleed else ''
@@ -53,6 +54,7 @@ CHECK = '''(fillPhoto) => {
     if (!within(rect(bar),v)) errors.push('Title bar exceeds view');
     if (rect(layout).bottom>rect(bar).y+1) errors.push('Title bar overlaps layout');
     for (const el of view.querySelectorAll('img,span')) {
+      if (getComputedStyle(el).display==='none') continue;
       if (!within(rect(el),v)) errors.push('Content exceeds view: '+el.textContent.trim().slice(0,80));
       if (el.tagName==='SPAN') {
         const range=document.createRange(); range.selectNodeContents(el);
@@ -62,8 +64,11 @@ CHECK = '''(fillPhoto) => {
         if (['hidden','clip'].includes(getComputedStyle(el).overflowY) && el.scrollHeight>el.clientHeight+2 && !el.hasAttribute('data-clamp')) errors.push('Text clipped: '+el.textContent.trim());
       }
     }
+    const photos=[...view.querySelectorAll('img.image-dither')].filter(el=>getComputedStyle(el).display!=='none');
+    if (view.querySelector('img.image-dither') && photos.length!==1) errors.push('Expected exactly one visible photo per screen depth');
     for (const el of view.querySelectorAll('img')) {
       if (!el.complete || el.naturalWidth===0) errors.push('Image failed');
+      if (getComputedStyle(el).display==='none') continue;
       const expectedFit = fillPhoto && el.classList.contains('image-dither') ? 'cover' : 'contain';
       if (getComputedStyle(el).objectFit!==expectedFit) errors.push('Incorrect image fit: '+expectedFit);
       if (rect(el).h<40 || rect(el).w<40) errors.push('Image collapsed');
@@ -77,7 +82,7 @@ CHECK = '''(fillPhoto) => {
     const a=rect(views[i]),b=rect(views[j]);
     if(Math.min(a.right,b.right)-Math.max(a.x,b.x)>1 && Math.min(a.bottom,b.bottom)-Math.max(a.y,b.y)>1) errors.push('Mashup cells overlap');
   }
-  const view=views[0], image=view.querySelector('img');
+  const view=views[0], image=[...view.querySelectorAll('img')].find(el=>getComputedStyle(el).display!=='none');
   const qr=view.querySelector('img[alt^="Scan"]');
   if(qr) {
     const q=rect(qr), box=rect(qr.parentElement);
@@ -89,7 +94,7 @@ CHECK = '''(fillPhoto) => {
     if(credit && rect(credit).right>q.x-1) errors.push('Credit overlaps QR');
   }
   const credit=view.querySelector('.label.w--full');
-  return {errors,view:rect(view),image:image?rect(image):null,
+  return {errors,view:rect(view),image:image?rect(image):null,photo_src:image?image.getAttribute('src'):null,
     credit_color:credit?getComputedStyle(credit).color:null,
     canvas_color:getComputedStyle(document.querySelector('.screen')).backgroundColor,
     label_font:getComputedStyle(view.querySelector('.label')||view.querySelector('.description')||view.querySelector('.title_bar .title')).fontSize};
@@ -152,6 +157,15 @@ def main():
         for orientation in ('landscape', 'portrait'):
             for state in ('no_bleed_qr', 'no_bleed_dark'):
                 cases.append((device, orientation, 'full', state, data, None))
+    # Tone-mapped sources ship one rendition per screen depth; exactly one may show.
+    toned = copy.deepcopy(data)
+    for camera in [*toned['sources'].values(), toned.get('default_image') or {}]:
+        camera.update(display_image_4bit_url='/ocean-4bit.png', display_image_2bit_url='/ocean-2bit.png')
+    for device in ('og', 'v2', 'amazon_kindle_2024'):
+        for layout in LAYOUTS:
+            cases.append((device, 'landscape', layout, 'tone', toned, None))
+    for layout in LAYOUTS:
+        cases.append(('og', 'portrait', layout, 'tone_1bit', toned, None))
     # Exercise both settings for every layout, device, QR and retained-image case.
     cases = [(*case, fill_photo) for case in cases for fill_photo in (False, True)]
     with tempfile.TemporaryDirectory() as temporary:
@@ -168,10 +182,16 @@ def main():
             image = Image.new('RGB', (1920, 1080), (45, 140, 170))
             ImageDraw.Draw(image).text((20, 20), 'SYNTHETIC LAYOUT TEST', fill=0)
             image.save(root / 'ocean.png')
+        with Image.open(root / 'ocean.png') as image:
+            for depth, shade in (('4bit', 'SIXTEEN SHADES'), ('2bit', 'FOUR SHADES')):
+                variant = image.convert('L')
+                ImageDraw.Draw(variant).text((20, 60), shade, fill=255)
+                variant.save(root / f'ocean-{depth}.png')
         for device, orientation, layout, state, context, selection, fill_photo in cases:
             name = f'{device}-{orientation}-{layout}-{state}' + ('-cover' if fill_photo else '')
             (root / (name + '.html')).write_text(document(render(layout, context, selection, fill_photo=fill_photo, show_qr=state in ('qr', 'dark', 'no_bleed_qr', 'no_bleed_dark')), device,
-                                                       orientation, layout, no_bleed=state.startswith('no_bleed'), dark=state in ('dark', 'no_bleed_dark')))
+                                                       orientation, layout, no_bleed=state.startswith('no_bleed'), dark=state in ('dark', 'no_bleed_dark'),
+                                                       depth='1bit' if state == 'tone_1bit' else None))
 
         class Handler(SimpleHTTPRequestHandler):
             def log_message(self, *args):
@@ -211,6 +231,10 @@ def main():
                         result['qr_screen_decoded'] = decoded.text if decoded else None
                         if result['qr_screen_decoded'] != qr_target:
                             result['errors'].append('QR code cannot be decoded in the full rendered screen')
+                    if state.startswith('tone'):
+                        expected = '/ocean-2bit.png' if device == 'og' else '/ocean-4bit.png'
+                        if result['photo_src'] != expected:
+                            result['errors'].append(f'Wrong rendition for screen depth: {result["photo_src"]}')
                     if state == 'dark' and result['credit_color'] != 'rgb(255, 255, 255)':
                         result['errors'].append('Native credit text did not switch to white in dark mode')
                     if state == 'dark' and result['canvas_color'] != 'rgb(0, 0, 0)':
