@@ -15,11 +15,11 @@ from PIL import Image
 PROFILES = {
     '4bit': {'flatten': .4, 'max_gain': 1.4, 'clahe_clip': 1.2, 'clahe_tiles': 6, 'black': .5,
              'white': 99.7, 'gamma': 1.0, 'red_accent': .35},
-    '2bit': {'flatten': .7, 'max_gain': 1.7, 'clahe_clip': 2.0, 'clahe_tiles': 6, 'black': 2.0,
+    '2bit': {'flatten': .7, 'max_gain': 1.4, 'clahe_clip': 2.0, 'clahe_tiles': 6, 'black': 4.0,
              'white': 99.5, 'gamma': 1.0, 'red_accent': .5},
 }
 DEPTHS = tuple(PROFILES)
-TONE_REVISION = 1  # Bump when PROFILES or the algorithm change, to republish.
+TONE_REVISION = 2  # Bump when PROFILES or the algorithm change, to republish.
 STATS_EDGE = 1024  # Long edge of the statistics copy; output stays full size.
 
 
