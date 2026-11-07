@@ -1,0 +1,610 @@
+[
+  {
+    "published_at": "2026-10-29T20:26:38.619926+00:00",
+    "source_commit": "263805997ba935a381a3ae046130e92c6755fe45",
+    "previous_output_commit": "a7f32cb725cb8c580bc039143d9156d2603af8c8",
+    "run_id": "40948410997",
+    "retention": {
+      "schema_version": 1,
+      "budget_bytes": 671088640,
+      "before_bytes": 813878232,
+      "after_bytes": 611839224,
+      "deleted_files": 11,
+      "deleted_bytes": 202038102,
+      "protected_image_files": 18,
+      "observation_pages": 49,
+      "versions_per_camera": 2,
+      "previews_per_camera": 12,
+      "budget_satisfied": true
+    }
+  },
+  {
+    "published_at": "2026-10-30T01:12:46.231969+00:00",
+    "source_commit": "263805997ba935a381a3ae046130e92c6755fe45",
+    "previous_output_commit": "31e8662707c56c79aa2009394421cdba71218879",
+    "run_id": "40984111906",
+    "retention": {
+      "schema_version": 1,
+      "budget_bytes": 671088640,
+      "before_bytes": 809617002,
+      "after_bytes": 610796777,
+      "deleted_files": 8,
+      "deleted_bytes": 198819597,
+      "protected_image_files": 18,
+      "observation_pages": 52,
+      "versions_per_camera": 2,
+      "previews_per_camera": 12,
+      "budget_satisfied": true
+    }
+  },
+  {
+    "published_at": "2026-10-30T10:18:12.941382+00:00",
+    "source_commit": "263805997ba935a381a3ae046130e92c6755fe45",
+    "previous_output_commit": "ce7f8fe4cb0e4aa3b60c855f27b6617886f9971c",
+    "run_id": "41039258688",
+    "retention": {
+      "schema_version": 1,
+      "budget_bytes": 671088640,
+      "before_bytes": 823834074,
+      "after_bytes": 614579236,
+      "deleted_files": 14,
+      "deleted_bytes": 209253654,
+      "protected_image_files": 18,
+      "observation_pages": 57,
+      "versions_per_camera": 2,
+      "previews_per_camera": 12,
+      "budget_satisfied": true
+    }
+  },
+  {
+    "published_at": "2026-10-30T18:11:43.530598+00:00",
+    "source_commit": "263805997ba935a381a3ae046130e92c6755fe45",
+    "previous_output_commit": "77147edfb57793a984df6b48de59d56114e71a90",
+    "run_id": "41103862988",
+    "retention": {
+      "schema_version": 1,
+      "budget_bytes": 671088640,
+      "before_bytes": 818586207,
+      "after_bytes": 614959873,
+      "deleted_files": 11,
+      "deleted_bytes": 203625428,
+      "protected_image_files": 18,
+      "observation_pages": 61,
+      "versions_per_camera": 2,
+      "previews_per_camera": 12,
+      "budget_satisfied": true
+    }
+  },
+  {
+    "published_at": "2026-10-30T22:33:08.483755+00:00",
+    "source_commit": "263805997ba935a381a3ae046130e92c6755fe45",
+    "previous_output_commit": "75bd32e0b9d7204b70613f6ad45c0faeb818857d",
+    "run_id": "41138443833",
+    "retention": {
+      "schema_version": 1,
+      "budget_bytes": 671088640,
+      "before_bytes": 818215125,
+      "after_bytes": 612843502,
+      "deleted_files": 11,
+      "deleted_bytes": 205370717,
+      "protected_image_files": 18,
+      "observation_pages": 65,
+      "versions_per_camera": 2,
+      "previews_per_camera": 12,
+      "budget_satisfied": true
+    }
+  },
+  {
+    "published_at": "2026-10-31T06:00:34.771609+00:00",
+    "source_commit": "263805997ba935a381a3ae046130e92c6755fe45",
+    "previous_output_commit": "7034289f914ad9c3f85175688c3217ae70d6a5b0",
+    "run_id": "41174587889",
+    "retention": {
+      "schema_version": 1,
+      "budget_bytes": 671088640,
+      "before_bytes": 817396611,
+      "after_bytes": 611805434,
+      "deleted_files": 12,
+      "deleted_bytes": 205590279,
+      "protected_image_files": 18,
+      "observation_pages": 69,
+      "versions_per_camera": 2,
+      "previews_per_camera": 12,
+      "budget_satisfied": true
+    }
+  },
+  {
+    "published_at": "2026-10-31T12:51:05.311723+00:00",
+    "source_commit": "263805997ba935a381a3ae046130e92c6755fe45",
+    "previous_output_commit": "1810e9cd305703a7d1146fc6ef68c8054ca29d84",
+    "run_id": "41202674594",
+    "retention": {
+      "schema_version": 1,
+      "budget_bytes": 671088640,
+      "before_bytes": 817914445,
+      "after_bytes": 614224932,
+      "deleted_files": 12,
+      "deleted_bytes": 203688615,
+      "protected_image_files": 18,
+      "observation_pages": 73,
+      "versions_per_camera": 2,
+      "previews_per_camera": 12,
+      "budget_satisfied": true
+    }
+  },
+  {
+    "published_at": "2026-10-31T19:25:50.848540+00:00",
+    "source_commit": "263805997ba935a381a3ae046130e92c6755fe45",
+    "previous_output_commit": "3560bda3c26567ec4da21a875e76000cf31010b8",
+    "run_id": "41233922233",
+    "retention": {
+      "schema_version": 1,
+      "budget_bytes": 671088640,
+      "before_bytes": 824406205,
+      "after_bytes": 614473947,
+      "deleted_files": 15,
+      "deleted_bytes": 209931082,
+      "protected_image_files": 18,
+      "observation_pages": 78,
+      "versions_per_camera": 2,
+      "previews_per_camera": 12,
+      "budget_satisfied": true
+    }
+  },
+  {
+    "published_at": "2026-11-01T00:17:23.601250+00:00",
+    "source_commit": "263805997ba935a381a3ae046130e92c6755fe45",
+    "previous_output_commit": "09ca7cd1c380f3f2acc0a65076aa021a0c9b8d7c",
+    "run_id": "41255775307",
+    "retention": {
+      "schema_version": 1,
+      "budget_bytes": 671088640,
+      "before_bytes": 814879379,
+      "after_bytes": 615722699,
+      "deleted_files": 9,
+      "deleted_bytes": 199156060,
+      "protected_image_files": 18,
+      "observation_pages": 81,
+      "versions_per_camera": 2,
+      "previews_per_camera": 12,
+      "budget_satisfied": true
+    }
+  },
+  {
+    "published_at": "2026-11-01T06:29:28.263546+00:00",
+    "source_commit": "263805997ba935a381a3ae046130e92c6755fe45",
+    "previous_output_commit": "6ebd3c02ea4cb52cf00333c82a6157da29d4a2e4",
+    "run_id": "41280777337",
+    "retention": {
+      "schema_version": 1,
+      "budget_bytes": 671088640,
+      "before_bytes": 829497954,
+      "after_bytes": 618501183,
+      "deleted_files": 15,
+      "deleted_bytes": 210995595,
+      "protected_image_files": 18,
+      "observation_pages": 86,
+      "versions_per_camera": 2,
+      "previews_per_camera": 12,
+      "budget_satisfied": true
+    }
+  },
+  {
+    "published_at": "2026-11-01T16:11:27.300766+00:00",
+    "source_commit": "263805997ba935a381a3ae046130e92c6755fe45",
+    "previous_output_commit": "a749d63fa437bf0aa996dce6057008ceb67010e4",
+    "run_id": "41324767583",
+    "retention": {
+      "schema_version": 1,
+      "budget_bytes": 671088640,
+      "before_bytes": 826108114,
+      "after_bytes": 612594253,
+      "deleted_files": 15,
+      "deleted_bytes": 213512685,
+      "protected_image_files": 18,
+      "observation_pages": 91,
+      "versions_per_camera": 2,
+      "previews_per_camera": 12,
+      "budget_satisfied": true
+    }
+  },
+  {
+    "published_at": "2026-11-01T22:15:29.802849+00:00",
+    "source_commit": "263805997ba935a381a3ae046130e92c6755fe45",
+    "previous_output_commit": "0393168ddff1256c607157ab3d160fbdc5283c9e",
+    "run_id": "41355895633",
+    "retention": {
+      "schema_version": 1,
+      "budget_bytes": 671088640,
+      "before_bytes": 820599221,
+      "after_bytes": 607039597,
+      "deleted_files": 15,
+      "deleted_bytes": 213558448,
+      "protected_image_files": 18,
+      "observation_pages": 96,
+      "versions_per_camera": 2,
+      "previews_per_camera": 12,
+      "budget_satisfied": true
+    }
+  },
+  {
+    "published_at": "2026-11-02T06:29:40.308267+00:00",
+    "source_commit": "263805997ba935a381a3ae046130e92c6755fe45",
+    "previous_output_commit": "49ee3a090ebfe77df7d2d718c848a4d36cbdc491",
+    "run_id": "41399950086",
+    "retention": {
+      "schema_version": 1,
+      "budget_bytes": 671088640,
+      "before_bytes": 814886207,
+      "after_bytes": 607096184,
+      "deleted_files": 15,
+      "deleted_bytes": 207788847,
+      "protected_image_files": 18,
+      "observation_pages": 101,
+      "versions_per_camera": 2,
+      "previews_per_camera": 12,
+      "budget_satisfied": true
+    }
+  },
+  {
+    "published_at": "2026-11-02T08:54:01.161863+00:00",
+    "source_commit": "40ecfe7a6ed55928bb61de80fa6cbc3ced8ccc4c",
+    "previous_output_commit": "1369942dddf6d9b8efbfb8f89b7e3b53775c6d4e",
+    "run_id": "41416032422",
+    "retention": {
+      "schema_version": 1,
+      "budget_bytes": 671088640,
+      "before_bytes": 815022365,
+      "after_bytes": 606762026,
+      "deleted_files": 15,
+      "deleted_bytes": 208259163,
+      "protected_image_files": 18,
+      "observation_pages": 106,
+      "versions_per_camera": 2,
+      "previews_per_camera": 12,
+      "budget_satisfied": true
+    }
+  },
+  {
+    "published_at": "2026-11-02T19:40:29.054889+00:00",
+    "source_commit": "40ecfe7a6ed55928bb61de80fa6cbc3ced8ccc4c",
+    "previous_output_commit": "ad99224a27ef070280db5fb4258345d81d5562f6",
+    "run_id": "41511630752",
+    "retention": {
+      "schema_version": 1,
+      "budget_bytes": 671088640,
+      "before_bytes": 814874887,
+      "after_bytes": 607025956,
+      "deleted_files": 15,
+      "deleted_bytes": 207847755,
+      "protected_image_files": 18,
+      "observation_pages": 111,
+      "versions_per_camera": 2,
+      "previews_per_camera": 12,
+      "budget_satisfied": true
+    }
+  },
+  {
+    "published_at": "2026-11-03T03:00:41.049950+00:00",
+    "source_commit": "40ecfe7a6ed55928bb61de80fa6cbc3ced8ccc4c",
+    "previous_output_commit": "4a4d2f24a28036459f6f07b12c9e683170770d5e",
+    "run_id": "41569261569",
+    "retention": {
+      "schema_version": 1,
+      "budget_bytes": 671088640,
+      "before_bytes": 805832762,
+      "after_bytes": 597872777,
+      "deleted_files": 15,
+      "deleted_bytes": 207958809,
+      "protected_image_files": 18,
+      "observation_pages": 116,
+      "versions_per_camera": 2,
+      "previews_per_camera": 12,
+      "budget_satisfied": true
+    }
+  },
+  {
+    "published_at": "2026-11-03T11:07:51.610871+00:00",
+    "source_commit": "40ecfe7a6ed55928bb61de80fa6cbc3ced8ccc4c",
+    "previous_output_commit": "b51e20696c6eb54a34c97def6c42437531fd9348",
+    "run_id": "41624377328",
+    "retention": {
+      "schema_version": 1,
+      "budget_bytes": 671088640,
+      "before_bytes": 804536807,
+      "after_bytes": 596418451,
+      "deleted_files": 15,
+      "deleted_bytes": 208117180,
+      "protected_image_files": 18,
+      "observation_pages": 121,
+      "versions_per_camera": 2,
+      "previews_per_camera": 12,
+      "budget_satisfied": true
+    }
+  },
+  {
+    "published_at": "2026-11-03T19:45:52.432215+00:00",
+    "source_commit": "40ecfe7a6ed55928bb61de80fa6cbc3ced8ccc4c",
+    "previous_output_commit": "cbebb60ee9deffa425cf667435ae6acf1fb17a85",
+    "run_id": "41705153974",
+    "retention": {
+      "schema_version": 1,
+      "budget_bytes": 671088640,
+      "before_bytes": 801392826,
+      "after_bytes": 602249953,
+      "deleted_files": 15,
+      "deleted_bytes": 199141697,
+      "protected_image_files": 18,
+      "observation_pages": 126,
+      "versions_per_camera": 2,
+      "previews_per_camera": 12,
+      "budget_satisfied": true
+    }
+  },
+  {
+    "published_at": "2026-11-04T01:33:21.193635+00:00",
+    "source_commit": "40ecfe7a6ed55928bb61de80fa6cbc3ced8ccc4c",
+    "previous_output_commit": "9e09791b4e40b60b65269e57a11ca48efc988203",
+    "run_id": "41754345802",
+    "retention": {
+      "schema_version": 1,
+      "budget_bytes": 671088640,
+      "before_bytes": 809994254,
+      "after_bytes": 603284429,
+      "deleted_files": 15,
+      "deleted_bytes": 206708649,
+      "protected_image_files": 18,
+      "observation_pages": 131,
+      "versions_per_camera": 2,
+      "previews_per_camera": 12,
+      "budget_satisfied": true
+    }
+  },
+  {
+    "published_at": "2026-11-04T08:50:57.316306+00:00",
+    "source_commit": "fc51d6534008d2b35010ec47df404352775f62f7",
+    "previous_output_commit": "1fa71b77a17ac97ba04ac27e6497da07052b5bc3",
+    "run_id": "41802125208",
+    "retention": {
+      "schema_version": 1,
+      "budget_bytes": 671088640,
+      "before_bytes": 806202678,
+      "after_bytes": 605864812,
+      "deleted_files": 12,
+      "deleted_bytes": 200336968,
+      "protected_image_files": 18,
+      "observation_pages": 135,
+      "versions_per_camera": 2,
+      "previews_per_camera": 12,
+      "budget_satisfied": true
+    }
+  },
+  {
+    "published_at": "2026-11-04T11:26:16.763998+00:00",
+    "source_commit": "fc51d6534008d2b35010ec47df404352775f62f7",
+    "previous_output_commit": "e4694833912bb6310348d2c5c9071d58689637c9",
+    "run_id": "41819310399",
+    "retention": {
+      "schema_version": 1,
+      "budget_bytes": 671088640,
+      "before_bytes": 804247203,
+      "after_bytes": 609560016,
+      "deleted_files": 9,
+      "deleted_bytes": 194686567,
+      "protected_image_files": 18,
+      "observation_pages": 138,
+      "versions_per_camera": 2,
+      "previews_per_camera": 12,
+      "budget_satisfied": true
+    }
+  },
+  {
+    "published_at": "2026-11-04T19:58:13.732402+00:00",
+    "source_commit": "fc51d6534008d2b35010ec47df404352775f62f7",
+    "previous_output_commit": "31cef0019467110b7583c9b2c3bb94691f97297e",
+    "run_id": "41901410878",
+    "retention": {
+      "schema_version": 1,
+      "budget_bytes": 671088640,
+      "before_bytes": 821974197,
+      "after_bytes": 614448001,
+      "deleted_files": 15,
+      "deleted_bytes": 207525020,
+      "protected_image_files": 18,
+      "observation_pages": 143,
+      "versions_per_camera": 2,
+      "previews_per_camera": 12,
+      "budget_satisfied": true
+    }
+  },
+  {
+    "published_at": "2026-11-05T01:33:18.005850+00:00",
+    "source_commit": "fc51d6534008d2b35010ec47df404352775f62f7",
+    "previous_output_commit": "96eb80d5c0573a55508d5daacfbe9f842cacdac1",
+    "run_id": "41948989389",
+    "retention": {
+      "schema_version": 1,
+      "budget_bytes": 671088640,
+      "before_bytes": 818962119,
+      "after_bytes": 615198820,
+      "deleted_files": 12,
+      "deleted_bytes": 203762401,
+      "protected_image_files": 18,
+      "observation_pages": 147,
+      "versions_per_camera": 2,
+      "previews_per_camera": 12,
+      "budget_satisfied": true
+    }
+  },
+  {
+    "published_at": "2026-11-05T11:15:24.348396+00:00",
+    "source_commit": "fc51d6534008d2b35010ec47df404352775f62f7",
+    "previous_output_commit": "9d5cd8ec21a98aff3ab9267436687a414e429309",
+    "run_id": "42017030721",
+    "retention": {
+      "schema_version": 1,
+      "budget_bytes": 671088640,
+      "before_bytes": 826950831,
+      "after_bytes": 613968256,
+      "deleted_files": 15,
+      "deleted_bytes": 212981399,
+      "protected_image_files": 18,
+      "observation_pages": 152,
+      "versions_per_camera": 2,
+      "previews_per_camera": 12,
+      "budget_satisfied": true
+    }
+  },
+  {
+    "published_at": "2026-11-05T20:11:50.853458+00:00",
+    "source_commit": "fc51d6534008d2b35010ec47df404352775f62f7",
+    "previous_output_commit": "77dc0517865f9e5c58dc75e116474ae7708a4620",
+    "run_id": "42100288092",
+    "retention": {
+      "schema_version": 1,
+      "budget_bytes": 671088640,
+      "before_bytes": 826768885,
+      "after_bytes": 615985682,
+      "deleted_files": 15,
+      "deleted_bytes": 210782027,
+      "protected_image_files": 18,
+      "observation_pages": 157,
+      "versions_per_camera": 2,
+      "previews_per_camera": 12,
+      "budget_satisfied": true
+    }
+  },
+  {
+    "published_at": "2026-11-06T01:42:55.982757+00:00",
+    "source_commit": "fc51d6534008d2b35010ec47df404352775f62f7",
+    "previous_output_commit": "2172006f36d7e673ba6a3f47e2cd4842e656b2ab",
+    "run_id": "42145228962",
+    "retention": {
+      "schema_version": 1,
+      "budget_bytes": 671088640,
+      "before_bytes": 822145599,
+      "after_bytes": 617419536,
+      "deleted_files": 12,
+      "deleted_bytes": 204725165,
+      "protected_image_files": 18,
+      "observation_pages": 161,
+      "versions_per_camera": 2,
+      "previews_per_camera": 12,
+      "budget_satisfied": true
+    }
+  },
+  {
+    "published_at": "2026-11-06T11:13:58.541092+00:00",
+    "source_commit": "fc51d6534008d2b35010ec47df404352775f62f7",
+    "previous_output_commit": "3cf4e64ad6604ccbcc317845054856ef0d7cff47",
+    "run_id": "42208207897",
+    "retention": {
+      "schema_version": 1,
+      "budget_bytes": 671088640,
+      "before_bytes": 828096945,
+      "after_bytes": 615155360,
+      "deleted_files": 15,
+      "deleted_bytes": 212940409,
+      "protected_image_files": 18,
+      "observation_pages": 166,
+      "versions_per_camera": 2,
+      "previews_per_camera": 12,
+      "budget_satisfied": true
+    }
+  },
+  {
+    "published_at": "2026-11-06T19:36:38.329685+00:00",
+    "source_commit": "fc51d6534008d2b35010ec47df404352775f62f7",
+    "previous_output_commit": "7fe683dc522006fc7f544fb3ff9d562486fb8720",
+    "run_id": "42280634811",
+    "retention": {
+      "schema_version": 1,
+      "budget_bytes": 671088640,
+      "before_bytes": 826746320,
+      "after_bytes": 613744827,
+      "deleted_files": 15,
+      "deleted_bytes": 213000317,
+      "protected_image_files": 18,
+      "observation_pages": 171,
+      "versions_per_camera": 2,
+      "previews_per_camera": 12,
+      "budget_satisfied": true
+    }
+  },
+  {
+    "published_at": "2026-11-07T01:02:04.885183+00:00",
+    "source_commit": "fc51d6534008d2b35010ec47df404352775f62f7",
+    "previous_output_commit": "aefd7bcfd40b149aa9be273d566ec74569a81f77",
+    "run_id": "42321449936",
+    "retention": {
+      "schema_version": 1,
+      "budget_bytes": 671088640,
+      "before_bytes": 812089298,
+      "after_bytes": 614956763,
+      "deleted_files": 9,
+      "deleted_bytes": 197131915,
+      "protected_image_files": 18,
+      "observation_pages": 174,
+      "versions_per_camera": 2,
+      "previews_per_camera": 12,
+      "budget_satisfied": true
+    }
+  },
+  {
+    "published_at": "2026-11-07T10:31:48.749433+00:00",
+    "source_commit": "fc51d6534008d2b35010ec47df404352775f62f7",
+    "previous_output_commit": "a2a73d36c20709bac2d01701e044ad8e74ddeded",
+    "run_id": "42364031439",
+    "retention": {
+      "schema_version": 1,
+      "budget_bytes": 671088640,
+      "before_bytes": 827333040,
+      "after_bytes": 613550574,
+      "deleted_files": 15,
+      "deleted_bytes": 213781290,
+      "protected_image_files": 18,
+      "observation_pages": 179,
+      "versions_per_camera": 2,
+      "previews_per_camera": 12,
+      "budget_satisfied": true
+    }
+  },
+  {
+    "published_at": "2026-11-07T15:47:46.373265+00:00",
+    "source_commit": "cac51278c152e7e8d36924e7edb169d528603afd",
+    "previous_output_commit": "af739206743194185986fa8fb822d0a80ae8a495",
+    "run_id": "42387885601",
+    "retention": {
+      "schema_version": 1,
+      "budget_bytes": 671088640,
+      "before_bytes": 850395322,
+      "after_bytes": 652557555,
+      "deleted_files": 9,
+      "deleted_bytes": 197837147,
+      "protected_image_files": 20,
+      "observation_pages": 182,
+      "versions_per_camera": 2,
+      "previews_per_camera": 12,
+      "budget_satisfied": true
+    }
+  },
+  {
+    "published_at": "2026-11-07T17:50:28.687113+00:00",
+    "source_commit": "cac51278c152e7e8d36924e7edb169d528603afd",
+    "previous_output_commit": "dc38bc688f0b10269e4e5c662d5ec408820f1e10",
+    "run_id": "42398015993",
+    "retention": {
+      "schema_version": 1,
+      "budget_bytes": 671088640,
+      "before_bytes": 890616648,
+      "after_bytes": 657128691,
+      "deleted_files": 11,
+      "deleted_bytes": 233487337,
+      "protected_image_files": 20,
+      "observation_pages": 185,
+      "versions_per_camera": 2,
+      "previews_per_camera": 12,
+      "budget_satisfied": true
+    }
+  }
+]

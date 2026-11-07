@@ -1,0 +1,9 @@
+{
+  "framework": "TRMNL",
+  "track": "3.4",
+  "tested_release": "3.4.4",
+  "upstream": "https://github.com/usetrmnl/trmnl-framework",
+  "upstream_commit": "f366a9303bbce97adca73d5747da8e2212379bbc",
+  "assets_provided_by": "TRMNL host platform",
+  "layouts": ["full", "half_horizontal", "half_vertical", "quadrant"]
+}

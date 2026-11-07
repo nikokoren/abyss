@@ -1,0 +1,203 @@
+{
+  "source_id": "ooi-oregon-offshore",
+  "source_name": "Oregon Offshore \u00b7 seafloor",
+  "source_type": "periodic_snapshot",
+  "description": "OOI still camera at Oregon Offshore benthic platform; periodic snapshots, not live.",
+  "recorded_at": "2026-11-07T16:16:12+00:00",
+  "location": "Oregon Offshore benthic platform",
+  "location_label": "Oregon Offshore",
+  "depth_m": 582,
+  "depth_label": "~580 m",
+  "depth_status": "preliminary",
+  "depth_evidence": "https://github.com/ooi-integration/asset-management/blob/c294b195630a9df5f1b90dac9e8ab1ef6f8effb1/deployment/CE04OSBP_Deploy.csv",
+  "frame_seconds": 0,
+  "captured_at": "2026-11-07T16:16:12+00:00",
+  "extracted_at": "2026-11-07T17:49:45.949470+00:00",
+  "processed_at": "2026-11-07T17:49:52.216891+00:00",
+  "published_at": "2026-11-07T17:49:52.216897+00:00",
+  "original_url": "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/11/07/CAMDSB106_10.33.9.6_20261107T161612_UTC.jpg",
+  "attribution": "Ocean Observatories Initiative / Woods Hole Oceanographic Institution OOI Program Office / University of Washington; supported by the U.S. National Science Foundation, Cooperative Agreement 2244833",
+  "attribution_url": "https://oceanobservatories.org/how-to-use-acknowledge-and-cite-data/",
+  "attribution_embedded": true,
+  "license": "OOI User Terms and Conditions v2-00 (attribution required)",
+  "license_url": "https://oceanobservatories.org/wp-content/uploads/2022/12/1102-00020_Data_User_Terms_Conditions_OOI_2019-01-02_Ver_2-00.pdf",
+  "acknowledgment": "This material is based upon work supported by the Ocean Observatories Initiative (OOI), a major facility fully funded by the US National Science Foundation under Cooperative Agreement No. 2244833, and the Woods Hole Oceanographic Institution OOI Program Office.",
+  "data_doi": "https://doi.org/10.58046/OOI-CE04OSBP",
+  "rights_review_url": "https://github.com/nikokoren/abyss/blob/main/docs/additional-cameras.md",
+  "timestamp_basis": "explicit_utc_filename",
+  "processing_note": "Full-resolution color photo for TRMNL, with native theme-aware credit. Downloadable still has a separate credit band. TRMNL resizes and dithers for the device.",
+  "preference": {
+    "model_id": "df11ad7262a55de40a494f67a77217f84a814484b2342dc4ce6a301f34295ee9",
+    "status": "active",
+    "error": null
+  },
+  "selection_score": 0.3044389,
+  "width": 5344,
+  "height": 4155,
+  "source_width": 5344,
+  "source_height": 4008,
+  "color_mode": "RGB",
+  "method": "native",
+  "quality": {
+    "score": 0.50429,
+    "base_score": 0.608665,
+    "brightness": 0.44448845358455885,
+    "clipped": 0.0,
+    "sharpness": 0.056026996333041534,
+    "contrast": 0.8155511658625181,
+    "similarity": 0.98046875,
+    "fingerprint": "1111111100000000111111100000000011111110000000001111111100000000111111100000000011111110000000001011111000000000111111100000000011111111000000001111111000000000111111110000000011111111000000001111111100000000111111001000000011111110000000001111111100000000"
+  },
+  "selection_reason": "Best readable recent snapshot or video frame using quality, novelty and any active personal preference model",
+  "diagnostics": {
+    "strategy": "recent_snapshots",
+    "preference": {
+      "model_id": "df11ad7262a55de40a494f67a77217f84a814484b2342dc4ce6a301f34295ee9",
+      "status": "active",
+      "error": null
+    },
+    "recordings_considered": 2,
+    "candidates_extracted": 2,
+    "coarse_extracted": 2,
+    "images_extracted": 2,
+    "fine_extracted": 0,
+    "bytes_downloaded": 18656611,
+    "byte_budget": 50331648,
+    "upstream_requests": 2,
+    "search_complete": true,
+    "budget_exhausted": false,
+    "elapsed_seconds": 12.005,
+    "recordings": [
+      {
+        "recording": {
+          "url": "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/11/07/CAMDSB106_10.33.9.6_20261107T161616_UTC.jpg",
+          "recorded_at": "2026-11-07T16:16:16+00:00",
+          "media_type": "image"
+        },
+        "complete": true,
+        "duration_seconds": null,
+        "codec": "JPEG",
+        "coarse_requested": 1,
+        "coarse_extracted": 1,
+        "fine_requested": 0,
+        "fine_extracted": 0,
+        "bytes_downloaded": 9325009,
+        "upstream_requests": 1,
+        "errors": [],
+        "decoded_size": [
+          5344,
+          4008
+        ],
+        "original_size": [
+          5344,
+          4008
+        ],
+        "recording_bytes": null
+      },
+      {
+        "recording": {
+          "url": "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/11/07/CAMDSB106_10.33.9.6_20261107T161612_UTC.jpg",
+          "recorded_at": "2026-11-07T16:16:12+00:00",
+          "media_type": "image"
+        },
+        "complete": true,
+        "duration_seconds": null,
+        "codec": "JPEG",
+        "coarse_requested": 1,
+        "coarse_extracted": 1,
+        "fine_requested": 0,
+        "fine_extracted": 0,
+        "bytes_downloaded": 9331602,
+        "upstream_requests": 1,
+        "errors": [],
+        "decoded_size": [
+          5344,
+          4008
+        ],
+        "original_size": [
+          5344,
+          4008
+        ],
+        "recording_bytes": null
+      }
+    ],
+    "candidate_scores": [
+      {
+        "recording_url": "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/11/07/CAMDSB106_10.33.9.6_20261107T161616_UTC.jpg",
+        "frame_seconds": 0,
+        "stage": "snapshot",
+        "selection_score": 0.3024182,
+        "preference_score": 0.059541,
+        "score": 0.501136,
+        "base_score": 0.608636,
+        "brightness": 0.44521513097426474,
+        "clipped": 0.0,
+        "sharpness": 0.05390443872238791,
+        "contrast": 0.8172542179263695,
+        "similarity": 0.984375,
+        "fingerprint": "1111111000000000111111000000000011111100000000001111111000000000111111100000000011111110000000001111111000000000111111100000000011111111000000001111111000000000111111100000000011111111000000001111111100000000111111101000000011111110000000001111111000000000"
+      },
+      {
+        "recording_url": "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/11/07/CAMDSB106_10.33.9.6_20261107T161612_UTC.jpg",
+        "frame_seconds": 0,
+        "stage": "snapshot",
+        "selection_score": 0.3044389,
+        "preference_score": 0.0601765,
+        "score": 0.50429,
+        "base_score": 0.608665,
+        "brightness": 0.44448845358455885,
+        "clipped": 0.0,
+        "sharpness": 0.056026996333041534,
+        "contrast": 0.8155511658625181,
+        "similarity": 0.98046875,
+        "fingerprint": "1111111100000000111111100000000011111110000000001111111100000000111111100000000011111110000000001011111000000000111111100000000011111111000000001111111000000000111111110000000011111111000000001111111100000000111111001000000011111110000000001111111100000000"
+      }
+    ],
+    "session_winners": [
+      {
+        "recording_url": "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/11/07/CAMDSB106_10.33.9.6_20261107T161616_UTC.jpg",
+        "frame_seconds": 0,
+        "quality_score": 0.501136,
+        "selection_score": 0.3024182,
+        "accepted": true
+      },
+      {
+        "recording_url": "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/11/07/CAMDSB106_10.33.9.6_20261107T161612_UTC.jpg",
+        "frame_seconds": 0,
+        "quality_score": 0.50429,
+        "selection_score": 0.3044389,
+        "accepted": true
+      }
+    ]
+  },
+  "fixture": false,
+  "selection_context": {
+    "model_id": "df11ad7262a55de40a494f67a77217f84a814484b2342dc4ce6a301f34295ee9",
+    "profile": "8229bc414f59d6c7876341a3c18e295cea92c1da4a7130d900d61a2a4a531977"
+  },
+  "display_tone": {
+    "revision": 2,
+    "depths": [
+      "2bit",
+      "4bit"
+    ],
+    "note": "Device-only grayscale tone mapping per screen depth; TRMNL still resizes and dithers."
+  },
+  "image_url": "https://nikokoren.github.io/abyss/sources/ooi-oregon-offshore/b428e05048971780bd52.png",
+  "image_sha256": "b428e05048971780bd527cd8ed36df5e9fd0cd141aa1415085f848730d323c33",
+  "image_bytes": 47884394,
+  "display_image_url": "https://nikokoren.github.io/abyss/sources/ooi-oregon-offshore/9a62ed98f94be2553243.png",
+  "display_image_sha256": "9a62ed98f94be2553243fe24bdb574a4670108ddf0e7502e964091b42625fc43",
+  "display_image_bytes": 47848002,
+  "display_attribution_embedded": false,
+  "display_credit": "Data: OOI / WHOI OOI Program Office / UW | Supported by U.S. NSF 2244833",
+  "display_image_2bit_url": "https://nikokoren.github.io/abyss/sources/ooi-oregon-offshore/650d84834c7e6951bbeb.png",
+  "display_image_2bit_sha256": "650d84834c7e6951bbeb4a1308ca15e859957d7a4f668ec3acbba0525230cce4",
+  "display_image_2bit_bytes": 18665287,
+  "display_image_4bit_url": "https://nikokoren.github.io/abyss/sources/ooi-oregon-offshore/203a49b22595ecd0e4f2.png",
+  "display_image_4bit_sha256": "203a49b22595ecd0e4f246ab2d3524f95a8c8b920bc3e4db8532a4309acb5232",
+  "display_image_4bit_bytes": 19170801,
+  "view_url": "https://nikokoren.github.io/abyss/i/df2d5e60362d5dec2091.html",
+  "qr_code_url": "https://nikokoren.github.io/abyss/i/df2d5e60362d5dec2091.png",
+  "preview_url": "https://nikokoren.github.io/abyss/i/df2d5e60362d5dec2091-preview.jpg"
+}
