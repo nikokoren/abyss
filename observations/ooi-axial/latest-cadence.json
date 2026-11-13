@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_id": "ooi-axial",
-  "checked_at": "2026-11-13T09:42:26.571061+00:00",
+  "checked_at": "2026-11-13T17:51:14.247804+00:00",
   "status": "observed",
   "timestamp_basis": "Filename parsed as UTC; source timezone not independently confirmed",
   "directory_dates_checked": [
@@ -10,18 +10,18 @@
     "2026-11-13"
   ],
   "directory_errors": [],
-  "recordings_listed": 20,
-  "new_recordings_since_prior_coverage": 2,
+  "recordings_listed": 23,
+  "new_recordings_since_prior_coverage": 3,
   "baseline_recordings": 0,
   "recording_intervals_seconds": {
-    "samples": 19,
+    "samples": 22,
     "median": 10800.0,
     "minimum": 900.0,
     "maximum": 10800.0,
     "common": [
       {
         "seconds": 10800.0,
-        "count": 18
+        "count": 21
       },
       {
         "seconds": 900.0,
@@ -29,44 +29,59 @@
       }
     ]
   },
-  "latest_nominal_recording_at": "2026-11-13T06:15:00+00:00",
-  "publication_delay_observations": 143,
+  "latest_nominal_recording_at": "2026-11-13T15:15:00+00:00",
+  "publication_delay_observations": 146,
   "new_appearances": [
     {
-      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/13/CAMHDA301-20261113T061500.mp4",
-      "recorded_at": "2026-11-13T06:15:00+00:00",
-      "first_seen_at": "2026-11-13T09:42:26.282362+00:00",
+      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/13/CAMHDA301-20261113T151500.mp4",
+      "recorded_at": "2026-11-13T15:15:00+00:00",
+      "first_seen_at": "2026-11-13T17:51:13.673203+00:00",
       "baseline": false,
       "appeared_between": [
-        "2026-11-13T01:55:26.772978+00:00",
-        "2026-11-13T09:42:26.282362+00:00"
+        "2026-11-13T09:42:26.081476+00:00",
+        "2026-11-13T17:51:13.673203+00:00"
       ],
       "nominal_publication_delay_bounds_seconds": [
         0,
-        12446.282362
+        9373.673203
       ],
-      "last_seen_at": "2026-11-13T09:42:26.282362+00:00"
+      "last_seen_at": "2026-11-13T17:51:13.673203+00:00"
     },
     {
-      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/13/CAMHDA301-20261113T031500.mp4",
-      "recorded_at": "2026-11-13T03:15:00+00:00",
-      "first_seen_at": "2026-11-13T09:42:26.282362+00:00",
+      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/13/CAMHDA301-20261113T121500.mp4",
+      "recorded_at": "2026-11-13T12:15:00+00:00",
+      "first_seen_at": "2026-11-13T17:51:13.673203+00:00",
       "baseline": false,
       "appeared_between": [
-        "2026-11-13T01:55:26.772978+00:00",
-        "2026-11-13T09:42:26.282362+00:00"
+        "2026-11-13T09:42:26.081476+00:00",
+        "2026-11-13T17:51:13.673203+00:00"
       ],
       "nominal_publication_delay_bounds_seconds": [
         0,
-        23246.282362
+        20173.673203
       ],
-      "last_seen_at": "2026-11-13T09:42:26.282362+00:00"
+      "last_seen_at": "2026-11-13T17:51:13.673203+00:00"
+    },
+    {
+      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/13/CAMHDA301-20261113T091500.mp4",
+      "recorded_at": "2026-11-13T09:15:00+00:00",
+      "first_seen_at": "2026-11-13T17:51:13.673203+00:00",
+      "baseline": false,
+      "appeared_between": [
+        "2026-11-13T09:42:26.081476+00:00",
+        "2026-11-13T17:51:13.673203+00:00"
+      ],
+      "nominal_publication_delay_bounds_seconds": [
+        1646.081476,
+        30973.673203
+      ],
+      "last_seen_at": "2026-11-13T17:51:13.673203+00:00"
     }
   ],
   "publication_delay_note": "Baseline files have unknown publication time. Delay bounds require prior successful coverage of that date; filename timezone remains an assumption.",
   "environment": "github_actions",
   "tested_commit": "cac51278c152e7e8d36924e7edb169d528603afd",
-  "run_url": "https://github.com/nikokoren/abyss/actions/runs/43403530660",
+  "run_url": "https://github.com/nikokoren/abyss/actions/runs/43476865716",
   "imagery_published": false,
   "rights_status": "not_assessed"
 }
