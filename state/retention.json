@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "budget_bytes": 671088640,
+  "before_bytes": 894437475,
+  "after_bytes": 652041557,
+  "deleted_files": 14,
+  "deleted_bytes": 242395020,
+  "protected_image_files": 20,
+  "observation_pages": 280,
+  "versions_per_camera": 2,
+  "previews_per_camera": 12,
+  "budget_satisfied": true
+}
