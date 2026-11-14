@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_id": "ooi-axial",
-  "checked_at": "2026-11-14T14:16:40.509175+00:00",
+  "checked_at": "2026-11-14T19:18:07.267023+00:00",
   "status": "observed",
   "timestamp_basis": "Filename parsed as UTC; source timezone not independently confirmed",
   "directory_dates_checked": [
@@ -10,74 +10,59 @@
     "2026-11-14"
   ],
   "directory_errors": [],
-  "recordings_listed": 21,
-  "new_recordings_since_prior_coverage": 3,
+  "recordings_listed": 23,
+  "new_recordings_since_prior_coverage": 2,
   "baseline_recordings": 0,
   "recording_intervals_seconds": {
-    "samples": 20,
+    "samples": 22,
     "median": 10800.0,
     "minimum": 10800.0,
     "maximum": 10800.0,
     "common": [
       {
         "seconds": 10800.0,
-        "count": 20
+        "count": 22
       }
     ]
   },
-  "latest_nominal_recording_at": "2026-11-14T12:15:00+00:00",
-  "publication_delay_observations": 144,
+  "latest_nominal_recording_at": "2026-11-14T18:15:00+00:00",
+  "publication_delay_observations": 146,
   "new_appearances": [
     {
-      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/14/CAMHDA301-20261114T121500.mp4",
-      "recorded_at": "2026-11-14T12:15:00+00:00",
-      "first_seen_at": "2026-11-14T14:16:39.467399+00:00",
+      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/14/CAMHDA301-20261114T181500.mp4",
+      "recorded_at": "2026-11-14T18:15:00+00:00",
+      "first_seen_at": "2026-11-14T19:18:06.664485+00:00",
       "baseline": false,
       "appeared_between": [
-        "2026-11-14T06:40:49.861197+00:00",
-        "2026-11-14T14:16:39.467399+00:00"
+        "2026-11-14T14:16:38.894327+00:00",
+        "2026-11-14T19:18:06.664485+00:00"
       ],
       "nominal_publication_delay_bounds_seconds": [
         0,
-        7299.467399
+        3786.664485
       ],
-      "last_seen_at": "2026-11-14T14:16:39.467399+00:00"
+      "last_seen_at": "2026-11-14T19:18:06.664485+00:00"
     },
     {
-      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/14/CAMHDA301-20261114T091500.mp4",
-      "recorded_at": "2026-11-14T09:15:00+00:00",
-      "first_seen_at": "2026-11-14T14:16:39.467399+00:00",
+      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/14/CAMHDA301-20261114T151500.mp4",
+      "recorded_at": "2026-11-14T15:15:00+00:00",
+      "first_seen_at": "2026-11-14T19:18:06.664485+00:00",
       "baseline": false,
       "appeared_between": [
-        "2026-11-14T06:40:49.861197+00:00",
-        "2026-11-14T14:16:39.467399+00:00"
+        "2026-11-14T14:16:38.894327+00:00",
+        "2026-11-14T19:18:06.664485+00:00"
       ],
       "nominal_publication_delay_bounds_seconds": [
         0,
-        18099.467399
+        14586.664485
       ],
-      "last_seen_at": "2026-11-14T14:16:39.467399+00:00"
-    },
-    {
-      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/14/CAMHDA301-20261114T061500.mp4",
-      "recorded_at": "2026-11-14T06:15:00+00:00",
-      "first_seen_at": "2026-11-14T14:16:39.467399+00:00",
-      "baseline": false,
-      "appeared_between": [
-        "2026-11-14T06:40:49.861197+00:00",
-        "2026-11-14T14:16:39.467399+00:00"
-      ],
-      "nominal_publication_delay_bounds_seconds": [
-        1549.861197,
-        28899.467399
-      ],
-      "last_seen_at": "2026-11-14T14:16:39.467399+00:00"
+      "last_seen_at": "2026-11-14T19:18:06.664485+00:00"
     }
   ],
   "publication_delay_note": "Baseline files have unknown publication time. Delay bounds require prior successful coverage of that date; filename timezone remains an assumption.",
   "environment": "github_actions",
   "tested_commit": "cac51278c152e7e8d36924e7edb169d528603afd",
-  "run_url": "https://github.com/nikokoren/abyss/actions/runs/43604004544",
+  "run_url": "https://github.com/nikokoren/abyss/actions/runs/43631321261",
   "imagery_published": false,
   "rights_status": "not_assessed"
 }
