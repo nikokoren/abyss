@@ -1,83 +1,68 @@
 {
   "schema_version": 1,
   "source_id": "ooi-axial",
-  "checked_at": "2026-11-16T18:39:59.601660+00:00",
+  "checked_at": "2026-11-17T02:30:08.268575+00:00",
   "status": "observed",
   "timestamp_basis": "Filename parsed as UTC; source timezone not independently confirmed",
   "directory_dates_checked": [
-    "2026-11-14",
     "2026-11-15",
-    "2026-11-16"
+    "2026-11-16",
+    "2026-11-17"
   ],
   "directory_errors": [],
-  "recordings_listed": 22,
-  "new_recordings_since_prior_coverage": 3,
-  "baseline_recordings": 0,
+  "recordings_listed": 17,
+  "new_recordings_since_prior_coverage": 2,
+  "baseline_recordings": 1,
   "recording_intervals_seconds": {
-    "samples": 21,
+    "samples": 16,
     "median": 10800.0,
     "minimum": 10800.0,
     "maximum": 10800.0,
     "common": [
       {
         "seconds": 10800.0,
-        "count": 21
+        "count": 16
       }
     ]
   },
-  "latest_nominal_recording_at": "2026-11-16T15:15:00+00:00",
-  "publication_delay_observations": 147,
+  "latest_nominal_recording_at": "2026-11-17T00:15:00+00:00",
+  "publication_delay_observations": 143,
   "new_appearances": [
     {
-      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/16/CAMHDA301-20261116T151500.mp4",
-      "recorded_at": "2026-11-16T15:15:00+00:00",
-      "first_seen_at": "2026-11-16T18:39:59.007744+00:00",
+      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/16/CAMHDA301-20261116T211500.mp4",
+      "recorded_at": "2026-11-16T21:15:00+00:00",
+      "first_seen_at": "2026-11-17T02:30:08.201704+00:00",
       "baseline": false,
       "appeared_between": [
-        "2026-11-16T08:03:29.256476+00:00",
-        "2026-11-16T18:39:59.007744+00:00"
+        "2026-11-16T18:39:58.625885+00:00",
+        "2026-11-17T02:30:08.201704+00:00"
       ],
       "nominal_publication_delay_bounds_seconds": [
         0,
-        12299.007744
+        18908.201704
       ],
-      "last_seen_at": "2026-11-16T18:39:59.007744+00:00"
+      "last_seen_at": "2026-11-17T02:30:08.201704+00:00"
     },
     {
-      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/16/CAMHDA301-20261116T121500.mp4",
-      "recorded_at": "2026-11-16T12:15:00+00:00",
-      "first_seen_at": "2026-11-16T18:39:59.007744+00:00",
+      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/16/CAMHDA301-20261116T181500.mp4",
+      "recorded_at": "2026-11-16T18:15:00+00:00",
+      "first_seen_at": "2026-11-17T02:30:08.201704+00:00",
       "baseline": false,
       "appeared_between": [
-        "2026-11-16T08:03:29.256476+00:00",
-        "2026-11-16T18:39:59.007744+00:00"
+        "2026-11-16T18:39:58.625885+00:00",
+        "2026-11-17T02:30:08.201704+00:00"
       ],
       "nominal_publication_delay_bounds_seconds": [
-        0,
-        23099.007744
+        1498.625885,
+        29708.201704
       ],
-      "last_seen_at": "2026-11-16T18:39:59.007744+00:00"
-    },
-    {
-      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/16/CAMHDA301-20261116T091500.mp4",
-      "recorded_at": "2026-11-16T09:15:00+00:00",
-      "first_seen_at": "2026-11-16T18:39:59.007744+00:00",
-      "baseline": false,
-      "appeared_between": [
-        "2026-11-16T08:03:29.256476+00:00",
-        "2026-11-16T18:39:59.007744+00:00"
-      ],
-      "nominal_publication_delay_bounds_seconds": [
-        0,
-        33899.007744
-      ],
-      "last_seen_at": "2026-11-16T18:39:59.007744+00:00"
+      "last_seen_at": "2026-11-17T02:30:08.201704+00:00"
     }
   ],
   "publication_delay_note": "Baseline files have unknown publication time. Delay bounds require prior successful coverage of that date; filename timezone remains an assumption.",
   "environment": "github_actions",
   "tested_commit": "cac51278c152e7e8d36924e7edb169d528603afd",
-  "run_url": "https://github.com/nikokoren/abyss/actions/runs/43931174428",
+  "run_url": "https://github.com/nikokoren/abyss/actions/runs/44003410394",
   "imagery_published": false,
   "rights_status": "not_assessed"
 }
