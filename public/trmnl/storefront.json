@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "presentation_mode": "storefront_static",
+  "sample_note": "One genuine OOI snapshot with fish, manually selected for a temporary storefront capture. Original capture time and provenance are preserved. Display uses the full-resolution original JPEG; image_url links its attributed review preview.",
+  "default_source": "ooi-oregon-offshore",
+  "rotation_order": [
+    "ooi-oregon-offshore"
+  ],
+  "options": [
+    {
+      "label": "Oregon Offshore: seafloor",
+      "value": "ooi-oregon-offshore"
+    }
+  ],
+  "sources": {
+    "ooi-oregon-offshore": {
+      "attribution": "Ocean Observatories Initiative / Woods Hole Oceanographic Institution OOI Program Office / University of Washington; supported by the U.S. National Science Foundation, Cooperative Agreement 2244833",
+      "attribution_url": "https://oceanobservatories.org/how-to-use-acknowledge-and-cite-data/",
+      "acknowledgment": "This material is based upon work supported by the Ocean Observatories Initiative (OOI), a major facility fully funded by the US National Science Foundation under Cooperative Agreement No. 2244833, and the Woods Hole Oceanographic Institution OOI Program Office.",
+      "license": "OOI User Terms and Conditions v2-00 (attribution required)",
+      "license_url": "https://oceanobservatories.org/wp-content/uploads/2022/12/1102-00020_Data_User_Terms_Conditions_OOI_2019-01-02_Ver_2-00.pdf",
+      "location": "Oregon Offshore benthic platform",
+      "location_label": "Oregon Offshore",
+      "depth_m": 582,
+      "depth_label": "~580 m",
+      "depth_status": "preliminary",
+      "source_id": "ooi-oregon-offshore",
+      "source_name": "Oregon Offshore: seafloor",
+      "source_type": "periodic_snapshot",
+      "captured_at": "2026-10-22T11:46:16+00:00",
+      "recorded_at": "2026-10-22T11:46:16+00:00",
+      "original_url": "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/22/CAMDSB106_10.33.9.6_20261022T114616_UTC.jpg",
+      "frame_seconds": 0,
+      "image_url": "https://raw.githubusercontent.com/nikokoren/abyss/d573d25cead8b24feb66796cdae1a33db69cb724/reviews/40769530980/04-colour.jpg",
+      "display_image_url": "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/22/CAMDSB106_10.33.9.6_20261022T114616_UTC.jpg",
+      "preview_url": "https://raw.githubusercontent.com/nikokoren/abyss/d573d25cead8b24feb66796cdae1a33db69cb724/reviews/40769530980/04-colour.jpg",
+      "display_credit": "Data: OOI / WHOI OOI Program Office / UW | Supported by U.S. NSF 2244833",
+      "attribution_embedded": true,
+      "source_width": 5344,
+      "source_height": 4008,
+      "color_mode": "RGB",
+      "method": "native",
+      "fixture": false,
+      "available": true,
+      "stale": false
+    }
+  },
+  "abyss_ready": true,
+  "current_camera": {
+    "attribution": "Ocean Observatories Initiative / Woods Hole Oceanographic Institution OOI Program Office / University of Washington; supported by the U.S. National Science Foundation, Cooperative Agreement 2244833",
+    "attribution_url": "https://oceanobservatories.org/how-to-use-acknowledge-and-cite-data/",
+    "acknowledgment": "This material is based upon work supported by the Ocean Observatories Initiative (OOI), a major facility fully funded by the US National Science Foundation under Cooperative Agreement No. 2244833, and the Woods Hole Oceanographic Institution OOI Program Office.",
+    "license": "OOI User Terms and Conditions v2-00 (attribution required)",
+    "license_url": "https://oceanobservatories.org/wp-content/uploads/2022/12/1102-00020_Data_User_Terms_Conditions_OOI_2019-01-02_Ver_2-00.pdf",
+    "location": "Oregon Offshore benthic platform",
+    "location_label": "Oregon Offshore",
+    "depth_m": 582,
+    "depth_label": "~580 m",
+    "depth_status": "preliminary",
+    "source_id": "ooi-oregon-offshore",
+    "source_name": "Oregon Offshore: seafloor",
+    "source_type": "periodic_snapshot",
+    "captured_at": "2026-10-22T11:46:16+00:00",
+    "recorded_at": "2026-10-22T11:46:16+00:00",
+    "original_url": "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/22/CAMDSB106_10.33.9.6_20261022T114616_UTC.jpg",
+    "frame_seconds": 0,
+    "image_url": "https://raw.githubusercontent.com/nikokoren/abyss/d573d25cead8b24feb66796cdae1a33db69cb724/reviews/40769530980/04-colour.jpg",
+    "display_image_url": "https://rawdata.oceanobservatories.org/files/CE04OSBP/LV01C/CAMDSB106/2026/10/22/CAMDSB106_10.33.9.6_20261022T114616_UTC.jpg",
+    "preview_url": "https://raw.githubusercontent.com/nikokoren/abyss/d573d25cead8b24feb66796cdae1a33db69cb724/reviews/40769530980/04-colour.jpg",
+    "display_credit": "Data: OOI / WHOI OOI Program Office / UW | Supported by U.S. NSF 2244833",
+    "attribution_embedded": true,
+    "source_width": 5344,
+    "source_height": 4008,
+    "color_mode": "RGB",
+    "method": "native",
+    "fixture": false,
+    "available": true,
+    "stale": false
+  },
+  "show_qr": false
+}
