@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_id": "ooi-axial",
-  "checked_at": "2026-11-21T11:22:46.633149+00:00",
+  "checked_at": "2026-11-21T19:27:44.091295+00:00",
   "status": "observed",
   "timestamp_basis": "Filename parsed as UTC; source timezone not independently confirmed",
   "directory_dates_checked": [
@@ -10,11 +10,11 @@
     "2026-11-21"
   ],
   "directory_errors": [],
-  "recordings_listed": 108,
+  "recordings_listed": 111,
   "new_recordings_since_prior_coverage": 3,
   "baseline_recordings": 0,
   "recording_intervals_seconds": {
-    "samples": 107,
+    "samples": 110,
     "median": 900.0,
     "minimum": 900.0,
     "maximum": 10800.0,
@@ -25,63 +25,63 @@
       },
       {
         "seconds": 10800.0,
-        "count": 11
+        "count": 14
       }
     ]
   },
-  "latest_nominal_recording_at": "2026-11-21T09:15:00+00:00",
-  "publication_delay_observations": 148,
+  "latest_nominal_recording_at": "2026-11-21T18:15:00+00:00",
+  "publication_delay_observations": 151,
   "new_appearances": [
     {
-      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/21/CAMHDA301-20261121T091500.mp4",
-      "recorded_at": "2026-11-21T09:15:00+00:00",
-      "first_seen_at": "2026-11-21T11:22:45.890979+00:00",
+      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/21/CAMHDA301-20261121T181500.mp4",
+      "recorded_at": "2026-11-21T18:15:00+00:00",
+      "first_seen_at": "2026-11-21T19:27:43.173343+00:00",
       "baseline": false,
       "appeared_between": [
-        "2026-11-21T02:27:33.687138+00:00",
-        "2026-11-21T11:22:45.890979+00:00"
+        "2026-11-21T11:22:45.504552+00:00",
+        "2026-11-21T19:27:43.173343+00:00"
       ],
       "nominal_publication_delay_bounds_seconds": [
         0,
-        7665.890979
+        4363.173343
       ],
-      "last_seen_at": "2026-11-21T11:22:45.890979+00:00"
+      "last_seen_at": "2026-11-21T19:27:43.173343+00:00"
     },
     {
-      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/21/CAMHDA301-20261121T061500.mp4",
-      "recorded_at": "2026-11-21T06:15:00+00:00",
-      "first_seen_at": "2026-11-21T11:22:45.890979+00:00",
+      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/21/CAMHDA301-20261121T151500.mp4",
+      "recorded_at": "2026-11-21T15:15:00+00:00",
+      "first_seen_at": "2026-11-21T19:27:43.173343+00:00",
       "baseline": false,
       "appeared_between": [
-        "2026-11-21T02:27:33.687138+00:00",
-        "2026-11-21T11:22:45.890979+00:00"
+        "2026-11-21T11:22:45.504552+00:00",
+        "2026-11-21T19:27:43.173343+00:00"
       ],
       "nominal_publication_delay_bounds_seconds": [
         0,
-        18465.890979
+        15163.173343
       ],
-      "last_seen_at": "2026-11-21T11:22:45.890979+00:00"
+      "last_seen_at": "2026-11-21T19:27:43.173343+00:00"
     },
     {
-      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/21/CAMHDA301-20261121T031500.mp4",
-      "recorded_at": "2026-11-21T03:15:00+00:00",
-      "first_seen_at": "2026-11-21T11:22:45.890979+00:00",
+      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/21/CAMHDA301-20261121T121500.mp4",
+      "recorded_at": "2026-11-21T12:15:00+00:00",
+      "first_seen_at": "2026-11-21T19:27:43.173343+00:00",
       "baseline": false,
       "appeared_between": [
-        "2026-11-21T02:27:33.687138+00:00",
-        "2026-11-21T11:22:45.890979+00:00"
+        "2026-11-21T11:22:45.504552+00:00",
+        "2026-11-21T19:27:43.173343+00:00"
       ],
       "nominal_publication_delay_bounds_seconds": [
         0,
-        29265.890979
+        25963.173343
       ],
-      "last_seen_at": "2026-11-21T11:22:45.890979+00:00"
+      "last_seen_at": "2026-11-21T19:27:43.173343+00:00"
     }
   ],
   "publication_delay_note": "Baseline files have unknown publication time. Delay bounds require prior successful coverage of that date; filename timezone remains an assumption.",
   "environment": "github_actions",
   "tested_commit": "cac51278c152e7e8d36924e7edb169d528603afd",
-  "run_url": "https://github.com/nikokoren/abyss/actions/runs/44898807067",
+  "run_url": "https://github.com/nikokoren/abyss/actions/runs/44941040444",
   "imagery_published": false,
   "rights_status": "not_assessed"
 }
