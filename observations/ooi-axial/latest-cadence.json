@@ -1,25 +1,20 @@
 {
   "schema_version": 1,
   "source_id": "ooi-axial",
-  "checked_at": "2026-11-22T00:25:31.623323+00:00",
-  "status": "partial",
+  "checked_at": "2026-11-22T08:07:23.205688+00:00",
+  "status": "observed",
   "timestamp_basis": "Filename parsed as UTC; source timezone not independently confirmed",
   "directory_dates_checked": [
     "2026-11-20",
-    "2026-11-21"
+    "2026-11-21",
+    "2026-11-22"
   ],
-  "directory_errors": [
-    {
-      "date": "2026-11-22",
-      "category": "upstream_http_error",
-      "error": "HTTP Error 404: Not Found"
-    }
-  ],
-  "recordings_listed": 104,
-  "new_recordings_since_prior_coverage": 1,
-  "baseline_recordings": 0,
+  "directory_errors": [],
+  "recordings_listed": 107,
+  "new_recordings_since_prior_coverage": 0,
+  "baseline_recordings": 3,
   "recording_intervals_seconds": {
-    "samples": 103,
+    "samples": 106,
     "median": 900.0,
     "minimum": 900.0,
     "maximum": 10800.0,
@@ -30,33 +25,17 @@
       },
       {
         "seconds": 10800.0,
-        "count": 7
+        "count": 10
       }
     ]
   },
-  "latest_nominal_recording_at": "2026-11-21T21:15:00+00:00",
+  "latest_nominal_recording_at": "2026-11-22T06:15:00+00:00",
   "publication_delay_observations": 145,
-  "new_appearances": [
-    {
-      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/21/CAMHDA301-20261121T211500.mp4",
-      "recorded_at": "2026-11-21T21:15:00+00:00",
-      "first_seen_at": "2026-11-22T00:25:31.171509+00:00",
-      "baseline": false,
-      "appeared_between": [
-        "2026-11-21T19:27:42.847009+00:00",
-        "2026-11-22T00:25:31.171509+00:00"
-      ],
-      "nominal_publication_delay_bounds_seconds": [
-        0,
-        11431.171509
-      ],
-      "last_seen_at": "2026-11-22T00:25:31.171509+00:00"
-    }
-  ],
+  "new_appearances": [],
   "publication_delay_note": "Baseline files have unknown publication time. Delay bounds require prior successful coverage of that date; filename timezone remains an assumption.",
   "environment": "github_actions",
   "tested_commit": "cac51278c152e7e8d36924e7edb169d528603afd",
-  "run_url": "https://github.com/nikokoren/abyss/actions/runs/44966539497",
+  "run_url": "https://github.com/nikokoren/abyss/actions/runs/45001300525",
   "imagery_published": false,
   "rights_status": "not_assessed"
 }
