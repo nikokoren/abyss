@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_id": "ooi-axial",
-  "checked_at": "2026-11-26T12:50:09.123765+00:00",
+  "checked_at": "2026-11-26T22:25:46.248924+00:00",
   "status": "observed",
   "timestamp_basis": "Filename parsed as UTC; source timezone not independently confirmed",
   "directory_dates_checked": [
@@ -10,74 +10,89 @@
     "2026-11-26"
   ],
   "directory_errors": [],
-  "recordings_listed": 20,
-  "new_recordings_since_prior_coverage": 3,
+  "recordings_listed": 24,
+  "new_recordings_since_prior_coverage": 4,
   "baseline_recordings": 0,
   "recording_intervals_seconds": {
-    "samples": 19,
+    "samples": 23,
     "median": 10800.0,
     "minimum": 10800.0,
     "maximum": 10800.0,
     "common": [
       {
         "seconds": 10800.0,
-        "count": 19
+        "count": 23
       }
     ]
   },
-  "latest_nominal_recording_at": "2026-11-26T09:15:00+00:00",
-  "publication_delay_observations": 145,
+  "latest_nominal_recording_at": "2026-11-26T21:15:00+00:00",
+  "publication_delay_observations": 142,
   "new_appearances": [
     {
-      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/26/CAMHDA301-20261126T091500.mp4",
-      "recorded_at": "2026-11-26T09:15:00+00:00",
-      "first_seen_at": "2026-11-26T12:50:08.072894+00:00",
+      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/26/CAMHDA301-20261126T211500.mp4",
+      "recorded_at": "2026-11-26T21:15:00+00:00",
+      "first_seen_at": "2026-11-26T22:25:46.123400+00:00",
       "baseline": false,
       "appeared_between": [
-        "2026-11-26T02:54:06.664860+00:00",
-        "2026-11-26T12:50:08.072894+00:00"
+        "2026-11-26T12:50:07.471396+00:00",
+        "2026-11-26T22:25:46.123400+00:00"
       ],
       "nominal_publication_delay_bounds_seconds": [
         0,
-        12908.072894
+        4246.1234
       ],
-      "last_seen_at": "2026-11-26T12:50:08.072894+00:00"
+      "last_seen_at": "2026-11-26T22:25:46.123400+00:00"
     },
     {
-      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/26/CAMHDA301-20261126T061500.mp4",
-      "recorded_at": "2026-11-26T06:15:00+00:00",
-      "first_seen_at": "2026-11-26T12:50:08.072894+00:00",
+      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/26/CAMHDA301-20261126T181500.mp4",
+      "recorded_at": "2026-11-26T18:15:00+00:00",
+      "first_seen_at": "2026-11-26T22:25:46.123400+00:00",
       "baseline": false,
       "appeared_between": [
-        "2026-11-26T02:54:06.664860+00:00",
-        "2026-11-26T12:50:08.072894+00:00"
+        "2026-11-26T12:50:07.471396+00:00",
+        "2026-11-26T22:25:46.123400+00:00"
       ],
       "nominal_publication_delay_bounds_seconds": [
         0,
-        23708.072894
+        15046.1234
       ],
-      "last_seen_at": "2026-11-26T12:50:08.072894+00:00"
+      "last_seen_at": "2026-11-26T22:25:46.123400+00:00"
     },
     {
-      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/26/CAMHDA301-20261126T031500.mp4",
-      "recorded_at": "2026-11-26T03:15:00+00:00",
-      "first_seen_at": "2026-11-26T12:50:08.072894+00:00",
+      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/26/CAMHDA301-20261126T151500.mp4",
+      "recorded_at": "2026-11-26T15:15:00+00:00",
+      "first_seen_at": "2026-11-26T22:25:46.123400+00:00",
       "baseline": false,
       "appeared_between": [
-        "2026-11-26T02:54:06.664860+00:00",
-        "2026-11-26T12:50:08.072894+00:00"
+        "2026-11-26T12:50:07.471396+00:00",
+        "2026-11-26T22:25:46.123400+00:00"
       ],
       "nominal_publication_delay_bounds_seconds": [
         0,
-        34508.072894
+        25846.1234
       ],
-      "last_seen_at": "2026-11-26T12:50:08.072894+00:00"
+      "last_seen_at": "2026-11-26T22:25:46.123400+00:00"
+    },
+    {
+      "url": "https://rawdata.oceanobservatories.org/files/RS03ASHS/PN03B/CAMHDA301/2026/11/26/CAMHDA301-20261126T121500.mp4",
+      "recorded_at": "2026-11-26T12:15:00+00:00",
+      "first_seen_at": "2026-11-26T22:25:46.123400+00:00",
+      "baseline": false,
+      "appeared_between": [
+        "2026-11-26T12:50:07.471396+00:00",
+        "2026-11-26T22:25:46.123400+00:00"
+      ],
+      "nominal_publication_delay_bounds_seconds": [
+        2107.471396,
+        36646.1234
+      ],
+      "last_seen_at": "2026-11-26T22:25:46.123400+00:00"
     }
   ],
   "publication_delay_note": "Baseline files have unknown publication time. Delay bounds require prior successful coverage of that date; filename timezone remains an assumption.",
   "environment": "github_actions",
   "tested_commit": "48f6ed480027250e8b229f9c794509ea10513e49",
-  "run_url": "https://github.com/nikokoren/abyss/actions/runs/45823340879",
+  "run_url": "https://github.com/nikokoren/abyss/actions/runs/45904707645",
   "imagery_published": false,
   "rights_status": "not_assessed"
 }
