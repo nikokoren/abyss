@@ -1,0 +1,189 @@
+{
+  "source_id": "ooi-hydrate-ridge",
+  "source_name": "Southern Hydrate Ridge \u00b7 methane seep",
+  "source_type": "periodic_snapshot",
+  "description": "OOI still camera at Southern Hydrate Ridge, Einstein's Grotto methane seep; periodic snapshots, not live.",
+  "recorded_at": "2026-10-29T12:16:16+00:00",
+  "location": "Southern Hydrate Ridge, Einstein's Grotto methane seep",
+  "location_label": "Hydrate Ridge",
+  "depth_m": 775,
+  "depth_label": "~780 m",
+  "depth_status": "preliminary",
+  "depth_evidence": "https://github.com/ooi-integration/asset-management/blob/c294b195630a9df5f1b90dac9e8ab1ef6f8effb1/deployment/RS01SUM2_Deploy.csv",
+  "frame_seconds": 0,
+  "captured_at": "2026-10-29T12:16:16+00:00",
+  "extracted_at": "2026-10-29T13:23:01.034170+00:00",
+  "processed_at": "2026-10-29T13:23:02.745543+00:00",
+  "published_at": "2026-10-29T13:23:02.745550+00:00",
+  "original_url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/29/CAMDSB103_10.33.7.5_20261029T121616_UTC.jpg",
+  "attribution": "Ocean Observatories Initiative / Woods Hole Oceanographic Institution OOI Program Office / University of Washington; supported by the U.S. National Science Foundation, Cooperative Agreement 2244833",
+  "attribution_url": "https://oceanobservatories.org/how-to-use-acknowledge-and-cite-data/",
+  "attribution_embedded": true,
+  "license": "OOI User Terms and Conditions v2-00 (attribution required)",
+  "license_url": "https://oceanobservatories.org/wp-content/uploads/2022/12/1102-00020_Data_User_Terms_Conditions_OOI_2019-01-02_Ver_2-00.pdf",
+  "acknowledgment": "This material is based upon work supported by the Ocean Observatories Initiative (OOI), a major facility fully funded by the US National Science Foundation under Cooperative Agreement No. 2244833, and the Woods Hole Oceanographic Institution OOI Program Office.",
+  "data_doi": "https://doi.org/10.58046/OOI-RS01SUM2",
+  "rights_review_url": "https://github.com/nikokoren/abyss/blob/main/docs/additional-cameras.md",
+  "timestamp_basis": "explicit_utc_filename",
+  "processing_note": "Full-resolution color photo for TRMNL, with native theme-aware credit. Downloadable still has a separate credit band. TRMNL resizes and dithers for the device.",
+  "preference": {
+    "model_id": "2f1fb5248d738a9c3e0833015230faa9cab3f31848d6541a5ceb9d1b1aef7caa",
+    "status": "active",
+    "error": null
+  },
+  "selection_score": 0.5079039,
+  "width": 5344,
+  "height": 4155,
+  "source_width": 5344,
+  "source_height": 4008,
+  "color_mode": "RGB",
+  "method": "native",
+  "quality": {
+    "score": 0.743971,
+    "base_score": 0.845221,
+    "brightness": 0.3275016276041667,
+    "clipped": 0.0559814453125,
+    "sharpness": 1,
+    "contrast": 0.9751558914794565,
+    "similarity": 0.9765625,
+    "fingerprint": "0100101110100000110101111000000001111001010000001101101001000000110110100100000000010001100000001011001110000000001101101000000011111100100000011011000010010000101110100010000010011010000000001110000000011000111000011110100010100011111000000010011100010000"
+  },
+  "selection_reason": "Best readable recent snapshot or video frame using quality, novelty and any active personal preference model",
+  "diagnostics": {
+    "strategy": "recent_snapshots",
+    "preference": {
+      "model_id": "2f1fb5248d738a9c3e0833015230faa9cab3f31848d6541a5ceb9d1b1aef7caa",
+      "status": "active",
+      "error": null
+    },
+    "recordings_considered": 2,
+    "candidates_extracted": 2,
+    "coarse_extracted": 2,
+    "images_extracted": 2,
+    "fine_extracted": 0,
+    "bytes_downloaded": 17446548,
+    "byte_budget": 50331648,
+    "upstream_requests": 2,
+    "search_complete": true,
+    "budget_exhausted": false,
+    "elapsed_seconds": 12.856,
+    "recordings": [
+      {
+        "recording": {
+          "url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/29/CAMDSB103_10.33.7.5_20261029T121621_UTC.jpg",
+          "recorded_at": "2026-10-29T12:16:21+00:00",
+          "media_type": "image"
+        },
+        "complete": true,
+        "duration_seconds": null,
+        "codec": "JPEG",
+        "coarse_requested": 1,
+        "coarse_extracted": 1,
+        "fine_requested": 0,
+        "fine_extracted": 0,
+        "bytes_downloaded": 8729546,
+        "upstream_requests": 1,
+        "errors": [],
+        "decoded_size": [
+          5344,
+          4008
+        ],
+        "original_size": [
+          5344,
+          4008
+        ],
+        "recording_bytes": null
+      },
+      {
+        "recording": {
+          "url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/29/CAMDSB103_10.33.7.5_20261029T121616_UTC.jpg",
+          "recorded_at": "2026-10-29T12:16:16+00:00",
+          "media_type": "image"
+        },
+        "complete": true,
+        "duration_seconds": null,
+        "codec": "JPEG",
+        "coarse_requested": 1,
+        "coarse_extracted": 1,
+        "fine_requested": 0,
+        "fine_extracted": 0,
+        "bytes_downloaded": 8717002,
+        "upstream_requests": 1,
+        "errors": [],
+        "decoded_size": [
+          5344,
+          4008
+        ],
+        "original_size": [
+          5344,
+          4008
+        ],
+        "recording_bytes": null
+      }
+    ],
+    "candidate_scores": [
+      {
+        "recording_url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/29/CAMDSB103_10.33.7.5_20261029T121621_UTC.jpg",
+        "frame_seconds": 0,
+        "stage": "snapshot",
+        "selection_score": 0.5052878,
+        "preference_score": 0.2172537,
+        "score": 0.740952,
+        "base_score": 0.842202,
+        "brightness": 0.3252585018382353,
+        "clipped": 0.057373046875,
+        "sharpness": 1,
+        "contrast": 0.9719849298465416,
+        "similarity": 0.9765625,
+        "fingerprint": "0110101110100000110111111000000001111001010000001101101001000000110110100100000000010001100000001011001110000000001101101000000011111100100000011011000010010000101110100010000010011010000000001110000000011000111000011110100010100011111000000010011100010000"
+      },
+      {
+        "recording_url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/29/CAMDSB103_10.33.7.5_20261029T121616_UTC.jpg",
+        "frame_seconds": 0,
+        "stage": "snapshot",
+        "selection_score": 0.5079039,
+        "preference_score": 0.2193775,
+        "score": 0.743971,
+        "base_score": 0.845221,
+        "brightness": 0.3275016276041667,
+        "clipped": 0.0559814453125,
+        "sharpness": 1,
+        "contrast": 0.9751558914794565,
+        "similarity": 0.9765625,
+        "fingerprint": "0100101110100000110101111000000001111001010000001101101001000000110110100100000000010001100000001011001110000000001101101000000011111100100000011011000010010000101110100010000010011010000000001110000000011000111000011110100010100011111000000010011100010000"
+      }
+    ],
+    "session_winners": [
+      {
+        "recording_url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/29/CAMDSB103_10.33.7.5_20261029T121621_UTC.jpg",
+        "frame_seconds": 0,
+        "quality_score": 0.740952,
+        "selection_score": 0.5052878,
+        "accepted": true
+      },
+      {
+        "recording_url": "https://rawdata.oceanobservatories.org/files/RS01SUM2/MJ01B/CAMDSB103/2026/10/29/CAMDSB103_10.33.7.5_20261029T121616_UTC.jpg",
+        "frame_seconds": 0,
+        "quality_score": 0.743971,
+        "selection_score": 0.5079039,
+        "accepted": true
+      }
+    ]
+  },
+  "fixture": false,
+  "selection_context": {
+    "model_id": "2f1fb5248d738a9c3e0833015230faa9cab3f31848d6541a5ceb9d1b1aef7caa",
+    "profile": "57704a19b4177839b45d907167cebbe70fa93344868b6a4ced68666d91cbb1e8"
+  },
+  "image_url": "https://nikokoren.github.io/abyss/sources/ooi-hydrate-ridge/d686b5e9fc2d3352beef.png",
+  "image_sha256": "d686b5e9fc2d3352beef69eaafed8b4b425a16f19d8546258a6db75302b22054",
+  "image_bytes": 44724071,
+  "display_image_url": "https://nikokoren.github.io/abyss/sources/ooi-hydrate-ridge/c15f33a60de08723bed9.png",
+  "display_image_sha256": "c15f33a60de08723bed930bd990223a522dd754c7c915803dc17bd78e1d38f1f",
+  "display_image_bytes": 44687290,
+  "display_attribution_embedded": false,
+  "display_credit": "Data: OOI / WHOI OOI Program Office / UW | Supported by U.S. NSF 2244833",
+  "view_url": "https://nikokoren.github.io/abyss/i/6ebb88dca83825bd46dc.html",
+  "qr_code_url": "https://nikokoren.github.io/abyss/i/6ebb88dca83825bd46dc.png",
+  "preview_url": "https://nikokoren.github.io/abyss/i/6ebb88dca83825bd46dc-preview.jpg"
+}
